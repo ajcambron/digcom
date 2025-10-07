@@ -1,7 +1,8 @@
 ---
 layout: default
-title: FDD | Unit 1
-parent: Foundations of Digital Design
+title: ADD | Unit 1
+parent: Applications of Digital Design
+
 ---
 # Unit 1 | The Elements of Design
 Unit 1 of FDD covers the basic elements and principles of design and layout. By making conscious decisions, designers can use these base units to create powerful design statements.
