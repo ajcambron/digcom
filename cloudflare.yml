@@ -1,0 +1,11 @@
+# cloudflare.yml
+version: 1
+# This ensures that your site is built using a predictable Ruby environment
+build:
+  command: "bundle exec jekyll build"
+  publish: "_site"
+  environment:
+    # Set a specific Ruby version (Cloudflare supports multiple)
+    # Use a modern, widely compatible version
+    # Check Cloudflare Pages docs for supported versions if this one fails
+    CF_PAGES_BUILD_ENV: "ruby-3.1"
