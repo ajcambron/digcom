@@ -30,6 +30,7 @@ github_username:  ajcambron
 theme: just-the-docs
 plugins:
   - jekyll-feed
+  - just-the-docs
   
 # Callouts
 callouts:
