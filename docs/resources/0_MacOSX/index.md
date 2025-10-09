@@ -5,5 +5,5 @@ parent: Resources
 ---
 
 # Resources
-Essentials of using [MacOSX](https://education.apple.com/learning-center/T024582A)
+Essentials of using [MacOSX](https://education.apple.com/learning-center/T024582A){:target="_blank"}
 
