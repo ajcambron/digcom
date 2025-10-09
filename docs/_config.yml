@@ -27,10 +27,9 @@ url: "digcom.cambron.cc" # the base hostname & protocol for your site, e.g. http
 github_username:  ajcambron
 
 # Build settings
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
   
 # Callouts
 callouts:
