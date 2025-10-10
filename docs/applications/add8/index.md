@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ADD | Unit 2
+title: ADD | Unit 8
 parent: Applications of Digital Design
 
 ---
