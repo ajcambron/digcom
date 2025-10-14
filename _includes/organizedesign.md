@@ -9,11 +9,10 @@ Storing all your files in the `/Downloads` folder in your computer is a BAD idea
 
 |------|
 |YYYY-MM Project Name|
-|📁 Source Footage|
 |📁 Graphics|
-|📁 Sound Effects|
-|📁 Music|
-|📁 Script|
+|📁 Sketches|
+|📁 Photos|
+|📁 Notes|
 
 4. It's also good to include directories for related files
 
