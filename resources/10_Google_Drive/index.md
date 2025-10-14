@@ -1,5 +1,5 @@
 ---
-title: Google Chrome
+title: Google Drive
 nav_order: 10
 parent: Resources
 ---
@@ -8,7 +8,7 @@ parent: Resources
 Every time you log in to a new computer, you will need to make sure that you are signed in to Google Drive for Desktop
 
 ## Signing in to Google Drive
-1. Before Starting, make sure you are fully logged in to [Google Chrome]({% link resources/10_Google_Chrome/index.md %}), and that your account is set to sync.
+1. Before Starting, make sure you are fully logged in to [Google Chrome]({% link resources/5_Google_Chrome/index.md %}), and that your account is set to sync.
 2. The Google Drive App should already be installed on your computer. If you do not find it at 'Applications/Google Drive' ask your teacher for assistance
 2. When the app opens click "Get Started"
 3. Click on "Sign in with Google Account"
@@ -32,3 +32,7 @@ Every time you log in to a new computer, you will need to make sure that you are
 ### Creating Project folders
 1. Create a project subfolder for each assignment in this class. Use the naming convention 'YYYY-MM Project Name'.
 2. All your resources and files relating to the project should be saved to the project subfolder. 
+
+## Ensure that Google Drive is syncing
+1. If you are unsure if Google Drive is syncing, look for the triangle logo in the top right corner of the menu bar. If the icon is greyed out, you will need to sign in again
+2. If the logo is not appearing in the menu bar, Google Drive has crashed and needs to be re-opened from the Finder

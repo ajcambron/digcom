@@ -1,5 +1,5 @@
 ## Organize (File Management)
-1. Ensure that Google Drive for Desktop is syncing to your computer.
+1. Ensure that [Google Drive]({% link resources/10_Google_Drive/index.md %}) for Desktop is syncing to your computer.
 1. Create a Project Directory (Folder) in your Google Drive `Google Drive/My Drive/Digital Design/YYYY-MM PROJECT NAME`
 2. Try to keep all of your project files for this project together, so your work is not interrupted due to technical issues. 
 

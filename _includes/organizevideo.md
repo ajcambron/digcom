@@ -1,5 +1,6 @@
 ## Organize
-1. Create a Project Directory (Folder) in your Google Drive ``Google Drive/My Drive/Digital Design/YYYY-MM Project Name``
+1. Ensure that [Google Drive]({% link resources/10_Google_Drive/index.md %}) for Desktop is syncing to your computer.
+2. Create a Project Directory (Folder) in your Google Drive ``Google Drive/My Drive/Digital Design/YYYY-MM Project Name``
 2. Try to keep all of your project files for the explainer video together, so your work is not interrupted due to technical difficulties.
 3. In your project directory, maintain subdirectories for every category of resource you will be using.
 
