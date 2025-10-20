@@ -1,5 +1,4 @@
 ## Project Set Up
-
 1. Launch Adobe Premiere 
 1. Create a New Project in Adobe Premiere
     * Project Name: Use a Conventional Naming Scheme ``YYYY-MM Project Name``
