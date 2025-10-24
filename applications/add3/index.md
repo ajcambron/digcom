@@ -5,6 +5,11 @@ parent: Applications of Digital Design
 
 ---
 # Unit 3 | ENG
-Students will be able to apply the basic elements and principles of design in video editing, specifically in the context of editing an episode of a television show using Adobe Premiere.
+Upon successful completion of this module, you will be able to: 
 
-
+Demonstrate Teamwork
+Collaborate with group members toward a common task
+Shoot a video project
+Create Graphics for Video
+Edit a Video in Adobe Express
+ 
