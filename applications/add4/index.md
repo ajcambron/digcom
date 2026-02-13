@@ -18,7 +18,7 @@ Students will be able to apply the basic elements and principles of design while
 
 | Major Products | Animated Intro Graphic, Lower-Thirds, Titles, Captions, Project Reflection, Portfolio Page |
 | Making it Public |{::nomarkdown}<ul><li> Students will present their video to the class</li><li>Work will be published to Design Portfolio Website</li></ul>{:/} | 
-| Key Project Documents | [General Rubric for Individual Projects]() |
+| Key Project Documents | [Rubric](/resources/90_rubrics) |
 
 ## Vocabulary
 
