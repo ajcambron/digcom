@@ -15,7 +15,7 @@ Students will be able to apply the basic elements and principles of design in vi
 | Project Summary | Students will produce a 90-second news clip | 
 | Major Products | News Segment Video | 
 | Making it Public | Students will present their video to the class | 
-| Key Project Documents | [General Rubric for Individual Projects]())|
+| Key Project Documents | Rubric](/resources/90_rubrics))|
 
 ## Vocabulary List
 
