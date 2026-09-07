@@ -47,7 +47,10 @@ callouts:
     color: purple
   good:
     color: green
-    
+  vocab:
+    title: Exam Vocabulary
+    color: blue
+
 favicon_ico: "/assets/images/favicon.ico"
 # Enable or disable the site search
 
