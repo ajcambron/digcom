@@ -9,38 +9,50 @@ nav_exclude: true
 
 {% include ctelessonplan.md %}
 
+## Source & merge note
+
+This lesson merges the original "Elements of Design" and "Principles of Design" lessons (see
+`_planning/2026-27-scope-and-sequence.md`, FDD Unit 1 rationale). Part 2's thumbnail warm-up is
+adapted directly from AIGA's *Unit 1A* process (`1A_IntroductionToGraphicDesign.pdf`) — the same
+thumbnail → rough → comp sequence used by the S | 1 project, introduced here at low stakes (6
+thumbnails, not 16) so students have already practiced the mechanics once before the summative.
+
+## Timing (fills the full 78 minutes — no GMetrix, see 1.1's teacher page)
+
+| Segment | Minutes | What happens |
+|---|---|---|
+| Bell Ringer | 10 | Paper stinger |
+| Guided Notes | 35 | Direct instruction + fill-in-blank notes, whole-class |
+| Thumbnail Warm-Up handout | 28 | Independent work |
+| Save, submit & pack up | 5 | Collect handouts |
+
 ## The 7 — how this lesson hits each element
 
 | Element | This lesson |
 |---|---|
-| Organization for Learning | Annotated-image worksheet — students physically circle/label elements vs. principles on a printed page. |
-| Connection to Learning | Warm-up sort (element vs. principle) activates the vocabulary before the harder task of *finding* them in real work. |
-| Target for Learning | SWBAT distinguish design elements from design principles by correctly labeling at least 2 of each on a printed image. |
-| Collaboration around Learning | Whole-class guided annotation of one shared example before independent work. |
-| Evidence of Learning | The student's own annotated image (paper), collected as the exit ticket. |
-| Summarization of Learning | Reflection: which was easier to spot, element or principle, and why. |
+| Organization for Learning | Guided notes outline (elements, principles, process vocabulary) + thumbnail warm-up sheet. |
+| Connection to Learning | Discussion question on why designers generate many ideas instead of one, before formally naming the thumbnail/rough/comp process. |
+| Target for Learning | SWBAT name the elements and principles of design, distinguish abstract from representational imagery, and produce a set of line-based thumbnails developed into one labeled rough. |
+| Collaboration around Learning | Whole-class guided notes; students may briefly compare thumbnails with a neighbor before selecting their strongest 2. |
+| Evidence of Learning | Completed guided notes + 6 thumbnails + 1 labeled rough, collected as the exit ticket. |
+| Summarization of Learning | Reflection on which thumbnail surprised them most. |
 | Accommodations to the Plan | See Differentiation Matrix below. |
-
-## Merge note
-
-This lesson merges the original "Elements of Design" and "Principles of Design" lessons into one
-(see `_planning/2026-27-scope-and-sequence.md`, FDD Unit 1 rationale) — the two topics are
-closely related and commonly taught together, and the calendar caps this unit at 4 lessons.
 
 ## Formative (paper F1 + F2 variant)
 
-- **F1 (paper):** element-vs-principle sort, 10 items, half-sheet, hand-graded 0–1–2.
-- **F2 variant (paper):** the annotated image itself, in place of a Screenshot Receipt.
+- **F1 (paper):** element/principle fill-in-the-blank recall, embedded in the guided notes
+  (graded via the notes handout itself rather than a separate quiz slip this lesson).
+- **F2 variant (paper):** the labeled rough sketch, in place of a Screenshot Receipt.
 
 ## Differentiation Matrix
 
 | Cohort | Modification |
 |---|---|
-| IEP/504 | Provide the image pre-marked with 2 dots where an element/principle is easiest to find, reducing open-ended search. |
-| ELL/Multilingual | Bilingual vocab card at each table pairing each term with a simple icon. |
-| Advanced/GT | Require the student to find one place where an element and a principle work *together* (e.g., repetition of a shape) and explain the interaction. |
+| IEP/504 | Reduce thumbnail count to 3 instead of 6; provide the guided notes with the element/principle word bank visible throughout, not just at the top. |
+| ELL/Multilingual | Bilingual vocab card pairing each term with a simple icon, kept visible during the handout. |
+| Advanced/GT | Require the labeled rough to demonstrate 2 elements and 2 principles instead of 1 each. |
 
 ## Materials
-- Printed example design (one shared, for guided practice)
-- Individual printed images, one per student (independent practice)
-- Element/Principle sort half-sheet
+- Guided notes handout (paper, one per student)
+- Thumbnail Warm-Up sheet — 6 boxes (paper, one per student; a simple grid template works)
+- Pencils

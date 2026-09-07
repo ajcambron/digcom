@@ -9,27 +9,53 @@ nav_exclude: true
 
 {% include ctelessonplan.md %}
 
-## Notes for this project
+## Source & scope note — read this before running the project
 
-**Timing:** this is the Unit 1 summative block — the extra project days that follow the 4
-formative lessons (see the Unit 1 index for the day count). Students work through all four
-rounds (Line, Shape, Texture, Color) at their own pace across those days.
+Adapted from AIGA's *Unit 1A: Introduction to Graphic Design* (9–12 curriculum),
+`1A_IntroductionToGraphicDesign.pdf`, Assignments 1–4 (Line, Shape, Texture, Color).
 
-**Standards:** ACP 1.4 (Design Elements & Principles).
+**AIGA's own spec is "at least four classes, 45–60 minutes" for this exercise** — one full class
+per element, each running 16 thumbnails → 3 roughs → 1 comp. Our calendar gives S1 exactly **one**
+78-minute meeting (Unit 1's summative block has 0 extra project days). This is a real,
+significant compression, not an oversight:
 
-**The one digital step:** everything is on paper (thumbnails → roughs) until the very end of
-each round, where students photograph their roughs on a phone or tablet. This is intentional —
-Unit 1 falls at the point in the year where district network access is least reliable, and this
-project should not stall if a student's device or the network is down on a given day. If a
-student can't photograph a round on the day it's finished, they can catch up later; the paper
-work itself is never blocked.
+- Thumbnails per round: **6, not 16**.
+- Strongest selected per round: **2, not 3**.
+- Roughs developed per round: **1, not 3**.
+- Comps: **1 total** (the single strongest rough across all 4 rounds), not 4.
 
-## Unit-level formatives (F5/F6), assigned the day this project starts
+If this feels too rushed in practice, the fix is a calendar change (requesting extra project days
+for Unit 1, matching what later units get), not stretching the paper activity further — flag it
+back to the curriculum plan if the one-meeting version isn't working.
 
-- **F5 — Cumulative Vocab Quiz:** paper quiz (not Schoology) covering all of Unit 1's vocabulary
-  — see the two vocab includes (`vocab/fdd-what-is-design.md` and
-  `vocab/fdd-elements-principles.md`) plus the terms introduced in 1.3 and 1.4. Hand-graded with
-  an answer key; same 0–1–2-style speed as a digital auto-grade, just done on paper.
+## Timing
+
+| Segment | Minutes | What happens |
+|---|---|---|
+| Bell Ringer | 10 | Paper stinger |
+| Instructions | 3 | Quick reminder of the 4-round + comp structure |
+| Line / Shape / Texture rounds | 10 each (30 total) | Thumbnails → select → rough |
+| Color round | 12 | Thumbnails → select → rough (colored pencil) |
+| Final comp | 15 | Develop single strongest rough into a finished comp |
+| Document/Save, submit & pack up | 8 | Photograph work, submit to portfolio |
+
+## The 7 — how this project hits each element
+
+| Element | This project |
+|---|---|
+| Organization for Learning | The round-by-round structure itself (thumbnails → select → rough, repeated 4×, then one comp) mirrors the AIGA process students already practiced in 1.2. |
+| Connection to Learning | Directly reuses vocabulary and mechanics from 1.2's Thumbnail Warm-Up — students have done this exact process once already at smaller scale. |
+| Target for Learning | SWBAT apply the elements of line, shape, texture, and color to abstract compositions, and carry one design through the full thumbnail-rough-comp process to a finished, neatly-executed comprehensive design. |
+| Collaboration around Learning | Encourage students to informally ask a neighbor for a second opinion when selecting their 2 strongest thumbnails per round — matches AIGA's own suggestion ("if they don't know which is strongest, they can ask other students for help"). |
+| Evidence of Learning | The physical thumbnails/roughs from all 4 rounds plus the one final comp, photographed for the portfolio. |
+| Summarization of Learning | Prompt students, while photographing, to note in one sentence per round what made their selected rough stronger than the ones they didn't pick. |
+| Accommodations to the Plan | See Differentiation Matrix below. |
+
+## Unit-level formatives (F5/F6), assigned today
+
+- **F5 — Cumulative Vocab Quiz:** paper quiz (not Schoology) covering all of Unit 1's
+  vocabulary — the `vocab/fdd-*.md` includes across 1.1–1.4 plus this project's design-process
+  terms. Hand-graded with an answer key.
 - **F6 — Stinger Grade:** compiled from this unit's bellringer responses (already collected on
   paper across the 4 formative lessons) — no new work required today, just recorded.
 
@@ -37,14 +63,17 @@ work itself is never blocked.
 
 | Cohort | Modification |
 |---|---|
-| IEP/504 | Reduce the required thumbnail count (16 → 8) per round if a student's IEP calls for reduced workload; provide a lined thumbnail template instead of blank boxes. |
-| ELL/Multilingual | Post a bilingual glossary card at each table (line, shape, texture, color + the process words: thumbnail, rough, revise); allow labeling roughs in a student's home language alongside English. |
-| Advanced/GT | Challenge students to combine two elements in one round's roughs (e.g., a Shape round where every shape is also built from a consistent line weight) and explain the combination in their reflection. |
+| IEP/504 | Reduce to 4 thumbnails/round instead of 6; per AIGA's own accommodation note, a student with limited motor skills may complete the assignment digitally if a device is available, or work with a partner. |
+| ELL/Multilingual | Post a bilingual glossary card at each table (line, shape, texture, color + thumbnail, rough, comp); allow round-by-round reflection notes in a student's home language. |
+| Advanced/GT | Challenge students to unify all 4 roughs with one consistent visual idea (per AIGA's own Closure prompt) before choosing which one to develop into the final comp, and explain the unifying choice. |
 
-## Rubric (0–1–2 per round, ×4 rounds)
+## Rubric (0–1–2 per round, ×4 rounds, plus the comp)
 
 | Score | Criteria |
 |---|---|
-| 2 | 16 unique thumbnails, 3 selected, developed into clean roughs, photographed |
-| 1 | Fewer than 16 thumbnails or roughs incomplete/unrefined |
-| 0 | Round not attempted or photograph missing |
+| 2 | 6 unique thumbnails, 2 selected, developed into a clean rough |
+| 1 | Fewer than 6 thumbnails or rough incomplete/unrefined |
+| 0 | Round not attempted |
+
+Final comp scored separately: 0–1–2 for care and completeness of the finished rendering
+(clean line work/color application, fully realized composition, photographed and submitted).

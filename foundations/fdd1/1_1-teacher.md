@@ -9,44 +9,60 @@ nav_exclude: true
 
 {% include ctelessonplan.md %}
 
+## Source
+
+Content adapted from AIGA's *Unit 1A: Introduction to Graphic Design* (9–12 curriculum),
+`1A_IntroductionToGraphicDesign.pdf` — the "An introduction to graphic design" section (career
+list, Richard Grefé quote, PBS documentary description) and its Engagement/hook framing.
+
+## Timing (fills the full 78 minutes — no GMetrix today, see note below)
+
+| Segment | Minutes | What happens |
+|---|---|---|
+| Bell Ringer | 10 | Paper stinger (see bellringer deck) |
+| Guided Notes | 35 | Direct instruction + fill-in-blank notes outline, whole-class |
+| Design Spotting handout | 28 | Independent/pair work |
+| Save, submit & pack up | 5 | Collect handouts |
+
+**No GMetrix strand today.** Unit 1 has no computer/network access, and BrainBuffet is an online
+platform — it cannot run without one. The GMetrix strand table in
+`_planning/2026-27-scope-and-sequence.md` originally planned Module 1 to start in Unit 1; that's
+been corrected to start Module 1 fully in Unit 2 instead once computers are available. Every
+minute of Unit 1 is real class content, not a placeholder around a digital block.
+
 ## The 7 — how this lesson hits each element
 
 | Element | This lesson |
 |---|---|
-| Organization for Learning | Design Spotting worksheet — a 3-row table (Example / Specialty / Why) students fill in by hand. |
-| Connection to Learning | Warm-up asks students to match design specialties to examples they already recognize before any new vocabulary is introduced. |
-| Target for Learning | SWBAT identify at least 3 real-world examples of design and correctly name which design specialty each belongs to, by completing the Design Spotting worksheet. |
-| Collaboration around Learning | Opening "point out something designed in this room" is a whole-class cold-call/discussion before independent work. |
-| Evidence of Learning | The completed Design Spotting worksheet (paper), collected as the exit ticket. |
-| Summarization of Learning | Reflection prompt: which design specialty sounds most interesting, and why. |
+| Organization for Learning | The guided notes outline itself — a structured fill-in-the-blank sequence students build during direct instruction. |
+| Connection to Learning | Opening discussion (what do you think graphic design is?) before any formal definition is given, per AIGA's own suggested engagement hook. |
+| Target for Learning | SWBAT define graphic design's role (communication + problem-solving, not decoration) and identify at least 6 real design examples with their career category, by completing the guided notes and Design Spotting handout. |
+| Collaboration around Learning | Whole-class discussion of the 3 guiding questions; pair-share on Design Spotting examples if time allows. |
+| Evidence of Learning | Completed guided notes + Design Spotting handout (6 examples, 2 written breakdowns, 1 thumbnail), collected as the exit ticket. |
+| Summarization of Learning | Reflection: would you have called your examples "design" before today? |
 | Accommodations to the Plan | See Differentiation Matrix below. |
-
-## Paper-only rationale
-
-Unit 1 falls in the first weeks of the school year, when district network access and student
-device/account provisioning are least reliable. Every formative in this unit (1.1–1.4) is
-designed to run entirely on paper so a network or lab outage never stalls instruction — only the
-S1 project's very last step (photographing finished roughs) touches a device.
 
 ## Formative (paper F1 + F2 variant)
 
-Per the Formative Assessment System, theory/industry lessons use F1 (Vocab Warm-Up) + an F2
-variant. Paper versions for Unit 1:
-
-- **F1 (paper):** the 5-item match-the-specialty-to-the-example warm-up, printed as a half-sheet.
-  Hand-graded with an answer key at a glance (0–1–2 scale).
-- **F2 variant (paper):** the Design Spotting worksheet itself — students annotate/name real
-  examples rather than submitting a screenshot.
+- **F1 (paper):** cold-call review of 3-4 guided notes blanks at the end of Part 1, before moving
+  to the handout — quick verbal check, not graded individually but flags who needs support.
+- **F2 variant (paper):** the Design Spotting handout itself.
 
 ## Differentiation Matrix
 
 | Cohort | Modification |
 |---|---|
-| IEP/504 | Provide the worksheet with the specialty list pre-printed as a word bank instead of open recall. |
-| ELL/Multilingual | Sentence frame: "This is ______ design because it ______." Pair the vocab include's terms with icons/images on the classroom wall. |
-| Advanced/GT | Ask for a 4th example that's a *borderline* case (fits two specialties) and have them justify the split. |
+| IEP/504 | Provide the guided notes with more blanks pre-filled (reduce recall load); allow 4 examples instead of 6 on the handout. |
+| ELL/Multilingual | Word bank for the guided notes blanks; allow written breakdowns in a student's home language with an English vocabulary gloss. |
+| Advanced/GT | Require one of the 6 examples to come from a career NOT on the shared list (research-driven) and defend the classification. |
+
+## AIGA note not used today
+
+AIGA's engagement extension ("find and follow at least ten designers via Bēhance, Instagram, or
+Pinterest") requires internet access and is deferred — offer it as an optional take-home once
+computer/network access is reliable (e.g., during Unit 2+), not as an in-class Unit 1 activity.
 
 ## Materials
-- Design Spotting worksheet (paper, one per student)
-- Warm-up half-sheet (paper)
-- Printed or projected examples of each design specialty for the opening discussion
+- Guided notes handout (paper, one per student)
+- Design Spotting handout (paper, one per student)
+- Printed or projected career list for reference

@@ -114,6 +114,13 @@ an additional reason the FDD/PDD/ADD lesson-count crunch (36 vs. 40 slots, see t
 note above) is workable: a merged lesson combining two related sub-topics still has to fit ~33
 minutes, so a merge should pick topics that were already lightweight, not just adjacent.
 
+**Exception: Unit 1 has no GMetrix slot at all (Sep 2026).** Unit 1 falls before students have
+reliable computer/network access, and BrainBuffet is online-only — it simply can't run. Unit 1's
+lessons fill the *entire* 78 minutes with paper content (guided notes + a hands-on handout), not
+the ~33-minute core-lesson window this section describes for every other unit. See FDD Unit 1's
+lesson pages for the actual structure; GMetrix's Module 1 shifts to run in full during Unit 2
+instead (see the GMetrix strand table below).
+
 ---
 
 ## Lesson Requirement: "The 7" (Christina's Focus for Strong Classrooms)
@@ -674,10 +681,18 @@ Unit 10's dedicated job, not a lesson inside this unit's content.*
 
 Durations from the teacher syllabus (video / estimated class time): M1 2:12/3h · M2 2:00/3h · M3 1:30/3h · M4 2:20/4h · M5 1:52/3h · M6 0:46/1h. At ~3.5 hrs of strand time per unit, the course finishes with ~2 units' worth of slack for practice tests.
 
+> **Correction (Sep 2026): Unit 1 has no GMetrix at all** — BrainBuffet is an online platform and
+> Unit 1 has no computer/network access (see FDD Unit 1's lesson pages). The "deliberate lead"
+> plan below assumed Unit 1 would start Module 1 while class covered theory; that's no longer
+> possible. Module 1 (both start and finish) now runs entirely in Unit 2 instead — it still fits
+> the ~3.5 hr/unit strand budget (M1 needs ~3h). **This table's unit numbers are still the old
+> 8-unit numbering and need the same renumbering pass flagged in the FDD Calendar Math note
+> above** (e.g. this table's "Unit 8" is now Unit 9) — not yet done.
+
 | FDD Unit | GMetrix Module | Topic overlap |
 |---|---|---|
-| 1 | M1 Getting Started (start) | students meet the software while class covers design theory — deliberate lead |
-| 2 | M1 (finish) | interface, documents, artboards, vector vs. raster, saving — direct match |
+| 1 | *(none — no computer/network access; see Unit 1's lesson pages)* | — |
+| 2 | M1 Getting Started (full module) | interface, documents, artboards, vector vs. raster, saving — direct match |
 | 3 | M2 Dobson Branding Style Guide | color modes, gamut, type classifications — direct match; the branding-guide concept previews the Unit 8 summative |
 | 4 | M3 Dobson Poster | Layers panel, effects, gradients, brushes, symbols — previews Units 6–7 while class does pen tool |
 | 5 | M4 Dobson Trifold (start) | text flow & typography in layout — direct match |
