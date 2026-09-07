@@ -863,7 +863,39 @@ lesson-formative slots (see FDD Unit 4).
 
 **Written reflections** stay on summatives only, graded for specificity: must cite two concrete moments in the student's own file/footage ("at 0:32 I used a J-cut because…"). Generic reflection prose earns a conference, not a grade.
 
-**Build-out during restructure:** each new lesson page ends with a "📤 Exit Ticket" block naming its formative (an include per format keeps language consistent); Schoology question banks built per unit from the `_includes/vocab/` files — same source, same language, no drift.
+### Exit Ticket Bank (Sep 2026)
+
+**An exit ticket is not "turn in everything you made today."** That's classwork — still
+collected and still graded (per each lesson's own rubric), but it's a separate thing from the
+quick, ~2-minute, standardized check that happens in the last few minutes of every formative
+lesson. Conflating the two produced exit tickets that were really just submission checklists —
+fixed by splitting them into two distinct lines on every lesson page: a **"Turn In"** line
+(the day's actual artifacts) and a separate **Exit Ticket** line (the routine below).
+
+**Positional, not content-driven — every unit's 4 formative lessons cycle through the same 4
+tickets in the same order**, regardless of course or content:
+
+| Lesson position | Exit Ticket | Maps to | Mechanic |
+|---|---|---|---|
+| `.1` | **Exit Ticket 1 — Vocab Check** | F1 (Vocab Warm-Up, run at the end instead of the start) | Teacher cold-calls one term from today's vocab; students write its definition in their own words. |
+| `.2` | **Exit Ticket 2 — Show & Tell** | F2 (Screenshot Receipt) | Students hold up their strongest artifact + one sentence naming the tool/technique used. |
+| `.3` | **Exit Ticket 3 — Two-Minute Drill** | F3 | Teacher announces a surprise micro-task; 2 minutes to complete and show the result. |
+| `.4` | **Exit Ticket 4 — Spot the Fix** | F4 (Fix-This-File, miniaturized) | Teacher shows one deliberately broken example; students name the problem and the fix. |
+
+Implemented as includes so the wrapper text is identical everywhere and can't drift:
+`{% include exit-ticket/1.md %}` … `{% include exit-ticket/4.md %}` (student-facing, fully
+generic, no per-lesson params needed) and `{% include exit-ticket/1-teacher.md %}` … `4-teacher.md`
+(teacher-facing: the mechanic + a 0–1–2 or 0/1 grading rule). Tickets 3 and 4 need a
+lesson-specific task/example — that's authored inline on each teacher page, directly below the
+include, not baked into the include itself.
+
+This supersedes the "Mapping to lesson types" guidance above for *which exit ticket a lesson
+uses* (now purely positional) — that guidance still applies to which formative shapes the rest
+of a lesson's in-class work, just not the exit ticket specifically. FDD Unit 1 (`foundations/fdd1/`)
+is the reference implementation.
+
+**Schoology question banks** built per unit from the `_includes/vocab/` files — same source,
+same language, no drift.
 
 ---
 

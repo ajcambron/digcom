@@ -38,12 +38,15 @@ the last of the 4 element days.
 | Summarization of Learning | Reflection identifying and justifying their single strongest comp across the whole unit. |
 | Accommodations to the Plan | See Differentiation Matrix below. |
 
-## Formative (paper F1 + F2 variant)
+## Exit Ticket
 
-- **F1 (paper):** feedback-loop/style-guide/project-brief fill-in-the-blank recall, embedded in
-  the guided notes.
-- **F2 variant (paper):** the completed thumbnail/rough/comp set plus the "strongest comp"
-  decision.
+{% include exit-ticket/4-teacher.md %}
+
+**This lesson's broken example:** show a rough where the "two contrasting colors" are actually
+two shades of the *same* hue (e.g., light blue and dark blue) rather than truly contrasting hues
+(e.g., purple and yellow-green) — a mistake this AIGA exercise reliably produces. Correct
+answer: name that the colors aren't actually contrasting, and the fix is picking hues from
+opposite areas of the color wheel, not just different values of one hue.
 
 ## Differentiation Matrix
 

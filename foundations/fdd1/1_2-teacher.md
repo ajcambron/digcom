@@ -35,10 +35,9 @@ full AIGA spec (16 thumbnails → 3 roughs → 1 comp).
 | Summarization of Learning | Reflection comparing how natural line vs. shape felt to generate ideas for. |
 | Accommodations to the Plan | See Differentiation Matrix below. |
 
-## Formative (paper F1 + F2 variant)
+## Exit Ticket
 
-- **F1 (paper):** element/principle fill-in-the-blank recall, embedded in the guided notes.
-- **F2 variant (paper):** the completed thumbnail/rough/comp set.
+{% include exit-ticket/2-teacher.md %}
 
 ## Differentiation Matrix
 

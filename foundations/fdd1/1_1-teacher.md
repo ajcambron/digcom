@@ -38,10 +38,12 @@ assignment.
 | Summarization of Learning | Reflection on what changed between the first thumbnail and the finished comp. |
 | Accommodations to the Plan | See Differentiation Matrix below. |
 
-## Formative (paper F1 + F2 variant)
+## Exit Ticket
 
-- **F1 (paper):** cold-call review of 2-3 guided notes blanks before starting the assignment.
-- **F2 variant (paper):** the completed thumbnail/rough/comp set itself.
+{% include exit-ticket/1-teacher.md %}
+
+Today's vocab pool to cold-call from: any term from `vocab/fdd-what-is-design.md` or
+`vocab/fdd-design-process.md` (both shown on this page).
 
 ## Differentiation Matrix
 
