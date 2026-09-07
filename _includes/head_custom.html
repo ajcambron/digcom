@@ -91,13 +91,32 @@
     overflow: hidden;
     background: #fafafa;
   }
-  .presentation-embed iframe {
+  .presentation-embed-fill {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: 0;
+  }
+  .presentation-embed.presentation-placeholder {
+    border: 2px dashed #c7c7c7;
+    background: #f4f6fb;
+  }
+  .presentation-placeholder .presentation-embed-fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 0.85em;
+  }
+  .presentation-placeholder code {
+    background: #e5e9f5;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
   }
 
   @media print {
