@@ -115,6 +115,38 @@ minutes, so a merge should pick topics that were already lightweight, not just a
 
 ---
 
+## Lesson Requirement: "The 7" (Christina's Focus for Strong Classrooms)
+
+**Every lesson (restructured or new) must hit all 7 elements**, per the evaluation framework
+([source](https://docs.google.com/presentation/d/1c8wsjkUgy89cPcmgsroWP_ZO1-j-VAAa-SRm-xNkcF0)):
+
+1. **Organization for Learning** — a tool/organizer that helps students see connections,
+   patterns, relationships, and the lesson's main idea.
+2. **Connection to Learning** (prior, present, future) — engages students and activates prior
+   knowledge at the lesson's start.
+3. **Target for Learning** — integrated content + language objectives, defining what's being
+   learned and how it's demonstrated.
+4. **Collaboration around Learning** — joint intellectual effort (student-student or
+   student-teacher) toward the lesson objective.
+5. **Evidence of Learning** — a planned written response deepening understanding and
+   demonstrating comprehension.
+6. **Summarization of Learning** — planned student reflection on the lesson, in their own words.
+7. **Accommodations to the Plan** — specific instructional moves giving every student equal
+   access.
+
+`_includes/ctelessonplan.md` already has a field for all 7 — this isn't a new template, it's
+confirmation the existing one is correctly scoped. Two fields are named slightly differently
+than "The 7"'s own labels (meaning matches; label doesn't): **"Learning Target"** (vs. "Target
+for Learning") and **"Instruction"** (vs. "Collaboration around Learning" — its own parenthetical
+already reads "collaboration around learning..."). Leaving as-is unless you want them renamed to
+match "The 7" verbatim.
+
+**Still open:** `ctelessonplan.md` isn't referenced by any current lesson page — confirm whether
+it's meant to be a teacher-facing planning doc per lesson (separate from the student-facing page)
+or should be included directly on each published lesson page.
+
+---
+
 ## Shared-Block (`_includes`) Strategy
 
 Existing reusable blocks stay the backbone so student-facing language is identical everywhere:
