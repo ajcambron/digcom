@@ -17,6 +17,63 @@
 
 ## Calendar Math (2026–27, every-other-day schedule)
 
+> **Superseded the original 8-unit-before-break model below (Sep 2026).** The district's actual
+> `Unit_Planner_2026-2027` (single combined A/B calendar, confirmed to cover all three courses —
+> FDD, PDD, and ADD run on the identical structure) defines **12 units for the full school year**,
+> not 8 units before spring break plus a loose "Extra Units" tail. Structure, per the workbook's
+> own Methodology sheet:
+>
+> - **12 units, 3 per marking period**, numbered sequentially across the year.
+> - Every unit = **exactly 4 formative lessons** (`unit.1`–`unit.4`, each taught twice for the A/B
+>   rotation) **+ one summative block**. Formatives are hard-capped at 4/unit by the calendar —
+>   any additional pre-summative days extend the summative block as independent project time
+>   instead of a 5th/6th formative lesson.
+> - Summative block length varies by unit (0 extra project days in Units 1 and 10–12, 3–4 in
+>   Units 2–6, 5 in Units 7–9) — later units give more independent work time before the same
+>   assessment, not more lessons.
+> - Unit 1 opens with a 3-day icebreaker week (Sep 1–3); no graded formative work those days.
+> - Spring break (~Mar 29–Apr 2) falls **inside** Unit 9 (Mar 18–Apr 16), not at a unit boundary —
+>   the calendar's own week-repeat convention just carries the unit across it.
+>
+> | Unit | Marking Period | Dates | School days |
+> |---|---|---|---|
+> | 1 | MP1 | Sep 1 – Sep 23, 2026 | 13 (incl. 3 icebreaker) |
+> | 2 | MP1 | Sep 24 – Oct 12, 2026 | 13 |
+> | 3 | MP1 | Oct 13 – Oct 30, 2026 | 13 — **MP1 ends here** |
+> | 4 | MP2 | Nov 4 – Dec 1, 2026 | 14 |
+> | 5 | MP2 | Dec 2 – Jan 4, 2027 | 14 |
+> | 6 | MP2 | Jan 5 – Jan 22, 2027 | 13 — **MP2 ends Jan 28** |
+> | 7 | MP3 | Feb 1 – Feb 23, 2027 | 15 |
+> | 8 | MP3 | Feb 24 – Mar 17, 2027 | 15 |
+> | 9 | MP3 | Mar 18 – Apr 16, 2027 | 15 (spring break falls inside) — **MP3 ends here** |
+> | 10 | MP4 | Apr 20 – May 3, 2027 | 10 |
+> | 11 | MP4 | May 4 – May 17, 2027 | 10 |
+> | 12 | MP4 | May 18 – Jun 4, 2027 | 10 — **MP4 ends Jun 11** |
+>
+> **ACP certification window (confirmed with the teacher, Sep 2026): testing must land between
+> Access Testing and AP Testing.** AP Exams run May 3–7 and May 10–14, 2027, so the only clean gap
+> is **Unit 10 (Apr 20 – May 3)** — Access Testing's own 2026–27 date isn't posted yet, but
+> historically it doesn't extend past mid-April, so Unit 10 is the practical target. This means:
+>
+> - **All ACP-tested content for all three courses must be fully covered in Units 1–9** (Sep 1 –
+>   Apr 16) — 9 units × 4 formative lessons = **36 formative-lesson slots per course**, not the
+>   40 (8 × 5) the course sections below currently assume. Each course loses ~4 lesson slots
+>   relative to the current draft and needs a specific re-merge, not just a renumbering — **not
+>   yet done; see the open item right below this section.**
+> - **Unit 10 becomes the review + ACP practice-exam + certification-testing unit** (replacing
+>   the old "meetings 57–60" review window) — and is significantly more generous: 10 school days
+>   vs. the old plan's ~4 meetings.
+> - **Units 11–12 (May 4 – Jun 4) become the "Extra Units"** home — the post-certification
+>   enrichment content each course's `Extra Units` list below already describes. The concept
+>   carries over unchanged; only the calendar dates move (from "after Mar 25 break" to "after the
+>   Unit 10 ACP exam").
+>
+> The old 8-unit/60-meeting model directly below is kept for now as the source of unit-by-unit
+> lesson content (nothing about *what* to teach changed) but its dates, meeting counts, and
+> unit boundaries are stale and should not be used for pacing.
+
+### Original 8-unit draft (content still current; dates/boundaries below are stale)
+
 - First student day **Aug 31 / Sep 1, 2026** → last day before spring break **Mar 25, 2027** (Mar 25 = conferences, schools closed; last student day is Mar 24).
 - 120 student days ÷ 2 = **60 class meetings** per section before spring break.
 - Jan 25–28 are HS exam days → budget **~58 instructional meetings**.
