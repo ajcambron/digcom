@@ -238,10 +238,22 @@ lesson:
   formatives:                # summative days instead: F5/F6-style unit-level formatives
     - label: "F5 — Cumulative Vocab Quiz"
       description: "..."
-  turn_in:                   # ordered list of what students hand in; the template smart-joins
-    - "your guided notes"    # it with commas + "and" (both on the student page's Turn In line
-    - "your finished comp"   # and in the teacher page's Turn-In Grading baseline)
-  turn_in_grading:           # omit entirely on a page with no check-graded deliverable (e.g. S1,
+  organize:                  # what students keep at the end of the day — not "turned in" to the
+                              # teacher, filed away for later (see S1's own project-day recreation,
+                              # the unit summative, or a later course). The template smart-joins
+                              # each list with commas + "and" (both on the student page's Organize
+                              # line and the teacher page's Organize Grading baseline).
+    binder:                  # physical items — always phrased as "in your binder"
+      - "your guided notes"
+      - "your finished comp"
+    drive:                   # digital files — each needs the Digital Design subfolder it belongs
+                              # in, per the conventions in organizedesign.md/organizevideo.md
+                              # (Graphics, Sketches, Photos, Notes, Project Files, Exports, ...).
+                              # Omit entirely when a lesson has nothing digital to file (e.g. all
+                              # of FDD Unit 1, which is paper-only).
+      - item: "the exported PNG of your poster"
+        folder: "Exports"
+  organize_grading:          # omit entirely on a page with no check-graded deliverable (e.g. S1,
     plus: "..."              # which is graded as a project, not a check/+/-)
     minus: "..."
   differentiation:
@@ -254,21 +266,22 @@ lesson:
     ...
 ```
 
-**On the student page's body**, use `{% include lesson-parts/turn-in.html %}` instead of hand-
-typing the "📥 Turn In:" line — it reads `lesson.turn_in` and smart-joins it.
+**On the student page's body**, use `{% include lesson-parts/organize.html %}` instead of hand-
+typing the "🗂 Organize:" line — it reads `lesson.organize` and smart-joins each of the binder/
+drive lists.
 
 **The teacher page** (`X-teacher.md`) is reduced to front matter (`nav_exclude: true`,
 `has_toc: false`) plus a title and `{% include teacher-plan.html %}`. That include
 (`_includes/teacher-plan.html`) looks up the paired student page via
 `page.url | replace: "-teacher.html", ".html"`, reads its `lesson:` block, and renders Lesson
 Identification, Target for Learning, Vocabulary, Source, Timing (with computed total — a
-built-in check that a lesson still adds up to 78 minutes), The 7, Turn-In Grading, Exit Ticket
+built-in check that a lesson still adds up to 78 minutes), The 7, Organize Grading, Exit Ticket
 (or the Formatives block on a summative day), Differentiation Matrix, Materials, Notes, and a
 **Print Lesson Plan** button (`window.print()`, styled via the `@media print` rules in
 `_includes/head_custom.html`, which hide the sidebar/header/breadcrumbs/footer/search and any
 `.no-print` element so the printed page is just the lesson plan). Every field above is optional
 except `course`/`unit`/`number` — a lesson missing a section (no `formatives`, no
-`turn_in_grading`, no `notes`) simply omits that heading rather than rendering it blank, so the
+`organize_grading`, no `notes`) simply omits that heading rather than rendering it blank, so the
 schema works unmodified for both formative lessons and structurally-different summative days.
 
 **To build a new lesson**: write the student page normally, add the `lesson:` block with that
@@ -976,12 +989,14 @@ lesson-formative slots (see FDD Unit 4).
 
 ### Exit Ticket Bank (Sep 2026)
 
-**An exit ticket is not "turn in everything you made today."** That's classwork — still
-collected and still graded (per each lesson's own rubric), but it's a separate thing from the
+**An exit ticket is not "organize everything you made today."** That's classwork — still
+checked and still graded (per each lesson's own rubric), but it's a separate thing from the
 quick, ~2-minute, standardized check that happens in the last few minutes of every formative
 lesson. Conflating the two produced exit tickets that were really just submission checklists —
-fixed by splitting them into two distinct lines on every lesson page: a **"Turn In"** line
-(the day's actual artifacts) and a separate **Exit Ticket** line (the routine below).
+fixed by splitting them into two distinct lines on every lesson page: an **"Organize"** line
+(the day's actual artifacts — physical work filed in the student's binder, digital files filed
+in their Digital Design Google Drive folder, per the conventions in `organizedesign.md`/
+`organizevideo.md`) and a separate **Exit Ticket** line (the routine below).
 
 **Revised again (Sep 2026), sourced from AVID Open Access** (avidopenaccess.org/resource/
 ed-tip-exit-tickets/ — the "1-2-3", Emoji Meter, Stoplight, and Glow or Grow formats) rather than
@@ -990,7 +1005,7 @@ lightweight metacognitive check-in (how do you feel about today, not a content-k
 Graded with the same ✓−/✓/✓+ system as everything else (see Resources > Rubrics), scored on
 effort/completeness of the response, not "correctness" — there's no wrong feeling on a Stoplight
 or Emoji Meter. The artifact-based, AI-resistant evidence-of-learning job stays entirely with the
-**"Turn In"** line and each lesson's own formative — the exit ticket's only job is the 2-minute
+**"Organize"** line and each lesson's own formative — the exit ticket's only job is the 2-minute
 routine.
 
 **Positional, not content-driven — every unit's 4 formative lessons cycle through the same 4

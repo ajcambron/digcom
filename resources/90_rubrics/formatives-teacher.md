@@ -24,9 +24,10 @@ turned in; a genuinely missing/not-submitted formative stays at 0%.
 ## Scope
 
 Applies to every non-machine-graded formative: exit tickets (all four in the bank — Stoplight,
-Glow & Grow, Emoji Meter, 3-2-1), Turn-In artifacts (thumbnails, roughs, comps, guided notes,
-and equivalents in other courses), and any other daily classwork graded by the teacher rather
-than auto-graded. Does **not** apply to auto-graded Schoology quizzes (e.g. the F5 Cumulative
+Glow & Grow, Emoji Meter, 3-2-1), Organize artifacts (thumbnails, roughs, comps, guided notes,
+and equivalents in other courses — checked in the student's binder or Digital Design Drive
+folder, not submitted through Schoology), and any other daily classwork graded by the teacher
+rather than auto-graded. Does **not** apply to auto-graded Schoology quizzes (e.g. the F5 Cumulative
 Vocab Quiz) or summative projects, which keep their own point-based rubrics (see Individual
 Projects / Group Projects on the public Rubrics page).
 

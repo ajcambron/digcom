@@ -1,0 +1,5 @@
+{%- assign binder = page.lesson.organize.binder -%}
+{%- assign drive = page.lesson.organize.drive -%}
+{%- if binder or drive -%}
+🗂 **Organize:**{% if binder %} Put {% assign items = binder %}{% for item in items %}{% unless forloop.first %}{% if forloop.last %}{% if items.size > 2 %}, and {% else %} and {% endif %}{% else %}, {% endif %}{% endunless %}{{ item }}{% endfor %} in your binder.{% endif %}{% for d in drive %} Save {{ d.item }} in the `{{ d.folder }}` folder of your Digital Design project folder on Google Drive.{% endfor %}
+{%- endif -%}

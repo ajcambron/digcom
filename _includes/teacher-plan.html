@@ -78,11 +78,17 @@ SWBAT {{ lesson.the_seven.target }}.
 | Accommodations to the Plan | See Differentiation Matrix below. |
 {%- endif %}
 
-{%- if lesson.turn_in_grading %}
+{%- if lesson.organize_grading %}
 
-## Turn-In Grading
+## Organize Grading
 
-Check system (see Resources > Rubrics): **✓** = {%- for item in lesson.turn_in %}{% unless forloop.first %}{% if forloop.last %}{% if lesson.turn_in.size > 2 %}, and {% else %} and {% endif %}{% else %}, {% endif %}{% endunless %} {{ item }}{%- endfor %}, submitted. **✓+** = same, plus {{ lesson.turn_in_grading.plus }}. **✓−** = {{ lesson.turn_in_grading.minus }}.
+{%- assign organize_items = lesson.organize.binder -%}
+{%- if lesson.organize.drive -%}
+{%- assign drive_item_names = lesson.organize.drive | map: "item" -%}
+{%- assign organize_items = organize_items | concat: drive_item_names -%}
+{%- endif %}
+
+Check system (see Resources > Rubrics): **✓** = {%- for item in organize_items %}{% unless forloop.first %}{% if forloop.last %}{% if organize_items.size > 2 %}, and {% else %} and {% endif %}{% else %}, {% endif %}{% endunless %} {{ item }}{%- endfor %}, organized (binder items filed, digital files saved to the right Digital Design folder). **✓+** = same, plus {{ lesson.organize_grading.plus }}. **✓−** = {{ lesson.organize_grading.minus }}.
 {%- endif %}
 
 {%- if lesson.exit_ticket %}
