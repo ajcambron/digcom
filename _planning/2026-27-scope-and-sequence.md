@@ -141,9 +141,13 @@ for Learning") and **"Instruction"** (vs. "Collaboration around Learning" — it
 already reads "collaboration around learning..."). Leaving as-is unless you want them renamed to
 match "The 7" verbatim.
 
-**Still open:** `ctelessonplan.md` isn't referenced by any current lesson page — confirm whether
-it's meant to be a teacher-facing planning doc per lesson (separate from the student-facing page)
-or should be included directly on each published lesson page.
+**Resolved (Sep 2026): every lesson gets two pages, same folder, suffixed filename** — e.g.
+`foundations/fdd2/2_1.md` (student-facing, current style) + `foundations/fdd2/2_1-teacher.md`
+(teacher-facing, built around `ctelessonplan.md`/The 7). Teacher pages **do build** (not excluded
+from the Jekyll build) but are **not surfaced** — `nav_exclude: true`, reachable only by direct
+URL for now. This is an interim state: the long-term plan is a password-protected subdomain for
+teacher-facing content; until that exists, treat these pages as "unlisted," not "private" — don't
+put anything in them (answer keys, exemplars) that would be a problem if someone found the URL.
 
 ---
 
