@@ -168,15 +168,35 @@ Existing reusable blocks stay the backbone so student-facing language is identic
 
 Objective domains: 1 Design Industry · 2 Document Management · 3 Workflow & Interface · 4 Objects, Paths & Text · 5 Appearance & Position
 
+> **Restructured to the real 9-unit-before-exam calendar (Sep 2026 draft — first pass, review
+> before building pages).** The calendar hard-caps every unit at 4 formative lessons; the
+> original draft above assumed 5/unit × 8 units = 40. Getting to 9 × 4 = 36 required actually
+> checking, lesson by lesson, which ones each summative's ACP tag genuinely needs — not just
+> trimming evenly. Net result: **one merge, one fold-into-project-time, two more merges, and one
+> brand-new unit/summative** built from lessons that floated out of other units because their
+> summative didn't actually require them. Full reasoning kept below each unit as a rationale line
+> so it can be second-guessed later — this is a draft, not a final call.
+>
+> **Not yet done, flagged rather than silently left stale:** the GMetrix module-alignment table
+> and the TSA/NATAS "FDD Unit 5/8" references further down this doc were written against the old
+> 8-unit numbering and need a pass once this structure is confirmed (Typographic Poster is still
+> Unit 5 here, so that TSA row is fine; the Client Brand Project reference needs to become "Unit
+> 9"). Vocab callouts below are carried over per-lesson but not re-verified cluster-by-cluster —
+> treat them as approximate until each lesson page is actually authored.
+
 ### FDD Unit 1 | Design & the Design Industry *(reuse fdd1)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
 | 1.1 | What is Design? | fdd1 index content | 1.1.a |
-| 1.2 | Elements of Design | new (split from fdd1) | 1.4.a |
-| 1.3 | Principles of Design | new (split from fdd1) | 1.4.a |
-| 1.4 | Purpose, Audience & Client Goals | new | 1.1.a, 1.1.b |
-| 1.5 | Communicating Design Plans | new | 1.1.c, 1.1.d |
+| 1.2 | Elements & Principles of Design *(merged: was 1.2 Elements + 1.3 Principles)* | new (split from fdd1) | 1.4.a |
+| 1.3 | Purpose, Audience & Client Goals | new | 1.1.a, 1.1.b |
+| 1.4 | Communicating Design Plans | new | 1.1.c, 1.1.d |
 | **S1** | **Design Elements Exercises** | fdd1/1_1 (promote to summative) | 1.4 |
+| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 1) | — | — |
+
+*Rationale: S1's own ACP tag ("1.4") only ever required the old 1.2+1.3 pair — merging them
+(a standard "elements vs. principles" pairing anyway) is the one clean way to hit 4 without
+touching the two client-facing lessons, which aren't optional lead-ins.*
 
 **Vocab callouts:** client goals, target audience, demographics, accessibility · sketches, specifications, design process, wireframes, prototypes, iterations, change orders, drafts, feedback loop, style guide, project brief · project scope, scope creep, project timeline · space, line, shape, form, color and color value, texture · emphasis/focal point, unity/harmony, variety, balance, alignment, proximity, repetition, rhythm, scale, movement, negative space, contrast, rule of thirds
 
@@ -187,22 +207,29 @@ Objective domains: 1 Design Industry · 2 Document Management · 3 Workflow & In
 | 2.2 | The Illustrator Interface | new | 3.1.a, 3.1.b |
 | 2.3 | Documents & Artboards | new | 2.1, 2.2 |
 | 2.4 | Design Aids: Rulers, Guides, Grids, Views | new | 3.2 |
-| 2.5 | Saving & File Formats | new | 2.4.a |
 | **S2** | **Artboard Sampler** (multi-artboard shape compositions) | new | 2.1–2.2, 3.1–3.2 |
+| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 2) | — | — |
 
-**Vocab callouts:** image resolution, image size, file types, pixel, raster, bitmap, vector, path, object, rasterizing, rendering, resizing, bleed, trim, live area · application bar, control panel, panels, toolbars, contextual taskbar · artboards, pasteboard · Outline, Pixel Preview, Presentation Mode
+*Rationale: S2's ACP tag never covered "Saving & File Formats" — floated out, landing in the new
+Unit 6 below instead of forcing a merge here.*
+
+**Vocab callouts:** pixel, raster, bitmap, vector, path, object, rasterizing, rendering, resizing, bleed, trim, live area · application bar, control panel, panels, toolbars, contextual taskbar · artboards, pasteboard · Outline, Pixel Preview, Presentation Mode
 
 ### FDD Unit 3 | Shape & Color *(reuse fdd4)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
 | 3.1 | Color Theory | fdd4/1_1 | 1.4.a |
-| 3.2 | Digital Color: Modes & Gamuts | new | 1.3.b |
-| 3.3 | Shape Tools | new | 4.1.c |
-| 3.4 | Swatches & Gradients | new | 3.3 |
-| 3.5 | Align, Distribute & Arrange | new | 5.4 |
+| 3.2 | Shape Tools | new | 4.1.c |
+| 3.3 | Swatches & Gradients | new | 3.3 |
+| 3.4 | Align, Distribute & Arrange | new | 5.4 |
 | **S3** | **Vector Self-Portrait** | fdd4/s4 | 3.3, 4.1.c, 5.4 |
+| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 3) | — | — |
 
-**Vocab callouts:** color mode, gamut, CMYK, RGB, HSB, grayscale, hex values, spot, rich black · process, spot, and global swatches; Color Guide panel · gradient types, color stops, Gradient Mesh
+*Rationale: S3's ACP tag never covered "Digital Color: Modes & Gamuts" — floated out (also lands
+in Unit 6); Color Theory stays since it's the unit's namesake context even though not itself
+ACP-tagged for S3.*
+
+**Vocab callouts:** color mode, CMYK, RGB, HSB, grayscale, hex values, spot, rich black · process, spot, and global swatches; Color Guide panel · gradient types, color stops, Gradient Mesh
 
 ### FDD Unit 4 | The Pen Tool & Paths *(reuse fdd7 structure)*
 | # | Lesson | Source | ACP |
@@ -211,8 +238,8 @@ Objective domains: 1 Design Industry · 2 Document Management · 3 Workflow & In
 | 4.2 | Pen Tool Bootcamp (guided practice) | fdd7/7_2 expanded | 4.1.a, 4.1.b |
 | 4.3 | Concept Sketches | fdd7/7_3 | 1.1.c |
 | 4.4 | Refining Paths (Join, Simplify, Shape Builder, Pathfinder) | new | 4.2 |
-| 4.5 | Peer Review | fdd7/7_4 | 1.1.c |
-| **S4** | **Low-Poly Stained-Glass** | fdd7/s7 | 4.1, 4.2, 5.1 |
+| **S4** | **Low-Poly Stained-Glass** — Peer Review (was 4.5) now runs as a structured `peerreview.md` pass during S4's project days, not a separate lesson | fdd7/s7 | 4.1, 4.2, 5.1 |
+| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 4) | — | — |
 
 **Vocab callouts:** anchor points, segments, curve an angle · Curvature, Pencil, Paintbrush, Blob Brush, Line Segment · Simplify, Smooth, Join, Clean Up, Outline Stroke, Offset Path · Eraser, Scissors, Knife, Shape Builder, live paint, compound paths, Pathfinder · Selection, Direct Selection, Lasso, Group Selection, Isolation Mode
 
@@ -221,50 +248,84 @@ Objective domains: 1 Design Industry · 2 Document Management · 3 Workflow & In
 |---|---|---|---|
 | 5.1 | Type Anatomy & Classification | new (FDD outcome 5 language) | 1.4.b |
 | 5.2 | Character Settings | new | 4.3.b |
-| 5.3 | Paragraph Settings & Area Type | new | 4.3.c, 4.4.b |
-| 5.4 | Type on a Path & Special Type | new | 4.3.a |
-| 5.5 | Text Flow & Converting to Outlines | new | 4.4.a, 4.4.c |
+| 5.3 | Type on a Path & Special Type | new | 4.3.a |
+| 5.4 | Text Flow & Converting to Outlines | new | 4.4.a, 4.4.c |
 | **S5** | **Typographic Poster** | new | 1.4.b, 4.3–4.4 |
+| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 5) | — | — |
+
+*Rationale: S5's tag is the broad "4.3–4.4" range, which covers all 5 old lessons — Paragraph
+Settings & Area Type is the one that floats (into Unit 6), since Character Settings (4.3.b) is
+the more foundational of the two and shouldn't be the one deferred.*
 
 **Vocab callouts:** font, size, font style, kerning, tracking, leading, horizontal and vertical scale, line length, baseline shift · area type vs. point type vs. type on a path, glyphs, placeholder text · threading text, wrapping text, overflow text · Character Styles, Paragraph Styles, converting text to outlines
 
-### FDD Unit 6 | Layers, Appearance & Effects
+### FDD Unit 6 | Refinement & Output Prep *(new unit — Sep 2026 draft)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 6.1 | The Layers Panel | new | 3.5 |
-| 6.2 | Appearance: Fill & Stroke | new | 5.2.a |
-| 6.3 | Effects: Shadows, Glows & 3D | new | 5.2.b, 4.2.c |
-| 6.4 | Opacity, Blending & Masks | new | 5.3 |
-| 6.5 | Transformations & Live Corners | new | 5.1.b, 4.2.d |
-| **S6** | **Album Cover / Gig Poster** | new | 3.5, 5.2–5.3 |
+| 6.1 | Saving & File Formats *(floated from old Unit 2)* | new | 2.4.a |
+| 6.2 | Digital Color: Modes & Gamuts *(floated from old Unit 3)* | new | 1.3.b |
+| 6.3 | Paragraph Settings & Area Type *(floated from old Unit 5)* | new | 4.3.c, 4.4.b |
+| 6.4 | Transformations & Live Corners *(floated from old Unit 6)* | new | 5.1.b, 4.2.d |
+| **S6** | **Portfolio Polish Project** *(new summative)* — revise/finalize an earlier FDD piece: correct its color mode for its intended output, refine any text with paragraph/area type tools, apply a transformation, and re-export/save it correctly | new | 1.3.b, 4.3.c–4.4.b, 5.1.b, 4.2.d, 2.4.a |
+| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 6) | — | — |
 
-**Vocab callouts:** sublayers, stacking order, merge layers · Appearance panel, Eyedropper, Recolor Artwork · drop shadows, feathers, glows · Transparency panel, opacity masks, blending modes, clipping masks · scaling, warping, distorting, skewing, bounding box, reference points
+*Rationale: this is the one genuinely new unit the calendar math forces (9 units need 9
+summatives; the old draft only had 8). It's built entirely from lessons that floated out of
+Units 2, 3, 5, and 7 because their original summative didn't strictly require them — all four are
+"finishing/output" skills, so a revision-pass summative (polish a piece you already made) is a
+natural, low-invention fit rather than inventing a whole new project brief. Placed after
+Typography since it reuses Paragraph/Area Type immediately.*
 
-### FDD Unit 7 | Brushes, Symbols, Patterns & Image Trace
+**Vocab callouts:** file types · color mode, gamut · area type vs. point type, glyphs, placeholder text, threading/wrapping/overflow text · scaling, warping, distorting, skewing, bounding box, reference points
+
+### FDD Unit 7 | Layers & Appearance
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 7.1 | Brushes | new | 3.4 |
-| 7.2 | Symbols & Graphic Styles | new | 3.4, 5.2.c |
-| 7.3 | Pattern Making | new | 3.4.b |
-| 7.4 | Image Trace | new | 4.1.d |
-| 7.5 | Generative AI in Illustrator | new | 4.1.e |
-| **S7** | **Sticker Pack / Merch Pattern** | new | 3.4, 4.1.d–e |
+| 7.1 | The Layers Panel | new | 3.5 |
+| 7.2 | Appearance: Fill & Stroke | new | 5.2.a |
+| 7.3 | Effects: Shadows, Glows & 3D | new | 5.2.b, 4.2.c |
+| 7.4 | Opacity, Blending & Masks | new | 5.3 |
+| **S7** | **Album Cover / Gig Poster** | new | 3.5, 5.2–5.3 |
+| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 7) | — | — |
 
-**Vocab callouts:** brush types, dynamic vs. static symbols, Generate Patterns, graphic styles · Trace presets, Ignore Color, Threshold, expanding · Generate Vectors, writing prompts
+*Rationale: S7's tag ("3.5, 5.2–5.3") maps exactly onto these 4 lessons and excludes
+Transformations (5.1.b, outside that range) — the one old-Unit-6 lesson that floats, into Unit 6
+above.*
 
-### FDD Unit 8 | The Working Designer: Copyright, Assets & Export
+**Vocab callouts:** sublayers, stacking order, merge layers · Appearance panel, Eyedropper, Recolor Artwork · drop shadows, feathers, glows · Transparency panel, opacity masks, blending modes, clipping masks
+
+### FDD Unit 8 | Brushes, Symbols, Patterns & Image Trace
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 8.1 | Copyright, Licensing & AI Content | new | 1.2 |
-| 8.2 | Project Management & the Client | new | 1.1.d |
-| 8.3 | Placing & Linking Assets | new | 2.3 |
-| 8.4 | Exporting for Screen & Print | new | 2.4.b |
-| 8.5 | Packaging a Project | new | 2.4.c |
-| **S8** | **Client Brand Project** (delivered as packaged files) — uses `designbrief.md` | new | 1.1, 1.2, 2.3–2.4 |
+| 8.1 | Brushes & Pattern Making *(merged: was 7.1 Brushes + 7.3 Pattern Making)* | new | 3.4, 3.4.b |
+| 8.2 | Symbols & Graphic Styles | new | 3.4, 5.2.c |
+| 8.3 | Image Trace | new | 4.1.d |
+| 8.4 | Generative AI in Illustrator | new | 4.1.e |
+| **S8** | **Sticker Pack / Merch Pattern** | new | 3.4, 4.1.d–e |
+| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 8) | — | — |
+
+*Rationale: Brushes and Pattern Making are both surface-decoration techniques already adjacent
+in the old sequence — merging them is lower-risk than floating either one away from its
+summative, which needs both.*
+
+**Vocab callouts:** brush types, dynamic vs. static symbols, Generate Patterns, graphic styles, pattern tiles · Trace presets, Ignore Color, Threshold, expanding · Generate Vectors, writing prompts
+
+### FDD Unit 9 | The Working Designer: Copyright, Assets & Export
+| # | Lesson | Source | ACP |
+|---|---|---|---|
+| 9.1 | Copyright, Licensing & AI Content | new | 1.2 |
+| 9.2 | Managing & Packaging the Client Project *(merged: was 8.2 Project Management/Client + 8.5 Packaging)* | new | 1.1.d, 2.4.c |
+| 9.3 | Placing & Linking Assets | new | 2.3 |
+| 9.4 | Exporting for Screen & Print | new | 2.4.b |
+| **S9** | **Client Brand Project** (delivered as packaged files) — uses `designbrief.md` | new | 1.1, 1.2, 2.3–2.4 |
+| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 9) | — | — |
+
+*Rationale: S9's tag needs all 5 old lessons — Project Management and Packaging are both
+"wrapping up and delivering the project" and merge naturally, same pattern as Unit 8.*
 
 **Vocab callouts:** usage rights, public domain, copyright, intellectual property, derivative work, commercial use, attribution, work for hire, fair use, fair dealing, stock images, AI-generated content, restricted fonts, model and location releases · embedding, linking, Edit Original · Asset Export panel, Use Artboards, file packages
 
-### FDD Extra Units (after spring break)
+### FDD Extra Units (after the Unit 10 ACP exam — Units 11–12, May 4 – Jun 4)
 - **fdd8 | Yearbook Spread** (page-layout project; not on the Illustrator exam)
 - Packaging & promotional design / branding campaign (FDD outcomes 3–4)
 - Scale, measurement & sketchbook work (FDD outcome 2)
@@ -629,7 +690,17 @@ Regional student Emmys ([call for entries](https://natasmid-atlantic.org/student
 
 **Design principles:** (1) anchor every formative to the student's *own working file* — AI can fabricate prose, but not a screenshot of their in-progress artboard/timeline matching today's step; (2) do it in class, timed, not take-home; (3) grade artifacts, not paragraphs; (4) everything on a 0–1–2 scale so grading is a thumbnail scan (~30 sec/student).
 
-Five reusable formats — each lesson uses one, chosen by lesson type:
+**Every unit has exactly 6 formatives (Sep 2026):** the unit's 4 formative lessons each carry
+their own lesson-level formative (F1–F5 below, chosen by lesson type, as already mapped) — **plus
+2 unit-level formatives, both assigned the day the unit's summative is assigned** (i.e. the
+first day of that unit's S-block, not tied to any single lesson):
+
+| # | Format | What students do | Schoology mechanics | Why AI-resistant |
+|---|---|---|---|---|
+| F6 | **Cumulative Vocab Quiz** (unit-level) | Auto-graded quiz covering the *whole unit's* vocabulary (all lessons' `_includes/vocab/` terms, not just one lesson's) | Assigned same day as the summative; drawn from the full unit's vocab bank | Cumulative + timed; can't be crammed from a single lesson's notes |
+| F7 | **Stinger Grade** | A compiled grade from that unit's daily bellringers ("stingers") — the separately-built bellringer deck, not part of these lesson pages | Recorded same day as the summative, from bellringer responses already collected across the unit | Built from responses given live, one bellringer at a time, across the whole unit |
+
+Five lesson-level reusable formats — each of the 4 formative lessons uses one, chosen by lesson type:
 
 | # | Format | What students do | Schoology mechanics | Why AI-resistant |
 |---|---|---|---|---|
