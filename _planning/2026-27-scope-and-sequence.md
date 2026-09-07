@@ -2,10 +2,11 @@
 
 > Planning document — lives in `_planning/` so Jekyll does not publish it.
 >
-> **Goal:** Reorganize each course into cycles of 4–6 formative lessons + 1 summative,
-> aligned to the Adobe Certified Professional 2025 exam objectives, with all objectives
-> covered before spring break (March 26, 2027). Lessons that don't serve the exam move
-> to **Extra Units** taught after spring break.
+> **Goal:** Reorganize each course into cycles of 4 formative lessons + 1 summative (9 units,
+> per the real district calendar — see Calendar Math below), aligned to the Adobe Certified
+> Professional 2025 exam objectives, with all objectives covered before the Unit 10 ACP
+> certification window (Apr 20 – May 3, 2027). Lessons that don't serve the exam move to
+> **Extra Units** taught in Units 11–12, after certification.
 
 | Course | ACP Exam | Existing content reused |
 |---|---|---|
@@ -337,6 +338,14 @@ summative, which needs both.*
 
 Objective domains: 1 Design Industry · 2 Project Setup & Interface · 3 Layers, Masks & Adjustments · 4 Adding Content · 5 Modifying Visual Elements · 6 Publishing
 
+> **Restructured to the real 9-unit-before-exam calendar (Sep 2026 draft — first pass, review
+> before building pages).** Same method as FDD: checked what each summative's ACP tag actually
+> requires, then merged, folded, or floated lessons to reach 9 × 4 = 36. Net result here: **two
+> merges (Selection Tools I+II; Healing/Clone+Content-Aware), and six floated lessons — two of
+> which pair into two more merges — forming one new consolidation unit** positioned right before
+> the final capstone. Same caveat as FDD: this is a first-pass draft, and the GMetrix table /
+> vocab-cluster granularity below are not yet re-verified against this new numbering.
+
 ### PDD Unit 1 | Design Industry & Photography *(reuse pdd1)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
@@ -344,10 +353,15 @@ Objective domains: 1 Design Industry · 2 Project Setup & Interface · 3 Layers,
 | 1.2 | Elements & Principles Review | new (reuse FDD blocks) | 1.4.a |
 | 1.3 | Photography Basics | pdd1/1_1 | 1.4.a |
 | 1.4 | Composition for the Camera | new | 1.4.a |
-| 1.5 | Communicating Design Plans | new (shared block w/ FDD 1.5) | 1.1.c, 1.1.d |
 | **S1** | **Photo Composition Scavenger Hunt** | new | 1.4 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 1) | — | — |
 
-**Vocab callouts:** client goals, target audience, demographics, accessibility · depth of field, field of view, white balance, rule of thirds, framing, aspect ratio · sketches, specifications, iterations, change orders, drafts, feedback loop, style guide, project briefs · project scope, scope creep, project timeline
+*Rationale: S1's tag ("1.4") is only ever hit by 1.2/1.3/1.4 — "Communicating Design Plans" (1.5)
+isn't required here, and floats out (it pairs with old Unit 8's Delivery lesson in the new
+Unit 8 below — communicating the plan and delivering the file are two ends of the same client
+relationship).*
+
+**Vocab callouts:** depth of field, field of view, white balance, rule of thirds, framing, aspect ratio · space, line, shape, form, color and color value, texture, emphasis, balance, rhythm
 
 ### PDD Unit 2 | Photoshop Interface & Documents
 | # | Lesson | Source | ACP |
@@ -356,44 +370,59 @@ Objective domains: 1 Design Industry · 2 Project Setup & Interface · 3 Layers,
 | 2.2 | New Documents & Presets | new | 2.1 |
 | 2.3 | The Photoshop Interface | new | 2.2.a, 2.2.b |
 | 2.4 | Navigation & Design Aids | new | 2.2.c, 2.2.d |
-| 2.5 | Digital Color & the Histogram | new | 1.3.b |
 | **S2** | **Studio Setup + Collage Warm-Up** | new | 2.1–2.2 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 2) | — | — |
 
-**Vocab callouts:** image resolution, image size, pixel, raster, vector, resampling, resizing · width/height, orientation, resolution, color mode, bit depth, background, metadata · options bar, contextual taskbar, docking panels · color modes, bit depth, gamut, histogram
+*Rationale: S2's tag ("2.1–2.2") doesn't cover "Digital Color & the Histogram" (1.3.b) — floats
+out (pairs with old Unit 6's Color/Swatches/Gradients lesson in the new Unit 8 below).*
+
+**Vocab callouts:** image resolution, image size, pixel, raster, vector, resampling, resizing · width/height, orientation, background, metadata · options bar, contextual taskbar, docking panels
 
 ### PDD Unit 3 | Layers & Selections
 | # | Lesson | Source | ACP |
 |---|---|---|---|
 | 3.1 | The Layers Panel | new | 3.1.a |
 | 3.2 | Opacity & Blending Modes | new | 3.1.b |
-| 3.3 | Selection Tools I (marquee, lasso, wand) | new | 5.1.a |
-| 3.4 | Selection Tools II (Select Subject, Object Selection, Sky) | new | 5.1.a |
-| 3.5 | Refining, Saving & Loading Selections | new | 5.1.b, 5.1.c |
+| 3.3 | Selection Tools (Manual & AI-Assisted) *(merged: was 3.3 marquee/lasso/wand + 3.4 Select Subject/Object/Sky)* | new | 5.1.a |
+| 3.4 | Refining, Saving & Loading Selections | new | 5.1.b, 5.1.c |
 | **S3** | **Impossible Composite** ("put yourself somewhere impossible") | new | 3.1, 5.1 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 3) | — | — |
+
+*Rationale: S3's broad tag ("3.1, 5.1") requires all 5 old lessons — merging the two Selection
+Tools lessons (manual methods, then AI-assisted ones) is a natural progression pairing, not a
+content cut.*
 
 **Vocab callouts:** grouping vs. linking, flattening and merging · fill opacity, opacity, blending mode · Quick Selection, Magic Wand, Select Subject, Object Selection, Selection Brush, Select Color Range · feather, expand, contract, inverse, deselect · channels
 
 ### PDD Unit 4 | Masks & Nondestructive Editing
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 4.1 | Destructive vs. Nondestructive | new | 1.3.c |
-| 4.2 | Pixel Masks & Select and Mask | new | 3.2.a, 3.2.b |
-| 4.3 | Vector, Clipping & Frame Masks | new | 3.2.c–e |
-| 4.4 | Adjustment Layers | new | 3.3.a |
-| 4.5 | Adjustment Presets & Smart Filters | new | 3.3.b |
+| 4.1 | Pixel Masks & Select and Mask | new | 3.2.a, 3.2.b |
+| 4.2 | Vector, Clipping & Frame Masks | new | 3.2.c–e |
+| 4.3 | Adjustment Layers | new | 3.3.a |
+| 4.4 | Adjustment Presets & Smart Filters | new | 3.3.b |
 | **S4** | **Surreal Landscape Composite** | new | 3.2–3.3 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 4) | — | — |
 
-**Vocab callouts:** destructive vs. nondestructive editing · revealing, concealing, gradient mask, Select and Mask · clipping mask, Paste Into · adjustments vs. adjustment layers, Adjustment Brush, Smart Filters
+*Rationale: S4's tag ("3.2–3.3") doesn't cover "Destructive vs. Nondestructive" (1.3.c) — the
+concept lesson floats out (it's the natural framing lesson to open the new Unit 8 below, since
+that unit is itself about revisiting/refining earlier work non-destructively).*
+
+**Vocab callouts:** revealing, concealing, gradient mask, Select and Mask · clipping mask, Paste Into · adjustments vs. adjustment layers, Adjustment Brush, Smart Filters
 
 ### PDD Unit 5 | Retouching & Repair
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 5.1 | Healing & Clone Tools | new | 5.2.a |
-| 5.2 | Content-Aware & Generative Remove | new | 5.2.a, 4.1.c |
-| 5.3 | Exposure: Dodge, Burn & Sponge | new | 5.2.b |
-| 5.4 | Crop, Straighten & Canvas | new | 5.3.a |
-| 5.5 | Transformations | new | 5.3.b |
+| 5.1 | Healing, Cloning & Content-Aware Repair *(merged: was 5.1 Healing/Clone Tools + 5.2 Content-Aware/Generative Remove)* | new | 5.2.a, 4.1.c |
+| 5.2 | Exposure: Dodge, Burn & Sponge | new | 5.2.b |
+| 5.3 | Crop, Straighten & Canvas | new | 5.3.a |
+| 5.4 | Transformations | new | 5.3.b |
 | **S5** | **Photo Restoration Project** | new | 5.2–5.3 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 5) | — | — |
+
+*Rationale: S5's broad tag ("5.2–5.3") requires all 5 old lessons — Content-Aware/Generative
+Remove is functionally an AI-powered healing tool, so merging it with Healing & Clone Tools is
+the closer content pairing (vs. forcing a float that would leave restoration skills split).*
 
 **Vocab callouts:** healing tools, clone tools, Content-Aware, Remove, Find Distractions, Patch · Burn, Dodge, Sponge · Crop, Perspective Crop, Straighten, non-destructive crop, resampling · rotate, resize, warp, distort, skew, flip, perspective
 
@@ -401,13 +430,16 @@ Objective domains: 1 Design Industry · 2 Project Setup & Interface · 3 Layers,
 | # | Lesson | Source | ACP |
 |---|---|---|---|
 | 6.1 | Brushes & Patterns | new | 2.5, 4.1.a |
-| 6.2 | Color, Swatches & Gradients | new | 2.4 |
-| 6.3 | Vector Shapes & the Pen in Photoshop | new | 4.2 |
-| 6.4 | Type Tools & Character Settings | new | 4.3.a, 4.3.b |
-| 6.5 | Warp Text & Type as Graphics | new | 4.3.c |
+| 6.2 | Vector Shapes & the Pen in Photoshop | new | 4.2 |
+| 6.3 | Type Tools & Character Settings | new | 4.3.a, 4.3.b |
+| 6.4 | Warp Text & Type as Graphics | new | 4.3.c |
 | **S6** | **Movie Poster** | new | 4.1–4.3 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 6) | — | — |
 
-**Vocab callouts:** Pencil, Brush, Smudge, Sharpen, Blur, Paint Bucket · Eraser, Background Eraser, Magic Eraser, History Brush · Gradient panel, transparency stops, ASE file · Pen, Freeform Pen, Curvature Pen, Custom Shape · Commit button, Type on a Path, Warp Text · rasterizing type, converting text to Smart Object
+*Rationale: S6's tag ("4.1–4.3") doesn't cover "Color, Swatches & Gradients" (2.4) — floats out
+(pairs with Unit 2's Digital Color/Histogram lesson in the new Unit 8 below).*
+
+**Vocab callouts:** Pencil, Brush, Smudge, Sharpen, Blur, Paint Bucket · Eraser, Background Eraser, Magic Eraser, History Brush · Pen, Freeform Pen, Curvature Pen, Custom Shape · Commit button, Type on a Path, Warp Text · rasterizing type, converting text to Smart Object
 
 ### PDD Unit 7 | Smart Objects, Filters & Styles
 | # | Lesson | Source | ACP |
@@ -416,24 +448,49 @@ Objective domains: 1 Design Industry · 2 Project Setup & Interface · 3 Layers,
 | 7.2 | Linked vs. Embedded | new | 2.3.a, 3.1.c |
 | 7.3 | Filters & Smart Filters | new | 5.4.a |
 | 7.4 | Layer Styles & Materials | new | 5.4.b, 5.4.c |
-| 7.5 | AI Tools: Sky Replacement & Generative Fill | new | 4.1.c |
 | **S7** | **Product Mockup / Album Art** | new | 2.3, 5.4 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 7) | — | — |
 
-**Vocab callouts:** embedding, linking, Camera Raw, Convert to Link, Relink to File, linked Smart Objects, Edit Content · Convert to Layers, Convert to Smart Object · Smart Filters vs. filters · layer styles, materials, generative AI prompt writing
+*Rationale: S7's tag ("2.3, 5.4") doesn't cover "AI Tools: Sky Replacement & Generative Fill"
+(4.1.c) — floats out into the new Unit 8 below.*
 
-### PDD Unit 8 | Copyright, Publishing & Exam Prep
+**Vocab callouts:** embedding, linking, Camera Raw, Convert to Link, Relink to File, linked Smart Objects, Edit Content · Convert to Layers, Convert to Smart Object · Smart Filters vs. filters · layer styles, materials
+
+### PDD Unit 8 | Client Communication & Creative Refinement *(new unit — Sep 2026 draft)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 8.1 | Copyright & Licensing | new (shared block w/ FDD 8.1) | 1.2.a |
-| 8.2 | Model & Location Releases | new | 1.2.b |
-| 8.3 | Saving & Native Formats | new | 6.2.a |
-| 8.4 | Export for Web, Print & Transparency | new | 6.1, 6.2.b |
-| 8.5 | Delivery & File Management | new | 1.1.d |
-| **S8** | **Client Deliverable Set** + ACP practice exam | new | 1.2, 6.1–6.2 |
+| 8.1 | Destructive vs. Nondestructive *(floated from old Unit 4)* | new | 1.3.c |
+| 8.2 | Color Tools: Swatches, Gradients & the Histogram *(merged: floated 2.5 Digital Color/Histogram + floated 6.2 Color/Swatches/Gradients)* | new | 1.3.b, 2.4 |
+| 8.3 | AI Tools: Sky Replacement & Generative Fill *(floated from old Unit 7)* | new | 4.1.c |
+| 8.4 | Client Communication & Delivery *(merged: floated 1.5 Communicating Design Plans + floated 8.5 Delivery/File Management)* | new (shared block w/ FDD 1.5) | 1.1.c–d |
+| **S8** | **Portfolio Refresh Project** *(new summative)* — revise an earlier composite: adjust its color/swatches via the histogram, verify a non-destructive workflow, try an AI-assisted touch-up, and draft a client-facing delivery summary | new | 1.3.b–c, 2.4, 4.1.c, 1.1.c–d |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 8) | — | — |
 
-**Vocab callouts:** usage rights, public domain, copyright, intellectual property, derivative work, commercial use, attribution, work for hire, fair use, fair dealing, AI-generated content · model release, location release · Quick Export, Export As, exporting artboards · file formats that support transparency, color space, saving as a copy
+*Rationale: the 9th unit/summative the calendar math requires (9 units need 9 summatives; the
+old draft had 8), built from the 4 lessons that floated out of Units 1, 2, 4, 6, and 7 because
+their original summative didn't require them. Positioned right before the final capstone so its
+"revise and refine, then communicate delivery" framing leads naturally into the Client
+Deliverable Set.*
 
-### PDD Extra Units (after spring break)
+**Vocab callouts:** destructive vs. nondestructive editing · color mode, bit depth, gamut, histogram · Gradient panel, transparency stops, ASE file · generative AI prompt writing · sketches, specifications, style guide, project briefs, project scope, scope creep · model release, location release
+
+### PDD Unit 9 | Copyright, Publishing & Delivery
+| # | Lesson | Source | ACP |
+|---|---|---|---|
+| 9.1 | Copyright & Licensing | new (shared block w/ FDD 8.1) | 1.2.a |
+| 9.2 | Model & Location Releases | new | 1.2.b |
+| 9.3 | Saving & Native Formats | new | 6.2.a |
+| 9.4 | Export for Web, Print & Transparency | new | 6.1, 6.2.b |
+| **S9** | **Client Deliverable Set** | new | 1.2, 6.1–6.2 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 9) | — | — |
+
+*Rationale: S9's tag needs exactly these 4 (Delivery & File Management already moved to Unit 8's
+merged lesson). Dropped "+ ACP practice exam" from the summative name — that's now Unit 10's job,
+not this course's last content unit's.*
+
+**Vocab callouts:** usage rights, public domain, copyright, intellectual property, derivative work, commercial use, attribution, work for hire, fair use, fair dealing, AI-generated content · Quick Export, Export As · file formats that support transparency, color space, saving as a copy
+
+### PDD Extra Units (after the Unit 10 ACP exam — Units 11–12, May 4 – Jun 4)
 - Web design & online portfolio (PDD outcome 8 — HTML, SEO, web-safe fonts; not on the Photoshop exam) → `portfolio/googlesites.md`
 - Print production & mounting/matting for display (PDD outcome 7)
 - Morgue file / idea library development
@@ -445,27 +502,44 @@ Objective domains: 1 Design Industry · 2 Project Setup & Interface · 3 Layers,
 Objective domains: 1 Video Industry · 2 Project Setup & Interface · 3 Organizing Projects · 4 Creating & Modifying Elements · 5 Publishing
 **This course mostly reorders existing units.** New unit numbers below; source unit in parentheses.
 
+> **Restructured to the real 9-unit-before-exam calendar (Sep 2026 draft — first pass, review
+> before building pages).** Same method as FDD/PDD. Two things unique to ADD: **old Unit 4
+> already had 6 lessons** (not 5), the worst overage of any course; and **old Unit 8's "ACP
+> Practice Exam & Review" (8.5) is now simply retired**, not floated — that job belongs to the
+> shared Unit 10 exam window, not a lesson inside this course's content. Net result: **three
+> merges (Topic+Brief; Shot Analysis+Camera Technique; Script Formatting+Storyboarding), one
+> fold-into-project-time (Peer Review & Revision, reusing the same `peerreview.md` pattern as
+> FDD Unit 4), one retirement, and four floated lessons forming one new consolidation unit**
+> positioned before the final capstone, same placement as PDD's. Same caveat: first-pass draft;
+> GMetrix table and vocab-cluster granularity not yet re-verified against this numbering.
+
 ### ADD Unit 1 | Elements of Video & Pre-Production *(= current add1)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
 | 1.1 | Intro to Digital Video Production | add1/1_4md | 1.1.d |
-| 1.2 | Pick a Topic | add1/1_1 | 1.1.a |
-| 1.3 | Design Brief | add1/1_2 (`designbrief.md`) | 1.1.a, 1.1.c |
-| 1.4 | Two-Column Script | add1/1_3 | 1.1.c |
-| 1.5 | Film Form & Shot Vocabulary | new | 1.4.c |
+| 1.2 | Topic Selection & Design Brief *(merged: was 1.2 Pick a Topic + 1.3 Design Brief)* | add1/1_1, add1/1_2 (`designbrief.md`) | 1.1.a, 1.1.c |
+| 1.3 | Two-Column Script | add1/1_3 | 1.1.c |
+| 1.4 | Film Form & Shot Vocabulary | new | 1.4.c |
 | **S1** | **Explainer Video** | add1/s1 | 1.1, 1.4 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 1) | — | — |
 
-**Vocab callouts:** client goals, target audience, demographics · shot list, scriptwriting, storyboarding, edit list, transcripts · frame rate, frame size, aspect ratio, safe areas, codecs, pixels, rendering · CU, ECU, MCU, MS, WS, LS, ELS, OTS, POV, cutaway · rule of thirds, foreground, background, depth of field, field of view
+*Rationale: S1's broad tag ("1.1, 1.4") requires all 5 old lessons — topic selection flows
+directly into writing the brief for that topic, a natural single-lesson pairing.*
+
+**Vocab callouts:** client goals, target audience, demographics · shot list, scriptwriting, storyboarding, edit list, transcripts · frame rate, frame size, aspect ratio, safe areas, codecs, pixels, rendering · CU, ECU, MCU, MS, WS, LS, ELS, OTS, POV, cutaway
 
 ### ADD Unit 2 | Editing in Premiere *(= current add2)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 2.1 | What Does an Editor Do? | add2/2_4md | 1.4.b |
-| 2.2 | Projects, Sequences & Bins | new | 2.1, 3.1, 3.2 |
-| 2.3 | Video Editing Basics | add2/2_1 | 2.2, 2.3, 4.1 |
-| 2.4 | Transitions / Conventions | add2/2_2 | 1.4.b, 4.5.b |
-| 2.5 | Standards, Formats & Frame Rates | add2/2_3 | 1.1.b, 2.1.b |
+| 2.1 | Projects, Sequences & Bins | new | 2.1, 3.1, 3.2 |
+| 2.2 | Video Editing Basics | add2/2_1 | 2.2, 2.3, 4.1 |
+| 2.3 | Transitions / Conventions | add2/2_2 | 1.4.b, 4.5.b |
+| 2.4 | Standards, Formats & Frame Rates | add2/2_3 | 1.1.b, 2.1.b |
 | **S2** | **Television Scene Edit** | add2/s2 (`premieresetup.md`) | 2.1–2.4, 4.1 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 2) | — | — |
+
+*Rationale: "What Does an Editor Do?" (1.4.b, career/industry framing) isn't a hands-on
+requirement for cutting the scene — floats out into the new Unit 8 below.*
 
 **Vocab callouts:** project settings, scratch disks, sequence presets, timecode · Project panel, Source/Program Monitors, Properties panel · playhead, JKL navigation, markers · In and Out points, insert, overwrite, lift, extract · bins, relinking, labeling clips · L and J cuts, cross cutting, match cuts, cutting on the action, cutaway, montage, jump cut
 
@@ -476,8 +550,8 @@ Objective domains: 1 Video Industry · 2 Project Setup & Interface · 3 Organizi
 | 3.2 | Make | add3/3_2 (`organizevideo.md`) | 4.1 |
 | 3.3 | Edit + Text-Based Editing | add3/3_3 expanded | 4.2 |
 | 3.4 | Captions & Accessibility | new | 1.2, 4.3.c |
-| 3.5 | Peer Review & Revision | add3/3_4md | 1.1.c |
-| **S3** | **News Story** | add3/s3 | 1.2, 4.2–4.3 |
+| **S3** | **News Story** — Peer Review & Revision (was 3.5) now runs as a structured `peerreview.md` pass during S3's project days, not a separate lesson | add3/s3 | 1.2, 4.2–4.3 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 3) | — | — |
 
 **Vocab callouts:** captions, subtitles, audio descriptions · transcripts, auto transcribing, filler words, lift and extract, Cut (Extract), Delete (Ripple) · text overlays, color contrast, audio clarity · MOGRTs, point text, paragraph text
 
@@ -485,18 +559,22 @@ Objective domains: 1 Video Industry · 2 Project Setup & Interface · 3 Organizi
 | # | Lesson | Source | ACP |
 |---|---|---|---|
 | 4.1 | Video Styles: Essay, Doc, Music Video, PSA & More | new | 1.1.a, 1.1.b |
-| 4.2 | Shot Analysis | add7/7_1 (retarget examples from music videos to video essays) | 1.4.b |
-| 4.3 | Camera Moves, Angles, Framing, Exposure | add7/7_2 | 1.4.a, 1.4.c |
-| 4.4 | Storyboard & Shot List | add7/7_4 | 1.1.c |
-| 4.5 | Color Correction & Grading | add7/7_3 | 4.5.a |
-| 4.6 | Transform, Resize & Speed | new | 4.4 |
+| 4.2 | Shot Analysis & Camera Technique *(merged: was 4.2 Shot Analysis + 4.3 Camera Moves/Angles/Framing/Exposure)* | add7/7_1, add7/7_2 | 1.4.a–b, 1.4.c |
+| 4.3 | Storyboard & Shot List | add7/7_4 | 1.1.c |
+| 4.4 | Color Correction & Grading | add7/7_3 | 4.5.a |
 | **S4** | **Video Essay** — solo shot-and-edited, no narration, story told through sequencing, natural sound, and original/royalty-free music only | new (replaces add7/s7) | 1.4, 4.4–4.5 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 4) | — | — |
+
+*Rationale: this old unit had 6 lessons, not 5 — the worst overage in the course. Shot Analysis
+and Camera Moves are already a natural pairing (analyzing shots informs how you shoot them);
+"Transform, Resize & Speed" (old 4.6, 4.4) floats out into the new Unit 8 below since S4's
+sequencing/grading focus doesn't require it.*
 
 **Lesson 4.1 defines the styles by purpose, audience, and convention** — video essay (visual argument, no narration), documentary (interview/VO-driven), news package (reporter-led, the Unit 3 form), music video (performance/concept cut to a track), PSA vs. commercial (cause vs. product persuasion), narrative short (the Unit 7 form) — so students can name what they're making and why the conventions differ. This doubles as NATAS category-selection literacy.
 
 **Summative constraints are competition-derived:** solo photographer/editor + no narration = NATAS H-15 eligible; original/royalty-free audio keeps every entry clear of licensing documentation.
 
-**Vocab callouts:** aperture, shutter speed, ISO, color space, white balance · sequencing shots, B-roll, establishing shots vs. closing shots, montage, matching shots, wide vs. tight shots · Lumetri: Basic Correction, Creative, LUTs · scale, rotation, letterboxing, Generative Expand · Rolling Edit, Ripple Edit, Rate Stretch, time remapping, freeze frame
+**Vocab callouts:** aperture, shutter speed, ISO, color space, white balance · sequencing shots, B-roll, establishing shots vs. closing shots, montage, matching shots, wide vs. tight shots · Lumetri: Basic Correction, Creative, LUTs
 
 ### ADD Unit 5 | Audio & Podcasting *(= current add5)*
 | # | Lesson | Source | ACP |
@@ -505,8 +583,11 @@ Objective domains: 1 Video Industry · 2 Project Setup & Interface · 3 Organizi
 | 5.2 | Podcast Script | add5/5_2 | 1.1.c |
 | 5.3 | Recording & Voice-Over | new | 4.7.e |
 | 5.4 | Essential Sound: Mixing & Repair | new | 4.7.c, 4.7.d |
-| 5.5 | Asset Management & Submission | add5/5_3 | 3.1 |
 | **S5** | **Podcast Episode** (incl. add5/5_4 Final Export & Delivery + Reflect & Evaluate) | add5/s5 | 4.7, 5.3 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 5) | — | — |
+
+*Rationale: "Asset Management & Submission" (old 5.5, 3.1) is a wrap-up/housekeeping step, not a
+production skill S5 itself requires — floats out into the new Unit 8 below.*
 
 **Vocab callouts:** clipping, levels, natural/ambient sound, room tone, foley, sampling rates · audio gain, conforming, fade handles · Enhance Speech, Loudness Auto-Match, Auto Ducking, Repair, Remix · voice-over record, scratch track · mono and stereo tracks, syncing audio
 
@@ -517,36 +598,62 @@ Objective domains: 1 Video Industry · 2 Project Setup & Interface · 3 Organizi
 | 6.2 | Keyframes: Motion & Opacity | new (adapt add4/4_1 "Elements of Motion") | 4.6 |
 | 6.3 | Keying & Green Screen | new | 4.5.d |
 | 6.4 | Mattes, Masks & Picture-in-Picture | new | 4.5.d |
-| 6.5 | Pacing | adapt add4/4_2 | 1.4.b |
 | **S6** | **Title Sequence / Effects Reel** (in Premiere) | new | 4.5–4.6 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 6) | — | — |
 
-**Vocab callouts:** adjustment layer, nesting, copy and paste attributes · keyframes, temporal and spatial interpolation · keying (Luma, Chroma, Ultra), mattes, alpha channel, picture-in-picture · motion, opacity, stacking order
+*Rationale: S6's tag ("4.5–4.6") doesn't cover "Pacing" (1.4.b, an editing-craft/theory lesson)
+— floats out into the new Unit 8 below.*
+
+**Vocab callouts:** adjustment layer, nesting, copy and paste attributes · keyframes, temporal and spatial interpolation · keying (Luma, Chroma, Ultra), mattes, alpha channel, picture-in-picture
 
 ### ADD Unit 7 | The Short Film *(= current add8 + production lessons from add9)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 7.1 | Standard Script Formatting | add8/8_1 | 1.1.c |
-| 7.2 | Storyboarding | add8/8_2 | 1.1.c |
-| 7.3 | Purpose & Description | add8/8_3 | 1.1.a |
-| 7.4 | Production Plan | add9/9_3 | 1.1.d |
-| 7.5 | Releases, Rights & Budget | add9/9_4 + new | 1.3 |
+| 7.1 | Script Formatting & Storyboarding *(merged: was 7.1 Standard Script Formatting + 7.2 Storyboarding)* | add8/8_1, add8/8_2 | 1.1.c |
+| 7.2 | Purpose & Description | add8/8_3 | 1.1.a |
+| 7.3 | Production Plan | add9/9_3 | 1.1.d |
+| 7.4 | Releases, Rights & Budget | add9/9_4 + new | 1.3 |
 | **S7** | **Short Film** | add8/s8 | 1.1, 1.3, synthesis of 4.x |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 7) | — | — |
+
+*Rationale: S7's broad tag requires all 5 old lessons — Script Formatting and Storyboarding are
+sequential pre-production steps, a natural merge (same pattern as ADD Unit 1's Topic+Brief).*
 
 **Vocab callouts:** scope and sequence, dailies, pre-production/post-production, tech sheets · talent release, rights, permissions, licensing, attribution, public spaces · usage rights, copyright, intellectual property, derivative work, remixing, AI-generated content
 
-### ADD Unit 8 | Publishing & Delivery + Exam Prep
+### ADD Unit 8 | The Editor's Toolkit: Pacing, Polish & Professional Practice *(new unit — Sep 2026 draft)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 8.1 | Sequence QC: Gaps, Levels & Safe Margins | new | 5.1 |
-| 8.2 | Auto Reframe & Multi-Platform Versions | new | 5.2 |
-| 8.3 | Export & Media Encoder | new (grow `delivervideo.md`/`exportvideo.md`) | 5.3.a, 5.3.b |
-| 8.4 | Archiving with the Project Manager | new | 5.3.c |
-| 8.5 | ACP Practice Exam & Review | new | all |
-| **S8** | **Multi-Platform Delivery** of the short film (16:9 / 9:16 / 1:1 + archive) | new | 5.1–5.3 |
+| 8.1 | What Does an Editor Do? *(floated from old Unit 2)* | add2/2_4md | 1.4.b |
+| 8.2 | Pacing *(floated from old Unit 6)* | adapt add4/4_2 | 1.4.b |
+| 8.3 | Transform, Resize & Speed *(floated from old Unit 4)* | new | 4.4 |
+| 8.4 | Asset Management & Submission *(floated from old Unit 5)* | add5/5_3 | 3.1 |
+| **S8** | **Edit Polish Project** *(new summative)* — re-cut an earlier project (Television Scene Edit or Video Essay) with refined pacing, a transform/speed effect, correct asset management/archiving, plus a short written reflection on the editor's role | new | 1.4.b, 4.4, 3.1 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 8) | — | — |
+
+*Rationale: the 9th unit/summative the calendar math requires, built from the 4 lessons that
+floated out of Units 2, 4, 5, and 6 because their original summative didn't require them — all
+four are "editor's craft, revisited" skills, so a polish/re-cut summative fits without inventing
+a new project brief. Same placement (before the final capstone) as PDD's new unit.*
+
+**Vocab callouts:** editorial judgment, pacing, rhythm, tension · scale, rotation, letterboxing, Generative Expand, Rolling Edit, Ripple Edit, Rate Stretch, time remapping, freeze frame · bins, relinking, labeling clips, archiving
+
+### ADD Unit 9 | Publishing & Delivery
+| # | Lesson | Source | ACP |
+|---|---|---|---|
+| 9.1 | Sequence QC: Gaps, Levels & Safe Margins | new | 5.1 |
+| 9.2 | Auto Reframe & Multi-Platform Versions | new | 5.2 |
+| 9.3 | Export & Media Encoder | new (grow `delivervideo.md`/`exportvideo.md`) | 5.3.a, 5.3.b |
+| 9.4 | Archiving with the Project Manager | new | 5.3.c |
+| **S9** | **Multi-Platform Delivery** of the short film (16:9 / 9:16 / 1:1 + archive) | new | 5.1–5.3 |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 9) | — | — |
+
+*Rationale: "ACP Practice Exam & Review" (old 8.5) is retired outright, not floated — that's now
+Unit 10's dedicated job, not a lesson inside this unit's content.*
 
 **Vocab callouts:** gaps in timeline, safe margins · Auto Reframe, target aspect ratio, motion tracking, clip nesting · codecs, alpha channels, Quick Export, batch processing, queue · Project Manager, collect files, consolidate and transcode
 
-### ADD Extra Units (after spring break)
+### ADD Extra Units (after the Unit 10 ACP exam — Units 11–12, May 4 – Jun 4)
 - **add7 | Music Video** (former Unit 4 summative, add7/s7) — great post-exam project; copyright/licensing lesson from Unit 7 makes a natural lead-in, and students already have the cinematography skills
 - **add4 | Motion Graphics (After Effects)** — whole unit including Suns and Moons, Scratch!, `exportae.md` (After Effects is not on the Premiere exam)
 - **add9 | Production Book** as a standalone summative (remaining lessons: 9_1/9_2 script formatting duplicates of add8)
@@ -637,7 +744,7 @@ Events whose deliverables already match fall unit summatives — the TSA annual 
 | **Audio Podcasting** (theme-based podcast + development documentation) | ADD Unit 5 — Audio & Podcasting | Dec – mid Jan | Direct 1:1 — planner + script + episode = full entry |
 | **Photographic Technology** (photo portfolio conveying the annual theme) | PDD Unit 1 (shoot) → curated through Unit 5 (retouch) | Sep shoot; Dec polish | Strong — start the portfolio in Unit 1, finish it with Unit 5 retouching skills |
 | **Digital Video Production** (theme video + storyboard, script, equipment docs) | ADD Unit 1 — pre-production docs; Explainer Video as entry | Sep – early Oct | Strong — point the Explainer Video at the annual theme; docs map 1:1. (A more polished entry can be re-cut from the spring Short Film.) |
-| **Promotional Design** (packet of 4+ printed items) | FDD Unit 5 — Typographic Poster as first packet item | December | Partial — seed it in Unit 5; the full packet is the natural spring Unit 8 client-brand summative |
+| **Promotional Design** (packet of 4+ printed items) | FDD Unit 5 — Typographic Poster as first packet item | December | Partial — seed it in Unit 5; the full packet is the natural spring Unit 9 client-brand summative |
 
 ### NATAS Mid-Atlantic High School Student Production Awards (ADD)
 
