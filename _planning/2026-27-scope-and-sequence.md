@@ -192,7 +192,7 @@ Objective domains: 1 Design Industry · 2 Document Management · 3 Workflow & In
 | 1.3 | Purpose, Audience & Client Goals | new | 1.1.a, 1.1.b |
 | 1.4 | Communicating Design Plans | new | 1.1.c, 1.1.d |
 | **S1** | **Design Elements Exercises** | fdd1/1_1 (promote to summative) | 1.4 |
-| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 1) | — | — |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 1) | — | — |
 
 *Rationale: S1's own ACP tag ("1.4") only ever required the old 1.2+1.3 pair — merging them
 (a standard "elements vs. principles" pairing anyway) is the one clean way to hit 4 without
@@ -208,7 +208,7 @@ touching the two client-facing lessons, which aren't optional lead-ins.*
 | 2.3 | Documents & Artboards | new | 2.1, 2.2 |
 | 2.4 | Design Aids: Rulers, Guides, Grids, Views | new | 3.2 |
 | **S2** | **Artboard Sampler** (multi-artboard shape compositions) | new | 2.1–2.2, 3.1–3.2 |
-| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 2) | — | — |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 2) | — | — |
 
 *Rationale: S2's ACP tag never covered "Saving & File Formats" — floated out, landing in the new
 Unit 6 below instead of forcing a merge here.*
@@ -223,7 +223,7 @@ Unit 6 below instead of forcing a merge here.*
 | 3.3 | Swatches & Gradients | new | 3.3 |
 | 3.4 | Align, Distribute & Arrange | new | 5.4 |
 | **S3** | **Vector Self-Portrait** | fdd4/s4 | 3.3, 4.1.c, 5.4 |
-| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 3) | — | — |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 3) | — | — |
 
 *Rationale: S3's ACP tag never covered "Digital Color: Modes & Gamuts" — floated out (also lands
 in Unit 6); Color Theory stays since it's the unit's namesake context even though not itself
@@ -239,7 +239,7 @@ ACP-tagged for S3.*
 | 4.3 | Concept Sketches | fdd7/7_3 | 1.1.c |
 | 4.4 | Refining Paths (Join, Simplify, Shape Builder, Pathfinder) | new | 4.2 |
 | **S4** | **Low-Poly Stained-Glass** — Peer Review (was 4.5) now runs as a structured `peerreview.md` pass during S4's project days, not a separate lesson | fdd7/s7 | 4.1, 4.2, 5.1 |
-| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 4) | — | — |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 4) | — | — |
 
 **Vocab callouts:** anchor points, segments, curve an angle · Curvature, Pencil, Paintbrush, Blob Brush, Line Segment · Simplify, Smooth, Join, Clean Up, Outline Stroke, Offset Path · Eraser, Scissors, Knife, Shape Builder, live paint, compound paths, Pathfinder · Selection, Direct Selection, Lasso, Group Selection, Isolation Mode
 
@@ -251,7 +251,7 @@ ACP-tagged for S3.*
 | 5.3 | Type on a Path & Special Type | new | 4.3.a |
 | 5.4 | Text Flow & Converting to Outlines | new | 4.4.a, 4.4.c |
 | **S5** | **Typographic Poster** | new | 1.4.b, 4.3–4.4 |
-| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 5) | — | — |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 5) | — | — |
 
 *Rationale: S5's tag is the broad "4.3–4.4" range, which covers all 5 old lessons — Paragraph
 Settings & Area Type is the one that floats (into Unit 6), since Character Settings (4.3.b) is
@@ -267,7 +267,7 @@ the more foundational of the two and shouldn't be the one deferred.*
 | 6.3 | Paragraph Settings & Area Type *(floated from old Unit 5)* | new | 4.3.c, 4.4.b |
 | 6.4 | Transformations & Live Corners *(floated from old Unit 6)* | new | 5.1.b, 4.2.d |
 | **S6** | **Portfolio Polish Project** *(new summative)* — revise/finalize an earlier FDD piece: correct its color mode for its intended output, refine any text with paragraph/area type tools, apply a transformation, and re-export/save it correctly | new | 1.3.b, 4.3.c–4.4.b, 5.1.b, 4.2.d, 2.4.a |
-| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 6) | — | — |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 6) | — | — |
 
 *Rationale: this is the one genuinely new unit the calendar math forces (9 units need 9
 summatives; the old draft only had 8). It's built entirely from lessons that floated out of
@@ -286,7 +286,7 @@ Typography since it reuses Paragraph/Area Type immediately.*
 | 7.3 | Effects: Shadows, Glows & 3D | new | 5.2.b, 4.2.c |
 | 7.4 | Opacity, Blending & Masks | new | 5.3 |
 | **S7** | **Album Cover / Gig Poster** | new | 3.5, 5.2–5.3 |
-| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 7) | — | — |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 7) | — | — |
 
 *Rationale: S7's tag ("3.5, 5.2–5.3") maps exactly onto these 4 lessons and excludes
 Transformations (5.1.b, outside that range) — the one old-Unit-6 lesson that floats, into Unit 6
@@ -302,7 +302,7 @@ above.*
 | 8.3 | Image Trace | new | 4.1.d |
 | 8.4 | Generative AI in Illustrator | new | 4.1.e |
 | **S8** | **Sticker Pack / Merch Pattern** | new | 3.4, 4.1.d–e |
-| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 8) | — | — |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 8) | — | — |
 
 *Rationale: Brushes and Pattern Making are both surface-decoration techniques already adjacent
 in the old sequence — merging them is lower-risk than floating either one away from its
@@ -318,7 +318,7 @@ summative, which needs both.*
 | 9.3 | Placing & Linking Assets | new | 2.3 |
 | 9.4 | Exporting for Screen & Print | new | 2.4.b |
 | **S9** | **Client Brand Project** (delivered as packaged files) — uses `designbrief.md` | new | 1.1, 1.2, 2.3–2.4 |
-| **F6/F7** | Cumulative Vocab Quiz + Stinger Grade (Unit 9) | — | — |
+| **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 9) | — | — |
 
 *Rationale: S9's tag needs all 5 old lessons — Project Management and Packaging are both
 "wrapping up and delivering the project" and merge naturally, same pattern as Unit 8.*
@@ -691,16 +691,16 @@ Regional student Emmys ([call for entries](https://natasmid-atlantic.org/student
 **Design principles:** (1) anchor every formative to the student's *own working file* — AI can fabricate prose, but not a screenshot of their in-progress artboard/timeline matching today's step; (2) do it in class, timed, not take-home; (3) grade artifacts, not paragraphs; (4) everything on a 0–1–2 scale so grading is a thumbnail scan (~30 sec/student).
 
 **Every unit has exactly 6 formatives (Sep 2026):** the unit's 4 formative lessons each carry
-their own lesson-level formative (F1–F5 below, chosen by lesson type, as already mapped) — **plus
+their own lesson-level formative (F1–F4 below, chosen by lesson type, as already mapped) — **plus
 2 unit-level formatives, both assigned the day the unit's summative is assigned** (i.e. the
 first day of that unit's S-block, not tied to any single lesson):
 
 | # | Format | What students do | Schoology mechanics | Why AI-resistant |
 |---|---|---|---|---|
-| F6 | **Cumulative Vocab Quiz** (unit-level) | Auto-graded quiz covering the *whole unit's* vocabulary (all lessons' `_includes/vocab/` terms, not just one lesson's) | Assigned same day as the summative; drawn from the full unit's vocab bank | Cumulative + timed; can't be crammed from a single lesson's notes |
-| F7 | **Stinger Grade** | A compiled grade from that unit's daily bellringers ("stingers") — the separately-built bellringer deck, not part of these lesson pages | Recorded same day as the summative, from bellringer responses already collected across the unit | Built from responses given live, one bellringer at a time, across the whole unit |
+| F5 | **Cumulative Vocab Quiz** (unit-level) | Auto-graded quiz covering the *whole unit's* vocabulary (all lessons' `_includes/vocab/` terms, not just one lesson's) | Assigned same day as the summative; drawn from the full unit's vocab bank | Cumulative + timed; can't be crammed from a single lesson's notes |
+| F6 | **Stinger Grade** | A compiled grade from that unit's daily bellringers ("stingers") — the separately-built bellringer deck, not part of these lesson pages | Recorded same day as the summative, from bellringer responses already collected across the unit | Built from responses given live, one bellringer at a time, across the whole unit |
 
-Five lesson-level reusable formats — each of the 4 formative lessons uses one, chosen by lesson type:
+Four lesson-level reusable formats — each of the 4 formative lessons uses one, chosen by lesson type:
 
 | # | Format | What students do | Schoology mechanics | Why AI-resistant |
 |---|---|---|---|---|
@@ -708,13 +708,18 @@ Five lesson-level reusable formats — each of the 4 formative lessons uses one,
 | F2 | **Screenshot Receipt** (exit ticket) | Screenshot of *their* file showing today's required evidence (named layers visible, clipping mask applied, marker at the L-cut) + one sentence naming the tool used | Assignment, image upload; 0–1–2 checklist rubric | Shows their unique in-progress work; can't be generated after the fact |
 | F3 | **Two-Minute Drill** | Teacher announces a live micro-task ("convert this text to outlines and align to artboard center — go"); screenshot result | Assignment, 0/1; doubles as ACP live-in-the-app practice | Performed in the app under time; mirrors the exam format |
 | F4 | **Fix-This-File** | Open a deliberately broken start file (RGB doc meant for print, gap in timeline, clipped audio, unnamed layers); fix it; submit screenshot | Assignment, 0–1–2 rubric keyed to the planted errors | Requires operating the software; errors are teacher-authored and rotate |
-| F5 | **Structured Peer Review** | Complete a Plus/Delta using `peerreview.md` protocol; notes must cite timestamps/locations and tool vocabulary from the partner's actual work | Assignment or discussion; rubric grades *specificity*, not politeness | Graded on concrete references to a classmate's unique file |
+
+**Structured Peer Review** (not one of the numbered F1–F6 slots): a Plus/Delta pass using
+`peerreview.md`, notes citing timestamps/locations and tool vocabulary from the partner's actual
+work, rubric grading *specificity* not politeness. Used for critique lessons and, per the FDD
+draft above, folded into a unit's summative project days rather than taking one of the 4
+lesson-formative slots (see FDD Unit 4).
 
 **Mapping to lesson types:**
 - Theory/industry lessons (design principles, copyright, film form) → **F1** + an F2 variant (annotate a provided example: "circle the focal point, name the principle that creates it")
 - Tool lessons (majority of the course) → **F2** routinely, **F3** once per unit
 - Planning lessons (briefs, scripts, storyboards) → F2 on the planning artifact **with an in-class-announced constraint** (e.g., "today's storyboard must include one OTS frame labeled in red") — the constraint is the AI tripwire
-- Critique lessons → **F5**
+- Critique lessons → **Structured Peer Review**
 - Pre-summative meeting → **F4** as review (built from that unit's most common student errors)
 - The GMetrix strand's module checkpoints already serve as the self-guided formative; don't double-assess it.
 
