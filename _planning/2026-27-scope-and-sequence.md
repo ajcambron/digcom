@@ -135,11 +135,9 @@ minutes, so a merge should pick topics that were already lightweight, not just a
    access.
 
 `_includes/ctelessonplan.md` already has a field for all 7 — this isn't a new template, it's
-confirmation the existing one is correctly scoped. Two fields are named slightly differently
-than "The 7"'s own labels (meaning matches; label doesn't): **"Learning Target"** (vs. "Target
-for Learning") and **"Instruction"** (vs. "Collaboration around Learning" — its own parenthetical
-already reads "collaboration around learning..."). Leaving as-is unless you want them renamed to
-match "The 7" verbatim.
+confirmation the existing one is correctly scoped. Its two fields that were named differently
+from "The 7"'s own labels — "Learning Target" and "Instruction" — are now renamed to "Target for
+Learning" and "Collaboration around Learning" to match verbatim (Sep 2026).
 
 **Resolved (Sep 2026): every lesson gets two pages, same folder, suffixed filename** — e.g.
 `foundations/fdd2/2_1.md` (student-facing, current style) + `foundations/fdd2/2_1-teacher.md`
