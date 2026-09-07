@@ -1,0 +1,44 @@
+# Single source of truth for the daily bell schedule.
+# Times are 24-hour "HH:MM". type: block periods get subdivided into the
+# 78-minute lesson phases defined in lesson_phases.yml; type: plain periods
+# (arrival, capstone, lunch) just show a plain countdown on the display.
+#
+# This file is the only place bell times live — assets/js/bell-timer.js
+# reads it (via a jsonify'd script tag on the display page) instead of
+# hardcoding times, so a future LED-array controller can read the same
+# file and stay in sync without touching any code.
+- id: arrival
+  name: "Arrival / Breakfast"
+  start: "07:00"
+  end: "07:15"
+  type: plain
+- id: block1
+  name: "Block 1"
+  start: "07:20"
+  end: "08:38"
+  type: block
+- id: capstone
+  name: "Capstone"
+  start: "08:45"
+  end: "09:25"
+  type: plain
+- id: block2
+  name: "Block 2"
+  start: "09:30"
+  end: "10:48"
+  type: block
+- id: lunch
+  name: "Lunch"
+  start: "10:48"
+  end: "11:18"
+  type: plain
+- id: block3
+  name: "Block 3"
+  start: "11:23"
+  end: "12:41"
+  type: block
+- id: block4
+  name: "Block 4"
+  start: "12:46"
+  end: "14:05"
+  type: block

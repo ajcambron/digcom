@@ -1,0 +1,18 @@
+# The 78-minute pacing architecture from CLAUDE.md, Section 3. Do not alter
+# these minutes without also updating CLAUDE.md — the two must stay in sync.
+# Applied, in order, to every bell_schedule.yml period with type: block.
+- id: bell_ringer
+  name: "Bell Ringer / Hook"
+  minutes: 10
+- id: direct_instruction
+  name: "Direct Instruction"
+  minutes: 10
+- id: guided_practice
+  name: "Guided Practice"
+  minutes: 23
+- id: gmetrix
+  name: "GMetrix / BrainBuffet Self-Guided Strand"
+  minutes: 30
+- id: exit_ticket
+  name: "Exit Ticket / Wrap-Up"
+  minutes: 5

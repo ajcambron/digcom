@@ -1,0 +1,87 @@
+---
+layout: null
+permalink: /display/
+title: Class Timer Display
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class Timer</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: #0b1220;
+    color: #f9fafb;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    overflow: hidden;
+  }
+  #stage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background 0.4s ease;
+  }
+  #period-name {
+    font-size: 6vw;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  #phase-name {
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #cbd5e1;
+    margin-top: 0.5em;
+    min-height: 1.2em;
+  }
+  #clock {
+    font-size: 18vw;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    margin: 0.2em 0;
+  }
+  #sub-label {
+    font-size: 1.6vw;
+    color: #9ca3af;
+    min-height: 1.4em;
+  }
+  #phase-strip {
+    display: flex;
+    width: 80vw;
+    height: 2vw;
+    margin-top: 2vw;
+    border-radius: 999px;
+    overflow: hidden;
+    background: #1f2937;
+  }
+  .phase-seg {
+    height: 100%;
+  }
+</style>
+</head>
+<body>
+  <div id="stage">
+    <div id="period-name">Loading…</div>
+    <div id="phase-name"></div>
+    <div id="clock">--:--</div>
+    <div id="sub-label"></div>
+    <div id="phase-strip"></div>
+  </div>
+
+  <script>
+    var SCHEDULE = {{ site.data.bell_schedule | jsonify }};
+    var PHASES = {{ site.data.lesson_phases | jsonify }};
+  </script>
+  <script src="{{ '/assets/js/bell-timer.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/bell-timer-display.js' | relative_url }}"></script>
+  <script>
+    window.BellTimerDisplay.render(SCHEDULE, PHASES);
+  </script>
+</body>
+</html>
