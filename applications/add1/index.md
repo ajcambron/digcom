@@ -4,51 +4,97 @@ title: ADD | Unit 1
 parent: Applications of Digital Design
 
 ---
-# Unit 1 | The Elements of Video
-Unit 1 of ADD covers the basic elements and principles of design and layout. By making conscious decisions, designers can use these base units to create powerful design statements.
+# Unit 1 | Elements of Video & Pre-Production
+Unit 1 of ADD introduces the basic elements and vocabulary of video, then walks through the pre-production process — topic, design brief, script, and shot planning — that every video project in this course will follow.
 
-# What is Video?
-## Video
-Video is an electronic medium for the recording, copying, playback, broadcast, and display of moving-image media. Video was first developed for mechanical television systems, which were quickly replaced by cathode-ray tube (CRT) systems, which, in turn, were replaced by flat-panel displays. 
+This unit is intentionally low-tech: everything can be shot on a personal smartphone and edited in a free, browser-based editor, so a shaky first few weeks of lab computers, logins, or software installs won't stop the project.
 
-This is contrast to the fully analog system of **film projection**, which predates video.
+## Unit Plan
 
-The word video comes from the Latin video, "I see"
+|----|----|
+| Driving Question | How do creators plan, shoot, and edit a short video that teaches an audience something new? |
+| Learning Goals |{::nomarkdown}<ul><li>Identify the basic elements of video (frame rate, resolution, aspect ratio) and core shot vocabulary</li><li>Choose a topic and audience appropriate for an explainer video</li><li>Write a design brief that defines criteria and constraints for a video project</li><li>Plan a shoot using a two-column script and shot list</li><li>Shoot and edit a short video using only a smartphone and free tools</li></ul>{:/}|
+| Project Summary | Students research, plan, shoot, and edit a 1–3 minute explainer video on a topic of their own expertise, for an imagined educational YouTube channel. |
+| Major Products | Pre-Production Worksheet, Design Brief, Two-Column Script, Explainer Video |
+| Making it Public | Students publish their explainer video to their [portfolio]({% link portfolio/index.md %}) |
+| Key Project Documents | [Rubric](/resources/90_rubrics) |
 
-# Basic Elements of Video
-## Focal Length
-The distance between a lens's optical center and the point where light converges to form an image, typically the camera's sensor or film
-## Framing
-The artistic decision to include or exclude elements from the video frame, and to position objects in the frame for optimal effect.
-## Aspect Ratio
-The ratio between the width and height of the video. The most common are 16:9, 4:3, 1.85:1 and 2.35:1. Usually, this is expressed as a whole number, except the case of some exceptionally large ratios (2.35:1 would be 47:20 if expressed as a whole number).
+## Vocabulary List
 
-# Frame Rate
-The rate at which the video replaces the frames in a video sequence. The universal standard for film is 24fps. 
-### NTSC - The National Television System Committee (North America, most of South America, Japan and others)
-Television signals are 29.97fps for general US broadcasts, and 59.97fps for fast action content like sports. 
-### PAL/SECAM - The systems that govern the rest of the world
-Television signals are 25fps for general broadcasts in the rest of the world.
-##Digital Video
-Digital video signals mean that phones and computer displays can generally display any of the standard frame rates (multiples of 24, 29.97, or 25) - however convention still remains that 24fps is the standard for "filmic" content. 
-### Higher Frame Rates
-Higher frame rates appear unnatural, and are reserved for content like video games. 
-## Resolution
-The fidelity of the image expressed as width by height. Common resolutions include 720p (1080x720), 1080p (1920x1080), 4K (3840x2160).
-# Exposure Triangle - Video
-## Shutter Angle
-The ratio of the shutter speed to frame rate expressed in degrees. Generally - all film content is filmed with a shutter angle of 180°. A faster shutter angle appears choppy, a slower shutter angle adds blur and light streaks.
-## Gain
-The sensitivity of the image sensor to light expressed as ISO. Generally - the lower the ISO, the higher fidelity the image. Depending on the image sensor, you may be able to experiment with higher ISO settings.
-## Aperture
-The setting that describes the size of the opening between the lens and the camera body. A smaller number represents a larger opening.
-## Codec
-The coder/decoder that converts the series of images into a compressed file that can be played on a computer. The most common and compatible codec is H.264/AVC. iPhones now record in H.265/HEVC, but this format is not as widely compatible.
-### Inter-frame Codec
-An inter frame is a frame in a video compression stream which is expressed in terms of one or more neighboring frames. The "inter" part of the term refers to the use of Inter frame prediction. This tries to take advantage of temporal redundancy between neighboring frames, enabling higher compression rates. H.264 and H.265 are examples
-### Intra-frame Codec
-Intra-frame coding is a data compression technique used within a video frame, enabling smaller file sizes and lower bitrates. Since neighboring pixels within an image are often very similar, rather than storing each pixel independently, the frame image is divided into blocks and the typically minor difference between each pixel can be encoded using fewer bits. Apple ProRes is an example.
-### Digital Cinema Package
-A collection of digital files used to store and convey digital cinema (DC) audio, image, and data streams. 
+### Planning
+Target Audience
+: The specific group of people a video is designed to inform, entertain, or persuade.
 
+Client Goals
+: The outcomes a client — here, an educational YouTube channel — wants a video to achieve.
 
+Demographics
+: Measurable characteristics of an audience, such as age, location, or interests, used to tailor content.
+
+Shot List
+: A pre-production document that itemizes every shot needed to complete a video.
+
+Two-Column Script
+: A script format that separates visual/video description (left column) from audio/dialogue (right column).
+
+Storyboard
+: A sequence of illustrations that previsualizes each shot in a script.
+
+Edit List
+: A record of the in and out points used to assemble a video during editing.
+
+Transcript
+: A written, word-for-word record of a video's spoken audio.
+
+### Technical
+Frame Rate
+: The rate at which frames replace one another in a video sequence, commonly 24, 29.97, or 30 fps.
+
+Frame Size / Resolution
+: The pixel dimensions of a video frame, such as 1920x1080 (1080p).
+
+Aspect Ratio
+: The ratio between a video's width and height. The most common for online video is 16:9.
+
+Safe Area
+: The portion of the frame guaranteed to display across all screens and platforms; keep essential text and graphics inside it.
+
+Codec
+: The coder/decoder used to compress and decompress a video file, such as H.264.
+
+Pixel
+: The smallest single element of a digital image or video frame.
+
+Rendering
+: The process of processing edits and effects into a final, playable video file.
+
+### Shot Types
+CU
+: Close-Up — fills the frame with the subject's face or a single object.
+
+ECU
+: Extreme Close-Up — isolates a small detail so closely that context disappears.
+
+MCU
+: Medium Close-Up — frames the subject from the chest up.
+
+MS
+: Medium Shot — frames the subject from roughly the waist up.
+
+WS
+: Wide Shot — shows the full scene, with the subject sharing the frame with their surroundings.
+
+LS
+: Long Shot — shows the subject's entire body with some surrounding space.
+
+ELS
+: Extreme Long Shot — shows the subject as a small element within a vast environment.
+
+OTS
+: Over-the-Shoulder — frames a subject from behind another person's shoulder.
+
+POV
+: Point of View — shows what a subject is seeing, as if the camera were their eyes.
+
+Cutaway
+: A shot of something other than the main action, used to cover an edit or add context.

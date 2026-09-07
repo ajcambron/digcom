@@ -274,15 +274,17 @@ Objective domains: 1 Design Industry · 2 Project Setup & Interface · 3 Layers,
 Objective domains: 1 Video Industry · 2 Project Setup & Interface · 3 Organizing Projects · 4 Creating & Modifying Elements · 5 Publishing
 **This course mostly reorders existing units.** New unit numbers below; source unit in parentheses.
 
-### ADD Unit 1 | Elements of Video & Pre-Production *(= current add1)*
+### ADD Unit 1 | Elements of Video & Pre-Production *(= current add1)* ✅ drafted Sep 2026
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 1.1 | Intro to Digital Video Production | add1/1_4md | 1.1.d |
-| 1.2 | Pick a Topic | add1/1_1 | 1.1.a |
-| 1.3 | Design Brief | add1/1_2 (`designbrief.md`) | 1.1.a, 1.1.c |
-| 1.4 | Two-Column Script | add1/1_3 | 1.1.c |
-| 1.5 | Film Form & Shot Vocabulary | new | 1.4.c |
+| 1.1 | Intro to Digital Video Production | add1/1_1 (was 1_4md) | 1.1.d |
+| 1.2 | Pick a Topic | add1/1_2 (was 1_1; added Khan Academy/Adobe explainer-video technique section) | 1.1.a |
+| 1.3 | Design Brief | add1/1_3 (was 1_2; `designbrief.md`) | 1.1.a, 1.1.c |
+| 1.4 | Two-Column Script | add1/1_4 (was 1_3) | 1.1.c |
+| 1.5 | Film Form & Shot Vocabulary | add1/1_5 — new | 1.4.c |
 | **S1** | **Explainer Video** | add1/s1 | 1.1, 1.4 |
+
+**Deliberately low-tech:** every lesson and the summative run on a personal smartphone (Blackmagic Camera app) and free browser-based editors (Google Vids, Canva, Adobe Express) — no lab software or hardware checkout required, so the project survives an unsettled first few weeks of the school year. Filenames were renumbered to match their frontmatter titles (see cleanup item 5, now resolved for add1), and the unit index was rewritten as a Driving-Question/Vocabulary overview matching the add3 pattern instead of the old "Basic Elements of Video" content dump.
 
 **Vocab callouts:** client goals, target audience, demographics · shot list, scriptwriting, storyboarding, edit list, transcripts · frame rate, frame size, aspect ratio, safe areas, codecs, pixels, rendering · CU, ECU, MCU, MS, WS, LS, ELS, OTS, POV, cutaway · rule of thirds, foreground, background, depth of field, field of view
 
@@ -549,6 +551,6 @@ Five reusable formats — each lesson uses one, chosen by lesson type:
 2. `applications/add9/9_1.md` and `9_2.md` are both titled "Standard Script Formatting" (9_2 duplicates 9_1; both duplicate add8/8_1).
 3. `applications/add3/index.md` and `add7/index.md`/`add8/index.md` intro paragraphs are copy-pasted from add2 ("editing an episode of a television show").
 4. ~~`foundations/fdd8/` stray files~~ ✅ deleted July 2026; the unit remains an empty shell to build out.
-5. Numbering mismatches: files whose frontmatter title doesn't match filename (add1/1_4md.md is titled 1.1; add7/7_3 titled 7.4 and 7_4 titled 7.3).
+5. Numbering mismatches: files whose frontmatter title doesn't match filename. ~~add1 (1_4md.md titled 1.1, etc.)~~ ✅ renumbered Sep 2026 during the Unit 1 revision. Still open: add7/7_3 titled 7.4 and 7_4 titled 7.3.
 6. ~~`_includes/ctelessonplan copy.md`~~ ✅ deleted July 2026.
 7. ~~`.DS_Store` files~~ ✅ deleted & gitignored July 2026. Built `_site/` is still committed (git rm at next commit); `_config.yml` email is still `your-email@example.com`; `/assets/images/favicon.ico` referenced in `_config.yml` 404s locally — verify the file exists.
