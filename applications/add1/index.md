@@ -20,81 +20,16 @@ This unit is intentionally low-tech: everything can be shot on a personal smartp
 | Key Project Documents | [Rubric](/resources/90_rubrics) |
 
 ## Vocabulary List
+These are the ACP Premiere Pro exam key terms this unit covers ([source](https://drive.google.com/file/d/1K5Zt-YYbhrizPvgSp8w-unSuPLhn08Jc)). The same definitions are repeated on the lesson page where each term is taught, so the language stays identical everywhere it appears.
 
-### Planning
-Target Audience
-: The specific group of people a video is designed to inform, entertain, or persuade.
+### Purpose & Audience (ACP 1.1.a)
+{% include vocab/pr-1-1a.md %}
 
-Client Goals
-: The outcomes a client — here, an educational YouTube channel — wants a video to achieve.
+### Communicating Plans (ACP 1.1.c)
+{% include vocab/pr-1-1c.md %}
 
-Demographics
-: Measurable characteristics of an audience, such as age, location, or interests, used to tailor content.
+### Video Basics (ACP 1.4.a)
+{% include vocab/pr-1-4a-basics.md %}
 
-Shot List
-: A pre-production document that itemizes every shot needed to complete a video.
-
-Two-Column Script
-: A script format that separates visual/video description (left column) from audio/dialogue (right column).
-
-Storyboard
-: A sequence of illustrations that previsualizes each shot in a script.
-
-Edit List
-: A record of the in and out points used to assemble a video during editing.
-
-Transcript
-: A written, word-for-word record of a video's spoken audio.
-
-### Technical
-Frame Rate
-: The rate at which frames replace one another in a video sequence, commonly 24, 29.97, or 30 fps.
-
-Frame Size / Resolution
-: The pixel dimensions of a video frame, such as 1920x1080 (1080p).
-
-Aspect Ratio
-: The ratio between a video's width and height. The most common for online video is 16:9.
-
-Safe Area
-: The portion of the frame guaranteed to display across all screens and platforms; keep essential text and graphics inside it.
-
-Codec
-: The coder/decoder used to compress and decompress a video file, such as H.264.
-
-Pixel
-: The smallest single element of a digital image or video frame.
-
-Rendering
-: The process of processing edits and effects into a final, playable video file.
-
-### Shot Types
-CU
-: Close-Up — fills the frame with the subject's face or a single object.
-
-ECU
-: Extreme Close-Up — isolates a small detail so closely that context disappears.
-
-MCU
-: Medium Close-Up — frames the subject from the chest up.
-
-MS
-: Medium Shot — frames the subject from roughly the waist up.
-
-WS
-: Wide Shot — shows the full scene, with the subject sharing the frame with their surroundings.
-
-LS
-: Long Shot — shows the subject's entire body with some surrounding space.
-
-ELS
-: Extreme Long Shot — shows the subject as a small element within a vast environment.
-
-OTS
-: Over-the-Shoulder — frames a subject from behind another person's shoulder.
-
-POV
-: Point of View — shows what a subject is seeing, as if the camera were their eyes.
-
-Cutaway
-: A shot of something other than the main action, used to cover an edit or add context.
+### Film Form & Shot Types (ACP 1.4.b, 1.4.c)
+{% include vocab/pr-1-4c-shots.md %}
