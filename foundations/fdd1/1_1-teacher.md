@@ -42,9 +42,6 @@ assignment.
 
 {% include exit-ticket/1-teacher.md %}
 
-Today's vocab pool to cold-call from: any term from `vocab/fdd-what-is-design.md` or
-`vocab/fdd-design-process.md` (both shown on this page).
-
 ## Differentiation Matrix
 
 | Cohort | Modification |

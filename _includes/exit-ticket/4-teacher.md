@@ -1,6 +1,5 @@
-**Exit Ticket 4 — Spot the Fix.** With about 3 minutes left, show one small, deliberately broken
-example (this lesson's specific example is below) — built from a mistake you've actually seen
-students make. Students name the problem and the fix on a scrap of paper. Grade 0–1–2: 2 = names
-both problem and fix correctly, 1 = names one but not the other, 0 = neither. This is F4
-(Fix-This-File), the pre-summative-review version — see the Formative Assessment System in
-`_planning/2026-27-scope-and-sequence.md`.
+**Exit Ticket 4 — 3-2-1.** In the last 2-3 minutes, students write 3 things they did/made today,
+2 techniques/tools they used, and 1 open question. The fullest of the 4 tickets — fitting for
+the last formative lesson before the summative block. Skim the "1 question" column before the
+project day starts; it often surfaces what to clarify before independent work time. Grade
+participation only (0/1). Source: AVID's 3-2-1 exit ticket (avidopenaccess.org).

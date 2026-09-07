@@ -1,5 +1,4 @@
-**Exit Ticket 2 — Show &amp; Tell.** In the last 2 minutes, have students hold up their strongest
-artifact from today and say (or write, if quieter suits your room) one sentence naming the
-tool/technique they used. Grade 0–1–2: 2 = specific and accurate, 1 = vague or generic,
-0 = no artifact/no answer. This is F2 (Screenshot Receipt), the paper/verbal version — see the
-Formative Assessment System in `_planning/2026-27-scope-and-sequence.md`.
+**Exit Ticket 2 — Glow &amp; Grow.** In the last 2 minutes, students write one Glow (a success)
+and one Grow (an improvement) about their own work today. Grade participation only (0/1). Skim
+for patterns — a Grow that shows up across many students flags something worth revisiting next
+class. Source: AVID's Glow and Grow exit ticket (avidopenaccess.org).

@@ -39,10 +39,6 @@ full AIGA spec (16 thumbnails → 3 roughs → 1 comp).
 
 {% include exit-ticket/3-teacher.md %}
 
-**This lesson's drill:** "In 2 minutes, draw one new texture idea using only dots, as different
-as possible from anything already on your thumbnail sheet." Tests whether students can generate
-on demand, not just when given the full thumbnail warm-up window.
-
 ## Differentiation Matrix
 
 | Cohort | Modification |

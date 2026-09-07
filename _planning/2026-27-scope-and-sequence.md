@@ -872,22 +872,29 @@ lesson. Conflating the two produced exit tickets that were really just submissio
 fixed by splitting them into two distinct lines on every lesson page: a **"Turn In"** line
 (the day's actual artifacts) and a separate **Exit Ticket** line (the routine below).
 
+**Revised again (Sep 2026), sourced from AVID Open Access** (avidopenaccess.org/resource/
+ed-tip-exit-tickets/ — the "1-2-3", Emoji Meter, Stoplight, and Glow or Grow formats) rather than
+invented ad hoc. These are deliberately **not** artifact-based like F1–F4 above — they're a
+lightweight metacognitive check-in (how do you feel about today, not a content-knowledge test),
+graded for participation only (0/1), never for correctness. The artifact-based, AI-resistant
+evidence-of-learning job stays entirely with the **"Turn In"** line and each lesson's own
+formative — the exit ticket's only job is the 2-minute routine.
+
 **Positional, not content-driven — every unit's 4 formative lessons cycle through the same 4
 tickets in the same order**, regardless of course or content:
 
-| Lesson position | Exit Ticket | Maps to | Mechanic |
-|---|---|---|---|
-| `.1` | **Exit Ticket 1 — Vocab Check** | F1 (Vocab Warm-Up, run at the end instead of the start) | Teacher cold-calls one term from today's vocab; students write its definition in their own words. |
-| `.2` | **Exit Ticket 2 — Show & Tell** | F2 (Screenshot Receipt) | Students hold up their strongest artifact + one sentence naming the tool/technique used. |
-| `.3` | **Exit Ticket 3 — Two-Minute Drill** | F3 | Teacher announces a surprise micro-task; 2 minutes to complete and show the result. |
-| `.4` | **Exit Ticket 4 — Spot the Fix** | F4 (Fix-This-File, miniaturized) | Teacher shows one deliberately broken example; students name the problem and the fix. |
+| Lesson position | Exit Ticket | Mechanic |
+|---|---|---|
+| `.1` | **Exit Ticket 1 — Stoplight** | Students self-rate confidence G/Y/R (green/yellow/red); yellow or red comes with a one-sentence question. |
+| `.2` | **Exit Ticket 2 — Glow & Grow** | Students write one Glow (a success) and one Grow (an improvement) about today's work. |
+| `.3` | **Exit Ticket 3 — Emoji Meter** | Students draw one face (🙁/😐/🙂) rating confidence, plus one word why. |
+| `.4` | **Exit Ticket 4 — 3-2-1** | Students write 3 things they did/made, 2 techniques/tools used, 1 open question — the fullest of the 4, fitting right before the summative block. |
 
 Implemented as includes so the wrapper text is identical everywhere and can't drift:
-`{% include exit-ticket/1.md %}` … `{% include exit-ticket/4.md %}` (student-facing, fully
-generic, no per-lesson params needed) and `{% include exit-ticket/1-teacher.md %}` … `4-teacher.md`
-(teacher-facing: the mechanic + a 0–1–2 or 0/1 grading rule). Tickets 3 and 4 need a
-lesson-specific task/example — that's authored inline on each teacher page, directly below the
-include, not baked into the include itself.
+`{% include exit-ticket/1.md %}` … `{% include exit-ticket/4.md %}` (student-facing) and
+`{% include exit-ticket/1-teacher.md %}` … `4-teacher.md` (teacher-facing: the mechanic + the
+0/1 participation-only grading rule + source citation). All four are fully generic — no
+per-lesson customization needed, unlike the first draft of this bank.
 
 This supersedes the "Mapping to lesson types" guidance above for *which exit ticket a lesson
 uses* (now purely positional) — that guidance still applies to which formative shapes the rest

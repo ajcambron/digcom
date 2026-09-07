@@ -1,6 +1,5 @@
-**Exit Ticket 1 — Vocab Check.** In the last 2 minutes, cold-call (or randomly draw) one term
-from today's vocabulary list and have every student write its definition in their own words on
-a scrap of paper as they leave. Grade 0–1–2 at a glance: 2 = correct and in their own words,
-1 = correct but copied verbatim from the list, 0 = incorrect/blank. This is F1 (Vocab Warm-Up)
-run at the end of class instead of the start — see the Formative Assessment System in
-`_planning/2026-27-scope-and-sequence.md`.
+**Exit Ticket 1 — Stoplight.** In the last 2 minutes, have students write G/Y/R (green/yellow/
+red) rating their own confidence in today's skill, with a one-sentence question if yellow or
+red. Not graded for correctness — grade participation only (0/1: did they turn in a rating) —
+then use the results: any cluster of yellow/red tells you who to check in with first thing next
+class. Source: AVID's Stoplight exit ticket (avidopenaccess.org).

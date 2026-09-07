@@ -42,12 +42,6 @@ the last of the 4 element days.
 
 {% include exit-ticket/4-teacher.md %}
 
-**This lesson's broken example:** show a rough where the "two contrasting colors" are actually
-two shades of the *same* hue (e.g., light blue and dark blue) rather than truly contrasting hues
-(e.g., purple and yellow-green) — a mistake this AIGA exercise reliably produces. Correct
-answer: name that the colors aren't actually contrasting, and the fix is picking hues from
-opposite areas of the color wheel, not just different values of one hue.
-
 ## Differentiation Matrix
 
 | Cohort | Modification |
