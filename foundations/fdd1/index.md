@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 1
 parent: Foundations of Digital Design
 has_children: true
+has_toc: false
 ---
 # Unit 1 | Design & the Design Industry
 
@@ -18,11 +19,11 @@ reliable. Lessons 1.1–1.4 run entirely on paper — no computer or network acc
 S | 1 project is the one day this unit that needs a computer lab.
 
 ## Lessons
-1. [1.1 | Line Assignment](1_1.md) *(+ guided notes: What is Design?)*
-2. [1.2 | Shape Assignment](1_2.md) *(+ guided notes: Elements & Principles of Design)*
-3. [1.3 | Texture Assignment](1_3.md) *(+ guided notes: Purpose, Audience & Client Goals)*
-4. [1.4 | Color Assignment](1_4.md) *(+ guided notes: Communicating Design Plans)*
-5. [S | 1 | Illustrator Recreation](s1.md) — summative project
+- [1.1 – Line Assignment](1_1.md) — guided notes: What is Design?
+- [1.2 – Shape Assignment](1_2.md) — guided notes: Elements & Principles of Design
+- [1.3 – Texture Assignment](1_3.md) — guided notes: Purpose, Audience & Client Goals
+- [1.4 – Color Assignment](1_4.md) — guided notes: Communicating Design Plans
+- [S1 – Illustrator Recreation](s1.md) — summative project
 
 ## Source
 Adapted from AIGA's *Unit 1A: Introduction to Graphic Design* (9–12 curriculum),
