@@ -1,3 +1,8 @@
+---
+title: Claude Code Configuration
+nav_exclude: true
+search_exclude: true
+---
 # Claude Code Configuration: Lesson Planning Agent
 
 ## 1. System Intent & Role
