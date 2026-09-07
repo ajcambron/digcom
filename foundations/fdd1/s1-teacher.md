@@ -1,61 +1,52 @@
 ---
 layout: default
-title: S | 1 | Design Elements Exercises (Teacher)
+title: S | 1 | Illustrator Recreation (Teacher)
 parent: FDD | Unit 1
 grandparent: Foundations of Digital Design
 nav_exclude: true
 ---
-# S | 1 | Design Elements Exercises — Teacher Plan
+# S | 1 | Illustrator Recreation — Teacher Plan
 
 {% include ctelessonplan.md %}
 
-## Source & scope note — read this before running the project
+## Purpose & scope note
 
-Adapted from AIGA's *Unit 1A: Introduction to Graphic Design* (9–12 curriculum),
-`1A_IntroductionToGraphicDesign.pdf`, Assignments 1–4 (Line, Shape, Texture, Color).
+This is deliberately **not** a taught-interface lesson — Unit 2 formally covers the Illustrator
+interface, documents, and artboards. S1 is a low-stakes first exposure: can a student, using only
+four basic tools (Rectangle, Ellipse, Line Segment, fill color via Swatches, and the Selection
+tool), approximate a design they already fully understand on paper? The paper comp does the
+creative-thinking work; the software step is about building comfort with the tool, not testing
+new design judgment.
 
-**AIGA's own spec is "at least four classes, 45–60 minutes" for this exercise** — one full class
-per element, each running 16 thumbnails → 3 roughs → 1 comp. Our calendar gives S1 exactly **one**
-78-minute meeting (Unit 1's summative block has 0 extra project days). This is a real,
-significant compression, not an oversight:
-
-- Thumbnails per round: **6, not 16**.
-- Strongest selected per round: **2, not 3**.
-- Roughs developed per round: **1, not 3**.
-- Comps: **1 total** (the single strongest rough across all 4 rounds), not 4.
-
-If this feels too rushed in practice, the fix is a calendar change (requesting extra project days
-for Unit 1, matching what later units get), not stretching the paper activity further — flag it
-back to the curriculum plan if the one-meeting version isn't working.
+This is also the one Unit 1 day requiring computer/network access — by design, it's a single lab
+day rather than a daily dependency, so a network hiccup here doesn't stall 4 lessons' worth of
+instruction the way it would if every day needed a working lab.
 
 ## Timing
 
 | Segment | Minutes | What happens |
 |---|---|---|
-| Bell Ringer | 10 | Paper stinger |
-| Instructions | 3 | Quick reminder of the 4-round + comp structure |
-| Line / Shape / Texture rounds | 10 each (30 total) | Thumbnails → select → rough |
-| Color round | 12 | Thumbnails → select → rough (colored pencil) |
-| Final comp | 15 | Develop single strongest rough into a finished comp |
-| Document/Save, submit & pack up | 8 | Photograph work, submit to portfolio |
+| Bell Ringer | 10 | Paper stinger (still runs today — see F5/F6 below) |
+| Choose + demo | 10 | Teacher live-demos the 4 tools once on a sample comp |
+| Recreate | 50 | Independent work in Illustrator |
+| Save, export & submit | 8 | File naming, PNG/JPG export, portfolio submission |
 
 ## The 7 — how this project hits each element
 
 | Element | This project |
 |---|---|
-| Organization for Learning | The round-by-round structure itself (thumbnails → select → rough, repeated 4×, then one comp) mirrors the AIGA process students already practiced in 1.2. |
-| Connection to Learning | Directly reuses vocabulary and mechanics from 1.2's Thumbnail Warm-Up — students have done this exact process once already at smaller scale. |
-| Target for Learning | SWBAT apply the elements of line, shape, texture, and color to abstract compositions, and carry one design through the full thumbnail-rough-comp process to a finished, neatly-executed comprehensive design. |
-| Collaboration around Learning | Encourage students to informally ask a neighbor for a second opinion when selecting their 2 strongest thumbnails per round — matches AIGA's own suggestion ("if they don't know which is strongest, they can ask other students for help"). |
-| Evidence of Learning | The physical thumbnails/roughs from all 4 rounds plus the one final comp, photographed for the portfolio. |
-| Summarization of Learning | Prompt students, while photographing, to note in one sentence per round what made their selected rough stronger than the ones they didn't pick. |
+| Organization for Learning | The 4-tool checklist itself (Shape tools, Line Segment, Fill color, Selection) scaffolds what to attempt and in what order. |
+| Connection to Learning | Directly reuses each student's own paper comp from 1.1–1.4 — the most concrete possible connection to prior learning. |
+| Target for Learning | SWBAT use basic shape, line, and fill tools in Adobe Illustrator to approximate a design they created on paper, by producing a saved .ai file and exported image. |
+| Collaboration around Learning | Teacher live-demo before independent work; encourage students to ask a neighbor who found a technique that's working. |
+| Evidence of Learning | The saved .ai file, exported image, and one-sentence comparison to the original, submitted to the portfolio. |
+| Summarization of Learning | Discussion/reflection: what was harder or easier than expected about the digital recreation. |
 | Accommodations to the Plan | See Differentiation Matrix below. |
 
 ## Unit-level formatives (F5/F6), assigned today
 
 - **F5 — Cumulative Vocab Quiz:** paper quiz (not Schoology) covering all of Unit 1's
-  vocabulary — the `vocab/fdd-*.md` includes across 1.1–1.4 plus this project's design-process
-  terms. Hand-graded with an answer key.
+  vocabulary — the `vocab/fdd-*.md` includes across 1.1–1.4. Hand-graded with an answer key.
 - **F6 — Stinger Grade:** compiled from this unit's bellringer responses (already collected on
   paper across the 4 formative lessons) — no new work required today, just recorded.
 
@@ -63,17 +54,11 @@ back to the curriculum plan if the one-meeting version isn't working.
 
 | Cohort | Modification |
 |---|---|
-| IEP/504 | Reduce to 4 thumbnails/round instead of 6; per AIGA's own accommodation note, a student with limited motor skills may complete the assignment digitally if a device is available, or work with a partner. |
-| ELL/Multilingual | Post a bilingual glossary card at each table (line, shape, texture, color + thumbnail, rough, comp); allow round-by-round reflection notes in a student's home language. |
-| Advanced/GT | Challenge students to unify all 4 roughs with one consistent visual idea (per AIGA's own Closure prompt) before choosing which one to develop into the final comp, and explain the unifying choice. |
+| IEP/504 | Provide a printed quick-reference card with the 4 tools' icons and one-line descriptions; allow a simplified recreation target (fewer distinct shapes than the original comp). |
+| ELL/Multilingual | Tool names labeled in the student's home language alongside English on the reference card. |
+| Advanced/GT | Challenge students who finish early to also recreate one *other* comp (not their strongest) and compare which one translated to the computer more easily, and why. |
 
-## Rubric (0–1–2 per round, ×4 rounds, plus the comp)
-
-| Score | Criteria |
-|---|---|
-| 2 | 6 unique thumbnails, 2 selected, developed into a clean rough |
-| 1 | Fewer than 6 thumbnails or rough incomplete/unrefined |
-| 0 | Round not attempted |
-
-Final comp scored separately: 0–1–2 for care and completeness of the finished rendering
-(clean line work/color application, fully realized composition, photographed and submitted).
+## Materials
+- Computer lab access, Adobe Illustrator installed
+- Each student's photographed comp (from 1.1–1.4) for reference
+- Printed 4-tool quick-reference card

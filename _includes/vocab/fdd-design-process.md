@@ -31,3 +31,16 @@ client for approval.
 
 **Ubiquitous**
 : Present, appearing, or found everywhere.
+
+**Line**
+: An identifiable path created by a point moving in space. One-dimensional; can vary in width,
+direction, and length. Lines often define the edges of a shape, and can be horizontal, vertical,
+or diagonal, straight or curved, thick or thin.
+
+**Shape**
+: The form of an object or its external boundary, outline, or external surface, as opposed to
+other properties such as color or texture.
+
+**Texture**
+: An interwoven pattern of light and dark tones that imparts a physical quality to a
+surface — rough, smooth, etc.

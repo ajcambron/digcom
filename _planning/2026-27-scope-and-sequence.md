@@ -193,20 +193,36 @@ Objective domains: 1 Design Industry · 2 Document Management · 3 Workflow & In
 > treat them as approximate until each lesson page is actually authored.
 
 ### FDD Unit 1 | Design & the Design Industry *(reuse fdd1)*
+
+> **Restructured again (Sep 2026): one AIGA element assignment per lesson, matching AIGA's own
+> "one class per assignment" model.** The version directly above this note (4 separate topic
+> lessons + a condensed 4-round summative crammed into one meeting) was a mistake — it forced a
+> false compression against AIGA's own "at least four classes" spec for the elements exercise
+> when the actual fix was simpler: **each of the 4 formative lessons IS one AIGA assignment**
+> (Line, Shape, Texture, Color — thumbnails → 3 roughs → 1 comp, all on paper, full AIGA spec,
+> since our 78-minute period exceeds AIGA's own 45–60 min budget for the same assignment). The
+> ACP-driven "client/process" topics (What is Design, Elements & Principles, Purpose/Audience/
+> Client Goals, Communicating Design Plans) don't disappear — each becomes a short guided-notes
+> framing (~10–15 min) at the start of its day, not a full lesson competing for the same time.
+
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 1.1 | What is Design? | fdd1 index content | 1.1.a |
-| 1.2 | Elements & Principles of Design *(merged: was 1.2 Elements + 1.3 Principles)* | new (split from fdd1) | 1.4.a |
-| 1.3 | Purpose, Audience & Client Goals | new | 1.1.a, 1.1.b |
-| 1.4 | Communicating Design Plans | new | 1.1.c, 1.1.d |
-| **S1** | **Design Elements Exercises** | fdd1/1_1 (promote to summative) | 1.4 |
+| 1.1 | Line Assignment (+ guided notes: What is Design?) | fdd1 index content + AIGA Unit 1A Assignment 1 | 1.1.a, 1.4.a |
+| 1.2 | Shape Assignment (+ guided notes: Elements & Principles of Design) | AIGA Unit 1A Assignment 2 | 1.4.a |
+| 1.3 | Texture Assignment (+ guided notes: Purpose, Audience & Client Goals) | AIGA Unit 1A Assignment 3 | 1.1.a, 1.1.b, 1.4.a |
+| 1.4 | Color Assignment (+ guided notes: Communicating Design Plans) | AIGA Unit 1A Assignment 4 | 1.1.c, 1.1.d, 1.4.a |
+| **S1** | **Illustrator Recreation** — choose your strongest of the 4 paper comps and recreate it in Adobe Illustrator, using the photo you took of it as reference | new | 1.4 |
 | **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 1) | — | — |
 
-*Rationale: S1's own ACP tag ("1.4") only ever required the old 1.2+1.3 pair — merging them
-(a standard "elements vs. principles" pairing anyway) is the one clean way to hit 4 without
-touching the two client-facing lessons, which aren't optional lead-ins.*
+*Rationale: matches AIGA's own structure (`1A_IntroductionToGraphicDesign.pdf`) directly instead
+of working around it. S1 is now genuinely the "one part of the unit that touches a device" — a
+first, low-stakes hands-on exposure to Illustrator (basic shape/line tools + fill color, nothing
+about paths — that's Unit 4) ahead of Unit 2's formal interface lesson, using each student's own
+paper comp as the thing being recreated. GMetrix still doesn't run in Unit 1 (see the Class
+Period Structure note above) — S1's one computer day is separate from, and doesn't restart, the
+BrainBuffet strand.*
 
-**Vocab callouts:** client goals, target audience, demographics, accessibility · sketches, specifications, design process, wireframes, prototypes, iterations, change orders, drafts, feedback loop, style guide, project brief · project scope, scope creep, project timeline · space, line, shape, form, color and color value, texture · emphasis/focal point, unity/harmony, variety, balance, alignment, proximity, repetition, rhythm, scale, movement, negative space, contrast, rule of thirds
+**Vocab callouts:** *(AIGA Unit 1A vocabulary, front-loaded on 1.1 since it's used every day after)* abstract, ambiguity, composition, comprehensive design ("comp"), format, idea, representational, rough sketch, thumbnail sketch, ubiquitous, line, shape, texture · *(elements & principles, 1.2)* space, line, shape, form, color and color value, texture · emphasis/focal point, unity/harmony, variety, balance, alignment, proximity, repetition, rhythm, scale, movement, negative space, contrast, rule of thirds · *(client/process topics, 1.3–1.4)* client goals, target audience, demographics, accessibility, project scope, scope creep, project timeline · sketches, specifications, design process, wireframes, prototypes, iterations, change orders, drafts, feedback loop, style guide, project brief
 
 ### FDD Unit 2 | Vector Documents & Workspace *(new)*
 | # | Lesson | Source | ACP |

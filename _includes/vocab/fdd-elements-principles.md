@@ -1,17 +1,7 @@
-**Line**
-: An element of art defined by a point moving in space. May be two- or three-dimensional,
-descriptive, implied, or abstract.
-
-**Shape**
-: An element of art that is two-dimensional, flat, or limited to height and width.
-
 **Color / Value**
 : Color is the perceived hue of an object; value is the lightness or darkness of a tone or color
-(white lightest, black darkest, middle gray halfway between).
-
-**Texture**
-: An element of art that refers to the way things feel, or look as if they might feel if
-touched.
+(white lightest, black darkest, middle gray halfway between). (Line, Shape, and Texture were
+covered on Line day, 1.1.)
 
 **Mass/Form**
 : The way a three-dimensional form (or the illusion of one) appears to have weight, density, or
