@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "digcom-jekyll",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "bundle exec jekyll serve --port 4000 --livereload"
+      ],
+      "port": 4000
+    }
+  ]
+}
