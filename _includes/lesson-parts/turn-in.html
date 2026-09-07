@@ -1,0 +1,4 @@
+{%- if page.lesson.turn_in -%}
+{%- assign items = page.lesson.turn_in -%}
+📥 **Turn In:** {% for item in items %}{% unless forloop.first %}{% if forloop.last %}{% if items.size > 2 %}, and {% else %} and {% endif %}{% else %}, {% endif %}{% endunless %}{{ item }}{% endfor %}.
+{%- endif -%}

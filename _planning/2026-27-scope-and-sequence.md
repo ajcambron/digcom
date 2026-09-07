@@ -172,6 +172,83 @@ Existing reusable blocks stay the backbone so student-facing language is identic
 
 ---
 
+## Teacher-Page Schema (single source of truth)
+
+**Built Sep 2026, reference implementation: FDD Unit 1** (`foundations/fdd1/`). Fixes the old
+problem where a teacher page (`X-teacher.md`) was hand-written prose that silently drifted from
+the student page (`X.md`) the moment either one got edited. Now the student page is the only
+place that holds real content — the teacher page is two lines that render it.
+
+**On the student page**, add a `lesson:` block to the front matter. Every field is generic —
+nothing here is specific to any one course or design element:
+
+```yaml
+lesson:
+  course: FDD              # course code (FDD/PDD/ADD)
+  unit: 1                  # unit number
+  number: "1.1"             # lesson number as shown to students ("1.1", "S1", ...)
+  is_summative: true        # omit for a formative lesson; set true for a summative/project day
+  standard: "ACP 1.1.a, 1.4.a"
+  vocab:                    # list of vocab/*.md include paths used on this lesson
+    - vocab/fdd-what-is-design.md
+  source: >                 # where the lesson content is adapted from
+    ...
+  purpose_note: >           # optional — prose that doesn't fit any other field (e.g. why a
+    ...                     # summative day is structured the way it is)
+  timing:                   # ordered list — as many segments as the lesson actually has;
+    - segment: "Bell Ringer"    # the teacher page sums `minutes` and prints the total, so a
+      minutes: 10                # lesson with an extra segment (e.g. 1.4's Class Closure) or a
+      note: "Paper stinger"       # renamed/reordered one just works, no template change needed
+  the_seven:                # maps directly to "The 7" (see that section above)
+    organization: "..."
+    connection: "..."
+    target: "..."            # written as a bare SWBAT clause — the template adds "SWBAT " itself
+    collaboration: "..."
+    evidence: "..."
+    summarization: "..."
+  exit_ticket: 1             # formative lessons: position in the Exit Ticket Bank (1-4)
+  formatives:                # summative days instead: F5/F6-style unit-level formatives
+    - label: "F5 — Cumulative Vocab Quiz"
+      description: "..."
+  turn_in:                   # ordered list of what students hand in; the template smart-joins
+    - "your guided notes"    # it with commas + "and" (both on the student page's Turn In line
+    - "your finished comp"   # and in the teacher page's Turn-In Grading baseline)
+  turn_in_grading:           # omit entirely on a page with no check-graded deliverable (e.g. S1,
+    plus: "..."              # which is graded as a project, not a check/+/-)
+    minus: "..."
+  differentiation:
+    iep504: "..."
+    ell: "..."
+    gt: "..."
+  materials:
+    - "..."
+  notes: >                   # optional catch-all for anything else worth flagging to the teacher
+    ...
+```
+
+**On the student page's body**, use `{% include lesson-parts/turn-in.html %}` instead of hand-
+typing the "📥 Turn In:" line — it reads `lesson.turn_in` and smart-joins it.
+
+**The teacher page** (`X-teacher.md`) is reduced to front matter (`nav_exclude: true`,
+`has_toc: false`) plus a title and `{% include teacher-plan.html %}`. That include
+(`_includes/teacher-plan.html`) looks up the paired student page via
+`page.url | replace: "-teacher.html", ".html"`, reads its `lesson:` block, and renders Lesson
+Identification, Target for Learning, Vocabulary, Source, Timing (with computed total — a
+built-in check that a lesson still adds up to 78 minutes), The 7, Turn-In Grading, Exit Ticket
+(or the Formatives block on a summative day), Differentiation Matrix, Materials, Notes, and a
+**Print Lesson Plan** button (`window.print()`, styled via the `@media print` rules in
+`_includes/head_custom.html`, which hide the sidebar/header/breadcrumbs/footer/search and any
+`.no-print` element so the printed page is just the lesson plan). Every field above is optional
+except `course`/`unit`/`number` — a lesson missing a section (no `formatives`, no
+`turn_in_grading`, no `notes`) simply omits that heading rather than rendering it blank, so the
+schema works unmodified for both formative lessons and structurally-different summative days.
+
+**To build a new lesson**: write the student page normally, add the `lesson:` block with that
+lesson's real content, and create the teacher page as the three-line wrapper above — nothing else
+to maintain. This is now the standard for every unit going forward, not just FDD Unit 1.
+
+---
+
 # FDD — Illustrator (ACP Graphic Design & Illustration)
 
 Objective domains: 1 Design Industry · 2 Document Management · 3 Workflow & Interface · 4 Objects, Paths & Text · 5 Appearance & Position

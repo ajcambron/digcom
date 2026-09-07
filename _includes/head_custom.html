@@ -73,5 +73,31 @@
   .worksheet-download-btn:hover {
     background-color: #0857cc;
   }
+
+  @media print {
+    .side-bar,
+    .site-header,
+    .breadcrumb-nav,
+    .site-footer,
+    .search-footer,
+    .vocab-csv-btn,
+    .worksheet-card,
+    .no-print {
+      display: none !important;
+    }
+    .main-content-wrap {
+      margin: 0 !important;
+    }
+    .main-content {
+      max-width: 100% !important;
+      padding: 0 !important;
+    }
+    body {
+      font-size: 11pt;
+    }
+    table {
+      break-inside: avoid;
+    }
+  }
 </style>
 <script src="{{ '/assets/js/vocab-csv.js' | relative_url }}" defer></script>

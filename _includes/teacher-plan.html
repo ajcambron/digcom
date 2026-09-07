@@ -1,0 +1,141 @@
+{%- comment -%}
+Generic teacher-plan renderer. Reads all content from the `lesson:` front-matter block on the
+paired student-facing page (same folder, filename minus "-teacher") — see
+_planning/2026-27-scope-and-sequence.md for the schema's source-of-truth rationale. Edit the
+student page's front matter, not this file, to change what a teacher page shows.
+{%- endcomment -%}
+{%- assign student_url = page.url | replace: "-teacher.html", ".html" -%}
+{%- assign student = site.html_pages | where: "url", student_url | first -%}
+{%- assign lesson = student.lesson -%}
+
+{%- if lesson -%}
+## Lesson Identification
+
+| | |
+|---|---|
+| Course | {{ lesson.course }} |
+| Unit | {{ lesson.unit }} |
+| Lesson | {{ lesson.number }}{% if lesson.is_summative %} (Summative){% endif %} |
+| Standard(s) | {{ lesson.standard }} |
+
+{%- if lesson.the_seven.target %}
+
+## Target for Learning
+
+SWBAT {{ lesson.the_seven.target }}.
+{%- endif %}
+
+{%- if lesson.vocab %}
+
+## Vocabulary
+{% for v in lesson.vocab %}
+{: .vocab }
+{% include {{ v }} %}
+{% endfor %}
+{%- endif %}
+
+{%- if lesson.source %}
+
+## Source
+
+{{ lesson.source }}
+{%- endif %}
+
+{%- if lesson.purpose_note %}
+
+## Purpose & scope note
+
+{{ lesson.purpose_note }}
+{%- endif %}
+
+{%- if lesson.timing %}
+
+## Timing
+
+{% assign total = 0 %}
+| Segment | Minutes | What happens |
+|---|---|---|
+{%- for t in lesson.timing %}
+| {{ t.segment }} | {{ t.minutes }} | {{ t.note }} |
+{%- assign total = total | plus: t.minutes %}
+{%- endfor %}
+
+**Total: {{ total }} minutes.**
+{%- endif %}
+
+{%- if lesson.the_seven %}
+
+## The 7 — how this lesson hits each element
+
+| Element | This lesson |
+|---|---|
+| Organization for Learning | {{ lesson.the_seven.organization }} |
+| Connection to Learning | {{ lesson.the_seven.connection }} |
+| Target for Learning | SWBAT {{ lesson.the_seven.target }}. |
+| Collaboration around Learning | {{ lesson.the_seven.collaboration }} |
+| Evidence of Learning | {{ lesson.the_seven.evidence }} |
+| Summarization of Learning | {{ lesson.the_seven.summarization }} |
+| Accommodations to the Plan | See Differentiation Matrix below. |
+{%- endif %}
+
+{%- if lesson.turn_in_grading %}
+
+## Turn-In Grading
+
+Check system (see Resources > Rubrics): **✓** = {%- for item in lesson.turn_in %}{% unless forloop.first %}{% if forloop.last %}{% if lesson.turn_in.size > 2 %}, and {% else %} and {% endif %}{% else %}, {% endif %}{% endunless %} {{ item }}{%- endfor %}, submitted. **✓+** = same, plus {{ lesson.turn_in_grading.plus }}. **✓−** = {{ lesson.turn_in_grading.minus }}.
+{%- endif %}
+
+{%- if lesson.exit_ticket %}
+
+## Exit Ticket
+
+{% assign et_path = "exit-ticket/" | append: lesson.exit_ticket | append: "-teacher.md" %}
+{% include {{ et_path }} %}
+{%- endif %}
+
+{%- if lesson.formatives %}
+
+## Unit-level formatives, assigned today
+
+{% for f in lesson.formatives %}
+- **{{ f.label }}:** {{ f.description }}
+{% endfor %}
+{%- endif %}
+
+{%- if lesson.differentiation %}
+
+## Differentiation Matrix
+
+| Cohort | Modification |
+|---|---|
+| IEP/504 | {{ lesson.differentiation.iep504 }} |
+| ELL/Multilingual | {{ lesson.differentiation.ell }} |
+| Advanced/GT | {{ lesson.differentiation.gt }} |
+{%- endif %}
+
+{%- if lesson.materials %}
+
+## Materials
+{% for m in lesson.materials %}
+- {{ m }}
+{% endfor %}
+{%- endif %}
+
+{%- if lesson.notes %}
+
+## Notes
+
+{{ lesson.notes }}
+{%- endif %}
+
+<div class="no-print" markdown="0" style="margin-top: 2em;">
+  <button onclick="window.print()" class="worksheet-download-btn" style="border: none; cursor: pointer; font-size: 1em; padding: 0.6em 1.2em;">
+    🖨️ Print Lesson Plan
+  </button>
+</div>
+{%- else -%}
+{: .warning }
+No paired student page with a `lesson:` front-matter block was found at `{{ student_url }}`. Add
+one there — see `foundations/fdd1/1_1.md` for a worked example — and this page will populate
+automatically.
+{%- endif -%}
