@@ -23,7 +23,7 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Digital Communications is a course framework for teaching Digital Communications Technology (DCT), a career pathway course for High School students in Delaware.
 baseurl: ""
-url: "digcom.cambron.cc" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://digcom.cambron.cc" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ajcambron
 
 # Build settings
