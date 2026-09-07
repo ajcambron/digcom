@@ -38,6 +38,13 @@ assignment.
 | Summarization of Learning | Reflection on what changed between the first thumbnail and the finished comp. |
 | Accommodations to the Plan | See Differentiation Matrix below. |
 
+## Turn-In Grading
+
+Check system (see Resources > Rubrics): **✓** = guided notes complete, all 16 thumbnails
+attempted, 3 roughs, and a finished comp. **✓+** = same, plus the comp shows real refinement
+(resolved composition, deliberate use of line) beyond the minimum. **✓−** = guided notes
+incomplete, thumbnail count noticeably short, or comp missing/unfinished.
+
 ## Exit Ticket
 
 {% include exit-ticket/1-teacher.md %}

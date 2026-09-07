@@ -35,6 +35,13 @@ full AIGA spec (16 thumbnails → 3 roughs → 1 comp).
 | Summarization of Learning | Reflection comparing how natural line vs. shape felt to generate ideas for. |
 | Accommodations to the Plan | See Differentiation Matrix below. |
 
+## Turn-In Grading
+
+Check system (see Resources > Rubrics): **✓** = guided notes complete, all 16 thumbnails
+attempted, 3 roughs, and a finished comp. **✓+** = same, plus the comp shows real refinement
+(resolved composition, deliberate use of shape) beyond the minimum. **✓−** = guided notes
+incomplete, thumbnail count noticeably short, or comp missing/unfinished.
+
 ## Exit Ticket
 
 {% include exit-ticket/2-teacher.md %}

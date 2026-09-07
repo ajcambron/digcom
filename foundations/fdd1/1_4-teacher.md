@@ -38,6 +38,14 @@ the last of the 4 element days.
 | Summarization of Learning | Reflection identifying and justifying their single strongest comp across the whole unit. |
 | Accommodations to the Plan | See Differentiation Matrix below. |
 
+## Turn-In Grading
+
+Check system (see Resources > Rubrics): **✓** = guided notes complete, all 16 thumbnails
+attempted, 3 roughs, a finished comp, and a strongest-comp decision with a reason. **✓+** = same,
+plus the comp shows real refinement (resolved composition, deliberate use of color) beyond the
+minimum. **✓−** = guided notes incomplete, thumbnail count noticeably short, comp
+missing/unfinished, or no strongest-comp decision given.
+
 ## Exit Ticket
 
 {% include exit-ticket/4-teacher.md %}

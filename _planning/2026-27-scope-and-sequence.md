@@ -826,7 +826,7 @@ Regional student Emmys ([call for entries](https://natasmid-atlantic.org/student
 
 ## Formative Assessment System (Schoology, fast-grade, AI-resistant)
 
-**Design principles:** (1) anchor every formative to the student's *own working file* — AI can fabricate prose, but not a screenshot of their in-progress artboard/timeline matching today's step; (2) do it in class, timed, not take-home; (3) grade artifacts, not paragraphs; (4) everything on a 0–1–2 scale so grading is a thumbnail scan (~30 sec/student).
+**Design principles:** (1) anchor every formative to the student's *own working file* — AI can fabricate prose, but not a screenshot of their in-progress artboard/timeline matching today's step; (2) do it in class, timed, not take-home; (3) grade artifacts, not paragraphs; (4) everything graded with a check/check-plus/check-minus system (✓−/✓/✓+) so grading is a thumbnail scan (~30 sec/student) — see Resources > Rubrics for the full system and its gradebook translation; the only exception is machine-graded work (auto-graded Schoology quizzes).
 
 **Every unit has exactly 6 formatives (Sep 2026):** the unit's 4 formative lessons each carry
 their own lesson-level formative (F1–F4 below, chosen by lesson type, as already mapped) — **plus
@@ -843,9 +843,9 @@ Four lesson-level reusable formats — each of the 4 formative lessons uses one,
 | # | Format | What students do | Schoology mechanics | Why AI-resistant |
 |---|---|---|---|---|
 | F1 | **Vocab Warm-Up** | 5-question quiz, first 5 min of class, application-level stems ("A client needs a logo that scales to a billboard — which file type?") | Auto-graded quiz drawing randomly from a per-unit question bank built from the ACP vocab includes; locked window during class | In-class, timed, randomized; zero grading time |
-| F2 | **Screenshot Receipt** (exit ticket) | Screenshot of *their* file showing today's required evidence (named layers visible, clipping mask applied, marker at the L-cut) + one sentence naming the tool used | Assignment, image upload; 0–1–2 checklist rubric | Shows their unique in-progress work; can't be generated after the fact |
-| F3 | **Two-Minute Drill** | Teacher announces a live micro-task ("convert this text to outlines and align to artboard center — go"); screenshot result | Assignment, 0/1; doubles as ACP live-in-the-app practice | Performed in the app under time; mirrors the exam format |
-| F4 | **Fix-This-File** | Open a deliberately broken start file (RGB doc meant for print, gap in timeline, clipped audio, unnamed layers); fix it; submit screenshot | Assignment, 0–1–2 rubric keyed to the planted errors | Requires operating the software; errors are teacher-authored and rotate |
+| F2 | **Screenshot Receipt** (exit ticket) | Screenshot of *their* file showing today's required evidence (named layers visible, clipping mask applied, marker at the L-cut) + one sentence naming the tool used | Assignment, image upload; ✓−/✓/✓+ checklist | Shows their unique in-progress work; can't be generated after the fact |
+| F3 | **Two-Minute Drill** | Teacher announces a live micro-task ("convert this text to outlines and align to artboard center — go"); screenshot result | Assignment, ✓/✓− (did they produce something responsive); doubles as ACP live-in-the-app practice | Performed in the app under time; mirrors the exam format |
+| F4 | **Fix-This-File** | Open a deliberately broken start file (RGB doc meant for print, gap in timeline, clipped audio, unnamed layers); fix it; submit screenshot | Assignment, ✓−/✓/✓+ keyed to the planted errors | Requires operating the software; errors are teacher-authored and rotate |
 
 **Structured Peer Review** (not one of the numbered F1–F6 slots): a Plus/Delta pass using
 `peerreview.md`, notes citing timestamps/locations and tool vocabulary from the partner's actual
@@ -875,10 +875,12 @@ fixed by splitting them into two distinct lines on every lesson page: a **"Turn 
 **Revised again (Sep 2026), sourced from AVID Open Access** (avidopenaccess.org/resource/
 ed-tip-exit-tickets/ — the "1-2-3", Emoji Meter, Stoplight, and Glow or Grow formats) rather than
 invented ad hoc. These are deliberately **not** artifact-based like F1–F4 above — they're a
-lightweight metacognitive check-in (how do you feel about today, not a content-knowledge test),
-graded for participation only (0/1), never for correctness. The artifact-based, AI-resistant
-evidence-of-learning job stays entirely with the **"Turn In"** line and each lesson's own
-formative — the exit ticket's only job is the 2-minute routine.
+lightweight metacognitive check-in (how do you feel about today, not a content-knowledge test).
+Graded with the same ✓−/✓/✓+ system as everything else (see Resources > Rubrics), scored on
+effort/completeness of the response, not "correctness" — there's no wrong feeling on a Stoplight
+or Emoji Meter. The artifact-based, AI-resistant evidence-of-learning job stays entirely with the
+**"Turn In"** line and each lesson's own formative — the exit ticket's only job is the 2-minute
+routine.
 
 **Positional, not content-driven — every unit's 4 formative lessons cycle through the same 4
 tickets in the same order**, regardless of course or content:
@@ -893,8 +895,8 @@ tickets in the same order**, regardless of course or content:
 Implemented as includes so the wrapper text is identical everywhere and can't drift:
 `{% include exit-ticket/1.md %}` … `{% include exit-ticket/4.md %}` (student-facing) and
 `{% include exit-ticket/1-teacher.md %}` … `4-teacher.md` (teacher-facing: the mechanic + the
-0/1 participation-only grading rule + source citation). All four are fully generic — no
-per-lesson customization needed, unlike the first draft of this bank.
+✓−/✓/✓+ grading rule + source citation). All four are fully generic — no per-lesson
+customization needed, unlike the first draft of this bank.
 
 This supersedes the "Mapping to lesson types" guidance above for *which exit ticket a lesson
 uses* (now purely positional) — that guidance still applies to which formative shapes the rest
