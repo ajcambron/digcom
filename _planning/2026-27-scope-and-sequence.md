@@ -123,6 +123,34 @@ instead (see the GMetrix strand table below).
 
 ---
 
+## Unit Structure Rule (Units 1–9 — read this before building any unit)
+
+**Every unit = exactly 4 formative lessons (`unit.1`–`unit.4`) + 1 summative block (`S`).** This
+is a hard cap, not a target — it comes from the district calendar itself (see Calendar Math
+above), not from lesson-content decisions. Concretely, for every unit in every course (FDD, PDD,
+ADD):
+
+- **Never plan, draft, or build a 5th or 6th formative lesson for a Units 1–9 unit.** If the old
+  (pre-2026-27) source content for a unit had more than 4 lessons, those extra lessons must be
+  **merged into one of the 4 slots, floated out to a later unit, folded into the summative's
+  project days, or retired** — see each course's own unit table below for how that unit
+  specifically resolved its overage (e.g. ADD Unit 4 merged two lessons because its old source had
+  6, not 5).
+- **Extra pre-summative time is never a 5th lesson** — it's additional independent project time
+  *inside* the summative block (`S`'s length varies 0–5 days by unit; see Calendar Math above).
+- Each unit's table already reflects this: 4 numbered lessons, one `S` row, and one `F5/F6` row
+  (the two unit-level formatives — see Formative Assessment System below). A unit table with a
+  5th numbered lesson is a bug, not a valid draft.
+- This applies only to **Units 1–9**. Unit 10 is review/ACP-testing (no new lessons at all), and
+  Units 11–12 ("Extra Units") are post-certification enrichment and aren't bound by the 4+1
+  structure.
+
+This rule is also stated in the repo's `CLAUDE.md` (section 4) — it's restated here, outside a
+blockquote and outside the Calendar Math history, specifically so it isn't missed by anyone
+working from a single course's section below without reading the doc top-to-bottom.
+
+---
+
 ## Lesson Requirement: "The 7" (Christina's Focus for Strong Classrooms)
 
 **Every lesson (restructured or new) must hit all 7 elements**, per the evaluation framework
@@ -254,7 +282,9 @@ to maintain. This is now the standard for every unit going forward, not just FDD
 Objective domains: 1 Design Industry · 2 Document Management · 3 Workflow & Interface · 4 Objects, Paths & Text · 5 Appearance & Position
 
 > **Restructured to the real 9-unit-before-exam calendar (Sep 2026 draft — first pass, review
-> before building pages).** The calendar hard-caps every unit at 4 formative lessons; the
+> before building pages).** The calendar hard-caps every unit at 4 formative lessons (see **Unit
+> Structure Rule** above — this is a hard cap for any future lesson work too, not just this
+> restructuring pass); the
 > original draft above assumed 5/unit × 8 units = 40. Getting to 9 × 4 = 36 required actually
 > checking, lesson by lesson, which ones each summative's ACP tag genuinely needs — not just
 > trimming evenly. Net result: **one merge, one fold-into-project-time, two more merges, and one
@@ -440,7 +470,9 @@ Objective domains: 1 Design Industry · 2 Project Setup & Interface · 3 Layers,
 
 > **Restructured to the real 9-unit-before-exam calendar (Sep 2026 draft — first pass, review
 > before building pages).** Same method as FDD: checked what each summative's ACP tag actually
-> requires, then merged, folded, or floated lessons to reach 9 × 4 = 36. Net result here: **two
+> requires, then merged, folded, or floated lessons to reach 9 × 4 = 36 (see **Unit Structure
+> Rule** above — the 4-per-unit cap is a hard rule for any future lesson work too, not just this
+> restructuring pass). Net result here: **two
 > merges (Selection Tools I+II; Healing/Clone+Content-Aware), and six floated lessons — two of
 > which pair into two more merges — forming one new consolidation unit** positioned right before
 > the final capstone. Same caveat as FDD: this is a first-pass draft, and the GMetrix table /
@@ -603,7 +635,9 @@ Objective domains: 1 Video Industry · 2 Project Setup & Interface · 3 Organizi
 **This course mostly reorders existing units.** New unit numbers below; source unit in parentheses.
 
 > **Restructured to the real 9-unit-before-exam calendar (Sep 2026 draft — first pass, review
-> before building pages).** Same method as FDD/PDD. Two things unique to ADD: **old Unit 4
+> before building pages).** Same method as FDD/PDD — every unit is hard-capped at 4 formative
+> lessons + 1 summative block, see **Unit Structure Rule** above; that cap applies to any future
+> lesson work on this course too, not just this restructuring pass. Two things unique to ADD: **old Unit 4
 > already had 6 lessons** (not 5), the worst overage of any course; and **old Unit 8's "ACP
 > Practice Exam & Review" (8.5) is now simply retired**, not floated — that job belongs to the
 > shared Unit 10 exam window, not a lesson inside this course's content. Net result: **three
