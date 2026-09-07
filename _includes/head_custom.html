@@ -14,5 +14,53 @@
   .vocab-csv-btn:hover {
     background-color: #0857cc;
   }
+
+  .worksheet-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0.8em 0 1.5em 0;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    background: #fafafa;
+    max-width: 420px;
+  }
+  .worksheet-preview-link {
+    flex-shrink: 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .worksheet-preview {
+    width: 90px;
+    height: auto;
+    display: block;
+  }
+  .worksheet-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .worksheet-title {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  .worksheet-download-btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.35em 0.7em;
+    font-size: 0.8em;
+    color: #ffffff !important;
+    background-color: #0a6cff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none !important;
+  }
+  .worksheet-download-btn:hover {
+    background-color: #0857cc;
+  }
 </style>
 <script src="{{ '/assets/js/vocab-csv.js' | relative_url }}" defer></script>

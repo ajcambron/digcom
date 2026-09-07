@@ -1,0 +1,9 @@
+<div class="worksheet-card">
+  <a href="{{ '/assets/worksheets/' | append: include.file | append: '.pdf' | relative_url }}" target="_blank" class="worksheet-preview-link">
+    <img class="worksheet-preview" src="{{ '/assets/worksheets/' | append: include.file | append: '-preview.png' | relative_url }}" alt="Preview of {{ include.title }}">
+  </a>
+  <div class="worksheet-info">
+    <span class="worksheet-title">{{ include.title }}</span>
+    <a class="worksheet-download-btn" href="{{ '/assets/worksheets/' | append: include.file | append: '.pdf' | relative_url }}" download>⬇ Download Worksheet (PDF)</a>
+  </div>
+</div>

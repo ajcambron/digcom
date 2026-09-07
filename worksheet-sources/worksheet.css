@@ -1,0 +1,141 @@
+* { box-sizing: border-box; }
+html, body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  font-size: 13pt;
+  line-height: 1.5;
+}
+.page {
+  padding: 40px 54px;
+}
+.ws-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2.5px solid #1a1a1a;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.ws-title {
+  font-size: 20pt;
+  font-weight: bold;
+  margin: 0;
+}
+.ws-course {
+  font-size: 9.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #555;
+  text-align: right;
+}
+.ws-fields {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 22px;
+  font-size: 10.5pt;
+}
+.ws-field {
+  flex: 1;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 3px;
+  min-height: 1.4em;
+}
+.ws-field-label {
+  font-size: 8.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  display: block;
+  margin-bottom: 12px;
+}
+ol.ws-items { padding-left: 24px; margin: 0; }
+ol.ws-items > li { margin-bottom: 18px; }
+.blank {
+  display: inline-block;
+  min-width: 85px;
+  border-bottom: 1px solid #1a1a1a;
+  height: 1em;
+  margin: 0 2px;
+}
+.lines .line {
+  border-bottom: 1px solid #999;
+  height: 24px;
+}
+.ws-quote {
+  font-style: italic;
+  font-size: 11.5pt;
+  border-left: 3px solid #999;
+  padding-left: 14px;
+  margin: 18px 0;
+  color: #333;
+}
+.ws-note {
+  background: #f4f6fb;
+  border: 1px solid #d7ddec;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 10.5pt;
+  margin: 16px 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.ws-footer {
+  margin-top: 26px;
+  font-size: 9pt;
+  color: #777;
+  border-top: 1px solid #ccc;
+  padding-top: 8px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.grid16 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1.85in;
+  gap: 12px;
+}
+.grid16 .box {
+  border: 1.5px solid #1a1a1a;
+  border-radius: 2px;
+  position: relative;
+}
+.grid16 .box .num {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  font-size: 9pt;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #aaa;
+}
+.tool-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.tool-list li {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+.tool-list .icon {
+  font-size: 22pt;
+  width: 44px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.tool-list .tool-name {
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  display: block;
+  margin-bottom: 3px;
+}
+.tool-list .tool-desc {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10.5pt;
+  color: #333;
+}
