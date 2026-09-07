@@ -96,6 +96,25 @@
 
 ---
 
+## Class Period Structure (78-minute block)
+
+Every class meeting (formative or summative) splits as:
+
+| Segment | Minutes | Content |
+|---|---|---|
+| Bellringer | 0–10 | Already built (separate deck, not part of these lesson pages) |
+| Core lesson instruction | 10–43 (~33 min) | The lesson page content itself — direct instruction, guided practice, formative task |
+| GMetrix/BrainBuffet self-guided strand | 43–73 (~30 min) | Per the strand section below — same ~30 min/class this doc already budgets |
+| Save, submit & pack up | 73–78 (5 min) | Not lesson content — routine closing |
+
+**Implication for lesson-page scope:** each formative lesson has roughly **33 minutes of actual
+instructional time**, not 78. Lesson pages should be scoped to what fits that window — this is
+an additional reason the FDD/PDD/ADD lesson-count crunch (36 vs. 40 slots, see the Calendar Math
+note above) is workable: a merged lesson combining two related sub-topics still has to fit ~33
+minutes, so a merge should pick topics that were already lightweight, not just adjacent.
+
+---
+
 ## Shared-Block (`_includes`) Strategy
 
 Existing reusable blocks stay the backbone so student-facing language is identical everywhere:
