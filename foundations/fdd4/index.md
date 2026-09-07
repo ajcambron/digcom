@@ -1,7 +1,7 @@
 ---
 layout: default
-title: FDD | Unit 4
+title: FDD | Unit 7
 parent: Foundations of Digital Design
 ---
-# Unit 4 | Color Theory and Self-Portrait
-Unit 4 of FDD asks students to apply the basic principles of color theory by designing an original vector self-portrait.
+# Unit 7 | Low Polygon Stained-Glass
+ Unit 7 of FDD asks students to apply principles of color theory to review the use of Adobe Illustrator
