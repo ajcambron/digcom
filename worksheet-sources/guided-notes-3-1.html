@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+<style>
+.wheel-wrap { display: flex; gap: 30px; align-items: center; margin: 12px 0 18px; }
+.color-wheel {
+  width: 150px; height: 150px; border-radius: 50%;
+  background: conic-gradient(red, yellow, lime, cyan, blue, magenta, red);
+  border: 2px solid #1a1a1a;
+  flex-shrink: 0;
+}
+.wheel-notes { font-family: Helvetica, Arial, sans-serif; font-size: 9.5pt; }
+.wheel-notes div { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="page compact">
+  <div class="ws-header">
+    <h1 class="ws-title">3.1 Guided Notes<br>Color Theory</h1>
+    <div class="ws-course">FDD Unit 3 &middot; Digital Communications</div>
+  </div>
+  <div class="ws-fields">
+    <div class="ws-field"><span class="ws-field-label">Name</span></div>
+    <div class="ws-field"><span class="ws-field-label">Date</span></div>
+  </div>
+  <div class="wheel-wrap">
+    <div class="color-wheel"></div>
+    <div class="wheel-notes">
+      <div><strong>Hue</strong> &mdash; the name of the color itself (red, blue, yellow-green...)</div>
+      <div><strong>Saturation</strong> &mdash; how intense/pure vs. dull/gray a hue is</div>
+      <div><strong>Value</strong> &mdash; how light or dark a color is</div>
+      <div>Label two <span class="blank"></span> colors (directly across the wheel) and three
+        <span class="blank"></span> colors (next to each other on the wheel).</div>
+    </div>
+  </div>
+  <ol class="ws-items">
+    <li>A <strong>color scheme</strong> is a planned combination of colors. Name the scheme:
+      opposite colors = <span class="blank"></span>; neighboring colors =
+      <span class="blank"></span>; one hue, many values = <span class="blank"></span>.</li>
+    <li>Illustrator lets you dial in a color three ways: <strong>CMYK</strong> (Cyan/Magenta/
+      Yellow/blacK &mdash; for print), <strong>RGB</strong> (Red/Green/Blue &mdash; for screens),
+      or <strong><span class="blank" style="min-width:40px;"></span></strong> (Hue/Saturation/
+      Brightness &mdash; often the most intuitive for a human to reason about).</li>
+    <li><strong>Grayscale</strong> uses only values of gray &mdash; no hue or saturation at all.</li>
+    <li>A <span class="blank"></span> value is a 6-digit web color code (like <code>#2C6E49</code>)
+      &mdash; it's just another way of writing an RGB color.</li>
+    <li>A <strong>spot color</strong> is a single, pre-mixed ink (like a specific Pantone shade)
+      printed exactly, instead of built from CMYK dots &mdash; used when color consistency really
+      matters (a logo's exact brand color).</li>
+    <li>A <strong>rich black</strong> mixes some Cyan/Magenta/Yellow in with 100% blacK for a
+      deeper, denser black than K alone &mdash; useful for large black print areas.</li>
+  </ol>
+  <div class="ws-note"><strong>Discuss:</strong> Why might a brand's logo be printed in a spot
+  color instead of building that exact shade from CMYK every time?</div>
+  <div class="ws-footer">FDD 3.1 &middot; Color Theory &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+</head>
+<body>
+<div class="page compact">
+  <div class="ws-header">
+    <h1 class="ws-title">Transparency &amp; Masks Reference</h1>
+    <div class="ws-course">FDD 7.4 &middot; Digital Communications</div>
+  </div>
+  <div class="ws-fields">
+    <div class="ws-field"><span class="ws-field-label">Name</span></div>
+    <div class="ws-field"><span class="ws-field-label">Date</span></div>
+  </div>
+  <ul class="tool-list">
+    <li>
+      <div class="icon">&#127744;</div>
+      <div>
+        <span class="tool-name">Opacity</span>
+        <span class="tool-desc">Transparency panel slider. Lowers how see-through the whole selected object is, from 100% (solid) to 0% (invisible).</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">&#128260;</div>
+      <div>
+        <span class="tool-name">Blending Mode</span>
+        <span class="tool-desc">Transparency panel dropdown. Changes how a selected object's colors mix with whatever is stacked beneath it (e.g. Multiply darkens, Screen lightens).</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">&#9986;</div>
+      <div>
+        <span class="tool-name">Clipping Mask</span>
+        <span class="tool-desc">Object &gt; Clipping Mask &gt; Make (topmost shape crops everything below it). A hard edge only &mdash; no partial transparency.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">&#127761;</div>
+      <div>
+        <span class="tool-name">Opacity Mask</span>
+        <span class="tool-desc">Drag a second object onto the mask thumbnail in the Transparency panel. White areas stay visible, black disappears, gray partially fades &mdash; use a gradient for a smooth fade.</span>
+      </div>
+    </li>
+  </ul>
+  <div class="ws-note">Quick test: does your mask need a hard edge (clipping mask) or a gradual fade (opacity mask, usually built with a gradient)?</div>
+  <div class="ws-footer">FDD 7.4 &middot; Opacity, Blending &amp; Masks &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>

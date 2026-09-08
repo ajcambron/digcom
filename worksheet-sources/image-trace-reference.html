@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+</head>
+<body>
+<div class="page compact">
+  <div class="ws-header">
+    <h1 class="ws-title">Image Trace Reference</h1>
+    <div class="ws-course">FDD 8.3 &middot; Digital Communications</div>
+  </div>
+  <div class="ws-fields">
+    <div class="ws-field"><span class="ws-field-label">Name</span></div>
+    <div class="ws-field"><span class="ws-field-label">Date</span></div>
+  </div>
+  <ul class="tool-list">
+    <li>
+      <div class="icon">&#128444;</div>
+      <div>
+        <span class="tool-name">Trace Preset</span>
+        <span class="tool-desc">A built-in starting point (Black and White Logo, High Fidelity Photo, 3 Colors, Line Art) that sets sensible defaults for your kind of source image.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">&#9633;</div>
+      <div>
+        <span class="tool-name">Ignore White</span>
+        <span class="tool-desc">Treats white areas of the source as transparent instead of tracing them as opaque shapes &mdash; useful for a logo on a colored background.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">&#9682;</div>
+      <div>
+        <span class="tool-name">Threshold</span>
+        <span class="tool-desc">In Black and White mode, the brightness value (0&ndash;255) deciding whether a pixel becomes black or white. Raise it to convert more midtones to black.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">&#9998;</div>
+      <div>
+        <span class="tool-name">Paths / Corners / Noise</span>
+        <span class="tool-desc">Fine-tuning sliders: Paths controls how tightly the trace follows the original edge, Corners how sharp turns stay, Noise how small a speck is ignored.</span>
+      </div>
+    </li>
+    <li>
+      <div class="icon">&#128257;</div>
+      <div>
+        <span class="tool-name">Expand</span>
+        <span class="tool-desc">Converts the live trace into real, editable vector paths. Before expanding, it's just a preview linked to the placed raster image.</span>
+      </div>
+    </li>
+  </ul>
+  <div class="ws-note">A live trace isn't finished artwork &mdash; you can't select or edit its individual paths until you click Expand.</div>
+  <div class="ws-footer">FDD 8.3 &middot; Image Trace &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>

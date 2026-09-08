@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+<style>
+.ui-diagram {
+  border: 2px solid #1a1a1a;
+  border-radius: 4px;
+  margin: 14px 0 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+}
+.ui-row { display: flex; }
+.ui-cell {
+  border: 1px dashed #999;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #555;
+}
+.ui-menubar { height: 22px; }
+.ui-appbar { height: 26px; }
+.ui-control { height: 24px; }
+.ui-mid { height: 150px; }
+.ui-toolbar { width: 68px; flex-shrink: 0; padding: 6px 4px; }
+.ui-panels { width: 130px; flex-shrink: 0; }
+.ui-doc { flex: 1; min-width: 0; position: relative; }
+.ui-doc .artboard {
+  position: absolute; top: 20px; bottom: 20px; left: 30px; right: 30px;
+  border: 1.5px solid #1a1a1a; background: #fafafa;
+}
+.ui-blank { border-bottom: 1px solid #1a1a1a; display: inline-block; min-width: 90px; }
+</style>
+</head>
+<body>
+<div class="page compact">
+  <div class="ws-header">
+    <h1 class="ws-title">2.2 Guided Notes<br>The Illustrator Interface</h1>
+    <div class="ws-course">FDD Unit 2 &middot; Digital Communications</div>
+  </div>
+  <div class="ws-fields">
+    <div class="ws-field"><span class="ws-field-label">Name</span></div>
+    <div class="ws-field"><span class="ws-field-label">Date</span></div>
+  </div>
+  <div class="ws-note"><strong>Label the diagram</strong> using the word bank: Application Bar
+  &middot; Toolbar &middot; Panels &middot; Control Panel (Properties) &middot; Document Window
+  &middot; Pasteboard &middot; Artboard</div>
+  <div class="ui-diagram">
+    <div class="ui-row"><div class="ui-cell ui-menubar" style="flex:1;">Menu Bar</div></div>
+    <div class="ui-row"><div class="ui-cell ui-appbar" style="flex:1;">1. <span class="ui-blank"></span></div></div>
+    <div class="ui-row"><div class="ui-cell ui-control" style="flex:1;">2. <span class="ui-blank"></span> &mdash; changes based on what tool/object is selected</div></div>
+    <div class="ui-row">
+      <div class="ui-cell ui-toolbar ui-mid" style="flex-direction:column;">3.<span class="ui-blank" style="min-width:44px; margin-top:4px;"></span></div>
+      <div class="ui-cell ui-doc ui-mid">
+        <div class="artboard"><span style="position:absolute; top:4px; left:4px; font-size:8pt;">7. <span class="ui-blank" style="min-width:50px;"></span></span></div>
+        <span style="position:absolute; bottom:4px; right:4px; font-size:8pt;">6. <span class="ui-blank" style="min-width:50px;"></span> (the gray area outside the artboard)</span>
+        <span style="position:absolute; top:4px; right:8px; font-size:8pt; color:#999;">5. <span class="ui-blank" style="min-width:60px;"></span></span>
+      </div>
+      <div class="ui-cell ui-panels ui-mid">4. <span class="ui-blank" style="min-width:50px;"></span><br>(Layers, Swatches, Color...)</div>
+    </div>
+  </div>
+  <ol class="ws-items" start="1">
+    <li>The <strong>Application Bar</strong> holds the workspace switcher, search, and
+      arrange-documents controls.</li>
+    <li>The <strong>Control Panel</strong> (also called the <strong>Properties panel</strong> in
+      current Illustrator) is context-sensitive &mdash; select the Type tool and it shows font
+      controls; select a shape and it shows fill/stroke controls.</li>
+    <li>The <strong>Toolbar</strong> holds your tools; a small triangle on a tool's icon means it's
+      hiding a flyout group of related tools &mdash; click and hold to see them.</li>
+    <li>A floating <strong>Contextual Task Bar</strong> can also appear right next to your
+      selection, offering the same kind of quick, relevant actions.</li>
+  </ol>
+  <div class="ws-footer">FDD 2.2 &middot; The Illustrator Interface &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>

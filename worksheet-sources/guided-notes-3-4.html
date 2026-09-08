@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+<style>
+.align-row { display: flex; gap: 18px; margin: 12px 0 18px; }
+.align-box {
+  flex: 1; height: 90px; border: 1.5px solid #1a1a1a; border-radius: 3px; position: relative;
+}
+.dot { width: 14px; height: 14px; border-radius: 50%; background: #3b6db2; position: absolute; }
+.align-box.before .dot:nth-child(1) { top: 8px; left: 10px; }
+.align-box.before .dot:nth-child(2) { top: 40px; left: 60px; }
+.align-box.before .dot:nth-child(3) { top: 70px; left: 25px; }
+.align-box.after .dot { top: 38px; }
+.align-box.after .dot:nth-child(1) { left: 10px; }
+.align-box.after .dot:nth-child(2) { left: 60px; }
+.align-box.after .dot:nth-child(3) { left: 110px; }
+.cap { position:absolute; bottom:-18px; left:0; right:0; text-align:center; font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt; color:#555; }
+</style>
+</head>
+<body>
+<div class="page compact">
+  <div class="ws-header">
+    <h1 class="ws-title">3.4 Guided Notes<br>Align, Distribute &amp; Arrange</h1>
+    <div class="ws-course">FDD Unit 3 &middot; Digital Communications</div>
+  </div>
+  <div class="ws-fields">
+    <div class="ws-field"><span class="ws-field-label">Name</span></div>
+    <div class="ws-field"><span class="ws-field-label">Date</span></div>
+  </div>
+  <div class="align-row">
+    <div class="align-box before"><div class="dot"></div><div class="dot"></div><div class="dot"></div><span class="cap">Before</span></div>
+    <div class="align-box after"><div class="dot"></div><div class="dot"></div><div class="dot"></div><span class="cap">After: aligned + distributed</span></div>
+  </div>
+  <ol class="ws-items">
+    <li>The <strong>Align panel</strong> can line objects up relative to each other, to a
+      <span class="blank"></span> object (click one twice to set it as the anchor), or to the
+      whole artboard.</li>
+    <li><strong>Distribute</strong> spaces objects out evenly &mdash; equal gaps between them, or
+      equal center-to-center distance &mdash; instead of just lining up one edge.</li>
+    <li>Objects paint in a specific order called <span class="blank"></span> order &mdash; the
+      last one drawn sits on top. Use <strong>Object &gt; Arrange</strong> (Bring to Front, Bring
+      Forward, Send Backward, Send to Back) to change it.</li>
+    <li>Once a set of objects is arranged the way you want, <span class="blank"></span> them
+      (Cmd/Ctrl+G) so they move, scale, and rotate together as one unit.</li>
+  </ol>
+  <div class="ws-note"><strong>Discuss:</strong> You've arranged five icons in a perfect row, but
+  moving one accidentally un-aligns it. What should you have done first?</div>
+  <div class="ws-footer">FDD 3.4 &middot; Align, Distribute &amp; Arrange &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>

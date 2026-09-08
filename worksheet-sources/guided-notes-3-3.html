@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+<style>
+.grad-row { display: flex; gap: 24px; margin: 14px 0 18px; }
+.grad-box {
+  flex: 1; height: 70px; border: 1.5px solid #1a1a1a; border-radius: 3px;
+  position: relative; font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt; color:#555;
+}
+.grad-linear { background: linear-gradient(90deg, #2c6e49, #ffffff, #b23b3b); }
+.grad-radial { background: radial-gradient(circle, #ffffff, #3b6db2); }
+.grad-box .cap { position:absolute; bottom:-18px; left:0; right:0; text-align:center; }
+</style>
+</head>
+<body>
+<div class="page compact">
+  <div class="ws-header">
+    <h1 class="ws-title">3.3 Guided Notes<br>Swatches &amp; Gradients</h1>
+    <div class="ws-course">FDD Unit 3 &middot; Digital Communications</div>
+  </div>
+  <div class="ws-fields">
+    <div class="ws-field"><span class="ws-field-label">Name</span></div>
+    <div class="ws-field"><span class="ws-field-label">Date</span></div>
+  </div>
+  <ol class="ws-items">
+    <li>A <span class="blank"></span> color is a saved color built from CMYK or RGB percentages
+      &mdash; the standard, everyday swatch.</li>
+    <li>A <span class="blank"></span> swatch represents a single pre-mixed ink (see 3.1's Spot
+      Color) &mdash; use it when an exact brand color matters.</li>
+    <li>A <span class="blank"></span> swatch is linked everywhere it's used: edit the swatch once,
+      and every shape using it updates automatically &mdash; a huge time-saver for a client's
+      brand color used across many objects.</li>
+    <li>The <strong>Color Guide</strong> panel takes one base color and suggests whole
+      harmonious groups from it (complementary, analogous, triadic...) &mdash; the same
+      relationships from 3.1's color wheel, generated for you.</li>
+  </ol>
+  <div class="grad-row">
+    <div class="grad-box grad-linear"><span class="cap"><span class="blank" style="min-width:60px;"></span> gradient</span></div>
+    <div class="grad-box grad-radial"><span class="cap"><span class="blank" style="min-width:60px;"></span> gradient</span></div>
+  </div>
+  <ol class="ws-items" start="5">
+    <li>Each colored point along a gradient's ramp is a <span class="blank"></span> &mdash; drag
+      to reposition it, double-click to change its color, or drag its opacity slider down to fade
+      it out.</li>
+    <li>A <strong>Gradient Mesh</strong> lets you blend many colors across a shape along a flexible
+      grid of points, instead of a straight line or circle &mdash; useful for photorealistic
+      shading, but the most advanced gradient tool.</li>
+  </ol>
+  <div class="ws-note"><strong>Discuss:</strong> Why would a client's exact logo color be better as
+  a global swatch than a color you re-mix by eye every time you need it?</div>
+  <div class="ws-footer">FDD 3.3 &middot; Swatches &amp; Gradients &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+<style>
+.bleed-diagram {
+  width: 260px;
+  aspect-ratio: 1.6/1;
+  margin: 10px auto 6px;
+  position: relative;
+  background: repeating-linear-gradient(45deg, #f3d9d9, #f3d9d9 6px, #fff 6px, #fff 12px);
+  border: 2px dashed #b23b3b;
+}
+.bleed-diagram .trim {
+  position: absolute; inset: 14px;
+  border: 2px solid #1a1a1a;
+  background: #fff;
+}
+.bleed-diagram .live {
+  position: absolute; inset: 30px;
+  border: 1.5px dotted #3b6db2;
+}
+.bleed-label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  text-align: center;
+  color: #555;
+}
+.diagram-wrap { display: flex; gap: 30px; align-items: flex-start; margin: 14px 0 20px; }
+.legend { font-family: Helvetica, Arial, sans-serif; font-size: 9.5pt; flex: 1; }
+.legend div { margin-bottom: 8px; }
+.swatch { display:inline-block; width:12px; height:12px; margin-right:6px; vertical-align: middle; }
+</style>
+</head>
+<body>
+<div class="page compact">
+  <div class="ws-header">
+    <h1 class="ws-title">2.3 Guided Notes<br>Documents &amp; Artboards</h1>
+    <div class="ws-course">FDD Unit 2 &middot; Digital Communications</div>
+  </div>
+  <div class="ws-fields">
+    <div class="ws-field"><span class="ws-field-label">Name</span></div>
+    <div class="ws-field"><span class="ws-field-label">Date</span></div>
+  </div>
+  <ol class="ws-items">
+    <li>The <strong>New Document</strong> dialog asks for a preset category (Print, Web, Mobile,
+      Film &amp; Video...), size, units, orientation, and <span class="blank"></span> mode
+      (CMYK for print, RGB for screen).</li>
+    <li>An <span class="blank"></span> is one page/canvas in your document &mdash; a single
+      Illustrator file can hold multiple, which is perfect for a business card's front and back,
+      or a set of related layouts.</li>
+    <li>The <span class="blank"></span> is the gray work area surrounding your artboards &mdash;
+      you can leave art there as scratch space, but it never prints or exports.</li>
+  </ol>
+  <div class="diagram-wrap">
+    <div style="flex-shrink:0;">
+      <div class="bleed-diagram"><div class="trim"><div class="live"></div></div></div>
+      <div class="bleed-label">Label each zone below</div>
+    </div>
+    <div class="legend">
+      <div><span class="swatch" style="background:#f3d9d9; border:1px solid #b23b3b;"></span>
+        <strong><span class="blank" style="min-width:60px;"></span></strong> &mdash; extra artwork
+        past the trim edge, so no white sliver shows up if the physical cut shifts slightly.</div>
+      <div><span class="swatch" style="border:2px solid #1a1a1a;"></span>
+        <strong><span class="blank" style="min-width:60px;"></span></strong> &mdash; the actual
+        final, physical edge of the printed piece (matches the artboard size).</div>
+      <div><span class="swatch" style="border:1.5px dotted #3b6db2;"></span>
+        <strong><span class="blank" style="min-width:60px;"></span></strong> &mdash; the safe zone
+        for text/important content, kept clear of the trim edge in case of small cutting shifts.</div>
+    </div>
+  </div>
+  <div class="ws-note"><strong>Discuss:</strong> Why would skipping bleed cause a problem on a
+  printed business card, even though it looks perfectly fine on screen?</div>
+  <div class="ws-footer">FDD 2.3 &middot; Documents &amp; Artboards &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>

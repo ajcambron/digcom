@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+<style>
+  .idea-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .idea-grid .box {
+    aspect-ratio: 4 / 3;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 2px;
+    position: relative;
+  }
+  .idea-grid .box .num {
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    font-size: 9pt;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #aaa;
+  }
+</style>
+</head>
+<body>
+<div class="page compact">
+  <div class="ws-header">
+    <h1 class="ws-title">Sketchbook Ideation Sheet</h1>
+    <div class="ws-course">FDD Unit 12 &middot; Digital Communications</div>
+  </div>
+  <div class="ws-fields">
+    <div class="ws-field"><span class="ws-field-label">Name</span></div>
+    <div class="ws-field"><span class="ws-field-label">Today's Prompt</span></div>
+    <div class="ws-field"><span class="ws-field-label">Date</span></div>
+  </div>
+  <div class="ws-note"><strong>Divergent pass (10 min):</strong> fill as many of the 9 boxes below as you can with a different idea for today's prompt. Work fast &mdash; quantity over polish. Don't stop to judge an idea; just get it down and move to the next box.</div>
+  <div class="idea-grid">
+    <div class="box"><span class="num">1</span></div>
+    <div class="box"><span class="num">2</span></div>
+    <div class="box"><span class="num">3</span></div>
+    <div class="box"><span class="num">4</span></div>
+    <div class="box"><span class="num">5</span></div>
+    <div class="box"><span class="num">6</span></div>
+    <div class="box"><span class="num">7</span></div>
+    <div class="box"><span class="num">8</span></div>
+    <div class="box"><span class="num">9</span></div>
+  </div>
+  <div class="ws-note" style="margin-top:14px;"><strong>Convergent pass (2 min):</strong> circle the ONE idea above you'd most want to develop further, and write one sentence on why it's the strongest.</div>
+  <div class="lines"><div class="line"></div></div>
+  <div class="ws-footer">FDD 12.2 &middot; Sketchbook Practice &amp; Ideation &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>
