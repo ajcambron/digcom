@@ -19,7 +19,7 @@ a new tool the students haven't touched, it's a new *application* of tools they 
 Nothing in this unit is ACP-tested — see each lesson's `standard:` field, which reads "Not
 ACP-tested — post-certification enrichment" instead of an ACP objective tag. The unit still
 carries full compliance rigor (78-minute timing, The 7, a real Differentiation Matrix, real
-Turn-In criteria) — the students are still in the room, even though the exam is behind them.
+Organize criteria) — the students are still in the room, even though the exam is behind them.
 
 ## Lessons
 - [11.1 – Page Layout Fundamentals](11_1.md) — margins, gutters, columns, hierarchy, alignment

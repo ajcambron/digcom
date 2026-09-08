@@ -41,5 +41,5 @@ Paths & Text) — 4.3.c and 4.4.b (paragraph/area type) — and 5.1.b/4.2.d (tra
 Each lesson (6.1–6.4) carries its own formative. On S6's project days, students also complete a
 cumulative vocabulary quiz covering this unit's terms and receive a grade compiled from the
 unit's daily bellringers. Unlike this course's other summatives, S6 also keeps a check-graded
-Turn-In line (the Portfolio Polish Revision Checklist) alongside the project rubric, since it
+Organize line (the Portfolio Polish Revision Checklist) alongside the project rubric, since it
 produces one discrete, checkable deliverable rather than an open-ended new piece.

@@ -18,7 +18,7 @@ year — the natural capstone to the whole FDD course, not just this unit.
 Nothing in this unit is ACP-tested — see each lesson's `standard:` field, which reads "Not
 ACP-tested — post-certification enrichment" instead of an ACP objective tag. The unit still
 carries full compliance rigor (78-minute timing, The 7, a real Differentiation Matrix, real
-Turn-In criteria) — the students are still in the room, even though the exam is behind them.
+Organize criteria) — the students are still in the room, even though the exam is behind them.
 
 ## Lessons
 - [12.1 – Scale & Measurement in Design](12_1.md) — scale ratios, scale rulers, converting actual
