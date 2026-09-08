@@ -1,9 +1,21 @@
+{%- if include.presentation %}
+  {%- if include.presentation == "placeholder" %}
+<div class="presentation-embed presentation-placeholder">
+  <div class="presentation-embed-fill">🎞️ Presentation placeholder — replace <code>presentation="placeholder"</code> with this lesson's Google Sites embed URL.</div>
+</div>
+  {%- else %}
+<div class="presentation-embed">
+  <iframe class="presentation-embed-fill" src="{{ include.presentation }}" allowfullscreen loading="lazy"></iframe>
+</div>
+  {%- endif %}
+{%- endif %}
 <div class="worksheet-card">
   <a href="{{ '/assets/worksheets/' | append: include.file | append: '.pdf' | relative_url }}" target="_blank" class="worksheet-preview-link">
     <img class="worksheet-preview" src="{{ '/assets/worksheets/' | append: include.file | append: '-preview.png' | relative_url }}" alt="Preview of {{ include.title }}">
   </a>
   <div class="worksheet-info">
     <span class="worksheet-title">{{ include.title }}</span>
+    <p class="worksheet-instructions">Complete the handout, three hole punch it, and keep it in your class binder.</p>
     <a class="worksheet-download-btn" href="{{ '/assets/worksheets/' | append: include.file | append: '.pdf' | relative_url }}" download>⬇ Download Worksheet (PDF)</a>
   </div>
 </div>

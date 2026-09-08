@@ -1,0 +1,250 @@
+<div class="ai-newdoc">
+  <style>
+    .ai-newdoc {
+      --ai-bg: #323232;
+      --ai-panel: #2b2b2b;
+      --ai-field: #1e1e1e;
+      --ai-border: #444444;
+      --ai-text: #e6e6e6;
+      --ai-text-muted: #999999;
+      --ai-accent: #1473e6;
+      --ai-accent-text: #ffffff;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 640px;
+      margin: 1em 0 1.5em 0;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+      background: var(--ai-bg);
+      color: var(--ai-text);
+      font-size: 13px;
+    }
+    .ai-newdoc-titlebar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: #262626;
+      border-bottom: 1px solid var(--ai-border);
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+    .ai-newdoc-titlebar .ai-close {
+      color: var(--ai-text-muted);
+      font-size: 15px;
+      line-height: 1;
+    }
+    .ai-newdoc-tabs {
+      display: flex;
+      gap: 2px;
+      padding: 8px 14px 0 14px;
+      background: var(--ai-bg);
+      border-bottom: 1px solid var(--ai-border);
+    }
+    .ai-newdoc-tab {
+      padding: 6px 12px;
+      font-size: 12px;
+      color: var(--ai-text-muted);
+      border-bottom: 2px solid transparent;
+    }
+    .ai-newdoc-tab.active {
+      color: var(--ai-text);
+      border-bottom: 2px solid var(--ai-accent);
+    }
+    .ai-newdoc-body {
+      display: flex;
+      min-height: 260px;
+    }
+    .ai-newdoc-presets {
+      flex: 1 1 60%;
+      padding: 14px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      align-content: start;
+    }
+    .ai-preset-card {
+      border: 1px solid var(--ai-border);
+      border-radius: 4px;
+      padding: 10px 8px;
+      text-align: center;
+      background: var(--ai-panel);
+    }
+    .ai-preset-card.selected {
+      border-color: var(--ai-accent);
+      background: #22384f;
+    }
+    .ai-preset-card .ai-preset-swatch {
+      width: 32px;
+      height: 40px;
+      margin: 0 auto 8px auto;
+      background: #4a4a4a;
+      border: 1px solid #666;
+    }
+    .ai-preset-card.selected .ai-preset-swatch {
+      background: #6ea8e0;
+      border-color: #9cc4ee;
+    }
+    .ai-preset-card .ai-preset-name {
+      font-size: 11.5px;
+      color: var(--ai-text);
+    }
+    .ai-preset-card .ai-preset-dims {
+      font-size: 10px;
+      color: var(--ai-text-muted);
+      margin-top: 2px;
+    }
+    .ai-newdoc-details {
+      flex: 1 1 40%;
+      border-left: 1px solid var(--ai-border);
+      padding: 14px;
+      background: var(--ai-panel);
+    }
+    .ai-detail-label {
+      font-size: 10.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--ai-text-muted);
+      margin: 12px 0 4px 0;
+    }
+    .ai-detail-label:first-child {
+      margin-top: 0;
+    }
+    .ai-detail-field {
+      background: var(--ai-field);
+      border: 1px solid var(--ai-border);
+      border-radius: 3px;
+      padding: 5px 8px;
+      font-size: 12px;
+      color: var(--ai-text);
+    }
+    .ai-detail-row {
+      display: flex;
+      gap: 8px;
+    }
+    .ai-detail-row .ai-detail-field {
+      flex: 1;
+    }
+    .ai-orientation-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 26px;
+      border: 1px solid var(--ai-border);
+      border-radius: 3px;
+      background: var(--ai-field);
+      margin-right: 6px;
+      font-size: 13px;
+    }
+    .ai-orientation-btn.active {
+      border-color: var(--ai-accent);
+      background: #22384f;
+      color: var(--ai-accent);
+    }
+    .ai-newdoc-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      padding: 12px 14px;
+      border-top: 1px solid var(--ai-border);
+      background: var(--ai-bg);
+    }
+    .ai-btn {
+      padding: 6px 16px;
+      border-radius: 3px;
+      font-size: 12.5px;
+      border: 1px solid var(--ai-border);
+      background: var(--ai-panel);
+      color: var(--ai-text);
+    }
+    .ai-btn.ai-btn-primary {
+      background: var(--ai-accent);
+      border-color: var(--ai-accent);
+      color: var(--ai-accent-text);
+      font-weight: 600;
+    }
+  </style>
+
+  <div class="ai-newdoc-titlebar">
+    <span>New Document</span>
+    <span class="ai-close">&times;</span>
+  </div>
+
+  <div class="ai-newdoc-tabs">
+    {%- assign category = include.category | default: "Print" %}
+    {%- for tab in "Recent,Saved,Mobile,Web,Print,Film & Video,Art & Illustration" | split: "," %}
+    <div class="ai-newdoc-tab{% if tab == category %} active{% endif %}">{{ tab }}</div>
+    {%- endfor %}
+  </div>
+
+  <div class="ai-newdoc-body">
+    <div class="ai-newdoc-presets">
+      <div class="ai-preset-card selected">
+        <div class="ai-preset-swatch"></div>
+        <div class="ai-preset-name">{{ include.preset | default: "Letter" }}</div>
+        <div class="ai-preset-dims">{{ include.width | default: "8.5" }} x {{ include.height | default: "11" }} {{ include.units | default: "in" }}</div>
+      </div>
+      <div class="ai-preset-card">
+        <div class="ai-preset-swatch"></div>
+        <div class="ai-preset-name">A4</div>
+        <div class="ai-preset-dims">210 x 297 mm</div>
+      </div>
+      <div class="ai-preset-card">
+        <div class="ai-preset-swatch"></div>
+        <div class="ai-preset-name">Legal</div>
+        <div class="ai-preset-dims">8.5 x 14 in</div>
+      </div>
+      <div class="ai-preset-card">
+        <div class="ai-preset-swatch"></div>
+        <div class="ai-preset-name">Tabloid</div>
+        <div class="ai-preset-dims">11 x 17 in</div>
+      </div>
+      <div class="ai-preset-card">
+        <div class="ai-preset-swatch"></div>
+        <div class="ai-preset-name">B5</div>
+        <div class="ai-preset-dims">176 x 250 mm</div>
+      </div>
+      <div class="ai-preset-card">
+        <div class="ai-preset-swatch"></div>
+        <div class="ai-preset-name">Postcard</div>
+        <div class="ai-preset-dims">4 x 6 in</div>
+      </div>
+    </div>
+
+    <div class="ai-newdoc-details">
+      <div class="ai-detail-label">Preset Details</div>
+      <div class="ai-detail-field">{{ include.doc_name | default: "Untitled-1" }}</div>
+
+      <div class="ai-detail-label">Units</div>
+      <div class="ai-detail-field">{{ include.units_full | default: "Inches" }}</div>
+
+      <div class="ai-detail-label">Width &amp; Height</div>
+      <div class="ai-detail-row">
+        <div class="ai-detail-field">{{ include.width | default: "8.5" }}</div>
+        <div class="ai-detail-field">{{ include.height | default: "11" }}</div>
+      </div>
+
+      <div class="ai-detail-label">Orientation</div>
+      <div>
+        {%- assign orientation = include.orientation | default: "portrait" %}
+        <span class="ai-orientation-btn{% if orientation == "portrait" %} active{% endif %}">&#128196;</span>
+        <span class="ai-orientation-btn{% if orientation == "landscape" %} active{% endif %}">&#128443;</span>
+      </div>
+
+      <div class="ai-detail-label">Color Mode</div>
+      <div class="ai-detail-field">{{ include.color_mode | default: "CMYK Color" }}</div>
+
+      <div class="ai-detail-label">Raster Effects</div>
+      <div class="ai-detail-field">{{ include.raster_effects | default: "High (300 ppi)" }}</div>
+
+      <div class="ai-detail-label">Preview Mode</div>
+      <div class="ai-detail-field">{{ include.preview_mode | default: "Default" }}</div>
+    </div>
+  </div>
+
+  <div class="ai-newdoc-footer">
+    <span class="ai-btn">Cancel</span>
+    <span class="ai-btn ai-btn-primary">Create</span>
+  </div>
+</div>

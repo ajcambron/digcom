@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+<style>
+.zoom-row { display: flex; gap: 24px; margin: 16px 0 20px; }
+.zoom-box {
+  flex: 1;
+  aspect-ratio: 4/3;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 3px;
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.zoom-box .cap {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 9pt;
+  color: #555;
+}
+</style>
+</head>
+<body>
+<div class="page compact">
+  <div class="ws-header">
+    <h1 class="ws-title">2.1 Guided Notes<br>Pixels vs. Paths</h1>
+    <div class="ws-course">FDD Unit 2 &middot; Digital Communications</div>
+  </div>
+  <div class="ws-fields">
+    <div class="ws-field"><span class="ws-field-label">Name</span></div>
+    <div class="ws-field"><span class="ws-field-label">Date</span></div>
+  </div>
+  <ol class="ws-items">
+    <li>A <strong>raster</strong> (or <strong>bitmap</strong>) image is built from a fixed grid of
+      colored squares called <span class="blank"></span>. Zoom in far enough and you'll see the
+      individual squares &mdash; this is why enlarging a raster image makes it look
+      <span class="blank"></span>.</li>
+    <li>A <strong>vector</strong> graphic is built from mathematical <span class="blank"></span>
+      &mdash; lines and curves defined by anchor points &mdash; grouped into
+      <span class="blank"></span>s. Because they're math, not a fixed grid, vectors can be
+      <span class="blank"></span> to any size with zero quality loss.</li>
+    <li><strong>Rasterizing</strong> means converting a vector object into a fixed grid of pixels
+      (a one-way trip &mdash; you lose the ability to edit it as clean paths afterward).
+      <strong>Rendering</strong> is the more general process of a program calculating and
+      displaying an image on screen or in a file.</li>
+    <li>Why is Illustrator vector-based? Logos and icons need to work at
+      <span class="blank"></span> sizes &mdash; a business card <em>and</em> a billboard &mdash;
+      without ever looking blocky.</li>
+  </ol>
+  <div class="zoom-row">
+    <div class="zoom-box"><span class="cap">Sketch: a raster photo, zoomed to 800%</span></div>
+    <div class="zoom-box"><span class="cap">Sketch: a vector logo, zoomed to 800%</span></div>
+  </div>
+  <div class="ws-note"><strong>Discuss:</strong> A client sends you their logo as a small,
+  blurry JPG. Why is a vector recreation almost always the better fix than just resizing the JPG?</div>
+  <div class="ws-footer">FDD 2.1 &middot; Pixels vs. Paths &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>

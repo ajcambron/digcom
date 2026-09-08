@@ -1,6 +1,7 @@
 ---
 layout: default
 title: FDD | Unit 1
+nav_order: 1
 parent: Foundations of Digital Design
 has_children: true
 has_toc: false

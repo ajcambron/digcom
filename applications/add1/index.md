@@ -2,53 +2,40 @@
 layout: default
 title: ADD | Unit 1
 parent: Applications of Digital Design
-
+has_children: true
+has_toc: false
 ---
-# Unit 1 | The Elements of Video
-Unit 1 of ADD covers the basic elements and principles of design and layout. By making conscious decisions, designers can use these base units to create powerful design statements.
+# Unit 1 | Elements of Video & Pre-Production
 
-# What is Video?
-## Video
-Video is an electronic medium for the recording, copying, playback, broadcast, and display of moving-image media. Video was first developed for mechanical television systems, which were quickly replaced by cathode-ray tube (CRT) systems, which, in turn, were replaced by flat-panel displays. 
+Unit 1 introduces the video industry and the pre-production process every video project goes
+through before a camera ever rolls: going digital and the movie-making process, client goals and
+target audience, topic selection and a design brief, a two-column script, and the standard
+shot-vocabulary filmmakers use to plan a shot list. On the project day, you'll shoot and edit a
+short explainer video using your own pre-production plan — your first time in the field with a
+camera.
 
-This is contrast to the fully analog system of **film projection**, which predates video.
+{: .highlight }
+This is the first unit of the year, when district network access and student accounts are least
+reliable. Lessons 1.1–1.4 run entirely on paper — no computer or network access required. The
+S | 1 project is the one day this unit that needs a device (a smartphone and a web-based editor).
 
-The word video comes from the Latin video, "I see"
+## Lessons
+- [1.1 – Intro to Digital Video Production](1_1.md) — going digital, the movie-making process
+- [1.2 – Topic Selection & Design Brief](1_2.md) — client goals, target audience, design brief
+- [1.3 – Two-Column Script](1_3.md) — preproduction paperwork, script drafting
+- [1.4 – Film Form & Shot Vocabulary](1_4.md) — shot types, labeling a shot list
+- [S1 – Explainer Video](s1.md) — summative project
 
-# Basic Elements of Video
-## Focal Length
-The distance between a lens's optical center and the point where light converges to form an image, typically the camera's sensor or film
-## Framing
-The artistic decision to include or exclude elements from the video frame, and to position objects in the frame for optimal effect.
-## Aspect Ratio
-The ratio between the width and height of the video. The most common are 16:9, 4:3, 1.85:1 and 2.35:1. Usually, this is expressed as a whole number, except the case of some exceptionally large ratios (2.35:1 would be 47:20 if expressed as a whole number).
+## Source
+Adapted from the original `applications/add1` lesson content (Intro to Digital Video Production,
+Pick a Topic, Design Brief, Two-Column Script, Explainer Video), restructured into the
+`lesson:` front-matter schema with a new Film Form & Shot Vocabulary lesson added.
 
-# Frame Rate
-The rate at which the video replaces the frames in a video sequence. The universal standard for film is 24fps. 
-### NTSC - The National Television System Committee (North America, most of South America, Japan and others)
-Television signals are 29.97fps for general US broadcasts, and 59.97fps for fast action content like sports. 
-### PAL/SECAM - The systems that govern the rest of the world
-Television signals are 25fps for general broadcasts in the rest of the world.
-##Digital Video
-Digital video signals mean that phones and computer displays can generally display any of the standard frame rates (multiples of 24, 29.97, or 25) - however convention still remains that 24fps is the standard for "filmic" content. 
-### Higher Frame Rates
-Higher frame rates appear unnatural, and are reserved for content like video games. 
-## Resolution
-The fidelity of the image expressed as width by height. Common resolutions include 720p (1080x720), 1080p (1920x1080), 4K (3840x2160).
-# Exposure Triangle - Video
-## Shutter Angle
-The ratio of the shutter speed to frame rate expressed in degrees. Generally - all film content is filmed with a shutter angle of 180°. A faster shutter angle appears choppy, a slower shutter angle adds blur and light streaks.
-## Gain
-The sensitivity of the image sensor to light expressed as ISO. Generally - the lower the ISO, the higher fidelity the image. Depending on the image sensor, you may be able to experiment with higher ISO settings.
-## Aperture
-The setting that describes the size of the opening between the lens and the camera body. A smaller number represents a larger opening.
-## Codec
-The coder/decoder that converts the series of images into a compressed file that can be played on a computer. The most common and compatible codec is H.264/AVC. iPhones now record in H.265/HEVC, but this format is not as widely compatible.
-### Inter-frame Codec
-An inter frame is a frame in a video compression stream which is expressed in terms of one or more neighboring frames. The "inter" part of the term refers to the use of Inter frame prediction. This tries to take advantage of temporal redundancy between neighboring frames, enabling higher compression rates. H.264 and H.265 are examples
-### Intra-frame Codec
-Intra-frame coding is a data compression technique used within a video frame, enabling smaller file sizes and lower bitrates. Since neighboring pixels within an image are often very similar, rather than storing each pixel independently, the frame image is divided into blocks and the typically minor difference between each pixel can be encoded using fewer bits. Apple ProRes is an example.
-### Digital Cinema Package
-A collection of digital files used to store and convey digital cinema (DC) audio, image, and data streams. 
+## ACP Alignment
+Objective domain 1 (Video Industry), objective 1.4.c (Film Form/Shot Vocabulary) — see
+`_planning/2026-27-scope-and-sequence.md` for the full ACP tag breakdown per lesson.
 
-
+## Assessment Rhythm
+Each lesson (1.1–1.4) carries its own formative. On the S | 1 project day, students also
+complete a cumulative vocabulary quiz covering this unit's terms and receive a grade compiled
+from the unit's daily bellringers.

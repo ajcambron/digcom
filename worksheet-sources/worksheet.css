@@ -10,6 +10,20 @@ html, body {
 .page {
   padding: 40px 54px;
 }
+.page.compact {
+  padding: 14px 54px;
+}
+.page.compact .ws-header {
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+.page.compact .ws-fields {
+  margin-bottom: 6px;
+}
+.page.compact .grid16,
+.page.compact .grid3 {
+  gap: 6px;
+}
 .ws-header {
   display: flex;
   justify-content: space-between;
@@ -91,15 +105,34 @@ ol.ws-items > li { margin-bottom: 18px; }
 .grid16 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 1.85in;
-  gap: 12px;
+  gap: 10px;
 }
 .grid16 .box {
+  aspect-ratio: 8.5 / 11;
   border: 1.5px solid #1a1a1a;
   border-radius: 2px;
   position: relative;
 }
 .grid16 .box .num {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  font-size: 9pt;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #aaa;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.grid3 .box {
+  aspect-ratio: 8.5 / 11;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 2px;
+  position: relative;
+}
+.grid3 .box .num {
   position: absolute;
   top: 4px;
   left: 6px;
@@ -137,5 +170,64 @@ ol.ws-items > li { margin-bottom: 18px; }
 .tool-list .tool-desc {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 10.5pt;
+  color: #333;
+}
+.ws-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  margin: 14px 0;
+}
+.ws-table th, .ws-table td {
+  border: 1px solid #1a1a1a;
+  padding: 6px 8px;
+  vertical-align: top;
+  text-align: left;
+}
+.ws-table th {
+  background: #f4f6fb;
+  font-size: 8.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #333;
+}
+.ws-table td.blank-cell {
+  height: 40px;
+}
+.shot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 14px 0;
+}
+.shot-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 7px 9px;
+}
+.shot-card .diagram {
+  width: 62px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 2px;
+  background: #fafafa;
+  overflow: hidden;
+}
+.shot-card .info {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.25;
+}
+.shot-card .abbr {
+  font-weight: bold;
+  font-size: 10.5pt;
+  display: block;
+}
+.shot-card .desc {
+  font-size: 8pt;
   color: #333;
 }
