@@ -1,0 +1,23 @@
+{%- assign weeks = site.data.calendar[include.unit] -%}
+{%- if weeks -%}
+<div class="table-wrapper">
+<table class="calendar-of-events">
+<thead>
+<tr><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th></tr>
+</thead>
+<tbody>
+{%- for week in weeks %}
+<tr class="cal-dates">
+{%- for day in week.days %}<td>{{ day.date }}</td>{% endfor %}
+</tr>
+<tr class="cal-labels">
+{%- for day in week.days %}<td>{% if day.link and day.unit == include.unit %}<a href="{{ day.link }}.md">{{ day.label }}</a>{% else %}{{ day.label }}{% endif %}</td>{% endfor %}
+</tr>
+{%- if week.note %}
+<tr class="cal-note"><td colspan="5">{{ week.note }}</td></tr>
+{%- endif %}
+{%- endfor %}
+</tbody>
+</table>
+</div>
+{%- endif -%}

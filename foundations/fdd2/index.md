@@ -8,13 +8,13 @@ has_toc: false
 ---
 # Unit 2 | Vector Documents & Workspace
 
-## 📣 Introduction
+## Introduction
 
 Your first formal look at Adobe Illustrator — why it's built around vector paths instead of
 pixels, how the interface is organized, how to set up a real print document with multiple
 artboards, and the tools that make precise work possible.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -22,6 +22,10 @@ Upon successful completion of this unit, you will be able to:
 - Navigate the Illustrator interface confidently
 - Set up a multi-artboard document with the correct size, bleed, and units
 - Use rulers, guides, grids, and view modes for precise work
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=2 %}
 
 ## Lessons
 - [2.1 – Pixels vs. Paths](2_1.md) — raster vs. vector, rasterizing, resizing

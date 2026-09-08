@@ -8,7 +8,7 @@ has_toc: false
 ---
 # Unit 1 | Design & the Design Industry
 
-## 📣 Introduction
+## Introduction
 
 This unit introduces the design industry and process through AIGA's elements-of-design
 sequence — one full class per element (Line, Shape, Texture, Color) — building toward your
@@ -19,7 +19,7 @@ This is the first unit of the year, when district network access and student acc
 reliable. Lessons 1.1–1.4 run entirely on paper — no computer or network access required. The
 S | 1 project is the one day this unit that needs a computer lab.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -27,6 +27,10 @@ Upon successful completion of this unit, you will be able to:
 - Apply the elements and principles of design through a thumbnail → rough → comp process
 - Identify a design's audience, client goals, and communication plan
 - Recreate a finished paper design in Adobe Illustrator using basic shape, line, and fill tools
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=1 %}
 
 ## Lessons
 - [1.1 – Line Assignment](1_1.md) — guided notes: What is Design?

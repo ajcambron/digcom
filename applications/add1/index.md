@@ -7,7 +7,7 @@ has_toc: false
 ---
 # Unit 1 | Elements of Video & Pre-Production
 
-## 📣 Introduction
+## Introduction
 
 Unit 1 introduces the video industry and the pre-production process every video project goes
 through before a camera ever rolls, building toward your first time in the field with a camera —
@@ -18,7 +18,7 @@ This is the first unit of the year, when district network access and student acc
 reliable. Lessons 1.1–1.4 run entirely on paper — no computer or network access required. The
 S | 1 project is the one day this unit that needs a device (a smartphone and a web-based editor).
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -27,6 +27,10 @@ Upon successful completion of this unit, you will be able to:
 - Write a two-column script to plan a shoot
 - Apply shot vocabulary (CU, MS, WS, and more) to a shot list
 - Shoot and edit a short explainer video
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=1 %}
 
 ## Lessons
 - [1.1 – Intro to Digital Video Production](1_1.md) — going digital, the movie-making process

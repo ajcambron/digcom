@@ -8,13 +8,13 @@ has_toc: false
 ---
 # Unit 7 | Layers & Appearance
 
-## 📣 Introduction
+## Introduction
 
 Unit 7 moves past building individual shapes and into controlling how a whole composition is
 organized and how each object looks — layers, appearance, effects, and blending — closing with a
 finished album cover or gig poster.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -22,6 +22,10 @@ Upon successful completion of this unit, you will be able to:
 - Apply fill and stroke through the Appearance panel
 - Add effects like shadows, glows, and 3D
 - Control opacity, blending modes, and masks
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=7 %}
 
 ## Lessons
 - [7.1 – The Layers Panel](7_1.md)

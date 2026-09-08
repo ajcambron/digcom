@@ -1,0 +1,982 @@
+1:
+- days:
+  - date: 8/31
+    label: 9th Grade Orientation
+    link: null
+    unit: null
+  - date: 9/1
+    label: Icebreaker Activity
+    link: null
+    unit: null
+  - date: 9/2
+    label: Icebreaker Activity
+    link: null
+    unit: null
+  - date: 9/3
+    label: Icebreaker Activity
+    link: null
+    unit: null
+  - date: 9/4
+    label: Schools Closed
+    link: null
+    unit: null
+  note: '9/1: All Students'
+- days:
+  - date: 9/7
+    label: Labor Day
+    link: null
+    unit: null
+  - date: 9/8
+    label: F | 1.1
+    link: '1_1'
+    unit: 1
+  - date: 9/9
+    label: F | 1.1
+    link: '1_1'
+    unit: 1
+  - date: 9/10
+    label: F | 1.2
+    link: '1_2'
+    unit: 1
+  - date: 9/11
+    label: F | 1.2
+    link: '1_2'
+    unit: 1
+  note: null
+- days:
+  - date: 9/14
+    label: F | 1.3
+    link: '1_3'
+    unit: 1
+  - date: 9/15
+    label: State PD
+    link: null
+    unit: null
+  - date: 9/16
+    label: F | 1.3
+    link: '1_3'
+    unit: 1
+  - date: 9/17
+    label: F | 1.4
+    link: '1_4'
+    unit: 1
+  - date: 9/18
+    label: F | 1.4
+    link: '1_4'
+    unit: 1
+  note: '9/15: 30th Count window: 9/15-9/30; 9/17: End of Drop Add'
+- days:
+  - date: 9/21
+    label: PD
+    link: null
+    unit: null
+  - date: 9/22
+    label: S | 1
+    link: s1
+    unit: 1
+  - date: 9/23
+    label: S | 1
+    link: s1
+    unit: 1
+  - date: 9/24
+    label: F | 2.1
+    link: '2_1'
+    unit: 2
+  - date: 9/25
+    label: F | 2.1
+    link: '2_1'
+    unit: 2
+  note: '9/24: Unit 2 - should include ungraded Pre-Test; 9/25: Interim grades open
+    in Infinite Campus (MP1)'
+2:
+- days:
+  - date: 9/21
+    label: PD
+    link: null
+    unit: null
+  - date: 9/22
+    label: S | 1
+    link: s1
+    unit: 1
+  - date: 9/23
+    label: S | 1
+    link: s1
+    unit: 1
+  - date: 9/24
+    label: F | 2.1
+    link: '2_1'
+    unit: 2
+  - date: 9/25
+    label: F | 2.1
+    link: '2_1'
+    unit: 2
+  note: '9/24: Unit 2 - should include ungraded Pre-Test; 9/25: Interim grades open
+    in Infinite Campus (MP1)'
+- days:
+  - date: 9/28
+    label: F | 2.2
+    link: '2_2'
+    unit: 2
+  - date: 9/29
+    label: F | 2.2
+    link: '2_2'
+    unit: 2
+  - date: 9/30
+    label: F | 2.3
+    link: '2_3'
+    unit: 2
+  - date: 10/1
+    label: F | 2.3
+    link: '2_3'
+    unit: 2
+  - date: 10/2
+    label: F | 2.4
+    link: '2_4'
+    unit: 2
+  note: '10/1: Back to School Night; 10/2: Interim grades close 4:00pm (MP1)'
+- days:
+  - date: 10/5
+    label: F | 2.4
+    link: '2_4'
+    unit: 2
+  - date: 10/6
+    label: S | 2
+    link: s2
+    unit: 2
+  - date: 10/7
+    label: S | 2
+    link: s2
+    unit: 2
+  - date: 10/8
+    label: S | 2
+    link: s2
+    unit: 2
+  - date: 10/9
+    label: S | 2
+    link: s2
+    unit: 2
+  note: '10/6: Interim Reports Available'
+- days:
+  - date: 10/12
+    label: S | 2
+    link: s2
+    unit: 2
+  - date: 10/13
+    label: F | 3.1
+    link: '3_1'
+    unit: 3
+  - date: 10/14
+    label: F | 3.1
+    link: '3_1'
+    unit: 3
+  - date: 10/15
+    label: F | 3.2
+    link: '3_2'
+    unit: 3
+  - date: 10/16
+    label: PD
+    link: null
+    unit: null
+  note: '10/15: Choice Open House; 10/15: By 10/15: PreTest; 10/15: Fall Leadership
+    - 10/15 (unconfirmed -- Delaware DECA hasn''t posted 2026-27 date)'
+3:
+- days:
+  - date: 10/12
+    label: S | 2
+    link: s2
+    unit: 2
+  - date: 10/13
+    label: F | 3.1
+    link: '3_1'
+    unit: 3
+  - date: 10/14
+    label: F | 3.1
+    link: '3_1'
+    unit: 3
+  - date: 10/15
+    label: F | 3.2
+    link: '3_2'
+    unit: 3
+  - date: 10/16
+    label: PD
+    link: null
+    unit: null
+  note: '10/15: Choice Open House; 10/15: By 10/15: PreTest; 10/15: Fall Leadership
+    - 10/15 (unconfirmed -- Delaware DECA hasn''t posted 2026-27 date)'
+- days:
+  - date: 10/19
+    label: F | 3.2
+    link: '3_2'
+    unit: 3
+  - date: 10/20
+    label: F | 3.3
+    link: '3_3'
+    unit: 3
+  - date: 10/21
+    label: F | 3.3
+    link: '3_3'
+    unit: 3
+  - date: 10/22
+    label: F | 3.4
+    link: '3_4'
+    unit: 3
+  - date: 10/23
+    label: F | 3.4
+    link: '3_4'
+    unit: 3
+  note: '10/21: Cambron FMLA; 10/23: Report Card grades open in Infinite Campus (MP1)'
+- days:
+  - date: 10/26
+    label: S | 3
+    link: s3
+    unit: 3
+  - date: 10/27
+    label: S | 3
+    link: s3
+    unit: 3
+  - date: 10/28
+    label: S | 3
+    link: s3
+    unit: 3
+  - date: 10/29
+    label: S | 3
+    link: s3
+    unit: 3
+  - date: 10/30
+    label: S | 3
+    link: s3
+    unit: 3
+  note: '10/26: Report Card grade verification window opens (through 11/10)'
+4:
+- days:
+  - date: 11/2
+    label: Grading Day
+    link: null
+    unit: null
+  - date: 11/3
+    label: Election Day
+    link: null
+    unit: null
+  - date: 11/4
+    label: F | 4.1
+    link: '4_1'
+    unit: 4
+  - date: 11/5
+    label: F | 4.1
+    link: '4_1'
+    unit: 4
+  - date: 11/6
+    label: F | 4.2
+    link: '4_2'
+    unit: 4
+  note: '11/6: Report Card grades due, close 4:00pm (MP1)'
+- days:
+  - date: 11/9
+    label: F | 4.2
+    link: '4_2'
+    unit: 4
+  - date: 11/10
+    label: F | 4.3
+    link: '4_3'
+    unit: 4
+  - date: 11/11
+    label: Veterans Day
+    link: null
+    unit: null
+  - date: 11/12
+    label: F | 4.3
+    link: '4_3'
+    unit: 4
+  - date: 11/13
+    label: F | 4.4
+    link: '4_4'
+    unit: 4
+  note: '11/10: Report Card grade verification window closes (MP1); 11/12: Report
+    Cards delivered via Parent Portal (MP1)'
+- days:
+  - date: 11/16
+    label: F | 4.4
+    link: '4_4'
+    unit: 4
+  - date: 11/17
+    label: S | 4
+    link: s4
+    unit: 4
+  - date: 11/18
+    label: S | 4
+    link: s4
+    unit: 4
+  - date: 11/19
+    label: S | 4
+    link: s4
+    unit: 4
+  - date: 11/20
+    label: S | 4
+    link: s4
+    unit: 4
+  note: null
+- days:
+  - date: 11/30
+    label: S | 4
+    link: s4
+    unit: 4
+  - date: 12/1
+    label: S | 4
+    link: s4
+    unit: 4
+  - date: 12/2
+    label: F | 5.1
+    link: '5_1'
+    unit: 5
+  - date: 12/3
+    label: F | 5.1
+    link: '5_1'
+    unit: 5
+  - date: 12/4
+    label: F | 5.2
+    link: '5_2'
+    unit: 5
+  note: '11/30: Grade Correction Deadline (MP1)'
+5:
+- days:
+  - date: 11/30
+    label: S | 4
+    link: s4
+    unit: 4
+  - date: 12/1
+    label: S | 4
+    link: s4
+    unit: 4
+  - date: 12/2
+    label: F | 5.1
+    link: '5_1'
+    unit: 5
+  - date: 12/3
+    label: F | 5.1
+    link: '5_1'
+    unit: 5
+  - date: 12/4
+    label: F | 5.2
+    link: '5_2'
+    unit: 5
+  note: '11/30: Grade Correction Deadline (MP1)'
+- days:
+  - date: 12/7
+    label: F | 5.2
+    link: '5_2'
+    unit: 5
+  - date: 12/8
+    label: F | 5.3
+    link: '5_3'
+    unit: 5
+  - date: 12/9
+    label: F | 5.3
+    link: '5_3'
+    unit: 5
+  - date: 12/10
+    label: F | 5.4
+    link: '5_4'
+    unit: 5
+  - date: 12/11
+    label: F | 5.4
+    link: '5_4'
+    unit: 5
+  note: '12/10: Interim grades open in Infinite Campus (MP2)'
+- days:
+  - date: 12/14
+    label: S | 5
+    link: s5
+    unit: 5
+  - date: 12/15
+    label: S | 5
+    link: s5
+    unit: 5
+  - date: 12/16
+    label: S | 5
+    link: s5
+    unit: 5
+  - date: 12/17
+    label: S | 5
+    link: s5
+    unit: 5
+  - date: 12/18
+    label: S | 5
+    link: s5
+    unit: 5
+  note: '12/16: Interim grades due, close 4:00pm (MP2); 12/18: Interim Reports Available'
+- days:
+  - date: 1/4
+    label: S | 5
+    link: s5
+    unit: 5
+  - date: 1/5
+    label: F | 6.1
+    link: '6_1'
+    unit: 6
+  - date: 1/6
+    label: F | 6.1
+    link: '6_1'
+    unit: 6
+  - date: 1/7
+    label: F | 6.2
+    link: '6_2'
+    unit: 6
+  - date: 1/8
+    label: F | 6.2
+    link: '6_2'
+    unit: 6
+  note: null
+6:
+- days:
+  - date: 1/4
+    label: S | 5
+    link: s5
+    unit: 5
+  - date: 1/5
+    label: F | 6.1
+    link: '6_1'
+    unit: 6
+  - date: 1/6
+    label: F | 6.1
+    link: '6_1'
+    unit: 6
+  - date: 1/7
+    label: F | 6.2
+    link: '6_2'
+    unit: 6
+  - date: 1/8
+    label: F | 6.2
+    link: '6_2'
+    unit: 6
+  note: null
+- days:
+  - date: 1/11
+    label: F | 6.3
+    link: '6_3'
+    unit: 6
+  - date: 1/12
+    label: F | 6.3
+    link: '6_3'
+    unit: 6
+  - date: 1/13
+    label: F | 6.4
+    link: '6_4'
+    unit: 6
+  - date: 1/14
+    label: F | 6.4
+    link: '6_4'
+    unit: 6
+  - date: 1/15
+    label: S | 6
+    link: s6
+    unit: 6
+  note: null
+- days:
+  - date: 1/18
+    label: Martin L. King Day
+    link: null
+    unit: null
+  - date: 1/19
+    label: S | 6
+    link: s6
+    unit: 6
+  - date: 1/20
+    label: S | 6
+    link: s6
+    unit: 6
+  - date: 1/21
+    label: S | 6
+    link: s6
+    unit: 6
+  - date: 1/22
+    label: S | 6
+    link: s6
+    unit: 6
+  note: '1/21: Report Card grades open in Infinite Campus (MP2); 1/21: Report Card
+    grade verification window opens (through 2/8)'
+7:
+- days:
+  - date: 2/1
+    label: F | 7.1
+    link: '7_1'
+    unit: 7
+  - date: 2/2
+    label: F | 7.1
+    link: '7_1'
+    unit: 7
+  - date: 2/3
+    label: F | 7.2
+    link: '7_2'
+    unit: 7
+  - date: 2/4
+    label: F | 7.2
+    link: '7_2'
+    unit: 7
+  - date: 2/5
+    label: F | 7.3
+    link: '7_3'
+    unit: 7
+  note: '2/1: Cambron Back; 2/4: Report Card grades due, close 4:00pm (MP2)'
+- days:
+  - date: 2/8
+    label: F | 7.3
+    link: '7_3'
+    unit: 7
+  - date: 2/9
+    label: F | 7.4
+    link: '7_4'
+    unit: 7
+  - date: 2/10
+    label: F | 7.4
+    link: '7_4'
+    unit: 7
+  - date: 2/11
+    label: S | 7
+    link: s7
+    unit: 7
+  - date: 2/12
+    label: PD Day
+    link: null
+    unit: null
+  note: '2/8: Report Card grade verification window closes (MP2); 2/10: Report Cards
+    delivered via Parent Portal, EOD (MP2)'
+- days:
+  - date: 2/15
+    label: Presi- dents' Day
+    link: null
+    unit: null
+  - date: 2/16
+    label: S | 7
+    link: s7
+    unit: 7
+  - date: 2/17
+    label: S | 7
+    link: s7
+    unit: 7
+  - date: 2/18
+    label: S | 7
+    link: s7
+    unit: 7
+  - date: 2/19
+    label: S | 7
+    link: s7
+    unit: 7
+  note: null
+- days:
+  - date: 2/22
+    label: S | 7
+    link: s7
+    unit: 7
+  - date: 2/23
+    label: S | 7
+    link: s7
+    unit: 7
+  - date: 2/24
+    label: F | 8.1
+    link: '8_1'
+    unit: 8
+  - date: 2/25
+    label: F | 8.1
+    link: '8_1'
+    unit: 8
+  - date: 2/26
+    label: F | 8.2
+    link: '8_2'
+    unit: 8
+  note: '2/24: Interim grades open in Infinite Campus (MP3); 2/24: Grade Correction
+    Deadline (MP2)'
+8:
+- days:
+  - date: 2/22
+    label: S | 7
+    link: s7
+    unit: 7
+  - date: 2/23
+    label: S | 7
+    link: s7
+    unit: 7
+  - date: 2/24
+    label: F | 8.1
+    link: '8_1'
+    unit: 8
+  - date: 2/25
+    label: F | 8.1
+    link: '8_1'
+    unit: 8
+  - date: 2/26
+    label: F | 8.2
+    link: '8_2'
+    unit: 8
+  note: '2/24: Interim grades open in Infinite Campus (MP3); 2/24: Grade Correction
+    Deadline (MP2)'
+- days:
+  - date: 3/1
+    label: F | 8.2
+    link: '8_2'
+    unit: 8
+  - date: 3/2
+    label: F | 8.3
+    link: '8_3'
+    unit: 8
+  - date: 3/3
+    label: F | 8.3
+    link: '8_3'
+    unit: 8
+  - date: 3/4
+    label: F | 8.4
+    link: '8_4'
+    unit: 8
+  - date: 3/5
+    label: F | 8.4
+    link: '8_4'
+    unit: 8
+  note: '3/2: SAT window: 3/2-4/30; 3/3: Interim grades close 4:00pm (MP3); 3/5: Interim
+    Reports Available'
+- days:
+  - date: 3/8
+    label: S | 8
+    link: s8
+    unit: 8
+  - date: 3/9
+    label: S | 8
+    link: s8
+    unit: 8
+  - date: 3/10
+    label: PD
+    link: null
+    unit: null
+  - date: 3/11
+    label: S | 8
+    link: s8
+    unit: 8
+  - date: 3/12
+    label: S | 8
+    link: s8
+    unit: 8
+  note: null
+- days:
+  - date: 3/15
+    label: S | 8
+    link: s8
+    unit: 8
+  - date: 3/16
+    label: S | 8
+    link: s8
+    unit: 8
+  - date: 3/17
+    label: S | 8
+    link: s8
+    unit: 8
+  - date: 3/18
+    label: F | 9.1
+    link: '9_1'
+    unit: 9
+  - date: 3/19
+    label: F | 9.1
+    link: '9_1'
+    unit: 9
+  note: null
+9:
+- days:
+  - date: 3/15
+    label: S | 8
+    link: s8
+    unit: 8
+  - date: 3/16
+    label: S | 8
+    link: s8
+    unit: 8
+  - date: 3/17
+    label: S | 8
+    link: s8
+    unit: 8
+  - date: 3/18
+    label: F | 9.1
+    link: '9_1'
+    unit: 9
+  - date: 3/19
+    label: F | 9.1
+    link: '9_1'
+    unit: 9
+  note: null
+- days:
+  - date: 3/22
+    label: F | 9.2
+    link: '9_2'
+    unit: 9
+  - date: 3/23
+    label: F | 9.2
+    link: '9_2'
+    unit: 9
+  - date: 3/24
+    label: F | 9.3
+    link: '9_3'
+    unit: 9
+  - date: 3/25
+    label: Conferences
+    link: null
+    unit: null
+  - date: 3/26
+    label: Good Friday
+    link: null
+    unit: null
+  note: null
+- days:
+  - date: 4/5
+    label: F | 9.3
+    link: '9_3'
+    unit: 9
+  - date: 4/6
+    label: F | 9.4
+    link: '9_4'
+    unit: 9
+  - date: 4/7
+    label: F | 9.4
+    link: '9_4'
+    unit: 9
+  - date: 4/8
+    label: S | 9
+    link: s9
+    unit: 9
+  - date: 4/9
+    label: S | 9
+    link: s9
+    unit: 9
+  note: '4/9: Report Card grades open in Infinite Campus (MP3); 4/9: Report Card grade
+    verification window opens (through 4/23)'
+- days:
+  - date: 4/12
+    label: S | 9
+    link: s9
+    unit: 9
+  - date: 4/13
+    label: S | 9
+    link: s9
+    unit: 9
+  - date: 4/14
+    label: S | 9
+    link: s9
+    unit: 9
+  - date: 4/15
+    label: S | 9
+    link: s9
+    unit: 9
+  - date: 4/16
+    label: S | 9
+    link: s9
+    unit: 9
+  note: '4/15: By 4/15: Post Test'
+10:
+- days:
+  - date: 4/19
+    label: Grading Day
+    link: null
+    unit: null
+  - date: 4/20
+    label: F | 10.1
+    link: '10_1'
+    unit: 10
+  - date: 4/21
+    label: F | 10.1
+    link: '10_1'
+    unit: 10
+  - date: 4/22
+    label: F | 10.2
+    link: '10_2'
+    unit: 10
+  - date: 4/23
+    label: F | 10.2
+    link: '10_2'
+    unit: 10
+  note: '4/19: DECA Nationals (ICDC): 4/17-4/20, Anaheim CA -- overlaps MP4 start;
+    4/23: Report Card grades due, close 4:00pm (MP3); 4/23: Report Card grade verification
+    window closes (MP3)'
+- days:
+  - date: 4/26
+    label: F | 10.3
+    link: '10_3'
+    unit: 10
+  - date: 4/27
+    label: F | 10.3
+    link: '10_3'
+    unit: 10
+  - date: 4/28
+    label: F | 10.4
+    link: '10_4'
+    unit: 10
+  - date: 4/29
+    label: F | 10.4
+    link: '10_4'
+    unit: 10
+  - date: 4/30
+    label: S | 10
+    link: s10
+    unit: 10
+  note: '4/27: Report Cards delivered via Parent Portal (MP3)'
+- days:
+  - date: 5/3
+    label: S | 10
+    link: s10
+    unit: 10
+  - date: 5/4
+    label: F | 11.1
+    link: '11_1'
+    unit: 11
+  - date: 5/5
+    label: F | 11.1
+    link: '11_1'
+    unit: 11
+  - date: 5/6
+    label: F | 11.2
+    link: '11_2'
+    unit: 11
+  - date: 5/7
+    label: F | 11.2
+    link: '11_2'
+    unit: 11
+  note: '5/3: AP Exams - Week 1: 5/3-5/7; 5/4: Unit 11 - Professional Cert; 5/5: BPA
+    Nationals (NLC): 5/5-5/9, Denver CO'
+11:
+- days:
+  - date: 5/3
+    label: S | 10
+    link: s10
+    unit: 10
+  - date: 5/4
+    label: F | 11.1
+    link: '11_1'
+    unit: 11
+  - date: 5/5
+    label: F | 11.1
+    link: '11_1'
+    unit: 11
+  - date: 5/6
+    label: F | 11.2
+    link: '11_2'
+    unit: 11
+  - date: 5/7
+    label: F | 11.2
+    link: '11_2'
+    unit: 11
+  note: '5/3: AP Exams - Week 1: 5/3-5/7; 5/4: Unit 11 - Professional Cert; 5/5: BPA
+    Nationals (NLC): 5/5-5/9, Denver CO'
+- days:
+  - date: 5/10
+    label: F | 11.3
+    link: '11_3'
+    unit: 11
+  - date: 5/11
+    label: F | 11.3
+    link: '11_3'
+    unit: 11
+  - date: 5/12
+    label: F | 11.4
+    link: '11_4'
+    unit: 11
+  - date: 5/13
+    label: F | 11.4
+    link: '11_4'
+    unit: 11
+  - date: 5/14
+    label: S | 11
+    link: s11
+    unit: 11
+  note: '5/10: AP Exams - Week 2: 5/10-5/14; 5/11: Grade Correction Deadline (MP3);
+    5/12: Interim grades open in Infinite Campus (MP4)'
+- days:
+  - date: 5/17
+    label: S | 11
+    link: s11
+    unit: 11
+  - date: 5/18
+    label: F | 12.1
+    link: '12_1'
+    unit: 12
+  - date: 5/19
+    label: F | 12.1
+    link: '12_1'
+    unit: 12
+  - date: 5/20
+    label: F | 12.2
+    link: '12_2'
+    unit: 12
+  - date: 5/21
+    label: F | 12.2
+    link: '12_2'
+    unit: 12
+  note: '5/19: Interim grades close 4:00pm (MP4); 5/20: Senior Report Card grades
+    open in Infinite Campus; 5/20: Senior grade verification window opens (through
+    6/3); 5/21: Interim Reports Available'
+12:
+- days:
+  - date: 5/17
+    label: S | 11
+    link: s11
+    unit: 11
+  - date: 5/18
+    label: F | 12.1
+    link: '12_1'
+    unit: 12
+  - date: 5/19
+    label: F | 12.1
+    link: '12_1'
+    unit: 12
+  - date: 5/20
+    label: F | 12.2
+    link: '12_2'
+    unit: 12
+  - date: 5/21
+    label: F | 12.2
+    link: '12_2'
+    unit: 12
+  note: '5/19: Interim grades close 4:00pm (MP4); 5/20: Senior Report Card grades
+    open in Infinite Campus; 5/20: Senior grade verification window opens (through
+    6/3); 5/21: Interim Reports Available'
+- days:
+  - date: 5/24
+    label: F | 12.3
+    link: '12_3'
+    unit: 12
+  - date: 5/25
+    label: F | 12.3
+    link: '12_3'
+    unit: 12
+  - date: 5/26
+    label: Senior Exams
+    link: null
+    unit: null
+  - date: 5/27
+    label: Senior Exams
+    link: null
+    unit: null
+  - date: 5/28
+    label: PD / Trade-In
+    link: null
+    unit: null
+  note: '5/25: Final Exams - Grade 12 (day 1 of 3); 5/26: Final Exams - Grade 12 (day
+    2 of 3); 5/27: Final Exams - Grade 12 (day 3 of 3)'
+- days:
+  - date: 5/31
+    label: Memorial Day
+    link: null
+    unit: null
+  - date: 6/1
+    label: F | 12.4
+    link: '12_4'
+    unit: 12
+  - date: 6/2
+    label: F | 12.4
+    link: '12_4'
+    unit: 12
+  - date: 6/3
+    label: S | 12
+    link: s12
+    unit: 12
+  - date: 6/4
+    label: S | 12
+    link: s12
+    unit: 12
+  note: '6/1: Final Exam Make-Ups - Grade 12; 6/3: Senior Report Card grades close
+    4:00pm; 6/3: Senior grade verification window closes; 6/4: Report Card grades
+    open in Infinite Campus (MP4); 6/4: Report Card grade verification window opens
+    (through 6/15)'

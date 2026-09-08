@@ -8,13 +8,13 @@ has_toc: false
 ---
 # Unit 9 | The Working Designer: Copyright, Assets & Export
 
-## 📣 Introduction
+## Introduction
 
 Unit 9 is the course's final content unit before Unit 10's ACP review window — it shifts from
 making artwork to delivering it like a working designer would, closing with a full client brand
 project delivered as a packaged, exported handoff.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -22,6 +22,10 @@ Upon successful completion of this unit, you will be able to:
 - Package a finished project for client handoff
 - Place and link external assets correctly
 - Export artwork correctly for screen and print
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=9 %}
 
 ## Lessons
 - [9.1 – Copyright, Licensing & AI Content](9_1.md)

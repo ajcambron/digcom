@@ -8,13 +8,13 @@ has_toc: false
 ---
 # Unit 4 | The Pen Tool & Paths
 
-## 📣 Introduction
+## Introduction
 
 Unit 4 introduces the Pen tool and the family of tools around it — analyzing reference art,
 practicing anchor points, planning a composition on paper, and refining paths — all building
 toward an original low-poly stained-glass piece built entirely from vector paths.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -22,6 +22,10 @@ Upon successful completion of this unit, you will be able to:
 - Draw and edit paths confidently with the Pen tool
 - Sketch an original concept before building it digitally
 - Refine paths using Join, Simplify, Shape Builder, and Pathfinder
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=4 %}
 
 ## Lessons
 - [4.1 – Art Analysis & Inspiration Board](4_1.md) — analyzing stained glass & low poly reference art

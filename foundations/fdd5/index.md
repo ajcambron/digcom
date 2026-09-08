@@ -8,13 +8,13 @@ has_toc: false
 ---
 # Unit 5 | Typography
 
-## 📣 Introduction
+## Introduction
 
 Unit 5 covers typography in Adobe Illustrator: reading and classifying letterforms, controlling
 spacing and rhythm with the Character panel, working with type on a path, and managing longer
 text — all building toward an original typographic poster.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -22,6 +22,10 @@ Upon successful completion of this unit, you will be able to:
 - Control kerning, tracking, leading, and baseline shift
 - Work with point type, area type, and type on a path
 - Flow and manage longer text, including converting to outlines
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=5 %}
 
 ## Lessons
 - [5.1 – Type Anatomy & Classification](5_1.md) — reading letterforms and classifying typefaces

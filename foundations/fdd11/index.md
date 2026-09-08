@@ -8,7 +8,7 @@ has_toc: false
 ---
 # Unit 11 | Page Layout, Packaging & Promotional Design
 
-## 📣 Introduction
+## Introduction
 
 Unit 11 is the first of FDD's two Extra Units — post-certification enrichment that builds toward
 two connected real-world design skills: laying out a multi-page publication and designing
@@ -19,7 +19,7 @@ Nothing in this unit is ACP-tested — see each lesson's `standard:` field. The 
 full compliance rigor (78-minute timing, The 7, a real Differentiation Matrix, real Organize
 criteria) — the students are still in the room, even though the exam is behind them.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -27,6 +27,10 @@ Upon successful completion of this unit, you will be able to:
 - Build multi-page documents using artboards
 - Design packaging and promotional concepts for a brand
 - Produce a finished yearbook spread and brand package
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=11 %}
 
 ## Lessons
 - [11.1 – Page Layout Fundamentals](11_1.md) — margins, gutters, columns, hierarchy, alignment

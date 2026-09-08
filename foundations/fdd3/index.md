@@ -8,13 +8,13 @@ has_toc: false
 ---
 # Unit 3 | Shape & Color
 
-## 📣 Introduction
+## Introduction
 
 Unit 3 builds on Unit 2's workspace fluency, adding color theory, a deeper pass on shape tools,
 Illustrator's swatch and gradient systems, and precise composition with Align/Distribute/Arrange —
 combined into a Vector Self-Portrait built entirely from shape primitives.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -22,6 +22,10 @@ Upon successful completion of this unit, you will be able to:
 - Draw and edit shapes using Illustrator's shape tools
 - Apply swatches and gradients to fill artwork
 - Align, distribute, and arrange objects precisely
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=3 %}
 
 ## Lessons
 - [3.1 – Color Theory](3_1.md) — hue/saturation/value, color schemes, CMYK/RGB/HSB

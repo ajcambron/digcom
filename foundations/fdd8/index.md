@@ -8,13 +8,13 @@ has_toc: false
 ---
 # Unit 8 | Brushes, Symbols, Patterns & Image Trace
 
-## 📣 Introduction
+## Introduction
 
 Unit 8 multiplies a single object across a whole surface — brushes, repeating patterns, reusable
 symbols, converting raster images to vector with Image Trace, and generative AI as a starting
 point — closing with a sticker pack or merch pattern project.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -22,6 +22,10 @@ Upon successful completion of this unit, you will be able to:
 - Build and reuse symbols and graphic styles
 - Convert raster images to vector artwork with Image Trace
 - Use generative AI tools responsibly in Illustrator
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=8 %}
 
 ## Lessons
 - [8.1 – Brushes & Pattern Making](8_1.md)

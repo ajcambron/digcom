@@ -8,7 +8,7 @@ has_toc: false
 ---
 # Unit 6 | Refinement & Output Prep
 
-## 📣 Introduction
+## Introduction
 
 Unit 6 is the "last mile" unit — every lesson is a finishing skill needed to take a piece from
 "looks done" to "actually correct for where it's headed." Instead of building something new, the
@@ -18,7 +18,7 @@ summative revises and finalizes a piece students already made in an earlier unit
 This is a brand-new unit added by the Sep 2026 restructure, built from lessons that floated out
 of other units because their original summative didn't strictly require them.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -26,6 +26,10 @@ Upon successful completion of this unit, you will be able to:
 - Understand color modes and gamuts for screen vs. print
 - Format longer text with paragraph and area type tools
 - Apply transformations to refine a finished piece
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=6 %}
 
 ## Lessons
 - [6.1 – Saving & File Formats](6_1.md) — choosing the right format for a destination

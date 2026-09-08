@@ -8,7 +8,7 @@ has_toc: false
 ---
 # Unit 12 | Scale, Sketchbook & Portfolio
 
-## 📣 Introduction
+## Introduction
 
 Unit 12 is FDD's second and final Extra Unit — covering scale/measurement and sketchbook
 practice, two Learning Outcomes that never got a dedicated unit earlier in the year, and ending
@@ -19,7 +19,7 @@ Nothing in this unit is ACP-tested — see each lesson's `standard:` field. The 
 full compliance rigor (78-minute timing, The 7, a real Differentiation Matrix, real Organize
 criteria) — the students are still in the room, even though the exam is behind them.
 
-## 🧭 Learning Outcomes
+## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:
 
@@ -27,6 +27,10 @@ Upon successful completion of this unit, you will be able to:
 - Practice divergent and convergent ideation in a sketchbook
 - Curate a portfolio of your strongest work
 - Present and critique design work
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=12 %}
 
 ## Lessons
 - [12.1 – Scale & Measurement in Design](12_1.md) — scale ratios, scale rulers, converting actual
