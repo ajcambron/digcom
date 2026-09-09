@@ -1,14 +1,14 @@
 * { box-sizing: border-box; }
 html, body {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: Verdana, Geneva, sans-serif;
   color: #1a1a1a;
   margin: 0;
   padding: 0;
-  font-size: 13pt;
-  line-height: 1.5;
+  font-size: 12pt;
+  line-height: 1.15;
 }
 .page {
-  padding: 40px 54px;
+  padding: 58px 73px 40px 53px;
 }
 .page.compact {
   padding: 14px 54px;
@@ -38,7 +38,7 @@ html, body {
   margin: 0;
 }
 .ws-course {
-  font-size: 9.5pt;
+  font-size: 9pt;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #555;
@@ -48,7 +48,7 @@ html, body {
   display: flex;
   gap: 28px;
   margin-bottom: 22px;
-  font-size: 10.5pt;
+  font-size: 11pt;
 }
 .ws-field {
   flex: 1;
@@ -57,7 +57,7 @@ html, body {
   min-height: 1.4em;
 }
 .ws-field-label {
-  font-size: 8.5pt;
+  font-size: 9pt;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #555;
@@ -79,7 +79,7 @@ ol.ws-items > li { margin-bottom: 18px; }
 }
 .ws-quote {
   font-style: italic;
-  font-size: 11.5pt;
+  font-size: 11pt;
   border-left: 3px solid #999;
   padding-left: 14px;
   margin: 18px 0;
@@ -90,9 +90,8 @@ ol.ws-items > li { margin-bottom: 18px; }
   border: 1px solid #d7ddec;
   border-radius: 4px;
   padding: 10px 14px;
-  font-size: 10.5pt;
+  font-size: 11pt;
   margin: 16px 0;
-  font-family: Helvetica, Arial, sans-serif;
 }
 .ws-footer {
   margin-top: 26px;
@@ -100,7 +99,6 @@ ol.ws-items > li { margin-bottom: 18px; }
   color: #777;
   border-top: 1px solid #ccc;
   padding-top: 8px;
-  font-family: Helvetica, Arial, sans-serif;
 }
 .grid16 {
   display: grid;
@@ -118,7 +116,6 @@ ol.ws-items > li { margin-bottom: 18px; }
   top: 4px;
   left: 6px;
   font-size: 9pt;
-  font-family: Helvetica, Arial, sans-serif;
   color: #aaa;
 }
 .grid3 {
@@ -137,7 +134,6 @@ ol.ws-items > li { margin-bottom: 18px; }
   top: 4px;
   left: 6px;
   font-size: 9pt;
-  font-family: Helvetica, Arial, sans-serif;
   color: #aaa;
 }
 .tool-list {
@@ -162,20 +158,17 @@ ol.ws-items > li { margin-bottom: 18px; }
 }
 .tool-list .tool-name {
   font-weight: bold;
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 12pt;
   display: block;
   margin-bottom: 3px;
 }
 .tool-list .tool-desc {
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 10.5pt;
   color: #333;
 }
 .ws-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 10pt;
   margin: 14px 0;
 }
@@ -219,7 +212,6 @@ ol.ws-items > li { margin-bottom: 18px; }
   overflow: hidden;
 }
 .shot-card .info {
-  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.25;
 }
 .shot-card .abbr {
