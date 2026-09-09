@@ -8,10 +8,10 @@ html, body {
   line-height: 1.15;
 }
 .page {
-  padding: 58px 73px 40px 53px;
+  padding: 58px 96px 40px 96px;
 }
 .page.compact {
-  padding: 14px 54px;
+  padding: 14px 96px;
 }
 .page.compact .ws-header {
   padding-bottom: 6px;
