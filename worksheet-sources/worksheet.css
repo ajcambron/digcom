@@ -135,6 +135,7 @@ ol.ws-items > li { margin-bottom: 18px; }
   color: #777;
   border-top: 1px solid #ccc;
   padding-top: 8px;
+  text-align: center;
 }
 .grid16 {
   display: grid;
