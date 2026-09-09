@@ -65,6 +65,7 @@ Always check the scope-and-sequence doc's per-course unit tables for the specifi
 - **Consistency:** All the lessons should be formatted for consistency. Each new lesson should mirror the formatting of previous lessons.
 - **Teacher vs. student pages:** Every lesson gets two pages, same folder, suffixed filename — e.g. `foundations/fdd2/2_1.md` (student-facing) + `foundations/fdd2/2_1-teacher.md` (teacher-facing, built around `_includes/ctelessonplan.md`). Teacher pages build but stay `nav_exclude: true` — unlisted, not private; don't put answer keys or exemplars in them.
 - **The 7:** Every lesson (teacher-facing plan especially) must hit all 7 elements of "The 7" (Organization for Learning, Connection to Learning, Target for Learning, Collaboration around Learning, Evidence of Learning, Summarization of Learning, Accommodations to the Plan) — see `_includes/ctelessonplan.md` and the scope-and-sequence doc's "Lesson Requirement: The 7" section.
+- **Word Banks:** Every fill-in-the-blank question (worksheets' `.blank` spans) must be accompanied by a word bank listing all its answer choices; short-answer/open-ended questions don't need one. Use a single word bank per worksheet page, placed before all questions, listing every blank's answer across the whole page — not one per question. Word bank entries are always alphabetized, never left in answer order or otherwise shuffled.
 
 ---
 
