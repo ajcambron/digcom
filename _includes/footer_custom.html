@@ -1,4 +1,15 @@
+{% capture embed_source %}<iframe src="{{ page.url | absolute_url }}" style="width: 100%; height: 1000px; border: 1px solid #ccc; border-radius: 6px;" loading="lazy"></iframe>{% if page.embed_extra == "bellringer" %}
+<div style="margin-top: 18px; padding: 14px 18px; border: 1px solid #d7ddec; border-radius: 6px; background: #f4f6fb; font-family: Verdana, Geneva, sans-serif; font-size: 11pt; line-height: 1.5; color: #1a1a1a;">
+  <p style="margin: 0 0 10px 0; font-weight: bold;">Daily Stinger — answer in person on paper or here digitally:</p>
+  <ol style="margin: 0; padding-left: 20px;">
+    <li style="margin-bottom: 6px;">Rewrite today's question (above) in your own words.</li>
+    <li style="margin-bottom: 6px;">Write your response — 2 to 3 sentences.</li>
+    <li style="margin-bottom: 6px;">Share your response with a classmate.</li>
+    <li style="margin-bottom: 6px;">Copy their response underneath yours.</li>
+    <li style="margin-bottom: 0;">Synthesize what the two had in common.</li>
+  </ol>
+</div>{% endif %}{% endcapture %}
 <div class="digcom-embed-copy no-print">
-  <pre class="embed-snippet-source" hidden>&lt;iframe src="{{ page.url | absolute_url }}" style="width: 100%; height: 1000px; border: 1px solid #ccc; border-radius: 6px;" loading="lazy"&gt;&lt;/iframe&gt;</pre>
-  <button type="button" class="embed-copy-btn">📋 Copy Schoology Embed Code</button>
+  <pre class="embed-snippet-source" hidden>{{ embed_source | strip | escape }}</pre>
+  <button type="button" class="embed-copy-btn">📋 Copy Embed for Schoology</button>
 </div>

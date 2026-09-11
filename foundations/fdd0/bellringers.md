@@ -4,6 +4,7 @@ title: Daily Stingers (Bellringers)
 parent: FDD | Pre-Unit
 grandparent: Foundations of Digital Design
 nav_exclude: false
+embed_extra: bellringer
 ---
 # Daily Stingers (Bellringers)
 

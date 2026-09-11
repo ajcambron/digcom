@@ -4,6 +4,7 @@ title: Daily Stingers (Bellringers)
 parent: WBL | Pre-Unit
 grandparent: Work-Based Learning
 nav_exclude: false
+embed_extra: bellringer
 ---
 # Daily Stingers (Bellringers)
 

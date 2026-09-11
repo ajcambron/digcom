@@ -4,6 +4,7 @@ title: Daily Stingers (Bellringers)
 parent: ADD | Pre-Unit
 grandparent: Applications of Digital Design
 nav_exclude: false
+embed_extra: bellringer
 ---
 # Daily Stingers (Bellringers)
 
