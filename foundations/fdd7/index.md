@@ -33,3 +33,7 @@ Upon successful completion of this unit, you will be able to:
 - [7.3 – Effects: Shadows, Glows & 3D](7_3.md)
 - [7.4 – Opacity, Blending & Masks](7_4.md)
 - [S7 – Album Cover / Gig Poster](s7.md) — summative project
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=7 %}

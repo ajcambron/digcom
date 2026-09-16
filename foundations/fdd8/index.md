@@ -33,3 +33,7 @@ Upon successful completion of this unit, you will be able to:
 - [8.3 – Image Trace](8_3.md)
 - [8.4 – Generative AI in Illustrator](8_4.md)
 - [S8 – Sticker Pack / Merch Pattern](s8.md) — summative project
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=8 %}

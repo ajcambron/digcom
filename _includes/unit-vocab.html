@@ -1,0 +1,32 @@
+{%- comment -%}
+  Merges the vocab lists from every lesson in a unit into one combined, de-duplicated
+  <dl class="vocab"> block, sourced live from each lesson page's `lesson.vocab` front matter —
+  so editing a lesson's vocab automatically updates the unit page too, no manual sync needed.
+  The existing assets/js/vocab-csv.js script then adds a "Download Vocabulary (CSV)" button
+  to it automatically, same as any other .vocab list on the site.
+
+  Usage: {% include unit-vocab.html course="FDD" unit=1 %}
+{%- endcomment -%}
+{%- assign unit_pages = site.html_pages | where_exp: "p", "p.lesson" -%}
+{%- assign unit_pages = unit_pages
+  | where: "lesson.course", include.course
+  | where: "lesson.unit", include.unit
+  | sort: "lesson.number" -%}
+{%- assign seen = "" -%}
+{%- assign vocab_files = "" | split: "," -%}
+{%- for p in unit_pages -%}
+  {%- if p.lesson.vocab -%}
+    {%- for v in p.lesson.vocab -%}
+      {%- unless seen contains v -%}
+        {%- assign seen = seen | append: v | append: "|" -%}
+        {%- assign vocab_files = vocab_files | push: v -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if vocab_files.size > 0 -%}
+{: .vocab }
+{%- for v in vocab_files %}
+{% include {{ v }} %}
+{%- endfor %}
+{%- endif -%}

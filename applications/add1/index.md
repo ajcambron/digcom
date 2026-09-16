@@ -38,3 +38,7 @@ Upon successful completion of this unit, you will be able to:
 - [1.3 – Two-Column Script](1_3.md) — preproduction paperwork, script drafting
 - [1.4 – Film Form & Shot Vocabulary](1_4.md) — shot types, labeling a shot list
 - [S1 – Explainer Video](s1.md) — summative project
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="ADD" unit=1 %}

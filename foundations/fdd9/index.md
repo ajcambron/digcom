@@ -33,3 +33,7 @@ Upon successful completion of this unit, you will be able to:
 - [9.3 – Placing & Linking Assets](9_3.md)
 - [9.4 – Exporting for Screen & Print](9_4.md)
 - [S9 – Client Brand Project](s9.md) — summative project
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=9 %}

@@ -41,3 +41,7 @@ Upon successful completion of this unit, you will be able to:
 - [12.4 – Portfolio Presentation & Critique](12_4.md) — presenting work and giving/receiving
   structured critique
 - [S12 – Final Portfolio Presentation](s12.md) — summative capstone
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=12 %}

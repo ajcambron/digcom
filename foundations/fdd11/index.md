@@ -41,3 +41,7 @@ Upon successful completion of this unit, you will be able to:
 - [11.4 – Building the Yearbook Spread](11_4.md) — applying 11.1–11.3's skills to a real two-page
   spread
 - [S11 – Brand Package: Promotional Spread + Product Mockup](s11.md) — summative capstone
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=11 %}

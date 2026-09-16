@@ -34,3 +34,7 @@ Upon successful completion of this unit, you will be able to:
 - [2.4 – Design Aids: Rulers, Guides, Grids & Views](2_4.md) — Smart Guides, Outline/Pixel
   Preview/Presentation Mode
 - [S2 – Artboard Sampler](s2.md) — summative project
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=2 %}

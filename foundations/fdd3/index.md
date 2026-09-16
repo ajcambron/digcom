@@ -33,3 +33,7 @@ Upon successful completion of this unit, you will be able to:
 - [3.3 – Swatches & Gradients](3_3.md) — process/spot/global swatches, Color Guide, gradients
 - [3.4 – Align, Distribute & Arrange](3_4.md) — Align panel, Key Object, stacking order, Group
 - [S3 – Vector Self-Portrait](s3.md) — summative project
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=3 %}

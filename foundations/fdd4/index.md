@@ -33,3 +33,7 @@ Upon successful completion of this unit, you will be able to:
 - [4.3 – Concept Sketches](4_3.md) — planning composition, color palette, and meaning on paper
 - [4.4 – Refining Paths](4_4.md) — Join, Simplify, Shape Builder, and Pathfinder
 - [S4 – Low-Poly Stained-Glass](s4.md) — summative project, with a structured peer review pass
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=4 %}

@@ -37,3 +37,7 @@ Upon successful completion of this unit, you will be able to:
 - [6.3 – Paragraph Settings & Area Type](6_3.md) — alignment, indents, spacing, hyphenation
 - [6.4 – Transformations & Live Corners](6_4.md) — scale, rotate, reflect, shear, Live Corners
 - [S6 – Portfolio Polish Project](s6.md) — summative revision of an earlier FDD piece
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=6 %}

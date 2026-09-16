@@ -38,3 +38,7 @@ Upon successful completion of this unit, you will be able to:
 - [1.3 – Texture Assignment](1_3.md) — guided notes: Purpose, Audience & Client Goals
 - [1.4 – Color Assignment](1_4.md) — guided notes: Communicating Design Plans
 - [S1 – Illustrator Recreation](s1.md) — summative project
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=1 %}

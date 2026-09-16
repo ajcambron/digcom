@@ -33,3 +33,7 @@ Upon successful completion of this unit, you will be able to:
 - [5.3 – Type on a Path & Special Type](5_3.md) — point type, area type, and type on a path
 - [5.4 – Text Flow & Converting to Outlines](5_4.md) — threading, wrapping, styles, and outlines
 - [S5 – Typographic Poster](s5.md) — summative project, with a structured peer review pass
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=5 %}
