@@ -1,0 +1,183 @@
+/*
+  Master stylesheet for every self-hosted reveal.js guided-notes deck
+  (assets/presentations/*.html). One shared file so a palette or layout
+  change here applies to every deck site-wide — decks should not
+  redeclare these rules inline.
+
+  Usage in a deck's <head>, after reveal.css:
+    <link rel="stylesheet" href="/assets/lib/revealjs/dist/reveal.css">
+    <link rel="stylesheet" href="/assets/css/revealjs-decks.css">
+*/
+
+:root {
+  --navy: #1E2761;
+  --navy-deep: #17204F;
+  --ice: #CADCFC;
+  --white: #FFFFFF;
+  --dark-text: #1A1A2E;
+  --muted: #6B7280;
+  --card-bg: #F4F6FB;
+  --card-border: #D7DDEC;
+}
+
+html, body { height: 100%; }
+
+/*
+  Base font-size and the deck's 1000x562 (16:9) logical canvas (set via
+  Reveal.initialize) are chosen together: 16:9 exactly matches the site's
+  .presentation-embed container (see _includes/head_custom.html), so the
+  deck fills it edge to edge with no letterboxing, and reveal.js's CSS
+  transform then scales this base size down/up by that same fixed ratio.
+  At the container's max embedded width (640px), that works out to a
+  0.64x scale — so every deck's SMALLEST text class must stay at 0.62em
+  or larger here, or it renders below the site's own body-text size once
+  embedded (non-fullscreen) on the page. Don't add a class smaller than
+  that without re-checking this math.
+*/
+.reveal { font-family: Verdana, Geneva, sans-serif; font-size: 44px; color: var(--dark-text); }
+.reveal .slides { text-align: left; }
+
+.reveal .slides section {
+  height: 562px;
+  padding: 40px 56px;
+  box-sizing: border-box;
+}
+.reveal .slides section.present {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.slide-dark { background: var(--navy); color: var(--white); }
+.slide-light { background: var(--white); color: var(--dark-text); }
+
+.eyebrow {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.62em;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  color: var(--navy);
+  margin-bottom: 0.3em;
+}
+.slide-dark .eyebrow { color: var(--ice); }
+
+.big-title { font-size: 1.7em; font-weight: bold; margin: 0 0 0.35em 0; }
+.slide-dark .big-title { color: var(--white); }
+
+.subtitle {
+  font-family: Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-size: 0.68em;
+  color: var(--muted);
+  margin: 0 0 0.6em 0;
+}
+.slide-dark .subtitle { color: var(--ice); }
+
+.callout-box {
+  background: var(--navy-deep);
+  border: 1px solid var(--ice);
+  border-radius: 8px;
+  padding: 0.5em 0.7em;
+  font-weight: bold;
+  font-size: 0.62em;
+  display: inline-block;
+  margin-top: 0.4em;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 0.55em 0.75em;
+  font-size: 0.62em;
+  line-height: 1.45;
+  margin-top: 0.5em;
+}
+
+.hint {
+  font-family: Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-size: 0.62em;
+  color: var(--muted);
+  margin-top: 0.4em;
+}
+
+.word-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-top: 0.5em;
+}
+.word-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 0.35em 0.9em;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 0.68em;
+  color: var(--navy);
+}
+
+.num-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1;
+  margin-right: 0.35em;
+  vertical-align: middle;
+}
+
+.reveal-word {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--navy);
+  margin: 0.2em 0 0.4em 0;
+}
+
+.footer-tag {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.9em;
+  font-size: 0.62em;
+  color: var(--muted);
+}
+.slide-dark .footer-tag { color: var(--ice); }
+
+/* Fullscreen toggle control, injected by /assets/js/revealjs-deck-common.js */
+.deck-fullscreen-btn {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 40;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(23, 32, 79, 0.55);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.deck-fullscreen-btn:hover { background: rgba(23, 32, 79, 0.85); }
+.deck-fullscreen-btn svg { width: 18px; height: 18px; display: block; }
