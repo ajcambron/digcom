@@ -133,3 +133,11 @@ Matrix — but real students are still in the room for all 10 days, so plan for:
 Units 11–12 (May 4 – Jun 4, 2027) are the "Extra Units" — post-certification enrichment content
 that returns to the standard 4-formative + 1-summative lesson schema. See
 [FDD | Unit 11](../fdd11/index.md) and [FDD | Unit 12](../fdd12/index.md).
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="FDD" unit=10 %}
+
+{: .note }
+This renders empty by design — see "Why this page doesn't follow the standard lesson schema"
+above. Included here only for consistency with every other unit page.

@@ -52,4 +52,7 @@ Alpha Channel
 Luminance
 : The brightness of a color or light.
 
+## Unit Vocabulary
+
+{% include unit-vocab.html course="ADD" unit=4 %}
 

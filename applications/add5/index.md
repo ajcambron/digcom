@@ -55,3 +55,7 @@ Cues
 
 Lavaliere (Lapel) Mic
 : A small microphone used for television, theatre, and public speaking applications to allow hands-free operation.
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="ADD" unit=5 %}

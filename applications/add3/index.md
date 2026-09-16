@@ -81,3 +81,7 @@ Focus
 
 Editing
 : The process of cutting and arranging the footage and audio into the final news story.
+
+## Unit Vocabulary
+
+{% include unit-vocab.html course="ADD" unit=3 %}

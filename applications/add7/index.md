@@ -17,3 +17,7 @@ Students will be able to apply the basic elements and principles of design in vi
 | Making it Public | Students will present their video to the class | 
 | Key Project Documents | [Rubric](/resources/90_rubrics)|
 
+## Unit Vocabulary
+
+{% include unit-vocab.html course="ADD" unit=7 %}
+
