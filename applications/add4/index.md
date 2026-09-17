@@ -3,57 +3,37 @@ layout: default
 title: ADD | Unit 4
 nav_order: 4
 parent: Applications of Digital Design
-
+has_children: true
+has_toc: false
 ---
-# Unit 4 | Motion Graphics
-Students will be able to apply the basic elements and principles of design while making motion graphics. Students will learn the fundamentals of Adobe AfterEffects.
+# Unit 4 | Cinematography & Color
 
-## Unit Overview
+## Introduction
 
-| Driving Question | How can graphics set the tone for a piece of video work? |
-| Learning Goals | {::nomarkdown}<ul><li>Understand how to design for screens and phones</li><li>Apply principles of art and design to graphics for video.</li><li>Reflect on the filmmaking process and justify artistic choices.</li></ul>{:/}|
-| Project Summary | Students will create a graphics package for a YouTube Channel|
+Unit 4 moves past basic editing into deliberate cinematography — naming video styles, analyzing
+and replicating camera technique, planning through storyboards and shot lists, and correcting
+then grading color — building toward a solo, no-narration Video Essay.
 
+## Learning Outcomes
 
-## Major Product & Assessment
+Upon successful completion of this unit, you will be able to:
 
-| Major Products | Animated Intro Graphic, Lower-Thirds, Titles, Captions, Project Reflection, Portfolio Page |
-| Making it Public |{::nomarkdown}<ul><li> Students will present their video to the class</li><li>Work will be published to Design Portfolio Website</li></ul>{:/} | 
-| Key Project Documents | [Rubric](/resources/90_rubrics) |
+- Name and distinguish video styles by purpose, audience, and convention
+- Identify and replicate camera moves, angles, framing, and exposure
+- Storyboard and build a timed shot list using royalty-free or public domain music
+- Color correct footage to a neutral baseline, then apply an intentional grade
 
-## Vocabulary
+## Calendar of Events for This Unit
 
-Keyframe
-: A frame that defines the starting or ending point of a smooth transition or movement in an animation.
+{% include calendar-of-events.html unit=4 %}
 
-Ease (Easing)
-: Controlling the speed of an animation as it starts (ease-in) or stops (ease-out) to make movement look more natural and smooth.
-
-Composition (Comp)
-: The container or workspace where all your layers, effects, and animation come together (often used in software like After Effects).
-
-Layer
-: A single element (like text, an image, or video) in a composition that can be animated and manipulated independently.
-
-Anchor Point
-: The point around which all transformations (scaling, rotation, position) of a layer occur.
-
-Compositing
-: The process of combining multiple visual elements (videos, images, graphics) into a single, cohesive scene.
-
-Mask
-: A path used to selectively cut out or hide parts of a layer, controlling what is visible.
-
-Mattes/Track Mattes
-: Using the luminance or alpha channel of one layer to define the transparency or shape of another layer.
-
-Alpha Channel
-: A component of a pixel that defines the opacity or transparency of an image or layer.
-
-Luminance
-: The brightness of a color or light.
+## Lessons
+- [4.1 – Video Styles](4_1.md) — guided notes: video essay, documentary, PSA, narrative short & more
+- [4.2 – Shot Analysis & Camera Technique](4_2.md) — guided notes: camera moves, angles, framing, exposure
+- [4.3 – Storyboard & Shot List](4_3.md) — guided notes: storyboarding, timed shot lists, royalty-free music
+- [4.4 – Color Correction & Grading](4_4.md) — guided notes: white balance, correction vs. grading, Lumetri
+- [S4 – Video Essay](s4.md) — summative project, with a structured peer review pass
 
 ## Unit Vocabulary
 
 {% include unit-vocab.html course="ADD" unit=4 %}
-
