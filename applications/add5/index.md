@@ -3,59 +3,36 @@ layout: default
 title: ADD | Unit 5
 nav_order: 5
 parent: Applications of Digital Design
-
+has_children: true
+has_toc: false
 ---
-# Unit 5 | Podcasting
-Students will research, script, and produce a high-quality podcast. They will master the technical aspects of live switching and lighting while developing skills in professional research and collaborative discussion.
+# Unit 5 | Audio & Podcasting
 
-## Unit Overview
+## Introduction
 
-| Driving Question | How can we use live production tools and professional scripting to communicate complex topics? |
-| Learning Goals | {::nomarkdown}<ul><li>Use professional scripting and planning techniques.</li><li>Research and discuss an unfamiliar topic effectively.</li><li>Operate a live video/audio switcher in a production environment.</li><li>Create and execute a professional lighting design.</li></ul>{:/}|
-| Project Summary | Students will produce a 3-5 minute podcast segment that requires in-depth research and the use of live studio equipment.|
+Unit 5 shifts from video to audio — planning a podcast episode, writing a natural-sounding
+interview script, recording clean audio, and mixing it with Premiere's Essential Sound tools —
+building toward a fully delivered, branded podcast episode.
 
+## Learning Outcomes
 
-## Major Product & Assessment
+Upon successful completion of this unit, you will be able to:
 
-| Major Products | Research Brief, Production Script, 3-5 Minute Recorded Podcast, Lighting Plot, Project Reflection |
-| Making it Public |{::nomarkdown}<ul><li>Students will present their podcast to the class</li><li>Work will be published to Design Portfolio Website</li></ul>{:/} | 
-| Key Project Documents | [Rubric](/resources/90_rubrics) |
+- Define a podcast episode's driving question and assign talent/production roles
+- Write a bullet-point script that avoids sounding read or robotic
+- Record clean voice-over audio with correct levels, avoiding clipping
+- Mix dialogue and music using Essential Sound's ducking, leveling, and repair tools
 
-## Vocabulary
+## Calendar of Events for This Unit
 
-Scripting
-: The process of writing a detailed plan or dialogue for a broadcast, including technical cues for audio and visual transitions.
+{% include calendar-of-events.html unit=5 %}
 
-Live Switcher
-: A device (hardware or software) used to select between several different video or audio sources in real-time during a production.
-
-
-
-Lighting Design
-: The intentional arrangement of light sources to create a specific mood, depth, and clarity for a video production.
-
-Three-Point Lighting
-: A standard method of illuminating a subject using a Key Light, Fill Light, and Back Light to create dimension.
-
-
-
-Gain
-: The control that adjusts the input level of an audio signal; setting this correctly prevents "clipping" or distortion.
-
-XLR Cable
-: A type of electrical connector primarily found on professional audio, video, and stage lighting equipment.
-
-Audio Mixer
-: A device used to combine, route, and change the dynamics of audio signals from microphones and other sources.
-
-B-Roll
-: Supplemental or alternative footage intercut with the main shots to add visual interest or context to the discussion.
-
-Cues
-: Signals (verbal or visual) given to talent or crew to begin a specific action, such as starting a segment or switching cameras.
-
-Lavaliere (Lapel) Mic
-: A small microphone used for television, theatre, and public speaking applications to allow hands-free operation.
+## Lessons
+- [5.1 – Podcast Production Planner](5_1.md) — guided notes: driving question, talent & roles
+- [5.2 – Podcast Script](5_2.md) — guided notes: the Two-Way format, bullet-point scripting
+- [5.3 – Recording & Voice-Over](5_3.md) — guided notes: room tone, levels, avoiding clipping
+- [5.4 – Essential Sound: Mixing & Repair](5_4.md) — guided notes: Auto Ducking, Loudness Auto-Match, Repair
+- [S5 – Podcast Episode](s5.md) — summative project
 
 ## Unit Vocabulary
 
