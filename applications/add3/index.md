@@ -3,85 +3,36 @@ layout: default
 title: ADD | Unit 3
 nav_order: 3
 parent: Applications of Digital Design
-
+has_children: true
+has_toc: false
 ---
-# Unit 3 | ENG
-Students will be able to apply the basic elements and principles of design in video editing, specifically in the context of editing an episode of a television show using Adobe Premiere.
+# Unit 3 | ENG: The News Story
 
-## Unit Plan
+## Introduction
 
-|----|----|
-| Driving Question | How does filmmaking make use of multi-disciplinary skills, and what tasks are required in creating a short film? | 
-| Learning Goals |{::nomarkdown}<ul><li> Demonstrate Teamwork </li><li>Collaborate with group members toward a common task</li><li>Shoot a video project</li><li>Create Graphics for Video</li><li>Edit a News Segment</li></ul>{:/}| 
-| Project Summary | Students will produce a 90-second news clip | 
-| Major Products | News Segment Video | 
-| Making it Public | Students will present their video to the class | 
-| Key Project Documents | Rubric](/resources/90_rubrics))|
+Unit 3 puts you on a real ENG (Electronic News Gathering) crew — assigning roles, shooting
+interviews and B-roll with correct framing, editing from a transcript, and captioning the final
+piece — building toward a fully produced, accessible news story.
 
-## Vocabulary List
+## Learning Outcomes
 
-Tripod
-: A three-legged stand used to provide stable support for the camera.
+Upon successful completion of this unit, you will be able to:
 
-Microphone (Mic)
-: A device that converts sound waves into electrical signals.
+- Assign ENG crew roles and plan a news story before shooting
+- Shoot stable, correctly framed interview and B-roll footage
+- Edit efficiently using a transcript to find and cut filler words
+- Caption a finished video accurately and accessibly
 
-Lavalier (Lav)
-: A small microphone clipped to clothing for close-range audio capture.
+## Calendar of Events for This Unit
 
-Shotgun Mic
-: A highly directional microphone used to capture sound from a distance while rejecting peripheral noise.
+{% include calendar-of-events.html unit=3 %}
 
-Handheld Mic
-: A standard microphone held by a reporter or interviewee.
-
-Headphones/Earpiece
-: Used by the camera or audio operator to monitor the sound quality.
-
-Batteries/Power Supply
-: Portable power sources essential for on-location shooting.
-
-Media/Storage
-: Digital cards (like SD or CF cards) used to record and store the footage.
-
-ENG Crew/Team
-: Typically consists of a reporter and a photojournalist (or camera operator).
-
-Photojournalist (Photog)
-: The person responsible for operating the camera and often the audio and lighting equipment.
-
-Reporter/Correspondent
-: The person responsible for gathering information, conducting interviews, and presenting the story.
-
-Producer
-: The person who manages the overall story and coordinates the assignment.
-
-Engineer
-: Technical staff responsible for maintaining and troubleshooting the equipment, especially transmission gear.
-
-B-roll
-: Supplementary footage that provides visual context to the story, covering up edits or illustrating the topic.
-
-Sound Bite (SOT)
-: A short, edited clip of an interview or speech used to convey a key point.
-
-Stand-up
-: The portion of the report where the reporter appears on camera to deliver information, usually from the scene of the story.
-
-VO (Voiceover)
-: The reporter's voice track, read live or recorded, laid over video footage.
-
-Nat Sound/Ambient Sound
-: Natural sound from the environment (e.g., traffic noise, crowd applause) used to add realism to a story.
-
-White Balance
-: An adjustment on the camera to ensure that colors (especially white) are rendered correctly regardless of the light source.
-
-Focus
-: The sharpness or clarity of the image.
-
-Editing
-: The process of cutting and arranging the footage and audio into the final news story.
+## Lessons
+- [3.1 – Plan](3_1.md) — guided notes: ENG crew roles & planning
+- [3.2 – Make](3_2.md) — guided notes: shooting for news
+- [3.3 – Edit & Text-Based Editing](3_3.md) — guided notes: A-roll/B-roll, transcript-based cuts
+- [3.4 – Captions & Accessibility](3_4.md) — guided notes: captions, subtitles, color contrast
+- [S3 – News Story](s3.md) — summative project, with a structured peer review pass
 
 ## Unit Vocabulary
 
