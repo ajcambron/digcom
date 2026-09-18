@@ -1,0 +1,55 @@
+// Site color scheme - muted red/gold/blue triad + warm paper ground,
+// inspired by Johannes Itten's Farbenkugel color wheel (desaturated,
+// not the vivid original). Loads before just-the-docs' own
+// color_schemes/light.scss, whose variables are all `!default`, so
+// setting them here is the supported just-the-docs customization
+// point (see _sass/custom/setup.scss in the theme gem).
+//
+// This is also the single source of truth for the palette: the
+// reveal.js deck stylesheet (assets/css/revealjs-decks.css) and the
+// custom button/component CSS in _includes/head_custom.html both use
+// the same hex values by hand, since those live outside Jekyll's Sass
+// pipeline. Keep all three in sync if this palette changes.
+//
+// NOTE: this file is parsed by Jekyll's legacy Ruby `sass` gem, which
+// assumes US-ASCII and errors on stray UTF-8 bytes (em dashes, curly
+// quotes, etc.) unless @charset is set. Keep this file plain ASCII.
+
+// Callout colors (warning/highlight/discussion/reflection/good/vocab in
+// _config.yml reference these by name - red/yellow/blue/purple/green).
+// Muted equivalents of the same four hue-steps just-the-docs defines by
+// default, so every callout box across every lesson page picks up the
+// palette automatically with no change to _config.yml.
+$red-000: #EDD3C2;
+$red-100: #D9A488;
+$red-200: #C17858;
+$red-300: #AE5038;
+$yellow-000: #F0DFB9;
+$yellow-100: #DEC087;
+$yellow-200: #CBA25C;
+$yellow-300: #B8863A;
+$blue-000: #C3D6DE;
+$blue-100: #82A4B7;
+$blue-200: #4E7A92;
+$blue-300: #2E5A73;
+$purple-000: #DDD0D8;
+$purple-100: #B096A8;
+$purple-200: #8A6980;
+$purple-300: #6B4A63;
+$green-000: #DDE6D2;
+$green-100: #A8BF95;
+$green-200: #7D9968;
+$green-300: #5E7A4C;
+
+$body-background-color: #F1E8D0;
+$body-heading-color: #2A2118;
+$body-text-color: #2A2118;
+$link-color: #2E5A73;
+$nav-child-link-color: #4A4236;
+$sidebar-color: #E4D6AC;
+$base-button-color: #F8F2E2;
+$btn-primary-color: #AE5038;
+$code-background-color: #F8F2E2;
+$table-background-color: #F8F2E2;
+$search-background-color: #F8F2E2;
+$search-result-preview-color: #6B6255;

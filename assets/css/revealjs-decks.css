@@ -9,15 +9,27 @@
     <link rel="stylesheet" href="/assets/css/revealjs-decks.css">
 */
 
+/*
+  Palette: a muted red/gold/blue triad on a warm paper ground, inspired
+  by Johannes Itten's Farbenkugel color wheel (desaturated, not the
+  vivid original). This is the same palette used site-wide — see
+  _sass/custom/setup.scss (page chrome) and the button/component CSS in
+  _includes/head_custom.html. Keep all three in sync if this changes.
+  Variable names below are historical ("navy"/"ice"/"white") but now
+  hold the new hex values — renaming them would mean touching every
+  deck HTML file, which all reference these by var(), so the names
+  stay put and only the values change.
+*/
 :root {
-  --navy: #1E2761;
-  --navy-deep: #17204F;
-  --ice: #CADCFC;
-  --white: #FFFFFF;
-  --dark-text: #1A1A2E;
-  --muted: #6B7280;
-  --card-bg: #F4F6FB;
-  --card-border: #D7DDEC;
+  --navy: #2E5A73;       /* muted blue — structural accent, badges, links */
+  --navy-deep: #24475C;  /* deep blue — dark-slide background */
+  --ice: #E3CD8C;        /* muted gold — light accent text on dark-blue slides */
+  --white: #F1E8D0;      /* warm paper — light-slide background */
+  --dark-text: #2A2118;  /* warm dark ink — body text */
+  --muted: #6B6255;      /* warm gray — secondary/hint text */
+  --card-bg: #F8F2E2;    /* paper-light — card surfaces */
+  --card-border: #D6C79C;/* paper border */
+  --red: #AE5038;        /* muted red — reveal-word emphasis, CTAs */
 }
 
 html, body { height: 100%; }
@@ -147,7 +159,7 @@ html, body { height: 100%; }
   font-family: Georgia, serif;
   font-weight: bold;
   font-size: 1.5em;
-  color: var(--navy);
+  color: var(--red);
   margin: 0.2em 0 0.4em 0;
 }
 
@@ -172,12 +184,12 @@ html, body { height: 100%; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(23, 32, 79, 0.55);
-  color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(36, 71, 92, 0.65);
+  color: #F1E8D0;
+  border: 1px solid rgba(241, 232, 208, 0.4);
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.15s ease;
 }
-.deck-fullscreen-btn:hover { background: rgba(23, 32, 79, 0.85); }
+.deck-fullscreen-btn:hover { background: rgba(36, 71, 92, 0.9); }
 .deck-fullscreen-btn svg { width: 18px; height: 18px; display: block; }
