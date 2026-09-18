@@ -8,8 +8,8 @@ nav_exclude: false
 # Syllabus | Applications of Digital Design
 
 {: .highlight }
-This page mirrors the official course syllabus. For the fillable, printable copy with a
-signature line, see the [source document](https://docs.google.com/document/d/1l_wvZRej0RxcMxK3X_qpJVbzDCG5fy40Az6l2T3lg4w/edit?usp=sharing){:target="_blank"}.
+This page mirrors the official course syllabus. For the fillable, printable copy with initial
+and signature lines, see the [PDF version]({{ '/assets/syllabus/add-syllabus.pdf' | relative_url }}){:target="_blank"}.
 
 ## Applications of Digital Design (ADD)
 
@@ -139,7 +139,7 @@ information about the certification process see
 ## Parent Partnership Agreement
 
 To create the best working relationship between home and school, please review the expectations
-below on the [fillable, printable copy](https://docs.google.com/document/d/1l_wvZRej0RxcMxK3X_qpJVbzDCG5fy40Az6l2T3lg4w/edit?usp=sharing){:target="_blank"},
+below on the [fillable, printable copy]({{ '/assets/syllabus/add-syllabus.pdf' | relative_url }}){:target="_blank"},
 initial each item to indicate agreement, then sign and return that page.
 
 **Parent/Guardian Agreement**

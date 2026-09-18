@@ -8,8 +8,8 @@ nav_exclude: false
 # Syllabus | Foundations of Digital Design
 
 {: .highlight }
-This page mirrors the official course syllabus. For the fillable, printable copy with a
-signature line, see the [source document](https://docs.google.com/document/d/17Q6ZkaTdL_EjlES43ITSA1owdsqHObd4tZNgQGjLZXI/edit?usp=sharing){:target="_blank"}.
+This page mirrors the official course syllabus. For the fillable, printable copy with initial
+and signature lines, see the [PDF version]({{ '/assets/syllabus/fdd-syllabus.pdf' | relative_url }}){:target="_blank"}.
 
 ## Digital Communications Technology I: Foundations of Digital Design
 
@@ -135,7 +135,7 @@ information about the certification process see
 ## Parent Partnership Agreement
 
 To create the best working relationship between home and school, please review the expectations
-below on the [fillable, printable copy](https://docs.google.com/document/d/17Q6ZkaTdL_EjlES43ITSA1owdsqHObd4tZNgQGjLZXI/edit?usp=sharing){:target="_blank"},
+below on the [fillable, printable copy]({{ '/assets/syllabus/fdd-syllabus.pdf' | relative_url }}){:target="_blank"},
 initial each item to indicate agreement, then sign and return that page.
 
 **Parent/Guardian Agreement**
