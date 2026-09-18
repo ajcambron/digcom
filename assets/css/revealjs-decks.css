@@ -24,11 +24,11 @@
   --navy: #2E5A73;       /* muted blue — structural accent, badges, links */
   --navy-deep: #24475C;  /* deep blue — dark-slide background */
   --ice: #E3CD8C;        /* muted gold — light accent text on dark-blue slides */
-  --white: #F1E8D0;      /* warm paper — light-slide background */
+  --white: #F7F2E4;      /* very light paper — light-slide background */
   --dark-text: #2A2118;  /* warm dark ink — body text */
   --muted: #6B6255;      /* warm gray — secondary/hint text */
-  --card-bg: #F8F2E2;    /* paper-light — card surfaces */
-  --card-border: #D6C79C;/* paper border */
+  --card-bg: #FBF7EC;    /* paper-light — card surfaces */
+  --card-border: #E4D9BC;/* paper border */
   --red: #AE5038;        /* muted red — reveal-word emphasis, CTAs */
 }
 
