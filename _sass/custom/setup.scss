@@ -1,6 +1,9 @@
-// Site color scheme - muted red/gold/blue triad + warm paper ground,
-// inspired by Johannes Itten's Farbenkugel color wheel (desaturated,
-// not the vivid original). Loads before just-the-docs' own
+// Site color scheme - muted red/gold/blue triad, inspired by Johannes
+// Itten's Farbenkugel color wheel (desaturated, not the vivid
+// original), on a white page ground. The nav sidebar uses a pale blue
+// tint instead of a paper/tan tint (a straight hue swap at the same
+// lightness/intensity as the old tan) so the site reads as clean and
+// modern rather than "old paper." Loads before just-the-docs' own
 // color_schemes/light.scss, whose variables are all `!default`, so
 // setting them here is the supported just-the-docs customization
 // point (see _sass/custom/setup.scss in the theme gem).
@@ -61,10 +64,10 @@ $body-heading-color: #2A2118;
 $body-text-color: #2A2118;
 $link-color: #2E5A73;
 $nav-child-link-color: #4A4236;
-$sidebar-color: #F7F2E4;
+$sidebar-color: #DAE9F1;
 $base-button-color: #FBF7EC;
 $btn-primary-color: #AE5038;
 $code-background-color: #F7F2E4;
-$table-background-color: #FBF7EC;
+$table-background-color: $body-background-color;
 $search-background-color: #F7F2E4;
 $search-result-preview-color: #6B6255;
