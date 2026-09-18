@@ -20,26 +20,41 @@
 // Muted equivalents of the same four hue-steps just-the-docs defines by
 // default, so every callout box across every lesson page picks up the
 // palette automatically with no change to _config.yml.
+//
+// UDL / color-vision-deficiency pass (see PR discussion): the -300
+// shade is the callout's bold uppercase title-label color, shown
+// against its own -000 tint as the background. red/yellow/green -300
+// were darkened (holding hue/saturation) until label-on-tint contrast
+// clears WCAG AA (4.5:1) for all readers, not just colorblind ones -
+// yellow-300 was the worst offender at 2.45:1. -100/-200 are a linear
+// ramp between the unchanged -000 and the new -300 so the four steps
+// stay visually smooth. purple-300 (and matching purple-000/100/200)
+// were also hue-rotated ~24 degrees away from blue-300: under
+// simulated protanopia/deuteranopia (red-green color blindness) the
+// original purple and blue collapsed to within ~20 units of each
+// other (of ~440 max) - close enough to be confusable by color alone -
+// this rotation roughly doubles that separation while staying a
+// clearly distinct plum/wine hue in normal vision.
 $red-000: #EDD3C2;
-$red-100: #D9A488;
-$red-200: #C17858;
-$red-300: #AE5038;
+$red-100: #CFA391;
+$red-200: #B17360;
+$red-300: #93432F;
 $yellow-000: #F0DFB9;
-$yellow-100: #DEC087;
-$yellow-200: #CBA25C;
-$yellow-300: #B8863A;
+$yellow-100: #C9B388;
+$yellow-200: #A38658;
+$yellow-300: #7C5A27;
 $blue-000: #C3D6DE;
 $blue-100: #82A4B7;
 $blue-200: #4E7A92;
 $blue-300: #2E5A73;
-$purple-000: #DDD0D8;
-$purple-100: #B096A8;
-$purple-200: #8A6980;
-$purple-300: #6B4A63;
+$purple-000: #DDD0D3;
+$purple-100: #B0969E;
+$purple-200: #8A6973;
+$purple-300: #6B4A56;
 $green-000: #DDE6D2;
-$green-100: #A8BF95;
-$green-200: #7D9968;
-$green-300: #5E7A4C;
+$green-100: #AEBCA2;
+$green-200: #809271;
+$green-300: #516841;
 
 $body-background-color: #FFFFFF;
 $body-heading-color: #2A2118;

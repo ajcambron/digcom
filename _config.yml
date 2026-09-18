@@ -38,6 +38,7 @@ callouts:
     title: Warning
     color: red
   highlight:
+    title: Highlight
     color: yellow
   discussion:
     title: Discussion
@@ -46,6 +47,7 @@ callouts:
     title: Reflection
     color: purple
   good:
+    title: Well Done
     color: green
   vocab:
     title: Exam Vocabulary
