@@ -1,7 +1,17 @@
+/*
+  Shared stylesheet for every printable worksheet source
+  (worksheet-sources/*.html), rendered to PDF via Playwright/Chromium
+  reading these files straight off disk. Typography and palette match
+  the rest of the site (Jekyll pages + reveal.js decks) via the
+  self-hosted fonts in ../assets/css/site-fonts.css and the same warm,
+  muted Itten-inspired paper palette as _sass/custom/setup.scss.
+*/
+@import url("../assets/css/site-fonts.css");
+
 * { box-sizing: border-box; }
 html, body {
-  font-family: Verdana, Geneva, sans-serif;
-  color: #1a1a1a;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #2A2118;
   margin: 0;
   padding: 0;
   font-size: 12pt;
@@ -28,20 +38,20 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  border-bottom: 2.5px solid #1a1a1a;
+  border-bottom: 2.5px solid #2A2118;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 .ws-title {
-  font-size: 20pt;
-  font-weight: bold;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 26pt;
   margin: 0;
 }
 .ws-course {
   font-size: 9pt;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #555;
+  color: #6B6255;
   text-align: right;
 }
 .ws-fields {
@@ -52,7 +62,7 @@ html, body {
 }
 .ws-field {
   flex: 1;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #2A2118;
   padding-bottom: 3px;
   min-height: 1.4em;
 }
@@ -60,12 +70,13 @@ html, body {
   font-size: 9pt;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #555;
+  color: #6B6255;
   display: block;
   margin-bottom: 12px;
 }
 .ws-title-sm {
-  font-size: 15pt;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 19pt;
   flex: 1 1 auto;
   min-width: 0;
   margin-right: 16px;
@@ -86,17 +97,17 @@ html, body {
   font-size: 8.5pt;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #555;
+  color: #6B6255;
 }
 .field-blank {
   display: inline-block;
   width: 80px;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #2A2118;
   height: 1em;
 }
 .word-bank {
-  background: #f4f6fb;
-  border: 1px solid #d7ddec;
+  background: #FBF7EC;
+  border: 1px solid #E4D9BC;
   border-radius: 4px;
   padding: 8px 14px;
   font-size: 10.5pt;
@@ -107,25 +118,25 @@ ol.ws-items > li { margin-bottom: 18px; }
 .blank {
   display: inline-block;
   min-width: 85px;
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #2A2118;
   height: 1em;
   margin: 0 2px;
 }
 .lines .line {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #C9BB98;
   height: 24px;
 }
 .ws-quote {
   font-style: italic;
   font-size: 11pt;
-  border-left: 3px solid #999;
+  border-left: 3px solid #C9BB98;
   padding-left: 14px;
   margin: 18px 0;
-  color: #333;
+  color: #4A4236;
 }
 .ws-note {
-  background: #f4f6fb;
-  border: 1px solid #d7ddec;
+  background: #FBF7EC;
+  border: 1px solid #E4D9BC;
   border-radius: 4px;
   padding: 10px 14px;
   font-size: 11pt;
@@ -134,8 +145,8 @@ ol.ws-items > li { margin-bottom: 18px; }
 .ws-footer {
   margin-top: 26px;
   font-size: 9pt;
-  color: #777;
-  border-top: 1px solid #ccc;
+  color: #6B6255;
+  border-top: 1px solid #E4D9BC;
   padding-top: 8px;
   text-align: center;
 }
@@ -146,7 +157,7 @@ ol.ws-items > li { margin-bottom: 18px; }
 }
 .grid16 .box {
   aspect-ratio: 8.5 / 11;
-  border: 1.5px solid #1a1a1a;
+  border: 1.5px solid #2A2118;
   border-radius: 2px;
   position: relative;
 }
@@ -155,7 +166,7 @@ ol.ws-items > li { margin-bottom: 18px; }
   top: 4px;
   left: 6px;
   font-size: 9pt;
-  color: #aaa;
+  color: #B8AC8E;
 }
 .grid3 {
   display: grid;
@@ -164,7 +175,7 @@ ol.ws-items > li { margin-bottom: 18px; }
 }
 .grid3 .box {
   aspect-ratio: 8.5 / 11;
-  border: 1.5px solid #1a1a1a;
+  border: 1.5px solid #2A2118;
   border-radius: 2px;
   position: relative;
 }
@@ -173,7 +184,7 @@ ol.ws-items > li { margin-bottom: 18px; }
   top: 4px;
   left: 6px;
   font-size: 9pt;
-  color: #aaa;
+  color: #B8AC8E;
 }
 .tool-list {
   list-style: none;
@@ -184,7 +195,7 @@ ol.ws-items > li { margin-bottom: 18px; }
   display: flex;
   gap: 16px;
   align-items: flex-start;
-  border: 1px solid #ddd;
+  border: 1px solid #E4D9BC;
   border-radius: 6px;
   padding: 14px 16px;
   margin-bottom: 14px;
@@ -203,7 +214,7 @@ ol.ws-items > li { margin-bottom: 18px; }
 }
 .tool-list .tool-desc {
   font-size: 10.5pt;
-  color: #333;
+  color: #4A4236;
 }
 .ws-table {
   width: 100%;
@@ -212,17 +223,17 @@ ol.ws-items > li { margin-bottom: 18px; }
   margin: 14px 0;
 }
 .ws-table th, .ws-table td {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #2A2118;
   padding: 6px 8px;
   vertical-align: top;
   text-align: left;
 }
 .ws-table th {
-  background: #f4f6fb;
+  background: #FBF7EC;
   font-size: 8.5pt;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #333;
+  color: #4A4236;
 }
 .ws-table td.blank-cell {
   height: 40px;
@@ -237,7 +248,7 @@ ol.ws-items > li { margin-bottom: 18px; }
   display: flex;
   gap: 10px;
   align-items: center;
-  border: 1px solid #ddd;
+  border: 1px solid #E4D9BC;
   border-radius: 6px;
   padding: 7px 9px;
 }
@@ -245,9 +256,9 @@ ol.ws-items > li { margin-bottom: 18px; }
   width: 62px;
   height: 42px;
   flex-shrink: 0;
-  border: 1.5px solid #1a1a1a;
+  border: 1.5px solid #2A2118;
   border-radius: 2px;
-  background: #fafafa;
+  background: #FBF7EC;
   overflow: hidden;
 }
 .shot-card .info {
@@ -260,5 +271,5 @@ ol.ws-items > li { margin-bottom: 18px; }
 }
 .shot-card .desc {
   font-size: 8pt;
-  color: #333;
+  color: #4A4236;
 }

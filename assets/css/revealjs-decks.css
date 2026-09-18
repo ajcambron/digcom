@@ -7,7 +7,12 @@
   Usage in a deck's <head>, after reveal.css:
     <link rel="stylesheet" href="/assets/lib/revealjs/dist/reveal.css">
     <link rel="stylesheet" href="/assets/css/revealjs-decks.css">
+
+  Typography: Inter (body) + Instrument Serif (headings) — the same two
+  fonts as the Jekyll site itself and the worksheet PDFs, self-hosted via
+  assets/css/site-fonts.css so all three surfaces stay in sync.
 */
+@import url("/assets/css/site-fonts.css");
 
 /*
   Palette: a muted red/gold/blue triad on a warm paper ground, inspired
@@ -46,7 +51,7 @@ html, body { height: 100%; }
   embedded (non-fullscreen) on the page. Don't add a class smaller than
   that without re-checking this math.
 */
-.reveal { font-family: Verdana, Geneva, sans-serif; font-size: 44px; color: var(--dark-text); }
+.reveal { font-family: "Inter", system-ui, sans-serif; font-size: 44px; color: var(--dark-text); }
 .reveal .slides { text-align: left; }
 
 .reveal .slides section {
@@ -62,7 +67,8 @@ html, body { height: 100%; }
 }
 
 .reveal h1, .reveal h2, .reveal h3 {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
   text-transform: none;
   letter-spacing: normal;
 }
@@ -71,7 +77,7 @@ html, body { height: 100%; }
 .slide-light { background: var(--white); color: var(--dark-text); }
 
 .eyebrow {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size: 0.62em;
   font-weight: bold;
   letter-spacing: 0.12em;
@@ -80,11 +86,11 @@ html, body { height: 100%; }
 }
 .slide-dark .eyebrow { color: var(--ice); }
 
-.big-title { font-size: 1.7em; font-weight: bold; margin: 0 0 0.35em 0; }
+.big-title { font-size: 1.7em; margin: 0 0 0.35em 0; }
 .slide-dark .big-title { color: var(--white); }
 
 .subtitle {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-style: italic;
   font-size: 0.68em;
   color: var(--muted);
@@ -114,7 +120,7 @@ html, body { height: 100%; }
 }
 
 .hint {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-style: italic;
   font-size: 0.62em;
   color: var(--muted);
@@ -132,9 +138,8 @@ html, body { height: 100%; }
   border: 1px solid var(--card-border);
   border-radius: 8px;
   padding: 0.35em 0.9em;
-  font-family: Georgia, serif;
-  font-weight: bold;
-  font-size: 0.68em;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 0.8em;
   color: var(--navy);
 }
 
@@ -147,7 +152,7 @@ html, body { height: 100%; }
   border-radius: 50%;
   background: var(--navy);
   color: var(--white);
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-weight: bold;
   font-size: 1em;
   line-height: 1;
@@ -156,9 +161,8 @@ html, body { height: 100%; }
 }
 
 .reveal-word {
-  font-family: Georgia, serif;
-  font-weight: bold;
-  font-size: 1.5em;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 1.9em;
   color: var(--red);
   margin: 0.2em 0 0.4em 0;
 }

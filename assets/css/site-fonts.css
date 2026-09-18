@@ -1,0 +1,38 @@
+/*
+  Self-hosted two-font system shared by every surface on the site: the
+  Jekyll pages themselves (_includes/head_custom.html), the reveal.js
+  decks (assets/css/revealjs-decks.css), and the printable worksheet
+  PDFs (worksheet-sources/worksheet.css). One file, so the three never
+  drift apart again.
+
+  Font files are self-hosted (assets/fonts/, Latin-subset only) rather
+  than pulled from Google Fonts at request time: the worksheet PDFs are
+  rendered once by a headless-Chromium/Playwright script reading these
+  files straight off disk (file:// URLs, no network round trip needed),
+  and the site/decks get the same reliability plus one fewer external
+  dependency.
+
+  Inter -- UI/body sans, everywhere.
+  Instrument Serif -- display serif, for headings and titles only.
+*/
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/Inter-Variable-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/InstrumentSerif-Regular-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/InstrumentSerif-Italic-latin.woff2") format("woff2");
+}
