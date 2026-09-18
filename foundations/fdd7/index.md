@@ -14,6 +14,8 @@ Unit 7 moves past building individual shapes and into controlling how a whole co
 organized and how each object looks — layers, appearance, effects, and blending — closing with a
 finished album cover or gig poster.
 
+{% include unit-video.html %}
+
 ## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:

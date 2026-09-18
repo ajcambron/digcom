@@ -14,6 +14,8 @@ Your first formal look at Adobe Illustrator — why it's built around vector pat
 pixels, how the interface is organized, how to set up a real print document with multiple
 artboards, and the tools that make precise work possible.
 
+{% include unit-video.html %}
+
 ## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:

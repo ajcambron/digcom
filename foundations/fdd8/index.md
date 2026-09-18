@@ -14,6 +14,8 @@ Unit 8 multiplies a single object across a whole surface — brushes, repeating 
 symbols, converting raster images to vector with Image Trace, and generative AI as a starting
 point — closing with a sticker pack or merch pattern project.
 
+{% include unit-video.html %}
+
 ## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:

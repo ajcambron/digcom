@@ -19,6 +19,8 @@ Nothing in this unit is ACP-tested — see each lesson's `standard:` field. The 
 full compliance rigor (78-minute timing, The 7, a real Differentiation Matrix, real Organize
 criteria) — the students are still in the room, even though the exam is behind them.
 
+{% include unit-video.html %}
+
 ## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:

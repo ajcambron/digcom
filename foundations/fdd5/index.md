@@ -14,6 +14,8 @@ Unit 5 covers typography in Adobe Illustrator: reading and classifying letterfor
 spacing and rhythm with the Character panel, working with type on a path, and managing longer
 text — all building toward an original typographic poster.
 
+{% include unit-video.html %}
+
 ## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:

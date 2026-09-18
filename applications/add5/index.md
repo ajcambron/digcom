@@ -14,6 +14,8 @@ Unit 5 shifts from video to audio — planning a podcast episode, writing a natu
 interview script, recording clean audio, and mixing it with Premiere's Essential Sound tools —
 building toward a fully delivered, branded podcast episode.
 
+{% include unit-video.html %}
+
 ## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:

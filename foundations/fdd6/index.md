@@ -18,6 +18,8 @@ summative revises and finalizes a piece students already made in an earlier unit
 This is a brand-new unit added by the Sep 2026 restructure, built from lessons that floated out
 of other units because their original summative didn't strictly require them.
 
+{% include unit-video.html %}
+
 ## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:

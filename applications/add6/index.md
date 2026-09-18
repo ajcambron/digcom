@@ -14,6 +14,8 @@ A Premiere-native replacement for the old After Effects unit — applying and re
 animating properties with keyframes, keying out a green screen, and combining mattes, masks, and
 picture-in-picture — building toward a polished title sequence or effects reel.
 
+{% include unit-video.html %}
+
 ## Learning Outcomes
 
 Upon successful completion of this unit, you will be able to:

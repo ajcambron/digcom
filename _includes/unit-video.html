@@ -1,0 +1,17 @@
+{%- comment -%}
+  Unit-intro video embed, shown on a unit's overview (index.md) page between the
+  Introduction and Learning Outcomes sections. Same placeholder/live-embed pattern as
+  worksheet.html's `presentation=` param, reusing its .presentation-embed CSS.
+
+  Usage: {% include unit-video.html %}                                  -> placeholder
+         {% include unit-video.html youtube="https://youtube.com/embed/XXXX" %} -> live embed
+{%- endcomment -%}
+{%- if include.youtube %}
+<div class="presentation-embed">
+  <iframe class="presentation-embed-fill" src="{{ include.youtube }}" title="Unit intro video" allowfullscreen loading="lazy"></iframe>
+</div>
+{%- else %}
+<div class="presentation-embed presentation-placeholder">
+  <div class="presentation-embed-fill">📺 YouTube video placeholder — replace <code>{% raw %}{% include unit-video.html %}{% endraw %}</code> with <code>youtube="&lt;embed URL&gt;"</code> for this unit's intro video.</div>
+</div>
+{%- endif %}
