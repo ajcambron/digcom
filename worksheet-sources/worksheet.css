@@ -106,8 +106,7 @@ html, body {
   height: 1em;
 }
 .word-bank {
-  background: #FBF7EC;
-  border: 1px solid #E4D9BC;
+  border: 1px solid #2A2118;
   border-radius: 4px;
   padding: 8px 14px;
   font-size: 10.5pt;
@@ -135,8 +134,7 @@ ol.ws-items > li { margin-bottom: 18px; }
   color: #4A4236;
 }
 .ws-note {
-  background: #FBF7EC;
-  border: 1px solid #E4D9BC;
+  border: 1px solid #2A2118;
   border-radius: 4px;
   padding: 10px 14px;
   font-size: 11pt;
@@ -229,7 +227,6 @@ ol.ws-items > li { margin-bottom: 18px; }
   text-align: left;
 }
 .ws-table th {
-  background: #FBF7EC;
   font-size: 8.5pt;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -258,7 +255,6 @@ ol.ws-items > li { margin-bottom: 18px; }
   flex-shrink: 0;
   border: 1.5px solid #2A2118;
   border-radius: 2px;
-  background: #FBF7EC;
   overflow: hidden;
 }
 .shot-card .info {
