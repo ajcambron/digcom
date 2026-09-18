@@ -3,6 +3,7 @@ layout: default
 title: ADD | Unit 3
 nav_order: 3
 parent: Applications of Digital Design
+description: "A real ENG news crew: roles, interview/B-roll shooting, transcript-based editing, and captioning."
 has_children: true
 has_toc: false
 ---

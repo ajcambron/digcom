@@ -3,6 +3,7 @@ layout: default
 title: ADD | Unit 6
 nav_order: 6
 parent: Applications of Digital Design
+description: "Effects, keyframe animation, green-screen keying, and mattes/masks, closing with a polished title sequence or effects reel."
 has_children: true
 has_toc: false
 ---

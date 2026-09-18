@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 8
 nav_order: 8
 parent: Foundations of Digital Design
+description: "Brushes, repeating patterns, symbols, Image Trace, and generative AI, closing with a sticker pack or merch pattern."
 has_children: true
 has_toc: false
 ---

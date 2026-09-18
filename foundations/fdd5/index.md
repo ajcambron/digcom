@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 5
 nav_order: 5
 parent: Foundations of Digital Design
+description: "Letterform anatomy, character spacing, type on a path, and text management, building an original typographic poster."
 has_children: true
 has_toc: false
 ---

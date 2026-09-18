@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 7
 nav_order: 7
 parent: Foundations of Digital Design
+description: "Layers, appearance, effects, and blending, closing with a finished album cover or gig poster."
 has_children: true
 has_toc: false
 ---

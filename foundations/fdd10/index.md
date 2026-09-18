@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 10
 nav_order: 10
 parent: Foundations of Digital Design
+description: "No new content -- targeted review, full-length practice exams, and the Adobe Certified Professional exam itself."
 has_children: false
 has_toc: true
 ---

@@ -3,6 +3,7 @@ layout: default
 title: ADD | Unit 4
 nav_order: 4
 parent: Applications of Digital Design
+description: "Deliberate cinematography -- camera technique, storyboards/shot lists, color correction and grading -- building a solo Video Essay."
 has_children: true
 has_toc: false
 ---

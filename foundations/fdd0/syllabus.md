@@ -115,17 +115,10 @@ See [Routines & Procedures](routines-procedures.md) for the full classroom expec
 ## Proposed Course Outline
 
 {: .highlight }
-This outline reflects the original DCT syllabus. For the current lesson-by-lesson pacing guide,
-see the Unit pages in the sidebar.
+This table is pulled live from each unit's own overview page, so it always matches the current
+lesson-by-lesson pacing guide in the sidebar.
 
-1. Unit 1: Elements of Design — Elements of Design Poster
-2. Unit 2: Design Process — Emblem Project
-3. Unit 3: Branding — Brand Design Project
-4. Unit 4: Vector Illustration — Self Portrait Illustration
-5. Unit 5: Intro to Photoshop — Collage Project
-6. Unit 6: Poster Design — Poster Design
-7. Unit 7: Booklet Design — Yearbook Layout
-8. Unit 8: Promotional Design — Design Portfolio
+{% include unit-outline.html parent="Foundations of Digital Design" %}
 
 **Cumulative Portfolio Project (Final):** Students develop a portfolio of work through an online
 content management system that has a base page, photography portfolio, and design portfolio.

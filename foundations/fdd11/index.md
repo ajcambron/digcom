@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 11
 nav_order: 11
 parent: Foundations of Digital Design
+description: "Post-certification enrichment: multi-page publication layout and packaging/promotional design for a brand."
 has_children: true
 has_toc: false
 ---

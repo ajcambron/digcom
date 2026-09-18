@@ -3,6 +3,7 @@ layout: default
 title: ADD | Unit 7
 nav_order: 7
 parent: Applications of Digital Design
+description: "Analyze music-video cinematography, then collaborate to plan, shoot, and edit an original music video."
 
 ---
 # Unit 7 | Music Video

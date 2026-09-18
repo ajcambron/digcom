@@ -3,6 +3,7 @@ layout: default
 title: ADD | Unit 2
 nav_order: 2
 parent: Applications of Digital Design
+description: "Your first formal look at Premiere Pro: projects, timelines, continuity editing, and video standards/formats."
 has_children: true
 has_toc: false
 ---

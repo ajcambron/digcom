@@ -1,0 +1,27 @@
+{%- comment -%}
+  Renders a course's "Proposed Course Outline" as a live table, sourced from each unit
+  index.md's own front matter (title + nav_order + description) -- so editing a unit's
+  description automatically updates the syllabus, no manual sync needed. Same live-pull
+  pattern as unit-vocab.html, applied to the unit list instead of vocab terms.
+
+  Raw HTML (not a markdown pipe-table) because unit titles themselves contain a literal
+  "|" (e.g. "FDD | Unit 2"), which kramdown would otherwise read as an extra table-cell
+  delimiter and mangle. Markup mirrors what kramdown itself emits for a normal table, so
+  it still picks up the theme's .table-wrapper/table styling.
+
+  Usage: {% include unit-outline.html parent="Foundations of Digital Design" %}
+{%- endcomment -%}
+{%- assign units = site.html_pages
+  | where: "parent", include.parent
+  | where_exp: "p", "p.description"
+  | sort: "nav_order" -%}
+{%- if units.size > 0 -%}
+<div class="table-wrapper"><table>
+<thead><tr><th>Unit</th><th>Description</th></tr></thead>
+<tbody>
+{%- for u in units %}
+<tr><td><a href="{{ u.url | relative_url }}">{{ u.title }}</a></td><td>{{ u.description }}</td></tr>
+{%- endfor %}
+</tbody>
+</table></div>
+{%- endif -%}

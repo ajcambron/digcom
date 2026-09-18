@@ -3,6 +3,7 @@ layout: default
 title: ADD | Unit 8
 nav_order: 8
 parent: Applications of Digital Design
+description: "Collaborate to plan, shoot, and edit a short film, applying cinematography and story-structure skills."
 
 ---
 # Unit 8 | Short Film

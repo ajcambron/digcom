@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 4
 nav_order: 4
 parent: Foundations of Digital Design
+description: "Anchor points, paths, and reference-art analysis, building toward an original low-poly stained-glass piece."
 has_children: true
 has_toc: false
 ---

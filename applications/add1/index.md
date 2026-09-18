@@ -3,6 +3,7 @@ layout: default
 title: ADD | Unit 1
 nav_order: 1
 parent: Applications of Digital Design
+description: "The video industry and pre-production process, building to your first shoot: a short explainer video."
 has_children: true
 has_toc: false
 ---

@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 6
 nav_order: 6
 parent: Foundations of Digital Design
+description: "Finishing skills that take a piece from 'looks done' to output-ready -- revising and finalizing earlier work."
 has_children: true
 has_toc: false
 ---

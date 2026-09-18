@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 3
 nav_order: 3
 parent: Foundations of Digital Design
+description: "Color theory, shape tools, swatches and gradients, and precise composition, building a Vector Self-Portrait from shape primitives."
 has_children: true
 has_toc: false
 ---

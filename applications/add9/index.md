@@ -3,6 +3,7 @@ layout: default
 title: ADD | Unit 9
 nav_order: 9
 parent: Applications of Digital Design
+description: "Document a short film's production process -- organizational roles, pre-production practice, and budgeting."
 
 ---
 # Unit 9 | Production Book

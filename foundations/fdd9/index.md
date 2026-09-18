@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 9
 nav_order: 9
 parent: Foundations of Digital Design
+description: "Delivering artwork like a working designer, closing with a packaged, exported client brand project."
 has_children: true
 has_toc: false
 ---

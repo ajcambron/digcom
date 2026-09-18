@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 12
 nav_order: 12
 parent: Foundations of Digital Design
+description: "Scale and sketchbook practice, ending with a curated portfolio of your best work from the year."
 has_children: true
 has_toc: false
 ---

@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 2
 nav_order: 2
 parent: Foundations of Digital Design
+description: "Your first formal look at Illustrator: vector vs. raster, the interface, multi-artboard documents, and precise setup tools."
 has_children: true
 has_toc: false
 ---

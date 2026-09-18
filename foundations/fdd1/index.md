@@ -3,6 +3,7 @@ layout: default
 title: FDD | Unit 1
 nav_order: 1
 parent: Foundations of Digital Design
+description: "AIGA's elements-of-design sequence -- line, shape, texture, color -- building to your first project in Illustrator."
 has_children: true
 has_toc: false
 ---

@@ -3,6 +3,7 @@ layout: default
 title: ADD | Unit 5
 nav_order: 5
 parent: Applications of Digital Design
+description: "Podcast planning, interview scripting, clean recording, and mixing, building a fully delivered, branded podcast episode."
 has_children: true
 has_toc: false
 ---

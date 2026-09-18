@@ -119,17 +119,10 @@ See [Routines & Procedures](routines-procedures.md) for the full classroom expec
 ## Proposed Course Outline
 
 {: .highlight }
-This outline reflects the original DCT syllabus. For the current lesson-by-lesson pacing guide,
-see the Unit pages in the sidebar.
+This table is pulled live from each unit's own overview page, so it always matches the current
+lesson-by-lesson pacing guide in the sidebar.
 
-1. Unit 1: Digital Video Production & Explainer Videos
-2. Unit 2: Video Editing Basics & Television Scene Editing
-3. Unit 3: News Story Production
-4. Unit 4: Motion & Animation
-5. Unit 5: Podcast Production
-6. Unit 7: Music Video Production
-7. Unit 8: Short Film Production
-8. Unit 9: Production Book & Budgeting
+{% include unit-outline.html parent="Applications of Digital Design" %}
 
 **Cumulative Final Project:** Students complete a final short film or video project for formal
 critique and presentation, along with a production book documenting pre-production planning and
