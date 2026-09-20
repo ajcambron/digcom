@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 1.3 | Two-Column Script — Teacher Plan
+# 1.3 | Two-Column Script—Teacher Plan
 
 {% include teacher-plan.html %}

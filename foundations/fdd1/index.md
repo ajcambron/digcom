@@ -3,7 +3,7 @@ layout: default
 title: FDD | Unit 1
 nav_order: 1
 parent: Foundations of Digital Design
-description: "AIGA's elements-of-design sequence -- line, shape, texture, color -- building to your first project in Illustrator."
+description: "AIGA's elements-of-design sequence—line, shape, texture, color—building to your first project in Illustrator."
 has_children: true
 has_toc: false
 ---
@@ -12,12 +12,12 @@ has_toc: false
 ## Introduction
 
 This unit introduces the design industry and process through AIGA's elements-of-design
-sequence — one full class per element (Line, Shape, Texture, Color) — building toward your
+sequence—one full class per element (Line, Shape, Texture, Color)—building toward your
 first time in Adobe Illustrator, recreating your strongest comp.
 
 {: .highlight }
 This is the first unit of the year, when district network access and student accounts are least
-reliable. Lessons 1.1–1.4 run entirely on paper — no computer or network access required. The
+reliable. Lessons 1.1–1.4 run entirely on paper—no computer or network access required. The
 S | 1 project is the one day this unit that needs a computer lab.
 
 {% include unit-video.html %}
@@ -36,11 +36,11 @@ Upon successful completion of this unit, you will be able to:
 {% include calendar-of-events.html unit=1 %}
 
 ## Lessons
-- [1.1 – Line Assignment](1_1.md) — guided notes: What is Design?
-- [1.2 – Shape Assignment](1_2.md) — guided notes: Elements & Principles of Design
-- [1.3 – Texture Assignment](1_3.md) — guided notes: Purpose, Audience & Client Goals
-- [1.4 – Color Assignment](1_4.md) — guided notes: Communicating Design Plans
-- [S1 – Illustrator Recreation](s1.md) — summative project
+- [1.1 – Line Assignment](1_1.md)—guided notes: What is Design?
+- [1.2 – Shape Assignment](1_2.md)—guided notes: Elements & Principles of Design
+- [1.3 – Texture Assignment](1_3.md)—guided notes: Purpose, Audience & Client Goals
+- [1.4 – Color Assignment](1_4.md)—guided notes: Communicating Design Plans
+- [S1 – Illustrator Recreation](s1.md)—summative project
 
 ## Unit Vocabulary
 

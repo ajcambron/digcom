@@ -1,11 +1,11 @@
 **Trace Preset**
-: A built-in starting configuration in the Image Trace panel (e.g. Black and White Logo, High
+: A built-in starting configuration in the Image Trace panel (for example, Black and White Logo, High
 Fidelity Photo, 3 Colors, Line Art) that sets sensible defaults for threshold, color count, and
 path handling for a given kind of source image.
 
 **Ignore White**
 : An Image Trace option that treats white areas of the source image as transparent instead of
-tracing them as opaque white shapes — useful for a logo that needs to sit on a colored
+tracing them as opaque white shapes—useful for a logo that needs to sit on a colored
 background.
 
 **Threshold**

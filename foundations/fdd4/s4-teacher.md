@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# S | 4 | Low-Poly Stained-Glass — Teacher Plan
+# S | 4 | Low-Poly Stained-Glass—Teacher Plan
 
 {% include teacher-plan.html %}

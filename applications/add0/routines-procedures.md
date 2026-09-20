@@ -7,10 +7,10 @@ nav_exclude: false
 ---
 # Routines & Procedures
 
-These are the standing classroom routines that apply every day, all year — covered in full
+These are the standing classroom routines that apply every day, all year—covered in full
 during the Pre-Unit icebreaker days (Sep 1–3) and referenced back to whenever needed.
 
-[View Classroom Expectations](https://canva.link/1oz1un6ka1vx5az){:target="_blank"} — the full
+[View Classroom Expectations](https://canva.link/1oz1un6ka1vx5az){:target="_blank"}—the full
 poster of classroom expectations, referenced throughout the year.
 
 ## General Conduct
@@ -33,10 +33,10 @@ poster of classroom expectations, referenced throughout the year.
 
 ## Daily Routine
 
-1. **Bell Ringer:** begin the day's stinger immediately — see [Daily Stingers](bellringers.md).
+1. **Bell Ringer:** begin the day's stinger immediately—see [Daily Stingers](bellringers.md).
 2. **Materials:** keep your binder, pencils, and pens on your table every day; digital work is
    saved and organized per the conventions used throughout the course.
-3. **Wrap-up:** save, submit, and pack up during the last few minutes of every period — see each
+3. **Wrap-up:** save, submit, and pack up during the last few minutes of every period—see each
    lesson's Exit Ticket and Organize steps.
 
 {: .highlight }

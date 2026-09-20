@@ -11,6 +11,5 @@ private location commercially, regardless of who holds the photo's copyright.
 
 **File Package**
 : The folder Illustrator's File > Package command builds automatically, containing a copy of the
-document, every linked asset, every font used (where licensing allows), and a summary report —
-the standard way to hand a project off to a client or another designer without broken links or
+document, every linked asset, every font used (where licensing allows), and a summary report—the standard way to hand a project off to a client or another designer without broken links or
 missing fonts.

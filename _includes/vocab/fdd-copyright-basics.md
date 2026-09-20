@@ -4,7 +4,7 @@
 their work.
 
 **Intellectual Property**
-: Creations of the mind — designs, writing, logos, code, artwork — that the law treats as ownable
+: Creations of the mind—designs, writing, logos, code, artwork—that the law treats as ownable
 property, protected through copyright, trademark, or patent depending on the type of work.
 
 **Derivative Work**
@@ -14,17 +14,16 @@ if the new version looks quite different from the source.
 
 **Commercial Use**
 : Using a work to make money or promote a business, as opposed to personal or educational use.
-Many "free" assets are licensed for personal use only and require a separate — often paid —
-commercial license.
+Many "free" assets are licensed for personal use only and require a separate—often paid—commercial license.
 
 **Attribution**
 : Publicly crediting the original creator of a work, usually required as a condition of a
-specific license (e.g. a Creative Commons BY license) even when the work is otherwise free to
+specific license (for example, a Creative Commons BY license) even when the work is otherwise free to
 use.
 
 **Work for Hire**
 : Work created by an employee within the scope of their job, or by a contractor under a signed
-work-for-hire agreement. The employer or client — not the person who actually made it — legally
+work-for-hire agreement. The employer or client—not the person who actually made it—legally
 owns the copyright.
 
 **Usage Rights**

@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 9.1 | Copyright, Licensing & AI Content — Teacher Plan
+# 9.1 | Copyright, Licensing & AI Content—Teacher Plan
 
 {% include teacher-plan.html %}

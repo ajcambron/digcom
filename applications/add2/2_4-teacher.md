@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 2.4 | Standards, Formats & Frame Rates — Teacher Plan
+# 2.4 | Standards, Formats & Frame Rates—Teacher Plan
 
 {% include teacher-plan.html %}

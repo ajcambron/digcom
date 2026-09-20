@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 2.3 | Transitions & Editing Conventions — Teacher Plan
+# 2.3 | Transitions & Editing Conventions—Teacher Plan
 
 {% include teacher-plan.html %}

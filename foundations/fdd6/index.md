@@ -3,7 +3,7 @@ layout: default
 title: FDD | Unit 6
 nav_order: 6
 parent: Foundations of Digital Design
-description: "Finishing skills that take a piece from 'looks done' to output-ready -- revising and finalizing earlier work."
+description: "Finishing skills that take a piece from 'looks done' to output-ready—revising and finalizing earlier work."
 has_children: true
 has_toc: false
 ---
@@ -11,7 +11,7 @@ has_toc: false
 
 ## Introduction
 
-Unit 6 is the "last mile" unit — every lesson is a finishing skill needed to take a piece from
+Unit 6 is the "last mile" unit—every lesson is a finishing skill needed to take a piece from
 "looks done" to "actually correct for where it's headed." Instead of building something new, the
 summative revises and finalizes a piece students already made in an earlier unit.
 
@@ -35,11 +35,11 @@ Upon successful completion of this unit, you will be able to:
 {% include calendar-of-events.html unit=6 %}
 
 ## Lessons
-- [6.1 – Saving & File Formats](6_1.md) — choosing the right format for a destination
-- [6.2 – Digital Color: Modes & Gamuts](6_2.md) — out-of-gamut colors and print-safe correction
-- [6.3 – Paragraph Settings & Area Type](6_3.md) — alignment, indents, spacing, hyphenation
-- [6.4 – Transformations & Live Corners](6_4.md) — scale, rotate, reflect, shear, Live Corners
-- [S6 – Portfolio Polish Project](s6.md) — summative revision of an earlier FDD piece
+- [6.1 – Saving & File Formats](6_1.md)—choosing the right format for a destination
+- [6.2 – Digital Color: Modes & Gamuts](6_2.md)—out-of-gamut colors and print-safe correction
+- [6.3 – Paragraph Settings & Area Type](6_3.md)—alignment, indents, spacing, hyphenation
+- [6.4 – Transformations & Live Corners](6_4.md)—scale, rotate, reflect, shear, Live Corners
+- [S6 – Portfolio Polish Project](s6.md)—summative revision of an earlier FDD piece
 
 ## Unit Vocabulary
 

@@ -1,13 +1,12 @@
 **Dieline**
-: A technical line drawing showing where a package's material will be cut, scored, and folded —
-the structural blueprint a graphic design is placed onto before a package can be built.
+: A technical line drawing showing where a package's material will be cut, scored, and folded—the structural blueprint a graphic design is placed onto before a package can be built.
 
 **Structural Packaging Design**
 : The 3D engineering of a package (its shape, folds, and how it opens/closes), as distinct from
 the 2D graphic design applied to its surfaces.
 
 **Packaging Mockup**
-: A realistic preview — physical or digital — showing artwork as it will actually look wrapped
+: A realistic preview—physical or digital—showing artwork as it will actually look wrapped
 around or printed on a real, dimensional package, used to catch problems flat art can hide.
 
 **Brand Identity**

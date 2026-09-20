@@ -11,8 +11,8 @@ has_toc: false
 
 ## Introduction
 
-Unit 4 introduces the Pen tool and the family of tools around it — analyzing reference art,
-practicing anchor points, planning a composition on paper, and refining paths — all building
+Unit 4 introduces the Pen tool and the family of tools around it—analyzing reference art,
+practicing anchor points, planning a composition on paper, and refining paths—all building
 toward an original low-poly stained-glass piece built entirely from vector paths.
 
 {% include unit-video.html %}
@@ -31,11 +31,11 @@ Upon successful completion of this unit, you will be able to:
 {% include calendar-of-events.html unit=4 %}
 
 ## Lessons
-- [4.1 – Art Analysis & Inspiration Board](4_1.md) — analyzing stained glass & low poly reference art
-- [4.2 – Pen Tool Bootcamp](4_2.md) — corner points, smooth points, and the Direct Selection tool
-- [4.3 – Concept Sketches](4_3.md) — planning composition, color palette, and meaning on paper
-- [4.4 – Refining Paths](4_4.md) — Join, Simplify, Shape Builder, and Pathfinder
-- [S4 – Low-Poly Stained-Glass](s4.md) — summative project, with a structured peer review pass
+- [4.1 – Art Analysis & Inspiration Board](4_1.md)—analyzing stained glass & low poly reference art
+- [4.2 – Pen Tool Bootcamp](4_2.md)—corner points, smooth points, and the Direct Selection tool
+- [4.3 – Concept Sketches](4_3.md)—planning composition, color palette, and meaning on paper
+- [4.4 – Refining Paths](4_4.md)—Join, Simplify, Shape Builder, and Pathfinder
+- [S4 – Low-Poly Stained-Glass](s4.md)—summative project, with a structured peer review pass
 
 ## Unit Vocabulary
 

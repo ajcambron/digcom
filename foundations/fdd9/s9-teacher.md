@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# S | 9 | Client Brand Project — Teacher Plan
+# S | 9 | Client Brand Project—Teacher Plan
 
 {% include teacher-plan.html %}

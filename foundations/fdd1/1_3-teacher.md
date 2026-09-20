@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 1.3 | Texture Assignment — Teacher Plan
+# 1.3 | Texture Assignment—Teacher Plan
 
 {% include teacher-plan.html %}

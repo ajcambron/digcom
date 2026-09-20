@@ -15,7 +15,7 @@ distribution reads as asymmetrical.
 : The lining up of text or graphics on a page.
 
 **Contrast**
-: The range of light to dark areas in a composition — greater contrast means a greater
+: The range of light to dark areas in a composition—greater contrast means a greater
 distinction between light and dark regions.
 
 **Unity/Harmony**
@@ -33,7 +33,7 @@ overpowering the whole.
 
 **Rule of Thirds**
 : A layout principle suggesting a composition is most pleasing when key objects sit at the
-intersections of lines dividing the image into thirds — used to draw emphasis to important
+intersections of lines dividing the image into thirds—used to draw emphasis to important
 elements.
 
 **Rule of Phi / Golden Ratio**

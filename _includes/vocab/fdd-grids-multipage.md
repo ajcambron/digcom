@@ -8,7 +8,7 @@ across columns and across facing pages.
 
 **Multi-Page (Multi-Artboard) Document**
 : A single Illustrator file containing several artboards, each representing one page of a
-publication — Illustrator's lightweight substitute for dedicated page-layout software when a
+publication—Illustrator's lightweight substitute for dedicated page-layout software when a
 project doesn't need true auto-flowing text or master-page automation.
 
 **Template / Master Elements**

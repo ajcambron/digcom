@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 12.2 | Sketchbook Practice & Ideation — Teacher Plan
+# 12.2 | Sketchbook Practice & Ideation—Teacher Plan
 
 {% include teacher-plan.html %}

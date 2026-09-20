@@ -1,5 +1,5 @@
 **Anchor Point**
-: A fixed point on a vector path — placed by clicking, or click-dragging, with the Pen tool — that
+: A fixed point on a vector path—placed by clicking, or click-dragging, with the Pen tool—that
 marks where a path changes direction or curvature.
 
 **Segment**
@@ -15,4 +15,4 @@ direction handles on either side.
 
 **Direction Handle (Direction Line)**
 : The lever extending from a smooth anchor point that controls a curve's angle and depth on
-either side of the point — dragging it is how you "curve an angle."
+either side of the point—dragging it is how you "curve an angle."

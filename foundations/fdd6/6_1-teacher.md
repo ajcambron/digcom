@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 6.1 | Saving & File Formats — Teacher Plan
+# 6.1 | Saving & File Formats—Teacher Plan
 
 {% include teacher-plan.html %}

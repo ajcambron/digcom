@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# S | 11 | Brand Package — Teacher Plan
+# S | 11 | Brand Package—Teacher Plan
 
 {% include teacher-plan.html %}

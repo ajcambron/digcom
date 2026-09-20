@@ -3,11 +3,11 @@
 
 **Out-of-Gamut / Gamut Warning**
 : A color that can be displayed on-screen (RGB) but can't be accurately reproduced by a printer
-(CMYK) — Illustrator flags these with a small warning triangle in the Color panel.
+(CMYK)—Illustrator flags these with a small warning triangle in the Color panel.
 
 **Device-Dependent Color**
 : Color that looks different depending on the specific screen, printer, or ink used to reproduce
-it — the reason color modes and gamuts matter in the first place.
+it—the reason color modes and gamuts matter in the first place.
 
 **sRGB / Adobe RGB**
 : Two common RGB working spaces for screen-bound artwork; sRGB is the safe default for web and
@@ -19,4 +19,4 @@ flat, weak-looking black on large printed areas.
 
 **Overprint**
 : A print setting that allows one ink to print directly on top of another, rather than knocking
-out (removing) the color underneath — relevant when checking a file for gamut or output problems.
+out (removing) the color underneath—relevant when checking a file for gamut or output problems.

@@ -10,5 +10,5 @@ breaks ("missing") if the original file moves, is renamed, or is deleted.
 
 **Edit Original**
 : A command, available on both linked and embedded images, that reopens the original image file
-in its source application (e.g. Photoshop) for editing. Save the change there, and the Links
+in its source application (for example, Photoshop) for editing. Save the change there, and the Links
 panel shows the placed image updated automatically.

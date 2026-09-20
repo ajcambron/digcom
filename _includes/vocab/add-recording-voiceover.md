@@ -1,5 +1,5 @@
 **Room Tone**
-: The ambient sound of a specific recording space with no one talking — recorded and kept for use
+: The ambient sound of a specific recording space with no one talking—recorded and kept for use
 when smoothing edits later.
 
 **Natural/Ambient Sound**
@@ -15,11 +15,11 @@ when smoothing edits later.
 : The setting that controls how much a microphone's signal is amplified before recording.
 
 **Clipping**
-: Audio distortion that happens when a signal's levels are pushed too high — a hard, harsh
+: Audio distortion that happens when a signal's levels are pushed too high—a hard, harsh
 digital error, not a stylistic effect.
 
 **Sampling Rate**
-: How many times per second an analog audio signal is measured/digitized — higher sampling rates
+: How many times per second an analog audio signal is measured/digitized—higher sampling rates
 capture more detail.
 
 **Voice-Over Record**

@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 5.4 | Text Flow & Converting to Outlines — Teacher Plan
+# 5.4 | Text Flow & Converting to Outlines—Teacher Plan
 
 {% include teacher-plan.html %}

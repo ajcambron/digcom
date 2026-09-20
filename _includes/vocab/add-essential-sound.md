@@ -11,8 +11,7 @@ loudness target.
 dialogue stops.
 
 **Repair**
-: Essential Sound tools that remove specific audio problems — hum, reverb, background noise —
-without a full manual EQ pass.
+: Essential Sound tools that remove specific audio problems—hum, reverb, background noise—without a full manual EQ pass.
 
 **Remix**
 : Automatically adjusting a music track's length and arrangement to fit a target duration.

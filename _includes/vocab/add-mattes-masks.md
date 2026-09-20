@@ -2,7 +2,7 @@
 : A shape or image used to define what part of a layer is visible or hidden.
 
 **Mask**
-: A path drawn directly on a clip to hide or reveal part of it — the hand-drawn version of a
+: A path drawn directly on a clip to hide or reveal part of it—the hand-drawn version of a
 matte.
 
 **Track Matte**

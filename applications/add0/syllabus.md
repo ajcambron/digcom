@@ -47,7 +47,7 @@ along with digital video cameras to create productions for display and critique.
 
 Students have access to a Christina School District email address through outlook.k12.de.us.
 Student email is a secure platform that allows students to email other Christina School District
-accounts (e.g., teachers). Students are also able to send messages over our learning management
+accounts (for example, teachers). Students are also able to send messages over our learning management
 system, Schoology.
 
 ## Course Policies and Expectations

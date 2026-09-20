@@ -1,9 +1,9 @@
 **Pen Tool**
-: Draws precise straight and curved paths by placing anchor points one at a time — click for a
+: Draws precise straight and curved paths by placing anchor points one at a time—click for a
 corner point, click-drag for a smooth point.
 
 **Curvature Tool**
-: Draws smooth curves and straight lines intuitively — click to place points and Illustrator
+: Draws smooth curves and straight lines intuitively—click to place points and Illustrator
 previews the curve, letting you adjust already-placed points by dragging without switching tools.
 
 **Pencil Tool**
@@ -15,7 +15,7 @@ pencil on paper.
 along it.
 
 **Blob Brush Tool**
-: Draws a filled, brush-shaped vector shape rather than a stroked path — overlapping strokes of
+: Draws a filled, brush-shaped vector shape rather than a stroked path—overlapping strokes of
 the same color merge automatically into one shape.
 
 **Line Segment Tool**

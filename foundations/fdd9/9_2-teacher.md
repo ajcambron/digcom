@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 9.2 | Managing & Packaging the Client Project — Teacher Plan
+# 9.2 | Managing & Packaging the Client Project—Teacher Plan
 
 {% include teacher-plan.html %}

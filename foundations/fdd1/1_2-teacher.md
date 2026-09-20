@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 1.2 | Shape Assignment — Teacher Plan
+# 1.2 | Shape Assignment—Teacher Plan
 
 {% include teacher-plan.html %}

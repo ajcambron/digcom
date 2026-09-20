@@ -6,5 +6,5 @@
 behind or through it.
 
 **Overflow Text**
-: Text that doesn't fit inside its type area — flagged by a small red plus (+) icon at the area's
+: Text that doesn't fit inside its type area—flagged by a small red plus (+) icon at the area's
 bottom-right corner.

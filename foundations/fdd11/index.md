@@ -11,14 +11,14 @@ has_toc: false
 
 ## Introduction
 
-Unit 11 is the first of FDD's two Extra Units — post-certification enrichment that builds toward
+Unit 11 is the first of FDD's two Extra Units—post-certification enrichment that builds toward
 two connected real-world design skills: laying out a multi-page publication and designing
 packaging/promotional pieces for a brand, using Illustrator skills already built in Units 1–9.
 
 {: .highlight }
-Nothing in this unit is ACP-tested — see each lesson's `standard:` field. The unit still carries
+Nothing in this unit is ACP-tested—see each lesson's `standard:` field. The unit still carries
 full compliance rigor (78-minute timing, The 7, a real Differentiation Matrix, real Organize
-criteria) — the students are still in the room, even though the exam is behind them.
+criteria)—the students are still in the room, even though the exam is behind them.
 
 {% include unit-video.html %}
 
@@ -36,14 +36,14 @@ Upon successful completion of this unit, you will be able to:
 {% include calendar-of-events.html unit=11 %}
 
 ## Lessons
-- [11.1 – Page Layout Fundamentals](11_1.md) — margins, gutters, columns, hierarchy, alignment
-- [11.2 – Working with Grids & Multi-Page Documents](11_2.md) — multi-artboard documents as a
+- [11.1 – Page Layout Fundamentals](11_1.md)—margins, gutters, columns, hierarchy, alignment
+- [11.2 – Working with Grids & Multi-Page Documents](11_2.md)—multi-artboard documents as a
   lightweight page-layout tool
-- [11.3 – Packaging & Promotional Design Concepts](11_3.md) — dielines, brand identity, promotional
+- [11.3 – Packaging & Promotional Design Concepts](11_3.md)—dielines, brand identity, promotional
   collateral
-- [11.4 – Building the Yearbook Spread](11_4.md) — applying 11.1–11.3's skills to a real two-page
+- [11.4 – Building the Yearbook Spread](11_4.md)—applying 11.1–11.3's skills to a real two-page
   spread
-- [S11 – Brand Package: Promotional Spread + Product Mockup](s11.md) — summative capstone
+- [S11 – Brand Package: Promotional Spread + Product Mockup](s11.md)—summative capstone
 
 ## Unit Vocabulary
 

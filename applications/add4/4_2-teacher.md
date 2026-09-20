@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 4.2 | Shot Analysis & Camera Technique — Teacher Plan
+# 4.2 | Shot Analysis & Camera Technique—Teacher Plan
 
 {% include teacher-plan.html %}

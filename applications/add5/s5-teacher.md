@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# S | 5 | Podcast Episode — Teacher Plan
+# S | 5 | Podcast Episode—Teacher Plan
 
 {% include teacher-plan.html %}

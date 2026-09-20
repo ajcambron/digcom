@@ -11,7 +11,7 @@
 : A full text record of a video's spoken audio, useful for accessibility, editing, and search.
 
 **Auto Transcribing**
-: Software automatically generating a transcript from spoken audio — fast, but needs a human proofread pass for accuracy.
+: Software automatically generating a transcript from spoken audio—fast, but needs a human proofread pass for accuracy.
 
 **Filler Words**
 : Verbal habits like "um," "uh," or "like" that a transcript-based edit makes easy to find and remove.
@@ -20,7 +20,7 @@
 : Graphics like lower thirds or titles placed over video to add names, context, or emphasis.
 
 **Color Contrast**
-: The difference in brightness between text and its background — captions and overlays need enough contrast to stay readable over any footage.
+: The difference in brightness between text and its background—captions and overlays need enough contrast to stay readable over any footage.
 
 **Audio Clarity**
-: How easily a viewer can understand spoken dialogue — affected by background noise, mic choice, and levels.
+: How easily a viewer can understand spoken dialogue—affected by background noise, mic choice, and levels.

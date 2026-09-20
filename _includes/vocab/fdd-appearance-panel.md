@@ -4,8 +4,8 @@ object as a stack, in the order they're applied. Click any listed attribute to e
 it to a new position in the stack to change the result.
 
 **Eyedropper Tool**
-: Samples the complete appearance of one object — fill color, stroke color and weight, and any
-effects — and applies that whole look to another object with a single click.
+: Samples the complete appearance of one object—fill color, stroke color and weight, and any
+effects—and applies that whole look to another object with a single click.
 
 **Recolor Artwork**
 : A dialog (Edit > Recolor Artwork) that displays every color currently used in a selection as an

@@ -1,5 +1,5 @@
 **Driving Question**
-: The specific mystery or conflict your podcast episode is trying to explore — narrower than a
+: The specific mystery or conflict your podcast episode is trying to explore—narrower than a
 general topic.
 
 **The "Not" List**

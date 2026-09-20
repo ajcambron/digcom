@@ -11,7 +11,7 @@ has_toc: false
 
 ## Introduction
 
-Your first formal look at Adobe Illustrator — why it's built around vector paths instead of
+Your first formal look at Adobe Illustrator—why it's built around vector paths instead of
 pixels, how the interface is organized, how to set up a real print document with multiple
 artboards, and the tools that make precise work possible.
 
@@ -31,12 +31,12 @@ Upon successful completion of this unit, you will be able to:
 {% include calendar-of-events.html unit=2 %}
 
 ## Lessons
-- [2.1 – Pixels vs. Paths](2_1.md) — raster vs. vector, rasterizing, resizing
-- [2.2 – The Illustrator Interface](2_2.md) — application bar, panels, toolbar, control panel
-- [2.3 – Documents & Artboards](2_3.md) — New Document dialog, artboards, bleed/trim/live area
-- [2.4 – Design Aids: Rulers, Guides, Grids & Views](2_4.md) — Smart Guides, Outline/Pixel
+- [2.1 – Pixels vs. Paths](2_1.md)—raster vs. vector, rasterizing, resizing
+- [2.2 – The Illustrator Interface](2_2.md)—application bar, panels, toolbar, control panel
+- [2.3 – Documents & Artboards](2_3.md)—New Document dialog, artboards, bleed/trim/live area
+- [2.4 – Design Aids: Rulers, Guides, Grids & Views](2_4.md)—Smart Guides, Outline/Pixel
   Preview/Presentation Mode
-- [S2 – Artboard Sampler](s2.md) — summative project
+- [S2 – Artboard Sampler](s2.md)—summative project
 
 ## Unit Vocabulary
 
