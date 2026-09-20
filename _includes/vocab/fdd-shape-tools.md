@@ -12,11 +12,11 @@ scaled, rotated, or aligned.
 corner interactively without changing the underlying path.
 
 **Polygon Tool**
-: Draws a shape with straight sides, evenly spaced around a center point; tapping the Up/Down
+: Draws a shape with straight sides, evenly spaced around a center point. Tapping the Up/Down
 arrow keys while dragging adds or removes sides.
 
 **Star Tool**
-: Draws a multi-pointed star shape; the same arrow-key trick adds or removes points, and holding
+: Draws a multi-pointed star shape. The same arrow-key trick adds or removes points, and holding
 Option/Alt while dragging keeps the star's arms straight instead of curving inward.
 
 **Isolation Mode**

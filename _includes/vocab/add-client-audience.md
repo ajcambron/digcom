@@ -3,7 +3,7 @@
 building their brand—that shape every creative decision on the project.
 
 **Target Audience**
-: The specific group of viewers a video is made for; understanding who they are shapes a video's
+: The specific group of viewers a video is made for. Understanding who they are shapes a video's
 tone, pacing, and content choices.
 
 **Demographics**

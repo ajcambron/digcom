@@ -19,7 +19,7 @@ against cropping on some displays.
 
 **Codec**
 : Short for "coder/decoder"—the software that compresses raw video into a smaller file for
-storage and playback, then decompresses it again to display; H.264 is the most widely
+storage and playback, then decompresses it again to display. H.264 is the most widely
 compatible codec.
 
 **Rendering**

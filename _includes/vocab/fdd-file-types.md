@@ -3,7 +3,7 @@
 edits.
 
 **.EPS (Encapsulated PostScript)**
-: A legacy vector interchange format, still requested by some print vendors and older software;
+: A legacy vector interchange format, still requested by some print vendors and older software,
 mostly superseded by .ai and .pdf in modern workflows.
 
 **.PDF (Portable Document Format)**

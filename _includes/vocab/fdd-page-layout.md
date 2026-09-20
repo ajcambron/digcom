@@ -7,8 +7,8 @@ crowding the trim edge or a binding.
 text doesn't feel like it's touching or falling into the binding.
 
 **Column**
-: A vertical division of a page used to organize text and images into readable widths;
-multi-column layouts (for example, a 3-column grid) are standard in publications like yearbooks and
+: A vertical division of a page used to organize text and images into readable widths.
+Multi-column layouts (for example, a 3-column grid) are standard in publications like yearbooks and
 magazines.
 
 **Hierarchy**

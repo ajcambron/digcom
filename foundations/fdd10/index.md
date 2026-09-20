@@ -46,16 +46,16 @@ which is why it's built with real slack (10 days) rather than the old plan's ~4 
 
 | Day | Focus | Format | Notes |
 |---|---|---|---|
-| 1 | **Diagnostic** | Short diagnostic quiz pulled from the full-year ACP vocab/question banks, covering all 5 objective domains; review each student's own F1–F4 formative history from Units 1–9 | Identifies each student's weakest domain(s) *before* spending review time—don't guess, check the data |
-| 2 | **Domain 1 & 2 Review**—Design Industry; Document Management | Station rotation: a quick re-teach mini-lesson per domain + targeted GMetrix/BrainBuffet module practice filtered to that domain | Pull materials from FDD Units 1, 2, 6, 9 (see cross-reference table below) |
+| 1 | **Diagnostic** | Short diagnostic quiz pulled from the full-year ACP vocab/question banks, covering all 5 objective domains. Review each student's own F1–F4 formative history from Units 1–9 | Identifies each student's weakest domain(s) *before* spending review time—don't guess, check the data |
+| 2 | **Domain 1 & 2 Review**—Design Industry, Document Management | Station rotation: a quick re-teach mini-lesson per domain + targeted GMetrix/BrainBuffet module practice filtered to that domain | Pull materials from FDD Units 1, 2, 6, 9 (see cross-reference table below) |
 | 3 | **Domain 3 Review**—Workflow & Interface | Station rotation, same format | Pull from FDD Units 2, 7, 8 |
-| 4 | **Domain 4 Review**—Objects, Paths & Text | Station rotation, same format—budget extra 1:1 time here; it's FDD's largest, most-tested domain | Pull from FDD Units 3, 4, 5, 8 |
+| 4 | **Domain 4 Review**—Objects, Paths & Text | Station rotation, same format—budget extra 1:1 time here, since it's FDD's largest, most-tested domain | Pull from FDD Units 3, 4, 5, 8 |
 | 5 | **Domain 5 Review**—Appearance & Position | Station rotation, same format | Pull from FDD Units 3, 6, 7 |
-| 6 | **Full-Length Practice Exam #1** | Timed, full-exam-conditions GMetrix/BrainBuffet practice exam covering all 5 domains | Simulates real test conditions; save the domain-by-domain score breakdown |
+| 6 | **Full-Length Practice Exam #1** | Timed, full-exam-conditions GMetrix/BrainBuffet practice exam covering all 5 domains | Simulates real test conditions. Save the domain-by-domain score breakdown |
 | 7 | **Targeted Re-Review** | Small-group re-teach built directly from Practice Exam #1's weakest domains per student/class | Group by *this week's* data, not the Day 1 diagnostic—it may have changed |
-| 8 | **Full-Length Practice Exam #2 + Final Study Plans** | Second timed practice exam; each student leaves with a one-page personal "what to double-check" list for their weakest domain | Last day before the real exam—keep this low-stress, confidence-building |
-| 9 | **ACP Certification Exam** | The actual proctored Adobe Certified Professional exam | Follow district testing-security procedures; this is not a classroom-graded day |
-| 10 | **Makeup Testing / Buffer + Unit 11 Preview** | Makeup slot for any student who missed Day 9; for everyone else, a short reflection on the certification experience and a preview of Units 11–12's post-certification project work | Real testing logistics (absences, technical issues) make a buffer day necessary, not optional |
+| 8 | **Full-Length Practice Exam #2 + Final Study Plans** | Second timed practice exam. Each student leaves with a one-page personal "what to double-check" list for their weakest domain | Last day before the real exam—keep this low-stress, confidence-building |
+| 9 | **ACP Certification Exam** | The actual proctored Adobe Certified Professional exam | Follow district testing-security procedures—this is not a classroom-graded day |
+| 10 | **Makeup Testing / Buffer + Unit 11 Preview** | Makeup slot for any student who missed Day 9. For everyone else, a short reflection on the certification experience and a preview of Units 11–12's post-certification project work | Real testing logistics (absences, technical issues) make a buffer day necessary, not optional |
 
 ## Domain → Unit cross-reference (for planning Days 2–5)
 
@@ -83,7 +83,7 @@ can shift slightly from the current draft.
   when the data shows an uneven spread.
 - **GMetrix/BrainBuffet's own domain-tagged reporting** should drive which specific modules get
   assigned on Days 2–5 and which get re-assigned after Practice Exam #1 (Day 7)—the platform
-  already knows a student's per-domain accuracy; use it instead of re-diagnosing from scratch.
+  already knows a student's per-domain accuracy—use it instead of re-diagnosing from scratch.
 - **Practice Exam #1 and #2 scores** are the real signal for Day 7–8 grouping—a student who
   tests strong on Domain 4 by Day 6 doesn't need more Domain 4 time on Day 7, even if they
   struggled with it back on Day 1.
@@ -110,7 +110,7 @@ Because this page isn't a single lesson, it doesn't carry the standard per-lesso
 Matrix—but real students are still in the room for all 10 days, so plan for:
 
 - **IEP/504:** extended time on both practice exams (already a standard testing accommodation—confirm each student's accommodation plan covers the actual certification exam, not just
-  in-class practice); chunk each domain's review station into smaller sub-checklists rather than
+  in-class practice). Chunk each domain's review station into smaller sub-checklists rather than
   one long list.
 - **ELL/Multilingual:** GMetrix/BrainBuffet's own glossary/definition features, where available,
   should be enabled during practice (not during the real exam, if testing rules restrict it)—confirm Certiport's actual accommodation policy for language supports before test day.

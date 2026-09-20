@@ -8,7 +8,7 @@ watch—for maximum emphasis.
 
 **Medium Close-Up (MCU)**
 : A shot framed from roughly the chest up—closer than a medium shot but not as tight as a
-close-up; the standard framing for most interviews.
+close-up—the standard framing for most interviews.
 
 **Medium Shot (MS)**
 : A shot framed from roughly the waist up, showing enough body language to read gesture while

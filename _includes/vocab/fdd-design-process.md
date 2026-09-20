@@ -33,7 +33,7 @@ client for approval.
 : Present, appearing, or found everywhere.
 
 **Line**
-: An identifiable path created by a point moving in space. One-dimensional; can vary in width,
+: An identifiable path created by a point moving in space. One-dimensional, and can vary in width,
 direction, and length. Lines often define the edges of a shape, and can be horizontal, vertical,
 or diagonal, straight or curved, thick or thin.
 

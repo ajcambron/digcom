@@ -23,7 +23,7 @@ f-number lets in more light and creates shallower depth of field.
 
 **Shutter Angle**
 : The relationship between shutter speed and frame rate—180° (paired with 24fps) is the standard
-cinema look; larger angles blur motion more, smaller angles look crisper.
+cinema look. Larger angles blur motion more, smaller angles look crisper.
 
 **Gain (ISO)**
 : A camera setting that boosts sensitivity to light—useful in low light, but raising it too high

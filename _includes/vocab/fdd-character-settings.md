@@ -23,7 +23,7 @@ at a time.
 proportions—generally a technique to avoid, since it distorts the letterforms' original design.
 
 **Line Length**
-: The horizontal width of a block of text—a key factor in readability; a line that's too long
+: The horizontal width of a block of text—a key factor in readability. A line that's too long
 or too short both hurt reading comfort.
 
 **Baseline Shift**

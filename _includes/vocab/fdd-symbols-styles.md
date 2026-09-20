@@ -7,4 +7,4 @@ instance at once.
 **Graphic Style**
 : A saved, reusable combination of appearance attributes—fills, strokes, effects, and
 transparency—stored in the Graphic Styles panel. Apply the same complex look to any object in
-one click; updating the style later updates every object it's applied to.
+one click. Updating the style later updates every object it's applied to.

@@ -10,7 +10,7 @@
 it—the reason color modes and gamuts matter in the first place.
 
 **sRGB / Adobe RGB**
-: Two common RGB working spaces for screen-bound artwork; sRGB is the safe default for web and
+: Two common RGB working spaces for screen-bound artwork. sRGB is the safe default for web and
 general screen use, while Adobe RGB covers a wider gamut for specialized color workflows.
 
 **Rich Black**
