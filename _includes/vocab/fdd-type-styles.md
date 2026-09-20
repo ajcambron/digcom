@@ -7,6 +7,6 @@ to a range of selected text, and updated everywhere it's used at once.
 nested character style) applied to entire paragraphs at once.
 
 **Converting Text to Outlines**
-: Turning live, editable type into standard vector paths—locks in the exact letterforms, so the
+: Turning live, editable type into standard vector paths. Locks in the exact letterforms, so the
 file displays correctly on any computer even without the font installed, but removes the ability
 to edit it as text afterward.

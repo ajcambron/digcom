@@ -11,7 +11,7 @@ embed_extra: bellringer
 Every class begins with the same 10-minute routine, using the deck below:
 
 1. **Rewrite** today's question in your own words.
-2. **Write** your response — 2 to 3 sentences.
+2. **Write** your response: 2 to 3 sentences.
 3. **Share** your response with a classmate.
 4. **Copy** their response underneath yours.
 5. **Synthesize** what the two responses had in common.
@@ -32,7 +32,7 @@ Responses are recorded on the stinger response sheet.
   </a>
   <div class="worksheet-info">
     <span class="worksheet-title">Stinger Response Sheet</span>
-    <p class="worksheet-instructions">Print, three hole punch it, and keep it in your class binder — one row per day.</p>
+    <p class="worksheet-instructions">Print, three hole punch it, and keep it in your class binder, one row per day.</p>
     <a class="worksheet-download-btn" href="{{ '/assets/downloads/stinger-response-sheet.pdf' | relative_url }}" download>⬇ Download Stinger Response Sheet (PDF)</a>
   </div>
 </div>

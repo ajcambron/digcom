@@ -1,8 +1,8 @@
 **Scale**
-: The size of a representation relative to the real, actual-size object or space it depicts—expressed as a ratio (for example, 1:2 means the drawing is half the real size).
+: The size of a representation relative to the real, actual-size object or space it depicts. Expressed as a ratio (for example, 1:2 means the drawing is half the real size).
 
 **Proportion**
-: The relationship in size between different parts of a design or object—keeping proportion
+: The relationship in size between different parts of a design or object. Keeping proportion
 consistent when scaling up or down avoids a distorted result.
 
 **Ratio**
@@ -23,5 +23,5 @@ measurement.
 equivalent, or vice versa.
 
 **Dimension**
-: A measurable extent of an object—typically width, height, and (for 3D objects like
+: A measurable extent of an object. Typically width, height, and (for 3D objects like
 packaging) depth.

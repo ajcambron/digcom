@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 3.1 | Color Theory—Teacher Plan
+# 3.1 | Color Theory | Teacher Plan
 
 {% include teacher-plan.html %}

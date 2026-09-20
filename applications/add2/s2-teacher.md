@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# S | 2 | Television Scene Edit—Teacher Plan
+# S | 2 | Television Scene Edit | Teacher Plan
 
 {% include teacher-plan.html %}

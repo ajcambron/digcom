@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 8.1 | Brushes & Pattern Making—Teacher Plan
+# 8.1 | Brushes & Pattern Making | Teacher Plan
 
 {% include teacher-plan.html %}

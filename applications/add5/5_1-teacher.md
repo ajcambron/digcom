@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 5.1 | Podcast Production Planner—Teacher Plan
+# 5.1 | Podcast Production Planner | Teacher Plan
 
 {% include teacher-plan.html %}

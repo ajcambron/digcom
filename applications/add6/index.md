@@ -11,9 +11,9 @@ has_toc: false
 
 ## Introduction
 
-A Premiere-native replacement for the old After Effects unit—applying and reusing effects,
+A Premiere-native replacement for the old After Effects unit. Applying and reusing effects,
 animating properties with keyframes, keying out a green screen, and combining mattes, masks, and
-picture-in-picture—building toward a polished title sequence or effects reel.
+picture-in-picture. Building toward a polished title sequence or effects reel.
 
 {% include unit-video.html %}
 
@@ -31,11 +31,11 @@ Upon successful completion of this unit, you will be able to:
 {% include calendar-of-events.html unit=6 %}
 
 ## Lessons
-- [6.1 – Effect Presets & Adjustment Layers](6_1.md)—guided notes: presets, adjustment layers, nesting
-- [6.2 – Keyframes: Motion & Opacity](6_2.md)—guided notes: keyframes, interpolation, ease in/out
-- [6.3 – Keying & Green Screen](6_3.md)—guided notes: chroma/luma key, Ultra Key, spill suppression
-- [6.4 – Mattes, Masks & Picture-in-Picture](6_4.md)—guided notes: masks, track mattes, alpha channel, PiP
-- [S6 – Title Sequence / Effects Reel](s6.md)—summative project, with a structured peer review pass
+- [6.1 – Effect Presets & Adjustment Layers](6_1.md). Guided notes: presets, adjustment layers, nesting
+- [6.2 – Keyframes: Motion & Opacity](6_2.md). Guided notes: keyframes, interpolation, ease in/out
+- [6.3 – Keying & Green Screen](6_3.md). Guided notes: chroma/luma key, Ultra Key, spill suppression
+- [6.4 – Mattes, Masks & Picture-in-Picture](6_4.md). Guided notes: masks, track mattes, alpha channel, PiP
+- [S6 – Title Sequence / Effects Reel](s6.md). Summative project, with a structured peer review pass
 
 ## Unit Vocabulary
 

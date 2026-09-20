@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 5.3 | Recording & Voice-Over—Teacher Plan
+# 5.3 | Recording & Voice-Over | Teacher Plan
 
 {% include teacher-plan.html %}

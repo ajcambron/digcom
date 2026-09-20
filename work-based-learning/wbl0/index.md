@@ -12,5 +12,5 @@ This section holds the standing reference material that doesn't belong to any on
 
 ## In This Section
 
-- [Daily Stingers (Bellringers)](bellringers.md) — the Bell Ringer slide deck used every day,
+- [Daily Stingers (Bellringers)](bellringers.md): the Bell Ringer slide deck used every day,
   all year.

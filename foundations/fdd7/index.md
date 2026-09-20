@@ -12,7 +12,7 @@ has_toc: false
 ## Introduction
 
 Unit 7 moves past building individual shapes and into controlling how a whole composition is
-organized and how each object looks—layers, appearance, effects, and blending—closing with a
+organized and how each object looks, layers, appearance, effects, and blending, closing with a
 finished album cover or gig poster.
 
 {% include unit-video.html %}
@@ -35,7 +35,7 @@ Upon successful completion of this unit, you will be able to:
 - [7.2 – Appearance: Fill & Stroke](7_2.md)
 - [7.3 – Effects: Shadows, Glows & 3D](7_3.md)
 - [7.4 – Opacity, Blending & Masks](7_4.md)
-- [S7 – Album Cover / Gig Poster](s7.md)—summative project
+- [S7 – Album Cover / Gig Poster](s7.md). Summative project
 
 ## Unit Vocabulary
 

@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 3.4 | Align, Distribute & Arrange—Teacher Plan
+# 3.4 | Align, Distribute & Arrange | Teacher Plan
 
 {% include teacher-plan.html %}

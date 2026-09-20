@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 6.4 | Transformations & Live Corners—Teacher Plan
+# 6.4 | Transformations & Live Corners | Teacher Plan
 
 {% include teacher-plan.html %}

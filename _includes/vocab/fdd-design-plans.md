@@ -6,7 +6,7 @@
 format, etc.).
 
 **Design Process**
-: The repeatable sequence of steps—research, sketch, refine, present, revise—a designer
+: The repeatable sequence of steps, research, sketch, refine, present, revise, a designer
 follows from idea to finished work.
 
 **Wireframe**

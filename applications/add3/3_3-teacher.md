@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 3.3 | Edit & Text-Based Editing—Teacher Plan
+# 3.3 | Edit & Text-Based Editing | Teacher Plan
 
 {% include teacher-plan.html %}

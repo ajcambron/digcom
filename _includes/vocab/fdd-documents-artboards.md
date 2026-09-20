@@ -1,7 +1,7 @@
 **Artboards**
 : The page(s)/canvas(es) within a single Illustrator document. One file can hold multiple
-artboards—for example, the front and back of a business card, or a whole set of related
-layouts—and only what's inside an artboard's bounds prints or exports.
+artboards. For example, the front and back of a business card, or a whole set of related
+layouts. And only what's inside an artboard's bounds prints or exports.
 
 **Pasteboard**
 : The gray work area surrounding your artboards. You can leave art there as scratch space or a
@@ -12,7 +12,7 @@ holding area, but nothing on the pasteboard ever prints or exports.
 the edge of a printed piece if the physical cutting shifts slightly during production.
 
 **Trim**
-: The actual, final physical edge of a printed piece—matches the artboard's set size.
+: The actual, final physical edge of a printed piece. Matches the artboard's set size.
 
 **Live Area**
 : The safe zone kept clear of the trim edge for text and other important content, protecting it

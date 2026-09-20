@@ -3,7 +3,7 @@
 composite in a different background.
 
 **Chroma Key**
-: Keying out a specific color (typically green or blue)—the standard "green screen" technique.
+: Keying out a specific color (typically green or blue). The standard "green screen" technique.
 
 **Luma Key**
 : Keying out a specific brightness value (light or dark) rather than a color.
@@ -13,5 +13,5 @@ composite in a different background.
 spill suppression.
 
 **Spill**
-: Unwanted color (usually green) reflecting off a subject from the screen behind them—needs to
+: Unwanted color (usually green) reflecting off a subject from the screen behind them. Needs to
 be suppressed for a clean key.

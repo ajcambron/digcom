@@ -6,6 +6,6 @@ grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 6.2 | Digital Color: Modes & Gamuts—Teacher Plan
+# 6.2 | Digital Color: Modes & Gamuts | Teacher Plan
 
 {% include teacher-plan.html %}

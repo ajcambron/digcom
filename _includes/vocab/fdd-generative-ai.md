@@ -4,5 +4,5 @@ from a written text prompt, offering several variations to choose from and refin
 
 **Prompt Writing**
 : The practice of writing a clear, specific instruction for a generative AI tool. Effective
-prompts usually name a subject, an art style, and a color palette or mood—vague prompts produce
+prompts usually name a subject, an art style, and a color palette or mood. Vague prompts produce
 unpredictable results.

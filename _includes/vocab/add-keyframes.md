@@ -1,12 +1,12 @@
 **Keyframe**
-: A marker that sets a property's value (position, opacity, scale) at a specific point in time—Premiere animates smoothly between two or more keyframes.
+: A marker that sets a property's value (position, opacity, scale) at a specific point in time. Premiere animates smoothly between two or more keyframes.
 
 **Temporal Interpolation**
-: How a value changes over TIME between keyframes—linear (constant speed) vs. eased (gradual
+: How a value changes over TIME between keyframes. Linear (constant speed) vs. eased (gradual
 speed changes).
 
 **Spatial Interpolation**
-: How a value changes through SPACE between keyframes—a straight-line path vs. a smooth curved
+: How a value changes through SPACE between keyframes. A straight-line path vs. a smooth curved
 path.
 
 **Ease In / Ease Out**

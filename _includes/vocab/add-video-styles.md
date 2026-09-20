@@ -1,5 +1,5 @@
 **Video Essay**
-: A visual argument told primarily through sequencing, natural sound, and music—little to no
+: A visual argument told primarily through sequencing, natural sound, and music. Little to no
 narration explaining what's on screen.
 
 **Documentary**
@@ -7,7 +7,7 @@ narration explaining what's on screen.
 events or subjects.
 
 **News Package**
-: A reporter-led nonfiction form (the Unit 3 form)—a structured story with a reporter, sound
+: A reporter-led nonfiction form (the Unit 3 form). A structured story with a reporter, sound
 bites, and a clear angle.
 
 **Music Video**

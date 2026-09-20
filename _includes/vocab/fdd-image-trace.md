@@ -5,7 +5,7 @@ path handling for a given kind of source image.
 
 **Ignore White**
 : An Image Trace option that treats white areas of the source image as transparent instead of
-tracing them as opaque white shapes—useful for a logo that needs to sit on a colored
+tracing them as opaque white shapes. Useful for a logo that needs to sit on a colored
 background.
 
 **Threshold**

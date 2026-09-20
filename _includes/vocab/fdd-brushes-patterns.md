@@ -1,5 +1,5 @@
 **Brush Types**
-: Illustrator's five brush categories—**Calligraphic** (mimics an angled pen nib), **Scatter**
+: Illustrator's five brush categories. **Calligraphic** (mimics an angled pen nib), **Scatter**
 (scatters copies of an object along a path), **Art** (stretches a single object along the length
 of a path), **Bristle** (simulates a real paintbrush's bristles), and **Pattern** (repeats a set
 of tiles along a path, with separate artwork for straight sides, outer corners, and inner
@@ -11,5 +11,6 @@ the canvas as you build it, letting you adjust tile type, spacing, and overlap b
 result as a swatch.
 
 **Pattern Tile**
-: The single repeating unit of a pattern. Its bounding box—visible as a dashed rectangle while
-in Generate Pattern mode—defines exactly where one repetition ends and the next begins.
+: The single repeating unit of a pattern, defined by its bounding box, visible as a dashed
+rectangle while in Generate Pattern mode. Defines exactly where one repetition ends and the next
+begins.

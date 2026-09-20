@@ -11,9 +11,9 @@ has_toc: false
 
 ## Introduction
 
-Unit 8 multiplies a single object across a whole surface—brushes, repeating patterns, reusable
+Unit 8 multiplies a single object across a whole surface. Brushes, repeating patterns, reusable
 symbols, converting raster images to vector with Image Trace, and generative AI as a starting
-point—closing with a sticker pack or merch pattern project.
+point. Closing with a sticker pack or merch pattern project.
 
 {% include unit-video.html %}
 
@@ -35,7 +35,7 @@ Upon successful completion of this unit, you will be able to:
 - [8.2 – Symbols & Graphic Styles](8_2.md)
 - [8.3 – Image Trace](8_3.md)
 - [8.4 – Generative AI in Illustrator](8_4.md)
-- [S8 – Sticker Pack / Merch Pattern](s8.md)—summative project
+- [S8 – Sticker Pack / Merch Pattern](s8.md). Summative project
 
 ## Unit Vocabulary
 

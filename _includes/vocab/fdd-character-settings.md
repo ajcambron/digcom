@@ -5,7 +5,7 @@
 : The height of the type, measured in points.
 
 **Font Style**
-: A variant within a type family—Regular, Italic, Bold, Bold Italic, and so on.
+: A variant within a type family. Regular, Italic, Bold, Bold Italic, and so on.
 
 **Kerning**
 : Adjusting the space between two specific letters to improve visual spacing (for example, tightening
@@ -20,11 +20,11 @@ at a time.
 
 **Horizontal / Vertical Scale**
 : Stretching or compressing type width-wise or height-wise as a percentage of its original
-proportions—generally a technique to avoid, since it distorts the letterforms' original design.
+proportions. Generally a technique to avoid, since it distorts the letterforms' original design.
 
 **Line Length**
-: The horizontal width of a block of text—a key factor in readability. A line that's too long
+: The horizontal width of a block of text. A key factor in readability. A line that's too long
 or too short both hurt reading comfort.
 
 **Baseline Shift**
-: Moving selected characters up or down relative to the baseline without changing their size—used for effects like superscript or subscript.
+: Moving selected characters up or down relative to the baseline without changing their size. Used for effects like superscript or subscript.

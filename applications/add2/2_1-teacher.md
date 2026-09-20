@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 2.1 | Projects, Sequences & Bins—Teacher Plan
+# 2.1 | Projects, Sequences & Bins | Teacher Plan
 
 {% include teacher-plan.html %}

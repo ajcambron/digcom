@@ -17,5 +17,5 @@ A small triangle on a tool's icon means it's hiding a flyout group of related to
 
 **Contextual Task Bar**
 : A small, floating toolbar that appears near your current selection, surfacing the handful of
-actions most likely to be useful right now—the same idea as the Control Panel, but attached to
+actions most likely to be useful right now. The same idea as the Control Panel, but attached to
 your selection instead of fixed at the top of the screen.

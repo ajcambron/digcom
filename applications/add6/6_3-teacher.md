@@ -6,6 +6,6 @@ grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 6.3 | Keying & Green Screen—Teacher Plan
+# 6.3 | Keying & Green Screen | Teacher Plan
 
 {% include teacher-plan.html %}
