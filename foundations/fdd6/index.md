@@ -19,7 +19,7 @@ summative revises and finalizes a piece students already made in an earlier unit
 This is a brand-new unit added by the Sep 2026 restructure, built from lessons that floated out
 of other units because their original summative didn't strictly require them.
 
-{% include unit-video.html %}
+{% include unit-video.html youtube="https://www.youtube.com/embed/HbfUetCPbDU" %}
 
 ## Learning Outcomes
 

@@ -14,7 +14,7 @@ has_toc: false
 Unit 3 builds on Unit 2's workspace fluency, adding color theory, a deeper pass on shape tools,
 Illustrator's swatch and gradient systems, and precise composition with Align/Distribute/Arrange. Combined into a Vector Self-Portrait built entirely from shape primitives.
 
-{% include unit-video.html %}
+{% include unit-video.html youtube="https://www.youtube.com/embed/Rz-LYMCSUok" %}
 
 ## Learning Outcomes
 

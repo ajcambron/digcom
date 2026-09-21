@@ -15,6 +15,8 @@ already covered across Units 1–9 (Sep 1, 2026 – Apr 16, 2027). This unit's e
 every student from "has seen it once" to "certifies on it": targeted review, full-length
 practice exams, and the actual Adobe Certified Professional exam itself.
 
+{% include unit-video.html youtube="https://www.youtube.com/embed/w4a36kSyJmA" %}
+
 ## Why this page doesn't follow the standard lesson schema
 
 Every other unit in this course (`lesson:` front matter, `X_Y.md` / `X_Y-teacher.md` pairs, four

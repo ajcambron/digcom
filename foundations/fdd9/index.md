@@ -15,7 +15,7 @@ Unit 9 is the course's final content unit before Unit 10's ACP review window. It
 making artwork to delivering it like a working designer would, closing with a full client brand
 project delivered as a packaged, exported handoff.
 
-{% include unit-video.html %}
+{% include unit-video.html youtube="https://www.youtube.com/embed/RQOJgEA5e1k" %}
 
 ## Learning Outcomes
 

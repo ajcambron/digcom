@@ -15,7 +15,7 @@ Unit 4 introduces the Pen tool and the family of tools around it. Analyzing refe
 practicing anchor points, planning a composition on paper, and refining paths. All building
 toward an original low-poly stained-glass piece built entirely from vector paths.
 
-{% include unit-video.html %}
+{% include unit-video.html youtube="https://www.youtube.com/embed/Rk-JGsriJ4o" %}
 
 ## Learning Outcomes
 
