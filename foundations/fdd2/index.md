@@ -15,7 +15,7 @@ Your first formal look at Adobe Illustrator: why it's built around vector paths 
 pixels, how the interface is organized, how to set up a real print document with multiple
 artboards, and the tools that make precise work possible.
 
-{% include unit-video.html %}
+{% include unit-video.html youtube="https://www.youtube.com/embed/-Fs2t6P5AjY" %}
 
 ## Learning Outcomes
 
