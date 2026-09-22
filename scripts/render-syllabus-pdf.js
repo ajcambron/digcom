@@ -4,6 +4,12 @@
 // layout down (Playwright's page.pdf `scale` option) until it fits exactly 4 pages --
 // the largest scale that still does, so it stays as readable as possible.
 //
+// Every hyperlink in the page (mailto, external, internal, and the self-referential
+// "see the PDF version" link) is unwrapped to plain text before printing -- a signed
+// paper document has no clickable links, and Chrome's print-to-PDF otherwise bakes in
+// both a colored/underlined link style and a real clickable link annotation, neither
+// of which makes sense on something meant to be printed and signed.
+//
 // This replaces the old workflow of hand-maintaining a separate Google Doc copy of
 // the syllabus for printing: the PDF is now generated straight from the same
 // Markdown that drives the live page, so the two can never drift out of sync.
@@ -32,6 +38,14 @@ if (!courseLabel || !url || !outPath) {
 
 const FILL_SCRIPT = `
 (() => {
+  // Unwrap every hyperlink in the printable content to plain text: no color/underline
+  // styling, no clickable link annotation in the resulting PDF.
+  const links = Array.from(document.querySelectorAll('.main-content a[href]'));
+  for (const a of links) {
+    const text = document.createTextNode(a.textContent);
+    a.replaceWith(text);
+  }
+
   const AGREEMENT_HEADERS = ['Parent/Guardian Agreement', 'Student Agreement'];
   const paragraphs = Array.from(document.querySelectorAll('.main-content p'));
 
@@ -103,6 +117,25 @@ const PRINT_CSS = `
   .pdf-sign-label { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; color: #6B6255; }
   h2 { page-break-after: avoid; }
   table, .table-wrapper { page-break-inside: avoid; }
+  a, a:visited { color: inherit; text-decoration: none; }
+
+  /* Strip just-the-docs callout boxes (highlight/warning/discussion/reflection/good/vocab)
+     back to a plain, unstyled paragraph -- no colored box, border, or generated label. */
+  .main-content .highlight, .main-content .warning, .main-content .discussion,
+  .main-content .reflection, .main-content .good, .main-content .vocab {
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1em 0 !important;
+    border-radius: 0 !important;
+    color: inherit !important;
+  }
+  .highlight::before, .warning::before, .discussion::before,
+  .reflection::before, .good::before, .vocab::before {
+    display: none !important;
+  }
 `;
 
 function countPages(pdfPath) {
