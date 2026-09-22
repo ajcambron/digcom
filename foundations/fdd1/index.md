@@ -20,7 +20,7 @@ This is the first unit of the year, when district network access and student acc
 reliable. Lessons 1.1–1.4 run entirely on paper. No computer or network access required. The
 S | 1 project is the one day this unit that needs a computer lab.
 
-{% include unit-video.html %}
+{% include unit-video.html youtube="https://www.youtube.com/embed/wwYZQjgUljA" %}
 
 ## Learning Outcomes
 
