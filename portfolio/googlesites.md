@@ -65,8 +65,12 @@ By clicking on the picture of a laptop from the menu bar, you can preview what t
 ### Publishing
 Publishing is the way in which website changes are made visible to others. You may think of publishing as "saving" your final changes so that others may see them. In order to make sure that your changes are visible, you must click the purple <i>Publish</i> button on Google Sites, then after reviewing your changes, you will need to confirm your changes by pressing publish one more time.
 
+{% include googlesites-publish.html %}
+
 #### Submitting
 In order to submit a final link to your website, click on the icon of a chain from the menu bar, otherwise known as "Copy Published Site Link". Click <i>copy link</i> and submit the link on the assignment page.
+
+{% include googlesites-copylink.html %}
 
 ## Advanced Google Site
 ### Adding Video Content
