@@ -16,7 +16,7 @@ navigating and assembling a timeline, applying continuity-editing techniques, an
 the video standards and formats behind every clip you import. Building toward editing a real
 scene from a television show.
 
-{% include unit-video.html %}
+{% include unit-video.html youtube="https://www.youtube.com/embed/3Q3eITC01Fg" %}
 
 ## Learning Outcomes
 

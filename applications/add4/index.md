@@ -15,7 +15,7 @@ Unit 4 moves past basic editing into deliberate cinematography. Naming video sty
 and replicating camera technique, planning through storyboards and shot lists, and correcting
 then grading color. Building toward a solo, no-narration Video Essay.
 
-{% include unit-video.html %}
+{% include unit-video.html youtube="https://www.youtube.com/embed/FTKP0Y9MVus" %}
 
 ## Learning Outcomes
 

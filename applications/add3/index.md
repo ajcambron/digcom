@@ -15,7 +15,7 @@ Unit 3 puts you on a real ENG (Electronic News Gathering) crew. Assigning roles,
 interviews and B-roll with correct framing, editing from a transcript, and captioning the final
 piece. Building toward a fully produced, accessible news story.
 
-{% include unit-video.html %}
+{% include unit-video.html youtube="https://www.youtube.com/embed/TX8AYdGdzHY" %}
 
 ## Learning Outcomes
 
