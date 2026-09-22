@@ -1,0 +1,71 @@
+<div class="gs-carousel">
+  <style>
+    .gs-carousel {
+      --gs-bg: #ffffff;
+      --gs-panel: #f8f9fa;
+      --gs-border: #dadce0;
+      --gs-text-muted: #5f6368;
+      font-family: "Google Sans", Roboto, Arial, sans-serif;
+      max-width: 320px;
+      margin: 1em 0 1.5em 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+      background: var(--gs-bg);
+      font-size: 12px;
+    }
+    .gs-carousel-stage {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      background: var(--gs-panel);
+    }
+    .gs-carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gs-text-muted);
+    }
+    .gs-carousel-arrow.left { left: 10px; }
+    .gs-carousel-arrow.right { right: 10px; }
+    .gs-carousel-caption {
+      padding: 8px 12px;
+      color: var(--gs-text-muted);
+      border-top: 1px solid var(--gs-border);
+    }
+    .gs-carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      padding: 8px 0;
+    }
+    .gs-carousel-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gs-border);
+    }
+    .gs-carousel-dot.active {
+      background: var(--gs-text-muted);
+    }
+  </style>
+
+  <div class="gs-carousel-stage">
+    <span class="gs-carousel-arrow left">&#8249;</span>
+    <span class="gs-carousel-arrow right">&#8250;</span>
+  </div>
+  <div class="gs-carousel-caption">Step 3: final comp</div>
+  <div class="gs-carousel-dots">
+    <span class="gs-carousel-dot active"></span>
+    <span class="gs-carousel-dot"></span>
+    <span class="gs-carousel-dot"></span>
+    <span class="gs-carousel-dot"></span>
+  </div>
+</div>

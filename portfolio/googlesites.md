@@ -75,4 +75,21 @@ In order to submit a final link to your website, click on the icon of a chain fr
 * Insert your video as Google Drive content
 
 ### Adding Image Galleries
+Multiple images that belong together, a set of process shots, a storyboard, don't need to be stacked one after another down the page. The Image Carousel groups them into a single slideshow instead.
+
+* Insert an Image Carousel the same way you'd insert a single image, from the **Insert** sidebar
+* Upload multiple images at once. They play as a slideshow in the order you added them
+* Add a caption to each image so a viewer knows what they're looking at
+* Choose **Crop to fit** or **Fit to content** depending on whether your images share a size
+
+{% include googlesites-carousel.html %}
+
 ### Adding Custom HTML
+Google Sites sandboxes embedded content for security, so you can't paste in arbitrary code. What you can do is embed something another tool already built and gave you an embed code for.
+
+* From the **Insert** sidebar, choose **Embed**
+* **Embed URL** only needs a link. Google Sites generates the preview automatically
+* **Embed code** is for pasting an actual iframe or embed snippet. Figma, Canva, and Google Forms all provide one under their own "Share" or "Embed" options
+* Scripts inside an embed code generally won't run. If a tool needs live scripting to function, expect it not to display correctly here
+
+{% include googlesites-embed.html %}
