@@ -3,23 +3,41 @@ layout: default
 title: ADD | Unit 7
 nav_order: 7
 parent: Applications of Digital Design
-description: "Analyze music-video cinematography, then collaborate to plan, shoot, and edit an original music video."
-
+description: "Pre-production for an original short film: script formatting, storyboarding, purpose and production planning, and the legal/budget groundwork every shoot needs before a camera rolls."
+has_children: true
+has_toc: false
 ---
-# Unit 7 | Music Video
-Students will be able to apply the basic elements and principles of design in video editing, specifically in the context of editing an episode of a television show using Adobe Premiere.
+# Unit 7 | The Short Film
 
-## Unit Plan
+## Introduction
 
-|----|----|
-| Driving Question | How does filmmaking make use of multi-disciplinary skills, and what tasks are required in creating a short film? | 
-| Learning Goals |{::nomarkdown}<ul><li>Understand traditional story structures</li><li>Understand and apply cinematography techniques including camera angles, framing, and color correction.</li><li>Analyze and critique professional music videos for visual storytelling elements.</li><li>Collaborate in groups to plan, shoot, and edit a short film.</li><li>Reflect on the filmmaking process and justify artistic choices.</li><li>Learn practical digital skills, such as taking screenshots and embedding multimedia content into presentations.</li></ul>{:/}| 
-| Project Summary | Students will create a short film | 
-| Major Products | Short Film | 
-| Making it Public | Students will present their video to the class | 
-| Key Project Documents | [Rubric](/resources/90_rubrics)|
+Everything from here through Unit 9 builds toward one cumulative project: an original short
+film. This unit is entirely pre-production. By the time you pick up a camera, you'll have a
+formatted script, a storyboard, a clear purpose statement, a production plan, and every release
+and budget line you need to shoot without a last-minute scramble.
+
+{% include unit-video.html %}
+
+## Learning Outcomes
+
+Upon successful completion of this unit, you will be able to:
+
+- Format a script to Hollywood industry convention and translate it into a shot-by-shot storyboard
+- Write a clear purpose and description statement for a video project
+- Build a realistic production plan (call sheet, shooting schedule) for a short film shoot
+- Secure the releases, rights, and budget a real production needs before filming begins
+
+## Calendar of Events for This Unit
+
+{% include calendar-of-events.html unit=7 %}
+
+## Lessons
+- [7.1 – Script Formatting & Storyboarding](7_1.md). Screenplay format, sluglines, shot-by-shot storyboards
+- [7.2 – Purpose & Description](7_2.md). Writing a project's purpose/description statement
+- [7.3 – Production Plan](7_3.md). Call sheets, shooting schedules, plan-of-work logs
+- [7.4 – Releases, Rights & Budget](7_4.md). Talent/location releases, usage rights, sample budget
+- [S7 – Short Film](s7.md). Summative project
 
 ## Unit Vocabulary
 
 {% include unit-vocab.html course="ADD" unit=7 %}
-

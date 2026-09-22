@@ -1,0 +1,10 @@
+{%- comment -%}
+  Deck-only embed, for lessons whose Direct Instruction has no printed guided-notes worksheet
+  (a Fix-This-File repair, a portfolio critique, a live teacher demo) but still needs its
+  presentation deck embedded. Reuses worksheet.html's .presentation-embed CSS.
+
+  Usage: {% include deck.html presentation="/assets/presentations/fdd11-3.html" %}
+{%- endcomment -%}
+<div class="presentation-embed">
+  <iframe class="presentation-embed-fill" src="{{ include.presentation }}" allowfullscreen loading="lazy"></iframe>
+</div>
