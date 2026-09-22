@@ -1,0 +1,90 @@
+{%- comment -%}
+  Static-HTML "Copy for Schoology" embed for a unit overview page. Unlike footer_custom.html's
+  default iframe embed (which points back at this live site and can be blocked by a Schoology
+  instance's iframe/CSP restrictions), this rebuilds the Introduction, intro video, Learning
+  Outcomes, and Calendar of Events as self-contained, inline-styled HTML -- no iframe, no
+  dependency on this site's stylesheet -- so it's guaranteed to render once pasted into a
+  Schoology Page's HTML editor.
+
+  Pulled automatically from this same page's own raw markdown (page.content -- in this Jekyll
+  setup that's the pre-conversion source, not the rendered HTML, so this parses it directly and
+  runs the relevant slices through markdownify) and site.data.calendar, so editing the
+  Introduction/Learning Outcomes copy or the calendar data keeps this in sync with no separate
+  step. Included unconditionally from footer_custom.html, which only renders this in place of
+  the iframe button when the current page structurally looks like a unit page -- see the
+  has_children + heading check there.
+
+  Depends on every unit page's Introduction section ending with its
+  `{% include unit-video.html %}` line (nothing meaningful after it before "## Learning
+  Outcomes") -- true of all 22 unit pages as of this writing; a future unit that breaks this
+  pattern just won't get a clean video clip out of the split, everything else still works.
+{%- endcomment -%}
+
+{%- assign md = page.content -%}
+{%- assign intro_section_md = md | split: "## Introduction" | last | split: "## Learning Outcomes" | first -%}
+{%- assign outcomes_section_md = md | split: "## Learning Outcomes" | last | split: "## Calendar of Events for This Unit" | first -%}
+
+{%- comment -%} Pull the video URL out before markdownifying, since the literal include tag can't be resolved here. {%- endcomment -%}
+{%- assign youtube_url = "" -%}
+{%- if intro_section_md contains 'unit-video.html youtube="' -%}
+  {%- assign youtube_url = intro_section_md | split: 'unit-video.html youtube="' | last | split: '"' | first -%}
+{%- endif -%}
+{%- assign intro_prose_md = intro_section_md | split: "{% include unit-video.html" | first -%}
+
+{%- assign intro_html = intro_prose_md | markdownify -%}
+{%- assign outcomes_html = outcomes_section_md | markdownify -%}
+
+{%- comment -%} Swap just-the-docs callout classes for inline-styled equivalents (site CSS won't be present in Schoology). {%- endcomment -%}
+{%- assign callout_names = "highlight,warning,discussion,reflection,good,vocab" | split: "," -%}
+{%- assign callout_bg = "#FFF8E1,#FDECEA,#E8F0FE,#F3E8FD,#E6F4EA,#E8F0FE" | split: "," -%}
+{%- assign callout_border = "#F2C94C,#E05252,#4285C7,#8430CE,#34A853,#4285C7" | split: "," -%}
+{%- for name in callout_names -%}
+  {%- assign i = forloop.index0 -%}
+  {%- assign find = 'class="' | append: name | append: '"' -%}
+  {%- assign style = 'style="background:' | append: callout_bg[i] | append: ';border-left:4px solid ' | append: callout_border[i] | append: ';padding:10px 14px;margin:12px 0;"' -%}
+  {%- assign intro_html = intro_html | replace: find, style -%}
+  {%- assign outcomes_html = outcomes_html | replace: find, style -%}
+{%- endfor -%}
+
+{%- capture video_section -%}
+{%- if youtube_url != "" -%}
+<iframe src="{{ youtube_url }}" title="Unit intro video" width="560" height="315" style="max-width:100%;border:0;display:block;margin:12px 0;" allowfullscreen loading="lazy"></iframe>
+{%- endif -%}
+{%- endcapture -%}
+
+{%- comment -%} Rebuild the calendar table from the same data source as calendar-of-events.html, with inline styles. {%- endcomment -%}
+{%- assign weeks = site.data.calendar[page.nav_order] -%}
+{%- capture calendar_section -%}
+<h2>Calendar of Events for This Unit</h2>
+{%- if weeks %}
+<table style="border-collapse:collapse;width:100%;margin:8px 0;">
+<thead><tr>
+{%- assign day_names = "Monday,Tuesday,Wednesday,Thursday,Friday" | split: "," -%}
+{%- for d in day_names -%}
+<th style="border:1px solid #ccc;padding:6px 8px;background:#f4f4f4;text-align:left;">{{ d }}</th>
+{%- endfor -%}
+</tr></thead>
+<tbody>
+{%- for week in weeks %}
+<tr>{%- for day in week.days -%}<td style="border:1px solid #ccc;padding:6px 8px;font-weight:600;">{{ day.date }}</td>{%- endfor -%}</tr>
+<tr>{%- for day in week.days -%}<td style="border:1px solid #ccc;padding:6px 8px;">{{ day.label }}</td>{%- endfor -%}</tr>
+{%- if week.note %}
+<tr><td colspan="5" style="border:1px solid #ccc;padding:6px 8px;font-style:italic;color:#555;">{{ week.note }}</td></tr>
+{%- endif -%}
+{%- endfor %}
+</tbody>
+</table>
+{%- endif -%}
+{%- endcapture -%}
+
+{%- capture embed_static_html -%}
+{{ intro_html }}
+{{ video_section }}
+{{ outcomes_html }}
+{{ calendar_section }}
+{%- endcapture -%}
+
+<div class="digcom-embed-copy no-print">
+  <pre class="embed-snippet-source" hidden>{{ embed_static_html | strip | escape }}</pre>
+  <button type="button" class="embed-copy-btn">📋 Copy Static Embed for Schoology</button>
+</div>
