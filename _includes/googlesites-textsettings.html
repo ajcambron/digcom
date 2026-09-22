@@ -1,0 +1,81 @@
+<div class="gs-textset">
+  <style>
+    .gs-textset {
+      --gs-bg: #ffffff;
+      --gs-panel: #f8f9fa;
+      --gs-border: #dadce0;
+      --gs-text: #202124;
+      --gs-text-muted: #5f6368;
+      --gs-accent: #1a73e8;
+      font-family: "Google Sans", Roboto, Arial, sans-serif;
+      max-width: 500px;
+      margin: 1em 0 1.5em 0;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+      background: var(--gs-bg);
+      color: var(--gs-text);
+      font-size: 12.5px;
+    }
+    .gs-textset-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      flex-wrap: wrap;
+    }
+    .gs-textset-row + .gs-textset-row {
+      border-top: 1px solid var(--gs-border);
+    }
+    .gs-textset-field {
+      background: var(--gs-panel);
+      border: 1px solid var(--gs-border);
+      border-radius: 4px;
+      padding: 5px 8px;
+    }
+    .gs-textset-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gs-text-muted);
+    }
+    .gs-textset-btn.active {
+      background: #e8f0fe;
+      color: var(--gs-accent);
+    }
+    .gs-textset-sep {
+      width: 1px;
+      height: 18px;
+      background: var(--gs-border);
+      margin: 0 2px;
+    }
+    .gs-textset-swatch {
+      width: 18px;
+      height: 18px;
+      border-radius: 3px;
+      background: #ea4335;
+      border: 1px solid var(--gs-border);
+    }
+  </style>
+
+  <div class="gs-textset-row">
+    <span class="gs-textset-field">Normal text</span>
+    <span class="gs-textset-field">Roboto</span>
+    <span class="gs-textset-field">14</span>
+  </div>
+  <div class="gs-textset-row">
+    <span class="gs-textset-btn active"><strong>B</strong></span>
+    <span class="gs-textset-btn"><em>I</em></span>
+    <span class="gs-textset-btn" style="text-decoration: underline;">U</span>
+    <span class="gs-textset-sep"></span>
+    <span class="gs-textset-btn">&#8676;</span>
+    <span class="gs-textset-btn active">&#8677;</span>
+    <span class="gs-textset-btn">&#8680;</span>
+    <span class="gs-textset-sep"></span>
+    <span class="gs-textset-swatch"></span>
+    <span class="gs-textset-btn">&#128279;</span>
+  </div>
+</div>

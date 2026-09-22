@@ -1,0 +1,96 @@
+<div class="gs-menubar">
+  <style>
+    .gs-menubar {
+      --gs-bg: #ffffff;
+      --gs-border: #dadce0;
+      --gs-text: #202124;
+      --gs-text-muted: #5f6368;
+      --gs-accent: #1a73e8;
+      font-family: "Google Sans", Roboto, Arial, sans-serif;
+      max-width: 400px;
+      margin: 1em 0 1.5em 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+      background: var(--gs-bg);
+      color: var(--gs-text);
+      font-size: 12.5px;
+    }
+    .gs-menubar-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+    }
+    .gs-menubar-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+    .gs-menubar-logo {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background: linear-gradient(135deg, #4285f4, #34a853 50%, #fbbc04 75%, #ea4335);
+      flex-shrink: 0;
+    }
+    .gs-menubar-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: var(--gs-text-muted);
+    }
+    .gs-menubar-right {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .gs-menubar-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gs-text-muted);
+      flex-shrink: 0;
+    }
+    .gs-menubar-icon.highlighted {
+      background: #e8f0fe;
+      color: var(--gs-accent);
+    }
+    .gs-menubar-sep {
+      width: 1px;
+      height: 20px;
+      background: var(--gs-border);
+      margin: 0 4px;
+    }
+    .gs-menubar-btn {
+      padding: 6px 16px;
+      border-radius: 16px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .gs-menubar-btn.primary {
+      background: var(--gs-accent);
+      color: #fff;
+    }
+  </style>
+
+  <div class="gs-menubar-row">
+    <div class="gs-menubar-left">
+      <span class="gs-menubar-logo"></span>
+      <span class="gs-menubar-title">Untitled Site</span>
+    </div>
+    <div class="gs-menubar-right">
+      <span class="gs-menubar-icon">&#128100;</span>
+      <span class="gs-menubar-icon highlighted" title="Preview">&#128187;</span>
+      <span class="gs-menubar-icon">&#8635;</span>
+      <span class="gs-menubar-sep"></span>
+      <span class="gs-menubar-icon highlighted" title="Copy published site link">&#128279;</span>
+      <span class="gs-menubar-icon">&#8942;</span>
+      <span class="gs-menubar-btn primary">Publish</span>
+    </div>
+  </div>
+</div>

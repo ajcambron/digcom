@@ -1,0 +1,74 @@
+<div class="gs-insert">
+  <style>
+    .gs-insert {
+      --gs-bg: #ffffff;
+      --gs-panel: #f8f9fa;
+      --gs-border: #dadce0;
+      --gs-text: #202124;
+      --gs-text-muted: #5f6368;
+      --gs-accent: #1a73e8;
+      font-family: "Google Sans", Roboto, Arial, sans-serif;
+      max-width: 200px;
+      margin: 1em 0 1.5em 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+      background: var(--gs-bg);
+      color: var(--gs-text);
+      font-size: 12px;
+    }
+    .gs-insert-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--gs-border);
+    }
+    .gs-insert-tab {
+      flex: 1;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 11px;
+      color: var(--gs-text-muted);
+    }
+    .gs-insert-tab.active {
+      color: var(--gs-accent);
+      border-bottom: 2px solid var(--gs-accent);
+      font-weight: 500;
+    }
+    .gs-insert-list {
+      padding: 6px;
+    }
+    .gs-insert-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 8px;
+      border-radius: 4px;
+    }
+    .gs-insert-item.highlighted {
+      background: #e8f0fe;
+    }
+    .gs-insert-icon {
+      width: 18px;
+      text-align: center;
+      color: var(--gs-text-muted);
+    }
+    .gs-insert-item.highlighted .gs-insert-icon {
+      color: var(--gs-accent);
+    }
+  </style>
+
+  <div class="gs-insert-tabs">
+    <div class="gs-insert-tab active">Insert</div>
+    <div class="gs-insert-tab">Pages</div>
+    <div class="gs-insert-tab">Themes</div>
+  </div>
+  <div class="gs-insert-list">
+    <div class="gs-insert-item highlighted"><span class="gs-insert-icon">T</span><span>Text box</span></div>
+    <div class="gs-insert-item"><span class="gs-insert-icon">&#128247;</span><span>Images</span></div>
+    <div class="gs-insert-item"><span class="gs-insert-icon">&#8862;</span><span>Embed</span></div>
+    <div class="gs-insert-item"><span class="gs-insert-icon">&#9635;</span><span>Drive</span></div>
+    <div class="gs-insert-item"><span class="gs-insert-icon">&#9654;</span><span>YouTube</span></div>
+    <div class="gs-insert-item"><span class="gs-insert-icon">&#8213;</span><span>Divider</span></div>
+    <div class="gs-insert-item"><span class="gs-insert-icon">&#9638;</span><span>Table</span></div>
+    <div class="gs-insert-item"><span class="gs-insert-icon">&#9724;</span><span>Buttons</span></div>
+  </div>
+</div>
