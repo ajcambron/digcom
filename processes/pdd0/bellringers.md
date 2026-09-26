@@ -10,11 +10,13 @@ embed_extra: bellringer
 
 Every class begins with the same 10-minute routine, using the deck below:
 
-1. **Rewrite** today's question in your own words.
-2. **Write** your response: 2 to 3 sentences.
+1. **Rewrite** today's question in your own words, on your own line.
+2. **Write your response.** At least 3 sentences, aim for 5. Explain your thinking. Don't just
+ answer in a single word or phrase. *Stuck on how to start? Try: "I think ___ because ___. One
+ example of this is ___."*
 3. **Share** your response with a classmate.
 4. **Copy** their response underneath yours.
-5. **Synthesize** what the two responses had in common.
+5. **Synthesize** what the two responses had in common, in 1 to 2 sentences.
 
 Responses are recorded on the stinger response sheet and compiled across the unit into that
 unit's **F6: Stinger Grade** (see the Formative Assessment System in
