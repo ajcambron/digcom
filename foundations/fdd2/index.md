@@ -31,9 +31,9 @@ Upon successful completion of this unit, you will be able to:
 {% include calendar-of-events.html unit=2 %}
 
 ## Lessons
-- [2.1 – Pixels vs. Paths](2_1.md). Raster vs. vector, rasterizing, resizing
-- [2.2 – The Illustrator Interface](2_2.md). Application bar, panels, toolbar, control panel
-- [2.3 – Documents & Artboards](2_3.md). New Document dialog, artboards, bleed/trim/live area
+- [2.1 – GMetrix Setup & ACP Pre-Test](2_1.md). Create your account, join the class, take the pre-assessment
+- [2.2 – Pixels vs. Paths](2_2.md). Raster vs. vector, rasterizing, resizing
+- [2.3 – The Illustrator Interface & Your First Document](2_3.md). Application bar, panels, toolbar, control panel, New Document dialog, artboards, bleed/trim/live area
 - [2.4 – Design Aids: Rulers, Guides, Grids & Views](2_4.md). Smart Guides, Outline/Pixel
  Preview/Presentation Mode
 - [S2 – Artboard Sampler](s2.md). Summative project

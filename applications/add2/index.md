@@ -32,9 +32,9 @@ Upon successful completion of this unit, you will be able to:
 {% include calendar-of-events.html unit=2 %}
 
 ## Lessons
-- [2.1 – Projects, Sequences & Bins](2_1.md). Guided notes: project setup, sequences, bins
-- [2.2 – Video Editing Basics](2_2.md). Guided notes: JKL navigation, In/Out points, Insert/Overwrite/Lift/Extract
-- [2.3 – Transitions & Editing Conventions](2_3.md). Guided notes: continuity editing, L/J cuts, match cuts, cutaways
+- [2.1 – GMetrix Setup & ACP Pre-Test](2_1.md). Create your account, join the class, take the pre-assessment
+- [2.2 – Projects, Sequences & Bins](2_2.md). Guided notes: project setup, sequences, bins
+- [2.3 – Editing Basics & Continuity Conventions](2_3.md). Guided notes: JKL navigation, In/Out points, Insert/Overwrite/Lift/Extract, L/J cuts, match cuts, cutaways
 - [2.4 – Standards, Formats & Frame Rates](2_4.md). Guided notes: frame rates, SD/HD/4K, codecs
 - [S2 – Television Scene Edit](s2.md). Summative project
 

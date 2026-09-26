@@ -813,7 +813,12 @@ Unit 10's dedicated job, not a lesson inside this unit's content.*
 
 **Routine:** each block ends with ~30 minutes of self-paced work in the GMetrix BrainBuffet course for that course's app. 7 meetings/unit × 30 min ≈ **3.5 hrs of GMetrix time per unit, ~28 hrs before spring break** — enough to complete each course's video content (~10.5 hrs each) plus assessments and both practice tests, with slack for rewatching.
 
-**Accountability:** GMetrix pre-assessment during Unit 1; a module-completion checkpoint due each summative week (enters the gradebook alongside the summative); GMetrix Practice Test 1 (training mode) and Practice Test 2 (testing mode) during the March review meetings before certification.
+**Accountability:** GMetrix account setup + ACP pre-assessment during Unit 2's first lesson (2.1),
+its own dedicated day, not folded into a content lesson (see FDD/ADD Unit 2's 2.1—Unit 1 has no
+computer/network access in either course, so there's nowhere earlier to put this); a
+module-completion checkpoint due each summative week (enters the gradebook alongside the
+summative); GMetrix Practice Test 1 (training mode) and Practice Test 2 (testing mode) during the
+March review meetings before certification.
 
 **Alignment note:** GMetrix courses are linear, so students run modules in order; the strand stays within ~1 module of the classroom topic and intentionally *leads* it in a few spots (pre-exposure) — flagged below.
 
@@ -828,6 +833,14 @@ Durations from the teacher syllabus (video / estimated class time): M1 2:12/3h �
 > the ~3.5 hr/unit strand budget (M1 needs ~3h). **This table's unit numbers are still the old
 > 8-unit numbering and need the same renumbering pass flagged in the FDD Calendar Math note
 > above** (e.g. this table's "Unit 8" is now Unit 9) — not yet done.
+>
+> **Further correction (Sep 2026): Unit 2 now opens with its own GMetrix Setup & ACP Pre-Test day
+> (2.1)** — account creation and the ACP pre-assessment get a full period with no timer, rather
+> than being folded into the interface lesson. Module 1: Getting Started (both start and finish)
+> now runs across 2.3–2.4 and S2 instead of all four formative lessons, since 2.1 (pre-test) and
+> 2.2 (Pixels vs. Paths) don't run a strand block — see fdd2/2_3.md's notes for the running
+> time-budget math. This doesn't change Module 1's home unit (still Unit 2), just which lessons
+> within it carry the strand time.
 
 | FDD Unit | GMetrix Module | Topic overlap |
 |---|---|---|
@@ -865,10 +878,19 @@ Durations from the teacher syllabus (video / estimated class time): M1 2:12/3h �
 
 Durations (video / estimated class time): M1 Barbershop Social Promo 1:50/5–6h · M2 Fire Academy Recruiting 2:05/6h · M3 Horror Chase "No Way Out" 2:15/6–7h · M4 Basketball Showreel 2:03/6h · M5 Exam Prep 0:38/2h. **≈26 hrs against the ~28 hr strand budget — the tightest of the three courses.** If a class drifts behind, assign video-watching (captioned, transcripted) as homework and keep the hands-on steps in class.
 
+> **Correction (Sep 2026): Unit 1 has no GMetrix at all** — same issue as FDD above. ADD Unit 1
+> runs entirely on paper, no computer/network access (see ADD Unit 1's lesson pages), so there's
+> nowhere in Unit 1 to start Module 1. Module 1: Barbershop Social Promo (both start and finish)
+> now runs entirely in Unit 2 instead, and Unit 2 opens with its own GMetrix Setup & ACP Pre-Test
+> day (2.1) for account creation and the pre-assessment, before Module 1 starts in 2.2 — see
+> add2/2_2.md's and add2/2_3.md's notes for the running time-budget math. The table below still
+> shows the old "Unit 1 starts, Unit 2 finishes" split; treat it as superseded by this note until
+> the table itself is corrected.
+
 | ADD Unit | GMetrix Module | Topic overlap |
 |---|---|---|
-| 1 | M1 Barbershop Social Promo (start) | project setup, rough cut, **records a scripted voice-over** — parallels the Explainer Video exactly |
-| 2 | M1 (finish) | interface, trimming, audio, Auto Reframe + vertical/square export — direct match |
+| 1 | *(none — no computer/network access; see Unit 1's lesson pages)* | — |
+| 2 | M1 Barbershop Social Promo (full module) | project setup, rough cut, interface, trimming, audio, Auto Reframe + vertical/square export, **records a scripted voice-over** — parallels the Explainer Video exactly |
 | 3 | M2 Fire Academy Recruiting Video (start) | transcripts/text-based editing, captions & accessibility standards, two caption deliverables (burned-in + sidecar) — **direct match with News Story** |
 | 4 | M2 (finish) + M3 Horror Chase (start) | M3: pacing, tension, color grading, cinematic crop — **direct match with Video Essay unit** |
 | 5 | M3 (continue) | proxies, mixed formats, rolling credits, archiving; no dedicated audio module — add GMetrix practice questions for domain 4.7 |
