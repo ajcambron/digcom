@@ -52,6 +52,12 @@ callouts:
   vocab:
     title: Exam Vocabulary
     color: blue
+  note:
+    title: Note
+    color: blue
+  important:
+    title: Important
+    color: yellow
 
 favicon_ico: "/assets/images/favicon.ico"
 # Enable or disable the site search

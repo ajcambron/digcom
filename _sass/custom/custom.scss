@@ -1,0 +1,286 @@
+// ------------------------------------------------------------------
+// UI mockups for the Certification Test Prep guides (teacher-resources/cert-prep/).
+// Every class is prefixed "uim-" so nothing collides with Just the Docs.
+// Mockups keep a fixed light palette on purpose: they represent the
+// vendor websites, which are light-themed, even when the docs site is dark.
+// ------------------------------------------------------------------
+
+$uim-ink: #1f2933;
+$uim-muted: #616e7c;
+$uim-line: #cbd2d9;
+$uim-surface: #ffffff;
+$uim-canvas: #f5f7fa;
+$uim-chrome: #e4e7eb;
+$uim-accent: #2563eb;       // generic "primary button" blue
+$uim-gmetrix: #0f766e;      // stand-in color for GMetrix screens
+$uim-certiport: #1e3a8a;    // stand-in color for Certiport screens
+$uim-pin: #ea580c;          // step markers and highlight rings
+$uim-ok: #15803d;
+$uim-warn: #b45309;
+
+.uim {
+  margin: 1.25rem 0 1.75rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: $uim-ink;
+
+  * { box-sizing: border-box; }
+  p { margin: 0; }
+}
+
+// ---------- frames ----------
+.uim-browser,
+.uim-window {
+  border: 1px solid $uim-line;
+  border-radius: 8px;
+  overflow: hidden;
+  background: $uim-surface;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  max-width: 760px;
+}
+
+.uim-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: $uim-chrome;
+  border-bottom: 1px solid $uim-line;
+}
+
+.uim-dots { display: flex; gap: 5px; }
+.uim-dots span {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #cbd2d9;
+}
+
+.uim-url {
+  flex: 1;
+  background: $uim-surface;
+  border-radius: 12px;
+  padding: 3px 10px;
+  font-size: 12px;
+  color: $uim-muted;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// desktop app (Compass Cloud) title bar
+.uim-window .uim-bar { background: #111827; color: #f9fafb; border-bottom: 0; }
+.uim-window .uim-title { font-size: 12px; font-weight: 600; flex: 1; }
+.uim-lock { font-size: 11px; background: #b91c1c; color: #fff; padding: 1px 8px; border-radius: 10px; }
+
+// ---------- app layout ----------
+.uim-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 14px;
+  color: #fff;
+  font-weight: 600;
+}
+.uim-top.gmetrix { background: $uim-gmetrix; }
+.uim-top.certiport { background: $uim-certiport; }
+.uim-top .uim-user { font-weight: 400; font-size: 12px; opacity: 0.9; }
+
+.uim-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  background: #2a4aa8;
+  padding: 0 10px;
+}
+.uim-nav span {
+  color: #e0e7ff;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+.uim-nav span.on { background: $uim-surface; color: $uim-ink; border-radius: 4px 4px 0 0; }
+
+.uim-app { display: flex; min-height: 180px; }
+
+.uim-side {
+  width: 150px;
+  flex-shrink: 0;
+  background: $uim-canvas;
+  border-right: 1px solid $uim-line;
+  padding: 10px 0;
+}
+.uim-side div { padding: 6px 14px; color: $uim-muted; }
+.uim-side div.on {
+  color: $uim-ink;
+  font-weight: 600;
+  background: $uim-surface;
+  border-left: 3px solid $uim-gmetrix;
+  padding-left: 11px;
+}
+
+.uim-main { flex: 1; padding: 14px 16px; min-width: 0; }
+.uim-h { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+.uim-sub { color: $uim-muted; font-size: 12px; margin-bottom: 10px; }
+.uim-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.uim-spread { justify-content: space-between; }
+
+// ---------- controls ----------
+.uim-btn {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid $uim-line;
+  background: $uim-surface;
+  color: $uim-ink;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.uim-btn.primary { background: $uim-accent; border-color: $uim-accent; color: #fff; }
+.uim-btn.gm { background: $uim-gmetrix; border-color: $uim-gmetrix; color: #fff; }
+.uim-btn.cp { background: $uim-certiport; border-color: $uim-certiport; color: #fff; }
+.uim-btn.ok { background: $uim-ok; border-color: $uim-ok; color: #fff; }
+.uim-btn.ghost { color: $uim-muted; font-weight: 400; }
+.uim-btn.disabled { opacity: 0.45; }
+
+.uim-field { margin-bottom: 9px; }
+.uim-field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: $uim-muted;
+  margin-bottom: 3px;
+}
+.uim-input {
+  border: 1px solid $uim-line;
+  border-radius: 4px;
+  padding: 5px 8px;
+  background: $uim-surface;
+  color: $uim-ink;
+  min-height: 28px;
+}
+.uim-input.ph { color: #9aa5b1; }
+.uim-input.select::after { content: " \25BE"; float: right; color: $uim-muted; }
+.uim-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+
+.uim-check { display: flex; gap: 6px; align-items: flex-start; margin-bottom: 6px; }
+.uim-check::before {
+  content: "";
+  width: 13px; height: 13px; flex-shrink: 0; margin-top: 1px;
+  border: 1px solid $uim-muted; border-radius: 3px; background: $uim-surface;
+}
+.uim-check.on::before { background: $uim-accent; border-color: $uim-accent; box-shadow: inset 0 0 0 2px #fff; }
+.uim-radio { display: flex; gap: 6px; align-items: center; margin-bottom: 6px; }
+.uim-radio::before {
+  content: ""; width: 13px; height: 13px; border-radius: 50%;
+  border: 1px solid $uim-muted; background: $uim-surface;
+}
+.uim-radio.on::before { background: $uim-accent; border-color: $uim-accent; box-shadow: inset 0 0 0 3px #fff; }
+
+.uim-tabs { display: flex; gap: 2px; border-bottom: 1px solid $uim-line; margin-bottom: 12px; }
+.uim-tabs span { padding: 6px 12px; color: $uim-muted; }
+.uim-tabs span.on { color: $uim-ink; font-weight: 600; border-bottom: 2px solid $uim-gmetrix; margin-bottom: -1px; }
+
+.uim-card {
+  border: 1px solid $uim-line;
+  border-radius: 6px;
+  padding: 10px 12px;
+  background: $uim-surface;
+}
+.uim-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.uim-card.pick { border: 2px solid $uim-accent; }
+.uim-card .uim-cap { font-size: 11px; color: $uim-muted; }
+
+.uim-code {
+  font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: $uim-canvas;
+  border: 1px dashed $uim-line;
+  border-radius: 4px;
+  padding: 4px 10px;
+  display: inline-block;
+}
+
+.uim-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.uim-table th {
+  text-align: left; font-size: 11px; color: $uim-muted; font-weight: 600;
+  border-bottom: 1px solid $uim-line; padding: 5px 6px;
+  background: $uim-canvas;
+}
+.uim-table td { border-bottom: 1px solid #e4e7eb; padding: 6px; vertical-align: middle; }
+
+.uim-tag {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  padding: 1px 8px; border-radius: 10px; white-space: nowrap;
+}
+.uim-tag.orange { background: #ffedd5; color: #9a3412; }
+.uim-tag.green { background: #dcfce7; color: #166534; }
+.uim-tag.blue { background: #dbeafe; color: #1e40af; }
+.uim-tag.gray { background: #e4e7eb; color: #3e4c59; }
+
+.uim-menu {
+  display: inline-block;
+  border: 1px solid $uim-line;
+  border-radius: 5px;
+  background: $uim-surface;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.12);
+  min-width: 170px;
+}
+.uim-menu div { padding: 6px 12px; }
+.uim-menu div + div { border-top: 1px solid #edf0f3; }
+
+.uim-banner {
+  background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a;
+  border-radius: 5px; padding: 7px 10px; margin-bottom: 10px;
+}
+
+.uim-center { text-align: center; }
+.uim-narrow { max-width: 320px; margin: 10px auto; }
+.uim-divider { text-align: center; color: $uim-muted; font-size: 11px; margin: 10px 0 8px; }
+.uim-sso { display: flex; justify-content: center; gap: 8px; }
+.uim-sso span {
+  border: 1px solid $uim-line; border-radius: 5px; padding: 5px 10px; font-size: 12px;
+}
+.uim-link { color: $uim-accent; text-decoration: underline; }
+.uim-dim { color: $uim-muted; }
+
+// ---------- step markers ----------
+// <span class="uim-pin">3</span> sits next to the element a step refers to.
+// .uim-hl draws an orange ring around the element the reader should click.
+.uim-pin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: $uim-pin;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  vertical-align: middle;
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+.uim-hl {
+  outline: 2px solid $uim-pin;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.uim-caption {
+  font-size: 12px;
+  color: $uim-muted;
+  margin-top: 6px;
+  max-width: 760px;
+}
+
+// ---------- small screens ----------
+@media (max-width: 600px) {
+  .uim-app { flex-direction: column; }
+  .uim-side { width: 100%; display: flex; flex-wrap: wrap; padding: 4px; border-right: 0; border-bottom: 1px solid $uim-line; }
+  .uim-side div { padding: 4px 8px; }
+  .uim-side div.on { border-left: 0; border-bottom: 2px solid $uim-gmetrix; padding-left: 8px; }
+  .uim-grid2 { grid-template-columns: 1fr; }
+  .uim-table { font-size: 11px; }
+}
