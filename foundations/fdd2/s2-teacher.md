@@ -1,11 +1,11 @@
 ---
 layout: default
-title: S | 2 | Artboard Sampler (Teacher)
+title: S | 2 | Geometric Logo (Teacher)
 parent: FDD | Unit 2
 grandparent: Foundations of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# S | 2 | Artboard Sampler | Teacher Plan
+# S | 2 | Geometric Logo | Teacher Plan
 
 {% include teacher-plan.html %}

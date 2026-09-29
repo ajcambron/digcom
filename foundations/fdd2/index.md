@@ -3,7 +3,7 @@ layout: default
 title: FDD | Unit 2
 nav_order: 2
 parent: Foundations of Digital Design
-description: "Your first formal look at Illustrator: vector vs. raster, the interface, multi-artboard documents, and precise setup tools."
+description: "Your first formal look at Illustrator, and your first real client project: a geometric logo for your own Google Sites portfolio, at two required sizes."
 has_children: true
 has_toc: false
 ---
@@ -11,9 +11,12 @@ has_toc: false
 
 ## Introduction
 
-Your first formal look at Adobe Illustrator: why it's built around vector paths instead of
-pixels, how the interface is organized, how to set up a real print document with multiple
-artboards, and the tools that make precise work possible.
+Set up your Google Sites portfolio, then run a real design project through the AIGA design
+process, Define the Problem, Research and Learn, Generate Ideas, Design Development, and
+Implement, to build a geometric logo that fills your portfolio's empty logo and favicon slots.
+Along the way: why Illustrator is built around vector paths instead of pixels, how the interface
+is organized, how to set up a real multi-artboard document, and the tools that make precise
+geometric work possible.
 
 {% include unit-video.html youtube="https://www.youtube.com/embed/-Fs2t6P5AjY" %}
 
@@ -21,10 +24,12 @@ artboards, and the tools that make precise work possible.
 
 Upon successful completion of this unit, you will be able to:
 
-- Understand the difference between raster and vector graphics
-- Navigate the Illustrator interface confidently
-- Set up a multi-artboard document with the correct size, bleed, and units
-- Use rulers, guides, grids, and view modes for precise work
+- Set up and publish a Google Sites portfolio site
+- Understand the difference between raster and vector graphics, and why a logo must be vector
+- Navigate the Illustrator interface confidently and set up a multi-artboard document with the
+ correct size, bleed, and units
+- Use rulers, guides, grids, and view modes for precise geometric work
+- Run a real project through the AIGA design process: Define, Research, Generate, Develop, Implement
 
 ## Calendar of Events for This Unit
 
@@ -32,11 +37,10 @@ Upon successful completion of this unit, you will be able to:
 
 ## Lessons
 - [2.1 – GMetrix Setup & ACP Pre-Test](2_1.md). Create your account, join the class, take the pre-assessment
-- [2.2 – Pixels vs. Paths](2_2.md). Raster vs. vector, rasterizing, resizing
-- [2.3 – The Illustrator Interface & Your First Document](2_3.md). Application bar, panels, toolbar, control panel, New Document dialog, artboards, bleed/trim/live area
-- [2.4 – Design Aids: Rulers, Guides, Grids & Views](2_4.md). Smart Guides, Outline/Pixel
- Preview/Presentation Mode
-- [S2 – Artboard Sampler](s2.md). Summative project
+- [2.2 – Google Sites Portfolio Setup](2_2.md). Build and publish your portfolio site; find its empty logo and favicon slots
+- [2.3 – Define the Problem & Research and Learn](2_3.md). Illustrator interface, New Document dialog, artboards, bleed/trim/live area, and the Geometric Logo design brief
+- [2.4 – Generate Ideas & Design Development](2_4.md). Raster vs. vector, rulers/guides/grids, and a Bauhaus shape exercise for the logo concept
+- [S2 – Geometric Logo](s2.md). Summative project: implement a two-size vector logo for your portfolio
 
 ## Unit Vocabulary
 

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="worksheet.css">
+<style>
+.form-row { display: flex; gap: 16px; margin: 14px 0 18px; }
+.form-card {
+ flex: 1;
+ border: 1.5px solid #2A2118;
+ border-radius: 3px;
+ padding: 10px;
+ font-family: 'Inter', system-ui, sans-serif;
+ text-align: center;
+}
+.form-shape {
+ width: 54px;
+ height: 54px;
+ margin: 4px auto 8px;
+ border: 2.5px solid #2A2118;
+}
+.form-shape.square {}
+.form-shape.triangle {
+ width: 0; height: 0; border: none;
+ border-left: 30px solid transparent;
+ border-right: 30px solid transparent;
+ border-bottom: 52px solid #2A2118;
+}
+.form-shape.circle { border-radius: 50%; }
+.form-card .angle-tag { font-size: 8.5pt; color: #6B6255; }
+</style>
+</head>
+<body>
+<div class="page compact">
+ <div class="ws-header">
+ <h1 class="ws-title ws-title-sm">FDD 2.4 | Bauhaus Shape Exercise: Generate Ideas</h1>
+ <div class="ws-fields-inline">
+ <div class="ws-field-inline"><span class="ws-field-label-inline">Name</span><span class="field-blank"></span></div>
+ </div>
+ </div>
+ <div class="ws-note">Bauhaus teacher <strong>Johannes Itten</strong> taught that the three basic
+ geometric forms each carry a different felt character. Before you draw, act each one out:
+ trace a square in the air (corner to corner, tense), a triangle (sharp, all angles), a circle
+ (one continuous curve). Which one matches the site you're building?</div>
+ <div class="form-row">
+ <div class="form-card">
+ <div class="form-shape square"></div>
+ <strong>Square</strong><br>
+ <span>tense, corner-to-corner movement</span><br>
+ <span class="angle-tag">90&deg; angles &middot; red</span>
+ </div>
+ <div class="form-card">
+ <div class="form-shape triangle"></div>
+ <strong>Triangle</strong><br>
+ <span>sharp, full variety of angles</span><br>
+ <span class="angle-tag">45&deg; angles &middot; yellow</span>
+ </div>
+ <div class="form-card">
+ <div class="form-shape circle"></div>
+ <strong>Circle</strong><br>
+ <span>evenly curved, continuously moving</span><br>
+ <span class="angle-tag">135&deg;/curve &middot; blue</span>
+ </div>
+ </div>
+ <div class="ws-note">Kandinsky paired each angle with a color by temperature: <strong>acute
+ (45&deg;) = yellow</strong> (sharp, active), <strong>right (90&deg;) = red</strong> (objective,
+ direct), <strong>obtuse (135&deg;, heading toward a curve) = blue</strong> (passive, cold). Use
+ this as a starting rule for your own mark, you can break it, but only with a reason.</div>
+ <div class="ws-note" style="margin-top:6px;"><strong>Which form character fits your brand, and why?</strong></div>
+ <div class="ws-field-inline" style="margin:2px 0 10px;"><span class="field-blank" style="min-width:100%;"></span></div>
+ <ol class="ws-items">
+ <li>Sketch <strong>3 thumbnails</strong> below, each combining 2&ndash;3 basic shapes (square,
+ triangle, circle, or their variants) into one simple mark. Keep every thumbnail small, about
+ the size of a favicon, if it doesn't read at that size, simplify it.</li>
+ </ol>
+ <div class="grid16" style="grid-template-columns: repeat(3, 1fr); gap: 10px;">
+ <div class="box" style="aspect-ratio: 1/1;"><span class="num">1</span></div>
+ <div class="box" style="aspect-ratio: 1/1;"><span class="num">2</span></div>
+ <div class="box" style="aspect-ratio: 1/1;"><span class="num">3</span></div>
+ </div>
+ <div class="ws-note" style="margin-top:10px;"><strong>Circle your strongest thumbnail.</strong>
+ That's what you'll build in Illustrator today (Design Development) and finalize on S2
+ (Implement).</div>
+ <div class="ws-footer">FDD 2.4 &middot; Generate Ideas &amp; Design Development &middot; digcom.cambron.cc</div>
+</div>
+</body>
+</html>

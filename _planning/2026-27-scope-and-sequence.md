@@ -344,17 +344,24 @@ BrainBuffet strand.*
 
 **Vocab callouts:** *(AIGA Unit 1A vocabulary, front-loaded on 1.1 since it's used every day after)* abstract, ambiguity, composition, comprehensive design ("comp"), format, idea, representational, rough sketch, thumbnail sketch, ubiquitous, line, shape, texture · *(elements & principles, 1.2)* space, line, shape, form, color and color value, texture · emphasis/focal point, unity/harmony, variety, balance, alignment, proximity, repetition, rhythm, scale, movement, negative space, contrast, rule of thirds · *(client/process topics, 1.3–1.4)* client goals, target audience, demographics, accessibility, project scope, scope creep, project timeline · sketches, specifications, design process, wireframes, prototypes, iterations, change orders, drafts, feedback loop, style guide, project brief
 
-### FDD Unit 2 | Vector Documents & Workspace *(new)*
+### FDD Unit 2 | Vector Documents & Workspace *(new, rewritten Sep 2026 around a real project)*
 | # | Lesson | Source | ACP |
 |---|---|---|---|
-| 2.1 | Pixels vs. Paths | new | 1.3.a |
-| 2.2 | The Illustrator Interface | new | 3.1.a, 3.1.b |
-| 2.3 | Documents & Artboards | new | 2.1, 2.2 |
-| 2.4 | Design Aids: Rulers, Guides, Grids, Views | new | 3.2 |
-| **S2** | **Artboard Sampler** (multi-artboard shape compositions) | new | 2.1–2.2, 3.1–3.2 |
+| 2.1 | GMetrix Setup & ACP Pre-Test | new | N/A—diagnostic baseline day |
+| 2.2 | Google Sites Portfolio Setup | new | N/A—portfolio infrastructure |
+| 2.3 | Define the Problem & Research and Learn | new | 2.1, 2.2, 3.1.a, 3.1.b |
+| 2.4 | Generate Ideas & Design Development | new | 1.3.a, 3.2 |
+| **S2** | **Geometric Logo** (two-size vector logo for the student's own Google Sites portfolio) | new | 1.3.a, 2.1, 2.2, 3.1.a, 3.1.b, 3.2 |
 | **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 2) | — | — |
 
-*Rationale: S2's ACP tag never covered "Saving & File Formats" — floated out, landing in the new
+*Rationale (Sep 2026 rewrite): the unit's original 4 formative lessons taught interface, document
+setup, raster-vs-vector, and design aids as standalone tool mechanics, landing on a generic
+4-artboard "Artboard Sampler" project with no real client or deliverable. Rewritten so 2.2 sets up
+every student's Google Sites portfolio (revealing its empty logo/favicon slots), 2.3–2.4 run the
+AIGA design process (Define, Research, Generate, Develop) against a real two-size logo brief, and
+S2 (Implement) delivers and publishes it. No ACP tag is dropped, 1.3.a/2.1/2.2/3.1.a/3.1.b/3.2 are
+the same standards as before, just retaught in service of the deliverable instead of a practice
+file. S2's ACP tag still never covers "Saving & File Formats" — floated out, landing in the new
 Unit 6 below instead of forcing a merge here.*
 
 **Vocab callouts:** pixel, raster, bitmap, vector, path, object, rasterizing, rendering, resizing, bleed, trim, live area · application bar, control panel, panels, toolbars, contextual taskbar · artboards, pasteboard · Outline, Pixel Preview, Presentation Mode
@@ -820,6 +827,18 @@ module-completion checkpoint due each summative week (enters the gradebook along
 summative); GMetrix Practice Test 1 (training mode) and Practice Test 2 (testing mode) during the
 March review meetings before certification.
 
+> **Correction (Sep 2026): project/summative days no longer run a GMetrix strand block.** Every
+> course's project days were carving 30 of their 78 minutes out for GMetrix, leaving as little as
+> 23 minutes of actual project work on what are supposed to be the unit's real assignments—these
+> are 1-hour-minimum builds, not a quick add-on next to a strand block. That 30 min now goes back
+> into Project Briefing/Work Time on every summative page across FDD and ADD (see each s*.md's
+> timing block). A module's completion checkpoint is still "due" that summative week on the
+> gradebook, but it now has to actually finish during the unit's 4 formative lessons' own strand
+> blocks; whatever doesn't, carries into the next unit's early strand time instead, same as any
+> other module shortfall already documented in the tables below. This makes most units' existing
+> shortfall math slightly larger (minus the summative day's 30 min)—each unit's own GMetrix notes
+> call out the updated number where it matters.
+
 **Alignment note:** GMetrix courses are linear, so students run modules in order; the strand stays within ~1 module of the classroom topic and intentionally *leads* it in a few spots (pre-exposure) — flagged below.
 
 ### FDD ↔ BrainBuffet Adobe Illustrator 2025 (6 modules, ~17 hrs total class time per teacher syllabus)
@@ -836,11 +855,12 @@ Durations from the teacher syllabus (video / estimated class time): M1 2:12/3h �
 >
 > **Further correction (Sep 2026): Unit 2 now opens with its own GMetrix Setup & ACP Pre-Test day
 > (2.1)** — account creation and the ACP pre-assessment get a full period with no timer, rather
-> than being folded into the interface lesson. Module 1: Getting Started (both start and finish)
-> now runs across 2.3–2.4 and S2 instead of all four formative lessons, since 2.1 (pre-test) and
-> 2.2 (Pixels vs. Paths) don't run a strand block — see fdd2/2_3.md's notes for the running
-> time-budget math. This doesn't change Module 1's home unit (still Unit 2), just which lessons
-> within it carry the strand time.
+> than being folded into the interface lesson. Module 1: Getting Started now runs across 2.3–2.4
+> only (44 min total), since 2.1 (pre-test) and 2.2 (Google Sites Portfolio Setup) don't run a
+> strand block, and S2 no longer runs one either (project days no longer carve out strand time —
+> see this section's own Sep 2026 correction above). The full ~136-min remainder carries into Unit
+> 3's early strand time — see fdd2/2_4.md's notes for the running time-budget math. This doesn't
+> change Module 1's home unit (still Unit 2), just which lessons within it carry the strand time.
 
 | FDD Unit | GMetrix Module | Topic overlap |
 |---|---|---|
