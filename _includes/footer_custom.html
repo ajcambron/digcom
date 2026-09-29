@@ -23,6 +23,21 @@
     yet in that file.
   {%- endcomment -%}
   {%- assign embed_height = site.data.embed_heights[page.url] | default: 1000 -%}
+  {%- comment -%}
+    A lesson page's exit ticket needs to be answerable directly from inside the Schoology embed,
+    not just visible once the iframe loads (the iframe can be blocked by a Schoology instance's
+    own CSP/iframe restrictions, same reason unit-static-embed.html exists). So any page carrying
+    a `lesson.exit_ticket` number gets that exit ticket's text rebuilt here as self-contained,
+    inline-styled plain HTML and appended below the iframe -- same pattern as the bellringer
+    block below, pulled from the same _includes/exit-ticket/N.md source so it can't drift from
+    what's shown on the live page.
+  {%- endcomment -%}
+  {%- assign exit_ticket_html = "" -%}
+  {%- if page.lesson.exit_ticket -%}
+    {%- assign et_path = "exit-ticket/" | append: page.lesson.exit_ticket | append: ".md" -%}
+    {%- capture et_md %}{% include {{ et_path }} %}{% endcapture %}
+    {%- assign exit_ticket_html = et_md | markdownify -%}
+  {%- endif -%}
   {% capture embed_source %}<iframe src="{{ page.url | absolute_url }}" style="width: 100%; height: {{ embed_height }}px; border: 1px solid #ccc; border-radius: 6px;" loading="lazy"></iframe>{% if page.embed_extra == "bellringer" %}
 <div style="margin-top: 18px; padding: 14px 18px; border: 1px solid #E4D9BC; border-radius: 6px; background: #FBF7EC; font-family: Verdana, Geneva, sans-serif; font-size: 11pt; line-height: 1.5; color: #2A2118;">
   <p style="margin: 0 0 10px 0; font-weight: bold;">Daily Stinger: answer in person on paper or here digitally:</p>
@@ -33,6 +48,9 @@
     <li style="margin-bottom: 6px;">Copy their response underneath yours.</li>
     <li style="margin-bottom: 0;">Synthesize what the two had in common, in 1 to 2 sentences.</li>
   </ol>
+</div>{% endif %}{% if exit_ticket_html != "" %}
+<div style="margin-top: 18px; padding: 14px 18px; border: 1px solid #E4D9BC; border-radius: 6px; background: #FBF7EC; font-family: Verdana, Geneva, sans-serif; font-size: 11pt; line-height: 1.5; color: #2A2118;">
+{{ exit_ticket_html }}
 </div>{% endif %}{% endcapture %}
   <div class="digcom-embed-copy no-print">
     <pre class="embed-snippet-source" hidden>{{ embed_source | strip | escape }}</pre>
