@@ -25,33 +25,39 @@ at all.
 
 ---
 
-## Which Adobe version to install — confirm before deploying
+## Which Adobe version to install
 
-{: .warning }
-> **Don't assume "2025" course content means Adobe's current 2025 release is safe to install.**
+GMetrix publishes an exact supported-version range per application per exam year, on the same
+[SMS Compatibility: Adobe Creative Cloud](https://support.gmetrix.net/support/solutions/articles/67000746490-sms-compatibility-adobe-creative-cloud)
+page. For the **2025 Exam Version** column — the one that matches this district's FDD
+(Illustrator), ADD (Premiere Pro), and PDD (Photoshop) courses — as of this table's last check:
+
+| App | 2025 Exam Version |
+|:----|:-------------------|
+| **Illustrator** (FDD) | 29.0–29.8.1 |
+| **Premiere Pro** (ADD) | 25.1–25.5 |
+| **Photoshop** (PDD) | 26.0–26.11 |
+| InDesign | 20.0–20.5 |
+| After Effects | 25.0–25.5 |
+| Animate | *not listed for 2025 at last check* |
+| Dreamweaver | N/A (no longer covered) |
+
+{: .important }
+> Install a version **inside** the listed range, not just "whatever's current" — Creative Cloud's
+> auto-update can walk an app past the top of that range without anyone noticing until a test
+> won't launch. Pin the exact version through the Adobe Admin Console (Creative Cloud for
+> enterprise/education lets you pin a version per package) rather than leaving apps on
+> auto-update, and re-check the live compatibility page before each testing window — GMetrix
+> revises these ranges as new Adobe point releases ship and gets re-tested, so a range that's
+> correct today can narrow later in the year.
+
+{: .note }
 > Adobe removed CEP extension support from Photoshop starting with the 2025 release line
-> (v26+) — the exact framework GMetrix's LITA plugin depends on. Multiple independent reports
-> (Adobe's own community forums, a Jamf Nation admin thread) describe GMetrix's Photoshop plugin
-> failing to load on current Photoshop 2025 builds for this reason, not as an Apple-Silicon-only
-> issue. The same risk plausibly applies to Illustrator and Premiere Pro as Adobe rolls the same
-> CEP-removal forward across the suite, though this page can't confirm that from what's public.
-
-This page could **not** pull GMetrix's live, authoritative "Adobe Creative Cloud Version
-Compatibility" table directly — that page is out of this session's network reach — so don't treat
-any specific point-release number as confirmed here. Before you image or update lab machines for
-a testing window:
-
-1. Check GMetrix's own compatibility pages directly:
-   - [Adobe Version Compatibility](https://support.gmetrix.net/support/solutions/articles/67000697496-adobe-creative-cloud-version-compatibility)
-   - [SMS Compatibility: Adobe Creative Cloud](https://support.gmetrix.net/support/solutions/articles/67000746490-sms-compatibility-adobe-creative-cloud)
-2. If either page doesn't clearly list a supported version for this year's Illustrator,
-   Photoshop, or Premiere Pro course, open a ticket with GMetrix support (linked from those
-   pages) and ask directly which exact version their current "2025" BrainBuffet content is
-   tested against, before touching the lab image.
-3. Once you have a confirmed version, install *that* specific version through the Adobe Admin
-   Console (Creative Cloud for enterprise/education lets you pin a version per package) rather
-   than letting Creative Cloud auto-update to whatever's newest — an unplanned update mid-unit is
-   exactly how this breaks.
+> (v26+) — the framework GMetrix's LITA plugin depends on — which is why 2025 Photoshop had real
+> reported compatibility problems for a stretch (see the Sources below). GMetrix's own table
+> confirms 26.0–26.11 is supported now, so this isn't a live blocker if you're inside that range,
+> but it's the reason the range has an upper bound instead of just "latest" — don't manually
+> update past 26.11 assuming a newer Photoshop will keep working.
 
 ## Step 1: Install GMetrix SMSe on macOS
 
@@ -113,7 +119,9 @@ per-application setting, not a one-time system setting.
 
 {: .note }
 > This session couldn't reach support.gmetrix.net directly to quote these articles verbatim
-> (network restriction), so the steps above are reconstructed from search-indexed summaries of
-> GMetrix's own published articles, cross-checked against an independent Jamf Nation admin
-> thread describing the same fix in practice. Re-verify against the live pages, especially the
-> version-compatibility question above, before relying on this for a real deployment.
+> (network restriction). The version-compatibility table above is the real thing, pasted in
+> directly from that page; everything else on this page (the installation and Rosetta/Legacy
+> Extensions steps) is reconstructed from search-indexed summaries of GMetrix's own published
+> articles, cross-checked against an independent Jamf Nation admin thread describing the same fix
+> in practice. Re-verify the procedural steps against the live pages before relying on this for a
+> real deployment.
