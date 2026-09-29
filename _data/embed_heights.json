@@ -362,7 +362,7 @@
   "/resources/90_rubrics/": 6000,
   "/resources/90_rubrics/formatives-teacher.html": 4100,
   "/resources/95_tools/": 1400,
-  "/teacher-resources/": 2700,
+  "/teacher-resources/": 2750,
   "/teacher-resources/cert-prep/": 6950,
   "/teacher-resources/cert-prep/01-gmetrix-create-classroom.html": 13000,
   "/teacher-resources/cert-prep/02-gmetrix-student-join.html": 10100,
@@ -371,6 +371,8 @@
   "/teacher-resources/notes-for-it/": 2700,
   "/teacher-resources/notes-for-it/gmetrix-apple-silicon.html": 8700,
   "/teacher-resources/notes-for-it/mac-dock-setup.html": 10100,
+  "/teacher-resources/tool-guides/": 2650,
+  "/teacher-resources/tool-guides/canva-poster-36x24.html": 8350,
   "/work-based-learning/": 1300,
   "/work-based-learning/wbl0/": 2500,
   "/work-based-learning/wbl0/bellringers.html": 4250

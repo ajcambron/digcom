@@ -16,3 +16,7 @@ counterpart at all, so they're listed normally.
 
 - [Certification Test Prep](cert-prep/index.md). Moving a class from GMetrix practice to a
  proctored Adobe Certified Professional exam through Certiport Compass Cloud.
+- [Notes for IT](notes-for-it/index.md). Lab-imaging and device-management notes for whoever
+ manages the Mac labs.
+- [Classroom Tool Guides](tool-guides/index.md). Login flow and exact export settings for
+ general classroom tools this school uses, starting with Canva.
