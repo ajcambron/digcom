@@ -1,30 +1,6 @@
 <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/site-fonts.css' | relative_url }}">
-{%- comment -%}
-  Embed mode: the Schoology iframe snippet (footer_custom.html) loads pages with ?embed=1. Inside
-  Schoology the site's own sidebar/search/breadcrumbs just duplicate Schoology's navigation, and
-  just-the-docs' sidebar layout kicking in at exactly 800px wide makes the page's height jump by
-  several hundred px depending on the iframe's width -- so the precomputed iframe height
-  (scripts/measure-embed-heights.js, which measures in this same mode) could never fit well.
-  Content-only, full-width layout keeps the height stable across widths.
-{%- endcomment %}
-<script>
-  if (/[?&]embed=1(&|$)/.test(location.search)) document.documentElement.classList.add('embed');
-</script>
-<style>
-  html.embed .side-bar,
-  html.embed .main-header,
-  html.embed .breadcrumb-nav,
-  html.embed .search-overlay,
-  html.embed .main footer {
-    display: none !important;
-  }
-  html.embed .main {
-    margin-left: 0 !important;
-    max-width: none !important;
-  }
-</style>
 <style>
   body {
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
