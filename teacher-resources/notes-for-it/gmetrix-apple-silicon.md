@@ -27,37 +27,35 @@ at all.
 
 ## Which Adobe version to install
 
-GMetrix publishes an exact supported-version range per application per exam year, on the same
+Install **exactly one version of each app: the newest version inside GMetrix's supported range**
+for the **2025 Exam Version**, the one that matches this district's FDD (Illustrator), ADD
+(Premiere Pro), and PDD (Photoshop) courses. Ranges come from GMetrix's
 [SMS Compatibility: Adobe Creative Cloud](https://support.gmetrix.net/support/solutions/articles/67000746490-sms-compatibility-adobe-creative-cloud)
-page. For the **2025 Exam Version** column — the one that matches this district's FDD
-(Illustrator), ADD (Premiere Pro), and PDD (Photoshop) courses — as of this table's last check:
+page, as of this table's last check:
 
-| App | 2025 Exam Version |
-|:----|:-------------------|
-| **Illustrator** (FDD) | 29.0–29.8.1 |
-| **Premiere Pro** (ADD) | 25.1–25.5 |
-| **Photoshop** (PDD) | 26.0–26.11 |
-| InDesign | 20.0–20.5 |
-| After Effects | 25.0–25.5 |
+| App | Install this version |
+|:----|:---------------------|
+| **Illustrator** (FDD) | 29.8.1 |
+| **Premiere Pro** (ADD) | 25.5 |
+| **Photoshop** (PDD) | 26.11 |
+| InDesign | 20.5 |
+| After Effects | 25.5 |
 | Animate | *not listed for 2025 at last check* |
 | Dreamweaver | N/A (no longer covered) |
 
 {: .important }
-> Install a version **inside** the listed range, not just "whatever's current" — Creative Cloud's
-> auto-update can walk an app past the top of that range without anyone noticing until a test
-> won't launch. Pin the exact version by packaging it through the Adobe Admin Console (see
-> [Step 1](#step-1-build-the-adobe-package-in-the-admin-console)) rather than leaving apps on
-> auto-update, and re-check the live compatibility page before each testing window — GMetrix
-> revises these ranges as new Adobe point releases ship and gets re-tested, so a range that's
-> correct today can narrow later in the year.
+> Don't leave these apps on auto-update. Creative Cloud can walk an app past the top of
+> GMetrix's range without anyone noticing until a test won't launch, so pin the version by
+> packaging it through the Adobe Admin Console (see
+> [Step 1](#step-1-build-the-adobe-package-in-the-admin-console)). Re-check GMetrix's live
+> compatibility page before each testing window: if GMetrix has raised the top of a range, update
+> the package to the new top version.
 
 {: .note }
-> Adobe removed CEP extension support from Photoshop starting with the 2025 release line
-> (v26+) — the framework GMetrix's LITA plugin depends on — which is why 2025 Photoshop had real
-> reported compatibility problems for a stretch (see the Sources below). GMetrix's own table
-> confirms 26.0–26.11 is supported now, so this isn't a live blocker if you're inside that range,
-> but it's the reason the range has an upper bound instead of just "latest" — don't manually
-> update past 26.11 assuming a newer Photoshop will keep working.
+> Adobe removed CEP extension support from Photoshop starting with the 2025 release line (v26+),
+> and CEP is the framework GMetrix's plugin depends on. That's why Photoshop's range has an upper
+> bound instead of just "latest": don't update past 26.11 assuming a newer Photoshop will keep
+> working with GMetrix.
 
 ## Step 1: Build the Adobe package in the Admin Console
 
@@ -85,24 +83,49 @@ every lab Mac through Jamf.
 
    The Intel builds matter on Apple Silicon Macs: an Intel-only app always runs under Rosetta,
    which is exactly what GMetrix's plugin panel needs. Apps from this package won't show the
-   **Open using Rosetta** checkbox in [Step 3](#step-3-make-an-adobe-app-work-with-gmetrix-on-apple-silicon)
+   **Open using Rosetta** checkbox in [Step 2](#step-2-set-each-adobe-app-to-run-in-rosetta)
    at all, because macOS only offers that checkbox for apps that also have an Apple Silicon build.
 
 4. **Choose apps:** click **Other versions**, keep **Latest versions** checked, and check **Older
    versions** (leave long-term supported, beta, and pre-release unchecked). Without Older versions
    the list only offers each app's newest release, which may be past the top of GMetrix's
-   supported range. Then add the specific version of each app this lab needs from the table above
-   (Illustrator 29.x for FDD, Premiere Pro 25.x for ADD, Photoshop 26.x for PDD). The **License
-   File** is added to the package automatically.
+   supported range. Then add **one version of each app, the exact version from the table above**:
+   Illustrator 29.8.1, Premiere Pro 25.5, and Photoshop 26.11. Don't add any other versions of the
+   same app. The **License File** is added to the package automatically.
 
    ![Choose apps step, with the Other versions menu open and Latest versions and Older versions checked]({{ '/assets/images/notes-for-it/adobe-package-4-choose-apps.webp' | relative_url }})
 
-5. **Choose plugins, Options, Finalize:** GMetrix's plugin panel isn't added here; GMetrix SMS
-   installs it into each Adobe app itself. Finish the remaining steps, name the package, and let
+5. **Choose plugins, Options, Finalize:** GMetrix's plugins aren't added here; GMetrix SMS
+   installs them into each Adobe app itself in Step 3, after the apps are set up to run in
+   Rosetta. Finish the remaining steps, name the package, and let
    Adobe build it. When it's ready, download it from the Packages list and deploy it through Jamf
    like the lab's other packages.
 
-## Step 2: Install GMetrix SMSe on macOS
+## Step 2: Set each Adobe app to run in Rosetta
+
+**Do this before installing GMetrix.** GMetrix's plugins are built on Adobe's older CEP framework,
+which only loads when the Adobe app is running in Rosetta, so every Adobe app has to be set up to
+run in Rosetta before GMetrix installs its plugins in Step 3. Do it for **every** Adobe app the
+lab runs GMetrix practice exams through; it's a per-app setting, not a system-wide one.
+
+1. Open the **Applications** folder in Finder and find the Adobe app (for example,
+   `/Applications/Adobe Photoshop 2025`).
+2. Right-click the app and select **Get Info**.
+3. Check **Open using Rosetta**. If there's no such checkbox, the app is an Intel-only build (the
+   macOS (Intel) package from Step 1) and always runs in Rosetta; go on to the next step.
+4. Close Get Info and open the Adobe app. To confirm it's running in Rosetta, open **Activity
+   Monitor** and check that the app's **Kind** column says **Intel**, not **Apple**.
+5. In the Adobe app, go to **Preferences → Plugins → Legacy Extensions** and enable **both**
+   options there. (GMetrix's article just says "both options"; Adobe has changed this dialog's
+   labels across releases, so check the wording on a test Mac.)
+6. Quit the Adobe app, then repeat steps 1–5 for the next one.
+
+{: .important }
+> If GMetrix was already installed before an app was set to Rosetta, its plugin for that app won't
+> load. Finish this step for the app, then delete that app's GMetrix plugin folder (path in
+> [Troubleshooting](#troubleshooting)) and let GMetrix SMS reinstall it.
+
+## Step 3: Install GMetrix SMSe and its plugins
 
 1. On the Mac, go to [gmetrix.net/GetGMetrixSMS.aspx](https://www.gmetrix.net/GetGMetrixSMS.aspx)
    and select **Download SMSe**.
@@ -110,42 +133,24 @@ every lab Mac through Jamf.
 3. Drag the **GmetrixSMSe** icon onto the **Applications** folder shortcut in the same window.
 4. Open the **Applications** folder and double-click **GmetrixSMSe** to launch it. macOS may
    prompt for the local admin password on first launch.
+5. Launch a practice exam in each Adobe app through GMetrix SMS to confirm its plugin panel loads.
+
+{: .important }
+> If a plugin still doesn't appear, check folder permissions at
+> `Macintosh HD → Library → Application Support → Adobe → CEP`. macOS can silently block the
+> read/write access GMetrix needs to load new question content mid-test.
 
 {: .note }
 > General macOS system requirements for GMetrix (per GMetrix's own docs): macOS 10.10 or newer,
 > a 64-bit machine with hardware-accelerated graphics for simulation-based exams, and a
-> high-speed internet connection. None of that is Apple-Silicon-specific — the Rosetta
-> requirement below is specifically about the Adobe plugin panel, not GMetrix SMSe itself.
-
-## Step 3: Make an Adobe app work with GMetrix on Apple Silicon
-
-Do this for **every** Adobe application this lab runs GMetrix practice exams through — it's a
-per-application setting, not a one-time system setting.
-
-1. Open the **Applications** folder in Finder and locate the Adobe app (for example,
-   `/Applications/Adobe Photoshop 2025`).
-2. Right-click the application and select **Get Info**.
-3. Check the box labeled **Open using Rosetta**. If there's no such checkbox, the app is an
-   Intel-only build (the macOS (Intel) package from Step 1) and already runs under Rosetta, so
-   skip to the next step.
-4. Close the Get Info window, then open the Adobe application itself.
-5. Inside the Adobe app, go to **Preferences → Plugins → Legacy Extensions** and enable **both**
-   options listed there (GMetrix's own article doesn't name them individually beyond "both
-   options" — check the same panel on a test Mac to confirm current wording, since Adobe has
-   changed this dialog's exact labels across releases).
-6. Quit and relaunch the Adobe application.
-7. Launch a practice exam through GMetrix SMS to confirm the plugin panel loads.
-
-{: .important }
-> If the plugin still doesn't appear after this, check folder permissions at
-> `Macintosh HD → Library → Application Support → Adobe → CEP` — macOS can silently block the
-> read/write access GMetrix needs to load new question content mid-test.
+> high-speed internet connection. None of that is Apple-Silicon-specific; the Rosetta requirement
+> in Step 2 is about the Adobe apps, not GMetrix SMSe itself.
 
 ## Troubleshooting
 
 | Symptom | Likely cause / fix |
 |:--------|:--------------------|
-| Plugin panel never appears in the Adobe app | Confirm the Adobe app is running under Rosetta: either it came from the macOS (Intel) package in Step 1, or **Open using Rosetta** is checked on the app itself (not just GMetrix SMSe). This is the single most common miss. |
+| Plugin panel never appears in the Adobe app | The Adobe app wasn't running in Rosetta when GMetrix installed its plugin. Do [Step 2](#step-2-set-each-adobe-app-to-run-in-rosetta) for that app, then delete its GMetrix plugin folder (next row) and let GMetrix SMS reinstall it. This is the single most common miss. |
 | "The GMetrix LITA extension could not be loaded because it was not properly signed" | A known signing/registry issue on Windows; on Mac, try removing and letting GMetrix SMS reinstall the plugin folder (`~/Library/Application Support/Adobe/CEP/extensions/gmetrix.lita.adobe.<app>`) rather than editing it by hand. |
 | GMetrix SMS says it can't locate the Adobe application | In GMetrix SMS, open the settings/options wheel, select the affected application, scroll to **Change Filepath**, and point it at the app's actual install path. |
 | Premiere Pro: test seems to hang right at start | Some sample project files need to convert on first open — this doesn't count against the test timer, let it finish. |
@@ -164,8 +169,8 @@ per-application setting, not a one-time system setting.
 
 {: .note }
 > This session couldn't reach support.gmetrix.net directly to quote these articles verbatim
-> (network restriction). The version-compatibility table above is the real thing, pasted in
-> directly from that page, and the Admin Console packaging steps come from screenshots of this
+> (network restriction). The versions in the table above are the top of each range on GMetrix's
+> compatibility page, pasted in directly from that page, and the Admin Console packaging steps come from screenshots of this
 > district's own console. Everything else on this page (the GMetrix installation and
 > Rosetta/Legacy Extensions steps) is reconstructed from search-indexed summaries of GMetrix's own published
 > articles, cross-checked against an independent Jamf Nation admin thread describing the same fix
