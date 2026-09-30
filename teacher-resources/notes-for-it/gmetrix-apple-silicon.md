@@ -45,8 +45,8 @@ page. For the **2025 Exam Version** column — the one that matches this distric
 {: .important }
 > Install a version **inside** the listed range, not just "whatever's current" — Creative Cloud's
 > auto-update can walk an app past the top of that range without anyone noticing until a test
-> won't launch. Pin the exact version through the Adobe Admin Console (Creative Cloud for
-> enterprise/education lets you pin a version per package) rather than leaving apps on
+> won't launch. Pin the exact version by packaging it through the Adobe Admin Console (see
+> [Step 1](#step-1-build-the-adobe-package-in-the-admin-console)) rather than leaving apps on
 > auto-update, and re-check the live compatibility page before each testing window — GMetrix
 > revises these ranges as new Adobe point releases ship and gets re-tested, so a range that's
 > correct today can narrow later in the year.
@@ -59,7 +59,50 @@ page. For the **2025 Exam Version** column — the one that matches this distric
 > but it's the reason the range has an upper bound instead of just "latest" — don't manually
 > update past 26.11 assuming a newer Photoshop will keep working.
 
-## Step 1: Install GMetrix SMSe on macOS
+## Step 1: Build the Adobe package in the Admin Console
+
+Install the lab's Adobe apps from a managed package built at
+[adminconsole.adobe.com](https://adminconsole.adobe.com/) (**Packages → Create a package**)
+instead of letting each Mac install whatever Creative Cloud currently offers. A package is how you
+pick a version inside GMetrix's supported range (the table above) and put that same version on
+every lab Mac through Jamf.
+
+1. **Licensing method: Shared device licensing.** This is the lab option. Apps are licensed to
+   the machine through the district's K-12 shared device license, and students sign in with their
+   own school identity when they open an app. Named user licensing is for a single person's own
+   machine, like a teacher laptop.
+
+   ![Admin Console licensing method choice, with Shared device licensing selected]({{ '/assets/images/notes-for-it/adobe-package-1-licensing.png' | relative_url }})
+
+2. **Entitlements:** check **Creative Cloud All Apps for K-12 - Shared Device**.
+
+   ![Entitlements step, with Creative Cloud All Apps for K-12 - Shared Device selected]({{ '/assets/images/notes-for-it/adobe-package-2-entitlements.webp' | relative_url }})
+
+3. **Configure:** set the platform to **macOS (Intel)** and leave **Use OS Locale** on (it falls
+   back to English (North America)).
+
+   ![Configure step, with platform set to macOS (Intel) and Use OS Locale turned on]({{ '/assets/images/notes-for-it/adobe-package-3-configure.webp' | relative_url }})
+
+   The Intel builds matter on Apple Silicon Macs: an Intel-only app always runs under Rosetta,
+   which is exactly what GMetrix's plugin panel needs. Apps from this package won't show the
+   **Open using Rosetta** checkbox in [Step 3](#step-3-make-an-adobe-app-work-with-gmetrix-on-apple-silicon)
+   at all, because macOS only offers that checkbox for apps that also have an Apple Silicon build.
+
+4. **Choose apps:** click **Other versions**, keep **Latest versions** checked, and check **Older
+   versions** (leave long-term supported, beta, and pre-release unchecked). Without Older versions
+   the list only offers each app's newest release, which may be past the top of GMetrix's
+   supported range. Then add the specific version of each app this lab needs from the table above
+   (Illustrator 29.x for FDD, Premiere Pro 25.x for ADD, Photoshop 26.x for PDD). The **License
+   File** is added to the package automatically.
+
+   ![Choose apps step, with the Other versions menu open and Latest versions and Older versions checked]({{ '/assets/images/notes-for-it/adobe-package-4-choose-apps.webp' | relative_url }})
+
+5. **Choose plugins, Options, Finalize:** GMetrix's plugin panel isn't added here; GMetrix SMS
+   installs it into each Adobe app itself. Finish the remaining steps, name the package, and let
+   Adobe build it. When it's ready, download it from the Packages list and deploy it through Jamf
+   like the lab's other packages.
+
+## Step 2: Install GMetrix SMSe on macOS
 
 1. On the Mac, go to [gmetrix.net/GetGMetrixSMS.aspx](https://www.gmetrix.net/GetGMetrixSMS.aspx)
    and select **Download SMSe**.
@@ -74,7 +117,7 @@ page. For the **2025 Exam Version** column — the one that matches this distric
 > high-speed internet connection. None of that is Apple-Silicon-specific — the Rosetta
 > requirement below is specifically about the Adobe plugin panel, not GMetrix SMSe itself.
 
-## Step 2: Make an Adobe app work with GMetrix on Apple Silicon
+## Step 3: Make an Adobe app work with GMetrix on Apple Silicon
 
 Do this for **every** Adobe application this lab runs GMetrix practice exams through — it's a
 per-application setting, not a one-time system setting.
@@ -82,7 +125,9 @@ per-application setting, not a one-time system setting.
 1. Open the **Applications** folder in Finder and locate the Adobe app (for example,
    `/Applications/Adobe Photoshop 2025`).
 2. Right-click the application and select **Get Info**.
-3. Check the box labeled **Open using Rosetta**.
+3. Check the box labeled **Open using Rosetta**. If there's no such checkbox, the app is an
+   Intel-only build (the macOS (Intel) package from Step 1) and already runs under Rosetta, so
+   skip to the next step.
 4. Close the Get Info window, then open the Adobe application itself.
 5. Inside the Adobe app, go to **Preferences → Plugins → Legacy Extensions** and enable **both**
    options listed there (GMetrix's own article doesn't name them individually beyond "both
@@ -100,7 +145,7 @@ per-application setting, not a one-time system setting.
 
 | Symptom | Likely cause / fix |
 |:--------|:--------------------|
-| Plugin panel never appears in the Adobe app | Confirm **Open using Rosetta** is checked on the Adobe app itself, not just GMetrix SMSe — this is the single most common miss. |
+| Plugin panel never appears in the Adobe app | Confirm the Adobe app is running under Rosetta: either it came from the macOS (Intel) package in Step 1, or **Open using Rosetta** is checked on the app itself (not just GMetrix SMSe). This is the single most common miss. |
 | "The GMetrix LITA extension could not be loaded because it was not properly signed" | A known signing/registry issue on Windows; on Mac, try removing and letting GMetrix SMS reinstall the plugin folder (`~/Library/Application Support/Adobe/CEP/extensions/gmetrix.lita.adobe.<app>`) rather than editing it by hand. |
 | GMetrix SMS says it can't locate the Adobe application | In GMetrix SMS, open the settings/options wheel, select the affected application, scroll to **Change Filepath**, and point it at the app's actual install path. |
 | Premiere Pro: test seems to hang right at start | Some sample project files need to convert on first open — this doesn't count against the test timer, let it finish. |
@@ -120,8 +165,9 @@ per-application setting, not a one-time system setting.
 {: .note }
 > This session couldn't reach support.gmetrix.net directly to quote these articles verbatim
 > (network restriction). The version-compatibility table above is the real thing, pasted in
-> directly from that page; everything else on this page (the installation and Rosetta/Legacy
-> Extensions steps) is reconstructed from search-indexed summaries of GMetrix's own published
+> directly from that page, and the Admin Console packaging steps come from screenshots of this
+> district's own console. Everything else on this page (the GMetrix installation and
+> Rosetta/Legacy Extensions steps) is reconstructed from search-indexed summaries of GMetrix's own published
 > articles, cross-checked against an independent Jamf Nation admin thread describing the same fix
 > in practice. Re-verify the procedural steps against the live pages before relying on this for a
 > real deployment.

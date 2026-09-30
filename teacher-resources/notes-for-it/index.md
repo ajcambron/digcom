@@ -16,6 +16,7 @@ comes up as the course runs, starting with one item below.
 
 - [Custom macOS Dock for the lab image](mac-dock-setup.md). Pin Chrome, Google Drive, and the
  Adobe apps to every student's Dock by default, using a script-based tool deployed through Jamf.
-- [Installing GMetrix on Apple Silicon Macs](gmetrix-apple-silicon.md). Getting the Adobe plugin
- panel (Rosetta + Legacy Extensions) working on M-series machines, and confirming the right
- Adobe version for this year's GMetrix/BrainBuffet content before deploying.
+- [Installing GMetrix on Apple Silicon Macs](gmetrix-apple-silicon.md). Confirming the right
+ Adobe version for this year's GMetrix/BrainBuffet content, packaging it in the Adobe Admin
+ Console, and getting the Adobe plugin panel (Rosetta + Legacy Extensions) working on M-series
+ machines.
