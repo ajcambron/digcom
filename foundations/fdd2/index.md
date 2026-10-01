@@ -36,7 +36,7 @@ Upon successful completion of this unit, you will be able to:
 {% include calendar-of-events.html unit=2 %}
 
 ## Lessons
-- [2.1 – GMetrix Setup & ACP Pre-Test](2_1.md). Create your account, join the class, take the pre-assessment
+- [2.1 – GMetrix Setup & ACP Pre-Test](2_1.md). Log in to GMetrix SMS, run pre-launch setup, take the Illustrator practice exam
 - [2.2 – Google Sites Portfolio Setup](2_2.md). Build and publish your portfolio site; find its empty logo and favicon slots
 - [2.3 – Define the Problem & Research and Learn](2_3.md). Illustrator interface, New Document dialog, artboards, bleed/trim/live area, and the Geometric Logo design brief
 - [2.4 – Generate Ideas & Design Development](2_4.md). Raster vs. vector, rulers/guides/grids, and a Bauhaus shape exercise for the logo concept

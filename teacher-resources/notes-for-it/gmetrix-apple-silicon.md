@@ -121,12 +121,13 @@ lab runs GMetrix practice exams through.
 
 **Treat Open in Rosetta as applying only to that launch.** Whenever an Adobe app is used for a
 GMetrix exam, open it with **Open in Rosetta** first, then start the exam in GMetrix SMS. Students
-follow the same steps on the [FDD 2.1 handout]({% link foundations/fdd2/2_1.md %}).
+follow the same steps on the [FDD 2.1 handout]({% link foundations/fdd2/2_1.md %}) (Illustrator) and
+the [ADD 2.1 handout]({% link applications/add2/2_1.md %}) (Premiere Pro).
 
 **What students run on every new log-on (observed in class).** After opening Illustrator in
 Rosetta and quitting it, students run three GMetrix SMS tasks: **Tasks → Delete Test Resource
 Archive**, then **Plugins → Illustrator → Install Illustrator Plugin** and **Reinstall Illustrator
-Plugin Workspace Files**. Each one currently prompts for the local administrator password, so the
+Plugin Workspace Files** (ADD runs the same two rows under **Plugins → Premiere Pro**). Each one currently prompts for the local administrator password, so the
 teacher has to type it at every machine, three times each. If there's a way to let these GMetrix
 tasks run without an admin prompt on the lab Macs, it would save a lot of class time.
 

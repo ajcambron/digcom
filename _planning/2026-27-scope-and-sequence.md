@@ -820,7 +820,7 @@ Unit 10's dedicated job, not a lesson inside this unit's content.*
 
 **Routine:** each block ends with ~30 minutes of self-paced work in the GMetrix BrainBuffet course for that course's app. 7 meetings/unit × 30 min ≈ **3.5 hrs of GMetrix time per unit, ~28 hrs before spring break** — enough to complete each course's video content (~10.5 hrs each) plus assessments and both practice tests, with slack for rewatching.
 
-**Accountability:** GMetrix account setup + ACP pre-assessment during Unit 2's first lesson (2.1),
+**Accountability:** GMetrix SMS login (Login with Google + class code) + ACP pre-assessment during Unit 2's first lesson (2.1),
 its own dedicated day, not folded into a content lesson (see FDD/ADD Unit 2's 2.1—Unit 1 has no
 computer/network access in either course, so there's nowhere earlier to put this); a
 module-completion checkpoint due each summative week (enters the gradebook alongside the
@@ -854,7 +854,7 @@ Durations from the teacher syllabus (video / estimated class time): M1 2:12/3h �
 > above** (e.g. this table's "Unit 8" is now Unit 9) — not yet done.
 >
 > **Further correction (Sep 2026): Unit 2 now opens with its own GMetrix Setup & ACP Pre-Test day
-> (2.1)** — account creation and the ACP pre-assessment get a full period with no timer, rather
+> (2.1)** — the first GMetrix SMS login, pre-launch setup, and the ACP pre-assessment get a full period with no timer, rather
 > than being folded into the interface lesson. Module 1: Getting Started now runs across 2.3–2.4
 > only (44 min total), since 2.1 (pre-test) and 2.2 (Google Sites Portfolio Setup) don't run a
 > strand block, and S2 no longer runs one either (project days no longer carve out strand time —
@@ -902,7 +902,7 @@ Durations (video / estimated class time): M1 Barbershop Social Promo 1:50/5–6h
 > runs entirely on paper, no computer/network access (see ADD Unit 1's lesson pages), so there's
 > nowhere in Unit 1 to start Module 1. Module 1: Barbershop Social Promo (both start and finish)
 > now runs entirely in Unit 2 instead, and Unit 2 opens with its own GMetrix Setup & ACP Pre-Test
-> day (2.1) for account creation and the pre-assessment, before Module 1 starts in 2.2 — see
+> day (2.1) for the first GMetrix SMS login, pre-launch setup, and the pre-assessment, before Module 1 starts in 2.2 — see
 > add2/2_2.md's and add2/2_3.md's notes for the running time-budget math. The table below still
 > shows the old "Unit 1 starts, Unit 2 finishes" split; treat it as superseded by this note until
 > the table itself is corrected.
@@ -1070,10 +1070,11 @@ This supersedes the "Mapping to lesson types" guidance above for *which exit tic
 uses* (now purely positional) — that guidance still applies to which formative shapes the rest
 of a lesson's in-class work, just not the exit ticket specifically. **Exceptions:** FDD 2.1 (GMetrix
 Setup & ACP Pre-Test) uses a custom exit ticket, `exit-ticket/fdd2-1-score.md` (+ `-teacher.md`),
-where students post their pre-test score and results screenshot, and FDD 2.2 (Google Sites
+where students post their pre-test score and results screenshot (ADD 2.1 mirrors it with
+`exit-ticket/add2-1-score.md`, Premiere Pro in place of Illustrator), and FDD 2.2 (Google Sites
 Portfolio Setup) uses `exit-ticket/fdd2-2-site-link.md` (+ `-teacher.md`), where students post
 their published portfolio link. Each lesson's front matter sets `exit_ticket:` to that file name
-instead of a number, and both the teacher plan and the Schoology embed pick it up from that. FDD Unit 1 (`foundations/fdd1/`)
+instead of a number, and the teacher plan and the Schoology embed pick it up from that. FDD Unit 1 (`foundations/fdd1/`)
 is the reference implementation.
 
 **Schoology question banks** built per unit from the `_includes/vocab/` files — same source,

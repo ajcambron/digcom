@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 2.2 | Video Editing Basics (Teacher)
+title: 2.2 | Projects, Sequences & Bins (Teacher)
 parent: ADD | Unit 2
 grandparent: Applications of Digital Design
 nav_exclude: true
 has_toc: false
 ---
-# 2.2 | Video Editing Basics | Teacher Plan
+# 2.2 | Projects, Sequences & Bins | Teacher Plan
 
 {% include teacher-plan.html %}
