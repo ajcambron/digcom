@@ -1068,7 +1068,11 @@ customization needed, unlike the first draft of this bank.
 
 This supersedes the "Mapping to lesson types" guidance above for *which exit ticket a lesson
 uses* (now purely positional) — that guidance still applies to which formative shapes the rest
-of a lesson's in-class work, just not the exit ticket specifically. FDD Unit 1 (`foundations/fdd1/`)
+of a lesson's in-class work, just not the exit ticket specifically. **One exception:** FDD 2.1 (GMetrix
+Setup & ACP Pre-Test) uses a custom exit ticket, `exit-ticket/fdd2-1-score.md` (+ `-teacher.md`),
+where students post their pre-test score and results screenshot; its front matter sets
+`exit_ticket: fdd2-1-score` instead of a number, and both the teacher plan and the Schoology embed
+pick it up from that. FDD Unit 1 (`foundations/fdd1/`)
 is the reference implementation.
 
 **Schoology question banks** built per unit from the `_includes/vocab/` files — same source,
