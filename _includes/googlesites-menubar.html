@@ -1,3 +1,8 @@
+{%- comment -%}
+  Optional `highlight`: "publish" rings just the Publish button, "link" highlights just the Copy
+  published site link icon. Omitted, Preview and the link icon are both highlighted (original look).
+{%- endcomment -%}
+{%- assign hl = include.highlight -%}
 <div class="gs-menubar">
   <style>
     .gs-menubar {
@@ -77,6 +82,10 @@
       background: var(--gs-purple);
       color: #fff;
     }
+    .gs-menubar-btn.ring,
+    .gs-menubar-icon.ring {
+      box-shadow: 0 0 0 3px #f2c94c;
+    }
   </style>
 
   <div class="gs-menubar-row">
@@ -86,12 +95,12 @@
     </div>
     <div class="gs-menubar-right">
       <span class="gs-menubar-icon">&#128100;</span>
-      <span class="gs-menubar-icon highlighted" title="Preview">&#128187;</span>
+      <span class="gs-menubar-icon{% unless hl %} highlighted{% endunless %}" title="Preview">&#128187;</span>
       <span class="gs-menubar-icon">&#8635;</span>
       <span class="gs-menubar-sep"></span>
-      <span class="gs-menubar-icon highlighted" title="Copy published site link">&#128279;</span>
+      <span class="gs-menubar-icon{% if hl == nil or hl == "link" %} highlighted{% endif %}{% if hl == "link" %} ring{% endif %}" title="Copy published site link">&#128279;</span>
       <span class="gs-menubar-icon">&#8942;</span>
-      <span class="gs-menubar-btn primary">Publish</span>
+      <span class="gs-menubar-btn primary{% if hl == "publish" %} ring{% endif %}">Publish</span>
     </div>
   </div>
 </div>
