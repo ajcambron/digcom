@@ -81,10 +81,10 @@ every lab Mac through Jamf.
 
    ![Configure step, with platform set to macOS (Intel) and Use OS Locale turned on]({{ '/assets/images/notes-for-it/adobe-package-3-configure.webp' | relative_url }})
 
-   The Intel builds matter on Apple Silicon Macs: an Intel-only app always runs under Rosetta,
-   which is exactly what GMetrix's plugin panel needs. Apps from this package won't show the
-   **Open using Rosetta** checkbox in [Step 2](#step-2-set-each-adobe-app-to-run-in-rosetta)
-   at all, because macOS only offers that checkbox for apps that also have an Apple Silicon build.
+   The Intel builds are meant to run under Rosetta on Apple Silicon Macs, which is what GMetrix's
+   plugin panel needs. Still do [Step 2](#step-2-set-each-adobe-app-to-run-in-rosetta) for every
+   app: opening it with **Open in Rosetta** from the Creative Cloud app is the method confirmed to
+   work in this lab.
 
 4. **Choose apps:** click **Other versions**, keep **Latest versions** checked, and check **Older
    versions** (leave long-term supported, beta, and pre-release unchecked). Without Older versions
@@ -106,19 +106,22 @@ every lab Mac through Jamf.
 **Do this before installing GMetrix.** GMetrix's plugins are built on Adobe's older CEP framework,
 which only loads when the Adobe app is running in Rosetta, so every Adobe app has to be set up to
 run in Rosetta before GMetrix installs its plugins in Step 3. Do it for **every** Adobe app the
-lab runs GMetrix practice exams through; it's a per-app setting, not a system-wide one.
+lab runs GMetrix practice exams through.
 
-1. Open the **Applications** folder in Finder and find the Adobe app (for example,
-   `/Applications/Adobe Photoshop 2025`).
-2. Right-click the app and select **Get Info**.
-3. Check **Open using Rosetta**. If there's no such checkbox, the app is an Intel-only build (the
-   macOS (Intel) package from Step 1) and always runs in Rosetta; go on to the next step.
-4. Close Get Info and open the Adobe app. To confirm it's running in Rosetta, open **Activity
-   Monitor** and check that the app's **Kind** column says **Intel**, not **Apple**.
-5. In the Adobe app, go to **Preferences → Plugins → Legacy Extensions** and enable **both**
+1. Open the **Creative Cloud** desktop app and go to **Apps → Installed apps**.
+2. Find the Adobe app, click **••• (More actions)** next to its **Open** button, and choose
+   **Open in Rosetta**. (Finder's **Get Info → Open using Rosetta** checkbox doesn't work on this
+   lab's Macs; use the Creative Cloud app instead.)
+3. To confirm it's running in Rosetta, open **Activity Monitor** and check that the app's **Kind**
+   column says **Intel**, not **Apple**.
+4. In the Adobe app, go to **Preferences → Plugins → Legacy Extensions** and enable **both**
    options there. (GMetrix's article just says "both options"; Adobe has changed this dialog's
    labels across releases, so check the wording on a test Mac.)
-6. Quit the Adobe app, then repeat steps 1–5 for the next one.
+5. Quit the Adobe app, then repeat steps 1–4 for the next one.
+
+**Treat Open in Rosetta as applying only to that launch.** Whenever an Adobe app is used for a
+GMetrix exam, open it with **Open in Rosetta** first, then start the exam in GMetrix SMS. Students
+follow the same steps on the [FDD 2.1 handout]({% link foundations/fdd2/2_1.md %}).
 
 {: .important }
 > If GMetrix was already installed before an app was set to Rosetta, its plugin for that app won't
