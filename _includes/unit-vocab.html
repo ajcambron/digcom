@@ -3,7 +3,9 @@
   <dl class="vocab"> block, sourced live from each lesson page's `lesson.vocab` front matter —
   so editing a lesson's vocab automatically updates the unit page too, no manual sync needed.
   The existing assets/js/vocab-csv.js script then adds a "Download Vocabulary (CSV)" button
-  to it automatically, same as any other .vocab list on the site.
+  to it automatically, same as any other .vocab list on the site, and assets/js/vocab-quiz.js
+  turns the .vocab-quiz marker below into a "Download Schoology Vocab Quiz (QTI)" button that
+  builds a randomized, auto-graded F5 quiz from this same list.
 
   Usage: {% include unit-vocab.html course="FDD" unit=1 %}
 {%- endcomment -%}
@@ -29,4 +31,6 @@
 {%- for v in vocab_files %}
 {% include {{ v }} %}
 {%- endfor %}
+
+<div class="vocab-quiz no-print" data-course="{{ include.course }}" data-unit="{{ include.unit }}"></div>
 {%- endif -%}

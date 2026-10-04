@@ -1078,7 +1078,15 @@ instead of a number, and the teacher plan and the Schoology embed pick it up fro
 is the reference implementation.
 
 **Schoology question banks** built per unit from the `_includes/vocab/` files — same source,
-same language, no drift.
+same language, no drift. Every unit overview page's vocab section has a **Download Schoology
+Vocab Quiz (QTI)** button (`assets/js/vocab-quiz.js`, wired in by `_includes/unit-vocab.html`)
+that builds the F5 Cumulative Vocab Quiz on the spot: one auto-graded multiple-choice question
+per unit term, each asked in a random direction (term → definition or definition → term), with
+distractors drawn from the unit's other terms and the term blanked out of its own definition.
+Each click is a new randomized version, stamped with a 4-character version code in the quiz
+title, downloaded as a QTI 2.1 package (.zip) for Schoology import. It reads the rendered vocab
+list, so editing a lesson's vocab and rebuilding the site refreshes the quiz too. It's a starting
+point, not a substitute for hand-written questions.
 
 ---
 
