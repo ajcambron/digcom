@@ -689,7 +689,7 @@ directly into writing the brief for that topic, a natural single-lesson pairing.
 | 2.2 | Video Editing Basics | add2/2_1 | 2.2, 2.3, 4.1 |
 | 2.3 | Transitions / Conventions | add2/2_2 | 1.4.b, 4.5.b |
 | 2.4 | Standards, Formats & Frame Rates | add2/2_3 | 1.1.b, 2.1.b |
-| **S2** | **Television Scene Edit** | add2/s2 (`premieresetup.md`) | 2.1–2.4, 4.1 |
+| **S2** | **Barbershop Social Promo** (GMetrix/BrainBuffet Premiere Module 1; replaced the Television Scene Edit, Oct 2026) | add2/s2 | 2.1–2.4, 4.1 |
 | **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 2) | — | — |
 
 *Rationale: "What Does an Editor Do?" (1.4.b, career/industry framing) isn't a hands-on
@@ -782,7 +782,7 @@ sequential pre-production steps, a natural merge (same pattern as ADD Unit 1's T
 | 8.2 | Pacing *(floated from old Unit 6)* | adapt add4/4_2 | 1.4.b |
 | 8.3 | Transform, Resize & Speed *(floated from old Unit 4)* | new | 4.4 |
 | 8.4 | Asset Management & Submission *(floated from old Unit 5)* | add5/5_3 | 3.1 |
-| **S8** | **Edit Polish Project** *(new summative)* — re-cut an earlier project (Television Scene Edit or Video Essay) with refined pacing, a transform/speed effect, correct asset management/archiving, plus a short written reflection on the editor's role | new | 1.4.b, 4.4, 3.1 |
+| **S8** | **Edit Polish Project** *(new summative)* — re-cut an earlier project (Barbershop Social Promo or Video Essay) with refined pacing, a transform/speed effect, correct asset management/archiving, plus a short written reflection on the editor's role | new | 1.4.b, 4.4, 3.1 |
 | **F5/F6** | Cumulative Vocab Quiz + Stinger Grade (Unit 8) | — | — |
 
 *Rationale: the 9th unit/summative the calendar math requires, built from the 4 lessons that
@@ -922,7 +922,7 @@ Durations (video / estimated class time): M1 Barbershop Social Promo 1:50/5–6h
 **Premiere logistics (from the "Read Before You Download" sheet):** student asset downloads are **~5 GB per module** (M1 5.04, M2 4.77, M3 3.14, M4 4.89; optional 4K set is 186 GB — skip it). Download module-by-module via Dropbox (not Drive/OneDrive), share one asset download among students on the same machine (separate `.prproj` files each), and on tight machines delete a module's assets after finishing it. Plan lab storage before school starts.
 
 **Mac lab deployment & storage hygiene (ADD lab is all Mac):**
-- BrainBuffet assets live at the identical path on every machine — `/Users/Shared/PremiereAssets/Module N/` — so any student at any Mac opens their project with no relinking. Owner root, read-only for students (`chown -R root:wheel`, `chmod -R 755`). Push via Jamf/Apple Remote Desktop or one USB-C SSD; never 30 simultaneous downloads.
+- BrainBuffet assets live at the identical path on every machine — **`/Users/Shared/GMetrix`** (the location actually in use; students find it via add2/2_1's "Finding the GMetrix Folder" section) — so any student at any Mac opens their project with no relinking. Owner root, read-only for students (`chown -R root:wheel`, `chmod -R 755`). Push via Jamf/Apple Remote Desktop or one USB-C SSD; never 30 simultaneous downloads.
 - Day-one Premiere setup (student-facing slide, per-user settings): Media Cache → auto-delete cache files older than 14 days + cap cache size; scratch/previews inside the project folder so they die with the project.
 - The Mac is a workbench, not storage: all working files in `~/Movies/DigCom/<ProjectName>/` per the existing `projectfolder.md`/`organizevideo.md` structure; project files backed up to Google Drive at end of class (assets never go to Drive); confirm with IT whether student accounts persist or get wiped.
 - **Restructure to-do — edit `_includes/delivervideo.md`:** add a **"Strike"** section as the final step of every video summative — after final export is delivered and the portfolio page is up: delete raw footage from the project folder, empty the Trash, keep only final export + `.prproj`. Graded as part of the summative checklist. (Maps to ACP Pr 3.1 asset organization and 5.3.c archiving — the cleanup routine *is* curriculum.)
@@ -958,7 +958,7 @@ Regional student Emmys ([call for entries](https://natasmid-atlantic.org/student
 
 **Cautions:**
 - **$35/entry**, teacher approval required, faculty involvement advisory only; at least ⅔ of an entry must be original material.
-- **Unit 2's Television Scene Edit is not enterable** (copyrighted source footage) — H-17 entries must be composites of original-footage work.
+- **Unit 2's Barbershop Social Promo is not enterable** (BrainBuffet-supplied footage, not the student's own) — H-17 entries must be composites of original-footage work.
 - Unit 5 Podcast is enterable only if produced as a *video* podcast (the live-switcher studio version qualifies; audio-only does not — that's TSA Audio Podcasting's lane).
 
 **Not included (would be shoehorned):**

@@ -13,8 +13,9 @@ has_toc: false
 
 Your first formal look at Adobe Premiere Pro. Setting up a project and sequence correctly,
 navigating and assembling a timeline, applying continuity-editing techniques, and understanding
-the video standards and formats behind every clip you import. Building toward editing a real
-scene from a television show.
+the video standards and formats behind every clip you import. Building toward a finished
+Barbershop Social Promo, the GMetrix/BrainBuffet Module 1 project, with a scripted voice-over and
+a vertical/square version for social media.
 
 {% include unit-video.html youtube="https://www.youtube.com/embed/3Q3eITC01Fg" %}
 
@@ -36,7 +37,7 @@ Upon successful completion of this unit, you will be able to:
 - [2.2 – Projects, Sequences & Bins](2_2.md). Guided notes: project setup, sequences, bins
 - [2.3 – Editing Basics & Continuity Conventions](2_3.md). Guided notes: JKL navigation, In/Out points, Insert/Overwrite/Lift/Extract, L/J cuts, match cuts, cutaways
 - [2.4 – Standards, Formats & Frame Rates](2_4.md). Guided notes: frame rates, SD/HD/4K, codecs
-- [S2 – Television Scene Edit](s2.md). Summative project
+- [S2 – Barbershop Social Promo](s2.md). Summative project: finish the GMetrix Module 1 promo
 
 ## Unit Vocabulary
 
