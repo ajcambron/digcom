@@ -9,15 +9,29 @@
   Grid-systems pass (Mueller-Brockmann): every block-level vertical
   margin/padding on this page is a multiple of a 4px baseline unit, so
   rules, headers and text blocks land on shared horizontal lines instead
-  of drifting independently. Page margins are asymmetric on purpose
-  (108px left, 84px right) to reserve spine clearance for the 3-hole
-  punch every worksheet is printed for ("three hole punch it, keep it in
-  your class binder"), while the two other margins (56px top, 40px
-  bottom) stay distinct rather than matching the sides -- four unique
-  values instead of one uniform margin, for the same reason a book page
-  is never squared off on all sides. Total horizontal margin (192px) is
-  unchanged from before, so the printable content width (624px) and
-  everything sized against it (.grid16, .grid3, tables) is unaffected.
+  of drifting independently.
+
+  Page margins (US Letter, set once in @page so every printed page gets
+  them, including any page a long sheet spills onto):
+    sides 1in / 1in  -- binding. Every sheet is 3-hole punched for the
+                        class binder, and a double-sided copy has its holes
+                        on the left of the front and the right of the back,
+                        so BOTH side margins need the full 1in punch
+                        clearance.
+    head  0.5in      -- the type area sits high on the page; a type area
+    tail  0.75in        pushed low "looks like it is falling off," raised it
+                        looks lighter (Grid Systems, ch. 5). Head, tail and
+                        sides step 0.5 : 0.75 : 1 (2 : 3 : 4), so the margins
+                        are proportioned rather than one uniform frame, the
+                        "indecision" of equal margins on all four sides.
+  The 0.5in head also clears the ~0.25in unprintable edge most classroom
+  printers and copiers have. The type area is 6.5in x 9.75in (624px wide
+  at 96px/in), the width .grid16, .grid3 and the tables are sized against.
+  The folio (.ws-footer) stays centered on the page's axis: calm and
+  static, which suits a reference sheet better than a dynamic outer folio.
+
+  .page.compact only tightens spacing INSIDE the type area. It never
+  shrinks the page margins.
 */
 @import url("../assets/css/site-fonts.css");
 
@@ -30,11 +44,17 @@ html, body {
   font-size: 12pt;
   line-height: 1.15;
 }
-.page {
-  padding: 56px 84px 40px 108px;
+@page {
+  size: letter;
+  margin: 0.5in 1in 0.75in 1in;
 }
-.page.compact {
-  padding: 12px 84px 12px 108px;
+/* On screen (the -preview.png thumbnails) the same margins are drawn as padding,
+   so the preview matches the printed page. In print, @page supplies them. */
+@media screen {
+  .page { width: 8.5in; min-height: 11in; padding: 0.5in 1in 0.75in 1in; }
+}
+@media print {
+  .page { padding: 0; }
 }
 .page.compact .ws-header {
   padding-bottom: 8px;

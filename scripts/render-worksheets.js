@@ -34,10 +34,10 @@ if (names.length === 0) {
       path: pdfPath,
       format: 'Letter',
       printBackground: true,
-      margin: { top: '0', bottom: '0', left: '0', right: '0' },
+      preferCSSPageSize: true,   // page size + margins come from worksheet.css's @page rule
     });
 
-    await page.setViewportSize({ width: 850, height: 1100 });
+    await page.setViewportSize({ width: 816, height: 1056 });   // 8.5 x 11in at 96px/in
     await page.screenshot({ path: previewPath });
 
     await page.close();
