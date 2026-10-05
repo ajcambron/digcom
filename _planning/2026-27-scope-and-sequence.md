@@ -364,7 +364,7 @@ the same standards as before, just retaught in service of the deliverable instea
 file. S2's ACP tag still never covers "Saving & File Formats" — floated out, landing in the new
 Unit 6 below instead of forcing a merge here.*
 
-**Vocab callouts:** pixel, raster, bitmap, vector, path, object, rasterizing, rendering, resizing, bleed, trim, live area · application bar, control panel, panels, toolbars, contextual taskbar · artboards, pasteboard · Outline, Pixel Preview, Presentation Mode
+**Vocab callouts:** pixel, raster, bitmap, vector, path, object, rasterizing, rendering, resizing, bleed, trim, live area · application bar, properties panel, panels, toolbars, contextual taskbar · artboards, pasteboard · Outline, Pixel Preview, Presentation Mode
 
 ### FDD Unit 3 | Shape & Color *(reuse fdd4)*
 | # | Lesson | Source | ACP |

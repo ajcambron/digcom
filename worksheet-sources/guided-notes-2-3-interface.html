@@ -23,10 +23,10 @@
 }
 .ui-menubar { height: 22px; }
 .ui-appbar { height: 26px; }
-.ui-control { height: 24px; }
-.ui-mid { height: 150px; }
+.ui-mid { height: 170px; }
 .ui-toolbar { width: 68px; flex-shrink: 0; padding: 6px 4px; }
-.ui-panels { width: 130px; flex-shrink: 0; }
+.ui-rightcol { width: 170px; flex-shrink: 0; display: flex; flex-direction: column; }
+.ui-rightcol .ui-cell { flex: 1; flex-direction: column; gap: 3px; min-height: 0; }
 .ui-doc { flex: 1; min-width: 0; position: relative; }
 .ui-doc .artboard {
  position: absolute; top: 20px; bottom: 20px; left: 30px; right: 30px;
@@ -44,12 +44,11 @@
  </div>
  </div>
  <div class="ws-note"><strong>Label the diagram</strong> using the word bank: Application Bar
- &middot; Toolbar &middot; Panels &middot; Control Panel (Properties) &middot; Document Window
- &middot; Pasteboard &middot; Artboard</div>
+ &middot; Artboard &middot; Document Window &middot; Panels &middot; Pasteboard &middot;
+ Properties Panel &middot; Toolbar</div>
  <div class="ui-diagram">
  <div class="ui-row"><div class="ui-cell ui-menubar" style="flex:1;">Menu Bar</div></div>
  <div class="ui-row"><div class="ui-cell ui-appbar" style="flex:1;">1. <span class="ui-blank"></span></div></div>
- <div class="ui-row"><div class="ui-cell ui-control" style="flex:1;">2. <span class="ui-blank"></span>, changes based on what tool/object is selected</div></div>
  <div class="ui-row">
  <div class="ui-cell ui-toolbar ui-mid" style="flex-direction:column;">3.<span class="ui-blank" style="min-width:44px; margin-top:4px;"></span></div>
  <div class="ui-cell ui-doc ui-mid">
@@ -57,15 +56,18 @@
  <span style="position:absolute; bottom:4px; right:4px; font-size:8pt;">6. <span class="ui-blank" style="min-width:50px;"></span> (the gray area outside the artboard)</span>
  <span style="position:absolute; top:4px; right:8px; font-size:8pt; color:#B8AC8E;">5. <span class="ui-blank" style="min-width:60px;"></span></span>
  </div>
- <div class="ui-cell ui-panels ui-mid">4. <span class="ui-blank" style="min-width:50px;"></span><br>(Layers, Swatches, Color, and more)</div>
+ <div class="ui-rightcol ui-mid">
+ <div class="ui-cell"><span>2. <span class="ui-blank" style="min-width:110px;"></span></span><span>(changes with your selection)</span></div>
+ <div class="ui-cell"><span>4. <span class="ui-blank" style="min-width:110px;"></span></span><span>(Layers, Swatches, Color, and more)</span></div>
+ </div>
  </div>
  </div>
  <ol class="ws-items" start="1">
  <li>The <strong>Application Bar</strong> holds the workspace switcher, search, and
  arrange-documents controls.</li>
- <li>The <strong>Control Panel</strong> (also called the <strong>Properties panel</strong> in
- current Illustrator) is context-sensitive: select the Type tool and it shows font
- controls; select a shape and it shows fill/stroke controls.</li>
+ <li>The <strong>Properties panel</strong>, docked on the right side of the window, is
+ context-sensitive: select the Type tool and it shows font controls; select a shape and it
+ shows fill/stroke controls.</li>
  <li>The <strong>Toolbar</strong> holds your tools. A small triangle on a tool's icon means it's
  hiding a flyout group of related tools, click and hold to see them.</li>
  <li>A floating <strong>Contextual Task Bar</strong> can also appear right next to your
