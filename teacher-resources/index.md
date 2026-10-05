@@ -20,3 +20,5 @@ counterpart at all, so they're listed normally.
  manages the Mac labs.
 - [Classroom Tool Guides](tool-guides/index.md). Login flow and exact export settings for
  general classroom tools this school uses, starting with Canva.
+- [Teacher Tools](teacher-tools/index.md). Ready-to-use utilities for running the room, starting
+ with a date-stamped, printable [Hall Pass](teacher-tools/hall-pass.html).

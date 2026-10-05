@@ -1,0 +1,213 @@
+---
+layout: default
+title: Hall Pass
+parent: Teacher Tools
+grandparent: Teacher Resources
+nav_order: 1
+---
+<h1 class="no_toc">Hall Pass</h1>
+
+<p class="fs-5 fw-300">A one-page, letter-size hall pass stamped with today's date, microprinted
+through every section so an old or copied pass is easy to spot. Fill it in on screen, then print.</p>
+
+<ul>
+  <li><strong>Date:</strong> the "Valid only on" date, the footer date and the microprint all come
+  from the current date (Eastern time) and refresh every 30 seconds, so a page left open overnight
+  is still correct in the morning.</li>
+  <li><strong>Time out</strong> fills in with the current time automatically. Type over it to set
+  your own; clear it and it goes back to automatic.</li>
+  <li><strong>Print pass</strong> re-stamps the date and time, then opens the print dialog. Only the
+  pass prints, on one letter page, with the gold bands in color (turn on "Background graphics" if
+  your browser asks).</li>
+  <li><strong>Clear fields</strong> empties every field for the next student.</li>
+</ul>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+<style>
+  /* All selectors are prefixed hp- so this can be pasted into another page. */
+  @page { size: 8.5in 11in; margin: 0 }
+  .hp-root { font-family: Roboto, Arial, sans-serif; color: #000; }
+  .hp-root *, .hp-root *::before, .hp-root *::after { box-sizing: border-box }
+  .hp-bar { display: flex; gap: 12px; justify-content: center; padding: 12px 0; font: 500 15px Roboto, Arial, sans-serif }
+  .hp-bar button { font: 700 15px Roboto, Arial, sans-serif; padding: 10px 20px; border: 3px solid #000; background: #FFCC00; color: #000; cursor: pointer }
+  .hp-bar button.alt { background: #fff }
+  .hp-scaler { width: calc(836px * var(--s, 1)); height: calc(1080px * var(--s, 1)); margin: 0 auto; overflow: hidden; background: #fff; box-shadow: 0 2px 16px rgba(0,0,0,.25) }
+  .hp-sheet { position: relative; width: 836px; height: 1080px; background: #fff; transform: scale(var(--s, 1)); transform-origin: 0 0; overflow: hidden;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact }
+  .hp-sheet .abs { position: absolute }
+  .hp-gold { background: #FFCC00 }
+  .hp-micro { position: absolute; left: 25px; top: 25px; width: 786px; height: 1030px; border: 3px solid #000; overflow: hidden; pointer-events: none }
+  .hp-micro .row { position: absolute; left: 0; width: 1400px; height: 12px; line-height: 12px; font: 500 10px/12px Roboto, Arial, sans-serif; white-space: nowrap; color: #C4C4C4 }
+  .hp-micro .row.g { color: #8F7300 }
+  .hp-micro .wm { position: absolute; font: 900 150px/1 Roboto, Arial, sans-serif; color: transparent; -webkit-text-stroke: 2px #D9D9D9; white-space: nowrap; transform-origin: 0 0; transform: rotate(-28deg) }
+  .hp-lab { position: absolute; font-size: 24px; font-weight: 700; line-height: 1.2; white-space: nowrap }
+  .hp-sheet .hp-title { position: absolute; font-family: Roboto, Arial, sans-serif; color: #000; left: 49px; top: 92px; margin: 0; font-size: 96px; line-height: 1.1; font-weight: 300; white-space: nowrap }
+  .hp-sheet .hp-title b { font-weight: 900 }
+  .hp-date { position: absolute; left: 49px; top: 292px; font: 700 68px/1.1 'Roboto Slab', Georgia, serif; white-space: nowrap }
+  .hp-sheet input[type=text] { position: absolute; height: 45px; border: 0; border-bottom: 3px solid #000; background: transparent; padding: 0 4px; font: 500 28px Roboto, Arial, sans-serif; color: #000; outline: none; border-radius: 0 }
+  .hp-sheet input[type=text]:focus { background: rgba(255,255,255,.7) }
+  .hp-sheet input.time { font: 700 28px 'Roboto Slab', Georgia, serif }
+  .hp-chk { position: absolute; top: 800px; display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 500; line-height: 28px; cursor: pointer }
+  .hp-chk input { appearance: none; -webkit-appearance: none; margin: 0; width: 28px; height: 28px; border: 3px solid #000; background: #fff; display: grid; place-items: center }
+  .hp-chk input:checked::after { content: ""; width: 14px; height: 14px; background: #000 }
+  .hp-v { position: absolute; left: 49px; font-weight: 900; font-size: 28px; line-height: 1.2; white-space: nowrap }
+  .hp-v2 { position: absolute; left: 49px; font: 700 24px/1.2 'Roboto Slab', Georgia, serif; white-space: nowrap }
+
+  @media print {
+    html, body { margin: 0 !important; padding: 0 !important; background: #fff !important }
+    body * { visibility: hidden }
+    .hp-root, .hp-root * { visibility: visible }
+    .hp-root { position: absolute; left: 0; top: 0 }
+    .hp-bar { display: none !important }
+    .hp-scaler { --s: .97608 !important; margin: 0; box-shadow: none }
+    .hp-sheet input[type=text]::placeholder { color: transparent }
+  }
+</style>
+<div class="hp-root" id="hpRoot">
+  <div class="hp-bar">
+    <button id="hpPrint">Print pass</button>
+    <button id="hpReset" class="alt">Clear fields</button>
+  </div>
+
+  <div class="hp-scaler" id="hpScaler">
+    <div class="hp-sheet">
+      <div class="abs hp-gold" style="left:25px;top:236px;width:786px;height:160px"></div>
+      <div class="abs hp-gold" style="left:25px;top:956px;width:786px;height:99px"></div>
+      <div class="hp-micro" id="hpMicro"></div>
+      <div class="abs hp-gold" style="left:49px;top:196px;width:738px;height:8px"></div>
+
+      <div class="hp-lab" style="left:49px;top:56px">// NEWARK HIGH SCHOOL</div>
+      <div class="hp-title">HALL <b>PASS</b></div>
+
+      <div class="hp-lab" style="left:49px;top:252px">// VALID ONLY ON</div>
+      <div class="hp-date" id="hpLong"></div>
+
+      <div class="hp-lab" style="left:49px;top:440px">// STUDENT NAME</div>
+      <input type="text" style="left:49px;top:476px;width:738px" aria-label="Student name" autocomplete="off">
+
+      <div class="hp-lab" style="left:49px;top:548px">// PERIOD</div>
+      <input type="text" style="left:49px;top:584px;width:306px" aria-label="Period" autocomplete="off">
+      <div class="hp-lab" style="left:399px;top:548px">// TEACHER</div>
+      <input type="text" style="left:399px;top:584px;width:388px" aria-label="Teacher" autocomplete="off">
+
+      <div class="hp-lab" style="left:49px;top:656px">// TIME OUT</div>
+      <input type="text" class="time" id="hpTimeOut" style="left:49px;top:692px;width:306px" aria-label="Time out">
+      <div class="hp-lab" style="left:399px;top:656px">// TIME IN</div>
+      <input type="text" class="time" style="left:399px;top:692px;width:388px" aria-label="Time in" autocomplete="off">
+
+      <div class="hp-lab" style="left:49px;top:764px">// DESTINATION</div>
+      <label class="hp-chk" style="left:49px"><input type="checkbox">RESTROOM</label>
+      <label class="hp-chk" style="left:249px"><input type="checkbox">NURSE</label>
+      <label class="hp-chk" style="left:409px"><input type="checkbox">OFFICE</label>
+      <label class="hp-chk" style="left:589px"><input type="checkbox">OTHER</label>
+
+      <div class="hp-lab" style="left:49px;top:858px">// TEACHER SIGNATURE</div>
+      <input type="text" style="left:49px;top:894px;width:738px" aria-label="Teacher signature" autocomplete="off">
+
+      <div class="hp-v" style="top:972px">ALTERED OR UNDATED PASSES ARE VOID</div>
+      <div class="hp-v2" style="top:1010px"><span id="hpLong2"></span> | RETURN TO CLASS</div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* Keep comments in this script as block comments: the site's HTML compression joins lines, so a // comment would swallow the code after it. */
+(function () {
+  var TZ = 'America/New_York'; /* school time zone; set to '' to use the device clock */
+  var root = document.getElementById('hpRoot');
+  var scaler = document.getElementById('hpScaler');
+  var micro = document.getElementById('hpMicro');
+  var timeBox = document.getElementById('hpTimeOut');
+  var manualTime = false;
+
+  function parts(d, opts) {
+    var o = Object.assign({}, opts); if (TZ) o.timeZone = TZ;
+    var r = {};
+    new Intl.DateTimeFormat('en-US', o).formatToParts(d).forEach(function (p) { r[p.type] = p.value; });
+    return r;
+  }
+  function stamp(d) {
+    var a = parts(d, { weekday: 'short', month: '2-digit', day: '2-digit', year: 'numeric' });
+    var b = parts(d, { month: 'long', day: 'numeric', year: 'numeric' });
+    var c = parts(d, { month: 'short' });
+    var t = parts(d, { hour: 'numeric', minute: '2-digit', hour12: true });
+    var wd = a.weekday.toUpperCase(), yy = a.year.slice(2);
+    return {
+      A: wd + ' ' + a.month + '/' + a.day + '/' + yy,
+      B: b.month.toUpperCase() + ' ' + b.day + ' ' + b.year,
+      C: a.month + '-' + a.day + '-' + a.year + ' ' + wd,
+      long: wd + ', ' + c.month.toUpperCase() + ' ' + parseInt(a.day, 10) + ', ' + a.year,
+      wm: a.month + '.' + a.day + '.' + yy,
+      time: t.hour + ':' + t.minute + ' ' + t.dayPeriod.toUpperCase()
+    };
+  }
+
+  function render() {
+    var s = stamp(new Date());
+    document.getElementById('hpLong').textContent = s.long;
+    document.getElementById('hpLong2').textContent = s.long;
+    if (!manualTime) timeBox.value = s.time;
+
+    var tokens = [s.A, s.B, s.C, s.A + ' ' + s.time];
+    var offs = [0, -23, -46, -14, -37];
+    var html = '<div class="wm" style="left:-5px;top:620px">' + s.wm + '</div>' +
+               '<div class="wm" style="left:305px;top:880px">' + s.wm + '</div>';
+    for (var k = 0; k < 86; k++) {
+      var y = k * 12, mid = y + 6;
+      var gold = (mid > 211 && mid < 371) || (mid > 931 && mid < 1030);
+      var tok = tokens[k % tokens.length] + ' ';
+      html += '<div class="row' + (gold ? ' g' : '') + '" style="top:' + y + 'px;margin-left:' +
+              offs[k % 5] + 'px">' + new Array(Math.ceil(1400 / (tok.length * 6)) + 2).join(tok) + '</div>';
+    }
+    micro.innerHTML = html;
+  }
+
+  function fit() {
+    var w = (root.parentElement || document.body).clientWidth;
+    scaler.style.setProperty('--s', Math.min(1, w / 836));
+  }
+
+  timeBox.addEventListener('input', function () { manualTime = true; });
+  document.getElementById('hpPrint').addEventListener('click', function () {
+    manualTime = manualTime && timeBox.value.trim() !== '';
+    render();
+    window.print();
+  });
+  document.getElementById('hpReset').addEventListener('click', function () {
+    manualTime = false;
+    root.querySelectorAll('input[type=text]').forEach(function (i) { i.value = ''; });
+    root.querySelectorAll('input[type=checkbox]').forEach(function (i) { i.checked = false; });
+    render();
+  });
+  window.addEventListener('beforeprint', render);
+  window.addEventListener('resize', fit);
+
+  render(); fit();
+  setInterval(render, 30000); /* keeps the date correct if the page stays open overnight */
+})();
+</script>
+
+<h2 id="google-docs-version">Google Docs version</h2>
+
+<p>Prefer a pass that lives in Google Drive? <a href="{{ '/assets/teacher-tools/HallPass.gs' | relative_url }}" download>Download the Apps Script (HallPass.gs)</a>.
+It rebuilds a Google Doc as the same pass, with today's date microprinted through it.</p>
+
+<ol>
+  <li>Create a new, blank Google Doc (this Doc becomes the pass).</li>
+  <li>In the Doc, choose <strong>Extensions &gt; Apps Script</strong>, delete the starter code, and
+  paste in the contents of <code>HallPass.gs</code>. Save.</li>
+  <li>Choose the <code>setup</code> function in the toolbar and click <strong>Run</strong> once.
+  Approve the permissions prompt. This builds today's pass and installs a daily 6 AM refresh.</li>
+  <li>Reload the Doc. A <strong>Hall Pass</strong> menu appears:
+    <ul>
+      <li><strong>Issue pass now (stamps time out)</strong>: rebuilds with today's date and the current
+      time in TIME OUT. Use it right before printing.</li>
+      <li><strong>Refresh date only (blank time out)</strong>: rebuilds with today's date and a blank TIME OUT.</li>
+      <li><strong>Install daily refresh</strong>: re-installs the 6 AM trigger if it's ever removed.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>The school name, time zone, refresh hour and colors are set at the top of the script, in
+<code>CFG</code>.</p>
