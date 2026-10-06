@@ -77,12 +77,19 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 ## Step 2: Set up the receiver (X1R-C)
 
-1. Mount the X1R-C (with the flash on it) to a light stand or cold-shoe mount, and switch it
-   **ON**.
-2. Press **CH** repeatedly until the LCD shows **this kit's channel**.
-3. Press **GR** repeatedly until the LCD shows group **A**.
+1. Mount the X1R-C (with the flash on it) to a light stand or cold-shoe mount, and slide its
+   **power switch** (on the side) to **ON**.
+2. **Channel:** press the **CH** button. Each short press moves up one channel (1–32, wrapping
+   back to 1 after 32); hold it to scroll faster. Stop at **this kit's channel**: the number
+   under **CH** on the receiver's LCD.
+3. **Group:** press the **GR** button the same way (A–E, wrapping back to A after E) until the
+   LCD shows group **A** under **GR**.
 4. Press the X1R-C's **TEST** button. The flash should fire. If it doesn't, the problem is
    between the receiver and the flash (Step 1), not the radio link.
+
+{: .note }
+> The X1R-C's red **status lamp** blinking quickly means its batteries are low. Replace or
+> recharge them: low power means missed flashes, especially at a distance.
 
 ## Step 3: Set up the transmitter (X Pro-C)
 
@@ -155,7 +162,8 @@ flash.
 | Dark band across the top or bottom of the photo | Shutter speed is above the sync speed. Slow down to 1/200 s, or turn on HSS. |
 | Exposure jumps around from shot to shot | That's TTL reacting to the scene (white shirt, dark background). Switch group A to **M** for consistent results. |
 | Another group's flash fires when you shoot | Two kits on the same channel. Give each kit its own channel. |
-| Everything stops responding after a break | The X Pro-C goes to standby after 90 seconds idle (its LCD goes blank), and the 600EX-RT also sleeps. Half-press the camera's shutter or press any X Pro-C button, and press a button on the flash. To turn off the X Pro-C's standby, set C.Fn **STBY** to **OFF**. |
+| Everything stops responding after a break | The X Pro-C goes to standby after 90 seconds idle (its LCD goes blank), the X1R-C follows it into standby, and the 600EX-RT also sleeps. Half-press the camera's shutter or press any X Pro-C button; press the X1R-C's **TEST** or **GR** button; and press a button on the flash. To turn off the X Pro-C's standby, set C.Fn **STBY** to **OFF**. |
+| The X1R-C's red status lamp blinks quickly | Low batteries in the receiver. Replace or recharge them. |
 | The 600EX-RT's buttons don't respond, but it still fires | Its power switch is at **LOCK**. Slide it back to **ON**. |
 | Settings are a mess and you want to start over | Factory reset: press the two middle function buttons together until **RESET** shows on the X Pro-C's LCD. |
 
@@ -172,8 +180,10 @@ flash.
   The transmitter steps (Step 3), the troubleshooting, and the worked example this guide follows:
   "As a Wireless Original Flash Trigger" uses a Canon 600EX-RT on an X1R-C. Its compatibility table
   lists the 600EX-RT with the X1R-C.
-- **Godox** — [X1R-C Receiver Instruction Manual (PDF)](https://www.godox.com/static/upload/file/20230227/1677493794971383.pdf).
-  The receiver steps (Step 2): setting the channel and group with the **CH** and **Gr** buttons.
+- **Godox** — [X1-C (X1T-C transmitter / X1R-C receiver) Instruction Manual (PDF)](https://www.godox.com/static/upload/file/20230227/1677493794971383.pdf).
+  The receiver steps (Step 2): Names of Parts and the receiver panel (pp. 28–29), batteries and the
+  low-battery lamp (p. 30), and "Setting the Receiver": channel, group and power saving
+  (pp. 41–42).
 
 Godox notes that it doesn't test every Canon-compatible flash, so a quick test fire before a shoot
 is still worth doing.
