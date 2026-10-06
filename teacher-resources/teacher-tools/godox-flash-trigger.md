@@ -173,15 +173,20 @@ transmitter's controls are organized differently:
 
 ## Sources
 
-These steps come from Godox's own instruction manuals. The original **X Pro-C** manual (705-XPRZC0-00)
-uses the Canon 600EX-RT on an X1R-C as its worked example ("As a Wireless Original Flash Trigger"),
-and both the **X Pro-C** and **X Pro II-C** manuals list the 600EX-RT as compatible with the
-X1R-C. Godox notes that it doesn't test every Canon flash, so a quick test fire before a shoot is
-still worth doing.
+- **Canon** — [Speedlite 600EX-RT / 600EX Instruction Manual (PDF)](https://gdlp01.c-wss.com/gds/0/0300007510/04/600ex-600exrt-im5-en-es-fr.pdf).
+  The flash and camera steps: the LCD panel diagrams in Nomenclature (p. 10), "Installing the
+  Batteries" (p. 14), "Attaching and Detaching the Flash," "Fully Automatic Flash Shooting" (p. 18:
+  set MODE to ETTL and check that MASTER or SLAVE isn't displayed), "Using E-TTL II and E-TTL
+  Autoflash in the Shooting Modes" (p. 19: in M, the flash exposes the subject while shutter speed
+  and aperture set the background), "Clearing Speedlite Settings" (p. 38), and the wireless flash
+  notes (pp. 59–60).
+- **Godox** — [X Pro-C TTL Wireless Flash Trigger Instruction Manual (PDF)](https://www.godox.com/static/upload/file/20230227/1677489197748826.pdf).
+  The transmitter steps (Step 3), the troubleshooting, and the worked example this guide follows:
+  "As a Wireless Original Flash Trigger" uses a Canon 600EX-RT on an X1R-C. Its compatibility table
+  lists the 600EX-RT with the X1R-C.
+- **Godox** — [X Pro II-C TTL Wireless Flash Trigger Instruction Manual (PDF)](https://www.godox.com/static/upload/file/20230227/1677473137332773.pdf).
+  The [X Pro II-C section](#if-you-have-the-x-pro-ii-c), including the notes not to use full-shoot
+  with the X1R-C and to keep Legacy hot shoe off.
 
-The flash and camera steps come from Canon's **Speedlite 600EX-RT instruction manual**: the LCD
-panel diagrams in Nomenclature (p. 10), "Installing the Batteries" (p. 14), "Attaching and Detaching
-the Flash," "Clearing Speedlite Settings" (p. 38), "Fully Automatic Flash Shooting" (p. 18: set MODE to ETTL and check that MASTER or SLAVE
-isn't displayed), "Using E-TTL II and E-TTL Autoflash in the Shooting Modes" (p. 19: in M, the flash
-exposes the subject while shutter speed and aperture set the background), and the wireless flash
-notes (pp. 59–60).
+Godox notes that it doesn't test every Canon-compatible flash, so a quick test fire before a shoot
+is still worth doing.
