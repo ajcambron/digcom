@@ -86,9 +86,6 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 ## Step 3: Set up the transmitter (X Pro-C)
 
-These steps are for the original **X Pro-C**. Have the newer **X Pro II-C**? Use
-[its steps](#if-you-have-the-x-pro-ii-c) instead.
-
 1. With the camera off, slide the X Pro-C into the camera's hot shoe, tighten its lock wheel, and
    switch it **ON**. Then turn the camera on.
 2. **Channel:** press and hold **Zm/CH** until the channel number is selected, turn the select
@@ -143,24 +140,6 @@ press the group button beside **B** and set its mode and power separately. Now t
 say, a background or rim light (B) can be balanced from the camera without walking to either
 flash.
 
-## If you have the X Pro II-C
-
-The X Pro II-C works with the same X1R-C and 600EX-RT, and Steps 1, 2, 4 and 5 don't change. The
-transmitter's controls are organized differently:
-
-- **Channel, ID and groups live in one menu.** Press **MENU**, turn the select dial to the
-  wireless (radio waves) icon, and press **SET**. That page holds **CH** (channel), **ID** (set it
-  to **OFF**), **SCAN**, **DIST** and **GROUPS** (keep it at 5, A–E, for TTL).
-- **SCAN finds a quiet channel.** Choose **SCAN**, then **START**. It lists the spare channels with
-  the least interference, which is handy when several kits shoot in the same room.
-- **The mode button is labeled MODE/LOCK.** A short press cycles the selected group through
-  **TTL**, **M** and **--**; hold it for 2 seconds to lock or unlock.
-- **Keep the SHOOT custom function off "full-shoot"** (the three-person icon). Godox's
-  compatibility table says not to use full-shoot with the X1R-C.
-- **Keep "Legacy hot shoe" OFF.** With it on, TTL, HSS and multi-flash aren't available.
-- **HSS** works the same way: press **SYNC**. Standby is adjustable (60 seconds, 30 minutes, 60
-  minutes or off) under C.Fn **STBY**.
-
 ## Troubleshooting
 
 | Problem | Likely cause / fix |
@@ -193,9 +172,8 @@ transmitter's controls are organized differently:
   The transmitter steps (Step 3), the troubleshooting, and the worked example this guide follows:
   "As a Wireless Original Flash Trigger" uses a Canon 600EX-RT on an X1R-C. Its compatibility table
   lists the 600EX-RT with the X1R-C.
-- **Godox** — [X Pro II-C TTL Wireless Flash Trigger Instruction Manual (PDF)](https://www.godox.com/static/upload/file/20230227/1677473137332773.pdf).
-  The [X Pro II-C section](#if-you-have-the-x-pro-ii-c), including the notes not to use full-shoot
-  with the X1R-C and to keep Legacy hot shoe off.
+- **Godox** — [X1R-C Receiver Instruction Manual (PDF)](https://www.godox.com/static/upload/file/20230227/1677493794971383.pdf).
+  The receiver steps (Step 2): setting the channel and group with the **CH** and **Gr** buttons.
 
 Godox notes that it doesn't test every Canon-compatible flash, so a quick test fire before a shoot
 is still worth doing.
