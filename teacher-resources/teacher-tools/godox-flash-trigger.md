@@ -46,13 +46,14 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 1. Turn the 600EX-RT's power switch to **ON**. (Past ON is **LOCK**, which locks the flash's
    buttons; it still fires, but you can't change its settings.)
-2. **Turn off the flash's own Canon wireless.** Press the flash's wireless button until its LCD
-   shows **none** of these: the radio-waves icon **((•))** (Canon radio wireless), the zigzag
-   lightning icon (optical wireless), **MASTER**, **SLAVE**, or **LINKED SHOT**. With none of them
-   showing, the flash is in normal mode, as if it were sitting on a camera.
-3. Press the flash's **MODE** button until **ETTL** shows in the top-left corner of its LCD, and
-   check that **MASTER** or **SLAVE** is not displayed (Canon's own check for normal flash mode).
-   ETTL on the flash is what lets the X Pro-C switch it between TTL and manual remotely.
+2. **Turn off the flash's own Canon wireless and set ETTL, both with the MODE button.** Press the
+   flash's **MODE** button to select **wireless off**, then set the flash mode to **ETTL** (it shows
+   in the top-left corner of the LCD).
+3. **Check the LCD.** It should show **ETTL** and **none** of these: the radio-waves icon
+   **((•))** (Canon radio wireless), the zigzag lightning icon (optical wireless), **MASTER**,
+   **SLAVE**, or **LINKED SHOT**. That's normal flash mode, as if the flash were sitting on a
+   camera, and it's Canon's own check (no MASTER or SLAVE displayed). ETTL on the flash is what lets
+   the X Pro-C switch it between TTL and manual remotely.
 4. **Mount it on the receiver:** slip the flash's mounting foot **all the way** into the X1R-C's
    hot shoe, then slide the lock lever on the foot **to the right** until it clicks. A loose flash
    is the second most common reason nothing fires.
@@ -157,7 +158,7 @@ transmitter's controls are organized differently:
 | Flash skips shots when shooting fast | It hasn't recycled yet, or it's overheating. Slow down, lower the power, or switch from TTL to M (TTL spends power on a pre-flash). |
 | X1R-C **TEST** fires the flash, but the camera doesn't | The radio link: re-check the channel on both units, the ID (OFF), and that the X Pro-C is fully seated and locked in the camera's hot shoe. |
 | X1R-C **TEST** doesn't fire the flash | The flash isn't fully seated or locked on the receiver (lever slid right until it clicks), or the 600EX-RT is still in a **Canon wireless** mode (Step 1). |
-| The flash's LCD shows **MASTER**, **SLAVE**, a radio-waves icon, or a red **LINK** lamp | The 600EX-RT is still in its own Canon wireless mode, looking for another Canon flash instead of listening to the X1R-C. Turn its wireless off (Step 1). |
+| The flash's LCD shows **MASTER**, **SLAVE**, a radio-waves icon, or a red **LINK** lamp | The 600EX-RT is still in its own Canon wireless mode, looking for another Canon flash instead of listening to the X1R-C. Use the flash's **MODE** button to turn its wireless off (Step 1). |
 | Dark band across the top or bottom of the photo | Shutter speed is above the sync speed. Slow down to 1/200 s, or turn on HSS. |
 | Exposure jumps around from shot to shot | That's TTL reacting to the scene (white shirt, dark background). Switch group A to **M** for consistent results. |
 | Another group's flash fires when you shoot | Two kits on the same channel. Give each kit its own channel. |
