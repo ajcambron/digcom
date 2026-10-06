@@ -34,9 +34,10 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 ## Before you start
 
-- **Batteries:** X Pro-C, 2 × AA. X1R-C, 2 × AA. 600EX-RT, 4 × AA. Godox recommends alkaline
-  AAs in the transmitter (its battery meter reads NiMH rechargeables as low). Fresh batteries fix
-  more "it won't fire" problems than anything else.
+- **Batteries:** X Pro-C, 2 × AA. X1R-C, 2 × AA. 600EX-RT, 4 × AA. Use **alkaline** AAs: Canon
+  says **never use AA lithium** batteries in the 600EX-RT (they can get extremely hot) and warns
+  that non-alkaline AAs may not make good contact, and Godox's battery meter reads NiMH
+  rechargeables as low. Fresh batteries fix more "it won't fire" problems than anything else.
 - **Pick a channel for this kit (1–32)** and write it on a piece of tape on all three parts. If
   more than one student group shoots at once, give every kit a **different** channel, or one
   group's camera will fire another group's flash.
@@ -44,12 +45,19 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 ## Step 1: Set up the flash (600EX-RT)
 
 1. Turn the 600EX-RT **ON**.
-2. Press the flash's **Wireless** button until no wireless (radio or optical) indicator shows on
-   its LCD. The flash should be in normal, non-wireless mode.
-3. Press **MODE** until the flash shows **ETTL**. This lets the X Pro-C switch it between TTL and
-   manual remotely.
-4. Slide the flash's foot into the X1R-C's hot shoe and lock it with the flash's mounting lock
-   lever. A loose flash is the second most common reason nothing fires.
+2. **Turn off the flash's own Canon wireless.** Press the flash's wireless button until its LCD
+   shows **none** of these: the radio-waves icon **((•))** (Canon radio wireless), the zigzag
+   lightning icon (optical wireless), **MASTER**, **SLAVE**, or **LINKED SHOT**. With none of them
+   showing, the flash is in normal mode, as if it were sitting on a camera.
+3. Press **MODE** until **ETTL** shows in the top-left corner of the flash's LCD. This lets the
+   X Pro-C switch it between TTL and manual remotely.
+4. **Mount it on the receiver:** slip the flash's mounting foot **all the way** into the X1R-C's
+   hot shoe, then slide the lock lever on the foot **to the right** until it clicks. A loose flash
+   is the second most common reason nothing fires.
+
+{: .note }
+> To take the flash off, press the lock-release button on the foot while sliding the lock lever
+> **to the left**, then slide the flash out. Don't pull it out while it's locked.
 
 ## Step 2: Set up the receiver (X1R-C)
 
@@ -146,7 +154,8 @@ transmitter's controls are organized differently:
 | Flash won't fire when it's very close to the camera (under about half a meter) | Set the X Pro-C's C.Fn **DIST** to **0–30m** (close-distance mode). |
 | Flash skips shots when shooting fast | It hasn't recycled yet, or it's overheating. Slow down, lower the power, or switch from TTL to M (TTL spends power on a pre-flash). |
 | X1R-C **TEST** fires the flash, but the camera doesn't | The radio link: re-check the channel on both units, the ID (OFF), and that the X Pro-C is fully seated and locked in the camera's hot shoe. |
-| X1R-C **TEST** doesn't fire the flash | The flash isn't fully seated or locked on the receiver, or the 600EX-RT is still in a **wireless** mode (Step 1). |
+| X1R-C **TEST** doesn't fire the flash | The flash isn't fully seated or locked on the receiver (lever slid right until it clicks), or the 600EX-RT is still in a **Canon wireless** mode (Step 1). |
+| The flash's LCD shows **MASTER**, **SLAVE**, a radio-waves icon, or a red **LINK** lamp | The 600EX-RT is still in its own Canon wireless mode, looking for another Canon flash instead of listening to the X1R-C. Turn its wireless off (Step 1). |
 | Dark band across the top or bottom of the photo | Shutter speed is above the sync speed. Slow down to 1/200 s, or turn on HSS. |
 | Exposure jumps around from shot to shot | That's TTL reacting to the scene (white shirt, dark background). Switch group A to **M** for consistent results. |
 | Another group's flash fires when you shoot | Two kits on the same channel. Give each kit its own channel. |
@@ -161,6 +170,6 @@ and both the **X Pro-C** and **X Pro II-C** manuals list the 600EX-RT as compati
 X1R-C. Godox notes that it doesn't test every Canon flash, so a quick test fire before a shoot is
 still worth doing.
 
-Two steps aren't spelled out in Godox's manuals and come from standard practice for using a Canon
-Speedlite on a radio receiver: turning off the 600EX-RT's own wireless mode, and setting the
-flash to ETTL (Step 1). Check them against the 600EX-RT's manual if a flash behaves oddly.
+The flash steps come from Canon's **Speedlite 600EX-RT instruction manual**: "Installing the
+Batteries" (p. 14), "Attaching and Detaching the Flash," the LCD panel diagrams in Nomenclature
+(p. 10), and the wireless flash notes (pp. 59–60).
