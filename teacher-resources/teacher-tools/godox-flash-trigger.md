@@ -46,14 +46,18 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 1. Turn the 600EX-RT's power switch to **ON**. (Past ON is **LOCK**, which locks the flash's
    buttons; it still fires, but you can't change its settings.)
-2. **Turn off the flash's own Canon wireless and set ETTL, both with the MODE button.** Press the
-   flash's **MODE** button to select **wireless off**, then set the flash mode to **ETTL** (it shows
-   in the top-left corner of the LCD).
-3. **Check the LCD.** It should show **ETTL** and **none** of these: the radio-waves icon
-   **((•))** (Canon radio wireless), the zigzag lightning icon (optical wireless), **MASTER**,
-   **SLAVE**, or **LINKED SHOT**. That's normal flash mode, as if the flash were sitting on a
-   camera, and it's Canon's own check (no MASTER or SLAVE displayed). ETTL on the flash is what lets
-   the X Pro-C switch it between TTL and manual remotely.
+2. **Clear the flash's settings first, every time.** The school's flashes often get left in odd
+   modes, so start from a clean slate: press **function buttons 2 and 3** (the two middle buttons
+   under the LCD, labeled **CLEAR** between them) **at the same time for 2 seconds or longer**. The flash returns to normal shooting
+   (wireless off) and **ETTL** flash mode.
+
+   If you'd rather do it by hand: use the flash's **MODE** button to select **wireless off**, then
+   set the flash mode to **ETTL**.
+3. **Check the LCD.** It should show **ETTL** in the top-left corner and **none** of these: the
+   radio-waves icon **((•))** (Canon radio wireless), the zigzag lightning icon (optical wireless),
+   **MASTER**, **SLAVE**, or **LINKED SHOT**. That's normal flash mode, as if the flash were sitting
+   on a camera, and it's Canon's own check (no MASTER or SLAVE displayed). ETTL on the flash is what
+   lets the X Pro-C switch it between TTL and manual remotely.
 4. **Mount it on the receiver:** slip the flash's mounting foot **all the way** into the X1R-C's
    hot shoe, then slide the lock lever on the foot **to the right** until it clicks. A loose flash
    is the second most common reason nothing fires.
@@ -159,6 +163,7 @@ transmitter's controls are organized differently:
 | X1R-C **TEST** fires the flash, but the camera doesn't | The radio link: re-check the channel on both units, the ID (OFF), and that the X Pro-C is fully seated and locked in the camera's hot shoe. |
 | X1R-C **TEST** doesn't fire the flash | The flash isn't fully seated or locked on the receiver (lever slid right until it clicks), or the 600EX-RT is still in a **Canon wireless** mode (Step 1). |
 | The flash's LCD shows **MASTER**, **SLAVE**, a radio-waves icon, or a red **LINK** lamp | The 600EX-RT is still in its own Canon wireless mode, looking for another Canon flash instead of listening to the X1R-C. Use the flash's **MODE** button to turn its wireless off (Step 1). |
+| A flash still behaves oddly after clearing its settings | Clearing (function buttons 2 + 3) doesn't reset the flash's **custom functions (C.Fn/P.Fn)**, wireless channel or wireless radio ID. Someone may have changed a custom function; check them in the 600EX-RT manual (p. 92). |
 | Dark band across the top or bottom of the photo | Shutter speed is above the sync speed. Slow down to 1/200 s, or turn on HSS. |
 | Exposure jumps around from shot to shot | That's TTL reacting to the scene (white shirt, dark background). Switch group A to **M** for consistent results. |
 | Another group's flash fires when you shoot | Two kits on the same channel. Give each kit its own channel. |
@@ -176,7 +181,7 @@ still worth doing.
 
 The flash and camera steps come from Canon's **Speedlite 600EX-RT instruction manual**: the LCD
 panel diagrams in Nomenclature (p. 10), "Installing the Batteries" (p. 14), "Attaching and Detaching
-the Flash," "Fully Automatic Flash Shooting" (p. 18: set MODE to ETTL and check that MASTER or SLAVE
+the Flash," "Clearing Speedlite Settings" (p. 38), "Fully Automatic Flash Shooting" (p. 18: set MODE to ETTL and check that MASTER or SLAVE
 isn't displayed), "Using E-TTL II and E-TTL Autoflash in the Shooting Modes" (p. 19: in M, the flash
 exposes the subject while shutter speed and aperture set the background), and the wireless flash
 notes (pp. 59–60).
