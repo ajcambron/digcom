@@ -53,6 +53,10 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 ## Step 1: Set up the flash (600EX-RT)
 
+![Canon 600EX-RT back panel: the MODE button on the left, and the CLEAR label printed between function buttons 2 and 3 above the dial]({{ '/assets/images/teacher-tools/flash/600ex-rt-mode-button.png' | relative_url }}){: style="max-width: 360px"}
+
+*The 600EX-RT's <strong>MODE</strong> button (arrow), and <strong>CLEAR</strong> printed between function buttons 2 and 3, the pair you hold to clear its settings. From Canon's 600EX-RT manual, p. 18.*
+
 1. Turn the 600EX-RT's power switch to **ON**. (Past ON is **LOCK**, which locks the flash's
    buttons; it still fires, but you can't change its settings.)
 2. **Clear the flash's settings first, every time.** The school's flashes often get left in odd
@@ -67,15 +71,28 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
    radio-waves icon **((•))** (Canon radio wireless), the zigzag lightning icon (optical wireless),
    **MASTER**, **SLAVE**, or **LINKED SHOT**. That's normal flash mode, as if the flash were sitting
    on a camera (Canon's own check is that MASTER or SLAVE isn't displayed).
+
+   ![Canon 600EX-RT LCD diagrams for Master and Slave modes, showing the MASTER and SLAVE labels and the radio and optical wireless icons]({{ '/assets/images/teacher-tools/flash/600ex-rt-wireless-lcd.png' | relative_url }}){: style="max-width: 560px"}
+
+   *What you should **not** see: these are the 600EX-RT's Canon wireless screens (Master on top, Slave below). If the LCD looks like either one, wireless is still on. From Canon's manual, p. 10.*
+
 5. **Mount it on the receiver:** slip the flash's mounting foot **all the way** into the X1R-C's
    hot shoe, then slide the lock lever on the foot **to the right** until it clicks. A loose flash
    is the second most common reason nothing fires.
+
+![Canon diagram: slip the mounting foot all the way in, slide the lock lever right to lock, and press the lock-release button while sliding the lever left to detach]({{ '/assets/images/teacher-tools/flash/600ex-rt-attach-lock.png' | relative_url }})
+
+*Mounting and removing the flash. The receiver's hot shoe works just like the camera's. From Canon's manual, "Attaching and Detaching the Flash."*
 
 {: .note }
 > To take the flash off, press the lock-release button on the foot while sliding the lock lever
 > **to the left**, then slide the flash out. Don't pull it out while it's locked.
 
 ## Step 2: Set up the receiver (X1R-C)
+
+![Godox X1R-C receiver parts: TEST button on the front, power switch on the side, status lamp, hot shoe on top, and the CH and GR buttons beside the LCD on the back]({{ '/assets/images/teacher-tools/flash/x1r-c-parts.png' | relative_url }}){: style="max-width: 640px"}
+
+*X1R-C controls: the <strong>power switch</strong> is on the side, <strong>TEST</strong> and the red <strong>status lamp</strong> are on the front, and <strong>CH</strong> and <strong>GR</strong> sit beside the LCD on the back. From Godox's X1-C manual, p. 28.*
 
 1. Mount the X1R-C (with the flash on it) to a light stand or cold-shoe mount, and slide its
    **power switch** (on the side) to **ON**.
@@ -92,6 +109,14 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 > recharge them: low power means missed flashes, especially at a distance.
 
 ## Step 3: Set up the transmitter (X Pro-C)
+
+![Godox X Pro-C parts: five group buttons left of the LCD, four function buttons below it, MODE/LOCK, TEST, select dial with SET in the center, MENU, TCM, status lamp, and the power switch on the side]({{ '/assets/images/teacher-tools/flash/xpro-c-parts.png' | relative_url }}){: style="max-width: 640px"}
+
+*X Pro-C controls: <strong>group buttons 1–5</strong> (groups A–E) down the left of the LCD, <strong>function buttons 1–4</strong> under it, <strong>MODE/LOCK</strong> and <strong>MENU</strong> on either side of the <strong>select dial</strong> (press its center for <strong>SET</strong>), and the <strong>power switch</strong> on the side. From Godox's X Pro-C manual, p. 26.*
+
+![Godox X Pro-C LCD panel: channel at top left, group rows A to E with mode and power, and function button labels Zm/CH, SYNC, ALL and MOD along the bottom]({{ '/assets/images/teacher-tools/flash/xpro-c-lcd.png' | relative_url }}){: style="max-width: 640px"}
+
+*The function buttons do whatever the label just above each one says. On the main screen that's <strong>Zm/CH</strong> (button 1), <strong>SYNC</strong> (button 2), <strong>ALL</strong> (button 3) and <strong>MOD</strong> (button 4). From Godox's X Pro-C manual, p. 27.*
 
 1. With the camera off, slide the X Pro-C into the camera's hot shoe, tighten its lock wheel, and
    switch it **ON**. Then turn the camera on.
