@@ -9,7 +9,7 @@ nav_order: 2
 {: .no_toc }
 
 How to fire a Canon Speedlite 600EX-RT off the camera using the Godox X Pro-C transmitter (on the
-camera) and a Godox X1R-C receiver (under the flash), in either TTL (automatic) or manual power.
+camera) and a Godox X1R-C receiver (under the flash), with the flash's power set from the camera.
 {: .fs-5 .fw-300 }
 
 <details open markdown="block">
@@ -27,7 +27,7 @@ camera) and a Godox X1R-C receiver (under the flash), in either TTL (automatic) 
 |:------|:--------------|:--------|
 | **Godox X Pro-C** (transmitter) | Camera's hot shoe | The remote control. You set the flash's mode and power here, and it sends the signal when you take the picture. |
 | **Godox X1R-C** (receiver) | Under the flash, on a light stand | Catches the X Pro-C's radio signal and passes it to the flash through the hot-shoe contacts. |
-| **Canon Speedlite 600EX-RT** (flash) | Mounted on the X1R-C | Makes the light. Set it up once as a plain on-camera flash, then leave its settings alone: the X Pro-C controls it from the camera. |
+| **Canon Speedlite 600EX-RT** (flash) | Mounted on the X1R-C | Makes the light. Set it up once in **M** (manual) mode, then leave its settings alone: the X Pro-C sets its power from the camera. |
 
 The X1R-C is what lets the 600EX-RT join the Godox system. The 600EX-RT has its own built-in
 Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a camera.
@@ -57,17 +57,17 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
    buttons; it still fires, but you can't change its settings.)
 2. **Clear the flash's settings first, every time.** The school's flashes often get left in odd
    modes, so start from a clean slate: press **function buttons 2 and 3** (the two middle buttons
-   under the LCD, labeled **CLEAR** between them) **at the same time for 2 seconds or longer**. The flash returns to normal shooting
-   (wireless off) and **ETTL** flash mode.
-
-   If you'd rather do it by hand: use the flash's **MODE** button to select **wireless off**, then
-   set the flash mode to **ETTL**.
-3. **Check the LCD.** It should show **ETTL** in the top-left corner and **none** of these: the
+   under the LCD, labeled **CLEAR** between them) **at the same time for 2 seconds or longer**. The
+   flash returns to normal shooting (wireless off) in ETTL mode.
+3. **Set the flash to M.** Press the flash's **MODE** button until **M** (manual) shows in the
+   top-left corner of the LCD. The flash **must be in M** to work with the X1R-C and X Pro-C;
+   clearing leaves it in ETTL, so don't skip this. (The **MODE** button is also where wireless is
+   turned off if you set the flash up by hand instead of clearing it.)
+4. **Check the LCD.** It should show **M** in the top-left corner and **none** of these: the
    radio-waves icon **((•))** (Canon radio wireless), the zigzag lightning icon (optical wireless),
    **MASTER**, **SLAVE**, or **LINKED SHOT**. That's normal flash mode, as if the flash were sitting
-   on a camera, and it's Canon's own check (no MASTER or SLAVE displayed). ETTL on the flash is what
-   lets the X Pro-C switch it between TTL and manual remotely.
-4. **Mount it on the receiver:** slip the flash's mounting foot **all the way** into the X1R-C's
+   on a camera (Canon's own check is that MASTER or SLAVE isn't displayed).
+5. **Mount it on the receiver:** slip the flash's mounting foot **all the way** into the X1R-C's
    hot shoe, then slide the lock lever on the foot **to the right** until it clicks. A loose flash
    is the second most common reason nothing fires.
 
@@ -100,28 +100,29 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 3. **Wireless ID: set it to OFF.** Press **MENU** to open the custom functions (C.Fn), choose
    **ID**, and press **SET** to choose **OFF**. Godox's manual says to keep ID **OFF** with units
    that have no ID setting, like the X1R-C: with an ID number turned on, the flash never fires.
-4. **Groups: check that C.Fn GROUP is set to 5 (A–E).** In 16-group mode (0–F) the X Pro-C only
-   offers manual, so TTL disappears.
+4. **Groups: check that C.Fn GROUP is set to 5 (A–E),** matching the X1R-C's groups A–E.
 5. **Group A mode:** the five buttons down the left side of the LCD are the group buttons, one
    beside each group row. Press the one beside **A**, then press **MODE** to cycle that group
-   through **TTL**, **M** (manual) and **--** (off). Pick TTL or M (see below). Set any unused
-   groups to **--**.
+   through **TTL**, **M** (manual) and **--** (off), and stop at **M**. Set any unused groups to
+   **--**.
 
 {: .note }
 > Lock the X Pro-C once it's set up, so a bumped button doesn't change anything mid-shoot:
 > press and hold **MODE** for 2 seconds until **LOCKED** shows at the bottom of the LCD. Hold
 > **MODE** for 2 seconds again to unlock.
 
-## Step 4: TTL or manual?
+## Step 4: Set the flash power
 
-| | **TTL** (automatic) | **M** (manual) |
-|:--|:--|:--|
-| How it works | Fires a quick pre-flash, measures it, and picks the power for you. | Fires at exactly the power you set, every time. |
-| Adjust it with | **Flash exposure compensation**: press group A's button and turn the select dial (−3 to +3, in ⅓ stops), then press **SET**. | **Power**: press group A's button and turn the select dial (from the minimum up to 1/1, full power), then press **SET**. |
-| Best for | Moving subjects, changing distances, quick setups. | Portraits and product shots where the flash and subject don't move: the result is the same shot after shot. |
+With the flash and group A both in **M**, the flash fires at exactly the power you set on the
+X Pro-C, shot after shot, which is what you want for portraits and product shots.
 
-**A good classroom default:** start in TTL to get close fast, then switch to M at about the same
-look once the set is locked in, so every frame matches.
+1. Press group A's button and turn the select dial. Power runs from the minimum up to **1/1** (full
+   power) in small steps.
+2. Press **SET** to confirm.
+3. Start around **1/16**, take a test shot, then go up for a brighter flash or down for a dimmer
+   one. Each full stop doubles or halves the light (1/16 → 1/8 is twice as bright).
+
+TTL (automatic flash) isn't used with this setup, because the flash has to stay in M.
 
 ## Step 5: Camera settings
 
@@ -143,7 +144,7 @@ look once the set is locked in, so every frame matches.
 ## Adding a second flash
 
 Give the second 600EX-RT its own X1R-C, set to the **same channel** but group **B**. On the X Pro-C,
-press the group button beside **B** and set its mode and power separately. Now the key light (A) and,
+press the group button beside **B**, set it to **M**, and set its power separately. Now the key light (A) and,
 say, a background or rim light (B) can be balanced from the camera without walking to either
 flash.
 
@@ -152,15 +153,14 @@ flash.
 | Problem | Likely cause / fix |
 |:--------|:-------------------|
 | Nothing fires | Channels don't match; the X Pro-C's wireless **ID isn't OFF**; group A is set to **--**; a dead battery in any of the three parts; the X Pro-C isn't fully seated in the camera's hot shoe. |
-| TTL isn't offered, only M | C.Fn **GROUP** is set to 16 groups (0–F). Set it back to 5 (A–E). |
+| The flash fires, but changing power on the X Pro-C doesn't change it | The 600EX-RT isn't in **M**. Clearing its settings puts it in ETTL; press the flash's **MODE** button until **M** shows (Step 1). Also check that group A on the X Pro-C is set to **M**. |
 | Flash won't fire when it's very close to the camera (under about half a meter) | Set the X Pro-C's C.Fn **DIST** to **0–30m** (close-distance mode). |
-| Flash skips shots when shooting fast | It hasn't recycled yet, or it's overheating. Slow down, lower the power, or switch from TTL to M (TTL spends power on a pre-flash). |
+| Flash skips shots when shooting fast | It hasn't recycled yet, or it's overheating. Slow down, or lower the power so it recharges faster. |
 | X1R-C **TEST** fires the flash, but the camera doesn't | The radio link: re-check the channel on both units, the ID (OFF), and that the X Pro-C is fully seated and locked in the camera's hot shoe. |
 | X1R-C **TEST** doesn't fire the flash | The flash isn't fully seated or locked on the receiver (lever slid right until it clicks), or the 600EX-RT is still in a **Canon wireless** mode (Step 1). |
 | The flash's LCD shows **MASTER**, **SLAVE**, a radio-waves icon, or a red **LINK** lamp | The 600EX-RT is still in its own Canon wireless mode, looking for another Canon flash instead of listening to the X1R-C. Use the flash's **MODE** button to turn its wireless off (Step 1). |
 | A flash still behaves oddly after clearing its settings | Clearing (function buttons 2 + 3) doesn't reset the flash's **custom functions (C.Fn/P.Fn)**, wireless channel or wireless radio ID. Someone may have changed a custom function; check them in the 600EX-RT manual (p. 92). |
 | Dark band across the top or bottom of the photo | Shutter speed is above the sync speed. Slow down to 1/200 s, or turn on HSS. |
-| Exposure jumps around from shot to shot | That's TTL reacting to the scene (white shirt, dark background). Switch group A to **M** for consistent results. |
 | Another group's flash fires when you shoot | Two kits on the same channel. Give each kit its own channel. |
 | Everything stops responding after a break | The X Pro-C goes to standby after 90 seconds idle (its LCD goes blank), the X1R-C follows it into standby, and the 600EX-RT also sleeps. Half-press the camera's shutter or press any X Pro-C button; press the X1R-C's **TEST** or **GR** button; and press a button on the flash. To turn off the X Pro-C's standby, set C.Fn **STBY** to **OFF**. |
 | The X1R-C's red status lamp blinks quickly | Low batteries in the receiver. Replace or recharge them. |
@@ -172,7 +172,7 @@ flash.
 - **Canon** — [Speedlite 600EX-RT / 600EX Instruction Manual (PDF)](https://gdlp01.c-wss.com/gds/0/0300007510/04/600ex-600exrt-im5-en-es-fr.pdf).
   The flash and camera steps: the LCD panel diagrams in Nomenclature (p. 10), "Installing the
   Batteries" (p. 14), "Attaching and Detaching the Flash," "Fully Automatic Flash Shooting" (p. 18:
-  set MODE to ETTL and check that MASTER or SLAVE isn't displayed), "Using E-TTL II and E-TTL
+  the MODE button, and checking that MASTER or SLAVE isn't displayed), "Using E-TTL II and E-TTL
   Autoflash in the Shooting Modes" (p. 19: in M, the flash exposes the subject while shutter speed
   and aperture set the background), "Clearing Speedlite Settings" (p. 38), and the wireless flash
   notes (pp. 59–60).
@@ -181,7 +181,8 @@ flash.
   "As a Wireless Original Flash Trigger" uses a Canon 600EX-RT on an X1R-C. Its compatibility table
   lists the 600EX-RT with the X1R-C.
 - **Godox** — [X1-C (X1T-C transmitter / X1R-C receiver) Instruction Manual (PDF)](https://www.godox.com/static/upload/file/20230227/1677493794971383.pdf).
-  The receiver steps (Step 2): Names of Parts and the receiver panel (pp. 28–29), batteries and the
+  The receiver steps (Step 2): Names of Parts and the receiver panel (pp. 28–29), setting the
+  speedlite on the receiver to M mode (p. 31), batteries and the
   low-battery lamp (p. 30), and "Setting the Receiver": channel, group and power saving
   (pp. 41–42).
 
