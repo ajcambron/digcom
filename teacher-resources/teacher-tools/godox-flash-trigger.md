@@ -44,13 +44,15 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 ## Step 1: Set up the flash (600EX-RT)
 
-1. Turn the 600EX-RT **ON**.
+1. Turn the 600EX-RT's power switch to **ON**. (Past ON is **LOCK**, which locks the flash's
+   buttons; it still fires, but you can't change its settings.)
 2. **Turn off the flash's own Canon wireless.** Press the flash's wireless button until its LCD
    shows **none** of these: the radio-waves icon **((•))** (Canon radio wireless), the zigzag
    lightning icon (optical wireless), **MASTER**, **SLAVE**, or **LINKED SHOT**. With none of them
    showing, the flash is in normal mode, as if it were sitting on a camera.
-3. Press **MODE** until **ETTL** shows in the top-left corner of the flash's LCD. This lets the
-   X Pro-C switch it between TTL and manual remotely.
+3. Press the flash's **MODE** button until **ETTL** shows in the top-left corner of its LCD, and
+   check that **MASTER** or **SLAVE** is not displayed (Canon's own check for normal flash mode).
+   ETTL on the flash is what lets the X Pro-C switch it between TTL and manual remotely.
 4. **Mount it on the receiver:** slip the flash's mounting foot **all the way** into the X1R-C's
    hot shoe, then slide the lock lever on the foot **to the right** until it clicks. A loose flash
    is the second most common reason nothing fires.
@@ -106,8 +108,8 @@ look once the set is locked in, so every frame matches.
 ## Step 5: Camera settings
 
 1. Put the camera in **M** (manual exposure).
-2. **Shutter speed:** at or below the camera's flash sync speed (usually **1/200 s** on Canon
-   bodies). Shutter speed controls how much *room light* shows up. The flash is so brief that
+2. **Shutter speed:** at or below the camera's **maximum flash sync speed** (1/200 s or 1/250 s
+   on most Canon bodies; check the camera's manual). Shutter speed controls how much *room light* shows up. The flash is so brief that
    shutter speed barely changes it.
 3. **Aperture and ISO:** aperture controls how bright the *flash* looks (and the depth of field).
    Start around **f/5.6, ISO 100–400** and adjust from there.
@@ -160,6 +162,7 @@ transmitter's controls are organized differently:
 | Exposure jumps around from shot to shot | That's TTL reacting to the scene (white shirt, dark background). Switch group A to **M** for consistent results. |
 | Another group's flash fires when you shoot | Two kits on the same channel. Give each kit its own channel. |
 | Everything stops responding after a break | The X Pro-C goes to standby after 90 seconds idle (its LCD goes blank), and the 600EX-RT also sleeps. Half-press the camera's shutter or press any X Pro-C button, and press a button on the flash. To turn off the X Pro-C's standby, set C.Fn **STBY** to **OFF**. |
+| The 600EX-RT's buttons don't respond, but it still fires | Its power switch is at **LOCK**. Slide it back to **ON**. |
 | Settings are a mess and you want to start over | Factory reset: press the two middle function buttons together until **RESET** shows on the X Pro-C's LCD. |
 
 ## Sources
@@ -170,6 +173,9 @@ and both the **X Pro-C** and **X Pro II-C** manuals list the 600EX-RT as compati
 X1R-C. Godox notes that it doesn't test every Canon flash, so a quick test fire before a shoot is
 still worth doing.
 
-The flash steps come from Canon's **Speedlite 600EX-RT instruction manual**: "Installing the
-Batteries" (p. 14), "Attaching and Detaching the Flash," the LCD panel diagrams in Nomenclature
-(p. 10), and the wireless flash notes (pp. 59–60).
+The flash and camera steps come from Canon's **Speedlite 600EX-RT instruction manual**: the LCD
+panel diagrams in Nomenclature (p. 10), "Installing the Batteries" (p. 14), "Attaching and Detaching
+the Flash," "Fully Automatic Flash Shooting" (p. 18: set MODE to ETTL and check that MASTER or SLAVE
+isn't displayed), "Using E-TTL II and E-TTL Autoflash in the Shooting Modes" (p. 19: in M, the flash
+exposes the subject while shutter speed and aperture set the background), and the wireless flash
+notes (pp. 59–60).
