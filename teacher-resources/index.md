@@ -20,5 +20,7 @@ counterpart at all, so they're listed normally.
  manages the Mac labs.
 - [Classroom Tool Guides](tool-guides/index.md). Login flow and exact export settings for
  general classroom tools this school uses, starting with Canva.
-- [Teacher Tools](teacher-tools/index.md). Ready-to-use utilities for running the room, starting
- with a date-stamped, printable [Hall Pass](teacher-tools/hall-pass.html).
+- [Teacher Tools](teacher-tools/index.md). Ready-to-use utilities and equipment guides for running
+ the room: a date-stamped, printable [Hall Pass](teacher-tools/hall-pass.html) and
+ [off-camera flash setup](teacher-tools/godox-flash-trigger.md) for the Godox X Pro-C, X1R-C and
+ Canon 600EX-RT.

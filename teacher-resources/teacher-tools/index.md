@@ -8,5 +8,5 @@ permalink: /teacher-resources/teacher-tools/
 
 # Teacher Tools
 
-Small, ready-to-use utilities for running the room: open one, use it, print it. Nothing here is
-student-facing.
+Small, ready-to-use utilities and equipment guides for running the room: open one, use it, print
+it.
