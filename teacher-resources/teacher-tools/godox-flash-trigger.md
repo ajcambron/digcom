@@ -34,10 +34,19 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 ## Before you start
 
-- **Batteries:** X Pro-C, 2 × AA. X1R-C, 2 × AA. 600EX-RT, 4 × AA. Use **alkaline** AAs: Canon
-  says **never use AA lithium** batteries in the 600EX-RT (they can get extremely hot) and warns
-  that non-alkaline AAs may not make good contact, and Godox's battery meter reads NiMH
-  rechargeables as low. Fresh batteries fix more "it won't fire" problems than anything else.
+- **Batteries:** X Pro-C, 2 × AA. X1R-C, 2 × AA. 600EX-RT, 4 × AA. Use **rechargeable NiMH AAs**
+  (low-self-discharge cells hold their charge best between uses). In a classroom kit they're the
+  better choice: alkaline AAs left in a case over a break leak and **corrode** the battery
+  contacts, which can ruin a flash or trigger. NiMH cells don't leak that way, they're cheaper
+  over a school year, and they help a flash recycle quickly. A few things to know:
+  - **Charge them, and keep them out of storage.** Charge the sets after each shoot, and take the
+    batteries out of all three parts before a kit goes on the shelf.
+  - **Ignore the X Pro-C's battery meter.** Godox's meter is calibrated for alkaline, so it reads
+    fully charged NiMH cells as low. Judge by whether the units fire, not by the bars.
+  - **Never use AA lithium batteries** in the 600EX-RT: Canon warns they can get extremely hot.
+  - **If a flash cuts out or won't power on with good cells,** reseat the batteries. Canon notes
+    that non-alkaline AAs can make poorer contact because of their shape.
+  - Fresh, charged batteries fix more "it won't fire" problems than anything else.
 - **Pick a channel for this kit (1–32)** and write it on a piece of tape on all three parts. If
   more than one student group shoots at once, give every kit a **different** channel, or one
   group's camera will fire another group's flash.
