@@ -34,8 +34,9 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 ## Before you start
 
-- **Batteries:** X Pro-C, 2 × AA. X1R-C, 2 × AA. 600EX-RT, 4 × AA. Fresh batteries fix more
-  "it won't fire" problems than anything else.
+- **Batteries:** X Pro-C, 2 × AA. X1R-C, 2 × AA. 600EX-RT, 4 × AA. Godox recommends alkaline
+  AAs in the transmitter (its battery meter reads NiMH rechargeables as low). Fresh batteries fix
+  more "it won't fire" problems than anything else.
 - **Pick a channel for this kit (1–32)** and write it on a piece of tape on all three parts. If
   more than one student group shoots at once, give every kit a **different** channel, or one
   group's camera will fire another group's flash.
@@ -61,27 +62,34 @@ Canon radio, but it isn't used here: the flash just "thinks" it's sitting on a c
 
 ## Step 3: Set up the transmitter (X Pro-C)
 
-1. Slide the X Pro-C into the camera's hot shoe, tighten its lock wheel, and switch it **ON**.
-2. **Channel:** press and hold **Zm/CH** to open the channel setting, turn the select dial to
-   **this kit's channel**, and press **SET**. It must match the X1R-C exactly.
-3. **Wireless ID: set it to OFF.** In the X Pro-C's custom functions (C.Fn), find **ID** and set
-   it to **OFF**. The X1R-C has no wireless ID setting, so if the X Pro-C has an ID number turned
-   on, the receiver ignores it and the flash never fires.
-4. **Group A mode:** press the **A** group button, then press **MODE** to cycle that group through
-   **TTL**, **M** (manual) and **--** (off). Pick TTL or M (see below). Set any unused groups to
-   **--**.
+These steps are for the original **X Pro-C**. Have the newer **X Pro II-C**? Use
+[its steps](#if-you-have-the-x-pro-ii-c) instead.
+
+1. With the camera off, slide the X Pro-C into the camera's hot shoe, tighten its lock wheel, and
+   switch it **ON**. Then turn the camera on.
+2. **Channel:** press and hold **Zm/CH** until the channel number is selected, turn the select
+   dial to **this kit's channel**, and press **SET**. It must match the X1R-C exactly.
+3. **Wireless ID: set it to OFF.** Press **MENU** to open the custom functions (C.Fn), choose
+   **ID**, and press **SET** to choose **OFF**. Godox's manual says to keep ID **OFF** with units
+   that have no ID setting, like the X1R-C: with an ID number turned on, the flash never fires.
+4. **Groups: check that C.Fn GROUP is set to 5 (A–E).** In 16-group mode (0–F) the X Pro-C only
+   offers manual, so TTL disappears.
+5. **Group A mode:** the five buttons down the left side of the LCD are the group buttons, one
+   beside each group row. Press the one beside **A**, then press **MODE** to cycle that group
+   through **TTL**, **M** (manual) and **--** (off). Pick TTL or M (see below). Set any unused
+   groups to **--**.
 
 {: .note }
 > Lock the X Pro-C once it's set up, so a bumped button doesn't change anything mid-shoot:
-> press and hold **MODE** for 2 seconds until **LOCKED** shows on the LCD. Hold **MODE** again
-> to unlock.
+> press and hold **MODE** for 2 seconds until **LOCKED** shows at the bottom of the LCD. Hold
+> **MODE** for 2 seconds again to unlock.
 
 ## Step 4: TTL or manual?
 
 | | **TTL** (automatic) | **M** (manual) |
 |:--|:--|:--|
 | How it works | Fires a quick pre-flash, measures it, and picks the power for you. | Fires at exactly the power you set, every time. |
-| Adjust it with | **Flash exposure compensation**: select group A and turn the dial (−3 to +3 stops), then press **SET**. | **Power**: select group A and turn the dial (1/1 is full power down to the minimum), then press **SET**. |
+| Adjust it with | **Flash exposure compensation**: press group A's button and turn the select dial (−3 to +3, in ⅓ stops), then press **SET**. | **Power**: press group A's button and turn the select dial (from the minimum up to 1/1, full power), then press **SET**. |
 | Best for | Moving subjects, changing distances, quick setups. | Portraits and product shots where the flash and subject don't move: the result is the same shot after shot. |
 
 **A good classroom default:** start in TTL to get close fast, then switch to M at about the same
@@ -99,40 +107,60 @@ look once the set is locked in, so every frame matches.
 
 {: .important }
 > **Need a faster shutter speed** (bright daylight, or a wide-open aperture)? Turn on **high-speed
-> sync (HSS)** with the X Pro-C's **SYNC** button: the HSS symbol appears on its LCD. Without HSS,
-> shutter speeds above the sync speed give a dark band across part of the frame. HSS costs a lot of
-> flash power, so the flash needs to be closer or set higher.
+> sync (HSS)**: press the function button labeled **SYNC** on the LCD until the HSS symbol (an
+> **H** with a lightning bolt) shows. Press it again for second-curtain sync. Without HSS, shutter
+> speeds above the sync speed give a dark band across part of the frame. HSS costs a lot of flash
+> power, so the flash needs to be closer or set higher.
 
 ## Adding a second flash
 
 Give the second 600EX-RT its own X1R-C, set to the **same channel** but group **B**. On the X Pro-C,
-press the **B** group button and set its mode and power separately. Now the key light (A) and,
+press the group button beside **B** and set its mode and power separately. Now the key light (A) and,
 say, a background or rim light (B) can be balanced from the camera without walking to either
 flash.
+
+## If you have the X Pro II-C
+
+The X Pro II-C works with the same X1R-C and 600EX-RT, and Steps 1, 2, 4 and 5 don't change. The
+transmitter's controls are organized differently:
+
+- **Channel, ID and groups live in one menu.** Press **MENU**, turn the select dial to the
+  wireless (radio waves) icon, and press **SET**. That page holds **CH** (channel), **ID** (set it
+  to **OFF**), **SCAN**, **DIST** and **GROUPS** (keep it at 5, A–E, for TTL).
+- **SCAN finds a quiet channel.** Choose **SCAN**, then **START**. It lists the spare channels with
+  the least interference, which is handy when several kits shoot in the same room.
+- **The mode button is labeled MODE/LOCK.** A short press cycles the selected group through
+  **TTL**, **M** and **--**; hold it for 2 seconds to lock or unlock.
+- **Keep the SHOOT custom function off "full-shoot"** (the three-person icon). Godox's
+  compatibility table says not to use full-shoot with the X1R-C.
+- **Keep "Legacy hot shoe" OFF.** With it on, TTL, HSS and multi-flash aren't available.
+- **HSS** works the same way: press **SYNC**. Standby is adjustable (60 seconds, 30 minutes, 60
+  minutes or off) under C.Fn **STBY**.
 
 ## Troubleshooting
 
 | Problem | Likely cause / fix |
 |:--------|:-------------------|
-| Nothing fires | Channels don't match; the X Pro-C's wireless **ID isn't OFF**; group A is set to **--**; a dead battery in any of the three parts. |
+| Nothing fires | Channels don't match; the X Pro-C's wireless **ID isn't OFF**; group A is set to **--**; a dead battery in any of the three parts; the X Pro-C isn't fully seated in the camera's hot shoe. |
+| TTL isn't offered, only M | C.Fn **GROUP** is set to 16 groups (0–F). Set it back to 5 (A–E). |
+| Flash won't fire when it's very close to the camera (under about half a meter) | Set the X Pro-C's C.Fn **DIST** to **0–30m** (close-distance mode). |
+| Flash skips shots when shooting fast | It hasn't recycled yet, or it's overheating. Slow down, lower the power, or switch from TTL to M (TTL spends power on a pre-flash). |
 | X1R-C **TEST** fires the flash, but the camera doesn't | The radio link: re-check the channel on both units, the ID (OFF), and that the X Pro-C is fully seated and locked in the camera's hot shoe. |
 | X1R-C **TEST** doesn't fire the flash | The flash isn't fully seated or locked on the receiver, or the 600EX-RT is still in a **wireless** mode (Step 1). |
 | Dark band across the top or bottom of the photo | Shutter speed is above the sync speed. Slow down to 1/200 s, or turn on HSS. |
 | Exposure jumps around from shot to shot | That's TTL reacting to the scene (white shirt, dark background). Switch group A to **M** for consistent results. |
 | Another group's flash fires when you shoot | Two kits on the same channel. Give each kit its own channel. |
-| Flash stops responding after a break | The 600EX-RT went to sleep to save batteries. Press any button on the flash to wake it. |
+| Everything stops responding after a break | The X Pro-C goes to standby after 90 seconds idle (its LCD goes blank), and the 600EX-RT also sleeps. Half-press the camera's shutter or press any X Pro-C button, and press a button on the flash. To turn off the X Pro-C's standby, set C.Fn **STBY** to **OFF**. |
+| Settings are a mess and you want to start over | Factory reset: press the two middle function buttons together until **RESET** shows on the X Pro-C's LCD. |
 
 ## Sources
 
-These steps are compiled from Godox's X Pro-C and X1R-C instruction manuals and product
-listings; the manufacturer's manual pages couldn't be opened directly from where this guide was
-written, so check anything that doesn't match your units against the printed manuals in the kit
-cases. If your transmitter is the newer **X Pro II-C**, the steps are the same idea, but some
-buttons are laid out differently.
+These steps come from Godox's own instruction manuals. The original **X Pro-C** manual (705-XPRZC0-00)
+uses the Canon 600EX-RT on an X1R-C as its worked example ("As a Wireless Original Flash Trigger"),
+and both the **X Pro-C** and **X Pro II-C** manuals list the 600EX-RT as compatible with the
+X1R-C. Godox notes that it doesn't test every Canon flash, so a quick test fire before a shoot is
+still worth doing.
 
-- [Godox X1R-C 2.4G Wireless Flash Receiver for Canon 430EX 580EX II 600EX-RT (Amazon listing)](https://www.amazon.com/Godox-Wireless-Single-Receiver-X1C-R/dp/B01E58ZCM8)
-- [Godox X1R-C Radio Receiver - Canon (Strobepro)](https://strobepro.com/products/godox-x1r-c-strobepro-xrc-radio-receiver-canon)
-- [Godox X1R-C E-TTL Wireless Flash Receiver Instruction Manual (Manuals+)](https://manuals.plus/asin/B018G4EAVQ)
-- [Godox XPro-C TTL Wireless Flash Trigger Instruction Manual (Manuals+)](https://manuals.plus/godox/xpro-c-ttl-wireless-flash-trigger-manual)
-- [Godox XPro-C TTL Wireless Flash Trigger manual (Godox Poland, PDF)](https://godox.pl/wp-content/uploads/2019/07/Godox_XproC_20180905.pdf)
-- [Godox XProC TTL Wireless Flash Trigger for Canon Cameras (B&H)](https://www.bhphotovideo.com/c/product/803484606-USE/godox_xproc_ttl_wireless_flash.html/overview)
+Two steps aren't spelled out in Godox's manuals and come from standard practice for using a Canon
+Speedlite on a radio receiver: turning off the 600EX-RT's own wireless mode, and setting the
+flash to ETTL (Step 1). Check them against the 600EX-RT's manual if a flash behaves oddly.
