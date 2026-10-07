@@ -12,53 +12,389 @@
  <div class="slides">
 <section class="slide-dark">
 <div class="eyebrow">FDD 2.4 &middot; FOUNDATIONS OF DIGITAL DESIGN</div>
-<h1 class="big-title">Generate Ideas &amp; Design Development</h1>
-<div class="subtitle">Bell ringer's blurry-vs-crisp favicon guessing game is the exact stakes of today's raster-vs-vector content, then bridges straight into generating real shape ideas for the logo itself.</div>
-<div class="footer-tag">FDD 2.4</div>
-<aside class="notes">Welcome. Hold up today's guided notes handout if one exists.</aside>
+<h1 class="big-title">Pixels vs. Paths</h1>
+<div class="subtitle">Why your logo has to be built from math, then the masters who taught shape and color, then the tools that make it precise</div>
+<div class="callout-box">Grab your 2.4 Guided Notes: Pixels vs. Paths, and a pencil.</div>
+<div class="footer-tag">FDD 2.4 &middot; Title</div>
+<aside class="notes">Welcome. Hold up the Pixels vs. Paths notes. The Rulers, Guides, Grids &amp; Views notes come out for Guided Practice.</aside>
 </section>
-
 <section class="slide-light">
 <div class="eyebrow">GET READY</div>
-<h2 class="big-title">Today's Key Terms</h2>
-<div class="subtitle">Keep these visible. We'll use every one of them today.</div>
+<h2 class="big-title">Today's Word Bank</h2>
+<div class="subtitle">Every word below fills a blank on your Pixels vs. Paths notes. Watch closely.</div>
 <div class="word-grid">
-    <div class="word-card">Pixel</div>
-    <div class="word-card">Raster</div>
-    <div class="word-card">bitmap</div>
-    <div class="word-card">Bitmap</div>
-    <div class="word-card">Vector</div>
-    <div class="word-card">Path</div>
-    <div class="word-card">Object</div>
-    <div class="word-card">Rasterizing</div>
+<div class="word-card">any</div>
+<div class="word-card">blocky</div>
+<div class="word-card">objects</div>
+<div class="word-card">paths</div>
+<div class="word-card">pixels</div>
+<div class="word-card">resized</div>
 </div>
-<div class="footer-tag">FDD 2.4 &middot; Key Terms</div>
-<aside class="notes">Read the key terms aloud together before starting Direct Instruction.</aside>
+<div class="card" style="margin-top:0.7em;">How today works: one blank at a time. Make your best guess, then we reveal it together.</div>
+<div class="footer-tag">FDD 2.4 &middot; Word Bank</div>
+<aside class="notes">Read the word bank aloud together. Explain the routine: guess, then reveal.</aside>
 </section>
-
 <section class="slide-light">
-<div class="eyebrow"><span class="num-badge">1</span>TARGET FOR TODAY</div>
-<h2 class="big-title">What You'll Be Able To Do</h2>
-<div class="card">Explain why a logo spanning multiple display sizes must be built as vector rather than raster, and use rulers, guides, and grids to precisely construct and refine geometric shape concepts toward one finished direction</div>
-<div class="footer-tag">FDD 2.4 &middot; Target</div>
-<aside class="notes">State today's target plainly before Direct Instruction begins.</aside>
+<div class="eyebrow">RASTER VS. VECTOR</div>
+<h2 class="big-title" style="margin-bottom:0.1em;">Same circle, zoomed to 800%</h2>
+<svg viewBox="0 0 880 262" width="880" height="232" style="display:block;margin:0.1em auto 0;flex-shrink:0;">
+<rect x="70" y="1" width="260" height="260" fill="#fff" stroke="#2A2118" stroke-width="2"/>
+<rect x="90.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="90.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="90.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="90.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="90.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="90.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="90.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="110.0" y="41.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="110.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="110.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="110.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="110.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="110.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="110.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="110.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="110.0" y="201.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="21.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="41.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="201.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="130.0" y="221.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="21.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="41.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="201.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="150.0" y="221.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="21.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="41.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="201.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="170.0" y="221.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="21.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="41.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="201.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="190.0" y="221.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="21.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="41.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="201.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="210.0" y="221.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="21.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="41.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="201.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="230.0" y="221.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="21.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="41.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="201.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="250.0" y="221.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="270.0" y="41.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="270.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="270.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="270.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="270.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="270.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="270.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="270.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="270.0" y="201.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="290.0" y="61.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="290.0" y="81.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="290.0" y="101.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="290.0" y="121.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="290.0" y="141.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="290.0" y="161.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<rect x="290.0" y="181.0" width="20.0" height="20.0" fill="#2E5A73"/>
+<line x1="90.0" y1="1" x2="90.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="21.0" x2="330" y2="21.0" stroke="#fff" stroke-width="1"/>
+<line x1="110.0" y1="1" x2="110.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="41.0" x2="330" y2="41.0" stroke="#fff" stroke-width="1"/>
+<line x1="130.0" y1="1" x2="130.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="61.0" x2="330" y2="61.0" stroke="#fff" stroke-width="1"/>
+<line x1="150.0" y1="1" x2="150.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="81.0" x2="330" y2="81.0" stroke="#fff" stroke-width="1"/>
+<line x1="170.0" y1="1" x2="170.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="101.0" x2="330" y2="101.0" stroke="#fff" stroke-width="1"/>
+<line x1="190.0" y1="1" x2="190.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="121.0" x2="330" y2="121.0" stroke="#fff" stroke-width="1"/>
+<line x1="210.0" y1="1" x2="210.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="141.0" x2="330" y2="141.0" stroke="#fff" stroke-width="1"/>
+<line x1="230.0" y1="1" x2="230.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="161.0" x2="330" y2="161.0" stroke="#fff" stroke-width="1"/>
+<line x1="250.0" y1="1" x2="250.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="181.0" x2="330" y2="181.0" stroke="#fff" stroke-width="1"/>
+<line x1="270.0" y1="1" x2="270.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="201.0" x2="330" y2="201.0" stroke="#fff" stroke-width="1"/>
+<line x1="290.0" y1="1" x2="290.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="221.0" x2="330" y2="221.0" stroke="#fff" stroke-width="1"/>
+<line x1="310.0" y1="1" x2="310.0" y2="261" stroke="#fff" stroke-width="1"/>
+<line x1="70" y1="241.0" x2="330" y2="241.0" stroke="#fff" stroke-width="1"/>
+<rect x="550" y="1" width="260" height="260" fill="#fff" stroke="#2A2118" stroke-width="2"/>
+<circle cx="680.0" cy="131.0" r="114.4" fill="#2E5A73"/>
+<line x1="616.81688" y1="16.599999999999994" x2="743.18312" y2="16.599999999999994" stroke="#D9B95E" stroke-width="2.5"/>
+<circle cx="616.81688" cy="16.599999999999994" r="5" fill="#D9B95E" stroke="#2A2118" stroke-width="1.5"/>
+<circle cx="743.18312" cy="16.599999999999994" r="5" fill="#D9B95E" stroke="#2A2118" stroke-width="1.5"/>
+<rect x="673.0" y="9.599999999999994" width="14" height="14" fill="#fff" stroke="#2A2118" stroke-width="2.5"/>
+<line x1="794.4" y1="67.81688" x2="794.4" y2="194.18312" stroke="#D9B95E" stroke-width="2.5"/>
+<circle cx="794.4" cy="67.81688" r="5" fill="#D9B95E" stroke="#2A2118" stroke-width="1.5"/>
+<circle cx="794.4" cy="194.18312" r="5" fill="#D9B95E" stroke="#2A2118" stroke-width="1.5"/>
+<rect x="787.4" y="124.0" width="14" height="14" fill="#fff" stroke="#2A2118" stroke-width="2.5"/>
+<line x1="616.81688" y1="245.4" x2="743.18312" y2="245.4" stroke="#D9B95E" stroke-width="2.5"/>
+<circle cx="616.81688" cy="245.4" r="5" fill="#D9B95E" stroke="#2A2118" stroke-width="1.5"/>
+<circle cx="743.18312" cy="245.4" r="5" fill="#D9B95E" stroke="#2A2118" stroke-width="1.5"/>
+<rect x="673.0" y="238.4" width="14" height="14" fill="#fff" stroke="#2A2118" stroke-width="2.5"/>
+<line x1="565.6" y1="67.81688" x2="565.6" y2="194.18312" stroke="#D9B95E" stroke-width="2.5"/>
+<circle cx="565.6" cy="67.81688" r="5" fill="#D9B95E" stroke="#2A2118" stroke-width="1.5"/>
+<circle cx="565.6" cy="194.18312" r="5" fill="#D9B95E" stroke="#2A2118" stroke-width="1.5"/>
+<rect x="558.6" y="124.0" width="14" height="14" fill="#fff" stroke="#2A2118" stroke-width="2.5"/>
+<text x="440" y="130" font-family="Instrument Serif, Georgia, serif" font-size="64" fill="#AE5038" text-anchor="middle">vs.</text>
+</svg>
+<div style="display:flex;justify-content:space-between;font-size:0.62em;margin-top:0.3em;"><div style="width:46%;text-align:center;"><strong>Raster:</strong> a grid of pixels</div><div style="width:46%;text-align:center;"><strong>Vector:</strong> anchor points + curves</div></div>
+<div class="footer-tag">FDD 2.4 &middot; Raster vs. Vector</div>
+<aside class="notes">Point to the staircase edge on the left: that is what a photo looks like at 800%. On the right, the white squares are anchor points and the gold lines are direction handles. Illustrator redraws the curve from that math every time you zoom, so it never steps. Ask: which one would you trust to be your favicon AND your header logo?</aside>
 </section>
-
 <section class="slide-light">
-<div class="eyebrow">STANDARD</div>
-<h2 class="big-title">Where This Fits</h2>
-<div class="card">ACP 1.3.a, 3.2</div>
-<div class="footer-tag">FDD 2.4 &middot; Standard</div>
-<aside class="notes">Optional: note which ACP domain or enrichment goal this lesson supports.</aside>
+<div class="eyebrow"><span class="num-badge">1</span>GUIDED NOTES</div>
+<h2 class="big-title">What is a raster image made of?</h2>
+<div class="card">A <strong>raster</strong> (or <strong>bitmap</strong>) image is built from a fixed grid of colored squares called ______. Enlarge it and it looks ______.</div>
+<div class="footer-tag">FDD 2.4 &middot; 1 of 4</div>
+<aside class="notes">Read the sentence aloud. Students guess from the word bank before you advance.</aside>
 </section>
-
+<section class="slide-light">
+<div class="eyebrow">GUIDED NOTES #1</div>
+<div class="reveal-word">PIXELS &middot; BLOCKY</div>
+<div class="card">Pixel = &ldquo;picture element,&rdquo; one colored square. Photos are raster. Stretch past the original size and the program has to guess the new pixels.</div>
+<div class="footer-tag">FDD 2.4 &middot; 1 of 4</div>
+<aside class="notes">Reveal both blanks. Connect back to the left half of the raster-vs-vector slide.</aside>
+</section>
+<section class="slide-light">
+<div class="eyebrow"><span class="num-badge">2</span>GUIDED NOTES</div>
+<h2 class="big-title">What is a vector graphic made of?</h2>
+<div class="card">A <strong>vector</strong> graphic is built from mathematical ______ (lines and curves between anchor points), grouped into ______. Because they're math, vectors can be ______ to any size with zero quality loss.</div>
+<div class="footer-tag">FDD 2.4 &middot; 2 of 4</div>
+<aside class="notes">Read the sentence aloud. Students guess from the word bank before you advance.</aside>
+</section>
+<section class="slide-light">
+<div class="eyebrow">GUIDED NOTES #2</div>
+<div class="reveal-word">PATHS &middot; OBJECTS &middot; RESIZED</div>
+<div class="card">A <strong>path</strong> is anchor points joined by segments. An <strong>object</strong> is anything on the artboard: a path, a group, type, a placed image.</div>
+<div class="footer-tag">FDD 2.4 &middot; 2 of 4</div>
+<aside class="notes">Three blanks on this one. Point back to the anchor points on the vector circle.</aside>
+</section>
+<section class="slide-light">
+<div class="eyebrow"><span class="num-badge">3</span>GUIDED NOTES</div>
+<h2 class="big-title">Rasterizing vs. Rendering</h2>
+<div class="card"><strong>Rasterizing</strong> converts a vector object into a fixed grid of pixels. It's a one-way trip: afterward you can't edit it as clean paths.</div>
+<div class="card"><strong>Rendering</strong> is the general process of a program calculating and displaying an image, on screen or in an exported file.</div>
+<div class="footer-tag">FDD 2.4 &middot; 3 of 4</div>
+<aside class="notes">No blanks here; students read along and star the phrase &ldquo;one-way trip.&rdquo; Exporting the S2 PNGs is rendering; your .ai file stays vector.</aside>
+</section>
+<section class="slide-light">
+<div class="eyebrow"><span class="num-badge">4</span>GUIDED NOTES</div>
+<h2 class="big-title">Why is Illustrator vector-based?</h2>
+<div class="card">Logos and icons need to work at ______ sizes, a business card <em>and</em> a billboard, without ever looking blocky.</div>
+<div class="footer-tag">FDD 2.4 &middot; 4 of 4</div>
+<aside class="notes">Read the sentence aloud. Students guess from the word bank before you advance.</aside>
+</section>
+<section class="slide-light">
+<div class="eyebrow">GUIDED NOTES #4</div>
+<div class="reveal-word">ANY</div>
+<div class="card">Your S2 logo lives at 48 px as a favicon and up to 225 px wide in the header. One vector file covers both.</div>
+<div class="footer-tag">FDD 2.4 &middot; 4 of 4</div>
+<aside class="notes">Tie this to the Design Brief's two sizes.</aside>
+</section>
 <section class="slide-dark">
 <div class="eyebrow">NOW DISCUSS</div>
 <h2 class="big-title">Turn &amp; Talk</h2>
-<div class="card" style="background: var(--navy-deep); border-color: var(--ice); color: var(--white);">Explain why a logo spanning multiple display sizes must be built as vector rather than raster, and use rulers, guides, and grids to precisely construct and refine geometric shape concepts toward one finished direction What's the trickiest part of that, and why?</div>
+<div class="card" style="background: var(--navy-deep); border-color: var(--ice); color: var(--white);">A client sends you their logo as a small, blurry JPG. Why is a vector recreation almost always a better fix than just resizing the JPG?</div>
 <div class="subtitle">Think &rarr; Pair &rarr; Share &middot; 2 minutes</div>
-<div class="footer-tag">FDD 2.4 &middot; Wrap-Up</div>
-<aside class="notes">Think-Pair-Share, 90 seconds, cold-call 2-3 pairs.</aside>
+<div class="footer-tag">FDD 2.4 &middot; Discuss</div>
+<aside class="notes">Think-Pair-Share, 90 seconds, cold-call 2&ndash;3 pairs. Listen for: resizing can't invent detail that isn't in the pixels.</aside>
+</section>
+<section class="slide-light">
+<div class="eyebrow">BAUHAUS &middot; KANDINSKY &amp; ITTEN</div>
+<h2 class="big-title" style="margin-bottom:0.05em;">Shape Has Color</h2>
+<div class="subtitle" style="margin-bottom:0.3em;">Two Bauhaus teachers, one match: a starting rule for your mark, not a law.</div>
+<svg viewBox="-150 0 1030 150" width="880" height="104" style="display:block;margin:0 auto;flex-shrink:0;">
+<polygon points="146,12 216,138 76,138" fill="#D9B95E" stroke="#2A2118" stroke-width="3"/>
+<rect x="378" y="12" width="126" height="126" fill="#AE5038" stroke="#2A2118" stroke-width="3"/>
+<circle cx="733" cy="75" r="63" fill="#2E5A73" stroke="#2A2118" stroke-width="3"/>
+</svg>
+<div style="display:grid;grid-template-columns:4.6em 1fr 1fr 1fr;font-size:0.62em;line-height:1.35;margin-top:0.2em;text-align:center;align-items:baseline;"><div></div><div style="font-family:Instrument Serif,Georgia,serif;font-size:1.3em;color:#9A7A1E;white-space:nowrap;">Triangle &rarr; Yellow</div><div style="font-family:Instrument Serif,Georgia,serif;font-size:1.3em;color:#AE5038;white-space:nowrap;">Square &rarr; Red</div><div style="font-family:Instrument Serif,Georgia,serif;font-size:1.3em;color:#2E5A73;white-space:nowrap;">Circle &rarr; Blue</div><div style="text-align:left;"><strong>Kandinsky</strong></div><div>45&deg; &middot; sharp</div><div>90&deg; &middot; objective</div><div>135&deg; &middot; calm</div><div style="text-align:left;"><strong>Itten</strong></div><div>restless diagonal</div><div>tense, stable</div><div>one endless curve</div></div>
+<div class="footer-tag">FDD 2.4 &middot; Kandinsky &amp; Itten</div>
+<aside class="notes">Kandinsky, Point and Line to Plane (1926): an acute angle (45&deg;) reads yellow, a right angle (90&deg;) red, an obtuse angle (135&deg;) blue as it heads toward the circle. His 1923 Bauhaus questionnaire asked people to color a triangle, square, and circle, and the classic answer was yellow, red, blue. Itten taught the three form characters in the foundation course (square: horizontal and vertical, tense; triangle: diagonal, every kind of angle; circle: one even, continuous movement) and paired them with the same three colors in The Art of Color. Bridge: in the Bauhaus Shape Exercise, act out each form before you sketch it. Which character fits your portfolio site?</aside>
+</section>
+<section class="slide-light">
+<div class="eyebrow">PRECISION TOOLS</div>
+<h2 class="big-title" style="margin-bottom:0.1em;">Rulers, Grids &amp; Guides</h2>
+<svg viewBox="0 0 615 165" width="615" height="165" style="display:block;margin:0.1em auto 0;flex-shrink:0;" font-family="Inter, sans-serif">
+<rect x="28" y="28" width="587" height="137" fill="#fff"/>
+<line x1="28.0" y1="28" x2="28.0" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="40.5" y1="28" x2="40.5" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="53.0" y1="28" x2="53.0" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="65.4" y1="28" x2="65.4" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="77.9" y1="28" x2="77.9" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="90.4" y1="28" x2="90.4" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="102.9" y1="28" x2="102.9" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="115.4" y1="28" x2="115.4" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="127.8" y1="28" x2="127.8" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="140.3" y1="28" x2="140.3" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="152.8" y1="28" x2="152.8" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="165.3" y1="28" x2="165.3" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="177.8" y1="28" x2="177.8" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="190.2" y1="28" x2="190.2" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="202.7" y1="28" x2="202.7" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="215.2" y1="28" x2="215.2" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="227.7" y1="28" x2="227.7" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="240.2" y1="28" x2="240.2" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="252.6" y1="28" x2="252.6" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="265.1" y1="28" x2="265.1" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="277.6" y1="28" x2="277.6" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="290.1" y1="28" x2="290.1" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="302.6" y1="28" x2="302.6" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="315.0" y1="28" x2="315.0" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="327.5" y1="28" x2="327.5" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="340.0" y1="28" x2="340.0" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="352.5" y1="28" x2="352.5" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="365.0" y1="28" x2="365.0" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="377.4" y1="28" x2="377.4" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="389.9" y1="28" x2="389.9" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="402.4" y1="28" x2="402.4" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="414.9" y1="28" x2="414.9" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="427.4" y1="28" x2="427.4" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="439.8" y1="28" x2="439.8" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="452.3" y1="28" x2="452.3" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="464.8" y1="28" x2="464.8" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="477.3" y1="28" x2="477.3" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="489.8" y1="28" x2="489.8" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="502.2" y1="28" x2="502.2" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="514.7" y1="28" x2="514.7" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="527.2" y1="28" x2="527.2" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="539.7" y1="28" x2="539.7" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="552.2" y1="28" x2="552.2" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="564.6" y1="28" x2="564.6" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="577.1" y1="28" x2="577.1" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="589.6" y1="28" x2="589.6" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="602.1" y1="28" x2="602.1" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="614.6" y1="28" x2="614.6" y2="165" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="28.0" x2="615" y2="28.0" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="40.5" x2="615" y2="40.5" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="53.0" x2="615" y2="53.0" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="65.4" x2="615" y2="65.4" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="77.9" x2="615" y2="77.9" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="90.4" x2="615" y2="90.4" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="102.9" x2="615" y2="102.9" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="115.4" x2="615" y2="115.4" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="127.8" x2="615" y2="127.8" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="140.3" x2="615" y2="140.3" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="152.8" x2="615" y2="152.8" stroke="#D8CCAE" stroke-width="1"/>
+<line x1="28" y1="165.3" x2="615" y2="165.3" stroke="#D8CCAE" stroke-width="1"/>
+<rect x="40.5" y="46.7" width="561.6" height="99.8" fill="none" stroke="#2A2118" stroke-width="3"/>
+<line x1="53.0" y1="28" x2="53.0" y2="165" stroke="#2BA3C9" stroke-width="2"/>
+<line x1="127.8" y1="28" x2="127.8" y2="165" stroke="#2BA3C9" stroke-width="2"/>
+<line x1="152.8" y1="28" x2="152.8" y2="165" stroke="#2BA3C9" stroke-width="2"/>
+<line x1="589.6" y1="28" x2="589.6" y2="165" stroke="#2BA3C9" stroke-width="2"/>
+<line x1="28" y1="59.2" x2="615" y2="59.2" stroke="#2BA3C9" stroke-width="2"/>
+<line x1="28" y1="134.1" x2="615" y2="134.1" stroke="#2BA3C9" stroke-width="2"/>
+<rect x="0" y="0" width="615" height="28" fill="#F3EEE1" stroke="#2A2118" stroke-width="1"/>
+<rect x="0" y="0" width="28" height="165" fill="#F3EEE1" stroke="#2A2118" stroke-width="1"/>
+<line x1="40.5" y1="14" x2="40.5" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="53.0" y1="22" x2="53.0" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="65.4" y1="22" x2="65.4" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="77.9" y1="22" x2="77.9" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="90.4" y1="22" x2="90.4" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="102.9" y1="22" x2="102.9" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="115.4" y1="22" x2="115.4" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="127.8" y1="22" x2="127.8" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="140.3" y1="14" x2="140.3" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="152.8" y1="22" x2="152.8" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="165.3" y1="22" x2="165.3" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="177.8" y1="22" x2="177.8" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="190.2" y1="22" x2="190.2" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="202.7" y1="22" x2="202.7" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="215.2" y1="22" x2="215.2" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="227.7" y1="22" x2="227.7" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="240.2" y1="14" x2="240.2" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="252.6" y1="22" x2="252.6" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="265.1" y1="22" x2="265.1" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="277.6" y1="22" x2="277.6" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="290.1" y1="22" x2="290.1" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="302.6" y1="22" x2="302.6" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="315.0" y1="22" x2="315.0" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="327.5" y1="22" x2="327.5" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="340.0" y1="14" x2="340.0" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="352.5" y1="22" x2="352.5" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="365.0" y1="22" x2="365.0" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="377.4" y1="22" x2="377.4" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="389.9" y1="22" x2="389.9" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="402.4" y1="22" x2="402.4" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="414.9" y1="22" x2="414.9" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="427.4" y1="22" x2="427.4" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="439.8" y1="14" x2="439.8" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="452.3" y1="22" x2="452.3" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="464.8" y1="22" x2="464.8" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="477.3" y1="22" x2="477.3" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="489.8" y1="22" x2="489.8" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="502.2" y1="22" x2="502.2" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="514.7" y1="22" x2="514.7" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="527.2" y1="22" x2="527.2" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="539.7" y1="14" x2="539.7" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="552.2" y1="22" x2="552.2" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="564.6" y1="22" x2="564.6" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="577.1" y1="22" x2="577.1" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="589.6" y1="22" x2="589.6" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<line x1="602.1" y1="22" x2="602.1" y2="28" stroke="#2A2118" stroke-width="1.2"/>
+<circle cx="40.5" cy="46.7" r="7" fill="#AE5038"/>
+<text x="90.4" y="102.9" font-size="26" fill="#6B6255" text-anchor="middle">mark</text>
+<text x="371.2" y="102.9" font-size="26" fill="#6B6255" text-anchor="middle">Header Logo &#183; 1080 &#215; 192 px</text>
+<text x="583.4" y="124.7" font-size="22" fill="#1F7FA0" text-anchor="end" font-weight="600">guides</text>
+</svg><div style="height:0.35em;"></div>
+<div style="display:flex;flex-wrap:wrap;gap:0.3em;justify-content:center;"><div class="card" style="margin:0;padding:0.2em 0.5em;"><strong>Rulers</strong> &#8984;R &middot; drag the corner to move the origin <span style="color:#AE5038;">&#9679;</span></div><div class="card" style="margin:0;padding:0.2em 0.5em;"><strong>Guides</strong>: drag out of a ruler</div><div class="card" style="margin:0;padding:0.2em 0.5em;"><strong>Grid</strong> &#8984;&apos; &middot; <strong>Snap</strong> &#8679;&#8984;&apos;</div><div class="card" style="margin:0;padding:0.2em 0.5em;"><strong>Smart Guides</strong> &#8984;U</div></div>
+<div class="footer-tag">FDD 2.4 &middot; Rulers, Grids &amp; Guides</div>
+<aside class="notes">Hand out the Rulers, Guides, Grids &amp; Views notes. Demo live: Cmd+R for rulers, drag a guide to 24 px from the top ruler, set Preferences &gt; Guides &amp; Grid to 24 px with 4 subdivisions, then Cmd+' to show the grid. The cyan guides here match the notes: a 24 px live-area margin, the mark zone ends at 168 px, and the type zone starts at 216 px. The favicon artboard (192 &times; 192) has the same 144 px mark area, so one mark fits both.</aside>
 </section>
 
  </div>
