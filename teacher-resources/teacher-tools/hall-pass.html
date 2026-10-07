@@ -16,9 +16,13 @@ through every section so an old or copied pass is easy to spot. Fill it in on sc
   is still correct in the morning.</li>
   <li><strong>Time out</strong> fills in with the current time automatically. Type over it to set
   your own; clear it and it goes back to automatic.</li>
-  <li><strong>Print pass</strong> re-stamps the date and time, then opens the print dialog. Only the
-  pass prints, on one letter page, with the gold bands in color (turn on "Background graphics" if
-  your browser asks).</li>
+  <li><strong>Download PDF</strong> re-stamps the date and time, then downloads the pass as a
+  one-page, letter-size PDF (300 dpi). Print that PDF: the whole pass, microprint included, is one
+  flat image, so the printer doesn't have to build the graphic itself and starts printing much
+  faster.</li>
+  <li><strong>Print in browser</strong> is the old way: it sends the page straight to the print
+  dialog. Only the pass prints, with the gold bands in color (turn on "Background graphics" if your
+  browser asks).</li>
   <li><strong>Clear fields</strong> empties every field for the next student.</li>
 </ul>
 
@@ -66,7 +70,8 @@ through every section so an old or copied pass is easy to spot. Fill it in on sc
 </style>
 <div class="hp-root" id="hpRoot">
   <div class="hp-bar">
-    <button id="hpPrint">Print pass</button>
+    <button id="hpPdf">Download PDF</button>
+    <button id="hpPrint" class="alt">Print in browser</button>
     <button id="hpReset" class="alt">Clear fields</button>
   </div>
 
@@ -180,6 +185,142 @@ through every section so an old or copied pass is easy to spot. Fill it in on sc
     root.querySelectorAll('input[type=checkbox]').forEach(function (i) { i.checked = false; });
     render();
   });
+  /* ---- PDF export: draws the sheet onto a 300 dpi canvas from the live DOM, then wraps the JPEG in a one-page letter PDF ---- */
+  var sheet = scaler.querySelector('.hp-sheet');
+  var DPI = 300, PAGE_W = 612, PAGE_H = 792;
+  var K = DPI * 8.5 / 836;
+
+  function fontOf(el) {
+    var cs = getComputedStyle(el);
+    return cs.fontStyle + ' ' + cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+  }
+  function baseline(ctx, top, boxH) {
+    var m = ctx.measureText('Hg');
+    var a = m.fontBoundingBoxAscent || m.actualBoundingBoxAscent;
+    var d = m.fontBoundingBoxDescent || m.actualBoundingBoxDescent;
+    return top + (boxH - (a + d)) / 2 + a;
+  }
+  function lineH(el) {
+    var cs = getComputedStyle(el), lh = parseFloat(cs.lineHeight);
+    return isNaN(lh) ? parseFloat(cs.fontSize) * 1.2 : lh;
+  }
+  function drawRuns(ctx, el, x, top) {
+    var nodes = el.childNodes, first = true;
+    ctx.font = fontOf(el);
+    var y = baseline(ctx, top, lineH(el));
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i], src = n.nodeType === 1 ? n : el;
+      var txt = n.textContent.replace(/\s+/g, ' ');
+      if (first) { txt = txt.replace(/^ /, ''); first = false; }
+      if (!txt) continue;
+      ctx.font = fontOf(src);
+      ctx.fillStyle = getComputedStyle(src).color;
+      ctx.fillText(txt, x, y);
+      x += ctx.measureText(txt).width;
+    }
+  }
+  function drawMicro(ctx, m) {
+    var x0 = m.offsetLeft + m.clientLeft, y0 = m.offsetTop + m.clientTop;
+    ctx.save();
+    ctx.beginPath(); ctx.rect(x0, y0, m.clientWidth, m.clientHeight); ctx.clip();
+    m.querySelectorAll('.wm').forEach(function (w) {
+      ctx.save();
+      ctx.translate(x0 + w.offsetLeft, y0 + w.offsetTop);
+      ctx.rotate(-28 * Math.PI / 180);
+      ctx.font = fontOf(w);
+      ctx.lineWidth = 2; ctx.strokeStyle = '#D9D9D9';
+      ctx.strokeText(w.textContent, 0, baseline(ctx, 0, lineH(w)));
+      ctx.restore();
+    });
+    m.querySelectorAll('.row').forEach(function (r) {
+      ctx.font = fontOf(r);
+      ctx.fillStyle = getComputedStyle(r).color;
+      ctx.fillText(r.textContent, x0 + r.offsetLeft, baseline(ctx, y0 + r.offsetTop, 12));
+    });
+    ctx.restore();
+    var b = m.clientLeft;
+    ctx.lineWidth = b; ctx.strokeStyle = '#000';
+    ctx.strokeRect(m.offsetLeft + b / 2, m.offsetTop + b / 2, m.offsetWidth - b, m.offsetHeight - b);
+  }
+  function drawInput(ctx, inp) {
+    var x = inp.offsetLeft, y = inp.offsetTop, w = inp.offsetWidth, h = inp.offsetHeight;
+    var bb = parseFloat(getComputedStyle(inp).borderBottomWidth) || 3;
+    ctx.fillStyle = '#000';
+    ctx.fillRect(x, y + h - bb, w, bb);
+    if (!inp.value) return;
+    ctx.save();
+    ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
+    ctx.font = fontOf(inp);
+    ctx.fillStyle = getComputedStyle(inp).color;
+    ctx.fillText(inp.value, x + 4, baseline(ctx, y, h - bb));
+    ctx.restore();
+  }
+  function drawCheck(ctx, lab) {
+    var box = lab.querySelector('input'), x = lab.offsetLeft, y = lab.offsetTop, s = box.offsetWidth;
+    ctx.fillStyle = '#fff'; ctx.fillRect(x, y, s, s);
+    ctx.lineWidth = 3; ctx.strokeStyle = '#000'; ctx.strokeRect(x + 1.5, y + 1.5, s - 3, s - 3);
+    if (box.checked) { ctx.fillStyle = '#000'; ctx.fillRect(x + (s - 14) / 2, y + (s - 14) / 2, 14, 14); }
+    ctx.font = fontOf(lab); ctx.fillStyle = '#000';
+    ctx.fillText(lab.textContent.trim(), x + s + 12, baseline(ctx, y, lab.offsetHeight));
+  }
+  function drawSheet() {
+    var c = document.createElement('canvas');
+    c.width = Math.round(836 * K); c.height = Math.round(1080 * K);
+    var ctx = c.getContext('2d');
+    ctx.scale(K, K);
+    ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, 836, 1080);
+    ctx.textBaseline = 'alphabetic';
+    Array.prototype.forEach.call(sheet.children, function (el) {
+      if (el.classList.contains('hp-gold')) { ctx.fillStyle = getComputedStyle(el).backgroundColor; ctx.fillRect(el.offsetLeft, el.offsetTop, el.offsetWidth, el.offsetHeight); }
+      else if (el.classList.contains('hp-micro')) drawMicro(ctx, el);
+      else if (el.tagName === 'INPUT') drawInput(ctx, el);
+      else if (el.classList.contains('hp-chk')) drawCheck(ctx, el);
+      else drawRuns(ctx, el, el.offsetLeft, el.offsetTop);
+    });
+    return c;
+  }
+  function pdfFromJpeg(jpeg, w, h) {
+    var enc = new TextEncoder(), parts = [], len = 0, offs = [];
+    function add(x) { var b = typeof x === 'string' ? enc.encode(x) : x; parts.push(b); len += b.length; }
+    function obj(n, body) { offs[n] = len; add(n + ' 0 obj\n' + body + '\nendobj\n'); }
+    var drawH = PAGE_W * h / w;
+    var content = 'q ' + PAGE_W + ' 0 0 ' + drawH.toFixed(2) + ' 0 ' + (PAGE_H - drawH).toFixed(2) + ' cm /Im0 Do Q';
+    add('%PDF-1.4\n%\xE2\xE3\xCF\xD3\n');
+    obj(1, '<< /Type /Catalog /Pages 2 0 R >>');
+    obj(2, '<< /Type /Pages /Kids [3 0 R] /Count 1 >>');
+    obj(3, '<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ' + PAGE_W + ' ' + PAGE_H + '] /Resources << /XObject << /Im0 4 0 R >> >> /Contents 5 0 R >>');
+    offs[4] = len;
+    add('4 0 obj\n<< /Type /XObject /Subtype /Image /Width ' + w + ' /Height ' + h + ' /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ' + jpeg.length + ' >>\nstream\n');
+    add(jpeg); add('\nendstream\nendobj\n');
+    obj(5, '<< /Length ' + content.length + ' >>\nstream\n' + content + '\nendstream');
+    var xref = len, x = 'xref\n0 6\n0000000000 65535 f \n';
+    for (var i = 1; i <= 5; i++) x += ('000000000' + offs[i]).slice(-10) + ' 00000 n \n';
+    add(x + 'trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n' + xref + '\n%%EOF\n');
+    return new Blob(parts, { type: 'application/pdf' });
+  }
+  function downloadPdf() {
+    var btn = document.getElementById('hpPdf'), label = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Building PDF...';
+    manualTime = manualTime && timeBox.value.trim() !== '';
+    render();
+    var fonts = ['300 96px Roboto', '500 28px Roboto', '700 24px Roboto', '900 28px Roboto', '700 68px "Roboto Slab"'];
+    Promise.all(fonts.map(function (f) { return document.fonts.load(f); })).catch(function () {}).then(function () {
+      var c = drawSheet();
+      c.toBlob(function (blob) {
+        blob.arrayBuffer().then(function (buf) {
+          var pdf = pdfFromJpeg(new Uint8Array(buf), c.width, c.height);
+          var d = parts(new Date(), { year: 'numeric', month: '2-digit', day: '2-digit' });
+          var a = document.createElement('a');
+          a.href = URL.createObjectURL(pdf);
+          a.download = 'hall-pass-' + d.year + '-' + d.month + '-' + d.day + '.pdf';
+          document.body.appendChild(a); a.click(); a.remove();
+          setTimeout(function () { URL.revokeObjectURL(a.href); }, 60000);
+          btn.disabled = false; btn.textContent = label;
+        });
+      }, 'image/jpeg', 0.92);
+    });
+  }
+  document.getElementById('hpPdf').addEventListener('click', downloadPdf);
   window.addEventListener('beforeprint', render);
   window.addEventListener('resize', fit);
 
