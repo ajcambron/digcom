@@ -96,19 +96,19 @@ def formative(L, pos):
     fm.append(folded("source", L["source"] + drive_note(L), 2).rstrip("\n"))
     fm.append("  timing:")
     if L.get("special") == "pretest":
-        segs = [("Bell Ringer / Hook", 10, "Digital stinger: " + L["bell"]),
+        segs = [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
                 ("GMetrix SMS Login", 10, "Open GMetrix SMS, Login with Google (school account), redeem the class code from the Schoology homepage"),
                 ("Pre-Launch Setup", 10, "Open Photoshop in Rosetta from Creative Cloud, confirm the GMetrix extension, quit; then Delete Test Resource Archive, Install Photoshop Plugin, Reinstall Workspace Files (teacher enters the admin password at each machine)"),
                 ("ACP Pre-Test", 35, "Launch the Photoshop practice exam from GMetrix SMS and complete it under quiet, test-like conditions"),
                 ("Post Results & Reflect", 8, "Screenshot the score/results screen and submit it"),
                 ("Exit Ticket / Wrap-Up", 5, "Post score + screenshot + reflection (custom pre-test exit ticket)")]
     elif u == 1:
-        segs = [("Bell Ringer / Hook", 10, "Paper stinger: " + L["bell"]),
+        segs = [("Stinger", 10, "Today's stinger from the stinger deck, answered on paper; take attendance"),
                 ("Direct Instruction", 12, L["di_note"]),
                 ("Guided Practice + Shoot", 50, L["gp_note"] + " (no GMetrix in Unit 1; cameras go out once and come back once)"),
                 ("Exit Ticket / Wrap-Up", 6, f"Cameras back, cards checked, Exit Ticket {et}")]
     else:
-        segs = [("Bell Ringer / Hook", 10, "Digital stinger: " + L["bell"]),
+        segs = [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
                 ("Direct Instruction", 10, L["di_note"]),
                 ("Guided Practice", 23, L["gp_note"]),
                 ("GMetrix/BrainBuffet Self-Guided Strand", 30, gm_note(u, L, pos)),
@@ -136,7 +136,7 @@ def formative(L, pos):
         body.append(PRETEST_BODY)
     else:
         mins = (12, 50, 6) if u == 1 else (10, 23, 5)
-        body += ["## Bell Ringer / Hook (~10 min)", "", "{: .discussion }", L["bell"], "",
+        body += ["## Stinger (~10 min)", "", "{% include lesson-parts/stinger.md %}", "",
                  f"## Direct Instruction (~{mins[0]} min)", "", L["di"], "", f"> \"{L['cue']}\"", "",
                  "**Scaffolded questions. Cold-call through all three:**", "",
                  f"> **Recall:** \"{L['q'][0]}\"", "", f"> **Analysis:** \"{L['q'][1]}\"", "",
@@ -177,11 +177,9 @@ def teacher(L, u):
           f"# {t} | Teacher Plan", "", "{% include teacher-plan.html %}", ""]
     write(f"pdd{u}/{slug(L['n'])}-teacher.md", "\n".join(fm))
 
-PRETEST_BODY = r"""## Bell Ringer / Hook (~10 min)
+PRETEST_BODY = r"""## Stinger (~10 min)
 
-{: .discussion }
-Before a coach starts a season of training, they usually time every athlete once, without coaching
-anything yet. Why would they do that? What does that first time trial tell them?
+{% include lesson-parts/stinger.md %}
 
 ## GMetrix SMS Login (~10 min)
 
@@ -277,7 +275,7 @@ def summative(S):
     purpose = S["purpose"] + " No GMetrix/BrainBuffet block today: project days use the full period for the project, the same rule FDD and ADD follow."
     fm.append(folded("purpose_note", purpose, 2).rstrip("\n"))
     fm += ["  timing:",
-           "    - segment: \"Bell Ringer / Hook\"", "      minutes: 10", "      note: \"Digital stinger (still runs today—see F5/F6 below)\"",
+           "    - segment: \"Stinger\"", "      minutes: 10", "      note: \"Today's stinger from the stinger deck (still runs today—see F5/F6 below)\"",
            "    - segment: \"Project Briefing + Demo\"", "      minutes: 10", f"      note: {q(S['demo'])}",
            "    - segment: \"Project Work Time\"", "      minutes: 53", f"      note: {q(S['work'] + '—no GMetrix block today, the full period is project time')}",
            "    - segment: \"Save, Export & Submit\"", "      minutes: 5", "      note: \"File naming, export, portfolio submission\"",
@@ -287,7 +285,7 @@ def summative(S):
            "    - label: \"F5—Cumulative Vocab Quiz\"",
            f"      description: {q('Schoology auto-graded quiz covering all of Unit ' + str(u) + chr(39) + 's vocabulary (once PDD vocab includes exist for ' + str(u) + '.1–' + str(u) + '.4).')}",
            "    - label: \"F6—Stinger Grade\"",
-           "      description: \"compiled from this unit's bellringer responses, already collected across the 4 formative lessons—no new work required today, just recorded.\""]
+           "      description: \"compiled from this unit's stinger responses, already collected across the 4 formative lessons—no new work required today, just recorded.\""]
     fm += organize_fm(S)
     fm += ["  differentiation:", f"    iep504: {q(S['iep'])}", f"    ell: {q(S['ell'])}", f"    gt: {q(S['gt'])}", "  materials:"]
     fm += [f"    - {q(m)}" for m in S["mats"]]

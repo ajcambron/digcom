@@ -29,7 +29,7 @@ Do not alter these time blocks. Total time must equal exactly 78 minutes.
 
 | Phase | Time | Instructor Activity | Student Activity |
 | :--- | :--- | :--- | :--- |
-| **1. Bell Ringer / Hook** | 10 mins | Display spiral-review prompt; take attendance. | Independent retrieval practice. |
+| **1. Stinger** | 10 mins | Display today's stinger from the course's stinger deck; take attendance. | Answer the stinger on the Stinger Response Sheet. |
 | **2. Direct Instruction** | 10 mins | "I Do" phase. Explicit modeling, concept delivery, think-alouds. | Active listening, guided note-taking. |
 | **3. Guided Practice** | 23 mins | "We Do" phase. Interactive checks for understanding, collaborative work. | Peer interaction, whiteboards, or partner tasks. |
 | **4. GMetrix/BrainBuffet Self-Guided Strand** | 30 mins | Monitor self-paced GMetrix/BrainBuffet module progress; targeted 1:1 support. | Self-paced work in the course's GMetrix/BrainBuffet module (see the scope-and-sequence doc's strand tables). |
@@ -65,6 +65,7 @@ Always check the scope-and-sequence doc's per-course unit tables for the specifi
 - **Consistency:** All the lessons should be formatted for consistency. Each new lesson should mirror the formatting of previous lessons.
 - **Teacher vs. student pages:** Every lesson gets two pages, same folder, suffixed filename — e.g. `foundations/fdd2/2_1.md` (student-facing) + `foundations/fdd2/2_1-teacher.md` (teacher-facing, built around `_includes/ctelessonplan.md`). Teacher pages build but stay `nav_exclude: true` — unlisted, not private; don't put answer keys or exemplars in them.
 - **The 7:** Every lesson (teacher-facing plan especially) must hit all 7 elements of "The 7" (Organization for Learning, Connection to Learning, Target for Learning, Collaboration around Learning, Evidence of Learning, Summarization of Learning, Accommodations to the Plan) — see `_includes/ctelessonplan.md` and the scope-and-sequence doc's "Lesson Requirement: The 7" section.
+- **Stingers:** The bell ringer is always called a **stinger**, our school's term. Never write "bell ringer" or "bellringer" for it anywhere on the site: headings, timing rows (`segment: "Stinger"`), teacher notes, The 7 fields, decks, or worksheets. Pages never include a specific stinger question, because stingers change every year and live only in each course's stinger deck (the `bellringers.md` page in fdd0/add0/pdd0). The stinger section of every lesson is just `## Stinger (~10 min)` followed by `{% include lesson-parts/stinger.md %}`, which points students to the deck and the Stinger Response Sheet. Keep stinger content out of The 7's Connection field too: connect to the previous lesson instead.
 - **Word Banks:** Every fill-in-the-blank question (worksheets' `.blank` spans) must be accompanied by a word bank listing all its answer choices; short-answer/open-ended questions don't need one. Use a single word bank per worksheet page, placed before all questions, listing every blank's answer across the whole page — not one per question. Word bank entries are always alphabetized, never left in answer order or otherwise shuffled.
 
 ---
@@ -75,4 +76,4 @@ Use these shortcuts during our conversation to instantly run specialized prompts
 - `/plan [Unit X, Lesson Y] [Topic]` -> Generates a complete 78-minute lesson plan for that unit/lesson following all matrix guidelines.
 - `/assessment [Objective]` -> Skips the lesson plan and instantly generates 3 variations of an Exit Ticket + a scoring rubric for that objective.
 - `/scaffold [Activity Description]` -> Rewrites an existing activity to provide stronger modifications for ELL and IEP students.
-- `/diagnose [Paste student data]` -> Analyzes performance data and updates the next lesson's Bell Ringer to target weak sub-skills.
+- `/diagnose [Paste student data]` -> Analyzes performance data and recommends which weak sub-skills upcoming stingers should target (as a note for the teacher's stinger deck, never written onto a lesson page).

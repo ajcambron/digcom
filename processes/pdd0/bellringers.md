@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Daily Stingers (Bellringers)
+title: Daily Stingers
 parent: PDD | Pre-Unit
 grandparent: Processes of Digital Design
 nav_exclude: false
 embed_extra: bellringer
 ---
-# Daily Stingers (Bellringers)
+# Daily Stingers
 
 Every class begins with the same 10-minute routine, using the deck below:
 
@@ -27,7 +27,7 @@ unit's **F6: Stinger Grade** (see the Formative Assessment System in
 {: .warning }
 PDD's stinger deck is still TBD. Once it exists, replace the placeholder below with its Google
 Slides embed URL, the same way the [FDD](../../foundations/fdd0/bellringers.md) and
-[ADD](../../applications/add0/bellringers.md) bellringer pages embed theirs.
+[ADD](../../applications/add0/bellringers.md) stinger pages embed theirs.
 
 <div class="presentation-embed presentation-placeholder">
   <div class="presentation-embed-fill">🎞️ Daily Stinger PDD deck. TBD.</div>

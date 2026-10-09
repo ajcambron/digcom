@@ -11,12 +11,12 @@ has_toc: false
 Before Lesson 1.1 begins, the first days of the year (Sep 1–3) are an icebreaker window. No
 graded formative work happens during it. This section holds the standing reference material
 that doesn't belong to any one lesson: the course syllabus, the classroom routines and
-procedures, and the daily bellringer ("stinger") deck used all year.
+procedures, and the daily stinger deck used all year.
 
 ## In This Section
 
 - [Syllabus](syllabus.md): course description, grading policy, and the parent/student
   partnership agreement.
 - [Routines & Procedures](routines-procedures.md): classroom expectations and daily conduct.
-- [Daily Stingers (Bellringers)](bellringers.md): the Bell Ringer slide deck and the printable
+- [Daily Stingers](bellringers.md): the stinger slide deck and the printable
   stinger response sheet used every day, all year.

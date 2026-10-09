@@ -9,7 +9,7 @@ day's graded item set per unit. ADD runs one Premiere module per unit with a fix
 """
 import glob, json, os, sys, textwrap
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from modules import AI, PR, ADD_UNITS, UNIT_DATES, AI_HOURS, FDD_PLAN, FDD_VOCAB, FDD_STINGERS
+from modules import AI, PR, ADD_UNITS, UNIT_DATES, AI_HOURS, FDD_PLAN, FDD_VOCAB
 
 ROOT = os.getcwd()
 q = lambda s: json.dumps(s, ensure_ascii=False)
@@ -37,28 +37,28 @@ COURSES = {
 
 # ---------------------------------------------------------------- per-type class structure (78 min)
 TIMING = {
- "exit": [("Bell Ringer / Stinger", 10, "Stinger prompt on the page; take attendance"),
+ "exit": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
           ("Pace Check", 5, "Students find today's pace goal and the first video they haven't finished"),
           ("BrainBuffet Module Work", 58, "Self-paced videos, following along in the app"),
           ("Exit Ticket", 5, "Graded: Pace Check Exit Ticket, posted in Schoology")],
- "vocab": [("Bell Ringer / Stinger", 10, "Stinger prompt on the page; take attendance"),
+ "vocab": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
            ("Vocabulary Review + Quiz", 15, "Graded: review the term list, then the Schoology vocab quiz"),
            ("BrainBuffet Module Work", 48, "Self-paced videos, following along in the app"),
            ("Save & Wrap-Up", 5, "Save, back up, log out")],
- "worksheet": [("Bell Ringer / Stinger", 10, "Stinger prompt on the page; take attendance"),
+ "worksheet": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
                ("Pace Check", 5, "Students find today's pace goal"),
                ("BrainBuffet Module Work", 33, "Self-paced videos, following along in the app"),
                ("Module Worksheet", 25, "Graded: the module worksheet"),
                ("Submit & Wrap-Up", 5, "Submit the worksheet, save, back up")],
- "stinger": [("Bell Ringer / Stinger", 10, "Stinger prompt on the page; take attendance"),
+ "stinger": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
              ("Pace Check", 5, "Students find today's pace goal"),
              ("BrainBuffet Module Work", 55, "Self-paced videos, following along in the app"),
              ("Stinger Sheet Check", 8, "Graded: the sub checks each student's Stinger Response Sheet")],
- "formative": [("Bell Ringer / Stinger", 10, "Stinger prompt on the page; take attendance"),
+ "formative": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
                ("Pace Check", 5, "Students check the product checklist"),
                ("BrainBuffet Module Work", 58, "Finish the module's product, then keep going in the videos"),
                ("Submit", 5, "Graded (formative): submit the finished module product in Schoology")],
- "summative": [("Bell Ringer / Stinger", 10, "Stinger prompt on the page; take attendance"),
+ "summative": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
                ("Pace Check", 5, "Students check the finished-product checklist"),
                ("Finish the Module Project", 58, "Finish, export and polish the unit's summative product"),
                ("Submit", 5, "Graded (summative): submit the finished product in Schoology")],
@@ -88,13 +88,13 @@ def unit_plan(cid, unit):
         tot = {m: sum(v[1] for v in AI[m]["videos"]) for m in AI}
         weight = {v[0]: v[1] * AI_HOURS[mod_of(v[0])] * 3600 / tot[mod_of(v[0])] for v in vids}
         return dict(title=p["title"], vids=vids, weight=weight, slots=p["slots"], extra=p.get("s_extra"),
-                    vocab=FDD_VOCAB[unit], vocab_inc=f"vocab/fmla-ai-u{unit}.md", stingers=FDD_STINGERS[unit],
+                    vocab=FDD_VOCAB[unit], vocab_inc=f"vocab/fmla-ai-u{unit}.md",
                     mods=sorted({mod_of(v[0]) for v in vids}), s_videos=True)
     m = ADD_UNITS[unit]
     mod = PR[m]
     return dict(title=f"Premiere Pro Module {m}: {mod['name']}", vids=mod["videos"], weight={v[0]: v[1] for v in mod["videos"]},
                 slots={"F1": ("exit",), "F2": ("vocab",), "F3": ("worksheet", m), "F4": ("stinger",), "S": ("summative", m)},
-                extra=None, vocab=mod["vocab"], vocab_inc=f"vocab/fmla-pr-m{m}.md", stingers=mod["stingers"], mods=[m],
+                extra=None, vocab=mod["vocab"], vocab_inc=f"vocab/fmla-pr-m{m}.md", mods=[m],
                 s_videos=(mod["short"] != "Exam Prep & Practice"))
 
 def plan_days(unit, P):
@@ -162,10 +162,6 @@ def start_steps(c, mods):
             f"pause the video to do each step yourself.\n"
             f"4. {files}\n"
             f"5. Use headphones. Captions and transcripts are available on every video.")
-
-STINGER = ("Answer on your **Stinger Response Sheet** ([download]({{ '/assets/downloads/stinger-response-sheet.pdf' | relative_url }}) "
-           "if you need a new one): rewrite the question, answer it in at least 3 sentences, share with a "
-           "neighbor, copy their answer, then write 1–2 sentences on what your answers had in common.")
 
 def video_table(vs):
     rows = ["| Video | Length | Title |", "|---|---|---|"]
@@ -273,7 +269,7 @@ def lesson_page(c, unit, P, day, alloc, days):
         L += [f"    - segment: {q(seg)}", f"      minutes: {mins}", f"      note: {q(note)}"]
     L += ["  the_seven:",
           f"    organization: {q('The page lists today’s videos, their lengths and one pace goal, so every student knows exactly where to stop. Graded today: ' + label + '.')}",
-          f"    connection: {q('Continues the BrainBuffet ' + c['app'] + ' videos from the last class; today’s stinger ties the module’s ideas to something students already know.')}",
+          f"    connection: {q('Continues the BrainBuffet ' + c['app'] + ' videos from the last class; each student starts at the first video they haven’t finished.')}",
           f"    target: {q(tgt)}",
           f"    collaboration: {q('Stinger share-and-copy with a neighbor; students who are ahead help a neighbor find their place in a video before starting the extension.')}",
           f"    evidence: {q(evidence)}", f"    summarization: {q(summ)}"]
@@ -304,7 +300,7 @@ def sub_notes(c, P, slot, day):
     mods = c["mods"]
     t = slot[0]
     m = slot[1] if len(slot) > 1 else None
-    base = ("For the sub: project this page, read the stinger aloud, and take attendance. Students work at "
+    base = ("For the sub: project today's stinger from the stinger deck and take attendance, then project this page. Students work at "
             "their own pace in BrainBuffet; circulate and check that each student's screen shows the video "
             "named in today's pace goal or later. ")
     if t == "exit":
@@ -344,8 +340,7 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
         b += ["{: .note }", f"Also due on the last S day: the **Module {em} Worksheet** ({mods[em]['product']}), graded as a formative.", ""]
     b += ["## Today's Plan", "", "| Time | What you do |", "|---|---|"]
     b += [f"| {mins} min | {seg} |" for seg, mins, _ in TIMING[t]]
-    sk = P["stingers"][{"F1": 0, "F2": 1, "F3": 2, "F4": 3, "S": 4}[day]]
-    b += ["", "## Bell Ringer: Stinger (~10 min)", "", "{: .discussion }", sk, "", STINGER, "", "## Stay on Pace", ""]
+    b += ["", "## Stinger (~10 min)", "", "{% include lesson-parts/stinger.md %}", "", "## Stay on Pace", ""]
     if day == "S":
         s_keys = [d for d, _ in days if d.startswith("S")]
         if today:
@@ -475,7 +470,7 @@ def section_index(c, cid, plans):
          "4. **Save and back up** before you leave.", "",
          "## How You're Graded", "", graded_intro, ""] + graded + [
          "", "## For the Substitute", "",
-         "- Project the day's page (find it on the unit page or the calendar). Read the stinger aloud and take attendance.",
+         "- Start class by projecting today's stinger from the course's stinger deck and taking attendance. Then project the day's page (find it on the unit page or the calendar).",
          "- Students work at their own pace. Circulate and check that each screen shows the pace-goal video or later.",
          "- Each day's teacher page has the full plan and the grading notes. Add `-teacher` to the end of the page's address, for example `3_1-teacher.html`.",
          "- Students who are ahead do the extension challenge listed on the page.", "",

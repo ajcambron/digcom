@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Daily Stingers (Bellringers)
+title: Daily Stingers
 parent: WBL | Pre-Unit
 grandparent: Work-Based Learning
 nav_exclude: false
 embed_extra: bellringer
 ---
-# Daily Stingers (Bellringers)
+# Daily Stingers
 
 Every class begins with the same 10-minute routine, using the deck below:
 

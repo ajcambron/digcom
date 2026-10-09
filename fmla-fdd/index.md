@@ -37,7 +37,7 @@ Each unit has one summative: the most substantial BrainBuffet product finished t
 
 ## For the Substitute
 
-- Project the day's page (find it on the unit page or the calendar). Read the stinger aloud and take attendance.
+- Start class by projecting today's stinger from the course's stinger deck and taking attendance. Then project the day's page (find it on the unit page or the calendar).
 - Students work at their own pace. Circulate and check that each screen shows the pace-goal video or later.
 - Each day's teacher page has the full plan and the grading notes. Add `-teacher` to the end of the page's address, for example `3_1-teacher.html`.
 - Students who are ahead do the extension challenge listed on the page.

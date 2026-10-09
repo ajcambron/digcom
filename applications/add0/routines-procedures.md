@@ -33,7 +33,7 @@ poster of classroom expectations, referenced throughout the year.
 
 ## Daily Routine
 
-1. **Bell Ringer:** begin the day's stinger immediately. See [Daily Stingers](bellringers.md).
+1. **Stinger:** begin the day's stinger immediately. See [Daily Stingers](bellringers.md).
 2. **Materials:** keep your binder, pencils, and pens on your table every day. Digital work is
  saved and organized per the conventions used throughout the course.
 3. **Wrap-up:** save, submit, and pack up during the last few minutes of every period. See each
