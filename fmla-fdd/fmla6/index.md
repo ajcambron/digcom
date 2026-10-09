@@ -28,7 +28,7 @@ This unit replaces the regular Foundations of Digital Design Unit 6 lessons whil
 | Day | Graded assignment |
 |---|---|
 | [6.1](6_1.md) | Module 5 Worksheet |
-| [6.2](6_2.md) | Work Day (nothing graded) |
+| [6.2](6_2.md) | Work Day + Exit Ticket (not graded) |
 | [6.3](6_3.md) | Stinger Sheet Check |
 | [6.4](6_4.md) | Vocabulary Quiz |
 | [6.5](6_5.md) | Module 6 Worksheet |

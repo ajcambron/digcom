@@ -25,9 +25,9 @@ This unit replaces the regular Foundations of Digital Design Unit 3 lessons whil
 
 | Day | Graded assignment |
 |---|---|
-| [3.1](3_1.md) | Work Day (nothing graded) |
+| [3.1](3_1.md) | Work Day + Exit Ticket (not graded) |
 | [3.2](3_2.md) | Vocabulary Quiz |
-| [3.3](3_3.md) | Work Day (nothing graded) |
+| [3.3](3_3.md) | Work Day + Exit Ticket (not graded) |
 | [3.4](3_4.md) | Module 1 Worksheet |
 | [S3](s3.md) | Your Own Animal (summative) |
 

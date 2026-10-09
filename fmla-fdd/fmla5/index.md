@@ -28,7 +28,7 @@ This unit replaces the regular Foundations of Digital Design Unit 5 lessons whil
 | Day | Graded assignment |
 |---|---|
 | [5.1](5_1.md) | Module 3 Vocabulary Quiz |
-| [5.2](5_2.md) | Work Day (nothing graded) |
+| [5.2](5_2.md) | Work Day + Exit Ticket (not graded) |
 | [5.3](5_3.md) | Module 4 Vocabulary Quiz |
 | [5.4](5_4.md) | Module 4 Worksheet |
 | [S5](s5.md) | Dobson National Park Trifold Brochure (summative) |

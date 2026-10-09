@@ -27,7 +27,7 @@ This unit replaces the regular Foundations of Digital Design Unit 4 lessons whil
 
 | Day | Graded assignment |
 |---|---|
-| [4.1](4_1.md) | Work Day (nothing graded) |
+| [4.1](4_1.md) | Work Day + Exit Ticket (not graded) |
 | [4.2](4_2.md) | Vocabulary Quiz |
 | [4.3](4_3.md) | Module 2 Worksheet |
 | [4.4](4_4.md) | Dobson National Park Branding Style Guide (summative) |

@@ -57,7 +57,7 @@ TIMING = {
  "work": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
           ("Pace Check", 5, "Students find today's pace goal and the first video they haven't finished"),
           ("BrainBuffet Module Work", 58, "Self-paced videos, following along in the app; no graded item today"),
-          ("Save & Wrap-Up", 5, "Save, back up, log out")],
+          ("Exit Ticket", 5, "Not graded: Pace Check Exit Ticket, posted in Schoology")],
  "product": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
              ("Pace Check", 5, "Students check the product checklist"),
              ("BrainBuffet Module Work", 58, "Finish the module's product, then keep going in the videos"),
@@ -304,7 +304,7 @@ def lesson_page(c, unit, P, day, alloc, days):
            "worksheet": (f"explain Module {m}'s concepts by answering its Handbook's three Critical Thinking questions, and {reach}"
                          if c["app"] == "Premiere Pro" else f"apply Module {m}'s skills by completing its worksheet, and {reach}"),
            "stinger": f"{reach}, and show a complete Stinger Response Sheet for {span}",
-           "work": f"follow the BrainBuffet {c['app']} videos at pace and {reach}",
+           "work": f"follow the BrainBuffet {c['app']} videos at pace and {reach}, then report progress on an exit ticket",
            "product": f"finish and submit {mods[m]['product'] if m else ''}, and {reach}",
            "formative": f"finish and submit {mods[m]['product'] if m else ''}, and {reach}",
            "summative": f"finish and submit {mods[m]['product'] if m else ''}"}[t]
@@ -312,7 +312,7 @@ def lesson_page(c, unit, P, day, alloc, days):
                 "vocab": "The Schoology vocabulary quiz score (auto-graded).",
                 "worksheet": f"The submitted {ws_name(c, m)}.",
                 "stinger": f"The Stinger Response Sheet: every stinger from {span} answered, shared, copied and synthesized.",
-                "work": "No collected grade today: the sub's walk-around check that each screen shows today's pace-goal video or later.",
+                "work": "The Pace Check Exit Ticket in Schoology (not graded): last video finished, a screenshot, and a 3-sentence reflection.",
                 "product": f"The submitted summative product: {mods[m]['product'] if m else ''}.",
                 "formative": f"The submitted formative product: {mods[m]['product'] if m else ''}.",
                 "summative": f"The submitted summative product: {mods[m]['product'] if m else ''}."}[t]
@@ -321,7 +321,7 @@ def lesson_page(c, unit, P, day, alloc, days):
             "worksheet": ("Students explain the module's concepts in their own words, using its vocabulary." if c["app"] == "Premiere Pro"
                           else "The worksheet applies the module's skills on a fresh file."),
             "stinger": "Students review their stingers while the sheet is checked.",
-            "work": "Before saving, students compare the last video they finished with today's pace goal.",
+            "work": "The exit ticket: last video finished, a screenshot, and one skill learned, compared with today's pace goal.",
             "product": "Students check the product against its checklist before submitting.",
             "formative": "Students check the product against its checklist before submitting.",
             "summative": "Students submit the finished product and check it against the checklist."}[t]
@@ -352,8 +352,8 @@ def lesson_page(c, unit, P, day, alloc, days):
           f"    target: {q(tgt)}",
           f"    collaboration: {q('Stinger share-and-copy with a neighbor; students who are ahead help a neighbor find their place in a video before starting the extension.')}",
           f"    evidence: {q(evidence)}", f"    summarization: {q(summ)}"]
-    if t == "exit":
-        L.append("  exit_ticket: fmla-pace")
+    if t in ("exit", "work"):
+        L.append(f"  exit_ticket: {'fmla-pace' if t == 'exit' else 'fmla-work'}")
     files = "your BrainBuffet project file" if c["app"] == "Illustrator" else "your .prproj project file"
     L += ["  organize:", "    binder:", "      - \"your Stinger Response Sheet\"", "    drive:",
           f"      - item: {q(files)}", "        folder: \"Project Files\""]
@@ -385,7 +385,8 @@ def sub_notes(c, P, slot, day):
             "their own pace in BrainBuffet; circulate and check that each student's screen shows the video "
             "named in today's pace goal or later. ")
     if t == "work":
-        extra = "Nothing is collected today: it's a work day. The walk-around pace check is the evidence; note anyone more than one class behind. "
+        extra = ("Nothing is graded today: it's a work day. In the last 5 minutes, students post the Pace Check Exit Ticket in Schoology "
+                 "(screenshot + last video + reflection). It isn't graded, but it shows who is falling behind. ")
     elif t == "exit":
         extra = "In the last 5 minutes, students post the Pace Check Exit Ticket in Schoology (screenshot + last video + reflection). "
     elif t == "vocab":
@@ -427,7 +428,7 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
         m = None
     pw = f", {p} points" if p else ""
     graded = {"exit": "**Exit Ticket.** Post your Pace Check Exit Ticket in Schoology at the end of class.",
-              "work": "**Work day, nothing graded.** Use all of today's work time to reach the pace goal.",
+              "work": "**Work day, nothing graded.** Use the work time to reach the pace goal, then post the Pace Check Exit Ticket at the end of class.",
               "product": f"**{label} (summative{pw}).** Finish and submit it in Schoology by the end of class.",
               "vocab": f"**{label}{' (' + pw[2:] + ')' if p else ''}.** Review the key terms below, then take the Schoology vocabulary quiz.",
               "worksheet": (f"**{ws_name(c, m)}{' (' + pw[2:] + ')' if p else ''}.** "
@@ -500,8 +501,9 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
                   f"after today. Watch ahead to {need} first (captions on, skim what you already know), then do the worksheet. "
                   "Pick the pacing guide back up next class.", ""]
         b += [worksheet_text(c, m), ""]
-    if t == "exit":
-        b += ["## Exit Ticket (last ~5 min)", "", "{% include lesson-parts/organize.html %}", "", "{% include exit-ticket/fmla-pace.md %}", ""]
+    if t in ("exit", "work"):
+        et = "fmla-pace" if t == "exit" else "fmla-work"
+        b += ["## Exit Ticket (last ~5 min)", "", "{% include lesson-parts/organize.html %}", "", f"{{% include exit-ticket/{et}.md %}}", ""]
     else:
         b += ["## Wrap-Up", "", "Save, back up your project file, and log out of GMetrix SMS.", "", "{% include lesson-parts/organize.html %}", ""]
     return "\n".join(b)
@@ -512,7 +514,7 @@ def graded_rows(c, unit, P):
         slot = P["slots"][day]
         lab = slot_label(c, slot, unit)
         p = pts_of(c, slot)
-        kind = {"formative": " (formative product)", "summative": " (summative)", "product": " (summative)", "work": " (nothing graded)"}.get(slot[0], "")
+        kind = {"formative": " (formative product)", "summative": " (summative)", "product": " (summative)", "work": " + Exit Ticket (not graded)"}.get(slot[0], "")
         if p:
             kind = kind[:-1] + f", {p} pts)" if kind else f" ({p} pts)"
         num, link = (f"{unit}.{day[1]}", f"{unit}_{day[1]}.md") if day != "S" else (f"S{unit}", f"s{unit}.md")
@@ -574,7 +576,7 @@ def section_index(c, cid, plans):
             graded.append(f"| {unit} | " + " | ".join(r.get(str(i), "—") for i in range(1, nf + 1)) + f" | {r['S']} |")
         graded_intro = ("Formatives are every module worksheet, a vocabulary quiz for each module's terms, and one Stinger Sheet Check "
                         "near the end that covers every stinger since the semester break. Summatives are the BrainBuffet module products. "
-                        "Days marked *work day* have nothing graded: use them to stay on pace.")
+                        "Work days have nothing graded: use them to stay on pace, and end each one with the Pace Check Exit Ticket.")
     else:
         graded = ["| Day | Graded assignment |", "|---|---|",
                   "| F .1 | Exit Ticket: your progress, a screenshot and one thing you learned |",
@@ -665,8 +667,21 @@ def fmla_calendar(plans):
         f.write("# Generated by scripts/fmla/gen_fmla.py from calendar.yml; don't edit by hand.\n")
         yaml.safe_dump(cal, f, sort_keys=False, allow_unicode=True)
 
+def work_exit_tickets():
+    """Work-day exit ticket: the same Pace Check, not graded (it's pace data, outside the 12 formatives)."""
+    stu = open(os.path.join(ROOT, "_includes/exit-ticket/fmla-pace.md")).read()
+    write("_includes/exit-ticket/fmla-work.md", stu.replace("📤 **Exit Ticket: Pace Check.**", "📤 **Exit Ticket: Pace Check** (not graded).", 1))
+    write("_includes/exit-ticket/fmla-work-teacher.md",
+"""**Exit Ticket: Pace Check, work day (FMLA units, not graded).** In the last 5 minutes, students post to
+the discussion board the last BrainBuffet video they finished, a screenshot of their work at that
+point, and at least 3 sentences (aim for 5) on one skill they learned, how they used it, and where
+they are against the day's pace goal. It isn't entered as a grade: use the posts to see who is
+falling behind before the S days.
+""")
+
 def main():
     exit_tickets()
+    work_exit_tickets()
     for old in glob.glob(os.path.join(ROOT, "_includes/vocab/fmla-ai-*.md")):
         os.remove(old)
     warnings = []
