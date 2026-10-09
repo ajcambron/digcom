@@ -107,7 +107,7 @@ AI = {
   worksheet_note="Keep your Module 2 style guide open: the poster has to follow your own branding rules.",
   worksheet_grade="BrainBuffet's worksheet rubric: 30 items (1 pt each): 6 symbols, 6 brushes, 6 effects, 6 patterns, 3 gradients, 3 blending modes.",
   ext="Add Dobson's 25 hiking trails to your poster (trails on the mountains or a trailhead sign), or design a second vector poster of your hometown.",
-  rubric="BrainBuffet Module 3 project rubric (100 pts): Mastery of Skills 80 (poster matches the style guide; symbols, brushes, gradients, patterns and blending modes; layers managed), Effort 10 (all required layers), Requirements 10 (on time, saved as a PDF; −2 per day late).",
+  rubric="50 pts (BrainBuffet's Module 3 project rubric, halved): Mastery of Skills 40 (poster matches the style guide; symbols, brushes, gradients, patterns and blending modes; layers managed), Effort 5 (all required layers), Requirements 5 (on time, saved as a PDF; −1 per day late).", points=50,
   vocab=[("Atmospheric Perspective", "Showing depth by making faraway objects paler, less detailed and bluer than close ones."),
          ("Blending Mode", "A setting that controls how a layer's colors mix with the colors beneath it."),
          ("Brush", "A preset that applies a decorative style along a path, like grass or a painted stroke."),
@@ -317,7 +317,7 @@ AI[5] = dict(name="Dobson's Business Card", short="Business Card",
   worksheet_note="Rewatch videos 5.05 and 5.06 if you need a refresher on the Image Trace panel.",
   worksheet_grade="BrainBuffet's worksheet rubric: every image traced with the correct settings (2 pts each, 12 pts).",
   ext="Design a business card for a real teacher or coach at school (ask first), using what you learned about hierarchy and bleeds.",
-  rubric="BrainBuffet Module 5 project rubric (100 pts): Mastery of Skills 80 (several card versions plus a final version after feedback, all required info, Image-Traced contact icons, varied layouts and imagery), Effort 10 (feedback questions answered thoughtfully), Requirements 10 (on time, saved as a PDF; −2 per day late).",
+  rubric="50 pts (BrainBuffet's Module 5 project rubric, halved): Mastery of Skills 40 (several card versions plus a final version after feedback, all required info, Image-Traced contact icons, varied layouts and imagery), Effort 5 (feedback questions answered thoughtfully), Requirements 5 (on time, saved as a PDF; −1 per day late).", points=50,
   vocab=[], stingers=[])
 
 AI[6] = dict(name="Generative AI in Adobe Illustrator", short="Generative AI & Exam Tips",

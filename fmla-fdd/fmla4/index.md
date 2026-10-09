@@ -31,7 +31,7 @@ This unit replaces the regular Foundations of Digital Design Unit 4 lessons whil
 | [4.2](4_2.md) | Vocabulary Quiz |
 | [4.3](4_3.md) | Module 2 Worksheet |
 | [4.4](4_4.md) | Dobson National Park Branding Style Guide (formative product) |
-| [S4](s4.md) | Dobson National Park Poster (summative) |
+| [S4](s4.md) | Dobson National Park Poster (summative, 50 pts) |
 
 ## Pacing Guide
 

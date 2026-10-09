@@ -376,7 +376,8 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
     if t == "formative":
         b += ["## Finish and Submit (formative)", ""] + product_checklist(mods[m], "Module " + str(m) + " product")
     if t == "summative":
-        b += ["## Finished Product Checklist (summative)", ""] + product_checklist(mods[m], "summative")
+        pts = f" It's worth **{mods[m]['points']} points**." if mods[m].get("points") else ""
+        b += ["## Finished Product Checklist (summative)", "", f"This is the unit's summative.{pts}", ""] + product_checklist(mods[m], "summative")
         if P["extra"]:
             em = P["extra"][1]
             b += [f"### Also due: Module {em} Worksheet (formative)", "", worksheet_text(c, em), ""]
@@ -394,7 +395,10 @@ def graded_rows(c, unit, P):
     for day in ("F1", "F2", "F3", "F4", "S"):
         slot = P["slots"][day]
         lab = slot_label(c, slot, unit)
+        pts = c["mods"][slot[1]].get("points") if slot[0] in ("formative", "summative") else None
         kind = {"formative": " (formative product)", "summative": " (summative)"}.get(slot[0], "")
+        if pts:
+            kind = kind[:-1] + f", {pts} pts)"
         num, link = (f"{unit}.{day[1]}", f"{unit}_{day[1]}.md") if day != "S" else (f"S{unit}", f"s{unit}.md")
         extra = ""
         if day == "S" and P["extra"]:

@@ -31,9 +31,9 @@ Each unit has one summative: the most substantial BrainBuffet product finished t
 | Unit | .1 | .2 | .3 | .4 | S (summative) |
 |---|---|---|---|---|---|
 | 3 | Exit Ticket | Vocabulary Quiz | Stinger Sheet Check | Module 1 Worksheet | Your Own Animal (summative) |
-| 4 | Exit Ticket | Vocabulary Quiz | Module 2 Worksheet | Dobson National Park Branding Style Guide (formative product) | Dobson National Park Poster (summative) |
+| 4 | Exit Ticket | Vocabulary Quiz | Module 2 Worksheet | Dobson National Park Branding Style Guide (formative product) | Dobson National Park Poster (summative, 50 pts) |
 | 5 | Module 3 Worksheet | Vocabulary Quiz | Stinger Sheet Check | Module 4 Worksheet | Dobson National Park Trifold Brochure (summative) |
-| 6 | Module 5 Worksheet | Vocabulary Quiz | Exit Ticket | Stinger Sheet Check | Dobson's Business Card (summative); also the Module 6 Worksheet (formative) |
+| 6 | Module 5 Worksheet | Vocabulary Quiz | Exit Ticket | Stinger Sheet Check | Dobson's Business Card (summative, 50 pts); also the Module 6 Worksheet (formative) |
 
 ## For the Substitute
 

@@ -31,7 +31,7 @@ This unit replaces the regular Foundations of Digital Design Unit 6 lessons whil
 | [6.2](6_2.md) | Vocabulary Quiz |
 | [6.3](6_3.md) | Exit Ticket |
 | [6.4](6_4.md) | Stinger Sheet Check |
-| [S6](s6.md) | Dobson's Business Card (summative); also the Module 6 Worksheet (formative) |
+| [S6](s6.md) | Dobson's Business Card (summative, 50 pts); also the Module 6 Worksheet (formative) |
 
 ## Pacing Guide
 
