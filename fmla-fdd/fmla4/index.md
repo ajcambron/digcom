@@ -21,17 +21,17 @@ This unit replaces the regular Foundations of Digital Design Unit 4 lessons whil
 |---|---|
 | **BrainBuffet videos** | 2.01–3.19 (42 videos, 242:06 of video) |
 | **Class periods** | 14 school days on the A/B calendar: 4 formative days plus 3 S days per section |
-| **Summative** | the Dobson National Park poster, built on organized layers and saved as a PDF |
+| **Summatives** | the Dobson National Park Branding Style Guide, saved as a PDF (50 pts); the Dobson National Park poster, built on organized layers and saved as a PDF (50 pts) |
 
 ## Graded Assignments
 
 | Day | Graded assignment |
 |---|---|
-| [4.1](4_1.md) | Exit Ticket |
-| [4.2](4_2.md) | Vocabulary Quiz |
-| [4.3](4_3.md) | Module 2 Worksheet |
-| [4.4](4_4.md) | Dobson National Park Branding Style Guide (formative product) |
-| [S4](s4.md) | Dobson National Park Poster (summative, 50 pts) |
+| [4.1](4_1.md) | Work Day (nothing graded) |
+| [4.2](4_2.md) | Vocabulary Quiz (10 pts) |
+| [4.3](4_3.md) | Module 2 Worksheet (10 pts) |
+| [4.4](4_4.md) | Dobson National Park Branding Style Guide (summative, 50 pts) |
+| [S4](s4.md) | Dobson National Park Poster (summative, 50 pts); also the Module 3 Worksheet (10 pts) |
 
 ## Pacing Guide
 

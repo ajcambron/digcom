@@ -21,17 +21,17 @@ This unit replaces the regular Foundations of Digital Design Unit 5 lessons whil
 |---|---|
 | **BrainBuffet videos** | 4.00–5.06 (28 videos, 175:34 of video) |
 | **Class periods** | 14 school days on the A/B calendar: 4 formative days plus 3 S days per section |
-| **Summative** | the Dobson National Park trifold brochure (two artboards, printed back to back), saved as a PDF |
+| **Summative** | the Dobson National Park trifold brochure (two artboards, printed back to back), saved as a PDF (100 pts) |
 
 ## Graded Assignments
 
 | Day | Graded assignment |
 |---|---|
-| [5.1](5_1.md) | Module 3 Worksheet |
-| [5.2](5_2.md) | Vocabulary Quiz |
-| [5.3](5_3.md) | Stinger Sheet Check |
-| [5.4](5_4.md) | Module 4 Worksheet |
-| [S5](s5.md) | Dobson National Park Trifold Brochure (summative) |
+| [5.1](5_1.md) | Module 3 Vocabulary Quiz (10 pts) |
+| [5.2](5_2.md) | Work Day (nothing graded) |
+| [5.3](5_3.md) | Module 4 Vocabulary Quiz (10 pts) |
+| [5.4](5_4.md) | Module 4 Worksheet (10 pts) |
+| [S5](s5.md) | Dobson National Park Trifold Brochure (summative, 100 pts) |
 
 ## Pacing Guide
 
@@ -39,12 +39,12 @@ Where you should be at the end of each class:
 
 | Class | Videos | Finish by the end of class |
 |---|---|---|
-| 5.1 | 4.00–4.02 | 4.02 Create Document |
-| 5.2 | 4.03–4.07 | 4.07 Front Panel: Place Our Picture and Create Clipping Mask |
-| 5.3 | 4.08–4.11 | 4.11 Creative Commons: Worksheet |
-| 5.4 | 4.12–4.14 | 4.14 Pictures, Clipping Masks, and Captions |
-| S5, day 1 | 4.15–4.20 | 4.20 Wrap It Up and Save! |
-| S5, day 2 | 4.21–5.06 | 5.06 More Image Tracing |
+| 5.1 | 4.00–4.03 | 4.03 Bleeds and Guides |
+| 5.2 | 4.04–4.09 | 4.09 Place Text and Spell Check |
+| 5.3 | 4.10–4.12 | 4.12 Add Some Images |
+| 5.4 | 4.13–4.15 | 4.15 Place Text and Leading |
+| S5, day 1 | 4.16–4.21 | 4.21 The Trifold |
+| S5, day 2 | 5.01–5.06 | 5.06 More Image Tracing |
 | S5, last day(s) | — | Finish, export and submit the summative |
 
 ## Calendar of Events for This Unit

@@ -13,7 +13,7 @@ While your teacher is on leave, Foundations of Digital Design Units 3–6 run en
 | Unit | Dates | BrainBuffet content | Summative |
 |---|---|---|---|
 | [Unit 3](fmla3/index.md) | Oct 13 – Oct 30, 2026 | Illustrator Module 1: Getting Started | Your Own Animal |
-| [Unit 4](fmla4/index.md) | Nov 4 – Dec 1, 2026 | Illustrator Modules 2–3: Branding Style Guide & National Park Poster | Dobson National Park Poster |
+| [Unit 4](fmla4/index.md) | Nov 4 – Dec 1, 2026 | Illustrator Modules 2–3: Branding Style Guide & National Park Poster | Dobson National Park Branding Style Guide; Dobson National Park Poster |
 | [Unit 5](fmla5/index.md) | Dec 2, 2026 – Jan 4, 2027 | Illustrator Modules 4–5: Trifold & Image Trace | Dobson National Park Trifold Brochure |
 | [Unit 6](fmla6/index.md) | Jan 5 – Jan 22, 2027 | Illustrator Modules 5–6: Business Card & Generative AI | Dobson's Business Card |
 
@@ -26,14 +26,14 @@ While your teacher is on leave, Foundations of Digital Design Units 3–6 run en
 
 ## How You're Graded
 
-Each unit has one summative: the most substantial BrainBuffet product finished that unit. The other products and every module worksheet are formative grades.
+Units 3–6 have **12 formatives worth 10 points each (120 points)** and **300 summative points**: the BrainBuffet module products. Formatives are every module worksheet, a vocabulary quiz for each module's terms, and one Stinger Sheet Check at the end that covers every stinger since the semester break. Days marked *work day* have nothing graded: use them to stay on pace.
 
 | Unit | .1 | .2 | .3 | .4 | S (summative) |
 |---|---|---|---|---|---|
-| 3 | Exit Ticket | Vocabulary Quiz | Stinger Sheet Check | Module 1 Worksheet | Your Own Animal (summative) |
-| 4 | Exit Ticket | Vocabulary Quiz | Module 2 Worksheet | Dobson National Park Branding Style Guide (formative product) | Dobson National Park Poster (summative, 50 pts) |
-| 5 | Module 3 Worksheet | Vocabulary Quiz | Stinger Sheet Check | Module 4 Worksheet | Dobson National Park Trifold Brochure (summative) |
-| 6 | Module 5 Worksheet | Vocabulary Quiz | Exit Ticket | Stinger Sheet Check | Dobson's Business Card (summative, 50 pts); also the Module 6 Worksheet (formative) |
+| 3 | Work Day (nothing graded) | Vocabulary Quiz (10 pts) | Work Day (nothing graded) | Module 1 Worksheet (10 pts) | Your Own Animal (summative, 50 pts) |
+| 4 | Work Day (nothing graded) | Vocabulary Quiz (10 pts) | Module 2 Worksheet (10 pts) | Dobson National Park Branding Style Guide (summative, 50 pts) | Dobson National Park Poster (summative, 50 pts); also the Module 3 Worksheet (10 pts) |
+| 5 | Module 3 Vocabulary Quiz (10 pts) | Work Day (nothing graded) | Module 4 Vocabulary Quiz (10 pts) | Module 4 Worksheet (10 pts) | Dobson National Park Trifold Brochure (summative, 100 pts) |
+| 6 | Module 5 Worksheet (10 pts) | Work Day (nothing graded) | Stinger Sheet Check (10 pts) | Vocabulary Quiz (10 pts) | Dobson's Business Card (summative, 50 pts); also the Module 6 Worksheet (10 pts) |
 
 ## For the Substitute
 

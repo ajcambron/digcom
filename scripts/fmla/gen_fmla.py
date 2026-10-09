@@ -9,7 +9,7 @@ day's graded item set per unit. ADD runs one Premiere module per unit with a fix
 """
 import glob, json, os, sys, textwrap
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from modules import AI, PR, ADD_UNITS, UNIT_DATES, AI_HOURS, FDD_PLAN, FDD_VOCAB
+from modules import AI, PR, ADD_UNITS, UNIT_DATES, AI_HOURS, FDD_PLAN, FDD_VOCAB, FORMATIVE_PTS
 
 ROOT = os.getcwd()
 q = lambda s: json.dumps(s, ensure_ascii=False)
@@ -30,7 +30,7 @@ def mmss(sec):
 
 COURSES = {
  "fdd": dict(key="FMLA FDD", top="FMLA FDD", folder="fmla-fdd", nav=25, app="Illustrator", course_name="Foundations of Digital Design",
-             mods=AI, unit_label="GMetrix Illustrator", vocab_prefix="ai"),
+             mods=AI, unit_label="GMetrix Illustrator", vocab_prefix="ai", form_pts=FORMATIVE_PTS),
  "add": dict(key="FMLA ADD", top="FMLA ADD", folder="fmla-add", nav=45, app="Premiere Pro", course_name="Applications of Digital Design",
              mods=PR, unit_label="GMetrix Premiere", vocab_prefix="pr"),
 }
@@ -54,6 +54,14 @@ TIMING = {
              ("Pace Check", 5, "Students find today's pace goal"),
              ("BrainBuffet Module Work", 55, "Self-paced videos, following along in the app"),
              ("Stinger Sheet Check", 8, "Graded: the sub checks each student's Stinger Response Sheet")],
+ "work": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
+          ("Pace Check", 5, "Students find today's pace goal and the first video they haven't finished"),
+          ("BrainBuffet Module Work", 58, "Self-paced videos, following along in the app; no graded item today"),
+          ("Save & Wrap-Up", 5, "Save, back up, log out")],
+ "product": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
+             ("Pace Check", 5, "Students check the product checklist"),
+             ("BrainBuffet Module Work", 58, "Finish the module's product, then keep going in the videos"),
+             ("Submit", 5, "Graded (summative): submit the finished module product in Schoology")],
  "formative": [("Stinger", 10, "Today's stinger from the stinger deck; take attendance"),
                ("Pace Check", 5, "Students check the product checklist"),
                ("BrainBuffet Module Work", 58, "Finish the module's product, then keep going in the videos"),
@@ -87,14 +95,17 @@ def unit_plan(cid, unit):
         vids = seq[ids.index(p["start"]):ids.index(p["end"]) + 1]
         tot = {m: sum(v[1] for v in AI[m]["videos"]) for m in AI}
         weight = {v[0]: v[1] * AI_HOURS[mod_of(v[0])] * 3600 / tot[mod_of(v[0])] for v in vids}
-        return dict(title=p["title"], vids=vids, weight=weight, slots=p["slots"], extra=p.get("s_extra"),
-                    vocab=FDD_VOCAB[unit], vocab_inc=f"vocab/fmla-ai-u{unit}.md",
+        groups = FDD_VOCAB[unit]
+        vg = [(lab, terms, f"vocab/fmla-ai-u{unit}.md" if len(groups) == 1 else
+               f"vocab/fmla-ai-u{unit}-m{lab.split()[-1]}.md") for lab, terms in groups]
+        return dict(title=p["title"], vids=vids, weight=weight, slots=p["slots"], extra=p.get("s_extra", []),
+                    vocab_groups=vg,
                     mods=sorted({mod_of(v[0]) for v in vids}), s_videos=True)
     m = ADD_UNITS[unit]
     mod = PR[m]
     return dict(title=f"Premiere Pro Module {m}: {mod['name']}", vids=mod["videos"], weight={v[0]: v[1] for v in mod["videos"]},
                 slots={"F1": ("exit",), "F2": ("vocab",), "F3": ("worksheet", m), "F4": ("stinger",), "S": ("summative", m)},
-                extra=None, vocab=mod["vocab"], vocab_inc=f"vocab/fmla-pr-m{m}.md", mods=[m],
+                extra=[], vocab_groups=[(f"Module {m}", mod["vocab"], f"vocab/fmla-pr-m{m}.md")], mods=[m],
                 s_videos=(mod["short"] != "Exam Prep & Practice"))
 
 def plan_days(unit, P):
@@ -134,7 +145,7 @@ def check(cid, unit, P, alloc):
         need = None
         if slot[0] == "worksheet" and cid == "fdd":
             need = AI_WS_NEEDS[slot[1]]
-        if slot[0] == "formative":
+        if slot[0] in ("formative", "product"):
             need = AI[slot[1]]["videos"][-1][0]
         key = lambda vid: tuple(int(x) for x in vid.split("."))
         if need and key(need) < key(P["vids"][0][0]):
@@ -144,6 +155,23 @@ def check(cid, unit, P, alloc):
             if d is None or ORDER.index(d) > ORDER.index(day):
                 warn.append(f"{cid} U{unit} {day} {slot} needs {need}, scheduled {d}")
     return warn
+
+PLANS = {}
+
+def P_of(c, unit):
+    return PLANS[(c["key"], unit)]
+
+def pts_of(c, slot):
+    """Points for a graded slot, or None when the course has no point schema (ADD) or nothing is graded."""
+    t = slot[0]
+    if t in ("summative", "product"):
+        return c["mods"][slot[1]].get("points")
+    if t == "work":
+        return None
+    return c.get("form_pts")
+
+def pts_txt(p):
+    return f", {p} pts" if p else ""
 
 # ---------------------------------------------------------------- shared text
 def start_steps(c, mods):
@@ -170,11 +198,13 @@ def video_table(vs):
 
 def slot_label(c, slot, unit):
     t = slot[0]
-    mods = c["mods"]
-    return {"exit": "Exit Ticket", "vocab": "Vocabulary Quiz", "stinger": "Stinger Sheet Check",
-            "worksheet": f"Module {slot[1]} Worksheet" if len(slot) > 1 else "Module Worksheet",
-            "formative": f"{mods[slot[1]]['product_title']}" if len(slot) > 1 else "",
-            "summative": f"{mods[slot[1]]['product_title']}" if len(slot) > 1 else ""}[t]
+    if t in ("product", "formative", "summative"):
+        return c["mods"][slot[1]]["product_title"]
+    if t == "vocab" and len(P_of(c, unit)["vocab_groups"]) > 1:
+        return f"{P_of(c, unit)['vocab_groups'][slot[1]][0]} Vocabulary Quiz"
+    if t == "worksheet":
+        return f"Module {slot[1]} Worksheet" if len(slot) > 1 else "Module Worksheet"
+    return {"exit": "Exit Ticket", "vocab": "Vocabulary Quiz", "stinger": "Stinger Sheet Check", "work": "Work Day"}[t]
 
 def worksheet_text(c, m):
     mod = c["mods"][m]
@@ -228,22 +258,31 @@ def lesson_page(c, unit, P, day, alloc, days):
     last = today[-1] if today else None
     reach = f"finish video {last[0]} ({last[3]})" if last else "catch up on any unfinished videos"
     m = slot[1] if len(slot) > 1 else None
+    span = slot[1] if t == "stinger" and len(slot) > 1 else "the unit so far"
+    if t in ("vocab", "stinger"):
+        m = None
     tgt = {"exit": f"follow the BrainBuffet {c['app']} videos at pace and {reach}, then report progress on an exit ticket",
            "vocab": f"define the unit's key terms by scoring on the vocabulary quiz, and {reach}",
            "worksheet": f"apply Module {m}'s skills by completing its worksheet, and {reach}",
-           "stinger": f"{reach}, and show a complete Stinger Response Sheet for the unit so far",
+           "stinger": f"{reach}, and show a complete Stinger Response Sheet for {span}",
+           "work": f"follow the BrainBuffet {c['app']} videos at pace and {reach}",
+           "product": f"finish and submit {mods[m]['product'] if m else ''}, and {reach}",
            "formative": f"finish and submit {mods[m]['product'] if m else ''}, and {reach}",
            "summative": f"finish and submit {mods[m]['product'] if m else ''}"}[t]
     evidence = {"exit": "The Pace Check Exit Ticket in Schoology: last video finished, a screenshot of it, and a 3-sentence reflection.",
                 "vocab": "The Schoology vocabulary quiz score (auto-graded).",
                 "worksheet": f"The submitted Module {m} worksheet.",
-                "stinger": "The Stinger Response Sheet: every stinger this unit answered, shared, copied and synthesized.",
+                "stinger": f"The Stinger Response Sheet: every stinger from {span} answered, shared, copied and synthesized.",
+                "work": "No collected grade today: the sub's walk-around check that each screen shows today's pace-goal video or later.",
+                "product": f"The submitted summative product: {mods[m]['product'] if m else ''}.",
                 "formative": f"The submitted formative product: {mods[m]['product'] if m else ''}.",
                 "summative": f"The submitted summative product: {mods[m]['product'] if m else ''}."}[t]
     summ = {"exit": "The exit ticket: last video finished, a screenshot, and one skill learned.",
             "vocab": "The vocab quiz summarizes the unit's terms.",
             "worksheet": "The worksheet applies the module's skills on a fresh file.",
-            "stinger": "Students review their unit's stingers while the sheet is checked.",
+            "stinger": "Students review their stingers while the sheet is checked.",
+            "work": "Before saving, students compare the last video they finished with today's pace goal.",
+            "product": "Students check the product against its checklist before submitting.",
             "formative": "Students check the product against its checklist before submitting.",
             "summative": "Students submit the finished product and check it against the checklist."}[t]
     acp_parts = [f"M{mm}: {mods[mm]['acp']}" for mm in today_mods] if len(P["mods"]) > 1 else [mods[today_mods[0]]["acp"]]
@@ -253,22 +292,22 @@ def lesson_page(c, unit, P, day, alloc, days):
         L.append("  is_summative: true")
     L.append(f"  standard: {q('ACP ' + '; '.join(acp_parts) + acp_note)}")
     if t == "vocab":
-        L += ["  vocab:", f"    - {P['vocab_inc']}"]
+        L += ["  vocab:", f"    - {P['vocab_groups'][slot[1] if len(slot) > 1 else 0][2]}"]
     mod_names = ", ".join(f"Module {mm} ({mods[mm]['name']})" for mm in P["mods"])
     L.append(folded("source", f"FMLA plan: this unit follows BrainBuffet {c['app']} {mod_names} in GMetrix SMS, instead of the regular {c['course_name']} Unit {unit} lessons. Video list, lengths and objective mapping come from BrainBuffet's teacher lesson plans."))
     if day == "S":
         lo, hi = s_days(unit)
         span = f"{lo}" if lo == hi else f"{lo}–{hi}"
-        extra = ""
-        if P["extra"]:
-            em = P["extra"][1]
-            extra = f" The Module {em} worksheet is also due on the last S day, as a separate formative grade."
-        L.append(folded("purpose_note", f"The S block is {span} class periods per section on the A/B calendar. The unit's one summative is {mods[m]['product']}.{extra} Students who finish early do the extension challenge."))
+        extra = "".join(f" The Module {em} worksheet is also due on the last S day, as a separate formative grade{pts_txt(pts_of(c, ex))}."
+                        for ex in P["extra"] for em in [ex[1]])
+        sp = pts_of(c, slot)
+        sp = f" ({sp} pts)" if sp else ""
+        L.append(folded("purpose_note", f"The S block is {span} class periods per section on the A/B calendar. The S block's summative is {mods[m]['product']}{sp}.{extra} Students who finish early do the extension challenge."))
     L.append("  timing:")
     for seg, mins, note in TIMING[t]:
         L += [f"    - segment: {q(seg)}", f"      minutes: {mins}", f"      note: {q(note)}"]
     L += ["  the_seven:",
-          f"    organization: {q('The page lists today’s videos, their lengths and one pace goal, so every student knows exactly where to stop. Graded today: ' + label + '.')}",
+          f"    organization: {q('The page lists today’s videos, their lengths and one pace goal, so every student knows exactly where to stop. ' + ('Nothing is graded today; it’s a work day.' if t == 'work' else 'Graded today: ' + label + '.'))}",
           f"    connection: {q('Continues the BrainBuffet ' + c['app'] + ' videos from the last class; each student starts at the first video they haven’t finished.')}",
           f"    target: {q(tgt)}",
           f"    collaboration: {q('Stinger share-and-copy with a neighbor; students who are ahead help a neighbor find their place in a video before starting the extension.')}",
@@ -278,7 +317,7 @@ def lesson_page(c, unit, P, day, alloc, days):
     files = "your BrainBuffet project file" if c["app"] == "Illustrator" else "your .prproj project file"
     L += ["  organize:", "    binder:", "      - \"your Stinger Response Sheet\"", "    drive:",
           f"      - item: {q(files)}", "        folder: \"Project Files\""]
-    if t in ("formative", "summative"):
+    if t in ("formative", "summative", "product"):
         L += ["      - item: \"your exported finished product\"", "        folder: \"Exports\""]
     else:
         L += ["  organize_grading:", f"    plus: {q('the project file is saved and backed up, and the student is at or past today’s pace goal')}",
@@ -300,44 +339,65 @@ def sub_notes(c, P, slot, day):
     mods = c["mods"]
     t = slot[0]
     m = slot[1] if len(slot) > 1 else None
+    p = pts_of(c, slot)
+    worth = f"It's worth {p} points. " if p and t not in ("summative", "product") else ""
     base = ("For the sub: project today's stinger from the stinger deck and take attendance, then project this page. Students work at "
             "their own pace in BrainBuffet; circulate and check that each student's screen shows the video "
             "named in today's pace goal or later. ")
-    if t == "exit":
+    if t == "work":
+        extra = "Nothing is collected today: it's a work day. The walk-around pace check is the evidence; note anyone more than one class behind. "
+    elif t == "exit":
         extra = "In the last 5 minutes, students post the Pace Check Exit Ticket in Schoology (screenshot + last video + reflection). "
     elif t == "vocab":
-        extra = "Open the unit's Schoology vocabulary quiz at the start of the quiz block and close it after 15 minutes. "
+        extra = "Open today's Schoology vocabulary quiz at the start of the quiz block and close it after 15 minutes. "
     elif t == "worksheet":
         ws = mods[m].get("worksheet") or f"the three Critical Thinking questions in the {mods[m]['handbook']}"
         grade = mods[m].get("worksheet_grade", "Check system: ✓ all three answered in 3–5 sentences with a module term, ✓+ specific examples from the project, ✓− missing or one-line answers.")
         extra = f"The worksheet is {ws}. Students do it in the last 25 minutes, after their videos. Collect it in Schoology. Teacher grading (on return): {grade} "
     elif t == "stinger":
-        extra = ("In the last 8 minutes, walk the room and mark each Stinger Response Sheet on the check system: ✓ every stinger this "
-                 "unit is there with a 3-sentence answer, a copied partner answer and a synthesis; ✓+ answers go beyond 3 sentences; "
+        span = m or "this unit"
+        extra = (f"In the last 8 minutes, walk the room and mark each Stinger Response Sheet on the check system: ✓ every stinger from {span} "
+                 "is there with a 3-sentence answer, a copied partner answer and a synthesis; ✓+ answers go beyond 3 sentences; "
                  "✓− missing entries. Record marks on the roster. ")
+    elif t == "product":
+        extra = f"Summative grade ({p} pts): students submit {mods[m]['product']} in Schoology by the end of class. Teacher grading (on return): {mods[m]['rubric']} "
     elif t == "formative":
         extra = f"Formative grade: students submit {mods[m]['product']} in Schoology by the end of class. Teacher grading (on return): {mods[m]['rubric']} "
     else:
-        extra = f"Summative grade: students submit {mods[m]['product']} in Schoology on the last S day. Teacher grading (on return): {mods[m]['rubric']} "
-        if P["extra"]:
-            em = P["extra"][1]
-            extra += f"Also collect the Module {em} worksheet ({mods[em]['product']}) on the last S day as a formative grade: {mods[em]['worksheet_grade']} "
-    return base + extra + "Answer keys and BrainBuffet's finished example files stay with the teacher's resources and are not posted."
+        sp = f" ({p} pts)" if p else ""
+        extra = f"Summative grade{sp}: students submit {mods[m]['product']} in Schoology on the last S day. Teacher grading (on return): {mods[m]['rubric']} "
+        for ex in P["extra"]:
+            em = ex[1]
+            ep = pts_of(c, ex)
+            scale = f", scaled to {ep} points" if ep else ""
+            extra += f"Also collect the Module {em} worksheet on the last S day as a formative grade{scale}: {mods[em]['worksheet_grade']} "
+    if worth and t in ("worksheet", "vocab", "stinger"):
+        worth = f"It's worth {p} points (scale the score to {p}). " if t == "worksheet" else worth
+    return base + extra + worth + "Answer keys and BrainBuffet's finished example files stay with the teacher's resources and are not posted."
 
 def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mod):
     t = slot[0]
     mods = c["mods"]
     m = slot[1] if len(slot) > 1 else None
+    p = pts_of(c, slot)
+    pw = f" ({p} points)" if p else ""
+    span = slot[1] if t == "stinger" and len(slot) > 1 else "this unit"
+    if t in ("vocab", "stinger"):
+        m = None
+    pw = f", {p} points" if p else ""
     graded = {"exit": "**Exit Ticket.** Post your Pace Check Exit Ticket in Schoology at the end of class.",
-              "vocab": "**Vocabulary Quiz.** Review the key terms below, then take the Schoology vocabulary quiz.",
-              "worksheet": f"**Module {m} Worksheet.** Complete and submit it in the last 25 minutes of class.",
-              "stinger": "**Stinger Sheet Check.** Your Stinger Response Sheet for this unit gets checked at the end of class.",
+              "work": "**Work day, nothing graded.** Use all of today's work time to reach the pace goal.",
+              "product": f"**{label} (summative{pw}).** Finish and submit it in Schoology by the end of class.",
+              "vocab": f"**{label}{' (' + pw[2:] + ')' if p else ''}.** Review the key terms below, then take the Schoology vocabulary quiz.",
+              "worksheet": f"**Module {m} Worksheet{' (' + pw[2:] + ')' if p else ''}.** Complete and submit it in the last 25 minutes of class.",
+              "stinger": f"**Stinger Sheet Check{' (' + pw[2:] + ')' if p else ''}.** Your Stinger Response Sheet for {span} gets checked at the end of class.",
               "formative": f"**{label} (formative).** Finish and submit it in Schoology by the end of class.",
-              "summative": f"**{label} (summative).** Submit it in Schoology by the end of the last S day."}[t]
-    b = [f"# {title}", "", "{: .highlight }", f"Today's graded assignment: {graded}", ""]
+              "summative": f"**{label} (summative{pw}).** Submit it in Schoology by the end of the last S day."}[t]
+    head = "Today's graded assignment" if t != "work" else "Today"
+    b = [f"# {title}", "", "{: .highlight }", f"{head}: {graded}", ""]
     if t == "summative" and P["extra"]:
-        em = P["extra"][1]
-        b += ["{: .note }", f"Also due on the last S day: the **Module {em} Worksheet** ({mods[em]['product']}), graded as a formative.", ""]
+        also = " and ".join(f"the **Module {ex[1]} Worksheet**{' (' + str(pts_of(c, ex)) + ' points)' if pts_of(c, ex) else ''}" for ex in P["extra"])
+        b += ["{: .note }", f"Also due on the last S day: {also}, graded as a formative.", ""]
     b += ["## Today's Plan", "", "| Time | What you do |", "|---|---|"]
     b += [f"| {mins} min | {seg} |" for seg, mins, _ in TIMING[t]]
     b += ["", "## Stinger (~10 min)", "", "{% include lesson-parts/stinger.md %}", "", "## Stay on Pace", ""]
@@ -358,24 +418,35 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
           "skip rewatching parts you already did.",
           f"- **Ahead?** Check your work against the video, then try the extension challenge: {ext_mod['ext']}", ""]
     if t == "vocab":
-        b += ["## Vocabulary Quiz (~15 min)", "",
-              "Review these terms for a few minutes, then take the **Unit vocabulary quiz** in Schoology. It's auto-graded.", "",
-              "### Key Terms", "", f"{{% include unit-vocab.html course=\"{c['key']}\" unit={unit} %}}", ""]
+        groups = P["vocab_groups"]
+        if len(groups) == 1:
+            b += ["## Vocabulary Quiz (~15 min)", "",
+                  "Review these terms for a few minutes, then take the **Unit vocabulary quiz** in Schoology. It's auto-graded.", "",
+                  "### Key Terms", "", f"{{% include unit-vocab.html course=\"{c['key']}\" unit={unit} %}}", ""]
+        else:
+            glab, _, ginc = groups[slot[1]]
+            b += ["## Vocabulary Quiz (~15 min)", "",
+                  f"Review these terms for a few minutes, then take the **{glab} vocabulary quiz** in Schoology. It's auto-graded.", "",
+                  f"### Key Terms: {glab}", "", "{: .vocab }", f"{{% include {ginc} %}}", "",
+                  f"<div class=\"vocab-quiz no-print\" data-course=\"{c['key']}\" data-unit=\"{unit} {glab}\"></div>", ""]
     if t == "stinger":
         b += ["## Stinger Sheet Check (last ~8 min)", "",
-              "Before the check, make sure every stinger from this unit is on your sheet, each with:", "",
+              f"Before the check, make sure every stinger from {span} is on your sheet, each with:", "",
               "- [ ] the question rewritten in your own words",
               "- [ ] your answer, at least 3 sentences",
               "- [ ] your neighbor's answer, copied",
               "- [ ] 1–2 sentences on what your answers had in common", ""]
     if t == "formative":
         b += ["## Finish and Submit (formative)", ""] + product_checklist(mods[m], "Module " + str(m) + " product")
+    if t == "product":
+        pts = f" It's worth **{p} points**." if p else ""
+        b += ["## Finished Product Checklist (summative)", "", f"This is one of this unit's two summatives.{pts}", ""] + product_checklist(mods[m], "summative")
     if t == "summative":
         pts = f" It's worth **{mods[m]['points']} points**." if mods[m].get("points") else ""
-        b += ["## Finished Product Checklist (summative)", "", f"This is the unit's summative.{pts}", ""] + product_checklist(mods[m], "summative")
-        if P["extra"]:
-            em = P["extra"][1]
-            b += [f"### Also due: Module {em} Worksheet (formative)", "", worksheet_text(c, em), ""]
+        which = "the unit's second summative" if any(sl[0] == "product" for sl in P["slots"].values()) else "the unit's summative"
+        b += ["## Finished Product Checklist (summative)", "", f"This is {which}.{pts}", ""] + product_checklist(mods[m], "summative")
+        for ex in P["extra"]:
+            b += [f"### Also due: Module {ex[1]} Worksheet (formative)", "", worksheet_text(c, ex[1]), ""]
     b += ["## BrainBuffet Work Time", "", start_steps(c, P["mods"]), ""]
     if t == "worksheet":
         b += [f"## Module {m} Worksheet (last ~25 min)", "", worksheet_text(c, m), ""]
@@ -390,17 +461,17 @@ def graded_rows(c, unit, P):
     for day in ("F1", "F2", "F3", "F4", "S"):
         slot = P["slots"][day]
         lab = slot_label(c, slot, unit)
-        pts = c["mods"][slot[1]].get("points") if slot[0] in ("formative", "summative") else None
-        kind = {"formative": " (formative product)", "summative": " (summative)"}.get(slot[0], "")
-        if pts:
-            kind = kind[:-1] + f", {pts} pts)"
+        p = pts_of(c, slot)
+        kind = {"formative": " (formative product)", "summative": " (summative)", "product": " (summative)", "work": " (nothing graded)"}.get(slot[0], "")
+        if p:
+            kind = kind[:-1] + f", {p} pts)" if kind else f" ({p} pts)"
         num, link = (f"{unit}.{day[1]}", f"{unit}_{day[1]}.md") if day != "S" else (f"S{unit}", f"s{unit}.md")
-        extra = ""
-        if day == "S" and P["extra"]:
-            em = P["extra"][1]
-            extra = f"; also the Module {em} Worksheet (formative)"
+        extra = "".join(f"; also the Module {ex[1]} Worksheet ({pts_of(c, ex) or 'formative'}{' pts' if pts_of(c, ex) else ''})" for ex in P["extra"]) if day == "S" else ""
         rows.append((num, link, lab + kind + extra))
     return rows
+
+def summ_slots(P):
+    return [P["slots"][d] for d in ("F1", "F2", "F3", "F4", "S") if P["slots"][d][0] in ("product", "summative")]
 
 def unit_index(c, unit, P, alloc, days):
     dates, ndays = UNIT_DATES[unit]
@@ -417,7 +488,7 @@ def unit_index(c, unit, P, alloc, days):
           "| | |", "|---|---|",
           f"| **BrainBuffet videos** | {P['vids'][0][0]}–{P['vids'][-1][0]} ({len(P['vids'])} videos, {mmss(total)} of video) |",
           f"| **Class periods** | {ndays} school days on the A/B calendar: 4 formative days plus {lo if lo == hi else f'{lo}–{hi}'} S days per section |",
-          f"| **Summative** | {mods[P['slots']['S'][1]]['product']} |", "",
+          f"| **Summative{'s' if len(summ_slots(P)) > 1 else ''}** | " + "; ".join(mods[sl[1]]['product'] + pts_txt(pts_of(c, sl)).replace(', ', ' (', 1) + (')' if pts_of(c, sl) else '') for sl in summ_slots(P)) + " |", "",
           "## Graded Assignments", "", "| Day | Graded assignment |", "|---|---|"]
     b += [f"| [{n}]({l}) | {lab} |" for n, l, lab in graded_rows(c, unit, P)]
     b += ["", "## Pacing Guide", "", "Where you should be at the end of each class:", "",
@@ -438,7 +509,7 @@ def section_index(c, cid, plans):
     rows = []
     for unit, P in plans.items():
         sm = P["slots"]["S"][1]
-        rows.append(f"| [Unit {unit}](fmla{unit}/index.md) | {UNIT_DATES[unit][0]} | {P['title']} | {c['mods'][sm]['product_title']} |")
+        rows.append(f"| [Unit {unit}](fmla{unit}/index.md) | {UNIT_DATES[unit][0]} | {P['title']} | " + "; ".join(c['mods'][sl[1]]['product_title'] for sl in summ_slots(P)) + " |")
     prep_extra = ("- Copy each module's footage (Modules 2–5, about 5 GB each) to `/Users/Shared/GMetrix` on every lab Mac. There's no Jamf, so this is by hand; one USB-C drive is fastest.\n"
                   "- Confirm Premiere Pro opens each module's starter project from that folder on one test Mac.\n"
                   if c["app"] == "Premiere Pro" else
@@ -449,7 +520,14 @@ def section_index(c, cid, plans):
         for unit, P in plans.items():
             r = graded_rows(c, unit, P)
             graded.append(f"| {unit} | " + " | ".join(lab for _, _, lab in r) + " |")
-        graded_intro = "Each unit has one summative: the most substantial BrainBuffet product finished that unit. The other products and every module worksheet are formative grades."
+        n_form = sum(len(P["extra"]) + sum(1 for sl in P["slots"].values() if sl[0] in ("vocab", "worksheet", "stinger", "exit", "formative"))
+                     for P in plans.values())
+        f_pts = n_form * c["form_pts"]
+        s_pts = sum(pts_of(c, sl) or 0 for P in plans.values() for sl in summ_slots(P))
+        graded_intro = (f"Units 3–6 have **{n_form} formatives worth {c['form_pts']} points each ({f_pts} points)** and "
+                        f"**{s_pts} summative points**: the BrainBuffet module products. Formatives are every module worksheet, a vocabulary quiz "
+                        "for each module's terms, and one Stinger Sheet Check at the end that covers every stinger since the semester break. "
+                        "Days marked *work day* have nothing graded: use them to stay on pace.")
     else:
         graded = ["| Day | Graded assignment |", "|---|---|",
                   "| F .1 | Exit Ticket: your progress, a screenshot and one thing you learned |",
@@ -510,15 +588,17 @@ is falling behind before the S days.
 
 def main():
     exit_tickets()
-    for old in glob.glob(os.path.join(ROOT, "_includes/vocab/fmla-ai-m*.md")):
+    for old in glob.glob(os.path.join(ROOT, "_includes/vocab/fmla-ai-*.md")):
         os.remove(old)
     warnings = []
     for cid, c in COURSES.items():
         units = FDD_PLAN if cid == "fdd" else ADD_UNITS
         plans = {u: unit_plan(cid, u) for u in units}
+        PLANS.update({(c["key"], u): P for u, P in plans.items()})
         section_index(c, cid, plans)
         for unit, P in plans.items():
-            vocab_include(P["vocab_inc"], P["vocab"])
+            for _, terms, inc in P["vocab_groups"]:
+                vocab_include(inc, terms)
             days = plan_days(unit, P)
             alloc = allocate(P, days)
             assert sum(len(v) for v in alloc.values()) == len(P["vids"])

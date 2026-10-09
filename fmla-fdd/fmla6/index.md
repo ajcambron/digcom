@@ -21,17 +21,17 @@ This unit replaces the regular Foundations of Digital Design Unit 6 lessons whil
 |---|---|
 | **BrainBuffet videos** | 5.07–6.07 (24 videos, 129:51 of video) |
 | **Class periods** | 13 school days on the A/B calendar: 4 formative days plus 2–3 S days per section |
-| **Summative** | Dobson's business card (front and back), revised from client feedback, with Image-Traced contact icons, outlined text and strokes, saved as a print-ready PDF with trim marks |
+| **Summative** | Dobson's business card (front and back), revised from client feedback, with Image-Traced contact icons, outlined text and strokes, saved as a print-ready PDF with trim marks (50 pts) |
 
 ## Graded Assignments
 
 | Day | Graded assignment |
 |---|---|
-| [6.1](6_1.md) | Module 5 Worksheet |
-| [6.2](6_2.md) | Vocabulary Quiz |
-| [6.3](6_3.md) | Exit Ticket |
-| [6.4](6_4.md) | Stinger Sheet Check |
-| [S6](s6.md) | Dobson's Business Card (summative, 50 pts); also the Module 6 Worksheet (formative) |
+| [6.1](6_1.md) | Module 5 Worksheet (10 pts) |
+| [6.2](6_2.md) | Work Day (nothing graded) |
+| [6.3](6_3.md) | Stinger Sheet Check (10 pts) |
+| [6.4](6_4.md) | Vocabulary Quiz (10 pts) |
+| [S6](s6.md) | Dobson's Business Card (summative, 50 pts); also the Module 6 Worksheet (10 pts) |
 
 ## Pacing Guide
 
@@ -40,8 +40,8 @@ Where you should be at the end of each class:
 | Class | Videos | Finish by the end of class |
 |---|---|---|
 | 6.1 | 5.07–5.09 | 5.09 Adding Imagery |
-| 6.2 | 5.10–5.12 | 5.12 Tackling More Feedback |
-| 6.3 | 5.13–5.21 | 5.21 Outline Stroke |
+| 6.2 | 5.10–5.14 | 5.14 Back Side of Card |
+| 6.3 | 5.15–5.21 | 5.21 Outline Stroke |
 | 6.4 | 5.22–6.01 | 6.01 Getting Started with AI and Prompt Writing Basics |
 | S6, day 1 | 6.02–6.07 | 6.07 This is Goodbye… and Good Luck! |
 | S6, last day(s) | — | Finish, export and submit the summative |

@@ -28,7 +28,7 @@ AI = {
   worksheet_note="The practice file is an Illustrator template (.ait), so Illustrator makes you **File › Save As** a copy. If Illustrator asks to activate fonts, choose **Activate**. The guides inside the file only show up in Illustrator, not in a Drive preview.",
   worksheet_grade="BrainBuffet's worksheet rubric: every practice task completed, and every keyboard shortcut filled in on the note catcher.",
   ext="Look up \"animals made out of numbers\" and build a second number animal, the same way the 25 Dog is built from a 2 and a 5.",
-  rubric="BrainBuffet Module 1 project rubric (100 pts): Mastery of Skills 80 (Selection tool, basic shapes, point vs. area type, saving, plus an original animal), Effort 10 (all artboards and tasks done), Requirements 10 (on time, saved as a PDF; −2 per day late).",
+  rubric="50 pts (BrainBuffet's Module 1 project rubric, halved): Mastery of Skills 40 (Selection tool, basic shapes, point vs. area type, saving, plus an original animal), Effort 5 (all artboards and tasks done), Requirements 5 (on time, saved as a PDF; −1 per day late).", points=50,
   vocab=[("Anchor Point", "A point on a path that controls the path's shape and direction, shown as a small square."),
          ("Area Type", "Type that flows inside a shape or text box and wraps to the next line at the box's edge."),
          ("Artboard", "The page-like canvas you design on in Illustrator. One document can hold several artboards."),
@@ -64,7 +64,7 @@ AI = {
   worksheet_note="If Illustrator asks to activate fonts, choose **Activate**. You'll need Module 1's 25 Dog in this module too; BrainBuffet includes a finished copy if yours is missing.",
   worksheet_grade="BrainBuffet's worksheet rubric: 5 swatch info cards (1 pt each), 8 type classifications (1 pt each), and the note catcher answered.",
   ext="Make a branding style guide for yourself as if you were a famous designer, athlete or artist: your logo, color scheme, fonts and design elements.",
-  rubric="BrainBuffet Module 2 project rubric (100 pts): Mastery of Skills 80 (document setup, rearranged artboards, swatches with exact color codes, type choices, logo usage and no-gos, design elements), Effort 10, Requirements 10 (on time, saved as a PDF; −2 per day late).",
+  rubric="50 pts (BrainBuffet's Module 2 project rubric, halved): Mastery of Skills 40 (document setup, rearranged artboards, swatches with exact color codes, type choices, logo usage and no-gos, design elements), Effort 5, Requirements 5 (on time, saved as a PDF; −1 per day late).", points=50,
   vocab=[("Additive Color", "Color made by adding light. Red, green and blue light added together make white (RGB)."),
          ("Branding Style Guide", "A document that sets the rules for how a brand looks: logos, colors, fonts and design elements."),
          ("Client Brief", "A document that explains a project's goals, target audience and deliverables."),
@@ -132,7 +132,7 @@ AI = {
   worksheet_note="If you haven't reached video 4.11 yet, watch 4.10 and 4.11 now: they introduce Creative Commons and walk through this worksheet.",
   worksheet_grade="BrainBuffet's worksheet rubric: 5 Creative Commons symbols (2 pts each) and the correct initials on each (1 pt each).",
   ext="Fold a sheet of paper into a mini zine (search \"mini zine\" for the fold) and design one in Illustrator about a topic you choose.",
-  rubric="BrainBuffet Module 4 project rubric (100 pts): Mastery of Skills 80 (readable, well-formatted trifold; can explain model releases, copyright and Creative Commons, bleeds, preferences, clipping masks, text wrap, linked images), Effort 10 (all panels with client text and images), Requirements 10 (on time, saved as a PDF; −2 per day late).",
+  rubric="BrainBuffet Module 4 project rubric (100 pts): Mastery of Skills 80 (readable, well-formatted trifold; can explain model releases, copyright and Creative Commons, bleeds, preferences, clipping masks, text wrap, linked images), Effort 10 (all panels with client text and images), Requirements 10 (on time, saved as a PDF; −2 per day late).", points=100,
   vocab=[("Bleed", "Artwork that extends past the trim edge so the printed piece has no white slivers after cutting."),
          ("Clipping Mask", "A shape that hides everything outside it, like a window. The hidden artwork isn't deleted."),
          ("Copyright", "The creator's legal right to control how their work is copied, shared and used."),
@@ -300,18 +300,23 @@ AI[6] = dict(name="Generative AI in Adobe Illustrator", short="Generative AI & E
   rubric="", vocab=[])
 
 # ---------------------------------------------------------------- FDD remap: 1.5 modules per unit
-# Each graded slot: ("exit",) ("vocab",) ("stinger",) ("worksheet", module) ("formative", module) ("summative", module)
+# Each graded slot: ("work",) = no graded item; ("vocab", list index); ("stinger", span); ("worksheet", module);
+# ("product", module) = a summative due on a formative day; ("summative", module). s_extra = more items due on the last S day.
+# Grading schema (FDD): 12 formatives x 10 pts = 120 (6 worksheets, 5 vocab quizzes, 1 stinger check) and
+# 300 summative pts (animal 50, style guide 50, poster 50, trifold 100, business card 50).
+FORMATIVE_PTS = 10
 AI_HOURS = {1: 3, 2: 3, 3: 3, 4: 4, 5: 3, 6: 1}   # BrainBuffet's estimated class time per module
 FDD_PLAN = {
  3: dict(start="1.01", end="1.17", title="Illustrator Module 1: Getting Started",
-         slots={"F1": ("exit",), "F2": ("vocab",), "F3": ("stinger",), "F4": ("worksheet", 1), "S": ("summative", 1)}),
+         slots={"F1": ("work",), "F2": ("vocab", 0), "F3": ("work",), "F4": ("worksheet", 1), "S": ("summative", 1)}),
  4: dict(start="2.01", end="3.19", title="Illustrator Modules 2–3: Branding Style Guide & National Park Poster",
-         slots={"F1": ("exit",), "F2": ("vocab",), "F3": ("worksheet", 2), "F4": ("formative", 2), "S": ("summative", 3)}),
+         slots={"F1": ("work",), "F2": ("vocab", 0), "F3": ("worksheet", 2), "F4": ("product", 2), "S": ("summative", 3)},
+         s_extra=[("worksheet", 3)]),
  5: dict(start="4.00", end="5.06", title="Illustrator Modules 4–5: Trifold & Image Trace",
-         slots={"F1": ("worksheet", 3), "F2": ("vocab",), "F3": ("stinger",), "F4": ("worksheet", 4), "S": ("summative", 4)}),
+         slots={"F1": ("vocab", 0), "F2": ("work",), "F3": ("vocab", 1), "F4": ("worksheet", 4), "S": ("summative", 4)}),
  6: dict(start="5.07", end="6.07", title="Illustrator Modules 5–6: Business Card & Generative AI",
-         slots={"F1": ("worksheet", 5), "F2": ("vocab",), "F3": ("exit",), "F4": ("stinger",), "S": ("summative", 5)},
-         s_extra=("worksheet", 6)),
+         slots={"F1": ("worksheet", 5), "F2": ("work",), "F3": ("stinger", "Units 4–6"), "F4": ("vocab", 0), "S": ("summative", 5)},
+         s_extra=[("worksheet", 6)]),
 }
 
 _V = {t: d for m in (1, 2, 3, 4) for t, d in AI[m]["vocab"]}
@@ -336,12 +341,13 @@ _V.update({
  "Mockup": "An Illustrator feature that previews flat artwork on a 3D object, like a logo on a mug.",
  "Prompt": "The text description you give generative AI to tell it what to create.",
 })
+# Vocab lists per unit, in the order the unit's vocab slots use them: (label, terms)
 FDD_VOCAB = {
- 3: [t for t, _ in AI[1]["vocab"]],
- 4: [t for t, _ in AI[2]["vocab"]],
- 5: list(dict.fromkeys([t for t, _ in AI[3]["vocab"]] + [t for t, _ in AI[4]["vocab"]])),
- 6: ["Business Card", "JPG", "PNG", "Image Trace", "Threshold", "Ignore Color", "Expand", "Share for Review", "Create Outlines",
-     "Outline Stroke", "Asset Export", "Trim Marks", "Artificial Intelligence (AI)", "Generative AI", "Prompt", "Generate Vectors",
-     "Generative Shape Fill", "Mockup", "Adobe Firefly"],
+ 3: [("Module 1", [t for t, _ in AI[1]["vocab"]])],
+ 4: [("Module 2", [t for t, _ in AI[2]["vocab"]])],
+ 5: [("Module 3", [t for t, _ in AI[3]["vocab"]]), ("Module 4", [t for t, _ in AI[4]["vocab"]])],
+ 6: [("Modules 5–6", ["Business Card", "JPG", "PNG", "Image Trace", "Threshold", "Ignore Color", "Expand", "Share for Review",
+                      "Create Outlines", "Outline Stroke", "Asset Export", "Trim Marks", "Artificial Intelligence (AI)", "Generative AI",
+                      "Prompt", "Generate Vectors", "Generative Shape Fill", "Mockup", "Adobe Firefly"])],
 }
-FDD_VOCAB = {u: [(t, _V[t]) for t in ts] for u, ts in FDD_VOCAB.items()}
+FDD_VOCAB = {u: [(lab, [(t, _V[t]) for t in ts]) for lab, ts in groups] for u, groups in FDD_VOCAB.items()}
