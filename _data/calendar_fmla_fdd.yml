@@ -300,20 +300,20 @@
     link: '4_4'
     unit: 4
   - date: 11/17
-    label: S | 4
-    link: s4
+    label: F | 4.5
+    link: '4_5'
     unit: 4
   - date: 11/18
+    label: F | 4.5
+    link: '4_5'
+    unit: 4
+  - date: 11/19
     label: S | 4
     link: s4
     unit: 4
-  - date: 11/19
-    label: F | 4.5
-    link: '4_5'
-    unit: 4
   - date: 11/20
-    label: F | 4.5
-    link: '4_5'
+    label: S | 4
+    link: s4
     unit: 4
   note: null
 - days:

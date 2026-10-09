@@ -47,6 +47,8 @@ This repo's real academic calendar is **not** a generic Week 1–36 model — it
 - **Unit 10 (Apr 20 – May 3, 2027):** No new concepts. This is the review + ACP practice-exam + certification-testing window (between Access Testing and AP Testing) — shift pacing to targeted review and GMetrix/BrainBuffet practice-test work, not new instruction.
 - **Units 11–12 (May 4 – Jun 4, 2027):** "Extra Units" — post-certification enrichment content, per each course's Extra Units list in the scope-and-sequence doc. Focus on cumulative application, portfolio work, and reflection rather than ACP-tested material.
 
+**F before S, always:** within a unit, every formative day (F | x.1, x.2, … including any extra x.5) comes before the summative block (S | x), in the calendar, the pacing guide and the page order, even when that makes a worksheet's timing awkward. If a formative is due before the videos it needs, keep the order and add a watch-ahead note on that page instead of moving it into or after the S block.
+
 Always check the scope-and-sequence doc's per-course unit tables for the specific unit's lessons, ACP tags, and vocab callouts before generating a plan — don't infer content from the unit number alone.
 
 ---

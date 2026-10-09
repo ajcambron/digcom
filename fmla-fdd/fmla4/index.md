@@ -44,8 +44,8 @@ Where you should be at the end of each class:
 | 4.2 | 2.10–2.16 | 2.16 Titles/Headings, Subtitles, Body Copy, and Special Text |
 | 4.3 | 2.17–2.22 | 2.22 Logo No-Gos |
 | 4.4 | 2.23–3.07 | 3.07 Pen Tool Hills |
-| S4, day 1 | 3.08–3.14 | 3.14 Water Gradient and Sublayers |
-| 4.5 | 3.15–3.19 | 3.19 Finishing Up |
+| 4.5 | 3.08–3.11 | 3.11 Reflection |
+| S4, day 1 | 3.12–3.19 | 3.19 Finishing Up |
 | S4, last day(s) | — | Finish, export and submit the summative |
 
 ## Calendar of Events for This Unit

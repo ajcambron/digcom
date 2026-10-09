@@ -127,14 +127,12 @@ def unit_plan(cid, unit):
                 s_videos=(mod["short"] != "Exam Prep & Practice"))
 
 def plan_days(unit, P):
-    """Video days in class order: F1–F4, the S block's video days, then F5 (if any). The last S day stays free
-    for finishing and submitting, so an F5 worksheet lands after every video it needs but before the summative is due."""
-    days = [(k, WORK[P["slots"][k][0]]) for k in fkeys(P) if k != "F5"]
+    """Video days in class order: every F day first, then the S block's video days. The last S day stays free
+    for finishing and submitting. All Fs come before the S block even when a worksheet's videos fall later."""
+    days = [(k, WORK[P["slots"][k][0]]) for k in fkeys(P)]
     lo, _ = s_days(unit, P)
     if P["s_videos"]:
         days += [(f"S{k}", WORK["summative"]) for k in range(1, lo)]
-    if "F5" in P["slots"]:
-        days.append(("F5", WORK[P["slots"]["F5"][0]]))
     return days
 
 def allocate(P, days):
@@ -157,25 +155,35 @@ def day_of(alloc, vid):
     return next((k for k, vs in alloc.items() if any(v[0] == vid for v in vs)), None)
 
 
+def needed_video(cid, P, slot):
+    """The last video a graded item depends on, or None if it was taught in an earlier unit."""
+    need = None
+    if slot[0] == "worksheet" and cid == "fdd":
+        need = AI_WS_NEEDS[slot[1]]
+    if slot[0] in ("formative", "product"):
+        need = AI[slot[1]]["videos"][-1][0]
+    key = lambda vid: tuple(int(x) for x in vid.split("."))
+    if need and key(need) < key(P["vids"][0][0]):
+        need = None
+    return need
+
+def late_need(cid, P, day, slot, alloc, days):
+    """The needed video if the pacing guide reaches it only after this day, else None."""
+    need = needed_video(cid, P, slot)
+    if not need or day == "S":
+        return None
+    order = [k for k, _ in days]
+    d = day_of(alloc, need)
+    return need if d is None or order.index(d) > order.index(day) else None
+
 def check(cid, unit, P, alloc, days):
-    """Warn if a graded item is due before the videos it depends on."""
+    """Report graded items due before the videos they depend on (accepted when it's an F5 before the S block)."""
     warn = []
     for day, slot in P["slots"].items():
-        if day == "S":
-            continue
-        need = None
-        if slot[0] == "worksheet" and cid == "fdd":
-            need = AI_WS_NEEDS[slot[1]]
-        if slot[0] in ("formative", "product"):
-            need = AI[slot[1]]["videos"][-1][0]
-        key = lambda vid: tuple(int(x) for x in vid.split("."))
-        if need and key(need) < key(P["vids"][0][0]):
-            need = None   # taught in an earlier unit
+        need = late_need(cid, P, day, slot, alloc, days)
         if need:
-            d = day_of(alloc, need)
-            order = [k for k, _ in days]
-            if d is None or order.index(d) > order.index(day):
-                warn.append(f"{cid} U{unit} {day} {slot} needs {need}, scheduled {d}")
+            tag = "NOTE (all Fs before S; page tells students to watch ahead)" if day == "F5" else "WARNING"
+            warn.append(f"{tag}: {cid} U{unit} {day} {slot} needs {need}, scheduled {day_of(alloc, need)}")
     return warn
 
 PLANS = {}
@@ -441,9 +449,6 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
         if today:
             goals = [f"**S day {k[1:]}:** finish video {alloc[k][-1][0]} ({alloc[k][-1][3]})." for k in s_keys if alloc.get(k)]
             b += ["{: .important }", " ".join(goals) + " **The last S day:** finish, export and submit your project.", "", video_table(today), ""]
-            if "F5" in P["slots"]:
-                b += ["{: .note }", f"**Class order:** S{unit} day{'s' if len(s_keys) > 1 else ''} {', '.join(k[1:] for k in s_keys)}, then "
-                      f"[{unit}.5]({unit}_5.md) ({slot_label(c, P['slots']['F5'], unit)}), then the last S{unit} day.", ""]
         else:
             b += ["{: .important }", "All of this unit's videos should be done by now. **S days:** finish, export and submit your project, then start the extension challenge.", ""]
     elif today:
@@ -487,7 +492,14 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
             b += [f"### Also due: Module {ex[1]} Worksheet (formative)", "", worksheet_text(c, ex[1]), ""]
     b += ["## BrainBuffet Work Time", "", start_steps(c, P["mods"]), ""]
     if t == "worksheet":
-        b += [f"## {ws_name(c, m)} (last ~25 min)", "", worksheet_text(c, m), ""]
+        b += [f"## {ws_name(c, m)} (last ~25 min)", ""]
+        need = late_need("fdd" if c["app"] == "Illustrator" else "add", P, day, slot, alloc, days)
+        if need:
+            vt = next(v[3] for v in P["vids"] if v[0] == need)
+            b += ["{: .warning }", f"This worksheet uses skills from the videos through **{need} ({vt})**, which the pacing guide reaches "
+                  f"after today. Watch ahead to {need} first (captions on, skim what you already know), then do the worksheet. "
+                  "Pick the pacing guide back up next class.", ""]
+        b += [worksheet_text(c, m), ""]
     if t == "exit":
         b += ["## Exit Ticket (last ~5 min)", "", "{% include lesson-parts/organize.html %}", "", "{% include exit-ticket/fmla-pace.md %}", ""]
     else:
@@ -635,14 +647,13 @@ def schema_check(c, plans):
     return [f"FDD schema {k}: planned {v}, got {got[k]}" for k, v in FDD_SCHEMA.items() if got[k] != v]
 
 def fmla_calendar(plans):
-    """FMLA FDD calendar: the shared calendar, with each F5 taking one S day per section, right after the S video days."""
+    """FMLA FDD calendar: the shared calendar, with each F5 taking the first S day of each section."""
     import yaml
     cal = yaml.safe_load(open(os.path.join(ROOT, "_data/calendar.yml")))
     for unit, P in plans.items():
         if "F5" not in P["slots"]:
             continue
-        lo, _ = s_days(unit, P)
-        skip = 2 * (lo - 1) if P["s_videos"] else 0   # S video days, one per section, come before the .5
+        skip = 0   # every F comes before the S block
         seen = 0
         for week in cal[unit]:
             for day in week["days"]:
@@ -681,7 +692,7 @@ def main():
             warnings += schema_check(c, plans)
             fmla_calendar(plans)
     for w in warnings:
-        print("WARNING:", w)
+        print(w)
 
 if __name__ == "__main__":
     main()
