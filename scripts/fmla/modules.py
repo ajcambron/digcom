@@ -299,3 +299,103 @@ PR = {
 FDD_UNITS = {3: 1, 4: 2, 5: 3, 6: 4}
 ADD_UNITS = {3: 2, 4: 3, 5: 4, 6: 5}
 UNIT_DATES = {3: ("Oct 13 – Oct 30, 2026", 13), 4: ("Nov 4 – Dec 1, 2026", 14), 5: ("Dec 2, 2026 – Jan 4, 2027", 14), 6: ("Jan 5 – Jan 22, 2027", 13)}
+
+AI[5] = dict(name="Dobson's Business Card", short="Business Card",
+  product="Dobson's business card (front and back), revised from client feedback, with Image-Traced contact icons, outlined text and strokes, saved as a print-ready PDF with trim marks",
+  product_title="Dobson's Business Card",
+  overview="Module 5 designs a business card for Dobson's park manager. It covers raster vs. vector and JPG vs. PNG, Image Trace, Share for Review and client feedback, printing a sample, outlining text and strokes, and Asset Export.",
+  videos=[v(x) for x in [
+   "5.01 3:10 Client Brief: Business Card", "5.02 3:26 Don't Reinvent the Business Card Wheel", "5.03 6:32 Document Setup",
+   "5.04 6:58 RASTER vs. VECTOR and JPG vs. PNG", "5.05 5:50 Image Trace", "5.06 7:29 More Image Tracing",
+   "5.07 3:03 Adding Our Text", "5.08 6:47 Arranging Text and Icons", "5.09 6:10 Adding Imagery", "5.10 7:23 Share for Review",
+   "5.11 6:51 Feedback and New Icon", "5.12 6:35 Tackling More Feedback", "5.13 4:35 Rearranging Artboards",
+   "5.14 3:06 Back Side of Card", "5.15 1:40 Ask Sam for Feedback", "5.16 4:14 Sam's Feedback", "5.17 5:37 Print a Sample",
+   "5.18 3:09 Printed Sample", "5.19 1:46 Email Dobson", "5.20 3:07 Final Approval and Outline Text", "5.21 4:01 Outline Stroke",
+   "5.22 7:07 Asset Export", "5.23 7:36 Preparing for Print"]],
+  acp="1.1.a–c, 1.2.a, 1.3.a, 2.1.a–b, 2.2.a, 2.3.a, 2.4.b, 3.1.a–c, 4.1.d, 4.2.a, 5.1.a, 5.3.b, 5.4.a",
+  worksheet="the **Image Trace Worksheet** (trace each image with the settings the worksheet asks for: presets, Threshold, Ignore Color, then expand)",
+  worksheet_note="Rewatch videos 5.05 and 5.06 if you need a refresher on the Image Trace panel.",
+  worksheet_grade="BrainBuffet's worksheet rubric: every image traced with the correct settings (2 pts each, 12 pts).",
+  ext="Design a business card for a real teacher or coach at school (ask first), using what you learned about hierarchy and bleeds.",
+  rubric="BrainBuffet Module 5 project rubric (100 pts): Mastery of Skills 80 (several card versions plus a final version after feedback, all required info, Image-Traced contact icons, varied layouts and imagery), Effort 10 (feedback questions answered thoughtfully), Requirements 10 (on time, saved as a PDF; −2 per day late).",
+  vocab=[], stingers=[])
+
+AI[6] = dict(name="Generative AI in Adobe Illustrator", short="Generative AI & Exam Tips",
+  product="the Generative AI & Mockup worksheet: vectors generated from your own descriptive prompts, plus at least one Mockup, saved as a PDF",
+  product_title="Generative AI & Mockup Worksheet",
+  overview="Module 6 introduces Illustrator's newest tools: Generate Vectors, Generative Shape Fill, Mockup and Adobe Firefly, plus test-taking tips for the certification exam.",
+  videos=[v(x) for x in [
+   "6.01 9:58 Getting Started with AI and Prompt Writing Basics", "6.02 8:35 Generate Vectors with Detailed Prompt Writing",
+   "6.03 5:04 Gen Shape Fill", "6.04 7:26 Gen Shape Fill plus Mockup", "6.05 5:46 Practice Mockup and Jump into Firefly",
+   "6.06 6:19 Creating with Firefly", "6.07 3:56 This is Goodbye… and Good Luck!"]],
+  acp="1.3.a, 2.4.b, 4.1.e",
+  worksheet="the **Generative AI & Mockup Worksheet** (generate vectors from the worksheet's subjects using your own descriptive prompts, then practice Mockup)",
+  worksheet_note="Write your own prompts with descriptive words, colors, lighting, mood and an art style. Don't paste the task instructions in as your prompt. Keep every prompt school-appropriate.",
+  worksheet_grade="BrainBuffet's Module 6 rubric (100 pts): Mastery 80 (experimented and created several AI-generated and Mockup graphics), Effort 10 (all worksheet tasks), Requirements 10 (on time, saved as a PDF).",
+  ext="Use Mockup to put the school logo on a promotional item, like a water bottle or T-shirt.",
+  rubric="", vocab=[], stingers=[])
+
+# ---------------------------------------------------------------- FDD remap: 1.5 modules per unit
+# Each graded slot: ("exit",) ("vocab",) ("stinger",) ("worksheet", module) ("formative", module) ("summative", module)
+AI_HOURS = {1: 3, 2: 3, 3: 3, 4: 4, 5: 3, 6: 1}   # BrainBuffet's estimated class time per module
+FDD_PLAN = {
+ 3: dict(start="1.01", end="1.17", title="Illustrator Module 1: Getting Started",
+         slots={"F1": ("exit",), "F2": ("vocab",), "F3": ("stinger",), "F4": ("worksheet", 1), "S": ("summative", 1)}),
+ 4: dict(start="2.01", end="3.19", title="Illustrator Modules 2–3: Branding Style Guide & National Park Poster",
+         slots={"F1": ("exit",), "F2": ("vocab",), "F3": ("worksheet", 2), "F4": ("formative", 2), "S": ("summative", 3)}),
+ 5: dict(start="4.00", end="5.06", title="Illustrator Modules 4–5: Trifold & Image Trace",
+         slots={"F1": ("worksheet", 3), "F2": ("vocab",), "F3": ("stinger",), "F4": ("worksheet", 4), "S": ("summative", 4)}),
+ 6: dict(start="5.07", end="6.07", title="Illustrator Modules 5–6: Business Card & Generative AI",
+         slots={"F1": ("worksheet", 5), "F2": ("vocab",), "F3": ("exit",), "F4": ("stinger",), "S": ("summative", 5)},
+         s_extra=("worksheet", 6)),
+}
+
+_V = {t: d for m in (1, 2, 3, 4) for t, d in AI[m]["vocab"]}
+_V.update({
+ "Business Card": "A small card with a person's name, job and contact information, used for networking.",
+ "Expand": "Turning a traced or styled object into plain, editable vector paths.",
+ "Ignore Color": "An Image Trace option that leaves a chosen color (like a white background) out of the trace.",
+ "Image Trace": "An Illustrator feature that converts a raster image into vector paths.",
+ "JPG": "A raster file format for photos. It does not support transparency.",
+ "PNG": "A raster file format that supports transparency.",
+ "Threshold": "An Image Trace setting that decides which pixels become black and which become white.",
+ "Asset Export": "A panel that exports selected artwork as separate files in several formats and sizes at once.",
+ "Create Outlines": "Converting live type into vector shapes so it looks the same on any computer, even without the font.",
+ "Outline Stroke": "Converting a stroke into a filled shape so it keeps its thickness when scaled.",
+ "Share for Review": "An Illustrator feature that sends a link so others can comment on your design.",
+ "Trim Marks": "Small lines printed at the corners that show where to cut the paper.",
+ "Adobe Firefly": "Adobe's generative AI app for creating images and effects from text prompts.",
+ "Artificial Intelligence (AI)": "Computer systems that perform tasks like learning, problem-solving and recognizing patterns.",
+ "Generative AI": "AI that creates new content, such as images or text, from a prompt.",
+ "Generate Vectors": "An Illustrator generative AI tool that creates editable vector art from a text prompt.",
+ "Generative Shape Fill": "An Illustrator generative AI tool that fills a shape with vector detail from a prompt.",
+ "Mockup": "An Illustrator feature that previews flat artwork on a 3D object, like a logo on a mug.",
+ "Prompt": "The text description you give generative AI to tell it what to create.",
+})
+FDD_VOCAB = {
+ 3: [t for t, _ in AI[1]["vocab"]],
+ 4: [t for t, _ in AI[2]["vocab"]],
+ 5: list(dict.fromkeys([t for t, _ in AI[3]["vocab"]] + [t for t, _ in AI[4]["vocab"]])),
+ 6: ["Business Card", "JPG", "PNG", "Image Trace", "Threshold", "Ignore Color", "Expand", "Share for Review", "Create Outlines",
+     "Outline Stroke", "Asset Export", "Trim Marks", "Artificial Intelligence (AI)", "Generative AI", "Prompt", "Generate Vectors",
+     "Generative Shape Fill", "Mockup", "Adobe Firefly"],
+}
+FDD_VOCAB = {u: [(t, _V[t]) for t in ts] for u, ts in FDD_VOCAB.items()}
+FDD_STINGERS = {
+ 3: AI[1]["stingers"],
+ 4: ["Think of a brand you see every day. What color, font or shape do they use every single time? Why does that consistency matter?",
+     "Why does a color look different on your screen than when it's printed? Use RGB and CMYK in your answer.",
+     "Serif or sans serif: which would you choose for a national park's trail signs, and why?",
+     "What's one \"logo no-go\" you put in Dobson's style guide, and what could go wrong if someone ignored it?",
+     "How does your poster follow the style guide you built? Give two examples."],
+ 5: ["Which blending mode, brush or symbol from the poster would you reuse in the trifold, and why?",
+     "A trifold has six panels. Which panel do people see first, and what should go on it?",
+     "You want to use a photo of a hiker you met on a trail. What do you need first, and why?",
+     "What's the difference between Creative Commons \"BY\" and \"NC\"? Give an example of when each matters.",
+     "Why do printed designs need a bleed, but a website doesn't?"],
+ 6: ["Image Trace turns a photo into vectors. When would that save you time, and when would drawing it yourself be better?",
+     "Why is feedback from a client a good thing, even when it means more work?",
+     "Why outline the text before sending a file to a printer?",
+     "A generative AI image looks great. Can you use it in a contest entry or a client project? What should you check first?",
+     "The ACP exam is about 50 minutes with live-in-the-app tasks. What's your plan for a question you don't know?"],
+}

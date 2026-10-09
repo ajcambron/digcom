@@ -8,9 +8,9 @@ description: "Units 3–6 of Applications of Digital Design while the teacher is
 ---
 # FMLA ADD: Applications of Digital Design During Leave
 
-While your teacher is on leave, Applications of Digital Design Units 3–6 run entirely through the BrainBuffet Premiere Pro course in GMetrix SMS. Each unit is one BrainBuffet module. These pages replace the regular unit pages for those units.
+While your teacher is on leave, Applications of Digital Design Units 3–6 run entirely through the BrainBuffet Premiere Pro course in GMetrix SMS. These pages replace the regular unit pages for those units.
 
-| Unit | Dates | BrainBuffet module | Finished product |
+| Unit | Dates | BrainBuffet content | Summative |
 |---|---|---|---|
 | [Unit 3](fmla3/index.md) | Oct 13 – Oct 30, 2026 | Premiere Pro Module 2: Fire Academy Recruiting Video | Fire Academy Recruiting Video |
 | [Unit 4](fmla4/index.md) | Nov 4 – Dec 1, 2026 | Premiere Pro Module 3: Horror Chase Spec Film: No Way Out | No Way Out: Horror Chase Scene |
@@ -26,25 +26,27 @@ While your teacher is on leave, Applications of Digital Design Units 3–6 run e
 
 ## How You're Graded
 
+Each unit is one BrainBuffet module, graded the same way every unit.
+
 | Day | Graded assignment |
 |---|---|
 | F .1 | Exit Ticket: your progress, a screenshot and one thing you learned |
 | F .2 | Vocabulary Quiz on the module's key terms (listed on the .2 page) |
-| F .3 | The module's worksheet |
+| F .3 | The module's worksheet (the Handbook's Critical Thinking questions) |
 | F .4 | Stinger Sheet Check |
-| S | The finished product for the BrainBuffet module |
+| S | The finished product for the BrainBuffet module (summative) |
 
 ## For the Substitute
 
 - Project the day's page (find it on the unit page or the calendar). Read the stinger aloud and take attendance.
 - Students work at their own pace. Circulate and check that each screen shows the pace-goal video or later.
-- Each day's teacher page (linked from the calendar) has the full plan and the grading notes. Add `-teacher` to the end of the page's address, for example `3_1-teacher.html`.
-- Students who are ahead do the extension challenge listed on the page; they don't start the next module early.
+- Each day's teacher page has the full plan and the grading notes. Add `-teacher` to the end of the page's address, for example `3_1-teacher.html`.
+- Students who are ahead do the extension challenge listed on the page.
 
 ## Before Leave (teacher checklist)
 
-- Build each unit's Schoology vocabulary quiz from the **Download Schoology Vocab Quiz (QTI)** button on the unit page.
-- Post the exit ticket, worksheet and finished-product assignments in Schoology for each unit.
+- Build each unit's Schoology vocabulary quiz from the **Download Schoology Vocab Quiz (QTI)** button on the unit page or the .2 page.
+- Post the exit ticket, worksheet, product and summative assignments in Schoology for each unit.
 - Print a class set of Stinger Response Sheets.
 - Copy each module's footage (Modules 2–5, about 5 GB each) to `/Users/Shared/GMetrix` on every lab Mac. There's no Jamf, so this is by hand; one USB-C drive is fastest.
 - Confirm Premiere Pro opens each module's starter project from that folder on one test Mac.

@@ -3,33 +3,35 @@ layout: default
 title: "FMLA FDD | Unit 5"
 nav_order: 5
 parent: "FMLA FDD"
-description: "GMetrix Illustrator 3: Dobson National Park Poster"
+description: "Illustrator Modules 4–5: Trifold & Image Trace"
 has_children: true
 has_toc: false
 ---
-# Unit 5 | GMetrix Illustrator 3: Dobson National Park Poster (Dec 2, 2026 – Jan 4, 2027)
+# Unit 5 | Illustrator Modules 4–5: Trifold & Image Trace (Dec 2, 2026 – Jan 4, 2027)
 
 ## Introduction
 
-Module 3 uses your style guide to design a national park poster. It introduces the Layers panel, plus gradients, effects, the Pen tool, symbols, brushes, patterns, opacity and blending modes.
+Module 4 designs a two-sided trifold brochure for Dobson. It covers model release forms, copyright and Creative Commons, bleeds and guides, preferences, placing images and text, clipping masks, text wrap and leading.
 
-This unit replaces the regular Foundations of Digital Design Unit 5 lessons while your teacher is on leave. Every class follows the same routine: a stinger, a pace check, then self-paced work in BrainBuffet Illustrator Module 3.
+Module 5 designs a business card for Dobson's park manager. It covers raster vs. vector and JPG vs. PNG, Image Trace, Share for Review and client feedback, printing a sample, outlining text and strokes, and Asset Export.
+
+This unit replaces the regular Foundations of Digital Design Unit 5 lessons while your teacher is on leave. Every class follows the same routine: a stinger, a pace check, then self-paced work in BrainBuffet Illustrator.
 
 | | |
 |---|---|
-| **BrainBuffet module** | Illustrator Module 3: Dobson National Park Poster (19 videos, 119:08 of video) |
+| **BrainBuffet videos** | 4.00–5.06 (28 videos, 175:34 of video) |
 | **Class periods** | 14 school days on the A/B calendar: 4 formative days plus 3 S days per section |
-| **Finished product** | the Dobson National Park poster, built on organized layers and saved as a PDF |
+| **Summative** | the Dobson National Park trifold brochure (two artboards, printed back to back), saved as a PDF |
 
 ## Graded Assignments
 
 | Day | Graded assignment |
 |---|---|
-| [5.1](5_1.md) | Exit Ticket (Pace Check) |
+| [5.1](5_1.md) | Module 3 Worksheet |
 | [5.2](5_2.md) | Vocabulary Quiz |
-| [5.3](5_3.md) | Module Worksheet |
-| [5.4](5_4.md) | Stinger Sheet Check |
-| [S5](s5.md) | Finished product: Dobson National Park Poster |
+| [5.3](5_3.md) | Stinger Sheet Check |
+| [5.4](5_4.md) | Module 4 Worksheet |
+| [S5](s5.md) | Dobson National Park Trifold Brochure (summative) |
 
 ## Pacing Guide
 
@@ -37,11 +39,13 @@ Where you should be at the end of each class:
 
 | Class | Videos | Finish by the end of class |
 |---|---|---|
-| 5.1 | 3.01–3.06 | 3.06 Foreground Mountains and the Knife Tool |
-| 5.2 | 3.07–3.10 | 3.10 Recolor Trees and Add Grass Brush |
-| 5.3 | 3.11–3.13 | 3.13 Save Your Work! |
-| 5.4 | 3.14–3.19 | 3.19 Finishing Up |
-| S5, last day(s) | — | Finish, export and submit the finished product |
+| 5.1 | 4.00–4.02 | 4.02 Create Document |
+| 5.2 | 4.03–4.07 | 4.07 Front Panel: Place Our Picture and Create Clipping Mask |
+| 5.3 | 4.08–4.11 | 4.11 Creative Commons: Worksheet |
+| 5.4 | 4.12–4.14 | 4.14 Pictures, Clipping Masks, and Captions |
+| S5, day 1 | 4.15–4.20 | 4.20 Wrap It Up and Save! |
+| S5, day 2 | 4.21–5.06 | 5.06 More Image Tracing |
+| S5, last day(s) | — | Finish, export and submit the summative |
 
 ## Calendar of Events for This Unit
 
