@@ -21,17 +21,17 @@ This unit replaces the regular Foundations of Digital Design Unit 5 lessons whil
 |---|---|
 | **BrainBuffet videos** | 4.00–5.06 (28 videos, 175:34 of video) |
 | **Class periods** | 14 school days on the A/B calendar: 4 formative days plus 3 S days per section |
-| **Summative** | the Dobson National Park trifold brochure (two artboards, printed back to back), saved as a PDF (100 pts) |
+| **Summative** | the Dobson National Park trifold brochure (two artboards, printed back to back), saved as a PDF |
 
 ## Graded Assignments
 
 | Day | Graded assignment |
 |---|---|
-| [5.1](5_1.md) | Module 3 Vocabulary Quiz (10 pts) |
+| [5.1](5_1.md) | Module 3 Vocabulary Quiz |
 | [5.2](5_2.md) | Work Day (nothing graded) |
-| [5.3](5_3.md) | Module 4 Vocabulary Quiz (10 pts) |
-| [5.4](5_4.md) | Module 4 Worksheet (10 pts) |
-| [S5](s5.md) | Dobson National Park Trifold Brochure (summative, 100 pts) |
+| [5.3](5_3.md) | Module 4 Vocabulary Quiz |
+| [5.4](5_4.md) | Module 4 Worksheet |
+| [S5](s5.md) | Dobson National Park Trifold Brochure (summative) |
 
 ## Pacing Guide
 
@@ -49,7 +49,7 @@ Where you should be at the end of each class:
 
 ## Calendar of Events for This Unit
 
-{% include calendar-of-events.html unit=5 %}
+{% include calendar-of-events.html unit=5 data="calendar_fmla_fdd" %}
 
 ## Unit Vocabulary
 

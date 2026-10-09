@@ -89,10 +89,17 @@ def ws_name(c, m):
 # Last video a worksheet depends on (FDD); the worksheet is due no earlier than the day this video is scheduled.
 AI_WS_NEEDS = {1: "1.11", 2: "2.15", 3: "3.17", 4: "4.11", 5: "5.06", 6: "6.05"}
 
-def s_days(unit):
-    days = UNIT_DATES[unit][1]
-    lo = (days - 8) // 2
-    return lo, days - 8 - lo
+def fkeys(P):
+    return sorted(k for k in P["slots"] if k.startswith("F"))
+
+def day_keys(P):
+    return fkeys(P) + ["S"]
+
+def s_days(unit, P):
+    """S days per section: the unit's A/B school days minus two per formative day, split between sections."""
+    rest = UNIT_DATES[unit][1] - 2 * len(fkeys(P))
+    lo = rest // 2
+    return lo, rest - lo
 
 def mod_of(vid):
     return int(vid.split(".")[0])
@@ -120,10 +127,14 @@ def unit_plan(cid, unit):
                 s_videos=(mod["short"] != "Exam Prep & Practice"))
 
 def plan_days(unit, P):
-    days = [(k, WORK[P["slots"][k][0]]) for k in ("F1", "F2", "F3", "F4")]
-    lo, _ = s_days(unit)
+    """Video days in class order: F1–F4, the S block's video days, then F5 (if any). The last S day stays free
+    for finishing and submitting, so an F5 worksheet lands after every video it needs but before the summative is due."""
+    days = [(k, WORK[P["slots"][k][0]]) for k in fkeys(P) if k != "F5"]
+    lo, _ = s_days(unit, P)
     if P["s_videos"]:
-        days += [(f"S{k}", WORK["summative"]) for k in range(1, lo)]   # the last S day stays free for finishing + submitting
+        days += [(f"S{k}", WORK["summative"]) for k in range(1, lo)]
+    if "F5" in P["slots"]:
+        days.append(("F5", WORK[P["slots"]["F5"][0]]))
     return days
 
 def allocate(P, days):
@@ -145,9 +156,8 @@ def allocate(P, days):
 def day_of(alloc, vid):
     return next((k for k, vs in alloc.items() if any(v[0] == vid for v in vs)), None)
 
-ORDER = ["F1", "F2", "F3", "F4", "S1", "S2", "S3"]
 
-def check(cid, unit, P, alloc):
+def check(cid, unit, P, alloc, days):
     """Warn if a graded item is due before the videos it depends on."""
     warn = []
     for day, slot in P["slots"].items():
@@ -163,7 +173,8 @@ def check(cid, unit, P, alloc):
             need = None   # taught in an earlier unit
         if need:
             d = day_of(alloc, need)
-            if d is None or ORDER.index(d) > ORDER.index(day):
+            order = [k for k, _ in days]
+            if d is None or order.index(d) > order.index(day):
                 warn.append(f"{cid} U{unit} {day} {slot} needs {need}, scheduled {d}")
     return warn
 
@@ -173,7 +184,11 @@ def P_of(c, unit):
     return PLANS[(c["key"], unit)]
 
 def pts_of(c, slot):
-    """Points for a graded slot, or None when the course has no point schema (ADD) or nothing is graded."""
+    """Points printed on pages: always None. Point values are internal planning (see raw_pts and schema_check)."""
+    return None
+
+def raw_pts(c, slot):
+    """Planned points for a graded slot, or None when the course has no point schema (ADD) or nothing is graded."""
     t = slot[0]
     if t in ("summative", "product"):
         return c["mods"][slot[1]].get("points")
@@ -313,7 +328,7 @@ def lesson_page(c, unit, P, day, alloc, days):
     mod_names = ", ".join(f"Module {mm} ({mods[mm]['name']})" for mm in P["mods"])
     L.append(folded("source", f"FMLA plan: this unit follows BrainBuffet {c['app']} {mod_names} in GMetrix SMS, instead of the regular {c['course_name']} Unit {unit} lessons. Video list, lengths and objective mapping come from BrainBuffet's teacher lesson plans."))
     if day == "S":
-        lo, hi = s_days(unit)
+        lo, hi = s_days(unit, P)
         span = f"{lo}" if lo == hi else f"{lo}–{hi}"
         extra = "".join(f" The Module {em} worksheet is also due on the last S day, as a separate formative grade{pts_txt(pts_of(c, ex))}."
                         for ex in P["extra"] for em in [ex[1]])
@@ -378,7 +393,7 @@ def sub_notes(c, P, slot, day):
                  "is there with a 3-sentence answer, a copied partner answer and a synthesis; ✓+ answers go beyond 3 sentences; "
                  "✓− missing entries. Record marks on the roster. ")
     elif t == "product":
-        extra = f"Summative grade ({p} pts): students submit {mods[m]['product']} in Schoology by the end of class. Teacher grading (on return): {mods[m]['rubric']} "
+        extra = f"Summative grade: students submit {mods[m]['product']} in Schoology by the end of class. Teacher grading (on return): {mods[m]['rubric']} "
     elif t == "formative":
         extra = f"Formative grade: students submit {mods[m]['product']} in Schoology by the end of class. Teacher grading (on return): {mods[m]['rubric']} "
     else:
@@ -426,6 +441,9 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
         if today:
             goals = [f"**S day {k[1:]}:** finish video {alloc[k][-1][0]} ({alloc[k][-1][3]})." for k in s_keys if alloc.get(k)]
             b += ["{: .important }", " ".join(goals) + " **The last S day:** finish, export and submit your project.", "", video_table(today), ""]
+            if "F5" in P["slots"]:
+                b += ["{: .note }", f"**Class order:** S{unit} day{'s' if len(s_keys) > 1 else ''} {', '.join(k[1:] for k in s_keys)}, then "
+                      f"[{unit}.5]({unit}_5.md) ({slot_label(c, P['slots']['F5'], unit)}), then the last S{unit} day.", ""]
         else:
             b += ["{: .important }", "All of this unit's videos should be done by now. **S days:** finish, export and submit your project, then start the extension challenge.", ""]
     elif today:
@@ -462,7 +480,7 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
         pts = f" It's worth **{p} points**." if p else ""
         b += ["## Finished Product Checklist (summative)", "", f"This is one of this unit's two summatives.{pts}", ""] + product_checklist(mods[m], "summative")
     if t == "summative":
-        pts = f" It's worth **{mods[m]['points']} points**." if mods[m].get("points") else ""
+        pts = ""
         which = "the unit's second summative" if any(sl[0] == "product" for sl in P["slots"].values()) else "the unit's summative"
         b += ["## Finished Product Checklist (summative)", "", f"This is {which}.{pts}", ""] + product_checklist(mods[m], "summative")
         for ex in P["extra"]:
@@ -478,7 +496,7 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
 
 def graded_rows(c, unit, P):
     rows = []
-    for day in ("F1", "F2", "F3", "F4", "S"):
+    for day in day_keys(P):
         slot = P["slots"][day]
         lab = slot_label(c, slot, unit)
         p = pts_of(c, slot)
@@ -491,11 +509,11 @@ def graded_rows(c, unit, P):
     return rows
 
 def summ_slots(P):
-    return [P["slots"][d] for d in ("F1", "F2", "F3", "F4", "S") if P["slots"][d][0] in ("product", "summative")]
+    return [P["slots"][d] for d in day_keys(P) if P["slots"][d][0] in ("product", "summative")]
 
 def unit_index(c, unit, P, alloc, days):
     dates, ndays = UNIT_DATES[unit]
-    lo, hi = s_days(unit)
+    lo, hi = s_days(unit, P)
     total = sum(v[1] for v in P["vids"])
     mods = c["mods"]
     head = f"{c['unit_label']} {'–'.join(str(m) for m in (P['mods'][0], P['mods'][-1])) if len(P['mods']) > 1 else P['mods'][0]}"
@@ -507,7 +525,7 @@ def unit_index(c, unit, P, alloc, days):
     b += [f"This unit replaces the regular {c['course_name']} Unit {unit} lessons while your teacher is on leave. Every class follows the same routine: a stinger, a pace check, then self-paced work in BrainBuffet {c['app']}.", "",
           "| | |", "|---|---|",
           f"| **BrainBuffet videos** | {P['vids'][0][0]}–{P['vids'][-1][0]} ({len(P['vids'])} videos, {mmss(total)} of video) |",
-          f"| **Class periods** | {ndays} school days on the A/B calendar: 4 formative days plus {lo if lo == hi else f'{lo}–{hi}'} S days per section |",
+          f"| **Class periods** | {ndays} school days on the A/B calendar: {len(fkeys(P))} formative days plus {lo if lo == hi else f'{lo}–{hi}'} S days per section |",
           f"| **Summative{'s' if len(summ_slots(P)) > 1 else ''}** | " + "; ".join(mods[sl[1]]['product'] + pts_txt(pts_of(c, sl)).replace(', ', ' (', 1) + (')' if pts_of(c, sl) else '') for sl in summ_slots(P)) + " |", "",
           "## Graded Assignments", "", "| Day | Graded assignment |", "|---|---|"]
     b += [f"| [{n}]({l}) | {lab} |" for n, l, lab in graded_rows(c, unit, P)]
@@ -521,7 +539,8 @@ def unit_index(c, unit, P, alloc, days):
         else:
             b.append(f"| {label} | — | Catch up, then the extension challenge |")
     b.append(f"| S{unit}, last day(s) | — | Finish, export and submit the summative |")
-    b += ["", "## Calendar of Events for This Unit", "", f"{{% include calendar-of-events.html unit={unit} %}}", "",
+    b += ["", "## Calendar of Events for This Unit", "", (f"{{% include calendar-of-events.html unit={unit} data=\"calendar_fmla_fdd\" %}}" if c["app"] == "Illustrator"
+                                                     else f"{{% include calendar-of-events.html unit={unit} %}}"), "",
           "## Unit Vocabulary", "", f"{{% include unit-vocab.html course=\"{c['key']}\" unit={unit} %}}", ""]
     write(f"{c['folder']}/fmla{unit}/index.md", "\n".join(fm) + "\n" + "\n".join(b))
 
@@ -536,17 +555,13 @@ def section_index(c, cid, plans):
                   "- Open each module's starter files on one test Mac to make sure fonts activate and files open.\n"
                   "- Check that Generate Vectors, Generative Shape Fill, Mockup and Firefly work on a student account (Module 6, Unit 6). If the district has them turned off, students can watch Module 6 and do the parts that don't need them.\n")
     if cid == "fdd":
-        graded = ["| Unit | .1 | .2 | .3 | .4 | S (summative) |", "|---|---|---|---|---|---|"]
+        nf = max(len(fkeys(P)) for P in plans.values())
+        graded = ["| Unit | " + " | ".join(f".{i}" for i in range(1, nf + 1)) + " | S (summative) |", "|---" * (nf + 2) + "|"]
         for unit, P in plans.items():
-            r = graded_rows(c, unit, P)
-            graded.append(f"| {unit} | " + " | ".join(lab for _, _, lab in r) + " |")
-        n_form = sum(len(P["extra"]) + sum(1 for sl in P["slots"].values() if sl[0] in ("vocab", "worksheet", "stinger", "exit", "formative"))
-                     for P in plans.values())
-        f_pts = n_form * c["form_pts"]
-        s_pts = sum(pts_of(c, sl) or 0 for P in plans.values() for sl in summ_slots(P))
-        graded_intro = (f"Units 3–6 have **{n_form} formatives worth {c['form_pts']} points each ({f_pts} points)** and "
-                        f"**{s_pts} summative points**: the BrainBuffet module products. Formatives are every module worksheet, a vocabulary quiz "
-                        "for each module's terms, and one Stinger Sheet Check at the end that covers every stinger since the semester break. "
+            r = {n.split(".")[-1] if "." in n else "S": lab for n, _, lab in graded_rows(c, unit, P)}
+            graded.append(f"| {unit} | " + " | ".join(r.get(str(i), "—") for i in range(1, nf + 1)) + f" | {r['S']} |")
+        graded_intro = ("Formatives are every module worksheet, a vocabulary quiz for each module's terms, and one Stinger Sheet Check "
+                        "near the end that covers every stinger since the semester break. Summatives are the BrainBuffet module products. "
                         "Days marked *work day* have nothing graded: use them to stay on pace.")
     else:
         graded = ["| Day | Graded assignment |", "|---|---|",
@@ -606,6 +621,39 @@ past the pace goal, ✓− for a missing screenshot or a one-line reflection. Us
 is falling behind before the S days.
 """)
 
+# Internal grading schema (FDD): never printed on a page.
+FDD_SCHEMA = dict(formatives=12, formative_pts=120, summative_pts=300)
+
+def schema_check(c, plans):
+    graded = [sl for P in plans.values() for d in day_keys(P) for sl in [P["slots"][d]] + (P["extra"] if d == "S" else [])
+              if sl[0] != "work"]
+    form = [sl for sl in graded if sl[0] not in ("summative", "product")]
+    f_pts = sum(raw_pts(c, sl) for sl in form)
+    s_pts = sum(raw_pts(c, sl) or 0 for sl in graded if sl[0] in ("summative", "product"))
+    print(f"FDD schema: {len(form)} formatives / {f_pts} pts, {s_pts} summative pts")
+    got = dict(formatives=len(form), formative_pts=f_pts, summative_pts=s_pts)
+    return [f"FDD schema {k}: planned {v}, got {got[k]}" for k, v in FDD_SCHEMA.items() if got[k] != v]
+
+def fmla_calendar(plans):
+    """FMLA FDD calendar: the shared calendar, with each F5 taking one S day per section, right after the S video days."""
+    import yaml
+    cal = yaml.safe_load(open(os.path.join(ROOT, "_data/calendar.yml")))
+    for unit, P in plans.items():
+        if "F5" not in P["slots"]:
+            continue
+        lo, _ = s_days(unit, P)
+        skip = 2 * (lo - 1) if P["s_videos"] else 0   # S video days, one per section, come before the .5
+        seen = 0
+        for week in cal[unit]:
+            for day in week["days"]:
+                if day.get("unit") == unit and day.get("link") == f"s{unit}":
+                    if skip <= seen < skip + 2:
+                        day["label"], day["link"] = f"F | {unit}.5", f"{unit}_5"
+                    seen += 1
+    with open(os.path.join(ROOT, "_data/calendar_fmla_fdd.yml"), "w") as f:
+        f.write("# Generated by scripts/fmla/gen_fmla.py from calendar.yml; don't edit by hand.\n")
+        yaml.safe_dump(cal, f, sort_keys=False, allow_unicode=True)
+
 def main():
     exit_tickets()
     for old in glob.glob(os.path.join(ROOT, "_includes/vocab/fmla-ai-*.md")):
@@ -622,13 +670,16 @@ def main():
             days = plan_days(unit, P)
             alloc = allocate(P, days)
             assert sum(len(v) for v in alloc.values()) == len(P["vids"])
-            warnings += check(cid, unit, P, alloc)
+            warnings += check(cid, unit, P, alloc, days)
             unit_index(c, unit, P, alloc, days)
-            for day in ("F1", "F2", "F3", "F4", "S"):
+            for day in day_keys(P):
                 lesson_page(c, unit, P, day, alloc, days)
             load = sum(P["weight"].values()) / 60 if cid == "fdd" else None
             print(cid, unit, {k: f"{v[0][0]}-{v[-1][0]}" if v else "-" for k, v in alloc.items()},
                   f"BB load {sum(P['weight'].values())/3600:.1f}h in {sum(w for _, w in days)/60:.1f}h (+last S day)" if cid == "fdd" else "")
+        if cid == "fdd":
+            warnings += schema_check(c, plans)
+            fmla_calendar(plans)
     for w in warnings:
         print("WARNING:", w)
 

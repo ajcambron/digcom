@@ -1,4 +1,7 @@
-{%- assign weeks = site.data.calendar[include.unit] -%}
+{%- comment -%} Optional data="calendar_fmla_fdd" swaps in another calendar file from _data. {%- endcomment -%}
+{%- assign cal = site.data.calendar -%}
+{%- if include.data -%}{%- assign cal = site.data[include.data] -%}{%- endif -%}
+{%- assign weeks = cal[include.unit] -%}
 {%- if weeks -%}
 <div class="table-wrapper">
 <table class="calendar-of-events">
@@ -11,7 +14,7 @@
 {%- for day in week.days %}<td>{{ day.date }}</td>{% endfor %}
 </tr>
 <tr class="cal-labels">
-{%- for day in week.days %}<td>{% if day.link and day.unit == include.unit %}<a href="{{ day.link }}.md">{{ day.label }}</a>{% else %}{{ day.label }}{% endif %}</td>{% endfor %}
+{%- for day in week.days %}<td>{% if day.link and day.unit == include.unit %}<a href="{{ day.link }}.html">{{ day.label }}</a>{% else %}{{ day.label }}{% endif %}</td>{% endfor %}
 </tr>
 {%- if week.note %}
 <tr class="cal-note"><td colspan="5">{{ week.note }}</td></tr>

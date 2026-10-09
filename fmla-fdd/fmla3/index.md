@@ -19,17 +19,17 @@ This unit replaces the regular Foundations of Digital Design Unit 3 lessons whil
 |---|---|
 | **BrainBuffet videos** | 1.01–1.17 (17 videos, 134:44 of video) |
 | **Class periods** | 13 school days on the A/B calendar: 4 formative days plus 2–3 S days per section |
-| **Summative** | your 25 Dog logo and your own animal built from basic shapes, saved as an .ai file and a PDF (50 pts) |
+| **Summative** | your 25 Dog logo and your own animal built from basic shapes, saved as an .ai file and a PDF |
 
 ## Graded Assignments
 
 | Day | Graded assignment |
 |---|---|
 | [3.1](3_1.md) | Work Day (nothing graded) |
-| [3.2](3_2.md) | Vocabulary Quiz (10 pts) |
+| [3.2](3_2.md) | Vocabulary Quiz |
 | [3.3](3_3.md) | Work Day (nothing graded) |
-| [3.4](3_4.md) | Module 1 Worksheet (10 pts) |
-| [S3](s3.md) | Your Own Animal (summative, 50 pts) |
+| [3.4](3_4.md) | Module 1 Worksheet |
+| [S3](s3.md) | Your Own Animal (summative) |
 
 ## Pacing Guide
 
@@ -46,7 +46,7 @@ Where you should be at the end of each class:
 
 ## Calendar of Events for This Unit
 
-{% include calendar-of-events.html unit=3 %}
+{% include calendar-of-events.html unit=3 data="calendar_fmla_fdd" %}
 
 ## Unit Vocabulary
 
