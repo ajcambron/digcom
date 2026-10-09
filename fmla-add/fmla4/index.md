@@ -27,7 +27,7 @@ This unit replaces the regular Applications of Digital Design Unit 4 lessons whi
 |---|---|
 | [4.1](4_1.md) | Exit Ticket |
 | [4.2](4_2.md) | Vocabulary Quiz |
-| [4.3](4_3.md) | Module 3 Worksheet |
+| [4.3](4_3.md) | Module 3 Critical Thinking Questions |
 | [4.4](4_4.md) | Stinger Sheet Check |
 | [S4](s4.md) | No Way Out: Horror Chase Scene (summative) |
 

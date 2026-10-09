@@ -75,6 +75,17 @@ WORK = {k: next(m for seg, m, _ in v if seg.startswith("BrainBuffet") or seg.sta
 for k, v in TIMING.items():
     assert sum(t[1] for t in v) == 78, k
 
+def timing(c, t):
+    """TIMING rows for a course; ADD's worksheet is its Handbook's Critical Thinking questions."""
+    rows = TIMING[t]
+    if c["app"] == "Premiere Pro" and t == "worksheet":
+        rows = [("Critical Thinking Questions", m, "Graded: answer the module Handbook's three Critical Thinking questions in Schoology")
+                if seg == "Module Worksheet" else (seg, m, n.replace("the worksheet", "your answers")) for seg, m, n in rows]
+    return rows
+
+def ws_name(c, m):
+    return f"Module {m} Critical Thinking Questions" if c["app"] == "Premiere Pro" else f"Module {m} Worksheet"
+
 # Last video a worksheet depends on (FDD); the worksheet is due no earlier than the day this video is scheduled.
 AI_WS_NEEDS = {1: "1.11", 2: "2.15", 3: "3.17", 4: "4.11", 5: "5.06", 6: "6.05"}
 
@@ -203,7 +214,7 @@ def slot_label(c, slot, unit):
     if t == "vocab" and len(P_of(c, unit)["vocab_groups"]) > 1:
         return f"{P_of(c, unit)['vocab_groups'][slot[1]][0]} Vocabulary Quiz"
     if t == "worksheet":
-        return f"Module {slot[1]} Worksheet" if len(slot) > 1 else "Module Worksheet"
+        return ws_name(c, slot[1])
     return {"exit": "Exit Ticket", "vocab": "Vocabulary Quiz", "stinger": "Stinger Sheet Check", "work": "Work Day"}[t]
 
 def worksheet_text(c, m):
@@ -212,8 +223,12 @@ def worksheet_text(c, m):
         return (f"Complete {mod['worksheet']}. Download it from Module {m}'s resources in BrainBuffet.\n\n"
                 f"{{: .note }}\n{mod['worksheet_note']}\n\n"
                 "Save it in your **Project Files** folder and submit it (or a PDF of it) in Schoology before you leave.")
-    return (f"Open your **{mod['handbook']}** (in the module's resources in BrainBuffet) and answer its three **Critical Thinking** "
-            "questions in Schoology. Write 3–5 sentences for each, and use at least one vocabulary term from this module in every answer.\n\n"
+    return (f"Answer the three **Critical Thinking questions** from your **{mod['handbook']}**:\n\n"
+            f"1. In BrainBuffet, open Module {m}'s resources and open the **{mod['handbook']}**.\n"
+            "2. Find the **Critical Thinking** section. It has three questions.\n"
+            "3. Open today's **Critical Thinking Questions** assignment in Schoology and answer all three questions there.\n"
+            "4. Write **3–5 sentences** for each answer, and use **at least one vocabulary term** from this module in every answer.\n"
+            "5. Submit before you leave.\n\n"
             "*Stuck on how to start? Try: \"In this module I learned that ___. This matters because ___. For example, ___.\"*")
 
 def product_checklist(mod, label):
@@ -244,7 +259,7 @@ def lesson_page(c, unit, P, day, alloc, days):
     if day == "S":
         title = f"S | {unit} | {label}"
     elif c["app"] == "Premiere Pro":   # one module per unit: keep the original "Module, Part n" titles
-        old_label = {"exit": "Exit Ticket", "vocab": "Vocabulary Quiz", "worksheet": "Module Worksheet", "stinger": "Stinger Sheet Check"}[t]
+        old_label = {"exit": "Exit Ticket", "vocab": "Vocabulary Quiz", "worksheet": "Critical Thinking Questions", "stinger": "Stinger Sheet Check"}[t]
         title = f"{num} | {mods[P['mods'][0]]['short']}, Part {day[1]}: {old_label}"
     else:
         title = f"{num} | {label}"
@@ -263,7 +278,8 @@ def lesson_page(c, unit, P, day, alloc, days):
         m = None
     tgt = {"exit": f"follow the BrainBuffet {c['app']} videos at pace and {reach}, then report progress on an exit ticket",
            "vocab": f"define the unit's key terms by scoring on the vocabulary quiz, and {reach}",
-           "worksheet": f"apply Module {m}'s skills by completing its worksheet, and {reach}",
+           "worksheet": (f"explain Module {m}'s concepts by answering its Handbook's three Critical Thinking questions, and {reach}"
+                         if c["app"] == "Premiere Pro" else f"apply Module {m}'s skills by completing its worksheet, and {reach}"),
            "stinger": f"{reach}, and show a complete Stinger Response Sheet for {span}",
            "work": f"follow the BrainBuffet {c['app']} videos at pace and {reach}",
            "product": f"finish and submit {mods[m]['product'] if m else ''}, and {reach}",
@@ -271,7 +287,7 @@ def lesson_page(c, unit, P, day, alloc, days):
            "summative": f"finish and submit {mods[m]['product'] if m else ''}"}[t]
     evidence = {"exit": "The Pace Check Exit Ticket in Schoology: last video finished, a screenshot of it, and a 3-sentence reflection.",
                 "vocab": "The Schoology vocabulary quiz score (auto-graded).",
-                "worksheet": f"The submitted Module {m} worksheet.",
+                "worksheet": f"The submitted {ws_name(c, m)}.",
                 "stinger": f"The Stinger Response Sheet: every stinger from {span} answered, shared, copied and synthesized.",
                 "work": "No collected grade today: the sub's walk-around check that each screen shows today's pace-goal video or later.",
                 "product": f"The submitted summative product: {mods[m]['product'] if m else ''}.",
@@ -279,7 +295,8 @@ def lesson_page(c, unit, P, day, alloc, days):
                 "summative": f"The submitted summative product: {mods[m]['product'] if m else ''}."}[t]
     summ = {"exit": "The exit ticket: last video finished, a screenshot, and one skill learned.",
             "vocab": "The vocab quiz summarizes the unit's terms.",
-            "worksheet": "The worksheet applies the module's skills on a fresh file.",
+            "worksheet": ("Students explain the module's concepts in their own words, using its vocabulary." if c["app"] == "Premiere Pro"
+                          else "The worksheet applies the module's skills on a fresh file."),
             "stinger": "Students review their stingers while the sheet is checked.",
             "work": "Before saving, students compare the last video they finished with today's pace goal.",
             "product": "Students check the product against its checklist before submitting.",
@@ -304,7 +321,7 @@ def lesson_page(c, unit, P, day, alloc, days):
         sp = f" ({sp} pts)" if sp else ""
         L.append(folded("purpose_note", f"The S block is {span} class periods per section on the A/B calendar. The S block's summative is {mods[m]['product']}{sp}.{extra} Students who finish early do the extension challenge."))
     L.append("  timing:")
-    for seg, mins, note in TIMING[t]:
+    for seg, mins, note in timing(c, t):
         L += [f"    - segment: {q(seg)}", f"      minutes: {mins}", f"      note: {q(note)}"]
     L += ["  the_seven:",
           f"    organization: {q('The page lists today’s videos, their lengths and one pace goal, so every student knows exactly where to stop. ' + ('Nothing is graded today; it’s a work day.' if t == 'work' else 'Graded today: ' + label + '.'))}",
@@ -353,7 +370,8 @@ def sub_notes(c, P, slot, day):
     elif t == "worksheet":
         ws = mods[m].get("worksheet") or f"the three Critical Thinking questions in the {mods[m]['handbook']}"
         grade = mods[m].get("worksheet_grade", "Check system: ✓ all three answered in 3–5 sentences with a module term, ✓+ specific examples from the project, ✓− missing or one-line answers.")
-        extra = f"The worksheet is {ws}. Students do it in the last 25 minutes, after their videos. Collect it in Schoology. Teacher grading (on return): {grade} "
+        what = "Today's assignment is" if c["app"] == "Premiere Pro" else "The worksheet is"
+        extra = f"{what} {ws}. Students do it in the last 25 minutes, after their videos. Collect it in Schoology. Teacher grading (on return): {grade} "
     elif t == "stinger":
         span = m or "this unit"
         extra = (f"In the last 8 minutes, walk the room and mark each Stinger Response Sheet on the check system: ✓ every stinger from {span} "
@@ -389,7 +407,9 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
               "work": "**Work day, nothing graded.** Use all of today's work time to reach the pace goal.",
               "product": f"**{label} (summative{pw}).** Finish and submit it in Schoology by the end of class.",
               "vocab": f"**{label}{' (' + pw[2:] + ')' if p else ''}.** Review the key terms below, then take the Schoology vocabulary quiz.",
-              "worksheet": f"**Module {m} Worksheet{' (' + pw[2:] + ')' if p else ''}.** Complete and submit it in the last 25 minutes of class.",
+              "worksheet": (f"**{ws_name(c, m)}{' (' + pw[2:] + ')' if p else ''}.** "
+                            + ("Answer the three Critical Thinking questions from the module Handbook in Schoology in the last 25 minutes of class."
+                               if c["app"] == "Premiere Pro" else "Complete and submit it in the last 25 minutes of class.")),
               "stinger": f"**Stinger Sheet Check{' (' + pw[2:] + ')' if p else ''}.** Your Stinger Response Sheet for {span} gets checked at the end of class.",
               "formative": f"**{label} (formative).** Finish and submit it in Schoology by the end of class.",
               "summative": f"**{label} (summative{pw}).** Submit it in Schoology by the end of the last S day."}[t]
@@ -399,7 +419,7 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
         also = " and ".join(f"the **Module {ex[1]} Worksheet**{' (' + str(pts_of(c, ex)) + ' points)' if pts_of(c, ex) else ''}" for ex in P["extra"])
         b += ["{: .note }", f"Also due on the last S day: {also}, graded as a formative.", ""]
     b += ["## Today's Plan", "", "| Time | What you do |", "|---|---|"]
-    b += [f"| {mins} min | {seg} |" for seg, mins, _ in TIMING[t]]
+    b += [f"| {mins} min | {seg} |" for seg, mins, _ in timing(c, t)]
     b += ["", "## Stinger (~10 min)", "", "{% include lesson-parts/stinger.md %}", "", "## Stay on Pace", ""]
     if day == "S":
         s_keys = [d for d, _ in days if d.startswith("S")]
@@ -449,7 +469,7 @@ def student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mo
             b += [f"### Also due: Module {ex[1]} Worksheet (formative)", "", worksheet_text(c, ex[1]), ""]
     b += ["## BrainBuffet Work Time", "", start_steps(c, P["mods"]), ""]
     if t == "worksheet":
-        b += [f"## Module {m} Worksheet (last ~25 min)", "", worksheet_text(c, m), ""]
+        b += [f"## {ws_name(c, m)} (last ~25 min)", "", worksheet_text(c, m), ""]
     if t == "exit":
         b += ["## Exit Ticket (last ~5 min)", "", "{% include lesson-parts/organize.html %}", "", "{% include exit-ticket/fmla-pace.md %}", ""]
     else:
@@ -532,7 +552,7 @@ def section_index(c, cid, plans):
         graded = ["| Day | Graded assignment |", "|---|---|",
                   "| F .1 | Exit Ticket: your progress, a screenshot and one thing you learned |",
                   "| F .2 | Vocabulary Quiz on the module's key terms (listed on the .2 page) |",
-                  "| F .3 | The module's worksheet (the Handbook's Critical Thinking questions) |",
+                  "| F .3 | Critical Thinking Questions: answer the three Critical Thinking questions in the module's Handbook |",
                   "| F .4 | Stinger Sheet Check |",
                   "| S | The finished product for the BrainBuffet module (summative) |"]
         graded_intro = "Each unit is one BrainBuffet module, graded the same way every unit."
@@ -554,7 +574,7 @@ def section_index(c, cid, plans):
          "- Students who are ahead do the extension challenge listed on the page.", "",
          "## Before Leave (teacher checklist)", "",
          "- Build each unit's Schoology vocabulary quiz from the **Download Schoology Vocab Quiz (QTI)** button on the unit page or the .2 page.",
-         "- Post the exit ticket, worksheet, product and summative assignments in Schoology for each unit.",
+         "- Post the exit ticket, " + ("Critical Thinking Questions" if c["app"] == "Premiere Pro" else "worksheet") + ", product and summative assignments in Schoology for each unit.",
          "- Print a class set of Stinger Response Sheets.", prep_extra]
     write(f"{c['folder']}/index.md", "\n".join(b))
 

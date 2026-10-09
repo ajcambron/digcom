@@ -27,7 +27,7 @@ This unit replaces the regular Applications of Digital Design Unit 3 lessons whi
 |---|---|
 | [3.1](3_1.md) | Exit Ticket |
 | [3.2](3_2.md) | Vocabulary Quiz |
-| [3.3](3_3.md) | Module 2 Worksheet |
+| [3.3](3_3.md) | Module 2 Critical Thinking Questions |
 | [3.4](3_4.md) | Stinger Sheet Check |
 | [S3](s3.md) | Fire Academy Recruiting Video (summative) |
 

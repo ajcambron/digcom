@@ -27,7 +27,7 @@ This unit replaces the regular Applications of Digital Design Unit 5 lessons whi
 |---|---|
 | [5.1](5_1.md) | Exit Ticket |
 | [5.2](5_2.md) | Vocabulary Quiz |
-| [5.3](5_3.md) | Module 4 Worksheet |
+| [5.3](5_3.md) | Module 4 Critical Thinking Questions |
 | [5.4](5_4.md) | Stinger Sheet Check |
 | [S5](s5.md) | Athlete Showreel (summative) |
 

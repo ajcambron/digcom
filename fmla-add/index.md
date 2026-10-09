@@ -32,7 +32,7 @@ Each unit is one BrainBuffet module, graded the same way every unit.
 |---|---|
 | F .1 | Exit Ticket: your progress, a screenshot and one thing you learned |
 | F .2 | Vocabulary Quiz on the module's key terms (listed on the .2 page) |
-| F .3 | The module's worksheet (the Handbook's Critical Thinking questions) |
+| F .3 | Critical Thinking Questions: answer the three Critical Thinking questions in the module's Handbook |
 | F .4 | Stinger Sheet Check |
 | S | The finished product for the BrainBuffet module (summative) |
 
@@ -46,7 +46,7 @@ Each unit is one BrainBuffet module, graded the same way every unit.
 ## Before Leave (teacher checklist)
 
 - Build each unit's Schoology vocabulary quiz from the **Download Schoology Vocab Quiz (QTI)** button on the unit page or the .2 page.
-- Post the exit ticket, worksheet, product and summative assignments in Schoology for each unit.
+- Post the exit ticket, Critical Thinking Questions, product and summative assignments in Schoology for each unit.
 - Print a class set of Stinger Response Sheets.
 - Copy each module's footage (Modules 2–5, about 5 GB each) to `/Users/Shared/GMetrix` on every lab Mac. There's no Jamf, so this is by hand; one USB-C drive is fastest.
 - Confirm Premiere Pro opens each module's starter project from that folder on one test Mac.

@@ -27,7 +27,7 @@ This unit replaces the regular Applications of Digital Design Unit 6 lessons whi
 |---|---|
 | [6.1](6_1.md) | Exit Ticket |
 | [6.2](6_2.md) | Vocabulary Quiz |
-| [6.3](6_3.md) | Module 5 Worksheet |
+| [6.3](6_3.md) | Module 5 Critical Thinking Questions |
 | [6.4](6_4.md) | Stinger Sheet Check |
 | [S6](s6.md) | Exam Prep Grand Finale (summative) |
 
