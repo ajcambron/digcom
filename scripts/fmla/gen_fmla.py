@@ -291,7 +291,7 @@ def student_body(c, unit, mod_no, mod, kind, alloc, days, title):
         voc = f"vocab/fmla-{'ai' if c['app']=='Illustrator' else 'pr'}-m{mod_no}.md"
         b += ["## Vocabulary Quiz (~15 min)", "",
               "Review these terms for a few minutes, then take the **Unit vocabulary quiz** in Schoology. It's auto-graded.", "",
-              "### Key Terms", "", "{: .vocab }", f"{{% include {voc} %}}", ""]
+              "### Key Terms", "", f"{{% include unit-vocab.html course=\"{c['key']}\" unit={unit} %}}", ""]
     if kind == "F3":
         if c["app"] == "Illustrator":
             b += ["## Module Worksheet (~25 min)", "", f"Complete {mod['worksheet']}. Download it from the module's resources in BrainBuffet.", "",

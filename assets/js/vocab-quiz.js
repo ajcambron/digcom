@@ -249,7 +249,7 @@
     var url = URL.createObjectURL(zip(files));
     var a = document.createElement('a');
     a.href = url;
-    a.download = (course + '-unit-' + unit + '-vocab-quiz-' + version).toLowerCase() + '-qti.zip';
+    a.download = (course + '-unit-' + unit + '-vocab-quiz-' + version).toLowerCase().replace(/\s+/g, '-') + '-qti.zip';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
