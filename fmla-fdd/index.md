@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "FMLA FDD"
-nav_order: 25
+parent: "FMLA"
+nav_order: 1
 has_children: true
 has_toc: false
 description: "Units 3–6 of Foundations of Digital Design while the teacher is on leave, run entirely through BrainBuffet in GMetrix."

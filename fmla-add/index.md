@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "FMLA ADD"
-nav_order: 45
+parent: "FMLA"
+nav_order: 2
 has_children: true
 has_toc: false
 description: "Units 3–6 of Applications of Digital Design while the teacher is on leave, run entirely through BrainBuffet in GMetrix."

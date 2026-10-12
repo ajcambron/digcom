@@ -29,9 +29,9 @@ def mmss(sec):
     return f"{sec // 60}:{sec % 60:02d}"
 
 COURSES = {
- "fdd": dict(key="FMLA FDD", top="FMLA FDD", folder="fmla-fdd", nav=25, app="Illustrator", course_name="Foundations of Digital Design",
+ "fdd": dict(key="FMLA FDD", top="FMLA FDD", folder="fmla-fdd", nav=1, app="Illustrator", course_name="Foundations of Digital Design",
              mods=AI, unit_label="GMetrix Illustrator", vocab_prefix="ai", form_pts=FORMATIVE_PTS),
- "add": dict(key="FMLA ADD", top="FMLA ADD", folder="fmla-add", nav=45, app="Premiere Pro", course_name="Applications of Digital Design",
+ "add": dict(key="FMLA ADD", top="FMLA ADD", folder="fmla-add", nav=2, app="Premiere Pro", course_name="Applications of Digital Design",
              mods=PR, unit_label="GMetrix Premiere", vocab_prefix="pr"),
 }
 
@@ -599,7 +599,7 @@ def section_index(c, cid, plans):
                   "| F .4 | Stinger Sheet Check |",
                   "| S | The finished product for the BrainBuffet module (summative) |"]
         graded_intro = "Each unit is one BrainBuffet module, graded the same way every unit."
-    b = ["---", "layout: default", f"title: {q(c['top'])}", f"nav_order: {c['nav']}", "has_children: true", "has_toc: false",
+    b = ["---", "layout: default", f"title: {q(c['top'])}", "parent: \"FMLA\"", f"nav_order: {c['nav']}", "has_children: true", "has_toc: false",
          f"description: {q('Units 3–6 of ' + c['course_name'] + ' while the teacher is on leave, run entirely through BrainBuffet in GMetrix.')}", "---",
          f"# {c['top']}: {c['course_name']} During Leave", "",
          f"While your teacher is on leave, {c['course_name']} Units 3–6 run entirely through the BrainBuffet {c['app']} course in GMetrix SMS. These pages replace the regular unit pages for those units.", "",

@@ -4,7 +4,8 @@
   Usage: {% include lesson-parts/stinger.md %}
 {%- endcomment -%}
 {%- assign stinger_course = page.lesson.course | default: "" -%}
-{%- if stinger_course contains "ADD" -%}{%- assign stinger_deck = "/applications/add0/bellringers.html" -%}
+{%- if stinger_course contains "DFM" -%}{%- assign stinger_deck = "/fmla-dfm/bellringers.html" -%}
+{%- elsif stinger_course contains "ADD" -%}{%- assign stinger_deck = "/applications/add0/bellringers.html" -%}
 {%- elsif stinger_course contains "PDD" -%}{%- assign stinger_deck = "/processes/pdd0/bellringers.html" -%}
 {%- else -%}{%- assign stinger_deck = "/foundations/fdd0/bellringers.html" -%}{%- endif -%}
 Answer today's stinger from the [stinger deck]({{ stinger_deck | relative_url }}) on your **Stinger
