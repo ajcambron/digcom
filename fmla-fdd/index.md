@@ -31,8 +31,8 @@ Formatives are every module worksheet, a vocabulary quiz for each module's terms
 | Unit | .1 | .2 | .3 | .4 | .5 | S (summative) |
 |---|---|---|---|---|---|---|
 | 3 | Exit Ticket | Vocabulary Quiz | Exit Ticket | Module 1 Worksheet | — | Your Own Animal (summative) |
-| 4 | Exit Ticket | Vocabulary Quiz | Module 2 Worksheet | Dobson National Park Branding Style Guide (summative) | Module 3 Worksheet | Dobson National Park Poster (summative) |
-| 5 | Module 3 Vocabulary Quiz | Exit Ticket | Module 4 Vocabulary Quiz | Module 4 Worksheet | — | Dobson National Park Trifold Brochure (summative) |
+| 4 | Exit Ticket | Module 2 Vocabulary Quiz | Module 2 Worksheet | Module 3 Worksheet | Module 3 Vocabulary Quiz | S4.1: Dobson National Park Branding Style Guide (summative); S4.2: Dobson National Park Poster (summative) |
+| 5 | Exit Ticket | Vocabulary Quiz | Exit Ticket | Module 4 Worksheet | — | Dobson National Park Trifold Brochure (summative) |
 | 6 | Module 5 Worksheet | Exit Ticket | Stinger Sheet Check | Vocabulary Quiz | Module 6 Worksheet | Dobson's Business Card (summative) |
 
 ## For the Substitute

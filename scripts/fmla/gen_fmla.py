@@ -178,7 +178,7 @@ def check(cid, unit, P, alloc, days):
     for day, slot in P["slots"].items():
         need = late_need(cid, P, day, slot, alloc, days)
         if need:
-            tag = "NOTE (all Fs before S; page tells students to watch ahead)" if day == "F5" else "WARNING"
+            tag = "NOTE (F order kept; page tells students to watch ahead)" if slot[0] == "worksheet" else "WARNING"
             warn.append(f"{tag}: {cid} U{unit} {day} {slot} needs {need}, scheduled {day_of(alloc, need)}")
     return warn
 
@@ -270,11 +270,11 @@ def lesson_page(c, unit, P, day, alloc, days):
     slot = P["slots"][day]
     t = slot[0]
     mods = c["mods"]
-    num = f"{unit}.{day[1]}" if day != "S" else f"S{unit}"
+    num = day_num(unit, P, day)
     parent = f"{c['top']} | Unit {unit}"
     label = slot_label(c, slot, unit)
-    if day == "S":
-        title = f"S | {unit} | {label}"
+    if num.startswith("S"):
+        title = f"S | {s_title_num(num)} | {label}"
     elif c["app"] == "Premiere Pro":   # one module per unit: keep the original "Module, Part n" titles
         old_label = {"exit": "Exit Ticket", "vocab": "Vocabulary Quiz", "worksheet": "Critical Thinking Questions", "stinger": "Stinger Sheet Check"}[t]
         title = f"{num} | {mods[P['mods'][0]]['short']}, Part {day[1]}: {old_label}"
@@ -362,7 +362,7 @@ def lesson_page(c, unit, P, day, alloc, days):
     L += ["    - \"Headphones\"", "    - \"Stinger Response Sheet\""]
     L.append(folded("notes", sub_notes(c, P, slot, day)))
     body = student_body(c, unit, P, day, slot, label, title, today, alloc, days, ext_mod)
-    slug = f"{unit}_{day[1]}" if day != "S" else f"s{unit}"
+    slug = day_slug(num)
     write(f"{c['folder']}/fmla{unit}/{slug}.md", front(title, parent, c["top"], L) + body)
     teacher_page(c["folder"], unit, slug, title, parent, c["top"])
 
@@ -503,10 +503,31 @@ def graded_rows(c, unit, P):
         kind = {"formative": " (formative product)", "summative": " (summative)", "product": " (summative)"}.get(slot[0], "")
         if p:
             kind = kind[:-1] + f", {p} pts)" if kind else f" ({p} pts)"
-        num, link = (f"{unit}.{day[1]}", f"{unit}_{day[1]}.md") if day != "S" else (f"S{unit}", f"s{unit}.md")
+        num = day_num(unit, P, day)
+        link = f"{day_slug(num)}.md"
         extra = "".join(f"; also the Module {ex[1]} Worksheet ({pts_of(c, ex) or 'formative'}{' pts' if pts_of(c, ex) else ''})" for ex in P["extra"]) if day == "S" else ""
         rows.append((num, link, lab + kind + extra))
     return rows
+
+def has_product(P):
+    return any(sl[0] == "product" for sl in P["slots"].values())
+
+def day_num(unit, P, day):
+    """Day number as shown: '4.3' for a formative day; summative days are 'S4', or 'S4.1' (the product day, kept in
+    its place in the F sequence) and 'S4.2' (the S block) when a unit has two summatives."""
+    if day == "S":
+        return f"S{unit}.2" if has_product(P) else f"S{unit}"
+    if P["slots"][day][0] == "product":
+        return f"S{unit}.1"
+    shown = [k for k in fkeys(P) if P["slots"][k][0] != "product"]
+    return f"{unit}.{shown.index(day) + 1}"
+
+def day_slug(num):
+    return num.lower().replace(".", "_")
+
+def s_title_num(num):
+    """'S4.1' -> '4.1', 'S4' -> '4' for titles like 'S | 4.1 | ...'."""
+    return num[1:]
 
 def summ_slots(P):
     return [P["slots"][d] for d in day_keys(P) if P["slots"][d][0] in ("product", "summative")]
@@ -525,7 +546,9 @@ def unit_index(c, unit, P, alloc, days):
     b += [f"This unit replaces the regular {c['course_name']} Unit {unit} lessons while your teacher is on leave. Every class follows the same routine: a stinger, a pace check, then self-paced work in BrainBuffet {c['app']}.", "",
           "| | |", "|---|---|",
           f"| **BrainBuffet videos** | {P['vids'][0][0]}–{P['vids'][-1][0]} ({len(P['vids'])} videos, {mmss(total)} of video) |",
-          f"| **Class periods** | {ndays} school days on the A/B calendar: {len(fkeys(P))} formative days plus {lo if lo == hi else f'{lo}–{hi}'} S days per section |",
+          f"| **Class periods** | {ndays} school days on the A/B calendar: " + (
+              f"{len(fkeys(P)) - 1} formative days, 1 S{unit}.1 day and {lo if lo == hi else f'{lo}–{hi}'} S{unit}.2 day{'' if lo == hi == 1 else 's'} per section |"
+              if has_product(P) else f"{len(fkeys(P))} formative days plus {lo if lo == hi else f'{lo}–{hi}'} S days per section |"),
           f"| **Summative{'s' if len(summ_slots(P)) > 1 else ''}** | " + "; ".join(mods[sl[1]]['product'] + pts_txt(pts_of(c, sl)).replace(', ', ' (', 1) + (')' if pts_of(c, sl) else '') for sl in summ_slots(P)) + " |", "",
           "## Graded Assignments", "", "| Day | Graded assignment |", "|---|---|"]
     b += [f"| [{n}]({l}) | {lab} |" for n, l, lab in graded_rows(c, unit, P)]
@@ -533,12 +556,12 @@ def unit_index(c, unit, P, alloc, days):
           "| Class | Videos | Finish by the end of class |", "|---|---|---|"]
     for k, _ in days:
         vs = alloc.get(k, [])
-        label = f"{unit}.{k[1]}" if k.startswith("F") else f"S{unit}, day {k[1:]}"
+        label = day_num(unit, P, k) if k.startswith("F") else f"{day_num(unit, P, 'S')}, day {k[1:]}"
         if vs:
             b.append(f"| {label} | {vs[0][0]}–{vs[-1][0]} | {vs[-1][0]} {vs[-1][3]} |")
         else:
             b.append(f"| {label} | — | Catch up, then the extension challenge |")
-    b.append(f"| S{unit}, last day(s) | — | Finish, export and submit the summative |")
+    b.append(f"| {day_num(unit, P, 'S')}, last day(s) | — | Finish, export and submit the summative |")
     b += ["", "## Calendar of Events for This Unit", "", (f"{{% include calendar-of-events.html unit={unit} data=\"calendar_fmla_fdd\" %}}" if c["app"] == "Illustrator"
                                                      else f"{{% include calendar-of-events.html unit={unit} %}}"), "",
           "## Unit Vocabulary", "", f"{{% include unit-vocab.html course=\"{c['key']}\" unit={unit} %}}", ""]
@@ -555,10 +578,15 @@ def section_index(c, cid, plans):
                   "- Open each module's starter files on one test Mac to make sure fonts activate and files open.\n"
                   "- Check that Generate Vectors, Generative Shape Fill, Mockup and Firefly work on a student account (Module 6, Unit 6). If the district has them turned off, students can watch Module 6 and do the parts that don't need them.\n")
     if cid == "fdd":
-        nf = max(len(fkeys(P)) for P in plans.values())
+        nf = max(sum(1 for k in fkeys(P) if P["slots"][k][0] != "product") for P in plans.values())
         graded = ["| Unit | " + " | ".join(f".{i}" for i in range(1, nf + 1)) + " | S (summative) |", "|---" * (nf + 2) + "|"]
         for unit, P in plans.items():
-            r = {n.split(".")[-1] if "." in n else "S": lab for n, _, lab in graded_rows(c, unit, P)}
+            r = {}
+            for n, _, lab in graded_rows(c, unit, P):
+                if n.startswith("S"):
+                    r["S"] = (r["S"] + "; " if "S" in r else "") + (f"{n}: {lab}" if "." in n else lab)
+                else:
+                    r[n.split(".")[1]] = lab
             graded.append(f"| {unit} | " + " | ".join(r.get(str(i), "—") for i in range(1, nf + 1)) + f" | {r['S']} |")
         graded_intro = ("Formatives are every module worksheet, a vocabulary quiz for each module's terms, a Pace Check Exit Ticket on "
                         "days without another formative, and one Stinger Sheet Check near the end that covers every stinger since the "
@@ -622,7 +650,7 @@ is falling behind before the S days.
 """)
 
 # Internal grading schema (FDD): never printed on a page.
-FDD_SCHEMA = dict(formatives=17, formative_pts=170, summative_pts=300)
+FDD_SCHEMA = dict(formatives=18, formative_pts=180, summative_pts=300)
 
 def schema_check(c, plans):
     graded = [sl for P in plans.values() for d in day_keys(P) for sl in [P["slots"][d]] + (P["extra"] if d == "S" else [])]
@@ -634,20 +662,20 @@ def schema_check(c, plans):
     return [f"FDD schema {k}: planned {v}, got {got[k]}" for k, v in FDD_SCHEMA.items() if got[k] != v]
 
 def fmla_calendar(plans):
-    """FMLA FDD calendar: the shared calendar, with each F5 taking the first S day of each section."""
+    """FMLA FDD calendar: the shared calendar's unit days relabeled in FMLA order (two class days, one per section, for
+    each F key, then the S block), using each day's shown number."""
     import yaml
     cal = yaml.safe_load(open(os.path.join(ROOT, "_data/calendar.yml")))
     for unit, P in plans.items():
-        if "F5" not in P["slots"]:
-            continue
-        skip = 0   # every F comes before the S block
-        seen = 0
-        for week in cal[unit]:
-            for day in week["days"]:
-                if day.get("unit") == unit and day.get("link") == f"s{unit}":
-                    if skip <= seen < skip + 2:
-                        day["label"], day["link"] = f"F | {unit}.5", f"{unit}_5"
-                    seen += 1
+        days = [d for week in cal[unit] for d in week["days"] if d.get("unit") == unit]
+        order = fkeys(P)   # one class day per section for each F key, in order; the rest is the S block
+        for i, d in enumerate(days):
+            k = order[i // 2] if i // 2 < len(order) else "S"
+            n = day_num(unit, P, k)
+            if n.startswith("S"):
+                d["label"], d["link"] = f"S | {s_title_num(n)}", day_slug(n)
+            else:
+                d["label"], d["link"] = f"F | {n}", day_slug(n)
     with open(os.path.join(ROOT, "_data/calendar_fmla_fdd.yml"), "w") as f:
         f.write("# Generated by scripts/fmla/gen_fmla.py from calendar.yml; don't edit by hand.\n")
         yaml.safe_dump(cal, f, sort_keys=False, allow_unicode=True)

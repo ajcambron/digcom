@@ -289,41 +289,41 @@
     link: '4_3'
     unit: 4
   - date: 11/13
-    label: F | 4.4
-    link: '4_4'
+    label: S | 4.1
+    link: s4_1
     unit: 4
   note: '11/10: Report Card grade verification window closes (MP1); 11/12: Report
     Cards delivered via Parent Portal (MP1)'
 - days:
   - date: 11/16
+    label: S | 4.1
+    link: s4_1
+    unit: 4
+  - date: 11/17
     label: F | 4.4
     link: '4_4'
     unit: 4
-  - date: 11/17
-    label: F | 4.5
-    link: '4_5'
-    unit: 4
   - date: 11/18
-    label: F | 4.5
-    link: '4_5'
+    label: F | 4.4
+    link: '4_4'
     unit: 4
   - date: 11/19
-    label: S | 4
-    link: s4
+    label: F | 4.5
+    link: '4_5'
     unit: 4
   - date: 11/20
-    label: S | 4
-    link: s4
+    label: F | 4.5
+    link: '4_5'
     unit: 4
   note: null
 - days:
   - date: 11/30
-    label: S | 4
-    link: s4
+    label: S | 4.2
+    link: s4_2
     unit: 4
   - date: 12/1
-    label: S | 4
-    link: s4
+    label: S | 4.2
+    link: s4_2
     unit: 4
   - date: 12/2
     label: F | 5.1

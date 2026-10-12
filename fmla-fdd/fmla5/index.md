@@ -27,9 +27,9 @@ This unit replaces the regular Foundations of Digital Design Unit 5 lessons whil
 
 | Day | Graded assignment |
 |---|---|
-| [5.1](5_1.md) | Module 3 Vocabulary Quiz |
-| [5.2](5_2.md) | Exit Ticket |
-| [5.3](5_3.md) | Module 4 Vocabulary Quiz |
+| [5.1](5_1.md) | Exit Ticket |
+| [5.2](5_2.md) | Vocabulary Quiz |
+| [5.3](5_3.md) | Exit Ticket |
 | [5.4](5_4.md) | Module 4 Worksheet |
 | [S5](s5.md) | Dobson National Park Trifold Brochure (summative) |
 
@@ -39,10 +39,10 @@ Where you should be at the end of each class:
 
 | Class | Videos | Finish by the end of class |
 |---|---|---|
-| 5.1 | 4.00–4.03 | 4.03 Bleeds and Guides |
-| 5.2 | 4.04–4.09 | 4.09 Place Text and Spell Check |
-| 5.3 | 4.10–4.12 | 4.12 Add Some Images |
-| 5.4 | 4.13–4.15 | 4.15 Place Text and Leading |
+| 5.1 | 4.00–4.04 | 4.04 Preferences |
+| 5.2 | 4.05–4.09 | 4.09 Place Text and Spell Check |
+| 5.3 | 4.10–4.13 | 4.13 Text Wrapping and Hyphenation |
+| 5.4 | 4.14–4.15 | 4.15 Place Text and Leading |
 | S5, day 1 | 4.16–4.21 | 4.21 The Trifold |
 | S5, day 2 | 5.01–5.06 | 5.06 More Image Tracing |
 | S5, last day(s) | — | Finish, export and submit the summative |
