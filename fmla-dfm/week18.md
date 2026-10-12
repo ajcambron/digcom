@@ -30,7 +30,7 @@ lesson:
     connection: "Builds on the team's Week 15 work; every week moves the team’s AAHSFF film one step closer to DFM 300."
     target: "SWBAT storyboard and shot-list your locked script at your locked location, shown by the team’s Canvas submission for Producing Task 18."
     collaboration: "Teams split the week’s tasks at the Weekly Check-In and work together in Team Work Time; the Team Check-In names who owns each next step."
-    evidence: "The Team Check-In exit ticket each class, and the week’s Canvas submission: Shot list for the whole script; Storyboard for one key scene; Final costume/prop sourcing list."
+    evidence: "The Team Check-In exit ticket each class, and the week’s formative assignment: Shot list for the whole script; Storyboard for one key scene; Final costume/prop sourcing list."
     summarization: "Each Team Check-In states what the team finished, what’s next and who’s doing it."
   exit_ticket: fmla-dfm
   organize:
@@ -52,12 +52,14 @@ lesson:
     project this page. Teams work on this week's tasks for most of the period; circulate and
     check each team has the page open and someone working on each deliverable. In the last 5
     minutes, each team posts the Team Check-In in Canvas. Everything for the week is due Sun,
-    Jan 10 at 11:59 PM in Canvas. No live instruction is needed.
+    Jan 10 at 11:59 PM in Canvas. No live instruction is needed. Grading on return (Formative
+    (MP2)): Check system for the week: ✓+ every deliverable is complete and specific to the
+    team's film; ✓ every deliverable is submitted; ✓− a deliverable is missing.
 ---
 # Week 18 | Blocking, Coverage & Shot Lists for Your Script (Jan 4 – 10, 2027)
 
 {: .highlight }
-**Due Sun, Jan 10, 11:59 PM in Canvas:** Shot list for the whole script; Storyboard for one key scene; Final costume/prop sourcing list.
+**This week's formative, due Sun, Jan 10, 11:59 PM in Canvas:** Shot list for the whole script; Storyboard for one key scene; Final costume/prop sourcing list.
 
 ## In Class (B-days)
 

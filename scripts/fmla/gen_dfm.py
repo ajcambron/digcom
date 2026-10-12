@@ -77,12 +77,14 @@ WEEKS = {
  13: dict(title="Directing Actors I: Communication & Intention", dates="Nov 30 – Dec 6, 2026", due="Sun, Dec 6", obj="A4, B3, C2",
           reading=[("Judith Weston, *Directing Actors*: the opening chapters (acting as doing; playing an intention)", None)],
           focus="Why directors give actors intentions and actions to play instead of line readings.",
-          task="Write actor-direction notes for 3 key lines",
-          steps=["Pick **3 key lines** from your revised script.",
+          task="Lock your script and write actor-direction notes for 3 key lines",
+          steps=["Make final fixes to your Week 11 revised draft. Check it fits your category's length target, then label it **LOCKED** with today's date.",
+                 "Pick **3 key lines** from your locked script.",
                  "For each, write the character's **intention**: what they're trying to do to the other person (to warn, to win over, to shut down…).",
                  "Write the direction you'd give the actor. Use intentions and actions, never a line reading (\"say it like this\")."],
           logistics="**Post your casting call** and start reaching out to candidate actors.",
-          deliver=["Actor-direction notes for 3 lines", "Casting call (posted)"]),
+          deliver=["Locked script (PDF)", "Actor-direction notes for 3 lines", "Casting call (posted)"],
+          summative="Script Lock: the locked script plus actor-direction notes for 3 key lines"),
  14: dict(title="Casting Your Film", dates="Dec 7 – 13, 2026", due="Sun, Dec 13", obj="B3, B4",
           reading=[("StudioBinder: Indie Film Casting Explained", SB + "indie-short-film-casting-pointers/")],
           focus="Casting breakdowns, writing a clear casting call, and running auditions.",
@@ -129,7 +131,8 @@ WEEKS = {
                  "Arrange them into a lookbook, organized by scene or by category (lighting, color, framing).",
                  "Add a **lighting and camera note** to each shot on your shot list."],
           logistics="Draft a **shoot-day calendar** for the start of DFM 300: which scenes, where, and who's needed each day.",
-          deliver=["Lookbook / mood board", "Annotated shot list", "Draft shoot-day calendar"]),
+          deliver=["Lookbook / mood board", "Annotated shot list", "Draft shoot-day calendar"],
+          summative="Visual Plan: the lookbook, the shot list annotated with lighting and camera notes, and the draft shoot-day calendar"),
  21: dict(title="Director's Prep Packet: Integration & AAHSFF Submission Readiness", dates="Jan 25 – 31, 2027", due="Sun, Jan 31",
           obj="A1, B5, C2", reading=[],
           focus="No new reading: review your Weeks 8–20 work.",
@@ -150,6 +153,23 @@ WEEKS = {
 BREAKS = {12: ("Thanksgiving Break", "Nov 23 – 29, 2026"), 16: ("Winter Break", "Dec 21 – 27, 2026"),
           17: ("Winter Break (continued)", "Dec 28, 2026 – Jan 3, 2027")}
 
+# MP2 (Oct 31, 2026 – Jan 28, 2027) holds Weeks 8–20: two formative-formative-formative-formative-summative cycles, one
+# assignment per week. Weeks 21–22 are due after MP2 ends and count in MP3.
+MP2_END = "Jan 28, 2027"
+GRADE = {}
+_cycle = [n for n in sorted(WEEKS) if n <= 20]
+for i, n in enumerate(_cycle):
+    GRADE[n] = "Summative" if i % 5 == 4 else "Formative"
+assert [n for n, g in GRADE.items() if g == "Summative"] == [n for n in WEEKS if WEEKS[n].get("summative")], "summative weeks must carry a summative description"
+for n in WEEKS:
+    GRADE.setdefault(n, "MP3")
+
+SUMMATIVE_RUBRIC = ("Check system for the summative: ✓+ every piece is complete, matches the team's earlier weeks (same scenes, cast and "
+                    "category) and shows clear revision from feedback; ✓ every piece is complete and usable for DFM 300; ✓− a piece is "
+                    "missing or doesn't match the rest of the team's work.")
+FORMATIVE_CHECK = ("Check system for the week: ✓+ every deliverable is complete and specific to the team's film; ✓ every deliverable is "
+                   "submitted; ✓− a deliverable is missing.")
+
 TIMING = [("Stinger", 10, "Today's stinger from the DFM stinger deck; take attendance"),
           ("Weekly Check-In", 5, "Teams open this week's page and split the week's tasks"),
           ("Team Work Time", 58, "Reading, Producing Task and Pre-Production Logistics"),
@@ -164,11 +184,22 @@ def reading_md(w):
         out.append(f"- [{label}]({url})" if url else f"- {label} (in the course materials)")
     return out + ["", f"**Look for:** {w['focus']}", ""]
 
+def _span(n):
+    i = _cycle.index(n)
+    return f"{_cycle[i - 4]}–{n}"
+
+def grade_label(n):
+    g = GRADE[n]
+    return "Counts in MP3" if g == "MP3" else f"{g} (MP2)"
+
 def week_page(n, w):
     title = f"Week {n} | {w['title']}"
     b = ["---", "layout: default", f"title: {q(title)}", f"parent: {q(TOP)}", f"nav_order: {n}", "nav_exclude: false", "lesson:",
          f"  course: {q(TOP)}", f"  unit: {n}", f"  number: {q('Week ' + str(n))}",
          f"  standard: {q('DFM 200 objectives ' + w['obj'] + ' (Wilmington University syllabus)')}",
+         ] + (["  is_summative: true", folded("purpose_note", f"MP2 summative for Weeks {_span(n)}. {w['summative']}. It pulls together the "
+              "four formative weeks before it, so most of the work is already done; this week finishes and locks it.")]
+              if GRADE[n] == "Summative" else []) + [
          folded("source", "DFM 200 syllabus, Extended Continuity Plan (Weeks 8–22): self-directed pre-production for an AAHSFF film to shoot in DFM 300. Weeks release Monday and are due Sunday 11:59 PM in Canvas."),
          "  timing:"]
     for seg, mins, note in TIMING:
@@ -179,7 +210,7 @@ def week_page(n, w):
           f"    connection: {q(prev + '; every week moves the team’s AAHSFF film one step closer to DFM 300.')}",
           f"    target: {q('SWBAT ' + w['task'][0].lower() + w['task'][1:] + ', shown by the team’s Canvas submission for Producing Task ' + str(n) + '.')}",
           f"    collaboration: {q('Teams split the week’s tasks at the Weekly Check-In and work together in Team Work Time; the Team Check-In names who owns each next step.')}",
-          f"    evidence: {q('The Team Check-In exit ticket each class, and the week’s Canvas submission: ' + '; '.join(w['deliver']) + '.')}",
+          f"    evidence: {q('The Team Check-In exit ticket each class, and the week’s ' + GRADE[n].lower().replace('mp3', 'MP3') + ' assignment: ' + '; '.join(w['deliver']) + '.')}",
           f"    summarization: {q('Each Team Check-In states what the team finished, what’s next and who’s doing it.')}",
           "  exit_ticket: fmla-dfm",
           "  organize:", "    binder:", "      - \"your Stinger Response Sheet\"", "    drive:",
@@ -193,10 +224,17 @@ def week_page(n, w):
     sub = ("For the sub: project today's stinger from the DFM stinger deck and take attendance, then project this page. "
            "Teams work on this week's tasks for most of the period; circulate and check each team has the page open and "
            "someone working on each deliverable. In the last 5 minutes, each team posts the Team Check-In in Canvas. "
-           f"Everything for the week is due {w['due']} at 11:59 PM in Canvas. No live instruction is needed.")
+           f"Everything for the week is due {w['due']} at 11:59 PM in Canvas. No live instruction is needed. "
+           f"Grading on return ({grade_label(n)}): " + (SUMMATIVE_RUBRIC if GRADE[n] == "Summative" else FORMATIVE_CHECK))
     b += [folded("notes", sub), "---", ""]
+    head = {"Formative": "This week's formative", "Summative": "This week's summative", "MP3": "This week's assignment (MP3)"}[GRADE[n]]
     s = [f"# {title} ({w['dates']})", "", "{: .highlight }",
-         f"**Due {w['due']}, 11:59 PM in Canvas:** {'; '.join(w['deliver'])}.", "",
+         f"**{head}, due {w['due']}, 11:59 PM in Canvas:** {'; '.join(w['deliver'])}.", ""]
+    if GRADE[n] == "Summative":
+        sname, sdesc = w["summative"].split(": ", 1)
+        s += ["{: .important }", f"**Summative: {sname}.** {sdesc[0].upper() + sdesc[1:]}. It builds on your last four weeks of work, so most of it is "
+              "already done. This week you finish it, check every piece matches, and turn it in.", ""]
+    s += [
          "## In Class (B-days)", "", "| Time | What you do |", "|---|---|"]
     s += [f"| {m} min | {seg} |" for seg, m, _ in TIMING]
     s += ["", "## Stinger (~10 min)", "", "{% include lesson-parts/stinger.md %}", "", "## This Week's Reading", ""] + reading_md(w)
@@ -213,10 +251,10 @@ def index():
     rows = []
     for n in range(8, 23):
         if n in BREAKS:
-            rows.append(f"| {n} | {BREAKS[n][1]} | {BREAKS[n][0]} | No new material |")
+            rows.append(f"| {n} | {BREAKS[n][1]} | {BREAKS[n][0]} | No new material | — |")
         else:
             w = WEEKS[n]
-            rows.append(f"| [{n}](week{n}.md) | {w['dates']} | {w['title']} | Producing Task {n}, due {w['due']} |")
+            rows.append(f"| [{n}](week{n}.md) | {w['dates']} | {w['title']} | {grade_label(n)} | {w['due']} |")
     b = ["---", "layout: default", f"title: {q(TOP)}", "parent: \"FMLA\"", "nav_order: 3", "has_children: true", "has_toc: false",
          f"description: {q('DFM 200 Weeks 8–22: self-directed pre-production for an AAHSFF film while the instructor is on leave.')}", "---",
          "# FMLA DFM: Introduction to Digital Filmmaking During Leave", "",
@@ -227,8 +265,10 @@ def index():
          "- A new week opens every **Monday**. Everything for that week is due **Sunday at 11:59 PM in Canvas**.",
          "- Each week has a **reading**, a **Producing Task** and a **Pre-Production Logistics** step. They build on each other into your Director's Prep Packet.",
          "- In class on B-days: stinger, a quick team check-in, team work time, then a Team Check-In before you leave.",
-         "- This work is separate from DFM 200's graded assignments. It's graded for completion in Canvas.", "",
-         "## Schedule", "", "| Week | Dates | Topic | Due |", "|---|---|---|---|"] + rows + [
+         "- Each week is **one assignment**: the reading, Producing Task and logistics together.",
+         f"- In **MP2** (through {MP2_END}), weeks run in two cycles of **four formatives, then a summative**. Each summative pulls the "
+         "four weeks before it together: **Week 13, Script Lock** and **Week 20, Visual Plan**. Weeks 21–22 count in MP3.", "",
+         "## Schedule", "", "| Week | Dates | Topic | Graded as | Due |", "|---|---|---|---|---|"] + rows + [
          "", "## AAHSFF Categories", "",
          "Lock one in Week 8. It sets your script's length for every week after: about **one script page per minute** of screen time.", "",
          "| Category | Max length |", "|---|---|"] + [f"| {c} | {m} |" for c, m in CATEGORIES] + [

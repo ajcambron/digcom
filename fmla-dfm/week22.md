@@ -30,7 +30,7 @@ lesson:
     connection: "Builds on the team's Week 21 work; every week moves the team’s AAHSFF film one step closer to DFM 300."
     target: "SWBAT turn in the Director's Prep Packet, shown by the team’s Canvas submission for Producing Task 22."
     collaboration: "Teams split the week’s tasks at the Weekly Check-In and work together in Team Work Time; the Team Check-In names who owns each next step."
-    evidence: "The Team Check-In exit ticket each class, and the week’s Canvas submission: Director's Prep Packet."
+    evidence: "The Team Check-In exit ticket each class, and the week’s MP3 assignment: Director's Prep Packet."
     summarization: "Each Team Check-In states what the team finished, what’s next and who’s doing it."
   exit_ticket: fmla-dfm
   organize:
@@ -52,12 +52,14 @@ lesson:
     project this page. Teams work on this week's tasks for most of the period; circulate and
     check each team has the page open and someone working on each deliverable. In the last 5
     minutes, each team posts the Team Check-In in Canvas. Everything for the week is due Feb 1–2
-    at 11:59 PM in Canvas. No live instruction is needed.
+    at 11:59 PM in Canvas. No live instruction is needed. Grading on return (Counts in MP3):
+    Check system for the week: ✓+ every deliverable is complete and specific to the team's film;
+    ✓ every deliverable is submitted; ✓− a deliverable is missing.
 ---
 # Week 22 | Return from Leave (Feb 1 – 2, 2027)
 
 {: .highlight }
-**Due Feb 1–2, 11:59 PM in Canvas:** Director's Prep Packet.
+**This week's assignment (MP3), due Feb 1–2, 11:59 PM in Canvas:** Director's Prep Packet.
 
 ## In Class (B-days)
 

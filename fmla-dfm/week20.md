@@ -9,6 +9,12 @@ lesson:
   unit: 20
   number: "Week 20"
   standard: "DFM 200 objectives A4, A5 (Wilmington University syllabus)"
+  is_summative: true
+  purpose_note: >
+    MP2 summative for Weeks 14–20. Visual Plan: the lookbook, the shot list annotated with
+    lighting and camera notes, and the draft shoot-day calendar. It pulls together the four
+    formative weeks before it, so most of the work is already done; this week finishes and locks
+    it.
   source: >
     DFM 200 syllabus, Extended Continuity Plan (Weeks 8–22): self-directed pre-production for an
     AAHSFF film to shoot in DFM 300. Weeks release Monday and are due Sunday 11:59 PM in Canvas.
@@ -30,7 +36,7 @@ lesson:
     connection: "Builds on the team's Week 19 work; every week moves the team’s AAHSFF film one step closer to DFM 300."
     target: "SWBAT build a lookbook / mood board, and annotate your shot list with lighting and camera notes, shown by the team’s Canvas submission for Producing Task 20."
     collaboration: "Teams split the week’s tasks at the Weekly Check-In and work together in Team Work Time; the Team Check-In names who owns each next step."
-    evidence: "The Team Check-In exit ticket each class, and the week’s Canvas submission: Lookbook / mood board; Annotated shot list; Draft shoot-day calendar."
+    evidence: "The Team Check-In exit ticket each class, and the week’s summative assignment: Lookbook / mood board; Annotated shot list; Draft shoot-day calendar."
     summarization: "Each Team Check-In states what the team finished, what’s next and who’s doing it."
   exit_ticket: fmla-dfm
   organize:
@@ -52,12 +58,19 @@ lesson:
     project this page. Teams work on this week's tasks for most of the period; circulate and
     check each team has the page open and someone working on each deliverable. In the last 5
     minutes, each team posts the Team Check-In in Canvas. Everything for the week is due Sun,
-    Jan 24 at 11:59 PM in Canvas. No live instruction is needed.
+    Jan 24 at 11:59 PM in Canvas. No live instruction is needed. Grading on return (Summative
+    (MP2)): Check system for the summative: ✓+ every piece is complete, matches the team's
+    earlier weeks (same scenes, cast and category) and shows clear revision from feedback; ✓
+    every piece is complete and usable for DFM 300; ✓− a piece is missing or doesn't match the
+    rest of the team's work.
 ---
 # Week 20 | Visual References & Director–DP Collaboration (Jan 18 – 24, 2027)
 
 {: .highlight }
-**Due Sun, Jan 24, 11:59 PM in Canvas:** Lookbook / mood board; Annotated shot list; Draft shoot-day calendar.
+**This week's summative, due Sun, Jan 24, 11:59 PM in Canvas:** Lookbook / mood board; Annotated shot list; Draft shoot-day calendar.
+
+{: .important }
+**Summative: Visual Plan.** The lookbook, the shot list annotated with lighting and camera notes, and the draft shoot-day calendar. It builds on your last four weeks of work, so most of it is already done. This week you finish it, check every piece matches, and turn it in.
 
 ## In Class (B-days)
 

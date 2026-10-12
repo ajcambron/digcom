@@ -30,7 +30,7 @@ lesson:
     connection: "Builds on the team's Week 20 work; every week moves the team’s AAHSFF film one step closer to DFM 300."
     target: "SWBAT assemble the full Director's Prep Packet, shown by the team’s Canvas submission for Producing Task 21."
     collaboration: "Teams split the week’s tasks at the Weekly Check-In and work together in Team Work Time; the Team Check-In names who owns each next step."
-    evidence: "The Team Check-In exit ticket each class, and the week’s Canvas submission: Director's Prep Packet (all 8 pieces); Unresolved-items list for DFM 300."
+    evidence: "The Team Check-In exit ticket each class, and the week’s MP3 assignment: Director's Prep Packet (all 8 pieces); Unresolved-items list for DFM 300."
     summarization: "Each Team Check-In states what the team finished, what’s next and who’s doing it."
   exit_ticket: fmla-dfm
   organize:
@@ -52,12 +52,14 @@ lesson:
     project this page. Teams work on this week's tasks for most of the period; circulate and
     check each team has the page open and someone working on each deliverable. In the last 5
     minutes, each team posts the Team Check-In in Canvas. Everything for the week is due Sun,
-    Jan 31 at 11:59 PM in Canvas. No live instruction is needed.
+    Jan 31 at 11:59 PM in Canvas. No live instruction is needed. Grading on return (Counts in
+    MP3): Check system for the week: ✓+ every deliverable is complete and specific to the team's
+    film; ✓ every deliverable is submitted; ✓− a deliverable is missing.
 ---
 # Week 21 | Director's Prep Packet: Integration & AAHSFF Submission Readiness (Jan 25 – 31, 2027)
 
 {: .highlight }
-**Due Sun, Jan 31, 11:59 PM in Canvas:** Director's Prep Packet (all 8 pieces); Unresolved-items list for DFM 300.
+**This week's assignment (MP3), due Sun, Jan 31, 11:59 PM in Canvas:** Director's Prep Packet (all 8 pieces); Unresolved-items list for DFM 300.
 
 ## In Class (B-days)
 

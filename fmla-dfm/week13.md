@@ -9,6 +9,11 @@ lesson:
   unit: 13
   number: "Week 13"
   standard: "DFM 200 objectives A4, B3, C2 (Wilmington University syllabus)"
+  is_summative: true
+  purpose_note: >
+    MP2 summative for Weeks 8–13. Script Lock: the locked script plus actor-direction notes for
+    3 key lines. It pulls together the four formative weeks before it, so most of the work is
+    already done; this week finishes and locks it.
   source: >
     DFM 200 syllabus, Extended Continuity Plan (Weeks 8–22): self-directed pre-production for an
     AAHSFF film to shoot in DFM 300. Weeks release Monday and are due Sunday 11:59 PM in Canvas.
@@ -28,9 +33,9 @@ lesson:
   the_seven:
     organization: "The week page lists the reading, the Producing Task steps, the logistics milestone and a deliverables checklist, all due Sun, Dec 6."
     connection: "Builds on the team's Week 11 work; every week moves the team’s AAHSFF film one step closer to DFM 300."
-    target: "SWBAT write actor-direction notes for 3 key lines, shown by the team’s Canvas submission for Producing Task 13."
+    target: "SWBAT lock your script and write actor-direction notes for 3 key lines, shown by the team’s Canvas submission for Producing Task 13."
     collaboration: "Teams split the week’s tasks at the Weekly Check-In and work together in Team Work Time; the Team Check-In names who owns each next step."
-    evidence: "The Team Check-In exit ticket each class, and the week’s Canvas submission: Actor-direction notes for 3 lines; Casting call (posted)."
+    evidence: "The Team Check-In exit ticket each class, and the week’s summative assignment: Locked script (PDF); Actor-direction notes for 3 lines; Casting call (posted)."
     summarization: "Each Team Check-In states what the team finished, what’s next and who’s doing it."
   exit_ticket: fmla-dfm
   organize:
@@ -52,12 +57,19 @@ lesson:
     project this page. Teams work on this week's tasks for most of the period; circulate and
     check each team has the page open and someone working on each deliverable. In the last 5
     minutes, each team posts the Team Check-In in Canvas. Everything for the week is due Sun,
-    Dec 6 at 11:59 PM in Canvas. No live instruction is needed.
+    Dec 6 at 11:59 PM in Canvas. No live instruction is needed. Grading on return (Summative
+    (MP2)): Check system for the summative: ✓+ every piece is complete, matches the team's
+    earlier weeks (same scenes, cast and category) and shows clear revision from feedback; ✓
+    every piece is complete and usable for DFM 300; ✓− a piece is missing or doesn't match the
+    rest of the team's work.
 ---
 # Week 13 | Directing Actors I: Communication & Intention (Nov 30 – Dec 6, 2026)
 
 {: .highlight }
-**Due Sun, Dec 6, 11:59 PM in Canvas:** Actor-direction notes for 3 lines; Casting call (posted).
+**This week's summative, due Sun, Dec 6, 11:59 PM in Canvas:** Locked script (PDF); Actor-direction notes for 3 lines; Casting call (posted).
+
+{: .important }
+**Summative: Script Lock.** The locked script plus actor-direction notes for 3 key lines. It builds on your last four weeks of work, so most of it is already done. This week you finish it, check every piece matches, and turn it in.
 
 ## In Class (B-days)
 
@@ -78,11 +90,12 @@ lesson:
 
 **Look for:** Why directors give actors intentions and actions to play instead of line readings.
 
-## Producing Task 13: Write actor-direction notes for 3 key lines
+## Producing Task 13: Lock your script and write actor-direction notes for 3 key lines
 
-1. Pick **3 key lines** from your revised script.
-2. For each, write the character's **intention**: what they're trying to do to the other person (to warn, to win over, to shut down…).
-3. Write the direction you'd give the actor. Use intentions and actions, never a line reading ("say it like this").
+1. Make final fixes to your Week 11 revised draft. Check it fits your category's length target, then label it **LOCKED** with today's date.
+2. Pick **3 key lines** from your locked script.
+3. For each, write the character's **intention**: what they're trying to do to the other person (to warn, to win over, to shut down…).
+4. Write the direction you'd give the actor. Use intentions and actions, never a line reading ("say it like this").
 
 ## Pre-Production Logistics
 
@@ -90,6 +103,7 @@ lesson:
 
 ## Before You Submit
 
+- [ ] Locked script (PDF)
 - [ ] Actor-direction notes for 3 lines
 - [ ] Casting call (posted)
 - [ ] Everything is saved in your team's DFM 200 folder

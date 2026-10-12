@@ -30,7 +30,7 @@ lesson:
     connection: "Starts the leave extension: DFM 200's graded weeks ended Oct 23; every week moves the team’s AAHSFF film one step closer to DFM 300."
     target: "SWBAT lock your target category and logline; research 3–5 comparable past winners, shown by the team’s Canvas submission for Producing Task 8."
     collaboration: "Teams split the week’s tasks at the Weekly Check-In and work together in Team Work Time; the Team Check-In names who owns each next step."
-    evidence: "The Team Check-In exit ticket each class, and the week’s Canvas submission: Category + length target; Logline; 3–5 comparable past winners with notes; Location/talent wishlist."
+    evidence: "The Team Check-In exit ticket each class, and the week’s formative assignment: Category + length target; Logline; 3–5 comparable past winners with notes; Location/talent wishlist."
     summarization: "Each Team Check-In states what the team finished, what’s next and who’s doing it."
   exit_ticket: fmla-dfm
   organize:
@@ -52,12 +52,14 @@ lesson:
     project this page. Teams work on this week's tasks for most of the period; circulate and
     check each team has the page open and someone working on each deliverable. In the last 5
     minutes, each team posts the Team Check-In in Canvas. Everything for the week is due Sun,
-    Nov 1 at 11:59 PM in Canvas. No live instruction is needed.
+    Nov 1 at 11:59 PM in Canvas. No live instruction is needed. Grading on return (Formative
+    (MP2)): Check system for the week: ✓+ every deliverable is complete and specific to the
+    team's film; ✓ every deliverable is submitted; ✓− a deliverable is missing.
 ---
 # Week 8 | AAHSFF Target & Studying Previous Winners (Oct 26 – Nov 1, 2026)
 
 {: .highlight }
-**Due Sun, Nov 1, 11:59 PM in Canvas:** Category + length target; Logline; 3–5 comparable past winners with notes; Location/talent wishlist.
+**This week's formative, due Sun, Nov 1, 11:59 PM in Canvas:** Category + length target; Logline; 3–5 comparable past winners with notes; Location/talent wishlist.
 
 ## In Class (B-days)
 

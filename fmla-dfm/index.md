@@ -16,27 +16,28 @@ DFM 200's graded weeks end **Oct 23, 2026**. While your instructor is on leave (
 - A new week opens every **Monday**. Everything for that week is due **Sunday at 11:59 PM in Canvas**.
 - Each week has a **reading**, a **Producing Task** and a **Pre-Production Logistics** step. They build on each other into your Director's Prep Packet.
 - In class on B-days: stinger, a quick team check-in, team work time, then a Team Check-In before you leave.
-- This work is separate from DFM 200's graded assignments. It's graded for completion in Canvas.
+- Each week is **one assignment**: the reading, Producing Task and logistics together.
+- In **MP2** (through Jan 28, 2027), weeks run in two cycles of **four formatives, then a summative**. Each summative pulls the four weeks before it together: **Week 13, Script Lock** and **Week 20, Visual Plan**. Weeks 21–22 count in MP3.
 
 ## Schedule
 
-| Week | Dates | Topic | Due |
-|---|---|---|---|
-| [8](week8.md) | Oct 26 – Nov 1, 2026 | AAHSFF Target & Studying Previous Winners | Producing Task 8, due Sun, Nov 1 |
-| [9](week9.md) | Nov 2 – 8, 2026 | Right-Sizing the Story: Outline & Beat Sheet | Producing Task 9, due Sun, Nov 8 |
-| [10](week10.md) | Nov 9 – 15, 2026 | Screenplay Format & First Draft | Producing Task 10, due Sun, Nov 15 |
-| [11](week11.md) | Nov 16 – 22, 2026 | Table Read & Revision | Producing Task 11, due Sun, Nov 22 |
-| 12 | Nov 23 – 29, 2026 | Thanksgiving Break | No new material |
-| [13](week13.md) | Nov 30 – Dec 6, 2026 | Directing Actors I: Communication & Intention | Producing Task 13, due Sun, Dec 6 |
-| [14](week14.md) | Dec 7 – 13, 2026 | Casting Your Film | Producing Task 14, due Sun, Dec 13 |
-| [15](week15.md) | Dec 14 – 20, 2026 | Locking Locations | Producing Task 15, due Sun, Dec 20 |
-| 16 | Dec 21 – 27, 2026 | Winter Break | No new material |
-| 17 | Dec 28, 2026 – Jan 3, 2027 | Winter Break (continued) | No new material |
-| [18](week18.md) | Jan 4 – 10, 2027 | Blocking, Coverage & Shot Lists for Your Script | Producing Task 18, due Sun, Jan 10 |
-| [19](week19.md) | Jan 11 – 17, 2027 | The Director–Editor Relationship | Producing Task 19, due Sun, Jan 17 |
-| [20](week20.md) | Jan 18 – 24, 2027 | Visual References & Director–DP Collaboration | Producing Task 20, due Sun, Jan 24 |
-| [21](week21.md) | Jan 25 – 31, 2027 | Director's Prep Packet: Integration & AAHSFF Submission Readiness | Producing Task 21, due Sun, Jan 31 |
-| [22](week22.md) | Feb 1 – 2, 2027 | Return from Leave | Producing Task 22, due Feb 1–2 |
+| Week | Dates | Topic | Graded as | Due |
+|---|---|---|---|---|
+| [8](week8.md) | Oct 26 – Nov 1, 2026 | AAHSFF Target & Studying Previous Winners | Formative (MP2) | Sun, Nov 1 |
+| [9](week9.md) | Nov 2 – 8, 2026 | Right-Sizing the Story: Outline & Beat Sheet | Formative (MP2) | Sun, Nov 8 |
+| [10](week10.md) | Nov 9 – 15, 2026 | Screenplay Format & First Draft | Formative (MP2) | Sun, Nov 15 |
+| [11](week11.md) | Nov 16 – 22, 2026 | Table Read & Revision | Formative (MP2) | Sun, Nov 22 |
+| 12 | Nov 23 – 29, 2026 | Thanksgiving Break | No new material | — |
+| [13](week13.md) | Nov 30 – Dec 6, 2026 | Directing Actors I: Communication & Intention | Summative (MP2) | Sun, Dec 6 |
+| [14](week14.md) | Dec 7 – 13, 2026 | Casting Your Film | Formative (MP2) | Sun, Dec 13 |
+| [15](week15.md) | Dec 14 – 20, 2026 | Locking Locations | Formative (MP2) | Sun, Dec 20 |
+| 16 | Dec 21 – 27, 2026 | Winter Break | No new material | — |
+| 17 | Dec 28, 2026 – Jan 3, 2027 | Winter Break (continued) | No new material | — |
+| [18](week18.md) | Jan 4 – 10, 2027 | Blocking, Coverage & Shot Lists for Your Script | Formative (MP2) | Sun, Jan 10 |
+| [19](week19.md) | Jan 11 – 17, 2027 | The Director–Editor Relationship | Formative (MP2) | Sun, Jan 17 |
+| [20](week20.md) | Jan 18 – 24, 2027 | Visual References & Director–DP Collaboration | Summative (MP2) | Sun, Jan 24 |
+| [21](week21.md) | Jan 25 – 31, 2027 | Director's Prep Packet: Integration & AAHSFF Submission Readiness | Counts in MP3 | Sun, Jan 31 |
+| [22](week22.md) | Feb 1 – 2, 2027 | Return from Leave | Counts in MP3 | Feb 1–2 |
 
 ## AAHSFF Categories
 

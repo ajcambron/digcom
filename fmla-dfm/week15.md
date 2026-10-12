@@ -30,7 +30,7 @@ lesson:
     connection: "Builds on the team's Week 14 work; every week moves the team’s AAHSFF film one step closer to DFM 300."
     target: "SWBAT scout and lock your primary location and a backup, shown by the team’s Canvas submission for Producing Task 15."
     collaboration: "Teams split the week’s tasks at the Weekly Check-In and work together in Team Work Time; the Team Check-In names who owns each next step."
-    evidence: "The Team Check-In exit ticket each class, and the week’s Canvas submission: Scouting photos and notes; Location list with written permission (primary + backup)."
+    evidence: "The Team Check-In exit ticket each class, and the week’s formative assignment: Scouting photos and notes; Location list with written permission (primary + backup)."
     summarization: "Each Team Check-In states what the team finished, what’s next and who’s doing it."
   exit_ticket: fmla-dfm
   organize:
@@ -52,12 +52,14 @@ lesson:
     project this page. Teams work on this week's tasks for most of the period; circulate and
     check each team has the page open and someone working on each deliverable. In the last 5
     minutes, each team posts the Team Check-In in Canvas. Everything for the week is due Sun,
-    Dec 20 at 11:59 PM in Canvas. No live instruction is needed.
+    Dec 20 at 11:59 PM in Canvas. No live instruction is needed. Grading on return (Formative
+    (MP2)): Check system for the week: ✓+ every deliverable is complete and specific to the
+    team's film; ✓ every deliverable is submitted; ✓− a deliverable is missing.
 ---
 # Week 15 | Locking Locations (Dec 14 – 20, 2026)
 
 {: .highlight }
-**Due Sun, Dec 20, 11:59 PM in Canvas:** Scouting photos and notes; Location list with written permission (primary + backup).
+**This week's formative, due Sun, Dec 20, 11:59 PM in Canvas:** Scouting photos and notes; Location list with written permission (primary + backup).
 
 ## In Class (B-days)
 
