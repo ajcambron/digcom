@@ -26,14 +26,14 @@ While your teacher is on leave, Foundations of Digital Design Units 3–6 run en
 
 ## How You're Graded
 
-Formatives are every module worksheet, a vocabulary quiz for each module's terms, and one Stinger Sheet Check near the end that covers every stinger since the semester break. Summatives are the BrainBuffet module products. Work days have nothing graded: use them to stay on pace, and end each one with the Pace Check Exit Ticket.
+Formatives are every module worksheet, a vocabulary quiz for each module's terms, a Pace Check Exit Ticket on days without another formative, and one Stinger Sheet Check near the end that covers every stinger since the semester break. Summatives are the BrainBuffet module products.
 
 | Unit | .1 | .2 | .3 | .4 | .5 | S (summative) |
 |---|---|---|---|---|---|---|
-| 3 | Work Day + Exit Ticket (not graded) | Vocabulary Quiz | Work Day + Exit Ticket (not graded) | Module 1 Worksheet | — | Your Own Animal (summative) |
-| 4 | Work Day + Exit Ticket (not graded) | Vocabulary Quiz | Module 2 Worksheet | Dobson National Park Branding Style Guide (summative) | Module 3 Worksheet | Dobson National Park Poster (summative) |
-| 5 | Module 3 Vocabulary Quiz | Work Day + Exit Ticket (not graded) | Module 4 Vocabulary Quiz | Module 4 Worksheet | — | Dobson National Park Trifold Brochure (summative) |
-| 6 | Module 5 Worksheet | Work Day + Exit Ticket (not graded) | Stinger Sheet Check | Vocabulary Quiz | Module 6 Worksheet | Dobson's Business Card (summative) |
+| 3 | Exit Ticket | Vocabulary Quiz | Exit Ticket | Module 1 Worksheet | — | Your Own Animal (summative) |
+| 4 | Exit Ticket | Vocabulary Quiz | Module 2 Worksheet | Dobson National Park Branding Style Guide (summative) | Module 3 Worksheet | Dobson National Park Poster (summative) |
+| 5 | Module 3 Vocabulary Quiz | Exit Ticket | Module 4 Vocabulary Quiz | Module 4 Worksheet | — | Dobson National Park Trifold Brochure (summative) |
+| 6 | Module 5 Worksheet | Exit Ticket | Stinger Sheet Check | Vocabulary Quiz | Module 6 Worksheet | Dobson's Business Card (summative) |
 
 ## For the Substitute
 

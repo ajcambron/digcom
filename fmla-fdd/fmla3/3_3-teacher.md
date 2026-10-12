@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "3.3 | Work Day (Teacher)"
+title: "3.3 | Exit Ticket (Teacher)"
 parent: "FMLA FDD | Unit 3"
 grandparent: "FMLA FDD"
 nav_exclude: true
 has_toc: false
 ---
-# 3.3 | Work Day | Teacher Plan
+# 3.3 | Exit Ticket | Teacher Plan
 
 {% include teacher-plan.html %}

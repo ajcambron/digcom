@@ -300,24 +300,24 @@ AI[6] = dict(name="Generative AI in Adobe Illustrator", short="Generative AI & E
   rubric="", vocab=[])
 
 # ---------------------------------------------------------------- FDD remap: 1.5 modules per unit
-# Each graded slot: ("work",) = no graded item; ("vocab", list index); ("stinger", span); ("worksheet", module);
+# Each graded slot: ("exit",) = Pace Check Exit Ticket; ("vocab", list index); ("stinger", span); ("worksheet", module);
 # ("product", module) = a summative due on a formative day; ("summative", module). An optional F5 is a fifth formative day
 # (taken from the S block) for a worksheet that would otherwise be due alongside the summative.
 # Points are internal planning only: they're checked by gen_fmla.py and never printed on a page.
-# Grading schema (FDD): 12 formatives x 10 pts = 120 (6 worksheets, 5 vocab quizzes, 1 stinger check) and
+# Grading schema (FDD): 17 formatives x 10 pts = 170 (6 worksheets, 5 vocab quizzes, 5 exit tickets, 1 stinger check) and
 # 300 summative pts (animal 50, style guide 50, poster 50, trifold 100, business card 50).
 FORMATIVE_PTS = 10
 AI_HOURS = {1: 3, 2: 3, 3: 3, 4: 4, 5: 3, 6: 1}   # BrainBuffet's estimated class time per module
 FDD_PLAN = {
  3: dict(start="1.01", end="1.17", title="Illustrator Module 1: Getting Started",
-         slots={"F1": ("work",), "F2": ("vocab", 0), "F3": ("work",), "F4": ("worksheet", 1), "S": ("summative", 1)}),
+         slots={"F1": ("exit",), "F2": ("vocab", 0), "F3": ("exit",), "F4": ("worksheet", 1), "S": ("summative", 1)}),
  4: dict(start="2.01", end="3.19", title="Illustrator Modules 2–3: Branding Style Guide & National Park Poster",
-         slots={"F1": ("work",), "F2": ("vocab", 0), "F3": ("worksheet", 2), "F4": ("product", 2), "F5": ("worksheet", 3),
+         slots={"F1": ("exit",), "F2": ("vocab", 0), "F3": ("worksheet", 2), "F4": ("product", 2), "F5": ("worksheet", 3),
                 "S": ("summative", 3)}),
  5: dict(start="4.00", end="5.06", title="Illustrator Modules 4–5: Trifold & Image Trace",
-         slots={"F1": ("vocab", 0), "F2": ("work",), "F3": ("vocab", 1), "F4": ("worksheet", 4), "S": ("summative", 4)}),
+         slots={"F1": ("vocab", 0), "F2": ("exit",), "F3": ("vocab", 1), "F4": ("worksheet", 4), "S": ("summative", 4)}),
  6: dict(start="5.07", end="6.07", title="Illustrator Modules 5–6: Business Card & Generative AI",
-         slots={"F1": ("worksheet", 5), "F2": ("work",), "F3": ("stinger", "Units 4–6"), "F4": ("vocab", 0), "F5": ("worksheet", 6),
+         slots={"F1": ("worksheet", 5), "F2": ("exit",), "F3": ("stinger", "Units 4–6"), "F4": ("vocab", 0), "F5": ("worksheet", 6),
                 "S": ("summative", 5)}),
 }
 
